@@ -1,0 +1,24 @@
+{
+  "id": 607,
+  "slug": "litwick",
+  "name": "ヒトモシ",
+  "types": [
+    "ghost",
+    "fire"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 30,
+    "defense": 55,
+    "spAtk": 65,
+    "spDef": 55,
+    "speed": 20
+  },
+  "abilities": [
+    "もらいび",
+    "ほのおのからだ",
+    "すりぬけ"
+  ],
+  "description": "吸い取る　命が　若ければ 若いほど　頭の　炎は 大きく　妖しく　燃え上がる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/litwick.png"
+}

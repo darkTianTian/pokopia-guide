@@ -1,0 +1,21 @@
+{
+  "id": 351,
+  "slug": "castform",
+  "name": "castform",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 70,
+    "defense": 70,
+    "spAtk": 70,
+    "spDef": 70,
+    "speed": 70
+  },
+  "abilities": [
+    "forecast"
+  ],
+  "description": "Its form changes depending on the weather. The rougher conditions get, the rougher Castform’s disposition!",
+  "image": "https://assets.pokopiaguide.com/pokemon/castform.png"
+}

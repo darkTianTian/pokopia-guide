@@ -1,0 +1,24 @@
+{
+  "id": 16,
+  "slug": "pidgey",
+  "name": "ポッポ",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 45,
+    "defense": 40,
+    "spAtk": 35,
+    "spDef": 35,
+    "speed": 56
+  },
+  "abilities": [
+    "するどいめ",
+    "ちどりあし",
+    "はとむね"
+  ],
+  "description": "おとなしい　性格で　襲われても 反撃　せずに　砂を　かけて 身を　守ることが　多い。",
+  "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png"
+}

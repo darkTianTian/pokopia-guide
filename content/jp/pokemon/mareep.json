@@ -1,0 +1,22 @@
+{
+  "id": 179,
+  "slug": "mareep",
+  "name": "メリープ",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 40,
+    "defense": 40,
+    "spAtk": 65,
+    "spDef": 45,
+    "speed": 35
+  },
+  "abilities": [
+    "せいでんき",
+    "プラス"
+  ],
+  "description": "綿毛が　こすれ　電気が　たまる。 かわいいからと　素手で　触ると バチッと　痺れて　痛いのだ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/mareep.png"
+}

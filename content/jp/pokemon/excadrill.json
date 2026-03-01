@@ -1,0 +1,24 @@
+{
+  "id": 530,
+  "slug": "excadrill",
+  "name": "ドリュウズ",
+  "types": [
+    "ground",
+    "steel"
+  ],
+  "stats": {
+    "hp": 110,
+    "attack": 135,
+    "defense": 60,
+    "spAtk": 50,
+    "spDef": 65,
+    "speed": 88
+  },
+  "abilities": [
+    "すなかき",
+    "すなのちから",
+    "かたやぶり"
+  ],
+  "description": "別名　ドリルキング。 地中を　掘り進む　速度は 時速１５０キロに　達する。",
+  "image": "https://assets.pokopiaguide.com/pokemon/excadrill.png"
+}

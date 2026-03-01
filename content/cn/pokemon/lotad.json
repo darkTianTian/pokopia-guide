@@ -1,0 +1,24 @@
+{
+  "id": 270,
+  "slug": "lotad",
+  "name": "lotad",
+  "types": [
+    "water",
+    "grass"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 30,
+    "defense": 30,
+    "spAtk": 40,
+    "spDef": 50,
+    "speed": 30
+  },
+  "abilities": [
+    "swift-swim",
+    "rain-dish",
+    "own-tempo"
+  ],
+  "description": "Its leaf grew too large for it to live on land. That is how it began to live floating in the water.",
+  "image": "https://assets.pokopiaguide.com/pokemon/lotad.png"
+}

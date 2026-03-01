@@ -1,0 +1,23 @@
+{
+  "id": 60,
+  "slug": "poliwag",
+  "name": "ニョロモ",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 50,
+    "defense": 40,
+    "spAtk": 40,
+    "spDef": 40,
+    "speed": 90
+  },
+  "abilities": [
+    "ちょすい",
+    "しめりけ",
+    "すいすい"
+  ],
+  "description": "流れが　速い　川では ぶ厚い　唇を　吸盤のように 岩に　くっつけて　しがみつく。",
+  "image": "https://assets.pokopiaguide.com/pokemon/poliwag.png"
+}

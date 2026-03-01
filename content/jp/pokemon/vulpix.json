@@ -1,0 +1,22 @@
+{
+  "id": 37,
+  "slug": "vulpix",
+  "name": "ロコン",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 38,
+    "attack": 41,
+    "defense": 40,
+    "spAtk": 50,
+    "spDef": 65,
+    "speed": 65
+  },
+  "abilities": [
+    "もらいび",
+    "ひでり"
+  ],
+  "description": "６本の　しっぽは　育つごとに 毛並みが　良くなり　美しくなる。 抱きしめると　ほんのり　温かい。",
+  "image": "https://assets.pokopiaguide.com/pokemon/vulpix.png"
+}

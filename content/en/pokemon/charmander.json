@@ -1,0 +1,22 @@
+{
+  "id": 4,
+  "slug": "charmander",
+  "name": "Charmander",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "spAtk": 60,
+    "spDef": 50,
+    "speed": 65
+  },
+  "abilities": [
+    "Blaze",
+    "Solar Power"
+  ],
+  "description": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
+  "image": "https://assets.pokopiaguide.com/pokemon/charmander.png"
+}

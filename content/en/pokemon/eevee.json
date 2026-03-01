@@ -1,0 +1,23 @@
+{
+  "id": 133,
+  "slug": "eevee",
+  "name": "Eevee",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 55,
+    "defense": 50,
+    "spAtk": 45,
+    "spDef": 65,
+    "speed": 55
+  },
+  "abilities": [
+    "Run Away",
+    "Adaptability",
+    "Anticipation"
+  ],
+  "description": "Harbors the potential to evolve into manifold forms. Within Eevee lies the key to the mysteries of Pokémon evolution—I'm certain of it.",
+  "image": "https://assets.pokopiaguide.com/pokemon/eevee.png"
+}

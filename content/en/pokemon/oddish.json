@@ -1,0 +1,23 @@
+{
+  "id": 43,
+  "slug": "oddish",
+  "name": "Oddish",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 50,
+    "defense": 55,
+    "spAtk": 75,
+    "spDef": 65,
+    "speed": 30
+  },
+  "abilities": [
+    "Chlorophyll",
+    "Run Away"
+  ],
+  "description": "During the day, it stays in the cold underground to avoid the sun. It grows by bathing in moonlight.",
+  "image": "https://assets.pokopiaguide.com/pokemon/oddish.png"
+}

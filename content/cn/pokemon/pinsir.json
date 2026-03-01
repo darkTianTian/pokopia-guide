@@ -1,0 +1,23 @@
+{
+  "id": 127,
+  "slug": "pinsir",
+  "name": "pinsir",
+  "types": [
+    "bug"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 125,
+    "defense": 100,
+    "spAtk": 55,
+    "spDef": 70,
+    "speed": 85
+  },
+  "abilities": [
+    "hyper-cutter",
+    "mold-breaker",
+    "moxie"
+  ],
+  "description": "This Pokémon clamps its pincers down on its prey and then either splits the prey in half or flings it away.",
+  "image": "https://assets.pokopiaguide.com/pokemon/pinsir.png"
+}

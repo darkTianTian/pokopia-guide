@@ -1,0 +1,23 @@
+{
+  "id": 35,
+  "slug": "clefairy",
+  "name": "clefairy",
+  "types": [
+    "fairy"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 45,
+    "defense": 48,
+    "spAtk": 60,
+    "spDef": 65,
+    "speed": 35
+  },
+  "abilities": [
+    "cute-charm",
+    "magic-guard",
+    "friend-guard"
+  ],
+  "description": "It can be found in quiet mountain areas on a full moon's night. Its dancing and its tiny, faintly glowing wings confer upon it a lovely fairylike quality.",
+  "image": "https://assets.pokopiaguide.com/pokemon/clefairy.png"
+}

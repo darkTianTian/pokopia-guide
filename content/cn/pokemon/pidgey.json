@@ -1,0 +1,24 @@
+{
+  "id": 16,
+  "slug": "pidgey",
+  "name": "pidgey",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 45,
+    "defense": 40,
+    "spAtk": 35,
+    "spDef": 35,
+    "speed": 56
+  },
+  "abilities": [
+    "keen-eye",
+    "tangled-feet",
+    "big-pecks"
+  ],
+  "description": "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.",
+  "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png"
+}

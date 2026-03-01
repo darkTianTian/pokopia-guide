@@ -1,0 +1,24 @@
+{
+  "id": 167,
+  "slug": "spinarak",
+  "name": "イトマル",
+  "types": [
+    "bug",
+    "poison"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 60,
+    "defense": 40,
+    "spAtk": 40,
+    "spDef": 40,
+    "speed": 30
+  },
+  "abilities": [
+    "むしのしらせ",
+    "ふみん",
+    "スナイパー"
+  ],
+  "description": "キバの　毒は　さほど　強くないが 巣に　かかって　動けない　獲物を 弱らせるには　充分。",
+  "image": "https://assets.pokopiaguide.com/pokemon/spinarak.png"
+}

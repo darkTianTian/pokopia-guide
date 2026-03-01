@@ -1,0 +1,23 @@
+{
+  "id": 69,
+  "slug": "bellsprout",
+  "name": "bellsprout",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 75,
+    "defense": 35,
+    "spAtk": 70,
+    "spDef": 30,
+    "speed": 40
+  },
+  "abilities": [
+    "chlorophyll",
+    "gluttony"
+  ],
+  "description": "Prefers hot and humid places. It ensnares tiny bugs with its vines and devours them.",
+  "image": "https://assets.pokopiaguide.com/pokemon/bellsprout.png"
+}

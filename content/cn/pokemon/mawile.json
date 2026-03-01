@@ -1,0 +1,24 @@
+{
+  "id": 303,
+  "slug": "mawile",
+  "name": "mawile",
+  "types": [
+    "steel",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 85,
+    "defense": 85,
+    "spAtk": 55,
+    "spDef": 55,
+    "speed": 50
+  },
+  "abilities": [
+    "hyper-cutter",
+    "intimidate",
+    "sheer-force"
+  ],
+  "description": "It chomps with its gaping mouth. Its huge jaws are actually steel horns that have been transformed.",
+  "image": "https://assets.pokopiaguide.com/pokemon/mawile.png"
+}

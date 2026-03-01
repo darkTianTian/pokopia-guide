@@ -1,0 +1,22 @@
+{
+  "id": 134,
+  "slug": "vaporeon",
+  "name": "vaporeon",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 130,
+    "attack": 65,
+    "defense": 60,
+    "spAtk": 110,
+    "spDef": 95,
+    "speed": 65
+  },
+  "abilities": [
+    "water-absorb",
+    "hydration"
+  ],
+  "description": "Tests show that its cells closely resemble water molecules, which perhaps explains its ability to conceal its form while submerged. I believe the origins of mermaid folklore lie with this Pokémon.",
+  "image": "https://assets.pokopiaguide.com/pokemon/vaporeon.png"
+}

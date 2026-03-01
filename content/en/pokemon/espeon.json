@@ -1,0 +1,22 @@
+{
+  "id": 196,
+  "slug": "espeon",
+  "name": "Espeon",
+  "types": [
+    "psychic"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 60,
+    "spAtk": 130,
+    "spDef": 95,
+    "speed": 110
+  },
+  "abilities": [
+    "Synchronize",
+    "Magic Bounce"
+  ],
+  "description": "Wields an arcane power with which it can predict the weather and even people's thoughts. When bathed in sunshine, the scarlet orb on its brow glows and builds energy.",
+  "image": "https://assets.pokopiaguide.com/pokemon/espeon.png"
+}

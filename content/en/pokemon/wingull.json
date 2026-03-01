@@ -1,0 +1,24 @@
+{
+  "id": 278,
+  "slug": "wingull",
+  "name": "Wingull",
+  "types": [
+    "water",
+    "flying"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 30,
+    "defense": 30,
+    "spAtk": 55,
+    "spDef": 30,
+    "speed": 85
+  },
+  "abilities": [
+    "Keen Eye",
+    "Hydration",
+    "Rain Dish"
+  ],
+  "description": "It soars on updrafts without flapping its wings. It makes a nest on sheer cliffs at the sea’s edge.",
+  "image": "https://assets.pokopiaguide.com/pokemon/wingull.png"
+}

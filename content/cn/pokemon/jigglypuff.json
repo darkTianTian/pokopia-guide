@@ -1,0 +1,24 @@
+{
+  "id": 39,
+  "slug": "jigglypuff",
+  "name": "jigglypuff",
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 115,
+    "attack": 45,
+    "defense": 20,
+    "spAtk": 45,
+    "spDef": 25,
+    "speed": 20
+  },
+  "abilities": [
+    "cute-charm",
+    "competitive",
+    "friend-guard"
+  ],
+  "description": "By freely changing the wavelength of its voice, Jigglypuff sings a mysterious melody sure to make any listener sleepy.",
+  "image": "https://assets.pokopiaguide.com/pokemon/jigglypuff.png"
+}

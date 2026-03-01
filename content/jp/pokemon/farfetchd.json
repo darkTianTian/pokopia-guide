@@ -1,0 +1,24 @@
+{
+  "id": 83,
+  "slug": "farfetchd",
+  "name": "カモネギ",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 52,
+    "attack": 90,
+    "defense": 55,
+    "spAtk": 58,
+    "spDef": 62,
+    "speed": 60
+  },
+  "abilities": [
+    "するどいめ",
+    "せいしんりょく",
+    "まけんき"
+  ],
+  "description": "植物の　茎で　戦う。 茎の　振り方には　いくつかの 流派の　ようなものが　ある。",
+  "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png"
+}

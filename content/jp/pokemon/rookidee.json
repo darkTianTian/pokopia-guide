@@ -1,0 +1,23 @@
+{
+  "id": 821,
+  "slug": "rookidee",
+  "name": "ココガラ",
+  "types": [
+    "flying"
+  ],
+  "stats": {
+    "hp": 38,
+    "attack": 47,
+    "defense": 35,
+    "spAtk": 33,
+    "spDef": 35,
+    "speed": 57
+  },
+  "abilities": [
+    "するどいめ",
+    "きんちょうかん",
+    "はとむね"
+  ],
+  "description": "小さい　体で　機敏に　飛んで 隙を　突く　戦法で　体の 大きな　相手を　手玉に取る。",
+  "image": "https://assets.pokopiaguide.com/pokemon/rookidee.png"
+}

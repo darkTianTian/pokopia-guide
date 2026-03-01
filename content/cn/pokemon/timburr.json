@@ -1,0 +1,23 @@
+{
+  "id": 532,
+  "slug": "timburr",
+  "name": "timburr",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 55,
+    "spAtk": 25,
+    "spDef": 35,
+    "speed": 35
+  },
+  "abilities": [
+    "guts",
+    "sheer-force",
+    "iron-fist"
+  ],
+  "description": "Timburr that have started carrying logs that are about three times their size are nearly ready to evolve.",
+  "image": "https://assets.pokopiaguide.com/pokemon/timburr.png"
+}

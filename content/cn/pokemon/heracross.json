@@ -1,0 +1,24 @@
+{
+  "id": 214,
+  "slug": "heracross",
+  "name": "heracross",
+  "types": [
+    "bug",
+    "fighting"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 125,
+    "defense": 75,
+    "spAtk": 40,
+    "spDef": 95,
+    "speed": 85
+  },
+  "abilities": [
+    "swarm",
+    "guts",
+    "moxie"
+  ],
+  "description": "This Pokémon has an unparalleled horn. Heracross itself demonstrates tremendous power—it's capable of throwing several people trained in the traditional arts of war at once.",
+  "image": "https://assets.pokopiaguide.com/pokemon/heracross.png"
+}

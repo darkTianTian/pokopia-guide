@@ -1,0 +1,23 @@
+{
+  "id": 52,
+  "slug": "meowth",
+  "name": "meowth",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 45,
+    "defense": 35,
+    "spAtk": 40,
+    "spDef": 40,
+    "speed": 90
+  },
+  "abilities": [
+    "pickup",
+    "technician",
+    "unnerve"
+  ],
+  "description": "It loves to collect shiny things. If it’s in a good mood, it might even let its Trainer have a look at its hoard of treasures.",
+  "image": "https://assets.pokopiaguide.com/pokemon/meowth.png"
+}

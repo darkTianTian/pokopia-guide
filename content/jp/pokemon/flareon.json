@@ -1,0 +1,22 @@
+{
+  "id": 136,
+  "slug": "flareon",
+  "name": "ブースター",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 130,
+    "defense": 60,
+    "spAtk": 95,
+    "spDef": 110,
+    "speed": 65
+  },
+  "abilities": [
+    "もらいび",
+    "こんじょう"
+  ],
+  "description": "吸いこんだ　空気の　一部は 体内の　炎袋に　送られ １７００度の　炎に　なる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/flareon.png"
+}

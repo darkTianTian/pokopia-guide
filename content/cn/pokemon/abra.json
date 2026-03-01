@@ -1,0 +1,23 @@
+{
+  "id": 63,
+  "slug": "abra",
+  "name": "abra",
+  "types": [
+    "psychic"
+  ],
+  "stats": {
+    "hp": 25,
+    "attack": 20,
+    "defense": 15,
+    "spAtk": 105,
+    "spDef": 55,
+    "speed": 90
+  },
+  "abilities": [
+    "synchronize",
+    "inner-focus",
+    "magic-guard"
+  ],
+  "description": "Spends 18 hours of the day sleeping. Even while asleep, Abra can control its psychic powers—should danger approach, the Pokémon will simply teleport away.",
+  "image": "https://assets.pokopiaguide.com/pokemon/abra.png"
+}

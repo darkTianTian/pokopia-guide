@@ -1,0 +1,22 @@
+{
+  "id": 4,
+  "slug": "charmander",
+  "name": "ヒトカゲ",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "spAtk": 60,
+    "spDef": 50,
+    "speed": 65
+  },
+  "abilities": [
+    "もうか",
+    "サンパワー"
+  ],
+  "description": "生まれたときから　しっぽに　炎が ともっている。　炎が　消えたとき その　命は　終わって　しまう。",
+  "image": "https://assets.pokopiaguide.com/pokemon/charmander.png"
+}

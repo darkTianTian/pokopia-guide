@@ -1,0 +1,23 @@
+{
+  "id": 59,
+  "slug": "arcanine",
+  "name": "ウインディ",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 110,
+    "defense": 80,
+    "spAtk": 100,
+    "spDef": 80,
+    "speed": 95
+  },
+  "abilities": [
+    "いかく",
+    "もらいび",
+    "せいぎのこころ"
+  ],
+  "description": "昔から　多くの　人を 虜にした　美しい　ポケモン。 飛ぶように　軽やかに　走る。",
+  "image": "https://assets.pokopiaguide.com/pokemon/arcanine.png"
+}

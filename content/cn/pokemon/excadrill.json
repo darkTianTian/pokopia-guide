@@ -1,0 +1,24 @@
+{
+  "id": 530,
+  "slug": "excadrill",
+  "name": "excadrill",
+  "types": [
+    "ground",
+    "steel"
+  ],
+  "stats": {
+    "hp": 110,
+    "attack": 135,
+    "defense": 60,
+    "spAtk": 50,
+    "spDef": 65,
+    "speed": 88
+  },
+  "abilities": [
+    "sand-rush",
+    "sand-force",
+    "mold-breaker"
+  ],
+  "description": "Known as the Drill King, this Pokémon can tunnel through the terrain at speeds of over 90 mph.",
+  "image": "https://assets.pokopiaguide.com/pokemon/excadrill.png"
+}

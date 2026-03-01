@@ -1,0 +1,23 @@
+{
+  "id": 65,
+  "slug": "alakazam",
+  "name": "フーディン",
+  "types": [
+    "psychic"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 50,
+    "defense": 45,
+    "spAtk": 135,
+    "spDef": 95,
+    "speed": 120
+  },
+  "abilities": [
+    "シンクロ",
+    "せいしんりょく",
+    "マジックガード"
+  ],
+  "description": "強力な　超能力を　操る。 両手の　スプーンは その　力で　作りだしたという。",
+  "image": "https://assets.pokopiaguide.com/pokemon/alakazam.png"
+}

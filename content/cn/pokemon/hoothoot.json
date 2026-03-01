@@ -1,0 +1,24 @@
+{
+  "id": 163,
+  "slug": "hoothoot",
+  "name": "hoothoot",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 30,
+    "defense": 30,
+    "spAtk": 36,
+    "spDef": 56,
+    "speed": 50
+  },
+  "abilities": [
+    "insomnia",
+    "keen-eye",
+    "tinted-lens"
+  ],
+  "description": "It begins to hoot at the same time every day. Some Trainers use them in place of clocks.",
+  "image": "https://assets.pokopiaguide.com/pokemon/hoothoot.png"
+}

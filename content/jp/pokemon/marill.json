@@ -1,0 +1,24 @@
+{
+  "id": 183,
+  "slug": "marill",
+  "name": "マリル",
+  "types": [
+    "water",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 20,
+    "defense": 50,
+    "spAtk": 20,
+    "spDef": 50,
+    "speed": 40
+  },
+  "abilities": [
+    "あついしぼう",
+    "ちからもち",
+    "そうしょく"
+  ],
+  "description": "よく　水を　弾く　体毛は 冷たい　海から　上がったときでも すぐに　乾いて　寒くないのだ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/marill.png"
+}

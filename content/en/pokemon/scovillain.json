@@ -1,0 +1,24 @@
+{
+  "id": 952,
+  "slug": "scovillain",
+  "name": "Scovillain",
+  "types": [
+    "grass",
+    "fire"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 108,
+    "defense": 65,
+    "spAtk": 108,
+    "spDef": 65,
+    "speed": 75
+  },
+  "abilities": [
+    "Chlorophyll",
+    "Insomnia",
+    "Moody"
+  ],
+  "description": "The green head has turned vicious due to the spicy chemicals stimulating its brain. Once it goes on a rampage, there is no stopping it.",
+  "image": "https://assets.pokopiaguide.com/pokemon/scovillain.png"
+}

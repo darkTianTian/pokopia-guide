@@ -1,0 +1,23 @@
+{
+  "id": 103,
+  "slug": "exeggutor",
+  "name": "Exeggutor",
+  "types": [
+    "grass",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 95,
+    "defense": 85,
+    "spAtk": 125,
+    "spDef": 75,
+    "speed": 55
+  },
+  "abilities": [
+    "Chlorophyll",
+    "Harvest"
+  ],
+  "description": "When they work together, Exeggutor’s three heads can put out powerful psychic energy. Cloudy days make this Pokémon sluggish.",
+  "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png"
+}

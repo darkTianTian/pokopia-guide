@@ -1,0 +1,23 @@
+{
+  "id": 440,
+  "slug": "happiny",
+  "name": "ピンプク",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 100,
+    "attack": 5,
+    "defense": 5,
+    "spAtk": 15,
+    "spDef": 65,
+    "speed": 30
+  },
+  "abilities": [
+    "しぜんかいふく",
+    "てんのめぐみ",
+    "フレンドガード"
+  ],
+  "description": "仲良くなった　相手には　大事な 丸い　石を　貸してあげる。 返さないと　泣きだし　大暴れ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/happiny.png"
+}

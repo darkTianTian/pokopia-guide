@@ -1,0 +1,23 @@
+{
+  "id": 54,
+  "slug": "psyduck",
+  "name": "Psyduck",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 52,
+    "defense": 48,
+    "spAtk": 65,
+    "spDef": 50,
+    "speed": 55
+  },
+  "abilities": [
+    "Damp",
+    "Cloud Nine",
+    "Swift Swim"
+  ],
+  "description": "Suffers perpetual headaches. If the agony grows too great, Psyduck's latent power erupts, contrary to Psyduck's intent. Ergo, I am exploring ways to ease the pain.",
+  "image": "https://assets.pokopiaguide.com/pokemon/psyduck.png"
+}

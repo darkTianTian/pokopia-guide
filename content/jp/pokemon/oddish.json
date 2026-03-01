@@ -1,0 +1,23 @@
+{
+  "id": 43,
+  "slug": "oddish",
+  "name": "ナゾノクサ",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 50,
+    "defense": 55,
+    "spAtk": 75,
+    "spDef": 65,
+    "speed": 30
+  },
+  "abilities": [
+    "ようりょくそ",
+    "にげあし"
+  ],
+  "description": "昼間は　太陽を　避けるため 冷たい　地面に　もぐっている。 月の光を　浴びて　育つ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/oddish.png"
+}

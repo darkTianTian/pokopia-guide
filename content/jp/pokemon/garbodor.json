@@ -1,0 +1,23 @@
+{
+  "id": 569,
+  "slug": "garbodor",
+  "name": "ダストダス",
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 95,
+    "defense": 82,
+    "spAtk": 60,
+    "spDef": 82,
+    "speed": 75
+  },
+  "abilities": [
+    "あくしゅう",
+    "くだけるよろい",
+    "ゆうばく"
+  ],
+  "description": "右腕から　出す　毒液は 弱った　生物が　浴びれば 即死するほど　危険な　シロモノ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/garbodor.png"
+}

@@ -1,0 +1,24 @@
+{
+  "id": 272,
+  "slug": "ludicolo",
+  "name": "Ludicolo",
+  "types": [
+    "water",
+    "grass"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 70,
+    "defense": 70,
+    "spAtk": 90,
+    "spDef": 100,
+    "speed": 70
+  },
+  "abilities": [
+    "Swift Swim",
+    "Rain Dish",
+    "Own Tempo"
+  ],
+  "description": "If it hears festive music, it begins moving in rhythm in order to amplify its power.",
+  "image": "https://assets.pokopiaguide.com/pokemon/ludicolo.png"
+}

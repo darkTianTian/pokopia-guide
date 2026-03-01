@@ -1,0 +1,23 @@
+{
+  "id": 236,
+  "slug": "tyrogue",
+  "name": "tyrogue",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 35,
+    "defense": 35,
+    "spAtk": 35,
+    "spDef": 35,
+    "speed": 35
+  },
+  "abilities": [
+    "guts",
+    "steadfast",
+    "vital-spirit"
+  ],
+  "description": "Even though it is small, it can’t be ignored because it will slug any handy target without warning.",
+  "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png"
+}

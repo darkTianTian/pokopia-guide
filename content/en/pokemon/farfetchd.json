@@ -1,0 +1,24 @@
+{
+  "id": 83,
+  "slug": "farfetchd",
+  "name": "Farfetch’d",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 52,
+    "attack": 90,
+    "defense": 55,
+    "spAtk": 58,
+    "spDef": 62,
+    "speed": 60
+  },
+  "abilities": [
+    "Keen Eye",
+    "Inner Focus",
+    "Defiant"
+  ],
+  "description": "They use a plant stalk as a weapon, but not all of them use it in the same way. Several distinct styles of stalk fighting have been observed.",
+  "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png"
+}

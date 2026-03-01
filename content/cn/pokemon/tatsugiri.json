@@ -1,0 +1,23 @@
+{
+  "id": 978,
+  "slug": "tatsugiri",
+  "name": "tatsugiri",
+  "types": [
+    "dragon",
+    "water"
+  ],
+  "stats": {
+    "hp": 68,
+    "attack": 50,
+    "defense": 60,
+    "spAtk": 120,
+    "spDef": 95,
+    "speed": 82
+  },
+  "abilities": [
+    "commander",
+    "storm-drain"
+  ],
+  "description": "Tatsugiri is an extremely cunning Pokémon. It feigns weakness to lure in prey, then orders its partner to attack.",
+  "image": "https://assets.pokopiaguide.com/pokemon/tatsugiri.png"
+}

@@ -1,0 +1,22 @@
+{
+  "id": 8,
+  "slug": "wartortle",
+  "name": "Wartortle",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 59,
+    "attack": 63,
+    "defense": 80,
+    "spAtk": 65,
+    "spDef": 80,
+    "speed": 58
+  },
+  "abilities": [
+    "Torrent",
+    "Rain Dish"
+  ],
+  "description": "It cleverly controls its furry ears and tail to maintain its balance while swimming.",
+  "image": "https://assets.pokopiaguide.com/pokemon/wartortle.png"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 416,
+  "slug": "vespiquen",
+  "name": "ビークイン",
+  "types": [
+    "bug",
+    "flying"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 80,
+    "defense": 102,
+    "spAtk": 80,
+    "spDef": 102,
+    "speed": 40
+  },
+  "abilities": [
+    "プレッシャー",
+    "きんちょうかん"
+  ],
+  "description": "フェロモンを　放つ　量が 多い　ビークインほど　多くの ミツハニーを　従えている。",
+  "image": "https://assets.pokopiaguide.com/pokemon/vespiquen.png"
+}

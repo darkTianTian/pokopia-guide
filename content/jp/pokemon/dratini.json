@@ -1,0 +1,22 @@
+{
+  "id": 147,
+  "slug": "dratini",
+  "name": "ミニリュウ",
+  "types": [
+    "dragon"
+  ],
+  "stats": {
+    "hp": 41,
+    "attack": 64,
+    "defense": 45,
+    "spAtk": 50,
+    "spDef": 50,
+    "speed": 50
+  },
+  "abilities": [
+    "だっぴ",
+    "ふしぎなうろこ"
+  ],
+  "description": "ながく　幻と　言われていた。 額にある　小さな　突起は 成長途中の　ツノ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/dratini.png"
+}

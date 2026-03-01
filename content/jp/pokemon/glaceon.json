@@ -1,0 +1,22 @@
+{
+  "id": 471,
+  "slug": "glaceon",
+  "name": "グレイシア",
+  "types": [
+    "ice"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 60,
+    "defense": 110,
+    "spAtk": 130,
+    "spDef": 95,
+    "speed": 65
+  },
+  "abilities": [
+    "ゆきがくれ",
+    "アイスボディ"
+  ],
+  "description": "グレイシアが　放つ　冷気は パウダースノーを　つくりだし スキー場に　ひっぱりだこ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/glaceon.png"
+}

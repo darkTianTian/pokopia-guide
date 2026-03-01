@@ -1,0 +1,23 @@
+{
+  "id": 103,
+  "slug": "exeggutor",
+  "name": "ナッシー",
+  "types": [
+    "grass",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 95,
+    "defense": 85,
+    "spAtk": 125,
+    "spDef": 75,
+    "speed": 55
+  },
+  "abilities": [
+    "ようりょくそ",
+    "しゅうかく"
+  ],
+  "description": "３つの　頭が　一丸となって 撃つ　サイコパワーは　強力。 空が　曇ると　動きが　鈍る。",
+  "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png"
+}

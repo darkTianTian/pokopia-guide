@@ -1,0 +1,24 @@
+{
+  "id": 131,
+  "slug": "lapras",
+  "name": "lapras",
+  "types": [
+    "water",
+    "ice"
+  ],
+  "stats": {
+    "hp": 130,
+    "attack": 85,
+    "defense": 80,
+    "spAtk": 85,
+    "spDef": 95,
+    "speed": 60
+  },
+  "abilities": [
+    "water-absorb",
+    "shell-armor",
+    "hydration"
+  ],
+  "description": "Crossing icy seas is no issue for this cold-resistant Pokémon. Its smooth skin is a little cool to the touch.",
+  "image": "https://assets.pokopiaguide.com/pokemon/lapras.png"
+}

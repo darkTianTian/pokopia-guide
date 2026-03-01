@@ -1,0 +1,24 @@
+{
+  "id": 167,
+  "slug": "spinarak",
+  "name": "Spinarak",
+  "types": [
+    "bug",
+    "poison"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 60,
+    "defense": 40,
+    "spAtk": 40,
+    "spDef": 40,
+    "speed": 30
+  },
+  "abilities": [
+    "Swarm",
+    "Insomnia",
+    "Sniper"
+  ],
+  "description": "Although the poison from its fangs isn’t that strong, it’s potent enough to weaken prey that gets caught in its web.",
+  "image": "https://assets.pokopiaguide.com/pokemon/spinarak.png"
+}

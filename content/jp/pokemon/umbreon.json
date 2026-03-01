@@ -1,0 +1,22 @@
+{
+  "id": 197,
+  "slug": "umbreon",
+  "name": "ブラッキー",
+  "types": [
+    "dark"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 65,
+    "defense": 110,
+    "spAtk": 60,
+    "spDef": 130,
+    "speed": 65
+  },
+  "abilities": [
+    "シンクロ",
+    "せいしんりょく"
+  ],
+  "description": "満月の　夜や　興奮 したとき　全身の　輪っか模様は 黄色く　光る。",
+  "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png"
+}

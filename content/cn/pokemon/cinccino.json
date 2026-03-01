@@ -1,0 +1,23 @@
+{
+  "id": 573,
+  "slug": "cinccino",
+  "name": "cinccino",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 95,
+    "defense": 60,
+    "spAtk": 65,
+    "spDef": 60,
+    "speed": 115
+  },
+  "abilities": [
+    "cute-charm",
+    "technician",
+    "skill-link"
+  ],
+  "description": "A special oil that seeps through their fur helps them avoid attacks. The oil fetches a high price at market.",
+  "image": "https://assets.pokopiaguide.com/pokemon/cinccino.png"
+}

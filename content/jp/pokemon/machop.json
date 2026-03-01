@@ -1,0 +1,23 @@
+{
+  "id": 66,
+  "slug": "machop",
+  "name": "ワンリキー",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 80,
+    "defense": 50,
+    "spAtk": 35,
+    "spDef": 35,
+    "speed": 35
+  },
+  "abilities": [
+    "こんじょう",
+    "ノーガード",
+    "ふくつのこころ"
+  ],
+  "description": "いつも　パワフル。　体力が 有り余っているので　暇つぶしに 岩を持ち上げ　さらに　強くなる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/machop.png"
+}

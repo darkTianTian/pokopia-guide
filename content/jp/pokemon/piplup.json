@@ -1,0 +1,22 @@
+{
+  "id": 393,
+  "slug": "piplup",
+  "name": "ポッチャマ",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 53,
+    "attack": 51,
+    "defense": 53,
+    "spAtk": 61,
+    "spDef": 56,
+    "speed": 40
+  },
+  "abilities": [
+    "げきりゅう",
+    "かちき"
+  ],
+  "description": "プライドが　高く　人から 食べ物を　もらう　ことを　嫌う。 長い　産毛が　寒さを　防ぐ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/piplup.png"
+}

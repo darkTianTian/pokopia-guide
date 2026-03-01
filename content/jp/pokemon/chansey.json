@@ -1,0 +1,23 @@
+{
+  "id": 113,
+  "slug": "chansey",
+  "name": "ラッキー",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 250,
+    "attack": 5,
+    "defense": 5,
+    "spAtk": 35,
+    "spDef": 105,
+    "speed": 50
+  },
+  "abilities": [
+    "しぜんかいふく",
+    "てんのめぐみ",
+    "いやしのこころ"
+  ],
+  "description": "もともとは　動きが　鈍かった。 タマゴを　狙うものから　守るため 逃げ足が　速くなった。",
+  "image": "https://assets.pokopiaguide.com/pokemon/chansey.png"
+}

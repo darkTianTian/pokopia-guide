@@ -1,0 +1,23 @@
+{
+  "id": 296,
+  "slug": "makuhita",
+  "name": "マクノシタ",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 72,
+    "attack": 60,
+    "defense": 30,
+    "spAtk": 20,
+    "spDef": 30,
+    "speed": 25
+  },
+  "abilities": [
+    "あついしぼう",
+    "こんじょう",
+    "ちからずく"
+  ],
+  "description": "強い　マクノシタを　育てるために トレーナーたちが　伝統的に 作る　ナベ料理が　あるという。",
+  "image": "https://assets.pokopiaguide.com/pokemon/makuhita.png"
+}

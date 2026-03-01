@@ -1,0 +1,23 @@
+{
+  "id": 149,
+  "slug": "dragonite",
+  "name": "カイリュー",
+  "types": [
+    "dragon",
+    "flying"
+  ],
+  "stats": {
+    "hp": 91,
+    "attack": 134,
+    "defense": 95,
+    "spAtk": 100,
+    "spDef": 100,
+    "speed": 80
+  },
+  "abilities": [
+    "せいしんりょく",
+    "マルチスケイル"
+  ],
+  "description": "海の　化身と　呼ばれる。 カイリュー型の　彫像を 舳先に　付ける　船も　多い。",
+  "image": "https://assets.pokopiaguide.com/pokemon/dragonite.png"
+}

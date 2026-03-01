@@ -1,0 +1,22 @@
+{
+  "id": 148,
+  "slug": "dragonair",
+  "name": "Dragonair",
+  "types": [
+    "dragon"
+  ],
+  "stats": {
+    "hp": 61,
+    "attack": 84,
+    "defense": 65,
+    "spAtk": 70,
+    "spDef": 70,
+    "speed": 70
+  },
+  "abilities": [
+    "Shed Skin",
+    "Marvel Scale"
+  ],
+  "description": "This Pokémon gathers power in the orbs on its tail and controls the weather. When enshrouded by an aura, Dragonair has a mystical appearance.",
+  "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png"
+}

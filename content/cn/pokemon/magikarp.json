@@ -1,0 +1,22 @@
+{
+  "id": 129,
+  "slug": "magikarp",
+  "name": "magikarp",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 20,
+    "attack": 10,
+    "defense": 55,
+    "spAtk": 15,
+    "spDef": 20,
+    "speed": 80
+  },
+  "abilities": [
+    "swift-swim",
+    "rattled"
+  ],
+  "description": "A feeble, pitiful imbecile of a Pokémon that is nonetheless very hardy. Unperturbed by turbid water, it can be found living in all sorts of places.",
+  "image": "https://assets.pokopiaguide.com/pokemon/magikarp.png"
+}

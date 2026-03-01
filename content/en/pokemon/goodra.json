@@ -1,0 +1,23 @@
+{
+  "id": 706,
+  "slug": "goodra",
+  "name": "Goodra",
+  "types": [
+    "dragon"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 100,
+    "defense": 70,
+    "spAtk": 110,
+    "spDef": 150,
+    "speed": 80
+  },
+  "abilities": [
+    "Sap Sipper",
+    "Hydration",
+    "Gooey"
+  ],
+  "description": "Able to freely control the hardness of its metallic shell. It loathes solitude and is extremely clingy—it will fume and run riot if those dearest to it ever leave its side.",
+  "image": "https://assets.pokopiaguide.com/pokemon/goodra.png"
+}

@@ -1,0 +1,24 @@
+{
+  "id": 74,
+  "slug": "geodude",
+  "name": "geodude",
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 80,
+    "defense": 100,
+    "spAtk": 30,
+    "spDef": 30,
+    "speed": 20
+  },
+  "abilities": [
+    "rock-head",
+    "sturdy",
+    "sand-veil"
+  ],
+  "description": "Makes its home in mountainous regions, using its arms to climb along harsh mountain roads. Can be troublesome—carelessly kicking one will cause it to fly into a rage and chase after you.",
+  "image": "https://assets.pokopiaguide.com/pokemon/geodude.png"
+}

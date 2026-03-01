@@ -1,0 +1,23 @@
+{
+  "id": 133,
+  "slug": "eevee",
+  "name": "イーブイ",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 55,
+    "defense": 50,
+    "spAtk": 45,
+    "spDef": 65,
+    "speed": 55
+  },
+  "abilities": [
+    "にげあし",
+    "てきおうりょく",
+    "きけんよち"
+  ],
+  "description": "不安定な　遺伝子の　おかげで さまざまな　進化の　可能性を 秘めている　特殊な　ポケモン。",
+  "image": "https://assets.pokopiaguide.com/pokemon/eevee.png"
+}

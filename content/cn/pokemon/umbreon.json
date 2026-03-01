@@ -1,0 +1,22 @@
+{
+  "id": 197,
+  "slug": "umbreon",
+  "name": "umbreon",
+  "types": [
+    "dark"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 65,
+    "defense": 110,
+    "spAtk": 60,
+    "spDef": 130,
+    "speed": 65
+  },
+  "abilities": [
+    "synchronize",
+    "inner-focus"
+  ],
+  "description": "It is most active in the wee hours of the night, when moonlight bathes the land. Its large eyes can pierce the darkness and perceive prey with absolute clarity.",
+  "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png"
+}

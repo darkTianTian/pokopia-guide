@@ -1,0 +1,24 @@
+{
+  "id": 282,
+  "slug": "gardevoir",
+  "name": "サーナイト",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 68,
+    "attack": 65,
+    "defense": 65,
+    "spAtk": 125,
+    "spDef": 115,
+    "speed": 80
+  },
+  "abilities": [
+    "シンクロ",
+    "トレース",
+    "テレパシー"
+  ],
+  "description": "トレーナーを　守るためなら サイコパワーを　使いきり　小さな ブラックホールを　つくりだす。",
+  "image": "https://assets.pokopiaguide.com/pokemon/gardevoir.png"
+}

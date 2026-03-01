@@ -1,0 +1,22 @@
+{
+  "id": 255,
+  "slug": "torchic",
+  "name": "アチャモ",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 60,
+    "defense": 40,
+    "spAtk": 70,
+    "spDef": 50,
+    "speed": 45
+  },
+  "abilities": [
+    "もうか",
+    "かそく"
+  ],
+  "description": "体内に　炎を　燃やす　場所が　あるので 抱きしめると　ぽかぽか　とっても　暖かい。 全身　ふかふかの　羽毛に　覆われている。",
+  "image": "https://assets.pokopiaguide.com/pokemon/torchic.png"
+}

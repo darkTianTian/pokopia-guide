@@ -1,0 +1,22 @@
+{
+  "id": 172,
+  "slug": "pichu",
+  "name": "ピチュー",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 20,
+    "attack": 40,
+    "defense": 15,
+    "spAtk": 35,
+    "spDef": 35,
+    "speed": 60
+  },
+  "abilities": [
+    "せいでんき",
+    "ひらいしん"
+  ],
+  "description": "頬の　電気袋は　小さく ちょっとでも　電気が　あふれると 自分自身が　痺れてしまう。",
+  "image": "https://assets.pokopiaguide.com/pokemon/pichu.png"
+}

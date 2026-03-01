@@ -1,0 +1,23 @@
+{
+  "id": 706,
+  "slug": "goodra",
+  "name": "ヌメルゴン",
+  "types": [
+    "dragon"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 100,
+    "defense": 70,
+    "spAtk": 110,
+    "spDef": 150,
+    "speed": 80
+  },
+  "abilities": [
+    "そうしょく",
+    "うるおいボディ",
+    "ぬめぬめ"
+  ],
+  "description": "長い　ツノを　伸ばす　勢いで 攻撃。　威力は　ヘビー級 ボクサーの　パンチの　１００倍だ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/goodra.png"
+}

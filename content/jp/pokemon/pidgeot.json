@@ -1,0 +1,24 @@
+{
+  "id": 18,
+  "slug": "pidgeot",
+  "name": "ピジョット",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 83,
+    "attack": 80,
+    "defense": 75,
+    "spAtk": 70,
+    "spDef": 70,
+    "speed": 101
+  },
+  "abilities": [
+    "するどいめ",
+    "ちどりあし",
+    "はとむね"
+  ],
+  "description": "マッハ２で　飛行し　エサを探す。 その　大きな　ツメは　武器と しても　恐れられている。",
+  "image": "https://assets.pokopiaguide.com/pokemon/pidgeot.png"
+}

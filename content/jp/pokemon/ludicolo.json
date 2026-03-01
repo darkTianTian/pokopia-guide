@@ -1,0 +1,24 @@
+{
+  "id": 272,
+  "slug": "ludicolo",
+  "name": "ルンパッパ",
+  "types": [
+    "water",
+    "grass"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 70,
+    "defense": 70,
+    "spAtk": 90,
+    "spDef": 100,
+    "speed": 70
+  },
+  "abilities": [
+    "すいすい",
+    "あめうけざら",
+    "マイペース"
+  ],
+  "description": "陽気な　リズムに　あわせて 体を　動かす　ことで パワーを　増幅させて　いるのだ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/ludicolo.png"
+}

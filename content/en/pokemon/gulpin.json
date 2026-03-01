@@ -1,0 +1,23 @@
+{
+  "id": 316,
+  "slug": "gulpin",
+  "name": "Gulpin",
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 43,
+    "defense": 53,
+    "spAtk": 43,
+    "spDef": 53,
+    "speed": 40
+  },
+  "abilities": [
+    "Liquid Ooze",
+    "Sticky Hold",
+    "Gluttony"
+  ],
+  "description": "Most of Gulpin’s body is made up of its stomach—its heart and brain are very small in comparison. This Pokémon’s stomach contains special enzymes that dissolve anything.",
+  "image": "https://assets.pokopiaguide.com/pokemon/gulpin.png"
+}

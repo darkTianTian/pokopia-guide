@@ -1,0 +1,23 @@
+{
+  "id": 569,
+  "slug": "garbodor",
+  "name": "garbodor",
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 95,
+    "defense": 82,
+    "spAtk": 60,
+    "spDef": 82,
+    "speed": 75
+  },
+  "abilities": [
+    "stench",
+    "weak-armor",
+    "aftermath"
+  ],
+  "description": "The toxic liquid it launches from its right arm is so virulent that it can kill a weakened creature instantly.",
+  "image": "https://assets.pokopiaguide.com/pokemon/garbodor.png"
+}

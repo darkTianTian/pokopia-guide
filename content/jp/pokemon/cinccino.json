@@ -1,0 +1,23 @@
+{
+  "id": 573,
+  "slug": "cinccino",
+  "name": "チラチーノ",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 95,
+    "defense": 60,
+    "spAtk": 65,
+    "spDef": 60,
+    "speed": 115
+  },
+  "abilities": [
+    "メロメロボディ",
+    "テクニシャン",
+    "スキルリンク"
+  ],
+  "description": "特別な　油の　染みた　毛は 攻撃を　受け流す。　油は 高値で　取り引き　されている。",
+  "image": "https://assets.pokopiaguide.com/pokemon/cinccino.png"
+}

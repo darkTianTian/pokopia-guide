@@ -1,0 +1,24 @@
+{
+  "id": 79,
+  "slug": "slowpoke",
+  "name": "Slowpoke",
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 65,
+    "defense": 65,
+    "spAtk": 40,
+    "spDef": 40,
+    "speed": 15
+  },
+  "abilities": [
+    "Oblivious",
+    "Own Tempo",
+    "Regenerator"
+  ],
+  "description": "When this Pokémon’s tail is soaked in water, sweetness seeps from it. Slowpoke uses this trait to lure in and fish up other Pokémon.",
+  "image": "https://assets.pokopiaguide.com/pokemon/slowpoke.png"
+}

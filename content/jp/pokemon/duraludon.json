@@ -1,0 +1,24 @@
+{
+  "id": 884,
+  "slug": "duraludon",
+  "name": "ジュラルドン",
+  "types": [
+    "steel",
+    "dragon"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 95,
+    "defense": 115,
+    "spAtk": 120,
+    "spDef": 50,
+    "speed": 85
+  },
+  "abilities": [
+    "ライトメタル",
+    "ヘヴィメタル",
+    "すじがねいり"
+  ],
+  "description": "特殊な　金属の　体は 軽く　身のこなしは　抜群。 雨が　苦手で　洞窟に　棲む。",
+  "image": "https://assets.pokopiaguide.com/pokemon/duraludon.png"
+}

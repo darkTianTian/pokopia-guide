@@ -1,0 +1,24 @@
+{
+  "id": 74,
+  "slug": "geodude",
+  "name": "イシツブテ",
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 80,
+    "defense": 100,
+    "spAtk": 30,
+    "spDef": 30,
+    "speed": 20
+  },
+  "abilities": [
+    "いしあたま",
+    "がんじょう",
+    "すながくれ"
+  ],
+  "description": "山道　などに　多く　生息。 気づかずに　踏みつけると 怒りだすので　要注意だ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/geodude.png"
+}

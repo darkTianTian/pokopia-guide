@@ -1,0 +1,23 @@
+{
+  "id": 69,
+  "slug": "bellsprout",
+  "name": "マダツボミ",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 75,
+    "defense": 35,
+    "spAtk": 70,
+    "spDef": 30,
+    "speed": 40
+  },
+  "abilities": [
+    "ようりょくそ",
+    "くいしんぼう"
+  ],
+  "description": "温度が　高く　湿度の　ある ところを　好む。ツルを　使って 小さなムシを　捕らえて　食べる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/bellsprout.png"
+}

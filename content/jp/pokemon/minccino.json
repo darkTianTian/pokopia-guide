@@ -1,0 +1,23 @@
+{
+  "id": 572,
+  "slug": "minccino",
+  "name": "チラーミィ",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 50,
+    "defense": 40,
+    "spAtk": 40,
+    "spDef": 40,
+    "speed": 75
+  },
+  "abilities": [
+    "メロメロボディ",
+    "テクニシャン",
+    "スキルリンク"
+  ],
+  "description": "しっぽで　なであって　挨拶。 しっぽの　毛が　大きな　ほうが 少し　威張っているぞ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/minccino.png"
+}

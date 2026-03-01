@@ -1,0 +1,22 @@
+{
+  "id": 8,
+  "slug": "wartortle",
+  "name": "カメール",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 59,
+    "attack": 63,
+    "defense": 80,
+    "spAtk": 65,
+    "spDef": 80,
+    "speed": 58
+  },
+  "abilities": [
+    "げきりゅう",
+    "あめうけざら"
+  ],
+  "description": "ふさふさの　耳と　しっぽを たくみに　操って　水中での バランスを　たもつ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/wartortle.png"
+}

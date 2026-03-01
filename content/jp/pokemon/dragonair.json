@@ -1,0 +1,22 @@
+{
+  "id": 148,
+  "slug": "dragonair",
+  "name": "ハクリュー",
+  "types": [
+    "dragon"
+  ],
+  "stats": {
+    "hp": 61,
+    "attack": 84,
+    "defense": 65,
+    "spAtk": 70,
+    "spDef": 70,
+    "speed": 70
+  },
+  "abilities": [
+    "だっぴ",
+    "ふしぎなうろこ"
+  ],
+  "description": "きれいな　海や　湖に　棲む。 天候を　操る　力で 風に　乗り　空へと　昇る。",
+  "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png"
+}

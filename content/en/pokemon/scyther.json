@@ -1,0 +1,24 @@
+{
+  "id": 123,
+  "slug": "scyther",
+  "name": "Scyther",
+  "types": [
+    "bug",
+    "flying"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 110,
+    "defense": 80,
+    "spAtk": 55,
+    "spDef": 80,
+    "speed": 105
+  },
+  "abilities": [
+    "Swarm",
+    "Technician",
+    "Steadfast"
+  ],
+  "description": "The large, wickedly sharp scythes on its forearms are truly fearsome weapons. Prey's attempts to flee are unfailingly thwarted by this Pokémon's nimble motions.",
+  "image": "https://assets.pokopiaguide.com/pokemon/scyther.png"
+}

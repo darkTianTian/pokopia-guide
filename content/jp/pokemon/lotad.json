@@ -1,0 +1,24 @@
+{
+  "id": 270,
+  "slug": "lotad",
+  "name": "ハスボー",
+  "types": [
+    "water",
+    "grass"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 30,
+    "defense": 30,
+    "spAtk": 40,
+    "spDef": 50,
+    "speed": 30
+  },
+  "abilities": [
+    "すいすい",
+    "あめうけざら",
+    "マイペース"
+  ],
+  "description": "葉っぱが　大きく　なりすぎて 重くなって　しまったため　水に 浮かんで　暮らすように　なった。",
+  "image": "https://assets.pokopiaguide.com/pokemon/lotad.png"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 106,
+  "slug": "hitmonlee",
+  "name": "サワムラー",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 120,
+    "defense": 53,
+    "spAtk": 35,
+    "spDef": 110,
+    "speed": 87
+  },
+  "abilities": [
+    "じゅうなん",
+    "すてみ",
+    "かるわざ"
+  ],
+  "description": "脚が　自由に　伸び縮みして 遠く　離れている　場合でも 相手を　蹴り上げることが　できる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/hitmonlee.png"
+}

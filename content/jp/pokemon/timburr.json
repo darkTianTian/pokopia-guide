@@ -1,0 +1,23 @@
+{
+  "id": 532,
+  "slug": "timburr",
+  "name": "ドッコラー",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 55,
+    "spAtk": 25,
+    "spDef": 35,
+    "speed": 35
+  },
+  "abilities": [
+    "こんじょう",
+    "ちからずく",
+    "てつのこぶし"
+  ],
+  "description": "自分の　３倍くらいの　角材を 持つように　なった　ドッコラーは 進化の　日が　近い。",
+  "image": "https://assets.pokopiaguide.com/pokemon/timburr.png"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 6,
+  "slug": "charizard",
+  "name": "Charizard",
+  "types": [
+    "fire",
+    "flying"
+  ],
+  "stats": {
+    "hp": 78,
+    "attack": 84,
+    "defense": 78,
+    "spAtk": 109,
+    "spDef": 85,
+    "speed": 100
+  },
+  "abilities": [
+    "Blaze",
+    "Solar Power"
+  ],
+  "description": "Its wings can carry this Pokémon close to an altitude of 4,600 feet. It blows out fire at very high temperatures.",
+  "image": "https://assets.pokopiaguide.com/pokemon/charizard.png"
+}

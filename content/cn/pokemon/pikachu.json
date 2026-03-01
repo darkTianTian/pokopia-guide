@@ -1,0 +1,22 @@
+{
+  "id": 25,
+  "slug": "pikachu",
+  "name": "pikachu",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 55,
+    "defense": 40,
+    "spAtk": 50,
+    "spDef": 50,
+    "speed": 90
+  },
+  "abilities": [
+    "static",
+    "lightning-rod"
+  ],
+  "description": "Possesses cheek sacs in which it stores electricity. This clever forest-dweller roasts tough berries with an electric shock before consuming them.",
+  "image": "https://assets.pokopiaguide.com/pokemon/pikachu.png"
+}

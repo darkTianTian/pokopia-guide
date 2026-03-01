@@ -1,0 +1,22 @@
+{
+  "id": 471,
+  "slug": "glaceon",
+  "name": "Glaceon",
+  "types": [
+    "ice"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 60,
+    "defense": 110,
+    "spAtk": 130,
+    "spDef": 95,
+    "speed": 65
+  },
+  "abilities": [
+    "Snow Cloak",
+    "Ice Body"
+  ],
+  "description": "Glaceon is able to lower its body temperature very quickly. It freezes the atmosphere, creating diamond dust that glitters like gems while it flutters and dances around.",
+  "image": "https://assets.pokopiaguide.com/pokemon/glaceon.png"
+}

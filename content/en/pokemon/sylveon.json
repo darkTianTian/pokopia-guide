@@ -1,0 +1,22 @@
+{
+  "id": 700,
+  "slug": "sylveon",
+  "name": "Sylveon",
+  "types": [
+    "fairy"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 65,
+    "defense": 65,
+    "spAtk": 110,
+    "spDef": 130,
+    "speed": 60
+  },
+  "abilities": [
+    "Cute Charm",
+    "Pixilate"
+  ],
+  "description": "It emits a soothing aura from its ribbon-shaped organs. It wraps these appendages around quarrelers to instantly restore calm to the situation.",
+  "image": "https://assets.pokopiaguide.com/pokemon/sylveon.png"
+}

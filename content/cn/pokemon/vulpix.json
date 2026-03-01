@@ -1,0 +1,22 @@
+{
+  "id": 37,
+  "slug": "vulpix",
+  "name": "vulpix",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 38,
+    "attack": 41,
+    "defense": 40,
+    "spAtk": 50,
+    "spDef": 65,
+    "speed": 65
+  },
+  "abilities": [
+    "flash-fire",
+    "drought"
+  ],
+  "description": "In its belly burns a fire, which Vulpix spits out in the form of fireballs. When young, this Pokémon has but one white tail. As the Pokémon matures, this single tail splits into six.",
+  "image": "https://assets.pokopiaguide.com/pokemon/vulpix.png"
+}

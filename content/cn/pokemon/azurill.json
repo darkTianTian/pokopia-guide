@@ -1,0 +1,24 @@
+{
+  "id": 298,
+  "slug": "azurill",
+  "name": "azurill",
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 20,
+    "defense": 40,
+    "spAtk": 20,
+    "spDef": 40,
+    "speed": 20
+  },
+  "abilities": [
+    "thick-fat",
+    "huge-power",
+    "sap-sipper"
+  ],
+  "description": "Although Azurill are normally docile, an angry one will swing around the big ball on its tail and try to smash its opponents.",
+  "image": "https://assets.pokopiaguide.com/pokemon/azurill.png"
+}

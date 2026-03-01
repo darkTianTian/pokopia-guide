@@ -1,0 +1,23 @@
+{
+  "id": 572,
+  "slug": "minccino",
+  "name": "Minccino",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 50,
+    "defense": 40,
+    "spAtk": 40,
+    "spDef": 40,
+    "speed": 75
+  },
+  "abilities": [
+    "Cute Charm",
+    "Technician",
+    "Skill Link"
+  ],
+  "description": "They pet each other with their tails as a form of greeting. Of the two, the one whose tail is fluffier is a bit more boastful.",
+  "image": "https://assets.pokopiaguide.com/pokemon/minccino.png"
+}

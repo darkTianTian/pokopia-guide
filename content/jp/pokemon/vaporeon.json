@@ -1,0 +1,22 @@
+{
+  "id": 134,
+  "slug": "vaporeon",
+  "name": "シャワーズ",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 130,
+    "attack": 65,
+    "defense": 60,
+    "spAtk": 110,
+    "spDef": 95,
+    "speed": 65
+  },
+  "abilities": [
+    "ちょすい",
+    "うるおいボディ"
+  ],
+  "description": "体の　細胞の　つくりが 水の　分子と　似ている。 水に　溶けると　見えなくなる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/vaporeon.png"
+}

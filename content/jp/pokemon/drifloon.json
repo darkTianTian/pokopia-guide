@@ -1,0 +1,24 @@
+{
+  "id": 425,
+  "slug": "drifloon",
+  "name": "フワンテ",
+  "types": [
+    "ghost",
+    "flying"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 50,
+    "defense": 34,
+    "spAtk": 60,
+    "spDef": 44,
+    "speed": 70
+  },
+  "abilities": [
+    "ゆうばく",
+    "かるわざ",
+    "ねつぼうそう"
+  ],
+  "description": "魂が　集まり　生まれた。 湿気の　多い　季節には 大量に　現れることも。",
+  "image": "https://assets.pokopiaguide.com/pokemon/drifloon.png"
+}
