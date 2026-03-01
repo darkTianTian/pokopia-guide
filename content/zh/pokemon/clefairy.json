@@ -1,7 +1,7 @@
 {
   "id": 35,
   "slug": "clefairy",
-  "name": "clefairy",
+  "name": "皮皮",
   "types": [
     "fairy"
   ],
@@ -14,10 +14,10 @@
     "speed": 35
   },
   "abilities": [
-    "cute-charm",
-    "magic-guard",
-    "friend-guard"
+    "迷人之躯",
+    "魔法防守",
+    "友情防守"
   ],
-  "description": "It can be found in quiet mountain areas on a full moon's night. Its dancing and its tiny, faintly glowing wings confer upon it a lovely fairylike quality.",
+  "description": "因可爱的举止和叫声 而广受欢迎的宝可梦。 不过很少被人发现。",
   "image": "https://assets.pokopiaguide.com/pokemon/clefairy.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 573,
   "slug": "cinccino",
-  "name": "cinccino",
+  "name": "奇诺栗鼠",
   "types": [
     "normal"
   ],
@@ -14,10 +14,10 @@
     "speed": 115
   },
   "abilities": [
-    "cute-charm",
-    "technician",
-    "skill-link"
+    "迷人之躯",
+    "技术高手",
+    "连续攻击"
   ],
-  "description": "A special oil that seeps through their fur helps them avoid attacks. The oil fetches a high price at market.",
+  "description": "覆盖着特别油脂的毛发 可以挡住攻击。这种油 以高价在市场上流通。",
   "image": "https://assets.pokopiaguide.com/pokemon/cinccino.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 37,
   "slug": "vulpix",
-  "name": "vulpix",
+  "name": "六尾",
   "types": [
     "fire"
   ],
@@ -14,9 +14,9 @@
     "speed": 65
   },
   "abilities": [
-    "flash-fire",
-    "drought"
+    "引火",
+    "日照"
   ],
-  "description": "In its belly burns a fire, which Vulpix spits out in the form of fireballs. When young, this Pokémon has but one white tail. As the Pokémon matures, this single tail splits into six.",
+  "description": "随着身体的成长， ６根尾巴的毛发也会变得更漂亮。 紧紧抱着它时能感到微微的温暖。",
   "image": "https://assets.pokopiaguide.com/pokemon/vulpix.png"
 }

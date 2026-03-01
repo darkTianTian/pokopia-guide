@@ -1,7 +1,7 @@
 {
   "id": 425,
   "slug": "drifloon",
-  "name": "drifloon",
+  "name": "飘飘球",
   "types": [
     "ghost",
     "flying"
@@ -15,10 +15,10 @@
     "speed": 70
   },
   "abilities": [
-    "aftermath",
-    "unburden",
-    "flare-boost"
+    "引爆",
+    "轻装",
+    "受热激升"
   ],
-  "description": "Said to lure away young children and carry them off to the afterlife. Some whisper that Drifloon are formed of reincarnated human souls, but these rumors are as yet unconfirmed.",
+  "description": "因魂魄聚集在一起而诞生。 到了湿气大的季节 就有可能大量出现。",
   "image": "https://assets.pokopiaguide.com/pokemon/drifloon.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 25,
   "slug": "pikachu",
-  "name": "pikachu",
+  "name": "皮卡丘",
   "types": [
     "electric"
   ],
@@ -14,9 +14,9 @@
     "speed": 90
   },
   "abilities": [
-    "static",
-    "lightning-rod"
+    "静电",
+    "避雷针"
   ],
-  "description": "Possesses cheek sacs in which it stores electricity. This clever forest-dweller roasts tough berries with an electric shock before consuming them.",
+  "description": "皮卡丘们把尾巴 贴在一起交换电流， 其实是在互相打招呼。",
   "image": "https://assets.pokopiaguide.com/pokemon/pikachu.png"
 }

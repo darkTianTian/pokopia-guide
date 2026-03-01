@@ -1,7 +1,7 @@
 {
   "id": 66,
   "slug": "machop",
-  "name": "machop",
+  "name": "腕力",
   "types": [
     "fighting"
   ],
@@ -14,10 +14,10 @@
     "speed": 35
   },
   "abilities": [
-    "guts",
-    "no-guard",
-    "steadfast"
+    "毅力",
+    "无防守",
+    "不屈之心"
   ],
-  "description": "Though as small as a child, it has strength enough to easily throw a well-built adult. Striving to become ever stronger, Machop trains by carrying a Graveler on its shoulders.",
+  "description": "时时刻刻都充满力量。 由于体力过剩而去举起岩石 消磨时间，也因此变得更强。",
   "image": "https://assets.pokopiaguide.com/pokemon/machop.png"
 }

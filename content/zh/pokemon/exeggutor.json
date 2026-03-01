@@ -1,7 +1,7 @@
 {
   "id": 103,
   "slug": "exeggutor",
-  "name": "exeggutor",
+  "name": "椰蛋树",
   "types": [
     "grass",
     "psychic"
@@ -15,9 +15,9 @@
     "speed": 55
   },
   "abilities": [
-    "chlorophyll",
-    "harvest"
+    "叶绿素",
+    "收获"
   ],
-  "description": "When they work together, Exeggutor’s three heads can put out powerful psychic energy. Cloudy days make this Pokémon sluggish.",
+  "description": "３个脑袋联合起来 能使出强大的精神力量。 天气变阴时动作会变得迟钝。",
   "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 298,
   "slug": "azurill",
-  "name": "azurill",
+  "name": "露力丽",
   "types": [
     "normal",
     "fairy"
@@ -15,10 +15,10 @@
     "speed": 20
   },
   "abilities": [
-    "thick-fat",
-    "huge-power",
-    "sap-sipper"
+    "厚脂肪",
+    "大力士",
+    "食草"
   ],
-  "description": "Although Azurill are normally docile, an angry one will swing around the big ball on its tail and try to smash its opponents.",
+  "description": "虽然是种性情温顺的宝可梦， 但生起气来，便会嗖嗖地挥舞起 尾巴上的大球来猛烈击打对手。",
   "image": "https://assets.pokopiaguide.com/pokemon/azurill.png"
 }

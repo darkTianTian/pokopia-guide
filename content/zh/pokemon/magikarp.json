@@ -1,7 +1,7 @@
 {
   "id": 129,
   "slug": "magikarp",
-  "name": "magikarp",
+  "name": "鲤鱼王",
   "types": [
     "water"
   ],
@@ -14,9 +14,9 @@
     "speed": 80
   },
   "abilities": [
-    "swift-swim",
-    "rattled"
+    "悠游自如",
+    "胆怯"
   ],
-  "description": "A feeble, pitiful imbecile of a Pokémon that is nonetheless very hardy. Unperturbed by turbid water, it can be found living in all sorts of places.",
+  "description": "又弱又可怜的宝可梦。 在水流比较快的地方 只能任凭自己被水冲走。",
   "image": "https://assets.pokopiaguide.com/pokemon/magikarp.png"
 }

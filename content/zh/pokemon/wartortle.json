@@ -1,7 +1,7 @@
 {
   "id": 8,
   "slug": "wartortle",
-  "name": "wartortle",
+  "name": "卡咪龟",
   "types": [
     "water"
   ],
@@ -14,9 +14,9 @@
     "speed": 58
   },
   "abilities": [
-    "torrent",
-    "rain-dish"
+    "激流",
+    "雨盘"
   ],
-  "description": "It cleverly controls its furry ears and tail to maintain its balance while swimming.",
+  "description": "会灵巧地摆动自己 毛茸茸的耳朵和尾巴， 借此在水中保持平衡。",
   "image": "https://assets.pokopiaguide.com/pokemon/wartortle.png"
 }

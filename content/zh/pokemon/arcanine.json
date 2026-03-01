@@ -1,7 +1,7 @@
 {
   "id": 59,
   "slug": "arcanine",
-  "name": "arcanine",
+  "name": "风速狗",
   "types": [
     "fire"
   ],
@@ -14,10 +14,10 @@
     "speed": 95
   },
   "abilities": [
-    "intimidate",
-    "flash-fire",
-    "justified"
+    "威吓",
+    "引火",
+    "正义之心"
   ],
-  "description": "Snaps at its foes with fangs cloaked in blazing flame. Despite its bulk, it deftly feints every which way, leading opponents on a deceptively merry chase as it all but dances around them.",
+  "description": "从古时候起就是俘获了 众多人心的美丽宝可梦。 能像飞一样轻巧地奔跑。",
   "image": "https://assets.pokopiaguide.com/pokemon/arcanine.png"
 }

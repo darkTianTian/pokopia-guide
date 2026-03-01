@@ -1,7 +1,7 @@
 {
   "id": 1,
   "slug": "bulbasaur",
-  "name": "bulbasaur",
+  "name": "妙蛙种子",
   "types": [
     "grass",
     "poison"
@@ -15,9 +15,9 @@
     "speed": 45
   },
   "abilities": [
-    "overgrow",
-    "chlorophyll"
+    "茂盛",
+    "叶绿素"
   ],
-  "description": "While it is young, it uses the nutrients that are stored in the seed on its back in order to grow.",
+  "description": "在出生后的一段时间内， 它会吸收背上种子里 储存着的营养成长。",
   "image": "https://assets.pokopiaguide.com/pokemon/bulbasaur.png"
 }

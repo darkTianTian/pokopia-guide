@@ -1,7 +1,7 @@
 {
   "id": 706,
   "slug": "goodra",
-  "name": "goodra",
+  "name": "黏美龙",
   "types": [
     "dragon"
   ],
@@ -14,10 +14,10 @@
     "speed": 80
   },
   "abilities": [
-    "sap-sipper",
-    "hydration",
-    "gooey"
+    "食草",
+    "湿润之躯",
+    "黏滑"
   ],
-  "description": "Able to freely control the hardness of its metallic shell. It loathes solitude and is extremely clingy—it will fume and run riot if those dearest to it ever leave its side.",
+  "description": "用伸长角产生的力道来 攻击对手，产生的威力比 重量级拳击手的拳击还强１００倍。",
   "image": "https://assets.pokopiaguide.com/pokemon/goodra.png"
 }

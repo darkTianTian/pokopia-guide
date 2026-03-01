@@ -1,7 +1,7 @@
 {
   "id": 415,
   "slug": "combee",
-  "name": "combee",
+  "name": "三蜜蜂",
   "types": [
     "bug",
     "flying"
@@ -15,9 +15,9 @@
     "speed": 70
   },
   "abilities": [
-    "honey-gather",
-    "hustle"
+    "采蜜",
+    "活力"
   ],
-  "description": "They swear fealty to a queen Pokémon and work diligently to gather nectar. Each swarm produces a different flavor of honey.",
+  "description": "从早到晚都在采集花蜜。 这一切都是为了 自己的族群和蜂女王。",
   "image": "https://assets.pokopiaguide.com/pokemon/combee.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 529,
   "slug": "drilbur",
-  "name": "drilbur",
+  "name": "螺钉地鼠",
   "types": [
     "ground"
   ],
@@ -14,10 +14,10 @@
     "speed": 68
   },
   "abilities": [
-    "sand-rush",
-    "sand-force",
-    "mold-breaker"
+    "拨沙",
+    "沙之力",
+    "破格"
   ],
-  "description": "It’s a digger, using its claws to burrow through the ground. It causes damage to vegetable crops, so many farmers have little love for it.",
+  "description": "会用爪子在地底挖掘前进。 一些农民因为担心它会 因此糟蹋蔬菜而讨厌它。",
   "image": "https://assets.pokopiaguide.com/pokemon/drilbur.png"
 }

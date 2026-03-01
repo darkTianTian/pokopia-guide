@@ -1,7 +1,7 @@
 {
   "id": 303,
   "slug": "mawile",
-  "name": "mawile",
+  "name": "大嘴娃",
   "types": [
     "steel",
     "fairy"
@@ -15,10 +15,10 @@
     "speed": 50
   },
   "abilities": [
-    "hyper-cutter",
-    "intimidate",
-    "sheer-force"
+    "怪力钳",
+    "威吓",
+    "强行"
   ],
-  "description": "It chomps with its gaping mouth. Its huge jaws are actually steel horns that have been transformed.",
+  "description": "大嘴娃能用自己那由钢角 变化而成的巨大颚部 将对手一口紧紧咬住。",
   "image": "https://assets.pokopiaguide.com/pokemon/mawile.png"
 }

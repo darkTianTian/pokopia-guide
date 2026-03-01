@@ -1,7 +1,7 @@
 {
   "id": 134,
   "slug": "vaporeon",
-  "name": "vaporeon",
+  "name": "水伊布",
   "types": [
     "water"
   ],
@@ -14,9 +14,9 @@
     "speed": 65
   },
   "abilities": [
-    "water-absorb",
-    "hydration"
+    "储水",
+    "湿润之躯"
   ],
-  "description": "Tests show that its cells closely resemble water molecules, which perhaps explains its ability to conceal its form while submerged. I believe the origins of mermaid folklore lie with this Pokémon.",
+  "description": "身体细胞的结构与水分子相似。 它能和水融为一体， 让别人无法看见它。",
   "image": "https://assets.pokopiaguide.com/pokemon/vaporeon.png"
 }

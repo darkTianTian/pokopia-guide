@@ -1,7 +1,7 @@
 {
   "id": 448,
   "slug": "lucario",
-  "name": "lucario",
+  "name": "路卡利欧",
   "types": [
     "fighting",
     "steel"
@@ -15,10 +15,10 @@
     "speed": 90
   },
   "abilities": [
-    "steadfast",
-    "inner-focus",
-    "justified"
+    "不屈之心",
+    "精神力",
+    "正义之心"
   ],
-  "description": "A most gallant-looking creature. It emits energy waves and controls them with precision, using them to sense even faraway beings. I have given the name ”aura” to this power.",
+  "description": "他能理解人类的想法， 因此只会去亲近 内心端正的训练家。",
   "image": "https://assets.pokopiaguide.com/pokemon/lucario.png"
 }

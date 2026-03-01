@@ -1,7 +1,7 @@
 {
   "id": 43,
   "slug": "oddish",
-  "name": "oddish",
+  "name": "走路草",
   "types": [
     "grass",
     "poison"
@@ -15,9 +15,9 @@
     "speed": 30
   },
   "abilities": [
-    "chlorophyll",
-    "run-away"
+    "叶绿素",
+    "逃跑"
   ],
-  "description": "During the day, it stays in the cold underground to avoid the sun. It grows by bathing in moonlight.",
+  "description": "白天会为躲避太阳 而钻入凉爽的地下。 会通过沐浴月光成长。",
   "image": "https://assets.pokopiaguide.com/pokemon/oddish.png"
 }

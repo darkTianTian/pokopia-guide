@@ -1,7 +1,7 @@
 {
   "id": 133,
   "slug": "eevee",
-  "name": "eevee",
+  "name": "伊布",
   "types": [
     "normal"
   ],
@@ -14,10 +14,10 @@
     "speed": 55
   },
   "abilities": [
-    "run-away",
-    "adaptability",
-    "anticipation"
+    "逃跑",
+    "适应力",
+    "危险预知"
   ],
-  "description": "Harbors the potential to evolve into manifold forms. Within Eevee lies the key to the mysteries of Pokémon evolution—I'm certain of it.",
+  "description": "由于不稳定的遗传基因， 蕴含着各种各样进化 可能性的特殊宝可梦。",
   "image": "https://assets.pokopiaguide.com/pokemon/eevee.png"
 }

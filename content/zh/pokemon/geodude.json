@@ -1,7 +1,7 @@
 {
   "id": 74,
   "slug": "geodude",
-  "name": "geodude",
+  "name": "小拳石",
   "types": [
     "rock",
     "ground"
@@ -15,10 +15,10 @@
     "speed": 20
   },
   "abilities": [
-    "rock-head",
-    "sturdy",
-    "sand-veil"
+    "坚硬脑袋",
+    "结实",
+    "沙隐"
   ],
-  "description": "Makes its home in mountainous regions, using its arms to climb along harsh mountain roads. Can be troublesome—carelessly kicking one will cause it to fly into a rage and chase after you.",
+  "description": "大多栖息于山路。由于 不留神踩到它会使它 大发雷霆，得多加小心。",
   "image": "https://assets.pokopiaguide.com/pokemon/geodude.png"
 }

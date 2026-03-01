@@ -1,7 +1,7 @@
 {
   "id": 148,
   "slug": "dragonair",
-  "name": "dragonair",
+  "name": "哈克龙",
   "types": [
     "dragon"
   ],
@@ -14,9 +14,9 @@
     "speed": 70
   },
   "abilities": [
-    "shed-skin",
-    "marvel-scale"
+    "蜕皮",
+    "神奇鳞片"
   ],
-  "description": "This Pokémon gathers power in the orbs on its tail and controls the weather. When enshrouded by an aura, Dragonair has a mystical appearance.",
+  "description": "把力量集中在尾巴的 珠子上操纵天气。 散发气场的样子非常神秘。",
   "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png"
 }

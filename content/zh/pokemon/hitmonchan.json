@@ -1,7 +1,7 @@
 {
   "id": 107,
   "slug": "hitmonchan",
-  "name": "hitmonchan",
+  "name": "快拳郎",
   "types": [
     "fighting"
   ],
@@ -14,10 +14,10 @@
     "speed": 76
   },
   "abilities": [
-    "keen-eye",
-    "iron-fist",
-    "inner-focus"
+    "锐利目光",
+    "铁拳",
+    "精神力"
   ],
-  "description": "Its punches slice the air. However, it seems to need a short break after fighting for three minutes.",
+  "description": "打出的拳击甚至能劈开空气。 但攻击３分钟后， 它似乎就会想休息一下。",
   "image": "https://assets.pokopiaguide.com/pokemon/hitmonchan.png"
 }

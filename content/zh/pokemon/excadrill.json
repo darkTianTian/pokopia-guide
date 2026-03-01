@@ -1,7 +1,7 @@
 {
   "id": 530,
   "slug": "excadrill",
-  "name": "excadrill",
+  "name": "龙头地鼠",
   "types": [
     "ground",
     "steel"
@@ -15,10 +15,10 @@
     "speed": 88
   },
   "abilities": [
-    "sand-rush",
-    "sand-force",
-    "mold-breaker"
+    "拨沙",
+    "沙之力",
+    "破格"
   ],
-  "description": "Known as the Drill King, this Pokémon can tunnel through the terrain at speeds of over 90 mph.",
+  "description": "别名钻头王。在地底下 挖掘前进的速度 达到了每小时１５０公里。",
   "image": "https://assets.pokopiaguide.com/pokemon/excadrill.png"
 }

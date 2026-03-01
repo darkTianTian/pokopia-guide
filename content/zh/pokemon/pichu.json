@@ -1,7 +1,7 @@
 {
   "id": 172,
   "slug": "pichu",
-  "name": "pichu",
+  "name": "皮丘",
   "types": [
     "electric"
   ],
@@ -14,9 +14,9 @@
     "speed": 60
   },
   "abilities": [
-    "static",
-    "lightning-rod"
+    "静电",
+    "避雷针"
   ],
-  "description": "Pichu stores electricity in the sacs on its cheeks but discharges it inadvertently when agitated or excited. Being yet immature, the Pokémon's handling of electricity is rather inept.",
+  "description": "脸颊上的电囊还很小， 如果囊里的电太多了， 就会漏出来电到自己。",
   "image": "https://assets.pokopiaguide.com/pokemon/pichu.png"
 }

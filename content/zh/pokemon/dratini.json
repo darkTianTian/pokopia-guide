@@ -1,7 +1,7 @@
 {
   "id": 147,
   "slug": "dratini",
-  "name": "dratini",
+  "name": "迷你龙",
   "types": [
     "dragon"
   ],
@@ -14,9 +14,9 @@
     "speed": 50
   },
   "abilities": [
-    "shed-skin",
-    "marvel-scale"
+    "蜕皮",
+    "神奇鳞片"
   ],
-  "description": "This Pokémon was long considered to be no more than a myth. The small lump on a Dratini’s forehead is actually a horn that’s still coming in.",
+  "description": "长久以来被认为只存在于 幻想之中。额头小小的突起 是正在发育的角。",
   "image": "https://assets.pokopiaguide.com/pokemon/dratini.png"
 }

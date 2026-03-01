@@ -1,7 +1,7 @@
 {
   "id": 46,
   "slug": "paras",
-  "name": "paras",
+  "name": "派拉斯",
   "types": [
     "bug",
     "grass"
@@ -15,10 +15,10 @@
     "speed": 25
   },
   "abilities": [
-    "effect-spore",
-    "dry-skin",
-    "damp"
+    "孢子",
+    "干燥皮肤",
+    "湿气"
   ],
-  "description": "Sometimes seen at the foot of trees in humid forests. The mushrooms on its back—called tochukaso—are not present on infant specimens and instead emerge as Paras matures.",
+  "description": "它会通过挖洞来从树根里 吸取营养，但大部分营养 都会被背上的蘑菇抢走。",
   "image": "https://assets.pokopiaguide.com/pokemon/paras.png"
 }

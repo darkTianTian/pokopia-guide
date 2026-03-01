@@ -1,7 +1,7 @@
 {
   "id": 60,
   "slug": "poliwag",
-  "name": "poliwag",
+  "name": "蚊香蝌蚪",
   "types": [
     "water"
   ],
@@ -14,10 +14,10 @@
     "speed": 90
   },
   "abilities": [
-    "water-absorb",
-    "damp",
-    "swift-swim"
+    "储水",
+    "湿气",
+    "悠游自如"
   ],
-  "description": "In rivers with fast-flowing water, this Pokémon will cling to a rock by using its thick lips, which act like a suction cup.",
+  "description": "在水流湍急的河里， 会把厚厚的嘴唇像吸盘那样 紧紧吸在岩石上避免被冲走。",
   "image": "https://assets.pokopiaguide.com/pokemon/poliwag.png"
 }

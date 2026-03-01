@@ -1,7 +1,7 @@
 {
   "id": 700,
   "slug": "sylveon",
-  "name": "sylveon",
+  "name": "仙子伊布",
   "types": [
     "fairy"
   ],
@@ -14,9 +14,9 @@
     "speed": 60
   },
   "abilities": [
-    "cute-charm",
-    "pixilate"
+    "迷人之躯",
+    "妖精皮肤"
   ],
-  "description": "It emits a soothing aura from its ribbon-shaped organs. It wraps these appendages around quarrelers to instantly restore calm to the situation.",
+  "description": "伽勒尔地区的童话中有着 美丽的仙子伊布击退了 可怕的龙宝可梦的故事。",
   "image": "https://assets.pokopiaguide.com/pokemon/sylveon.png"
 }

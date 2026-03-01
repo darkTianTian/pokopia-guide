@@ -1,7 +1,7 @@
 {
   "id": 7,
   "slug": "squirtle",
-  "name": "squirtle",
+  "name": "杰尼龟",
   "types": [
     "water"
   ],
@@ -14,9 +14,9 @@
     "speed": 43
   },
   "abilities": [
-    "torrent",
-    "rain-dish"
+    "激流",
+    "雨盘"
   ],
-  "description": "When it feels threatened, it draws its limbs inside its shell and sprays water from its mouth.",
+  "description": "当它遇到危险的时候， 会将四肢收回龟壳里保护自己， 同时从嘴里喷出水来。",
   "image": "https://assets.pokopiaguide.com/pokemon/squirtle.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 416,
   "slug": "vespiquen",
-  "name": "vespiquen",
+  "name": "蜂女王",
   "types": [
     "bug",
     "flying"
@@ -15,9 +15,9 @@
     "speed": 40
   },
   "abilities": [
-    "pressure",
-    "unnerve"
+    "压迫感",
+    "紧张感"
   ],
-  "description": "Commands its subjects to build its hive. It will dispatch any interlopers who dare sneak into its nest and use them as nourishment for itself.",
+  "description": "能释放越多费洛蒙的蜂女王， 就能让越多的三蜜蜂 听从自己的指挥。",
   "image": "https://assets.pokopiaguide.com/pokemon/vespiquen.png"
 }

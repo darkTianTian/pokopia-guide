@@ -1,7 +1,7 @@
 {
   "id": 272,
   "slug": "ludicolo",
-  "name": "ludicolo",
+  "name": "乐天河童",
   "types": [
     "water",
     "grass"
@@ -15,10 +15,10 @@
     "speed": 70
   },
   "abilities": [
-    "swift-swim",
-    "rain-dish",
-    "own-tempo"
+    "悠游自如",
+    "雨盘",
+    "我行我素"
   ],
-  "description": "If it hears festive music, it begins moving in rhythm in order to amplify its power.",
+  "description": "乐天河童会跟着 欢快的音乐摇摆身体， 从而增强自己的力量。",
   "image": "https://assets.pokopiaguide.com/pokemon/ludicolo.png"
 }

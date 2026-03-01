@@ -1,7 +1,7 @@
 {
   "id": 179,
   "slug": "mareep",
-  "name": "mareep",
+  "name": "咩利羊",
   "types": [
     "electric"
   ],
@@ -14,9 +14,9 @@
     "speed": 35
   },
   "abilities": [
-    "static",
-    "plus"
+    "静电",
+    "正电"
   ],
-  "description": "Rubbing its fleece generates electricity. You’ll want to pet it because it’s cute, but if you use your bare hand, you’ll get a painful shock.",
+  "description": "绒毛摩擦产生的电力会被储存起来。 如果觉得可爱而直接用手碰它的话， 就会被啪地一下电得又麻又痛。",
   "image": "https://assets.pokopiaguide.com/pokemon/mareep.png"
 }

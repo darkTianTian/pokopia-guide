@@ -1,7 +1,7 @@
 {
   "id": 884,
   "slug": "duraludon",
-  "name": "duraludon",
+  "name": "铝钢龙",
   "types": [
     "steel",
     "dragon"
@@ -15,10 +15,10 @@
     "speed": 85
   },
   "abilities": [
-    "light-metal",
-    "heavy-metal",
-    "stalwart"
+    "轻金属",
+    "重金属",
+    "坚毅"
   ],
-  "description": "The special metal that composes its body is very light, so this Pokémon has considerable agility. It lives in caves because it dislikes the rain.",
+  "description": "由特殊金属构成的身体 十分轻盈，能够灵活地活动。 不喜欢下雨，所以住在洞窟里。",
   "image": "https://assets.pokopiaguide.com/pokemon/duraludon.png"
 }

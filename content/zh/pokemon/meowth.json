@@ -1,7 +1,7 @@
 {
   "id": 52,
   "slug": "meowth",
-  "name": "meowth",
+  "name": "喵喵",
   "types": [
     "normal"
   ],
@@ -14,10 +14,10 @@
     "speed": 90
   },
   "abilities": [
-    "pickup",
-    "technician",
-    "unnerve"
+    "捡拾",
+    "技术高手",
+    "紧张感"
   ],
-  "description": "It loves to collect shiny things. If it’s in a good mood, it might even let its Trainer have a look at its hoard of treasures.",
+  "description": "为了不弄脏额头上的 金币，会常常洗脸。 和伽勒尔的喵喵关系不好。",
   "image": "https://assets.pokopiaguide.com/pokemon/meowth.png"
 }

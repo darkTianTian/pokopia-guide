@@ -1,7 +1,7 @@
 {
   "id": 821,
   "slug": "rookidee",
-  "name": "rookidee",
+  "name": "稚山雀",
   "types": [
     "flying"
   ],
@@ -14,10 +14,10 @@
     "speed": 57
   },
   "abilities": [
-    "keen-eye",
-    "unnerve",
-    "big-pecks"
+    "锐利目光",
+    "紧张感",
+    "健壮胸肌"
   ],
-  "description": "Jumping nimbly about, this small-bodied Pokémon takes advantage of even the slightest opportunity to disorient larger opponents.",
+  "description": "娇小的体型让它能敏捷地飞翔。 利用攻其不备的战法将体型 巨大的对手玩弄于股掌之间。",
   "image": "https://assets.pokopiaguide.com/pokemon/rookidee.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 131,
   "slug": "lapras",
-  "name": "lapras",
+  "name": "拉普拉斯",
   "types": [
     "water",
     "ice"
@@ -15,10 +15,10 @@
     "speed": 60
   },
   "abilities": [
-    "water-absorb",
-    "shell-armor",
-    "hydration"
+    "储水",
+    "硬壳盔甲",
+    "湿润之躯"
   ],
-  "description": "Crossing icy seas is no issue for this cold-resistant Pokémon. Its smooth skin is a little cool to the touch.",
+  "description": "十分耐寒，不畏冰海。 皮肤滑滑的， 摸上去会有点凉。",
   "image": "https://assets.pokopiaguide.com/pokemon/lapras.png"
 }

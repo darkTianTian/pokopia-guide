@@ -1,7 +1,7 @@
 {
   "id": 612,
   "slug": "haxorus",
-  "name": "haxorus",
+  "name": "双斧战龙",
   "types": [
     "dragon"
   ],
@@ -14,10 +14,10 @@
     "speed": 97
   },
   "abilities": [
-    "rivalry",
-    "mold-breaker",
-    "unnerve"
+    "斗争心",
+    "破格",
+    "紧张感"
   ],
-  "description": "While usually kindhearted, it can be terrifying if angered. Tusks that can slice through steel beams are how Haxorus deals with its adversaries.",
+  "description": "性格温和，但生起气来非常恐怖。 会用自己那引以为傲，可以 削铁如泥的牙齿攻击敌人。",
   "image": "https://assets.pokopiaguide.com/pokemon/haxorus.png"
 }

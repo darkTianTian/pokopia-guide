@@ -1,7 +1,7 @@
 {
   "id": 180,
   "slug": "flaaffy",
-  "name": "flaaffy",
+  "name": "茸茸羊",
   "types": [
     "electric"
   ],
@@ -14,9 +14,9 @@
     "speed": 45
   },
   "abilities": [
-    "static",
-    "plus"
+    "静电",
+    "正电"
   ],
-  "description": "It stores electricity in its fluffy fleece. If it stores up too much, it will start to go bald in those patches.",
+  "description": "能将电力储存在松软的毛发中。 因为储存了太多电力，所以身上 有些地方已经变得光秃秃的了。",
   "image": "https://assets.pokopiaguide.com/pokemon/flaaffy.png"
 }

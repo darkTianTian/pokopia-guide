@@ -1,7 +1,7 @@
 {
   "id": 248,
   "slug": "tyranitar",
-  "name": "tyranitar",
+  "name": "班基拉斯",
   "types": [
     "rock",
     "dark"
@@ -15,9 +15,9 @@
     "speed": 61
   },
   "abilities": [
-    "sand-stream",
-    "unnerve"
+    "扬沙",
+    "紧张感"
   ],
-  "description": "The quakes caused when it walks make even great mountains crumble and change the surrounding terrain.",
+  "description": "当它带着巨大轰鸣声迈开脚步， 就连大山都会为之崩裂， 周围的地形也会因此改变。",
   "image": "https://assets.pokopiaguide.com/pokemon/tyranitar.png"
 }

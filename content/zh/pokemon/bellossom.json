@@ -1,7 +1,7 @@
 {
   "id": 182,
   "slug": "bellossom",
-  "name": "bellossom",
+  "name": "美丽花",
   "types": [
     "grass"
   ],
@@ -14,9 +14,9 @@
     "speed": 50
   },
   "abilities": [
-    "chlorophyll",
-    "healer"
+    "叶绿素",
+    "治愈之心"
   ],
-  "description": "Bellossom gather at times and appear to dance. They say that the dance is a ritual to summon the sun.",
+  "description": "有时能看到美丽花聚在一起 做着像是跳舞一样的动作。 据说这是呼唤太阳的仪式。",
   "image": "https://assets.pokopiaguide.com/pokemon/bellossom.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 50,
   "slug": "diglett",
-  "name": "diglett",
+  "name": "地鼠",
   "types": [
     "ground"
   ],
@@ -14,10 +14,10 @@
     "speed": 95
   },
   "abilities": [
-    "sand-veil",
-    "arena-trap",
-    "sand-force"
+    "沙隐",
+    "沙穴",
+    "沙之力"
   ],
-  "description": "It burrows through the ground at a shallow depth. It leaves raised earth in its wake, making it easy to spot.",
+  "description": "在地下较浅的地方移动。 被它挖掘过的地面会鼓起来， 所以非常容易发现。",
   "image": "https://assets.pokopiaguide.com/pokemon/diglett.png"
 }

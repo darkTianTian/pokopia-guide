@@ -1,7 +1,7 @@
 {
   "id": 18,
   "slug": "pidgeot",
-  "name": "pidgeot",
+  "name": "大比鸟",
   "types": [
     "normal",
     "flying"
@@ -15,10 +15,10 @@
     "speed": 101
   },
   "abilities": [
-    "keen-eye",
-    "tangled-feet",
-    "big-pecks"
+    "锐利目光",
+    "蹒跚",
+    "健壮胸肌"
   ],
-  "description": "This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons.",
+  "description": "以２马赫的飞行速度来 觅食。它巨大的爪子是 非常令人惧怕的武器。",
   "image": "https://assets.pokopiaguide.com/pokemon/pidgeot.png"
 }

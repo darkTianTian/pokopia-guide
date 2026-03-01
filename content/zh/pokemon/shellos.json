@@ -1,7 +1,7 @@
 {
   "id": 422,
   "slug": "shellos",
-  "name": "shellos",
+  "name": "无壳海兔",
   "types": [
     "water"
   ],
@@ -14,10 +14,10 @@
     "speed": 34
   },
   "abilities": [
-    "sticky-hold",
-    "storm-drain",
-    "sand-force"
+    "黏着",
+    "引水",
+    "沙之力"
   ],
-  "description": "Found in abundance on seashores bordering warm waters. Shellos are unexpectedly friendly and will crawl toward any person they see. Take care not to get coated in mucus!",
+  "description": "如果用力按住它， 它就会分泌出神秘的紫色液体。 虽然液体无害，不过黏糊糊的。",
   "image": "https://assets.pokopiaguide.com/pokemon/shellos.png"
 }

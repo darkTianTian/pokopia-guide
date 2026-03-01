@@ -1,7 +1,7 @@
 {
   "id": 63,
   "slug": "abra",
-  "name": "abra",
+  "name": "凯西",
   "types": [
     "psychic"
   ],
@@ -14,10 +14,10 @@
     "speed": 90
   },
   "abilities": [
-    "synchronize",
-    "inner-focus",
-    "magic-guard"
+    "同步",
+    "精神力",
+    "魔法防守"
   ],
-  "description": "Spends 18 hours of the day sleeping. Even while asleep, Abra can control its psychic powers—should danger approach, the Pokémon will simply teleport away.",
+  "description": "能够在睡梦中使出瞬间移动。 据说它睡得越熟，就能 移动到越遥远的地方。",
   "image": "https://assets.pokopiaguide.com/pokemon/abra.png"
 }

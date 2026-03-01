@@ -1,7 +1,7 @@
 {
   "id": 569,
   "slug": "garbodor",
-  "name": "garbodor",
+  "name": "灰尘山",
   "types": [
     "poison"
   ],
@@ -14,10 +14,10 @@
     "speed": 75
   },
   "abilities": [
-    "stench",
-    "weak-armor",
-    "aftermath"
+    "恶臭",
+    "碎裂铠甲",
+    "引爆"
   ],
-  "description": "The toxic liquid it launches from its right arm is so virulent that it can kill a weakened creature instantly.",
+  "description": "从右臂喷出的毒液十分危险， 虚弱的生物只要一沾到， 立刻就会丢掉性命。",
   "image": "https://assets.pokopiaguide.com/pokemon/garbodor.png"
 }

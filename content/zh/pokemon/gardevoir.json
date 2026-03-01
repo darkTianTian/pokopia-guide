@@ -1,7 +1,7 @@
 {
   "id": 282,
   "slug": "gardevoir",
-  "name": "gardevoir",
+  "name": "沙奈朵",
   "types": [
     "psychic",
     "fairy"
@@ -15,10 +15,10 @@
     "speed": 80
   },
   "abilities": [
-    "synchronize",
-    "trace",
-    "telepathy"
+    "同步",
+    "复制",
+    "心灵感应"
   ],
-  "description": "It will dedicate itself to defending a master it has come to adore. Its pure white dress, reminiscent of those worn by ladies of nobility, is the dress of one who is willing to risk their life.",
+  "description": "如果是为了保护训练家， 它就会用尽自己的精神力量 制造出小型黑洞。",
   "image": "https://assets.pokopiaguide.com/pokemon/gardevoir.png"
 }

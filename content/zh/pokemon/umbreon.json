@@ -1,7 +1,7 @@
 {
   "id": 197,
   "slug": "umbreon",
-  "name": "umbreon",
+  "name": "月亮伊布",
   "types": [
     "dark"
   ],
@@ -14,9 +14,9 @@
     "speed": 65
   },
   "abilities": [
-    "synchronize",
-    "inner-focus"
+    "同步",
+    "精神力"
   ],
-  "description": "It is most active in the wee hours of the night, when moonlight bathes the land. Its large eyes can pierce the darkness and perceive prey with absolute clarity.",
+  "description": "在满月之夜或是兴奋的时候， 它身上圈圈一样的花纹 就会发出金黄色的光。",
   "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png"
 }

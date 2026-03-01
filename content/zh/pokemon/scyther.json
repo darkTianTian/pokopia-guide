@@ -1,7 +1,7 @@
 {
   "id": 123,
   "slug": "scyther",
-  "name": "scyther",
+  "name": "飞天螳螂",
   "types": [
     "bug",
     "flying"
@@ -15,10 +15,10 @@
     "speed": 105
   },
   "abilities": [
-    "swarm",
-    "technician",
-    "steadfast"
+    "虫之预感",
+    "技术高手",
+    "不屈之心"
   ],
-  "description": "The large, wickedly sharp scythes on its forearms are truly fearsome weapons. Prey's attempts to flee are unfailingly thwarted by this Pokémon's nimble motions.",
+  "description": "如果在森林中发现某个地方 有大量树木被砍倒，就说明 那里是飞天螳螂的领地。",
   "image": "https://assets.pokopiaguide.com/pokemon/scyther.png"
 }

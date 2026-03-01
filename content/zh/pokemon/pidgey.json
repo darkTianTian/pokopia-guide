@@ -1,7 +1,7 @@
 {
   "id": 16,
   "slug": "pidgey",
-  "name": "pidgey",
+  "name": "波波",
   "types": [
     "normal",
     "flying"
@@ -15,10 +15,10 @@
     "speed": 56
   },
   "abilities": [
-    "keen-eye",
-    "tangled-feet",
-    "big-pecks"
+    "锐利目光",
+    "蹒跚",
+    "健壮胸肌"
   ],
-  "description": "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.",
+  "description": "性格沉着冷静，即使受到 攻击也很少反击，只会朝 对手扬起沙子保护自己。",
   "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png"
 }

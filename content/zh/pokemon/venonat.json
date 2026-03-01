@@ -1,7 +1,7 @@
 {
   "id": 48,
   "slug": "venonat",
-  "name": "venonat",
+  "name": "毛球",
   "types": [
     "bug",
     "poison"
@@ -15,10 +15,10 @@
     "speed": 45
   },
   "abilities": [
-    "compound-eyes",
-    "tinted-lens",
-    "run-away"
+    "复眼",
+    "有色眼镜",
+    "逃跑"
   ],
-  "description": "Its large eyes act as radar. In a bright place, you can see that they are clusters of many tiny eyes.",
+  "description": "在明亮的地方你便能发现它 具有雷达功能的大眼其实是 由许多个小眼睛聚集而成的。",
   "image": "https://assets.pokopiaguide.com/pokemon/venonat.png"
 }

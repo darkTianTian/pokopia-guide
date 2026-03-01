@@ -1,7 +1,7 @@
 {
   "id": 104,
   "slug": "cubone",
-  "name": "cubone",
+  "name": "卡拉卡拉",
   "types": [
     "ground"
   ],
@@ -14,10 +14,10 @@
     "speed": 35
   },
   "abilities": [
-    "rock-head",
-    "lightning-rod",
-    "battle-armor"
+    "坚硬脑袋",
+    "避雷针",
+    "战斗盔甲"
   ],
-  "description": "This Pokémon wears the skull of its deceased mother. Sometimes Cubone’s dreams make it cry, but each tear Cubone sheds makes it stronger.",
+  "description": "它头上戴着死去母亲的头骨。 虽然也会因悲伤的梦境而哭泣， 但每流一次泪，都会变得更加坚强。",
   "image": "https://assets.pokopiaguide.com/pokemon/cubone.png"
 }

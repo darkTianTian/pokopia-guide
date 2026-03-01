@@ -1,7 +1,7 @@
 {
   "id": 54,
   "slug": "psyduck",
-  "name": "psyduck",
+  "name": "可达鸭",
   "types": [
     "water"
   ],
@@ -14,10 +14,10 @@
     "speed": 55
   },
   "abilities": [
-    "damp",
-    "cloud-nine",
-    "swift-swim"
+    "湿气",
+    "无关天气",
+    "悠游自如"
   ],
-  "description": "Suffers perpetual headaches. If the agony grows too great, Psyduck's latent power erupts, contrary to Psyduck's intent. Ergo, I am exploring ways to ease the pain.",
+  "description": "头痛会随着压力逐渐累积 而不断加剧。会用强大的 念力击垮周围的一切。",
   "image": "https://assets.pokopiaguide.com/pokemon/psyduck.png"
 }

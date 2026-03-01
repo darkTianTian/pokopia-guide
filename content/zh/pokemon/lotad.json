@@ -1,7 +1,7 @@
 {
   "id": 270,
   "slug": "lotad",
-  "name": "lotad",
+  "name": "莲叶童子",
   "types": [
     "water",
     "grass"
@@ -15,10 +15,10 @@
     "speed": 30
   },
   "abilities": [
-    "swift-swim",
-    "rain-dish",
-    "own-tempo"
+    "悠游自如",
+    "雨盘",
+    "我行我素"
   ],
-  "description": "Its leaf grew too large for it to live on land. That is how it began to live floating in the water.",
+  "description": "因为叶子长得太大太重， 所以才会改变习性， 漂浮在水面上生活。",
   "image": "https://assets.pokopiaguide.com/pokemon/lotad.png"
 }

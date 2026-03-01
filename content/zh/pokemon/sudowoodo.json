@@ -1,7 +1,7 @@
 {
   "id": 185,
   "slug": "sudowoodo",
-  "name": "sudowoodo",
+  "name": "树才怪",
   "types": [
     "rock"
   ],
@@ -14,10 +14,10 @@
     "speed": 30
   },
   "abilities": [
-    "sturdy",
-    "rock-head",
-    "rattled"
+    "结实",
+    "坚硬脑袋",
+    "胆怯"
   ],
-  "description": "Though it pretends to be a tree, it fails to fool even children. To the touch, its body feels more like rock than tree bark. Sudowoodo's extreme aversion to water merits special note.",
+  "description": "为了不被袭击会模仿树的样子。 很讨厌水，所以下雨后， 不知什么时候就会消失。",
   "image": "https://assets.pokopiaguide.com/pokemon/sudowoodo.png"
 }

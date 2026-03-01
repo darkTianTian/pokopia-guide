@@ -1,7 +1,7 @@
 {
   "id": 278,
   "slug": "wingull",
-  "name": "wingull",
+  "name": "长翅鸥",
   "types": [
     "water",
     "flying"
@@ -15,10 +15,10 @@
     "speed": 85
   },
   "abilities": [
-    "keen-eye",
-    "hydration",
-    "rain-dish"
+    "锐利目光",
+    "湿润之躯",
+    "雨盘"
   ],
-  "description": "It soars on updrafts without flapping its wings. It makes a nest on sheer cliffs at the sea’s edge.",
+  "description": "利用气流， 不拍打翅膀就能飞上天空。 会在海边的岩壁上筑巢。",
   "image": "https://assets.pokopiaguide.com/pokemon/wingull.png"
 }

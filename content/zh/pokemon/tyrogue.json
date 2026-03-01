@@ -1,7 +1,7 @@
 {
   "id": 236,
   "slug": "tyrogue",
-  "name": "tyrogue",
+  "name": "无畏小子",
   "types": [
     "fighting"
   ],
@@ -14,10 +14,10 @@
     "speed": 35
   },
   "abilities": [
-    "guts",
-    "steadfast",
-    "vital-spirit"
+    "毅力",
+    "不屈之心",
+    "干劲"
   ],
-  "description": "Even though it is small, it can’t be ignored because it will slug any handy target without warning.",
+  "description": "体型偏小却不可轻视， 因为它只要发现合适的对手 便会马上扑上去大打出手。",
   "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 127,
   "slug": "pinsir",
-  "name": "pinsir",
+  "name": "凯罗斯",
   "types": [
     "bug"
   ],
@@ -14,10 +14,10 @@
     "speed": 85
   },
   "abilities": [
-    "hyper-cutter",
-    "mold-breaker",
-    "moxie"
+    "怪力钳",
+    "破格",
+    "自信过度"
   ],
-  "description": "This Pokémon clamps its pincers down on its prey and then either splits the prey in half or flings it away.",
+  "description": "用角夹住猎物后， 不是直接把对方切成两半， 就是强行把对方扔飞。",
   "image": "https://assets.pokopiaguide.com/pokemon/pinsir.png"
 }

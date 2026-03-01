@@ -1,7 +1,7 @@
 {
   "id": 214,
   "slug": "heracross",
-  "name": "heracross",
+  "name": "赫拉克罗斯",
   "types": [
     "bug",
     "fighting"
@@ -15,10 +15,10 @@
     "speed": 85
   },
   "abilities": [
-    "swarm",
-    "guts",
-    "moxie"
+    "虫之预感",
+    "毅力",
+    "自信过度"
   ],
-  "description": "This Pokémon has an unparalleled horn. Heracross itself demonstrates tremendous power—it's capable of throwing several people trained in the traditional arts of war at once.",
+  "description": "能轻轻松松地举起比自己 体重还重１００倍的东西， 是以一身怪力为傲的宝可梦。",
   "image": "https://assets.pokopiaguide.com/pokemon/heracross.png"
 }

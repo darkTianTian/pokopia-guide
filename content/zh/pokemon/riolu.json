@@ -1,7 +1,7 @@
 {
   "id": 447,
   "slug": "riolu",
-  "name": "riolu",
+  "name": "利欧路",
   "types": [
     "fighting"
   ],
@@ -14,10 +14,10 @@
     "speed": 60
   },
   "abilities": [
-    "steadfast",
-    "inner-focus",
-    "prankster"
+    "不屈之心",
+    "精神力",
+    "恶作剧之心"
   ],
-  "description": "Though infantile in appearance, it has the mysterious ability to read the minds of humans. The pure of heart are met with Riolu's approval, while those of ill nature earn only its loathing.",
+  "description": "除了能读懂对手的感情， 也能以“波导”这种形式的波 来观察大自然的样子。",
   "image": "https://assets.pokopiaguide.com/pokemon/riolu.png"
 }

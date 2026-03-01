@@ -1,7 +1,7 @@
 {
   "id": 65,
   "slug": "alakazam",
-  "name": "alakazam",
+  "name": "胡地",
   "types": [
     "psychic"
   ],
@@ -14,10 +14,10 @@
     "speed": 120
   },
   "abilities": [
-    "synchronize",
-    "inner-focus",
-    "magic-guard"
+    "同步",
+    "精神力",
+    "魔法防守"
   ],
-  "description": "The longer Alakazam lives, the larger and heavier its head becomes. Our tests have shown that the strength of its psychic powers correlates positively to the weight of its head.",
+  "description": "会操纵强大的超能力。 据说它双手握着的汤勺 就是用那力量制造出来的。",
   "image": "https://assets.pokopiaguide.com/pokemon/alakazam.png"
 }

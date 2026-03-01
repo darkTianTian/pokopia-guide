@@ -1,7 +1,7 @@
 {
   "id": 607,
   "slug": "litwick",
-  "name": "litwick",
+  "name": "烛光灵",
   "types": [
     "ghost",
     "fire"
@@ -15,10 +15,10 @@
     "speed": 20
   },
   "abilities": [
-    "flash-fire",
-    "flame-body",
-    "infiltrator"
+    "引火",
+    "火焰之躯",
+    "穿透"
   ],
-  "description": "The younger the life this Pokémon absorbs, the brighter and eerier the flame on its head burns.",
+  "description": "吸取到的灵魂越年轻， 头上的烛光就会 燃烧得越旺越诡异。",
   "image": "https://assets.pokopiaguide.com/pokemon/litwick.png"
 }

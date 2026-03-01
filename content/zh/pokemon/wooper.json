@@ -1,7 +1,7 @@
 {
   "id": 194,
   "slug": "wooper",
-  "name": "wooper",
+  "name": "乌波",
   "types": [
     "water",
     "ground"
@@ -15,10 +15,10 @@
     "speed": 15
   },
   "abilities": [
-    "damp",
-    "water-absorb",
-    "unaware"
+    "湿气",
+    "储水",
+    "纯朴"
   ],
-  "description": "When walking on land, it covers its body with a poisonous film that keeps its skin from dehydrating.",
+  "description": "为了在地面上行走时 不让皮肤干燥，会用 有毒的粘膜覆盖身体。",
   "image": "https://assets.pokopiaguide.com/pokemon/wooper.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 106,
   "slug": "hitmonlee",
-  "name": "hitmonlee",
+  "name": "飞腿郎",
   "types": [
     "fighting"
   ],
@@ -14,10 +14,10 @@
     "speed": 87
   },
   "abilities": [
-    "limber",
-    "reckless",
-    "unburden"
+    "柔软",
+    "舍身",
+    "轻装"
   ],
-  "description": "The legs freely contract and stretch. The stretchy legs allow it to hit a distant foe with a rising kick.",
+  "description": "腿能自由地伸缩， 即使离得很远， 也能把对手踢飞。",
   "image": "https://assets.pokopiaguide.com/pokemon/hitmonlee.png"
 }

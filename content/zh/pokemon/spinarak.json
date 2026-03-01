@@ -1,7 +1,7 @@
 {
   "id": 167,
   "slug": "spinarak",
-  "name": "spinarak",
+  "name": "圆丝蛛",
   "types": [
     "bug",
     "poison"
@@ -15,10 +15,10 @@
     "speed": 30
   },
   "abilities": [
-    "swarm",
-    "insomnia",
-    "sniper"
+    "虫之预感",
+    "不眠",
+    "狙击手"
   ],
-  "description": "Although the poison from its fangs isn’t that strong, it’s potent enough to weaken prey that gets caught in its web.",
+  "description": "牙齿上的毒并不强烈， 但用来削弱那些挂在网上 无法动弹的猎物是绰绰有余了。",
   "image": "https://assets.pokopiaguide.com/pokemon/spinarak.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 704,
   "slug": "goomy",
-  "name": "goomy",
+  "name": "黏黏宝",
   "types": [
     "dragon"
   ],
@@ -14,10 +14,10 @@
     "speed": 40
   },
   "abilities": [
-    "sap-sipper",
-    "hydration",
-    "gooey"
+    "食草",
+    "湿润之躯",
+    "黏滑"
   ],
-  "description": "Goomy hides away in the shade of trees, where it's nice and humid. If the slime coating its body dries out, the Pokémon instantly becomes lethargic.",
+  "description": "它的触角是优秀的感觉器官。 只要感觉到有敌人就会立刻 藏起来，以此存活到了现在。",
   "image": "https://assets.pokopiaguide.com/pokemon/goomy.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 470,
   "slug": "leafeon",
-  "name": "leafeon",
+  "name": "叶伊布",
   "types": [
     "grass"
   ],
@@ -14,9 +14,9 @@
     "speed": 95
   },
   "abilities": [
-    "leaf-guard",
-    "chlorophyll"
+    "叶子防守",
+    "叶绿素"
   ],
-  "description": "Cells similar to those of plants have been found in its fur. Its hard tail can fell a large tree with one stroke, and the tail's sharpness exceeds even that of a sword crafted by a master.",
+  "description": "尾巴好似锐利的刀刃， 锋利得无与伦比， 连大树都能一斩为二。",
   "image": "https://assets.pokopiaguide.com/pokemon/leafeon.png"
 }

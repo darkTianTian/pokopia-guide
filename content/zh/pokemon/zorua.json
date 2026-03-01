@@ -1,7 +1,7 @@
 {
   "id": 570,
   "slug": "zorua",
-  "name": "zorua",
+  "name": "索罗亚",
   "types": [
     "dark"
   ],
@@ -14,8 +14,8 @@
     "speed": 65
   },
   "abilities": [
-    "illusion"
+    "幻觉"
   ],
-  "description": "A once-departed soul, returned to life in Hisui. Derives power from resentment, which rises as energy atop its head and takes on the forms of foes. In this way, Zorua vents lingering malice.",
+  "description": "为了寻找食物，有时甚至会 幻化成人类出现在城镇里。 多数情况下会幻化成小孩。",
   "image": "https://assets.pokopiaguide.com/pokemon/zorua.png"
 }

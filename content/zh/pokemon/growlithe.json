@@ -1,7 +1,7 @@
 {
   "id": 58,
   "slug": "growlithe",
-  "name": "growlithe",
+  "name": "卡蒂狗",
   "types": [
     "fire"
   ],
@@ -14,10 +14,10 @@
     "speed": 60
   },
   "abilities": [
-    "intimidate",
-    "flash-fire",
-    "justified"
+    "威吓",
+    "引火",
+    "正义之心"
   ],
-  "description": "They patrol their territory in pairs. I believe the igneous rock components in the fur of this species are the result of volcanic activity in its habitat.",
+  "description": "性格忠诚。 为了保护自己的训练家， 会拼命地朝对手狂吠。",
   "image": "https://assets.pokopiaguide.com/pokemon/growlithe.png"
 }

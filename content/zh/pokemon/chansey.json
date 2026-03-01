@@ -1,7 +1,7 @@
 {
   "id": 113,
   "slug": "chansey",
-  "name": "chansey",
+  "name": "吉利蛋",
   "types": [
     "normal"
   ],
@@ -14,10 +14,10 @@
     "speed": 50
   },
   "abilities": [
-    "natural-cure",
-    "serene-grace",
-    "healer"
+    "自然回复",
+    "天恩",
+    "治愈之心"
   ],
-  "description": "This purehearted Pokémon shares its eggs with the injured.",
+  "description": "原本动作迟缓。 为了保护蛋不被抢走， 逃跑的速度才变快了。",
   "image": "https://assets.pokopiaguide.com/pokemon/chansey.png"
 }

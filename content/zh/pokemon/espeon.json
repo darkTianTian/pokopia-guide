@@ -1,7 +1,7 @@
 {
   "id": 196,
   "slug": "espeon",
-  "name": "espeon",
+  "name": "太阳伊布",
   "types": [
     "psychic"
   ],
@@ -14,9 +14,9 @@
     "speed": 110
   },
   "abilities": [
-    "synchronize",
-    "magic-bounce"
+    "同步",
+    "魔法镜"
   ],
-  "description": "Wields an arcane power with which it can predict the weather and even people's thoughts. When bathed in sunshine, the scarlet orb on its brow glows and builds energy.",
+  "description": "从额头的珠子放射出精神力量 进行战斗。当力量用尽时， 珠子的颜色也会褪去。",
   "image": "https://assets.pokopiaguide.com/pokemon/espeon.png"
 }

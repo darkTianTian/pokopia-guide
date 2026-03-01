@@ -1,7 +1,7 @@
 {
   "id": 69,
   "slug": "bellsprout",
-  "name": "bellsprout",
+  "name": "喇叭芽",
   "types": [
     "grass",
     "poison"
@@ -15,9 +15,9 @@
     "speed": 40
   },
   "abilities": [
-    "chlorophyll",
-    "gluttony"
+    "叶绿素",
+    "贪吃鬼"
   ],
-  "description": "Prefers hot and humid places. It ensnares tiny bugs with its vines and devours them.",
+  "description": "喜欢温度高，有一定 湿度的地方。它会用 身上的藤蔓抓小虫来吃。",
   "image": "https://assets.pokopiaguide.com/pokemon/bellsprout.png"
 }
