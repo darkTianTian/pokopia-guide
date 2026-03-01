@@ -1,7 +1,7 @@
 {
   "id": 83,
   "slug": "farfetchd",
-  "name": "farfetchd",
+  "name": "大葱鸭",
   "types": [
     "normal",
     "flying"
@@ -15,10 +15,10 @@
     "speed": 60
   },
   "abilities": [
-    "keen-eye",
-    "inner-focus",
-    "defiant"
+    "锐利目光",
+    "精神力",
+    "不服输"
   ],
-  "description": "They use a plant stalk as a weapon, but not all of them use it in the same way. Several distinct styles of stalk fighting have been observed.",
+  "description": "会将翅膀拿着的茎状植物当成剑一般去劈砍对手。在非常时期会拿它当作食物。",
   "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png"
 }
