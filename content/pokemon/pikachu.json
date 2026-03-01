@@ -1,0 +1,17 @@
+{
+  "id": 25,
+  "slug": "pikachu",
+  "name": "皮卡丘",
+  "types": ["electric"],
+  "stats": {
+    "hp": 35,
+    "attack": 55,
+    "defense": 40,
+    "spAtk": 50,
+    "spDef": 50,
+    "speed": 90
+  },
+  "abilities": ["静电", "避雷针"],
+  "description": "皮卡丘是一种电属性宝可梦。它的脸颊上有两个红色的电气袋，当它释放电力时会发出噼啪声。在 Pokopia 世界中，皮卡丘是最受欢迎的伙伴之一。",
+  "image": "/images/pokemon/pikachu.png"
+}
