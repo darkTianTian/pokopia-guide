@@ -1,8 +1,11 @@
 import fs from "fs/promises"
 import path from "path"
 import type { Guide } from "./types"
+import { DEFAULT_LOCALE, type Locale } from "@/i18n/config"
 
-const GUIDES_DIR = path.join(process.cwd(), "content/guides")
+function getGuidesDir(locale: Locale): string {
+  return path.join(process.cwd(), `content/${locale}/guides`)
+}
 
 function parseFrontmatter(raw: string): {
   data: Record<string, string>
@@ -25,13 +28,16 @@ function parseFrontmatter(raw: string): {
   return { data, content: match[2].trim() }
 }
 
-export async function getAllGuides(): Promise<Guide[]> {
-  const files = await fs.readdir(GUIDES_DIR)
+export async function getAllGuides(
+  locale: Locale = DEFAULT_LOCALE
+): Promise<Guide[]> {
+  const dir = getGuidesDir(locale)
+  const files = await fs.readdir(dir)
   const mdxFiles = files.filter((f) => f.endsWith(".mdx"))
 
   const guides = await Promise.all(
     mdxFiles.map(async (file) => {
-      const raw = await fs.readFile(path.join(GUIDES_DIR, file), "utf-8")
+      const raw = await fs.readFile(path.join(dir, file), "utf-8")
       const { data, content } = parseFrontmatter(raw)
       const slug = file.replace(/\.mdx$/, "")
 
@@ -53,9 +59,10 @@ export async function getAllGuides(): Promise<Guide[]> {
 }
 
 export async function getGuideBySlug(
-  slug: string
+  slug: string,
+  locale: Locale = DEFAULT_LOCALE
 ): Promise<Guide | undefined> {
-  const filePath = path.join(GUIDES_DIR, `${slug}.mdx`)
+  const filePath = path.join(getGuidesDir(locale), `${slug}.mdx`)
   try {
     const raw = await fs.readFile(filePath, "utf-8")
     const { data, content } = parseFrontmatter(raw)

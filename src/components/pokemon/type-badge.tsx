@@ -1,5 +1,9 @@
 import { Badge } from "@/components/ui/badge"
 import type { PokemonType } from "@/lib/types"
+import type { Locale } from "@/i18n/config"
+import enTranslations from "@/i18n/en.json"
+import cnTranslations from "@/i18n/cn.json"
+import jpTranslations from "@/i18n/jp.json"
 
 const TYPE_COLORS: Record<PokemonType, string> = {
   normal: "bg-gray-400 hover:bg-gray-400",
@@ -22,35 +26,22 @@ const TYPE_COLORS: Record<PokemonType, string> = {
   fairy: "bg-pink-300 hover:bg-pink-300 text-black",
 }
 
-const TYPE_NAMES: Record<PokemonType, string> = {
-  normal: "一般",
-  fire: "火",
-  water: "水",
-  electric: "电",
-  grass: "草",
-  ice: "冰",
-  fighting: "格斗",
-  poison: "毒",
-  ground: "地面",
-  flying: "飞行",
-  psychic: "超能力",
-  bug: "虫",
-  rock: "岩石",
-  ghost: "幽灵",
-  dragon: "龙",
-  dark: "恶",
-  steel: "钢",
-  fairy: "妖精",
+const TYPE_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
+  en: enTranslations.types,
+  cn: cnTranslations.types,
+  jp: jpTranslations.types,
 }
 
 interface TypeBadgeProps {
   type: PokemonType
+  locale: Locale
 }
 
-export function TypeBadge({ type }: TypeBadgeProps) {
+export function TypeBadge({ type, locale }: TypeBadgeProps) {
+  const typeName = TYPE_NAMES_BY_LOCALE[locale][type] ?? type
   return (
     <Badge className={`${TYPE_COLORS[type]} text-white border-0`}>
-      {TYPE_NAMES[type]}
+      {typeName}
     </Badge>
   )
 }

@@ -8,14 +8,16 @@ import {
 } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import type { Guide } from "@/lib/types"
+import { getLocalePath, type Locale } from "@/i18n/config"
 
 interface GuideCardProps {
   guide: Guide
+  locale: Locale
 }
 
-export function GuideCard({ guide }: GuideCardProps) {
+export function GuideCard({ guide, locale }: GuideCardProps) {
   return (
-    <Link href={`/guides/${guide.slug}`}>
+    <Link href={getLocalePath(locale, `/guides/${guide.slug}`)}>
       <Card className="transition-shadow hover:shadow-lg">
         <CardHeader>
           <div className="flex items-center gap-2">
@@ -29,7 +31,7 @@ export function GuideCard({ guide }: GuideCardProps) {
             {guide.description}
           </CardDescription>
           <p className="mt-2 text-xs text-muted-foreground">
-            作者: {guide.author}
+            {guide.author}
           </p>
         </CardContent>
       </Card>

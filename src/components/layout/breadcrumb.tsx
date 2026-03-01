@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
+import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 
 export interface BreadcrumbItem {
   label: string
@@ -8,15 +9,21 @@ export interface BreadcrumbItem {
 
 interface BreadcrumbProps {
   items: BreadcrumbItem[]
+  locale: Locale
 }
 
-export function Breadcrumb({ items }: BreadcrumbProps) {
+export async function Breadcrumb({ items, locale }: BreadcrumbProps) {
+  const translations = await getTranslations(locale)
+
   return (
-    <nav aria-label="面包屑导航" className="mb-6">
+    <nav aria-label={t(translations, "breadcrumb.ariaLabel")} className="mb-6">
       <ol className="flex flex-wrap items-center gap-1.5 text-sm text-muted-foreground">
         <li>
-          <Link href="/" className="hover:text-foreground">
-            首页
+          <Link
+            href={getLocalePath(locale, "/")}
+            className="hover:text-foreground"
+          >
+            {t(translations, "breadcrumb.home")}
           </Link>
         </li>
         {items.map((item, index) => (

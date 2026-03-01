@@ -1,31 +1,9 @@
-import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
-import { getAllGuides, getGuideBySlug } from "@/lib/guides"
-
-interface PageProps {
-  params: Promise<{ slug: string }>
-}
-
-export async function generateStaticParams() {
-  const guides = await getAllGuides()
-  return guides.map((g) => ({ slug: g.slug }))
-}
-
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
-  const { slug } = await params
-  const guide = await getGuideBySlug(slug)
-  if (!guide) return { title: "未找到" }
-
-  return {
-    title: guide.title,
-    description: guide.description,
-  }
-}
+import { getGuideBySlug } from "@/lib/guides"
+import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 
 function renderMarkdown(content: string): string {
   return content
@@ -55,9 +33,16 @@ function renderMarkdown(content: string): string {
     .replace(/^(?!<[hblut])(.*\S.*)$/gm, '<p class="my-3 leading-7">$1</p>')
 }
 
-export default async function GuideDetailPage({ params }: PageProps) {
-  const { slug } = await params
-  const guide = await getGuideBySlug(slug)
+interface GuideDetailPageProps {
+  slug: string
+  locale: Locale
+}
+
+export async function GuideDetailPage({ slug, locale }: GuideDetailPageProps) {
+  const [guide, translations] = await Promise.all([
+    getGuideBySlug(slug, locale),
+    getTranslations(locale),
+  ])
 
   if (!guide) {
     notFound()
@@ -67,9 +52,13 @@ export default async function GuideDetailPage({ params }: PageProps) {
     <article className="mx-auto max-w-3xl px-4 py-8">
       <Breadcrumb
         items={[
-          { label: "攻略", href: "/guides" },
+          {
+            label: t(translations, "guides.breadcrumb"),
+            href: getLocalePath(locale, "/guides"),
+          },
           { label: guide.title },
         ]}
+        locale={locale}
       />
       <header className="mb-8">
         <div className="mb-3 flex items-center gap-3">
@@ -81,7 +70,7 @@ export default async function GuideDetailPage({ params }: PageProps) {
           {guide.description}
         </p>
         <p className="mt-2 text-sm text-muted-foreground">
-          作者: {guide.author}
+          {t(translations, "guides.author")}: {guide.author}
         </p>
       </header>
 
@@ -105,7 +94,7 @@ export default async function GuideDetailPage({ params }: PageProps) {
               name: guide.author,
             },
             datePublished: guide.date,
-            mainEntityOfPage: `https://pokopia.guide/guides/${guide.slug}`,
+            mainEntityOfPage: `https://pokopiaguide.com${getLocalePath(locale, `/guides/${guide.slug}`)}`,
           }),
         }}
       />

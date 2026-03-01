@@ -1,0 +1,130 @@
+{
+  "site": {
+    "name": "Pokopia 攻略站",
+    "description": "Pokémon Pokopia 新手攻略站。图鉴查询、栖息地创造指南、家具制作配方，帮助新手训练家快速上手。",
+    "title": "Pokémon Pokopia 攻略 | 宝可梦图鉴 | PokopiaGuide.com",
+    "titleTemplate": "%s | Pokopia 攻略站"
+  },
+  "nav": {
+    "pokedex": "图鉴",
+    "habitat": "家园建设",
+    "quests": "任务攻略",
+    "explore": "探索地图",
+    "multiplayer": "联机指南"
+  },
+  "home": {
+    "heroTitle": "欢迎来到 Pokémon Pokopia 攻略站",
+    "heroDescription": "最全面的 Pokémon Pokopia 游戏攻略与数据查询平台。无论你是新手训练家还是资深玩家，都能在这里找到你需要的信息。",
+    "browsePokedex": "浏览图鉴",
+    "viewGuides": "查看攻略",
+    "featureNav": "功能导航",
+    "featuredPokemon": "精选宝可梦",
+    "latestGuides": "最新攻略",
+    "viewAll": "查看全部"
+  },
+  "features": {
+    "pokedexTitle": "宝可梦图鉴",
+    "pokedexDesc": "查看所有宝可梦的详细数据、属性和特性",
+    "habitatTitle": "家园建设",
+    "habitatDesc": "栖息地创造、环境改造、家具制作配方",
+    "questsTitle": "任务攻略",
+    "questsDesc": "主线流程、宝可梦愿望、配方解锁条件",
+    "exploreTitle": "探索地图",
+    "exploreDesc": "各区域介绍、可遇宝可梦、移动方式",
+    "multiplayerTitle": "联机指南",
+    "multiplayerDesc": "好友互访、4人联机、游戏分享功能"
+  },
+  "pokedex": {
+    "title": "宝可梦图鉴",
+    "description": "浏览 Pokémon Pokopia 世界中所有宝可梦的详细数据、属性、特性和种族值。",
+    "subtitle": "浏览 Pokémon Pokopia 世界中的所有宝可梦",
+    "totalCount": "共 {{count}} 只宝可梦",
+    "breadcrumb": "图鉴",
+    "notFound": "未找到",
+    "baseStats": "种族值",
+    "total": "合计",
+    "abilities": "特性",
+    "prev": "上一页",
+    "next": "下一页",
+    "page": "第"
+  },
+  "guides": {
+    "title": "攻略文章",
+    "description": "Pokémon Pokopia 最全面的攻略合集，包含新手入门、进阶技巧、通关攻略等内容。",
+    "subtitle": "从新手入门到进阶技巧，助你成为最强训练家",
+    "breadcrumb": "攻略",
+    "notFound": "未找到",
+    "author": "作者"
+  },
+  "comingSoon": {
+    "releaseNote": "游戏将于 2026 年 3 月 5 日发售，届时攻略内容将陆续上线。",
+    "backHome": "返回首页"
+  },
+  "habitat": {
+    "title": "家园建设攻略",
+    "metaTitle": "家园建设",
+    "metaDescription": "Pokémon Pokopia 家园建设攻略：栖息地创造、招式改造环境、家具制作配方一网打尽。",
+    "description": "栖息地创造、招式改造环境、家具制作配方等内容正在紧锣密鼓地准备中。"
+  },
+  "quests": {
+    "title": "任务攻略",
+    "metaTitle": "任务攻略",
+    "metaDescription": "Pokémon Pokopia 任务攻略：主线流程、宝可梦愿望、制作配方解锁条件详解。",
+    "description": "主线任务流程、宝可梦个人愿望、配方解锁条件等内容即将上线。"
+  },
+  "explore": {
+    "title": "探索地图",
+    "metaTitle": "探索地图",
+    "metaDescription": "Pokémon Pokopia 探索地图：各区域介绍、可遇宝可梦、变身移动方式全攻略。",
+    "description": "各区域详细介绍、可遇宝可梦分布、变身飞行与水上探索攻略即将上线。"
+  },
+  "multiplayer": {
+    "title": "联机指南",
+    "metaTitle": "联机指南",
+    "metaDescription": "Pokémon Pokopia 联机指南：好友家园互访、4人在线联机、游戏分享功能详解。",
+    "description": "好友家园互访、4人在线/本地联机、游戏分享功能等内容即将上线。"
+  },
+  "footer": {
+    "navigation": "导航",
+    "about": "关于",
+    "aboutText": "本站为玩家社区驱动的非官方攻略站。",
+    "copyright": "Pokopia 攻略站. All rights reserved.",
+    "pokedex": "宝可梦图鉴",
+    "habitat": "家园建设",
+    "quests": "任务攻略",
+    "explore": "探索地图",
+    "multiplayer": "联机指南"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "ariaLabel": "面包屑导航"
+  },
+  "stats": {
+    "hp": "HP",
+    "attack": "攻击",
+    "defense": "防御",
+    "spAtk": "特攻",
+    "spDef": "特防",
+    "speed": "速度"
+  },
+  "types": {
+    "normal": "一般",
+    "fire": "火",
+    "water": "水",
+    "electric": "电",
+    "grass": "草",
+    "ice": "冰",
+    "fighting": "格斗",
+    "poison": "毒",
+    "ground": "地面",
+    "flying": "飞行",
+    "psychic": "超能力",
+    "bug": "虫",
+    "rock": "岩石",
+    "ghost": "幽灵",
+    "dragon": "龙",
+    "dark": "恶",
+    "steel": "钢",
+    "fairy": "妖精"
+  }
+}

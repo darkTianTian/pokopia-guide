@@ -1,41 +1,22 @@
-import type { Metadata } from "next"
+import Image from "next/image"
 import { notFound } from "next/navigation"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { TypeBadge } from "@/components/pokemon/type-badge"
-import { getAllPokemon, getPokemonBySlug } from "@/lib/pokemon"
+import { getPokemonBySlug } from "@/lib/pokemon"
+import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 import type { PokemonStats } from "@/lib/types"
 
-interface PageProps {
-  params: Promise<{ slug: string }>
-}
-
-export async function generateStaticParams() {
-  const pokemon = await getAllPokemon()
-  return pokemon.map((p) => ({ slug: p.slug }))
-}
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params
-  const pokemon = await getPokemonBySlug(slug)
-  if (!pokemon) return { title: "未找到" }
-
-  return {
-    title: `${pokemon.name} — 宝可梦图鉴`,
-    description: pokemon.description,
-  }
-}
-
-const STAT_LABELS: Record<keyof PokemonStats, string> = {
-  hp: "HP",
-  attack: "攻击",
-  defense: "防御",
-  spAtk: "特攻",
-  spDef: "特防",
-  speed: "速度",
-}
+const STAT_KEYS: (keyof PokemonStats)[] = [
+  "hp",
+  "attack",
+  "defense",
+  "spAtk",
+  "spDef",
+  "speed",
+]
 
 const STAT_MAX = 255
 
@@ -58,9 +39,19 @@ function StatBar({ label, value }: { label: string; value: number }) {
   )
 }
 
-export default async function PokemonDetailPage({ params }: PageProps) {
-  const { slug } = await params
-  const pokemon = await getPokemonBySlug(slug)
+interface PokedexDetailPageProps {
+  slug: string
+  locale: Locale
+}
+
+export async function PokedexDetailPage({
+  slug,
+  locale,
+}: PokedexDetailPageProps) {
+  const [pokemon, translations] = await Promise.all([
+    getPokemonBySlug(slug, locale),
+    getTranslations(locale),
+  ])
 
   if (!pokemon) {
     notFound()
@@ -72,9 +63,13 @@ export default async function PokemonDetailPage({ params }: PageProps) {
     <article className="mx-auto max-w-4xl px-4 py-8">
       <Breadcrumb
         items={[
-          { label: "图鉴", href: "/pokedex" },
+          {
+            label: t(translations, "pokedex.breadcrumb"),
+            href: getLocalePath(locale, "/pokedex"),
+          },
           { label: pokemon.name },
         ]}
+        locale={locale}
       />
       <div className="mb-6">
         <div className="flex items-center gap-3">
@@ -85,9 +80,20 @@ export default async function PokemonDetailPage({ params }: PageProps) {
         </div>
         <div className="mt-2 flex gap-2">
           {pokemon.types.map((type) => (
-            <TypeBadge key={type} type={type} />
+            <TypeBadge key={type} type={type} locale={locale} />
           ))}
         </div>
+      </div>
+
+      <div className="mb-8 flex justify-center">
+        <Image
+          src={pokemon.image}
+          alt={pokemon.name}
+          width={240}
+          height={240}
+          className="object-contain"
+          priority
+        />
       </div>
 
       <p className="mb-8 text-lg text-muted-foreground">
@@ -97,17 +103,21 @@ export default async function PokemonDetailPage({ params }: PageProps) {
       <div className="grid gap-6 md:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle>种族值</CardTitle>
+            <CardTitle>{t(translations, "pokedex.baseStats")}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            {(Object.entries(STAT_LABELS) as [keyof PokemonStats, string][]).map(
-              ([key, label]) => (
-                <StatBar key={key} label={label} value={pokemon.stats[key]} />
-              )
-            )}
+            {STAT_KEYS.map((key) => (
+              <StatBar
+                key={key}
+                label={t(translations, `stats.${key}`)}
+                value={pokemon.stats[key]}
+              />
+            ))}
             <Separator />
             <div className="flex items-center gap-3">
-              <span className="w-12 text-right text-sm font-medium">合计</span>
+              <span className="w-12 text-right text-sm font-medium">
+                {t(translations, "pokedex.total")}
+              </span>
               <span className="w-8 text-right text-sm font-bold">
                 {totalStats}
               </span>
@@ -117,7 +127,7 @@ export default async function PokemonDetailPage({ params }: PageProps) {
 
         <Card>
           <CardHeader>
-            <CardTitle>特性</CardTitle>
+            <CardTitle>{t(translations, "pokedex.abilities")}</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
@@ -139,7 +149,7 @@ export default async function PokemonDetailPage({ params }: PageProps) {
             "@type": "Article",
             name: pokemon.name,
             description: pokemon.description,
-            mainEntityOfPage: `https://pokopia.guide/pokedex/${pokemon.slug}`,
+            mainEntityOfPage: `https://pokopiaguide.com${getLocalePath(locale, `/pokedex/${pokemon.slug}`)}`,
           }),
         }}
       />

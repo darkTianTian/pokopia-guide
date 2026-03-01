@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pokopia.guide/sitemap.xml
+Sitemap: https://pokopiaguide.com/sitemap.xml

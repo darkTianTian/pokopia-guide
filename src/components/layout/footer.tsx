@@ -1,48 +1,63 @@
 import Link from "next/link"
 import { Separator } from "@/components/ui/separator"
+import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 
-export function Footer() {
+interface FooterProps {
+  locale: Locale
+}
+
+export async function Footer({ locale }: FooterProps) {
+  const translations = await getTranslations(locale)
+
+  const footerLinks = [
+    { path: "/pokedex", label: t(translations, "footer.pokedex") },
+    { path: "/habitat", label: t(translations, "footer.habitat") },
+    { path: "/quests", label: t(translations, "footer.quests") },
+    { path: "/explore", label: t(translations, "footer.explore") },
+    { path: "/multiplayer", label: t(translations, "footer.multiplayer") },
+  ]
+
   return (
     <footer className="border-t">
       <div className="mx-auto max-w-6xl px-4 py-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           <div>
-            <h3 className="mb-3 font-semibold">Pokopia 攻略站</h3>
+            <h3 className="mb-3 font-semibold">
+              {t(translations, "site.name")}
+            </h3>
             <p className="text-sm text-muted-foreground">
-              最全面的 Pokopia 游戏攻略与数据查询平台。
+              {t(translations, "site.description")}
             </p>
           </div>
           <div>
-            <h3 className="mb-3 font-semibold">导航</h3>
+            <h3 className="mb-3 font-semibold">
+              {t(translations, "footer.navigation")}
+            </h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/pokedex"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  宝可梦图鉴
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/guides"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  攻略文章
-                </Link>
-              </li>
+              {footerLinks.map((link) => (
+                <li key={link.path}>
+                  <Link
+                    href={getLocalePath(locale, link.path)}
+                    className="text-muted-foreground hover:text-foreground"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
-            <h3 className="mb-3 font-semibold">关于</h3>
+            <h3 className="mb-3 font-semibold">
+              {t(translations, "footer.about")}
+            </h3>
             <p className="text-sm text-muted-foreground">
-              本站为玩家社区驱动的非官方攻略站。
+              {t(translations, "footer.aboutText")}
             </p>
           </div>
         </div>
         <Separator className="my-6" />
         <p className="text-center text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Pokopia 攻略站. All rights reserved.
+          &copy; {new Date().getFullYear()} {t(translations, "footer.copyright")}
         </p>
       </div>
     </footer>

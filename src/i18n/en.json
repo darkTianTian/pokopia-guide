@@ -1,0 +1,130 @@
+{
+  "site": {
+    "name": "Pokopia Guide",
+    "description": "Beginner's guide to Pokémon Pokopia. Pokédex, habitat creation, and furniture crafting recipes to help new trainers get started.",
+    "title": "Pokémon Pokopia Guide | Pokédex & Wiki | PokopiaGuide.com",
+    "titleTemplate": "%s | Pokopia Guide"
+  },
+  "nav": {
+    "pokedex": "Pokédex",
+    "habitat": "Habitat",
+    "quests": "Quests",
+    "explore": "Explore",
+    "multiplayer": "Multiplayer"
+  },
+  "home": {
+    "heroTitle": "Welcome to Pokémon Pokopia Guide",
+    "heroDescription": "The most comprehensive Pokémon Pokopia game guide and data platform. Whether you're a beginner or a veteran trainer, you'll find everything you need here.",
+    "browsePokedex": "Browse Pokédex",
+    "viewGuides": "View Guides",
+    "featureNav": "Feature Navigation",
+    "featuredPokemon": "Featured Pokémon",
+    "latestGuides": "Latest Guides",
+    "viewAll": "View All"
+  },
+  "features": {
+    "pokedexTitle": "Pokédex",
+    "pokedexDesc": "Browse detailed data, types, and abilities of all Pokémon",
+    "habitatTitle": "Habitat Building",
+    "habitatDesc": "Habitat creation, environment modification, furniture crafting recipes",
+    "questsTitle": "Quest Guides",
+    "questsDesc": "Main story walkthrough, Pokémon wishes, recipe unlock conditions",
+    "exploreTitle": "Exploration Map",
+    "exploreDesc": "Area guides, Pokémon encounters, movement methods",
+    "multiplayerTitle": "Multiplayer Guide",
+    "multiplayerDesc": "Friend visits, 4-player online, game sharing features"
+  },
+  "pokedex": {
+    "title": "Pokédex",
+    "description": "Browse all Pokémon in the Pokémon Pokopia world with detailed data, types, abilities, and base stats.",
+    "subtitle": "Browse all Pokémon in the Pokémon Pokopia world",
+    "totalCount": "{{count}} Pokémon in total",
+    "breadcrumb": "Pokédex",
+    "notFound": "Not Found",
+    "baseStats": "Base Stats",
+    "total": "Total",
+    "abilities": "Abilities",
+    "prev": "Previous",
+    "next": "Next",
+    "page": "Page"
+  },
+  "guides": {
+    "title": "Guide Articles",
+    "description": "The most comprehensive guide collection for Pokémon Pokopia, including beginner tips, advanced techniques, and walkthroughs.",
+    "subtitle": "From beginner tips to advanced techniques, become the ultimate trainer",
+    "breadcrumb": "Guides",
+    "notFound": "Not Found",
+    "author": "Author"
+  },
+  "comingSoon": {
+    "releaseNote": "The game launches on March 5, 2026. Guide content will be available soon after release.",
+    "backHome": "Back to Home"
+  },
+  "habitat": {
+    "title": "Habitat Building Guide",
+    "metaTitle": "Habitat Building",
+    "metaDescription": "Pokémon Pokopia habitat building guide: habitat creation, move-based environment modification, and furniture crafting recipes.",
+    "description": "Habitat creation, move-based environment modification, furniture crafting recipes and more are being prepared."
+  },
+  "quests": {
+    "title": "Quest Guide",
+    "metaTitle": "Quest Guides",
+    "metaDescription": "Pokémon Pokopia quest guide: main story walkthrough, Pokémon wishes, and crafting recipe unlock conditions.",
+    "description": "Main quest walkthrough, Pokémon personal wishes, recipe unlock conditions and more are coming soon."
+  },
+  "explore": {
+    "title": "Exploration Map",
+    "metaTitle": "Exploration Map",
+    "metaDescription": "Pokémon Pokopia exploration map: area guides, Pokémon encounters, and transformation travel methods.",
+    "description": "Detailed area guides, Pokémon distribution, transformation flight and water exploration guides are coming soon."
+  },
+  "multiplayer": {
+    "title": "Multiplayer Guide",
+    "metaTitle": "Multiplayer Guide",
+    "metaDescription": "Pokémon Pokopia multiplayer guide: friend habitat visits, 4-player online/local multiplayer, and game sharing features.",
+    "description": "Friend habitat visits, 4-player online/local multiplayer, game sharing features and more are coming soon."
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "about": "About",
+    "aboutText": "This is a community-driven unofficial guide site.",
+    "copyright": "Pokopia Guide. All rights reserved.",
+    "pokedex": "Pokédex",
+    "habitat": "Habitat Building",
+    "quests": "Quest Guides",
+    "explore": "Exploration Map",
+    "multiplayer": "Multiplayer Guide"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "ariaLabel": "Breadcrumb navigation"
+  },
+  "stats": {
+    "hp": "HP",
+    "attack": "Attack",
+    "defense": "Defense",
+    "spAtk": "Sp.Atk",
+    "spDef": "Sp.Def",
+    "speed": "Speed"
+  },
+  "types": {
+    "normal": "Normal",
+    "fire": "Fire",
+    "water": "Water",
+    "electric": "Electric",
+    "grass": "Grass",
+    "ice": "Ice",
+    "fighting": "Fighting",
+    "poison": "Poison",
+    "ground": "Ground",
+    "flying": "Flying",
+    "psychic": "Psychic",
+    "bug": "Bug",
+    "rock": "Rock",
+    "ghost": "Ghost",
+    "dragon": "Dragon",
+    "dark": "Dark",
+    "steel": "Steel",
+    "fairy": "Fairy"
+  }
+}
