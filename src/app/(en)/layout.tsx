@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
+import { GoogleAnalytics } from "@/components/google-analytics"
 import "@/app/globals.css"
 
 const geistSans = Geist({
@@ -43,6 +44,7 @@ export default function EnLayout({
           <main className="flex-1">{children}</main>
           <Footer locale="en" />
         </div>
+        <GoogleAnalytics />
       </body>
     </html>
   )

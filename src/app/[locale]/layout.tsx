@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
+import { GoogleAnalytics } from "@/components/google-analytics"
 import {
   LOCALE_LANG,
   getTranslations,
@@ -73,6 +74,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           <main className="flex-1">{children}</main>
           <Footer locale={validLocale} />
         </div>
+        <GoogleAnalytics />
       </body>
     </html>
   )
