@@ -1,0 +1,17 @@
+{
+  "id": 6,
+  "slug": "charizard",
+  "name": "喷火龙",
+  "types": ["fire", "flying"],
+  "stats": {
+    "hp": 78,
+    "attack": 84,
+    "defense": 78,
+    "spAtk": 109,
+    "spDef": 85,
+    "speed": 100
+  },
+  "abilities": ["猛火", "太阳之力"],
+  "description": "喷火龙是一种火/飞行属性宝可梦。它的火焰温度极高，能够融化巨石。在 Pokopia 的火山地带，经常能见到野生的喷火龙翱翔天际。",
+  "image": "/images/pokemon/charizard.png"
+}

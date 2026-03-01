@@ -1,0 +1,17 @@
+{
+  "id": 150,
+  "slug": "mewtwo",
+  "name": "超梦",
+  "types": ["psychic"],
+  "stats": {
+    "hp": 106,
+    "attack": 110,
+    "defense": 90,
+    "spAtk": 154,
+    "spDef": 90,
+    "speed": 130
+  },
+  "abilities": ["压迫感", "紧张感"],
+  "description": "超梦是一种超能力属性的传说宝可梦。它是由基因工程创造的最强宝可梦之一。在 Pokopia 的深处隐藏着关于超梦起源的秘密。",
+  "image": "/images/pokemon/mewtwo.png"
+}
