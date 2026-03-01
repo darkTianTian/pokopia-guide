@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Top half - red -->
+  <path d="M256 0C114.6 0 0 114.6 0 256h512C512 114.6 397.4 0 256 0z" fill="#EE1515"/>
+  <!-- Bottom half - white -->
+  <path d="M256 512C397.4 512 512 397.4 512 256H0C0 397.4 114.6 512 256 512z" fill="#FFFFFF"/>
+  <!-- Center band - dark -->
+  <rect x="0" y="232" width="512" height="48" fill="#222222"/>
+  <!-- Outer ring -->
+  <circle cx="256" cy="256" r="80" fill="#222222"/>
+  <!-- Inner ring -->
+  <circle cx="256" cy="256" r="56" fill="#FFFFFF"/>
+  <!-- Center dot -->
+  <circle cx="256" cy="256" r="28" fill="#222222"/>
+  <!-- Highlight on top half -->
+  <path d="M256 24C134 24 32 116 18 234h48C80 142.4 160 72 256 72s176 70.4 190 162h48C480 116 378 24 256 24z" fill="#FF4444" opacity="0.3"/>
+</svg>
