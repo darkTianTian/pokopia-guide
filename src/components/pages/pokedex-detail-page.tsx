@@ -5,7 +5,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { TypeBadge } from "@/components/pokemon/type-badge"
-import { getPokemonBySlug } from "@/lib/pokemon"
+import { PokemonCard } from "@/components/pokemon/pokemon-card"
+import { getAllPokemon, getPokemonBySlug } from "@/lib/pokemon"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 import type { PokemonStats } from "@/lib/types"
 
@@ -48,8 +49,9 @@ export async function PokedexDetailPage({
   slug,
   locale,
 }: PokedexDetailPageProps) {
-  const [pokemon, translations] = await Promise.all([
+  const [pokemon, allPokemon, translations] = await Promise.all([
     getPokemonBySlug(slug, locale),
+    getAllPokemon(locale),
     getTranslations(locale),
   ])
 
@@ -58,6 +60,10 @@ export async function PokedexDetailPage({
   }
 
   const totalStats = Object.values(pokemon.stats).reduce((a, b) => a + b, 0)
+
+  const relatedPokemon = allPokemon
+    .filter((p) => p.slug !== pokemon.slug && p.types.some((type) => pokemon.types.includes(type)))
+    .slice(0, 4)
 
   return (
     <article className="mx-auto max-w-4xl px-4 py-8">
@@ -140,6 +146,19 @@ export async function PokedexDetailPage({
           </CardContent>
         </Card>
       </div>
+
+      {relatedPokemon.length > 0 && (
+        <section className="mt-12">
+          <h2 className="mb-6 text-2xl font-bold">
+            {t(translations, "pokedex.relatedPokemon")}
+          </h2>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {relatedPokemon.map((p) => (
+              <PokemonCard key={p.slug} pokemon={p} locale={locale} />
+            ))}
+          </div>
+        </section>
+      )}
 
       <script
         type="application/ld+json"
