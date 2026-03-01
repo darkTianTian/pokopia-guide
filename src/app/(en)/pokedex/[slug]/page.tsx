@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { PokedexDetailPage } from "@/components/pages/pokedex-detail-page"
 import { getAllPokemon, getPokemonBySlug } from "@/lib/pokemon"
+import { getPageAlternates } from "@/i18n/config"
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -19,6 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${pokemon.name} — Pokédex`,
     description: pokemon.description,
+    alternates: getPageAlternates("en", `/pokedex/${slug}`),
   }
 }
 

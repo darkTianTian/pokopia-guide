@@ -4,8 +4,6 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import {
   LOCALE_LANG,
-  LOCALES,
-  getLocalePath,
   getTranslations,
   t,
   isValidLocale,
@@ -52,11 +50,6 @@ export async function generateMetadata({
       type: "website",
       locale: LOCALE_LANG[locale].replace("-", "_"),
       siteName: t(translations, "site.name"),
-    },
-    alternates: {
-      languages: Object.fromEntries(
-        LOCALES.map((loc) => [LOCALE_LANG[loc], `https://pokopiaguide.com${getLocalePath(loc, "/")}`])
-      ),
     },
   }
 }

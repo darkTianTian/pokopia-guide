@@ -23,6 +23,17 @@ export function getLocalePath(locale: Locale, path: string): string {
   return `/${locale}${normalizedPath}`
 }
 
+const SITE_URL = "https://pokopiaguide.com"
+
+export function getPageAlternates(locale: Locale, path: string) {
+  return {
+    canonical: `${SITE_URL}${getLocalePath(locale, path)}`,
+    languages: Object.fromEntries(
+      LOCALES.map((loc) => [LOCALE_LANG[loc], `${SITE_URL}${getLocalePath(loc, path)}`])
+    ),
+  }
+}
+
 export function isValidLocale(value: string): value is Locale {
   return LOCALES.includes(value as Locale)
 }

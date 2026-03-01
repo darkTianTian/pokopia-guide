@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { GuideDetailPage } from "@/components/pages/guide-detail-page"
 import { getAllGuides, getGuideBySlug } from "@/lib/guides"
+import { getPageAlternates } from "@/i18n/config"
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -19,6 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: guide.title,
     description: guide.description,
+    alternates: getPageAlternates("en", `/guides/${slug}`),
   }
 }
 

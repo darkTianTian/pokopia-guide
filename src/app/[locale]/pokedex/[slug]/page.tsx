@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { PokedexDetailPage } from "@/components/pages/pokedex-detail-page"
 import { getAllPokemon, getPokemonBySlug } from "@/lib/pokemon"
-import { isValidLocale, getTranslations, t } from "@/i18n/config"
+import { isValidLocale, getTranslations, t, getPageAlternates } from "@/i18n/config"
 import { notFound } from "next/navigation"
 
 interface PageProps {
@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${pokemon.name} — ${t(translations, "pokedex.title")}`,
     description: pokemon.description,
+    alternates: getPageAlternates(locale, `/pokedex/${slug}`),
   }
 }
 

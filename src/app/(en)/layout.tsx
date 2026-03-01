@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-import { LOCALES, getLocalePath, LOCALE_LANG } from "@/i18n/config"
+import "@/app/globals.css"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,11 +25,6 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Pokopia Guide",
-  },
-  alternates: {
-    languages: Object.fromEntries(
-      LOCALES.map((loc) => [LOCALE_LANG[loc], `https://pokopiaguide.com${getLocalePath(loc, "/")}`])
-    ),
   },
 }
 

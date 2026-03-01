@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { GuideDetailPage } from "@/components/pages/guide-detail-page"
 import { getAllGuides, getGuideBySlug } from "@/lib/guides"
-import { isValidLocale, getTranslations, t } from "@/i18n/config"
+import { isValidLocale, getTranslations, t, getPageAlternates } from "@/i18n/config"
 import { notFound } from "next/navigation"
 
 interface PageProps {
@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: guide.title,
     description: guide.description,
+    alternates: getPageAlternates(locale, `/guides/${slug}`),
   }
 }
 

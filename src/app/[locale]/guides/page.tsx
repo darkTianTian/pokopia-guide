@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { GuidesPage } from "@/components/pages/guides-page"
-import { isValidLocale, getTranslations, t } from "@/i18n/config"
+import { isValidLocale, getTranslations, t, getPageAlternates } from "@/i18n/config"
 import { notFound } from "next/navigation"
 
 interface PageProps {
@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: t(translations, "guides.title"),
     description: t(translations, "guides.description"),
+    alternates: getPageAlternates(locale, "/guides"),
   }
 }
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { ComingSoonPage } from "@/components/pages/coming-soon-page"
-import { isValidLocale, getTranslations, t } from "@/i18n/config"
+import { isValidLocale, getTranslations, t, getPageAlternates } from "@/i18n/config"
 import { notFound } from "next/navigation"
 
 interface PageProps {
@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: t(translations, "explore.metaTitle"),
     description: t(translations, "explore.metaDescription"),
+    alternates: getPageAlternates(locale, "/explore"),
   }
 }
 
