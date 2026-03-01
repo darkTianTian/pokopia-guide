@@ -37,6 +37,9 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
         nextLabel={t(translations, "pokedex.next")}
         pageLabel={t(translations, "pokedex.page")}
       />
+      <p className="mt-8 text-center text-xs text-muted-foreground">
+        {t(translations, "pokedex.dataDisclaimer")}
+      </p>
     </div>
   )
 }

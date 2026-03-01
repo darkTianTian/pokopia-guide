@@ -160,6 +160,10 @@ export async function PokedexDetailPage({
         </section>
       )}
 
+      <p className="mt-8 text-center text-xs text-muted-foreground">
+        {t(translations, "pokedex.dataDisclaimer")}
+      </p>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

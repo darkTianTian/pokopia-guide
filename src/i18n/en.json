@@ -47,7 +47,8 @@
     "relatedPokemon": "Related Pokémon",
     "prev": "Previous",
     "next": "Next",
-    "page": "Page"
+    "page": "Page",
+    "dataDisclaimer": "Data sourced from the main Pokémon series. Pokopia in-game data will be updated after release."
   },
   "guides": {
     "title": "Guide Articles",

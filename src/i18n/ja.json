@@ -47,7 +47,8 @@
     "relatedPokemon": "関連ポケモン",
     "prev": "前へ",
     "next": "次へ",
-    "page": "ページ"
+    "page": "ページ",
+    "dataDisclaimer": "データはポケモン本編シリーズに基づいています。Pokopia のゲーム内データは発売後に更新予定です。"
   },
   "guides": {
     "title": "攻略記事",
