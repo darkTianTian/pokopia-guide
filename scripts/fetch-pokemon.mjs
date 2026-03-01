@@ -100,11 +100,11 @@ function getFlavorText(speciesData, lang) {
 }
 
 function buildPokemonJson(pokemonData, speciesData, locale) {
-  const langMap = { en: "en", cn: "zh-Hans", jp: "ja" }
+  const langMap = { en: "en", zh: "zh-Hans", ja: "ja" }
   const nameGetters = {
     en: getEnglishName,
-    cn: getChineseName,
-    jp: getJapaneseName,
+    zh: getChineseName,
+    ja: getJapaneseName,
   }
 
   const name = nameGetters[locale](speciesData)
@@ -168,7 +168,7 @@ async function fetchAbilityName(abilityUrl, lang) {
 async function main() {
   const contentDir = path.join(process.cwd(), "content")
 
-  for (const locale of ["en", "cn", "jp"]) {
+  for (const locale of ["en", "zh", "ja"]) {
     await fs.mkdir(path.join(contentDir, locale, "pokemon"), { recursive: true })
   }
 
@@ -211,9 +211,9 @@ async function main() {
       }
 
       // Fetch translated ability names
-      const langMap = { en: "en", cn: "zh-Hans", jp: "ja" }
+      const langMap = { en: "en", zh: "zh-Hans", ja: "ja" }
 
-      for (const locale of ["en", "cn", "jp"]) {
+      for (const locale of ["en", "zh", "ja"]) {
         const json = buildPokemonJson(pokemonData, speciesData, locale)
 
         // Translate abilities

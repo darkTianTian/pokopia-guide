@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 })
 
 export function generateStaticParams() {
-  return [{ locale: "cn" }, { locale: "jp" }]
+  return [{ locale: "zh" }, { locale: "ja" }]
 }
 
 interface LayoutProps {

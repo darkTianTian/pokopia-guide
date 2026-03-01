@@ -5,8 +5,8 @@ const BASE_URL = "https://pokopiaguide.com"
 
 const LOCALES = [
   { code: "en", prefix: "" },
-  { code: "cn", prefix: "/cn" },
-  { code: "jp", prefix: "/jp" },
+  { code: "zh", prefix: "/zh" },
+  { code: "ja", prefix: "/ja" },
 ]
 
 async function main() {
