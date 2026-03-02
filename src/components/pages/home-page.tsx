@@ -35,9 +35,9 @@ export async function HomePage({ locale }: HomePageProps) {
       icon: "🏡",
     },
     {
-      href: getLocalePath(locale, "/quests"),
-      title: t(translations, "features.questsTitle"),
-      description: t(translations, "features.questsDesc"),
+      href: getLocalePath(locale, "/guides"),
+      title: t(translations, "features.guidesTitle"),
+      description: t(translations, "features.guidesDesc"),
       icon: "📜",
     },
     {

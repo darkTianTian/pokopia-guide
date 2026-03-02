@@ -7,8 +7,8 @@
   },
   "nav": {
     "pokedex": "図鑑",
+    "guides": "攻略",
     "habitat": "ホーム建設",
-    "quests": "クエスト攻略",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイ"
   },
@@ -25,10 +25,10 @@
   "features": {
     "pokedexTitle": "ポケモン図鑑",
     "pokedexDesc": "全ポケモンの詳細データ・タイプ・特性を確認",
+    "guidesTitle": "攻略記事",
+    "guidesDesc": "予約ガイド、初心者向け攻略、クエスト攻略、上級テクニック",
     "habitatTitle": "ホーム建設",
     "habitatDesc": "生息地作成、環境改造、家具制作レシピ",
-    "questsTitle": "クエスト攻略",
-    "questsDesc": "メインストーリー、ポケモンの願い、レシピ解放条件",
     "exploreTitle": "探索マップ",
     "exploreDesc": "各エリア紹介、出現ポケモン、移動方法",
     "multiplayerTitle": "マルチプレイガイド",
@@ -92,8 +92,8 @@
     "aboutText": "当サイトはプレイヤーコミュニティ運営の非公式攻略サイトです。",
     "copyright": "Pokopia 攻略サイト. All rights reserved.",
     "pokedex": "ポケモン図鑑",
+    "guides": "攻略記事",
     "habitat": "ホーム建設",
-    "quests": "クエスト攻略",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイガイド"
   },

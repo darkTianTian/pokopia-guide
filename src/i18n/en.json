@@ -7,8 +7,8 @@
   },
   "nav": {
     "pokedex": "Pokédex",
+    "guides": "Guides",
     "habitat": "Habitat",
-    "quests": "Quests",
     "explore": "Explore",
     "multiplayer": "Multiplayer"
   },
@@ -25,10 +25,10 @@
   "features": {
     "pokedexTitle": "Pokédex",
     "pokedexDesc": "Browse detailed data, types, and abilities of all Pokémon",
+    "guidesTitle": "Guides",
+    "guidesDesc": "Pre-order info, beginner tips, quest walkthroughs, and advanced techniques",
     "habitatTitle": "Habitat Building",
     "habitatDesc": "Habitat creation, environment modification, furniture crafting recipes",
-    "questsTitle": "Quest Guides",
-    "questsDesc": "Main story walkthrough, Pokémon wishes, recipe unlock conditions",
     "exploreTitle": "Exploration Map",
     "exploreDesc": "Area guides, Pokémon encounters, movement methods",
     "multiplayerTitle": "Multiplayer Guide",
@@ -92,8 +92,8 @@
     "aboutText": "This is a community-driven unofficial guide site.",
     "copyright": "Pokopia Guide. All rights reserved.",
     "pokedex": "Pokédex",
+    "guides": "Guides",
     "habitat": "Habitat Building",
-    "quests": "Quest Guides",
     "explore": "Exploration Map",
     "multiplayer": "Multiplayer Guide"
   },

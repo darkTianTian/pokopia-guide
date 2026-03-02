@@ -7,8 +7,8 @@
   },
   "nav": {
     "pokedex": "图鉴",
+    "guides": "攻略",
     "habitat": "家园建设",
-    "quests": "任务攻略",
     "explore": "探索地图",
     "multiplayer": "联机指南"
   },
@@ -25,10 +25,10 @@
   "features": {
     "pokedexTitle": "宝可梦图鉴",
     "pokedexDesc": "查看所有宝可梦的详细数据、属性和特性",
+    "guidesTitle": "攻略文章",
+    "guidesDesc": "预购指南、新手入门、任务攻略、进阶技巧",
     "habitatTitle": "家园建设",
     "habitatDesc": "栖息地创造、环境改造、家具制作配方",
-    "questsTitle": "任务攻略",
-    "questsDesc": "主线流程、宝可梦愿望、配方解锁条件",
     "exploreTitle": "探索地图",
     "exploreDesc": "各区域介绍、可遇宝可梦、移动方式",
     "multiplayerTitle": "联机指南",
@@ -92,8 +92,8 @@
     "aboutText": "本站为玩家社区驱动的非官方攻略站。",
     "copyright": "Pokopia 攻略站. All rights reserved.",
     "pokedex": "宝可梦图鉴",
+    "guides": "攻略文章",
     "habitat": "家园建设",
-    "quests": "任务攻略",
     "explore": "探索地图",
     "multiplayer": "联机指南"
   },
