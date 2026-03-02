@@ -6,31 +6,74 @@ import { getGuideBySlug } from "@/lib/guides"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 
 function renderMarkdown(content: string): string {
-  return content
-    .replace(/^### (.*$)/gm, '<h3 class="mt-6 mb-3 text-lg font-semibold">$1</h3>')
-    .replace(/^## (.*$)/gm, '<h2 class="mt-8 mb-4 text-xl font-bold">$1</h2>')
-    .replace(/^# (.*$)/gm, '<h1 class="mt-8 mb-4 text-2xl font-bold">$1</h1>')
-    .replace(/^\> (.*$)/gm, '<blockquote class="border-l-4 border-primary/30 pl-4 italic text-muted-foreground my-4">$1</blockquote>')
-    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-    .replace(/^\d+\. (.*$)/gm, '<li class="ml-6 list-decimal">$1</li>')
-    .replace(/^- (.*$)/gm, '<li class="ml-6 list-disc">$1</li>')
-    .replace(
-      /\|(.+)\|/g,
-      (match) => {
-        const cells = match
-          .split("|")
-          .filter(Boolean)
-          .map((c) => c.trim())
-        if (cells.every((c) => /^[-:]+$/.test(c))) return ""
-        const tag = "td"
-        return `<tr>${cells.map((c) => `<${tag} class="border px-3 py-1.5 text-sm">${c}</${tag}>`).join("")}</tr>`
+  const lines = content.split("\n")
+  const result: string[] = []
+  let inTable = false
+  const tableRows: string[] = []
+
+  function flushTable() {
+    if (tableRows.length > 0) {
+      result.push('<table class="my-4 w-full border-collapse">')
+      result.push(...tableRows)
+      result.push("</table>")
+      tableRows.length = 0
+    }
+    inTable = false
+  }
+
+  function inlineFormat(text: string): string {
+    return text
+      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:text-primary/80">$1</a>')
+  }
+
+  for (const line of lines) {
+    const trimmed = line.trim()
+
+    // Table row
+    if (trimmed.startsWith("|") && trimmed.endsWith("|")) {
+      const cells = trimmed.split("|").filter(Boolean).map((c) => c.trim())
+      // Skip separator row
+      if (cells.every((c) => /^[-:]+$/.test(c))) {
+        inTable = true
+        continue
       }
-    )
-    .replace(
-      /(<tr>[\s\S]*?<\/tr>)/g,
-      '<table class="my-4 w-full border-collapse">$1</table>'
-    )
-    .replace(/^(?!<[hblut])(.*\S.*)$/gm, '<p class="my-3 leading-7">$1</p>')
+      if (!inTable && tableRows.length === 0) {
+        // Header row
+        tableRows.push(`<tr>${cells.map((c) => `<th class="border px-3 py-1.5 text-sm font-semibold text-left bg-muted">${inlineFormat(c)}</th>`).join("")}</tr>`)
+      } else {
+        tableRows.push(`<tr>${cells.map((c) => `<td class="border px-3 py-1.5 text-sm">${inlineFormat(c)}</td>`).join("")}</tr>`)
+      }
+      inTable = true
+      continue
+    }
+
+    // Non-table line: flush any pending table
+    if (inTable) flushTable()
+
+    if (trimmed === "") {
+      continue
+    } else if (trimmed.startsWith("### ")) {
+      result.push(`<h3 class="mt-6 mb-3 text-lg font-semibold">${inlineFormat(trimmed.slice(4))}</h3>`)
+    } else if (trimmed.startsWith("## ")) {
+      result.push(`<h2 class="mt-8 mb-4 text-xl font-bold">${inlineFormat(trimmed.slice(3))}</h2>`)
+    } else if (trimmed.startsWith("# ")) {
+      result.push(`<h1 class="mt-8 mb-4 text-2xl font-bold">${inlineFormat(trimmed.slice(2))}</h1>`)
+    } else if (trimmed.startsWith("> ")) {
+      result.push(`<blockquote class="border-l-4 border-primary/30 pl-4 italic text-muted-foreground my-4">${inlineFormat(trimmed.slice(2))}</blockquote>`)
+    } else if (/^\d+\. /.test(trimmed)) {
+      result.push(`<li class="ml-6 list-decimal">${inlineFormat(trimmed.replace(/^\d+\. /, ""))}</li>`)
+    } else if (trimmed.startsWith("- ")) {
+      result.push(`<li class="ml-6 list-disc">${inlineFormat(trimmed.slice(2))}</li>`)
+    } else {
+      result.push(`<p class="my-3 leading-7">${inlineFormat(trimmed)}</p>`)
+    }
+  }
+
+  // Flush remaining table
+  if (inTable) flushTable()
+
+  return result.join("\n")
 }
 
 interface GuideDetailPageProps {
