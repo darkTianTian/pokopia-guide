@@ -51,6 +51,13 @@ function renderMarkdown(content: string): string {
     // Non-table line: flush any pending table
     if (inTable) flushTable()
 
+    // YouTube embed: {% youtube VIDEO_ID %}
+    const youtubeMatch = trimmed.match(/^\{%\s*youtube\s+([\w-]+)\s*%\}$/)
+    if (youtubeMatch) {
+      result.push(`<div class="my-6" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:0.5rem" src="https://www.youtube.com/embed/${youtubeMatch[1]}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`)
+      continue
+    }
+
     if (trimmed === "") {
       continue
     } else if (trimmed.startsWith("### ")) {
