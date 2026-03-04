@@ -1,7 +1,7 @@
 {
   "id": 167,
   "slug": "spinarak",
-  "name": "圆丝蛛",
+  "name": "圓絲蛛",
   "types": [
     "bug",
     "poison"
@@ -15,10 +15,10 @@
     "speed": 30
   },
   "abilities": [
-    "虫之预感",
+    "蟲之預感",
     "不眠",
-    "狙击手"
+    "狙擊手"
   ],
-  "description": "牙齿上的毒并不强烈， 但用来削弱那些挂在网上 无法动弹的猎物是绰绰有余了。",
+  "description": "牙齒的毒性並不強烈， 但用來削弱那些掛在蛛網上 無法動彈的獵物是綽綽有餘。",
   "image": "https://assets.pokopiaguide.com/pokemon/spinarak.png"
 }

@@ -1,7 +1,7 @@
 {
   "id": 1,
   "slug": "bulbasaur",
-  "name": "妙蛙种子",
+  "name": "妙蛙種子",
   "types": [
     "grass",
     "poison"
@@ -16,8 +16,8 @@
   },
   "abilities": [
     "茂盛",
-    "叶绿素"
+    "葉綠素"
   ],
-  "description": "在出生后的一段时间内， 它会吸收背上种子里 储存着的营养成长。",
+  "description": "在出生後的一段時間內， 牠會吸收背上種子裡 儲存著的營養成長。",
   "image": "https://assets.pokopiaguide.com/pokemon/bulbasaur.png"
 }

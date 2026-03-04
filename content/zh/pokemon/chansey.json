@@ -14,10 +14,10 @@
     "speed": 50
   },
   "abilities": [
-    "自然回复",
+    "自然回復",
     "天恩",
-    "治愈之心"
+    "治癒之心"
   ],
-  "description": "原本动作迟缓。 为了保护蛋不被抢走， 逃跑的速度才变快了。",
+  "description": "原本動作遲緩。但為了從 盯上蛋的傢伙們手裡保護蛋， 逃跑的速度就變快了。",
   "image": "https://assets.pokopiaguide.com/pokemon/chansey.png"
 }

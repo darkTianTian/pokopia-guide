@@ -1,7 +1,7 @@
 {
   "id": 447,
   "slug": "riolu",
-  "name": "利欧路",
+  "name": "利歐路",
   "types": [
     "fighting"
   ],
@@ -16,8 +16,8 @@
   "abilities": [
     "不屈之心",
     "精神力",
-    "恶作剧之心"
+    "惡作劇之心"
   ],
-  "description": "除了能读懂对手的感情， 也能以“波导”这种形式的波 来观察大自然的样子。",
+  "description": "除了能讀懂對手的感情， 也能以「波導」這種形式的波 來觀察大自然的樣子。",
   "image": "https://assets.pokopiaguide.com/pokemon/riolu.png"
 }

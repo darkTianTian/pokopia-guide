@@ -1,7 +1,7 @@
 {
   "id": 148,
   "slug": "dragonair",
-  "name": "哈克龙",
+  "name": "哈克龍",
   "types": [
     "dragon"
   ],
@@ -14,9 +14,9 @@
     "speed": 70
   },
   "abilities": [
-    "蜕皮",
-    "神奇鳞片"
+    "蛻皮",
+    "神奇鱗片"
   ],
-  "description": "把力量集中在尾巴的 珠子上操纵天气。 散发气场的样子非常神秘。",
+  "description": "能將力量集中在尾巴的珠子， 藉此操縱天氣。全身散發著 氣場的樣子非常神秘。",
   "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png"
 }

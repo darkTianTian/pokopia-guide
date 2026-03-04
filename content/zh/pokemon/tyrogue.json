@@ -1,7 +1,7 @@
 {
   "id": 236,
   "slug": "tyrogue",
-  "name": "无畏小子",
+  "name": "無畏小子",
   "types": [
     "fighting"
   ],
@@ -16,8 +16,8 @@
   "abilities": [
     "毅力",
     "不屈之心",
-    "干劲"
+    "幹勁"
   ],
-  "description": "体型偏小却不可轻视， 因为它只要发现合适的对手 便会马上扑上去大打出手。",
+  "description": "體型雖小卻不可輕視， 因為牠只要發現合適的對手， 就會馬上撲上去大打出手。",
   "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png"
 }

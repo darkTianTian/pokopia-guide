@@ -1,7 +1,7 @@
 {
   "id": 18,
   "slug": "pidgeot",
-  "name": "大比鸟",
+  "name": "大比鳥",
   "types": [
     "normal",
     "flying"
@@ -15,10 +15,10 @@
     "speed": 101
   },
   "abilities": [
-    "锐利目光",
-    "蹒跚",
-    "健壮胸肌"
+    "銳利目光",
+    "蹣跚",
+    "健壯胸肌"
   ],
-  "description": "以２马赫的飞行速度来 觅食。它巨大的爪子是 非常令人惧怕的武器。",
+  "description": "會以２馬赫的速度飛行 來尋找食物。巨大的爪子 是很可怕的武器。",
   "image": "https://assets.pokopiaguide.com/pokemon/pidgeot.png"
 }

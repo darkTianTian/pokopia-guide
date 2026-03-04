@@ -1,7 +1,7 @@
 {
   "id": 569,
   "slug": "garbodor",
-  "name": "灰尘山",
+  "name": "灰塵山",
   "types": [
     "poison"
   ],
@@ -14,10 +14,10 @@
     "speed": 75
   },
   "abilities": [
-    "恶臭",
-    "碎裂铠甲",
+    "惡臭",
+    "碎裂鎧甲",
     "引爆"
   ],
-  "description": "从右臂喷出的毒液十分危险， 虚弱的生物只要一沾到， 立刻就会丢掉性命。",
+  "description": "從右臂噴出的毒液十分危險， 虛弱的生物只要一沾到， 立刻就會丟掉性命。",
   "image": "https://assets.pokopiaguide.com/pokemon/garbodor.png"
 }

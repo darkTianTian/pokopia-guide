@@ -1,7 +1,7 @@
 {
   "id": 194,
   "slug": "wooper",
-  "name": "乌波",
+  "name": "烏波",
   "types": [
     "water",
     "ground"
@@ -15,10 +15,10 @@
     "speed": 15
   },
   "abilities": [
-    "湿气",
-    "储水",
-    "纯朴"
+    "濕氣",
+    "儲水",
+    "純樸"
   ],
-  "description": "为了在地面上行走时 不让皮肤干燥，会用 有毒的粘膜覆盖身体。",
+  "description": "為了在地面上行走時 不讓皮膚乾燥，會用 有毒的黏膜覆蓋身體。",
   "image": "https://assets.pokopiaguide.com/pokemon/wooper.png"
 }

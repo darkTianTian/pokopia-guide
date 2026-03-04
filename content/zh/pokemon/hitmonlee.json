@@ -1,7 +1,7 @@
 {
   "id": 106,
   "slug": "hitmonlee",
-  "name": "飞腿郎",
+  "name": "飛腿郎",
   "types": [
     "fighting"
   ],
@@ -14,10 +14,10 @@
     "speed": 87
   },
   "abilities": [
-    "柔软",
-    "舍身",
-    "轻装"
+    "柔軟",
+    "捨身",
+    "輕裝"
   ],
-  "description": "腿能自由地伸缩， 即使离得很远， 也能把对手踢飞。",
+  "description": "雙腿能夠自由伸縮， 即使離得很遠也能 把對手一腳踢飛。",
   "image": "https://assets.pokopiaguide.com/pokemon/hitmonlee.png"
 }

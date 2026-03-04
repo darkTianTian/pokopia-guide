@@ -1,7 +1,7 @@
 {
   "id": 607,
   "slug": "litwick",
-  "name": "烛光灵",
+  "name": "燭光靈",
   "types": [
     "ghost",
     "fire"
@@ -16,9 +16,9 @@
   },
   "abilities": [
     "引火",
-    "火焰之躯",
+    "火焰之軀",
     "穿透"
   ],
-  "description": "吸取到的灵魂越年轻， 头上的烛光就会 燃烧得越旺越诡异。",
+  "description": "吸取到的靈魂越年輕， 頭上的燭光就會 燃燒得越旺越詭異。",
   "image": "https://assets.pokopiaguide.com/pokemon/litwick.png"
 }

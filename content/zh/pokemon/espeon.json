@@ -1,7 +1,7 @@
 {
   "id": 196,
   "slug": "espeon",
-  "name": "太阳伊布",
+  "name": "太陽伊布",
   "types": [
     "psychic"
   ],
@@ -15,8 +15,8 @@
   },
   "abilities": [
     "同步",
-    "魔法镜"
+    "魔法鏡"
   ],
-  "description": "从额头的珠子放射出精神力量 进行战斗。当力量用尽时， 珠子的颜色也会褪去。",
+  "description": "從額頭的珠子放射出精神力量 進行戰鬥。當力量用盡時， 珠子的顏色也會褪去。",
   "image": "https://assets.pokopiaguide.com/pokemon/espeon.png"
 }

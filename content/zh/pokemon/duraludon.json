@@ -1,7 +1,7 @@
 {
   "id": 884,
   "slug": "duraludon",
-  "name": "铝钢龙",
+  "name": "鋁鋼龍",
   "types": [
     "steel",
     "dragon"
@@ -15,10 +15,10 @@
     "speed": 85
   },
   "abilities": [
-    "轻金属",
-    "重金属",
-    "坚毅"
+    "輕金屬",
+    "重金屬",
+    "堅毅"
   ],
-  "description": "由特殊金属构成的身体 十分轻盈，能够灵活地活动。 不喜欢下雨，所以住在洞窟里。",
+  "description": "由特殊金屬構成的身體 十分輕盈，能夠靈活地活動。 不喜歡下雨，所以住在洞窟裡。",
   "image": "https://assets.pokopiaguide.com/pokemon/duraludon.png"
 }

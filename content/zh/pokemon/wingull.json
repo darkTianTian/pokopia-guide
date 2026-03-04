@@ -1,7 +1,7 @@
 {
   "id": 278,
   "slug": "wingull",
-  "name": "长翅鸥",
+  "name": "長翅鷗",
   "types": [
     "water",
     "flying"
@@ -15,10 +15,10 @@
     "speed": 85
   },
   "abilities": [
-    "锐利目光",
-    "湿润之躯",
-    "雨盘"
+    "銳利目光",
+    "濕潤之軀",
+    "雨盤"
   ],
-  "description": "利用气流， 不拍打翅膀就能飞上天空。 会在海边的岩壁上筑巢。",
+  "description": "利用氣流， 不拍打翅膀就能飛上天空。 會在海邊的岩壁上築巢。",
   "image": "https://assets.pokopiaguide.com/pokemon/wingull.png"
 }

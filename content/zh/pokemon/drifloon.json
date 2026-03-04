@@ -1,7 +1,7 @@
 {
   "id": 425,
   "slug": "drifloon",
-  "name": "飘飘球",
+  "name": "飄飄球",
   "types": [
     "ghost",
     "flying"
@@ -16,9 +16,9 @@
   },
   "abilities": [
     "引爆",
-    "轻装",
-    "受热激升"
+    "輕裝",
+    "受熱激升"
   ],
-  "description": "因魂魄聚集在一起而诞生。 到了湿气大的季节 就有可能大量出现。",
+  "description": "因魂魄聚集在一起而誕生。 到了濕氣重的季節 就有可能大量出現。",
   "image": "https://assets.pokopiaguide.com/pokemon/drifloon.png"
 }

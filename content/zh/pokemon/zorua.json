@@ -1,7 +1,7 @@
 {
   "id": 570,
   "slug": "zorua",
-  "name": "索罗亚",
+  "name": "索羅亞",
   "types": [
     "dark"
   ],
@@ -14,8 +14,8 @@
     "speed": 65
   },
   "abilities": [
-    "幻觉"
+    "幻覺"
   ],
-  "description": "为了寻找食物，有时甚至会 幻化成人类出现在城镇里。 多数情况下会幻化成小孩。",
+  "description": "為了尋找食物，有時還會 幻化成人類出現在城鎮裡。 通常都會變成小孩子。",
   "image": "https://assets.pokopiaguide.com/pokemon/zorua.png"
 }

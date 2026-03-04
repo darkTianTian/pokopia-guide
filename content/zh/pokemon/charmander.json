@@ -1,7 +1,7 @@
 {
   "id": 4,
   "slug": "charmander",
-  "name": "小火龙",
+  "name": "小火龍",
   "types": [
     "fire"
   ],
@@ -15,8 +15,8 @@
   },
   "abilities": [
     "猛火",
-    "太阳之力"
+    "太陽之力"
   ],
-  "description": "生下来的时候，尾巴上就有火焰在燃烧。火焰熄灭时，它的生命也会结束。",
+  "description": "從出生時開始尾巴上 就有火焰在燃燒。 火焰熄滅時，生命也會結束。",
   "image": "https://assets.pokopiaguide.com/pokemon/charmander.png"
 }

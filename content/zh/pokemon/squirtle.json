@@ -1,7 +1,7 @@
 {
   "id": 7,
   "slug": "squirtle",
-  "name": "杰尼龟",
+  "name": "傑尼龜",
   "types": [
     "water"
   ],
@@ -15,8 +15,8 @@
   },
   "abilities": [
     "激流",
-    "雨盘"
+    "雨盤"
   ],
-  "description": "当它遇到危险的时候， 会将四肢收回龟壳里保护自己， 同时从嘴里喷出水来。",
+  "description": "當牠遇到危險的時候， 會將四肢收回甲殼裡保護自己， 同時從嘴裡噴出水來。",
   "image": "https://assets.pokopiaguide.com/pokemon/squirtle.png"
 }

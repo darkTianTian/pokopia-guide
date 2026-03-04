@@ -1,7 +1,7 @@
 {
   "id": 54,
   "slug": "psyduck",
-  "name": "可达鸭",
+  "name": "可達鴨",
   "types": [
     "water"
   ],
@@ -14,10 +14,10 @@
     "speed": 55
   },
   "abilities": [
-    "湿气",
-    "无关天气",
+    "濕氣",
+    "無關天氣",
     "悠游自如"
   ],
-  "description": "头痛会随着压力逐渐累积 而不断加剧。会用强大的 念力击垮周围的一切。",
+  "description": "頭痛會隨著壓力累積而 更加劇烈。會用強大的 念力壓倒周圍的一切。",
   "image": "https://assets.pokopiaguide.com/pokemon/psyduck.png"
 }

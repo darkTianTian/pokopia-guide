@@ -1,7 +1,7 @@
 {
   "id": 83,
   "slug": "farfetchd",
-  "name": "大葱鸭",
+  "name": "大蔥鴨",
   "types": [
     "normal",
     "flying"
@@ -15,10 +15,10 @@
     "speed": 60
   },
   "abilities": [
-    "锐利目光",
+    "銳利目光",
     "精神力",
-    "不服输"
+    "不服輸"
   ],
-  "description": "会将翅膀拿着的茎状植物当成剑一般去劈砍对手。在非常时期会拿它当作食物。",
+  "description": "用植物的莖來戰鬥。 莖的揮舞方式存在著 好幾種不同的流派。",
   "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png"
 }

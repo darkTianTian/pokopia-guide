@@ -1,7 +1,7 @@
 {
   "id": 316,
   "slug": "gulpin",
-  "name": "溶食兽",
+  "name": "溶食獸",
   "types": [
     "poison"
   ],
@@ -14,9 +14,9 @@
     "speed": 40
   },
   "abilities": [
-    "污泥浆",
-    "黏着",
-    "贪吃鬼"
+    "污泥漿",
+    "黏著",
+    "貪吃鬼"
   ],
   "description": "Most of Gulpin’s body is made up of its stomach—its heart and brain are very small in comparison. This Pokémon’s stomach contains special enzymes that dissolve anything.",
   "image": "https://assets.pokopiaguide.com/pokemon/gulpin.png"

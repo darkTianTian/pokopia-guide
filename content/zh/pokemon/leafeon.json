@@ -1,7 +1,7 @@
 {
   "id": 470,
   "slug": "leafeon",
-  "name": "叶伊布",
+  "name": "葉伊布",
   "types": [
     "grass"
   ],
@@ -14,9 +14,9 @@
     "speed": 95
   },
   "abilities": [
-    "叶子防守",
-    "叶绿素"
+    "葉子防守",
+    "葉綠素"
   ],
-  "description": "尾巴好似锐利的刀刃， 锋利得无与伦比， 连大树都能一斩为二。",
+  "description": "尾巴如同銳利的刀刃， 鋒利得無與倫比， 連大樹都能一刀兩斷。",
   "image": "https://assets.pokopiaguide.com/pokemon/leafeon.png"
 }

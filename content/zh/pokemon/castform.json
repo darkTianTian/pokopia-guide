@@ -1,7 +1,7 @@
 {
   "id": 351,
   "slug": "castform",
-  "name": "飘浮泡泡",
+  "name": "飄浮泡泡",
   "types": [
     "normal"
   ],
@@ -14,8 +14,8 @@
     "speed": 70
   },
   "abilities": [
-    "阴晴不定"
+    "陰晴不定"
   ],
-  "description": "样子会根据天气发生变化。 天气越恶劣， 性格也会变得越暴躁。",
+  "description": "樣子會隨著天氣而變化。 天氣越是惡劣， 性情就會變得越粗暴。",
   "image": "https://assets.pokopiaguide.com/pokemon/castform.png"
 }

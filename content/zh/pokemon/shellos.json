@@ -1,7 +1,7 @@
 {
   "id": 422,
   "slug": "shellos",
-  "name": "无壳海兔",
+  "name": "無殼海兔",
   "types": [
     "water"
   ],
@@ -14,10 +14,10 @@
     "speed": 34
   },
   "abilities": [
-    "黏着",
+    "黏著",
     "引水",
     "沙之力"
   ],
-  "description": "如果用力按住它， 它就会分泌出神秘的紫色液体。 虽然液体无害，不过黏糊糊的。",
+  "description": "如果用力按住牠， 牠就會分泌出神秘的紫色液體。 雖然液體無害，不過黏糊糊的。",
   "image": "https://assets.pokopiaguide.com/pokemon/shellos.png"
 }

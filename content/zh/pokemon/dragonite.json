@@ -1,7 +1,7 @@
 {
   "id": 149,
   "slug": "dragonite",
-  "name": "快龙",
+  "name": "快龍",
   "types": [
     "dragon",
     "flying"
@@ -16,8 +16,8 @@
   },
   "abilities": [
     "精神力",
-    "多重鳞片"
+    "多重鱗片"
   ],
-  "description": "被称为大海的化身。 很多船都会把快龙的 雕像设置在船头。",
+  "description": "人們稱牠為大海的化身。 有許多船會在船頭設置 快龍的雕像。",
   "image": "https://assets.pokopiaguide.com/pokemon/dragonite.png"
 }

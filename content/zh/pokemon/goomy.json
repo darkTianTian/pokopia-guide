@@ -1,7 +1,7 @@
 {
   "id": 704,
   "slug": "goomy",
-  "name": "黏黏宝",
+  "name": "黏黏寶",
   "types": [
     "dragon"
   ],
@@ -15,9 +15,9 @@
   },
   "abilities": [
     "食草",
-    "湿润之躯",
+    "濕潤之軀",
     "黏滑"
   ],
-  "description": "它的触角是优秀的感觉器官。 只要感觉到有敌人就会立刻 藏起来，以此存活到了现在。",
+  "description": "牠的觸角是優秀的感覺器官。 只要感覺到有敵人就會立刻 躲起來，以此存活到了現在。",
   "image": "https://assets.pokopiaguide.com/pokemon/goomy.png"
 }

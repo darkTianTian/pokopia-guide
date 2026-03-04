@@ -11,7 +11,7 @@ export const LOCALE_LABELS: Record<Locale, string> = {
 
 export const LOCALE_LANG: Record<Locale, string> = {
   en: "en",
-  zh: "zh-CN",
+  zh: "zh-TW",
   ja: "ja",
 }
 

@@ -85,8 +85,8 @@ function getJapaneseName(speciesData) {
 
 function getChineseName(speciesData) {
   const entry =
-    speciesData.names.find((n) => n.language.name === "zh-hans") ??
-    speciesData.names.find((n) => n.language.name === "zh-hant")
+    speciesData.names.find((n) => n.language.name === "zh-hant") ??
+    speciesData.names.find((n) => n.language.name === "zh-hans")
   return entry?.name ?? speciesData.name
 }
 
@@ -100,7 +100,7 @@ function getFlavorText(speciesData, lang) {
 }
 
 function buildPokemonJson(pokemonData, speciesData, locale) {
-  const langMap = { en: "en", zh: "zh-hans", ja: "ja" }
+  const langMap = { en: "en", zh: "zh-hant", ja: "ja" }
   const nameGetters = {
     en: getEnglishName,
     zh: getChineseName,
@@ -211,7 +211,7 @@ async function main() {
       }
 
       // Fetch translated ability names
-      const langMap = { en: "en", zh: "zh-hans", ja: "ja" }
+      const langMap = { en: "en", zh: "zh-hant", ja: "ja" }
 
       for (const locale of ["en", "zh", "ja"]) {
         const json = buildPokemonJson(pokemonData, speciesData, locale)

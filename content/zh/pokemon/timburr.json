@@ -1,7 +1,7 @@
 {
   "id": 532,
   "slug": "timburr",
-  "name": "搬运小匠",
+  "name": "搬運小匠",
   "types": [
     "fighting"
   ],
@@ -15,9 +15,9 @@
   },
   "abilities": [
     "毅力",
-    "强行",
-    "铁拳"
+    "強行",
+    "鐵拳"
   ],
-  "description": "如果搬运小匠可以搬起 自己体重３倍左右的方材， 就代表它进化的日子要到了。",
+  "description": "如果搬運小匠可以搬起 自己體重３倍左右的木材， 就代表牠進化的日子要到了。",
   "image": "https://assets.pokopiaguide.com/pokemon/timburr.png"
 }

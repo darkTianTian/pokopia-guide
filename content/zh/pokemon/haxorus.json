@@ -1,7 +1,7 @@
 {
   "id": 612,
   "slug": "haxorus",
-  "name": "双斧战龙",
+  "name": "雙斧戰龍",
   "types": [
     "dragon"
   ],
@@ -14,10 +14,10 @@
     "speed": 97
   },
   "abilities": [
-    "斗争心",
+    "鬥爭心",
     "破格",
-    "紧张感"
+    "緊張感"
   ],
-  "description": "性格温和，但生起气来非常恐怖。 会用自己那引以为傲，可以 削铁如泥的牙齿攻击敌人。",
+  "description": "性情溫和，但生起氣來非常恐怖。 會用自己那引以為傲，可以 削鐵如泥的牙齒攻擊敵人。",
   "image": "https://assets.pokopiaguide.com/pokemon/haxorus.png"
 }

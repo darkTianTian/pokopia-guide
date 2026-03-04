@@ -1,7 +1,7 @@
 {
   "id": 103,
   "slug": "exeggutor",
-  "name": "椰蛋树",
+  "name": "椰蛋樹",
   "types": [
     "grass",
     "psychic"
@@ -15,9 +15,9 @@
     "speed": 55
   },
   "abilities": [
-    "叶绿素",
-    "收获"
+    "葉綠素",
+    "收穫"
   ],
-  "description": "３个脑袋联合起来 能使出强大的精神力量。 天气变阴时动作会变得迟钝。",
+  "description": "３顆頭團結一致發出的 精神力量威力強大。天氣 變陰時動作就會變得遲緩。",
   "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png"
 }

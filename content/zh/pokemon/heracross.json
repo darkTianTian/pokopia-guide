@@ -1,7 +1,7 @@
 {
   "id": 214,
   "slug": "heracross",
-  "name": "赫拉克罗斯",
+  "name": "赫拉克羅斯",
   "types": [
     "bug",
     "fighting"
@@ -15,10 +15,10 @@
     "speed": 85
   },
   "abilities": [
-    "虫之预感",
+    "蟲之預感",
     "毅力",
-    "自信过度"
+    "自信過度"
   ],
-  "description": "能轻轻松松地举起比自己 体重还重１００倍的东西， 是以一身怪力为傲的宝可梦。",
+  "description": "能夠輕輕鬆鬆舉起比自己 體重還要重１００倍的物體， 是以一身怪力為傲的寶可夢。",
   "image": "https://assets.pokopiaguide.com/pokemon/heracross.png"
 }

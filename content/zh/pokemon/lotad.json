@@ -1,7 +1,7 @@
 {
   "id": 270,
   "slug": "lotad",
-  "name": "莲叶童子",
+  "name": "蓮葉童子",
   "types": [
     "water",
     "grass"
@@ -16,9 +16,9 @@
   },
   "abilities": [
     "悠游自如",
-    "雨盘",
+    "雨盤",
     "我行我素"
   ],
-  "description": "因为叶子长得太大太重， 所以才会改变习性， 漂浮在水面上生活。",
+  "description": "因為葉子長得太大太重， 所以才會改變習性， 漂浮在水面上生活。",
   "image": "https://assets.pokopiaguide.com/pokemon/lotad.png"
 }

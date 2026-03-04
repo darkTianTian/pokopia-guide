@@ -1,7 +1,7 @@
 {
   "id": 706,
   "slug": "goodra",
-  "name": "黏美龙",
+  "name": "黏美龍",
   "types": [
     "dragon"
   ],
@@ -15,9 +15,9 @@
   },
   "abilities": [
     "食草",
-    "湿润之躯",
+    "濕潤之軀",
     "黏滑"
   ],
-  "description": "用伸长角产生的力道来 攻击对手，产生的威力比 重量级拳击手的拳击还强１００倍。",
+  "description": "用伸長角產生的力道來 攻擊對手，產生的威力比 重量級拳擊手的拳擊還強１００倍。",
   "image": "https://assets.pokopiaguide.com/pokemon/goodra.png"
 }

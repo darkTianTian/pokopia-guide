@@ -1,7 +1,7 @@
 {
   "id": 147,
   "slug": "dratini",
-  "name": "迷你龙",
+  "name": "迷你龍",
   "types": [
     "dragon"
   ],
@@ -14,9 +14,9 @@
     "speed": 50
   },
   "abilities": [
-    "蜕皮",
-    "神奇鳞片"
+    "蛻皮",
+    "神奇鱗片"
   ],
-  "description": "长久以来被认为只存在于 幻想之中。额头小小的突起 是正在发育的角。",
+  "description": "長久以來被認為只存在於 幻想之中。額頭上小小的 突起是正在成長的角。",
   "image": "https://assets.pokopiaguide.com/pokemon/dratini.png"
 }

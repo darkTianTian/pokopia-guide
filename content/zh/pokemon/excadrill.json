@@ -1,7 +1,7 @@
 {
   "id": 530,
   "slug": "excadrill",
-  "name": "龙头地鼠",
+  "name": "龍頭地鼠",
   "types": [
     "ground",
     "steel"
@@ -15,10 +15,10 @@
     "speed": 88
   },
   "abilities": [
-    "拨沙",
+    "撥沙",
     "沙之力",
     "破格"
   ],
-  "description": "别名钻头王。在地底下 挖掘前进的速度 达到了每小时１５０公里。",
+  "description": "別名鑽頭王。在地底下 挖掘前進的速度 高達每小時１５０公里。",
   "image": "https://assets.pokopiaguide.com/pokemon/excadrill.png"
 }

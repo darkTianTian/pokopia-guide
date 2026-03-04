@@ -1,7 +1,7 @@
 {
   "id": 182,
   "slug": "bellossom",
-  "name": "美丽花",
+  "name": "美麗花",
   "types": [
     "grass"
   ],
@@ -14,9 +14,9 @@
     "speed": 50
   },
   "abilities": [
-    "叶绿素",
-    "治愈之心"
+    "葉綠素",
+    "治癒之心"
   ],
-  "description": "有时能看到美丽花聚在一起 做着像是跳舞一样的动作。 据说这是呼唤太阳的仪式。",
+  "description": "有時美麗花們會聚在一起， 做出像是跳舞的動作。 據說這是呼喚太陽的儀式。",
   "image": "https://assets.pokopiaguide.com/pokemon/bellossom.png"
 }

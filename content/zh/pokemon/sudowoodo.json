@@ -1,7 +1,7 @@
 {
   "id": 185,
   "slug": "sudowoodo",
-  "name": "树才怪",
+  "name": "樹才怪",
   "types": [
     "rock"
   ],
@@ -14,10 +14,10 @@
     "speed": 30
   },
   "abilities": [
-    "结实",
-    "坚硬脑袋",
-    "胆怯"
+    "結實",
+    "堅硬腦袋",
+    "膽怯"
   ],
-  "description": "为了不被袭击会模仿树的样子。 很讨厌水，所以下雨后， 不知什么时候就会消失。",
+  "description": "為了不被襲擊而模仿樹的樣子。 很討厭水，所以一開始下雨 就會在不知不覺間消失無蹤。",
   "image": "https://assets.pokopiaguide.com/pokemon/sudowoodo.png"
 }

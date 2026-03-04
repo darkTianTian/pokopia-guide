@@ -1,7 +1,7 @@
 {
   "id": 129,
   "slug": "magikarp",
-  "name": "鲤鱼王",
+  "name": "鯉魚王",
   "types": [
     "water"
   ],
@@ -15,8 +15,8 @@
   },
   "abilities": [
     "悠游自如",
-    "胆怯"
+    "膽怯"
   ],
-  "description": "又弱又可怜的宝可梦。 在水流比较快的地方 只能任凭自己被水冲走。",
+  "description": "又弱又可憐的寶可夢。 在水流比較快的地方， 只能任憑自己被水沖走。",
   "image": "https://assets.pokopiaguide.com/pokemon/magikarp.png"
 }

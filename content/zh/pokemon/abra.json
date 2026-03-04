@@ -1,7 +1,7 @@
 {
   "id": 63,
   "slug": "abra",
-  "name": "凯西",
+  "name": "凱西",
   "types": [
     "psychic"
   ],
@@ -18,6 +18,6 @@
     "精神力",
     "魔法防守"
   ],
-  "description": "能够在睡梦中使出瞬间移动。 据说它睡得越熟，就能 移动到越遥远的地方。",
+  "description": "就算在睡夢中也能使用瞬間移動。 據說當牠睡得越熟， 瞬間移動的距離就會越遠。",
   "image": "https://assets.pokopiaguide.com/pokemon/abra.png"
 }
