@@ -8,6 +8,7 @@
   "nav": {
     "pokedex": "Pokédex",
     "guides": "Guides",
+    "events": "Events",
     "habitat": "Habitat",
     "explore": "Explore",
     "multiplayer": "Multiplayer"
@@ -27,6 +28,8 @@
     "pokedexDesc": "Browse detailed data, types, and abilities of all Pokémon",
     "guidesTitle": "Guides",
     "guidesDesc": "Pre-order info, beginner tips, quest walkthroughs, and advanced techniques",
+    "eventsTitle": "Events",
+    "eventsDesc": "Limited-time events, exclusive Pokémon, and special rewards",
     "habitatTitle": "Habitat Building",
     "habitatDesc": "Habitat creation, environment modification, furniture crafting recipes",
     "exploreTitle": "Exploration Map",
@@ -57,6 +60,18 @@
     "breadcrumb": "Guides",
     "notFound": "Not Found",
     "author": "Author"
+  },
+  "events": {
+    "title": "Limited-Time Events",
+    "description": "Track all Pokémon Pokopia limited-time events, exclusive Pokémon, and special rewards.",
+    "subtitle": "Don't miss out on exclusive Pokémon and limited-time rewards",
+    "breadcrumb": "Events",
+    "notFound": "Not Found",
+    "author": "Author",
+    "active": "Active",
+    "ended": "Ended",
+    "upcoming": "Upcoming",
+    "eventPeriod": "Event Period"
   },
   "comingSoon": {
     "releaseNote": "The game launches on March 5, 2026. Guide content will be available soon after release.",
@@ -93,6 +108,7 @@
     "copyright": "Pokopia Guide. All rights reserved.",
     "pokedex": "Pokédex",
     "guides": "Guides",
+    "events": "Events",
     "habitat": "Habitat Building",
     "explore": "Exploration Map",
     "multiplayer": "Multiplayer Guide"

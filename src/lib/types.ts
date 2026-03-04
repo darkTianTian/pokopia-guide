@@ -50,3 +50,15 @@ export interface Guide {
   author: string
   content: string
 }
+
+export interface GameEvent {
+  slug: string
+  title: string
+  description: string
+  category: string
+  date: string
+  author: string
+  startDate: string
+  endDate: string
+  content: string
+}

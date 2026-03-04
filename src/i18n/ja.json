@@ -8,6 +8,7 @@
   "nav": {
     "pokedex": "図鑑",
     "guides": "攻略",
+    "events": "イベント",
     "habitat": "ホーム建設",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイ"
@@ -27,6 +28,8 @@
     "pokedexDesc": "全ポケモンの詳細データ・タイプ・特性を確認",
     "guidesTitle": "攻略記事",
     "guidesDesc": "予約ガイド、初心者向け攻略、クエスト攻略、上級テクニック",
+    "eventsTitle": "イベント",
+    "eventsDesc": "期間限定イベント、限定ポケモン、特別報酬",
     "habitatTitle": "ホーム建設",
     "habitatDesc": "生息地作成、環境改造、家具制作レシピ",
     "exploreTitle": "探索マップ",
@@ -57,6 +60,18 @@
     "breadcrumb": "攻略",
     "notFound": "見つかりません",
     "author": "著者"
+  },
+  "events": {
+    "title": "期間限定イベント",
+    "description": "Pokémon Pokopia の期間限定イベント、限定ポケモン、特別報酬をチェック。",
+    "subtitle": "限定ポケモンやイベント報酬をお見逃しなく",
+    "breadcrumb": "イベント",
+    "notFound": "見つかりません",
+    "author": "著者",
+    "active": "開催中",
+    "ended": "終了",
+    "upcoming": "開催予定",
+    "eventPeriod": "開催期間"
   },
   "comingSoon": {
     "releaseNote": "ゲームは2026年3月5日に発売予定です。発売後、攻略コンテンツを順次公開します。",
@@ -93,6 +108,7 @@
     "copyright": "Pokopia 攻略サイト. All rights reserved.",
     "pokedex": "ポケモン図鑑",
     "guides": "攻略記事",
+    "events": "イベント",
     "habitat": "ホーム建設",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイガイド"

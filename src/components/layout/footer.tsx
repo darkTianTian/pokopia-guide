@@ -12,6 +12,7 @@ export async function Footer({ locale }: FooterProps) {
   const footerLinks = [
     { path: "/pokedex", label: t(translations, "footer.pokedex") },
     { path: "/guides", label: t(translations, "footer.guides") },
+    { path: "/events", label: t(translations, "footer.events") },
     { path: "/habitat", label: t(translations, "footer.habitat") },
     { path: "/explore", label: t(translations, "footer.explore") },
     { path: "/multiplayer", label: t(translations, "footer.multiplayer") },

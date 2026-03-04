@@ -18,6 +18,7 @@ export async function Header({ locale }: HeaderProps) {
   const navItems = [
     { path: "/pokedex", label: t(translations, "nav.pokedex") },
     { path: "/guides", label: t(translations, "nav.guides") },
+    { path: "/events", label: t(translations, "nav.events") },
     { path: "/habitat", label: t(translations, "nav.habitat") },
     { path: "/explore", label: t(translations, "nav.explore") },
     { path: "/multiplayer", label: t(translations, "nav.multiplayer") },
