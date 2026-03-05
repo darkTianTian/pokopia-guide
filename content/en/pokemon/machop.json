@@ -23,8 +23,10 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "cyndaquil",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "machoke"
+    ],
     "habitats": [
       {
         "id": 3,

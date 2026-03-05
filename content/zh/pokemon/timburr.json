@@ -22,8 +22,10 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "kadabra",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "gurdurr"
+    ],
     "habitats": [
       {
         "id": 3,

@@ -23,7 +23,7 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "tyrogue",
+    "evolvesFrom": null,
     "evolvesTo": null,
     "habitats": [
       {

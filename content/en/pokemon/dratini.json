@@ -22,8 +22,10 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "swinub",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "dragonair"
+    ],
     "habitats": [
       {
         "id": 144,

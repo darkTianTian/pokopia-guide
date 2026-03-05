@@ -22,8 +22,10 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "ponyta",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "pikachu"
+    ],
     "habitats": [
       {
         "id": 20,

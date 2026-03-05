@@ -22,8 +22,10 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "meowth",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "swalot"
+    ],
     "habitats": [
       {
         "id": 19,

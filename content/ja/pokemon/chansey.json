@@ -11,8 +11,10 @@
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
-    "evolvesFrom": "voltorb",
-    "evolvesTo": null,
+    "evolvesFrom": "happiny",
+    "evolvesTo": [
+      "blissey"
+    ],
     "habitats": []
   }
 }

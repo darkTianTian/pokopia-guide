@@ -22,8 +22,10 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "torchic",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "corvisquire"
+    ],
     "habitats": [
       {
         "id": 142,

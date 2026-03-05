@@ -20,8 +20,10 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "elekid",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "hariyama"
+    ],
     "habitats": [
       {
         "id": 51,

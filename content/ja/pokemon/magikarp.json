@@ -7,9 +7,7 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/magikarp.png",
   "pokopia": {
-    "specialties": [
-      "???"
-    ],
+    "specialties": [],
     "timeOfDay": [
       "dawn",
       "day",
@@ -22,8 +20,10 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "gloom",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "gyarados"
+    ],
     "habitats": [
       {
         "id": 185,
