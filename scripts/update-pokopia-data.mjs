@@ -1187,6 +1187,49 @@ async function run() {
     serebiiBySlug.set(entry.slug, entry)
   }
 
+  // Step 4b: Build global habitat ID → EN name mapping
+  // Cross-reference GameWith (has IDs) with Game8 (has English names) across all Pokemon
+  // Most reliable: Pokemon with exactly 1 habitat in both sources → 1:1 mapping
+  // Then: Pokemon with same count → positional mapping
+  const habitatIdToEnVotes = new Map() // id → Map<enName, count>
+  for (const [slug, gw] of gameWithData) {
+    const g8 = game8Data.get(slug)
+    if (!g8 || !gw.habitats?.length || !g8.habitats?.length) continue
+
+    if (gw.habitats.length === 1 && g8.habitats.length === 1) {
+      // 1:1 — most reliable
+      const id = gw.habitats[0].id
+      const enName = g8.habitats[0]
+      if (!habitatIdToEnVotes.has(id)) habitatIdToEnVotes.set(id, new Map())
+      const votes = habitatIdToEnVotes.get(id)
+      votes.set(enName, (votes.get(enName) || 0) + 10) // high weight for 1:1
+    } else if (gw.habitats.length === g8.habitats.length) {
+      // Same count — positional mapping
+      for (let i = 0; i < gw.habitats.length; i++) {
+        const id = gw.habitats[i].id
+        const enName = g8.habitats[i]
+        if (!habitatIdToEnVotes.has(id)) habitatIdToEnVotes.set(id, new Map())
+        const votes = habitatIdToEnVotes.get(id)
+        votes.set(enName, (votes.get(enName) || 0) + 1)
+      }
+    }
+  }
+  // Pick the highest-voted EN name for each habitat ID
+  for (const [id, votes] of habitatIdToEnVotes) {
+    const idStr = String(id)
+    if (habitatMappings.en[idStr]) continue // Serebii EN name takes priority
+    let bestName = null
+    let bestCount = 0
+    for (const [name, count] of votes) {
+      if (count > bestCount) {
+        bestName = name
+        bestCount = count
+      }
+    }
+    if (bestName) habitatMappings.en[idStr] = bestName
+  }
+  console.log(`Built EN habitat mapping: ${Object.keys(habitatMappings.en).length} entries (from voting across ${habitatIdToEnVotes.size} habitats)`)
+
   // Stats tracking
   let updated = 0
   let skipped = 0
