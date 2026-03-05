@@ -23,9 +23,9 @@ export async function EventsPage({ locale }: EventsPageProps) {
         <h1 className="text-3xl font-bold">
           {t(translations, "events.title")}
         </h1>
-        <p className="mt-2 text-muted-foreground">
+        <h2 className="mt-2 text-lg font-normal text-muted-foreground">
           {t(translations, "events.subtitle")}
-        </p>
+        </h2>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {events.map((event) => (
