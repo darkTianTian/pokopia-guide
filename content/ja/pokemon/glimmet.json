@@ -30,12 +30,7 @@
     "habitats": [
       {
         "id": 118,
-        "name": "Creepy white rocks",
-        "rarity": "common"
-      },
-      {
-        "id": 119,
-        "name": "Container snacking",
+        "name": "ブキミな白い岩",
         "rarity": "common"
       }
     ]

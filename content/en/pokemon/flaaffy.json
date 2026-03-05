@@ -27,6 +27,12 @@
     "evolvesTo": [
       "ampharos"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 77,
+        "name": "Knitting station",
+        "rarity": "rare"
+      }
+    ]
   }
 }

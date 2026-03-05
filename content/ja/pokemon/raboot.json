@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/raboot.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "burn"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -15,6 +17,12 @@
     "evolvesTo": [
       "cinderace"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 130,
+        "name": "さわやかロッカールーム",
+        "rarity": "common"
+      }
+    ]
   }
 }

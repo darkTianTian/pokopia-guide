@@ -31,6 +31,11 @@
         "id": 82,
         "name": "目覚ましベッドスペース",
         "rarity": "common"
+      },
+      {
+        "id": 91,
+        "name": "レジでお会計",
+        "rarity": "common"
       }
     ]
   }

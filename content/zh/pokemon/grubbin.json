@@ -26,6 +26,12 @@
     "evolvesTo": [
       "charjabug"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 50,
+        "name": "黃色草叢",
+        "rarity": "common"
+      }
+    ]
   }
 }

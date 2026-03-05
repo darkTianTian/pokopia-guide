@@ -7,12 +7,20 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/sudowoodo.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "trade"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "bonsly",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 99,
+        "name": "木かげの赤い草むら",
+        "rarity": "rare"
+      }
+    ]
   }
 }
