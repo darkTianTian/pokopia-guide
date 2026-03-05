@@ -27,9 +27,9 @@
     "evolvesTo": null,
     "habitats": [
       {
-        "id": 123,
-        "name": "House party",
-        "rarity": "common"
+        "id": 99,
+        "name": "木かげの赤い草むら",
+        "rarity": "rare"
       }
     ]
   }

@@ -31,6 +31,11 @@
         "id": 82,
         "name": "Alarm clock sleep zone",
         "rarity": "common"
+      },
+      {
+        "id": 91,
+        "name": "Working the register",
+        "rarity": "common"
       }
     ]
   }

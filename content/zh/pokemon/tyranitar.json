@@ -8,12 +8,21 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/tyranitar.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "pupitar",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 110,
+        "name": "苔蘚遍布",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }

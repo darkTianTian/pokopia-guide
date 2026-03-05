@@ -26,6 +26,12 @@
     "evolvesTo": [
       "charjabug"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 50,
+        "name": "Yellow tall grass",
+        "rarity": "common"
+      }
+    ]
   }
 }

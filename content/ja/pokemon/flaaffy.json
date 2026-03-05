@@ -27,6 +27,12 @@
     "evolvesTo": [
       "ampharos"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 77,
+        "name": "毛糸で編み物",
+        "rarity": "rare"
+      }
+    ]
   }
 }
