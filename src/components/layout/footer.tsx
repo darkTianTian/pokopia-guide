@@ -55,6 +55,15 @@ export async function Footer({ locale }: FooterProps) {
             <p className="text-sm text-muted-foreground">
               {t(translations, "footer.aboutText")}
             </p>
+            <p className="mt-3 text-sm">
+              <span className="text-muted-foreground">{t(translations, "footer.feedback")}</span>{" "}
+              <a
+                href="mailto:feedback@pokopiaguide.com"
+                className="text-primary hover:underline"
+              >
+                feedback@pokopiaguide.com
+              </a>
+            </p>
           </div>
         </div>
         <Separator className="my-6" />
