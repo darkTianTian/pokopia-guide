@@ -45,8 +45,8 @@ export async function PokedexDetailPage({
       />
       <div className="mb-6">
         <div className="flex items-center gap-3">
-          <span className="text-sm text-muted-foreground">
-            #{String(pokemon.id).padStart(3, "0")}
+          <span className="rounded-full bg-muted px-2.5 py-0.5 text-sm font-medium tabular-nums text-muted-foreground">
+            No.{String(pokemon.id).padStart(3, "0")}
           </span>
           <h1 className="text-3xl font-bold">{pokemon.name}</h1>
         </div>

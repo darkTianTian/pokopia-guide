@@ -40,8 +40,8 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
         <CardHeader className="flex-1 pb-2">
           <div className="flex items-center justify-between">
             <CardTitle className="text-lg">{pokemon.name}</CardTitle>
-            <span className="text-sm text-muted-foreground">
-              #{String(pokemon.id).padStart(3, "0")}
+            <span className="rounded-full bg-muted px-2 py-0.5 text-xs font-medium tabular-nums text-muted-foreground">
+              No.{String(pokemon.id).padStart(3, "0")}
             </span>
           </div>
           <div className="flex h-[120px] items-center justify-center">
