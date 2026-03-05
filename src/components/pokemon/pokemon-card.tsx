@@ -58,39 +58,35 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
             {pokemon.types.map((type) => (
               <TypeBadge key={type} type={type} locale={locale} />
             ))}
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-1.5">
             {hasSpecialties ? (
-              <>
-                <span className="mx-0.5 text-muted-foreground/30">|</span>
-                {pokopia.specialties.map((s) => (
-                  <span
-                    key={s}
-                    className="inline-flex items-center gap-1 rounded-full border bg-muted/50 px-2 py-1 text-sm"
-                  >
-                    <SafeImage
-                      src={`/images/specialties/${s.replace(/ /g, "-")}.png`}
-                      alt={(tr.specialties as Record<string, string>)[s] ?? s}
-                      width={18}
-                      height={18}
-                      className="shrink-0"
-                    />
-                    {(tr.specialties as Record<string, string>)[s] ?? s}
-                  </span>
-                ))}
-              </>
-            ) : (
-              <>
-                <span className="mx-0.5 text-muted-foreground/30">|</span>
-                <span className="inline-flex items-center gap-1 rounded-full border bg-muted/50 px-2 py-1 text-sm text-muted-foreground">
-                  <Image
-                    src="/images/unknown.svg"
-                    alt="?"
+              pokopia.specialties.map((s) => (
+                <span
+                  key={s}
+                  className="inline-flex items-center gap-1 rounded-full border bg-muted/50 px-2 py-1 text-sm"
+                >
+                  <SafeImage
+                    src={`/images/specialties/${s.replace(/ /g, "-")}.png`}
+                    alt={(tr.specialties as Record<string, string>)[s] ?? s}
                     width={18}
                     height={18}
                     className="shrink-0"
                   />
-                  {tr.pokedex.specialty}
+                  {(tr.specialties as Record<string, string>)[s] ?? s}
                 </span>
-              </>
+              ))
+            ) : (
+              <span className="inline-flex items-center gap-1 rounded-full border bg-muted/50 px-2 py-1 text-sm text-muted-foreground">
+                <Image
+                  src="/images/unknown.svg"
+                  alt="?"
+                  width={18}
+                  height={18}
+                  className="shrink-0"
+                />
+                {tr.pokedex.specialty}
+              </span>
             )}
           </div>
         </CardHeader>

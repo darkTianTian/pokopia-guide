@@ -52,18 +52,18 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
                     className="rounded-lg object-contain"
                   />
                 </div>
-                <CardTitle className="text-lg">{habitat.name}</CardTitle>
+                <CardTitle className="text-center text-lg">{habitat.name}</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center justify-center gap-2">
                   <div className="flex -space-x-2">
                     {habitat.pokemon.slice(0, 6).map(({ pokemon }) => (
                       <SafeImage
                         key={pokemon.id}
                         src={pokemon.image}
                         alt={pokemon.name}
-                        width={32}
-                        height={32}
+                        width={40}
+                        height={40}
                         className="rounded-full border-2 border-background bg-muted"
                       />
                     ))}
@@ -74,7 +74,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
                     </span>
                   )}
                 </div>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="mt-2 text-center text-sm text-muted-foreground">
                   {habitat.pokemon.length}{" "}
                   {t(translations, "habitat.pokemonCount")}
                 </p>
