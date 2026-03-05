@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { GoogleAnalytics } from "@/components/google-analytics"
+import { ScrollToTop } from "@/components/layout/scroll-to-top"
 import {
   LOCALE_LANG,
   getTranslations,
@@ -74,6 +75,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           <main className="flex-1">{children}</main>
           <Footer locale={validLocale} />
         </div>
+        <ScrollToTop />
         <GoogleAnalytics />
       </body>
     </html>
