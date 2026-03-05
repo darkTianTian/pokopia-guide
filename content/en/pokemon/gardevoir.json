@@ -8,7 +8,10 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/gardevoir.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "teleport",
+      "trade"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

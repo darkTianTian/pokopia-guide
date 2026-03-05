@@ -1,0 +1,18 @@
+{
+  "id": 292,
+  "slug": "suicune",
+  "name": "Suicune",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/suicune.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}
