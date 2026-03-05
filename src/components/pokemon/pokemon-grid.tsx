@@ -38,42 +38,20 @@ const TYPE_COLORS: Record<PokemonType, string> = {
   fairy: "bg-pink-300 text-black",
 }
 
-const PAGE_SIZE = 24
-
-function getPageNumbers(current: number, total: number): (number | "...")[] {
-  if (total <= 7) {
-    return Array.from({ length: total }, (_, i) => i + 1)
-  }
-  const pages: (number | "...")[] = [1]
-  if (current > 3) pages.push("...")
-  const start = Math.max(2, current - 1)
-  const end = Math.min(total - 1, current + 1)
-  for (let i = start; i <= end; i++) pages.push(i)
-  if (current < total - 2) pages.push("...")
-  pages.push(total)
-  return pages
-}
 
 interface PokemonGridProps {
   pokemon: Pokemon[]
   locale: Locale
-  prevLabel: string
-  nextLabel: string
-  pageLabel: string
 }
 
 export function PokemonGrid({
   pokemon,
   locale,
-  prevLabel,
-  nextLabel,
-  pageLabel,
 }: PokemonGridProps) {
   const tr = TRANSLATIONS_BY_LOCALE[locale]
   const [query, setQuery] = useState("")
   const [selectedTypes, setSelectedTypes] = useState<Set<PokemonType>>(new Set())
   const [selectedSpecs, setSelectedSpecs] = useState<Set<string>>(new Set())
-  const [page, setPage] = useState(1)
   const [showTypeFilter, setShowTypeFilter] = useState(false)
   const [showSpecFilter, setShowSpecFilter] = useState(false)
 
@@ -111,11 +89,6 @@ export function PokemonGrid({
     })
   }, [pokemon, query, selectedTypes, selectedSpecs])
 
-  const totalPages = Math.ceil(filtered.length / PAGE_SIZE)
-  const safePagee = Math.min(page, totalPages || 1)
-  const start = (safePagee - 1) * PAGE_SIZE
-  const currentPokemon = filtered.slice(start, start + PAGE_SIZE)
-
   const hasFilters = query || selectedTypes.size > 0 || selectedSpecs.size > 0
 
   function toggleType(type: PokemonType) {
@@ -125,7 +98,6 @@ export function PokemonGrid({
       else next.add(type)
       return next
     })
-    setPage(1)
   }
 
   function toggleSpec(spec: string) {
@@ -135,21 +107,12 @@ export function PokemonGrid({
       else next.add(spec)
       return next
     })
-    setPage(1)
   }
 
   function clearFilters() {
     setQuery("")
     setSelectedTypes(new Set())
     setSelectedSpecs(new Set())
-    setPage(1)
-  }
-
-  function changePage(newPage: number) {
-    setPage(newPage)
-    requestAnimationFrame(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" })
-    })
   }
 
   return (
@@ -162,13 +125,13 @@ export function PokemonGrid({
           <input
             type="text"
             value={query}
-            onChange={(e) => { setQuery(e.target.value); setPage(1) }}
+            onChange={(e) => setQuery(e.target.value)}
             placeholder={tr.pokedex.searchPlaceholder}
             className="w-full rounded-lg border bg-background py-2.5 pl-10 pr-10 text-sm outline-none focus:ring-2 focus:ring-primary/20"
           />
           {query && (
             <button
-              onClick={() => { setQuery(""); setPage(1) }}
+              onClick={() => setQuery("")}
               className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
             >
               <X className="h-4 w-4" />
@@ -264,9 +227,9 @@ export function PokemonGrid({
       </div>
 
       {/* Results */}
-      {currentPokemon.length > 0 ? (
+      {filtered.length > 0 ? (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {currentPokemon.map((p) => (
+          {filtered.map((p) => (
             <PokemonCard key={p.slug} pokemon={p} locale={locale} />
           ))}
         </div>
@@ -274,44 +237,6 @@ export function PokemonGrid({
         <p className="py-12 text-center text-muted-foreground">
           {tr.pokedex.noResults}
         </p>
-      )}
-
-      {totalPages > 1 && (
-        <div className="mt-8 flex items-center justify-center gap-1.5">
-          <Button
-            variant="outline"
-            size="sm"
-            disabled={safePagee <= 1}
-            onClick={() => changePage(safePagee - 1)}
-          >
-            {prevLabel}
-          </Button>
-          {getPageNumbers(safePagee, totalPages).map((p, i) =>
-            p === "..." ? (
-              <span key={`ellipsis-${i}`} className="px-1 text-sm text-muted-foreground">
-                ...
-              </span>
-            ) : (
-              <Button
-                key={p}
-                variant={p === safePagee ? "default" : "outline"}
-                size="sm"
-                className="min-w-[36px]"
-                onClick={() => changePage(p as number)}
-              >
-                {p}
-              </Button>
-            )
-          )}
-          <Button
-            variant="outline"
-            size="sm"
-            disabled={safePagee >= totalPages}
-            onClick={() => changePage(safePagee + 1)}
-          >
-            {nextLabel}
-          </Button>
-        </div>
       )}
     </>
   )
