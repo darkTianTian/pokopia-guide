@@ -987,32 +987,32 @@ async function fetchNewPokemonBase(slug, dexNumber) {
 // --- Habitat Image Downloader ---
 
 const HABITATS_DIR = path.join(process.cwd(), "public", "images", "habitats")
+const GAMEWITH_HABITAT_IMG_BASE = "https://img.gamewith.jp/article_tools/pocoapokemon/gacha"
 
-async function downloadMissingHabitatImages(habitatIdToImageUrl) {
+async function downloadMissingHabitatImages(allHabitatIds, habitatIdToImageUrl) {
   console.log("\n--- Downloading Missing Habitat Images ---")
-  console.log(`  Habitat ID → image URL mappings: ${habitatIdToImageUrl.size}`)
 
-  // Check which mapped images are missing locally
+  // Check which images are missing locally
   const missing = []
-  for (const [id, url] of habitatIdToImageUrl) {
+  for (const id of allHabitatIds) {
     const filePath = path.join(HABITATS_DIR, `habitat_${id}.png`)
     try {
       await fs.access(filePath)
     } catch {
-      missing.push({ id, url })
+      missing.push(id)
     }
   }
 
   if (missing.length === 0) {
-    console.log("  No missing habitat images to download.")
+    console.log(`  All ${allHabitatIds.size} habitat images exist locally.`)
     return
   }
 
-  console.log(`  Missing habitat images with Game8 match: ${missing.length}`)
+  console.log(`  Missing: ${missing.length} / ${allHabitatIds.size}`)
 
   if (DRY_RUN) {
-    for (const { id, url } of missing) {
-      console.log(`  [DRY RUN] habitat_${id}.png → ${url.substring(0, 80)}...`)
+    for (const id of missing) {
+      console.log(`  [DRY RUN] habitat_${id}.png`)
     }
     return
   }
@@ -1023,39 +1023,42 @@ async function downloadMissingHabitatImages(habitatIdToImageUrl) {
   let failed = 0
   let tooSmall = 0
 
-  for (const { id, url } of missing) {
-    try {
-      const res = await fetch(url, {
-        headers: {
-          "User-Agent": "Mozilla/5.0 (compatible; PokopiaGuideBot/1.0)",
-        },
-      })
-      if (!res.ok) {
-        console.log(`  Failed to download habitat_${id}.png: HTTP ${res.status}`)
-        failed++
-        continue
+  await pMap(
+    missing,
+    async (id) => {
+      // Try GameWith first (predictable URL), then Game8 fallback
+      const urls = [
+        `${GAMEWITH_HABITAT_IMG_BASE}/habitat_${id}.png`,
+        habitatIdToImageUrl.get(id),
+      ].filter(Boolean)
+
+      for (const url of urls) {
+        try {
+          const res = await fetch(url, {
+            headers: { "User-Agent": "Mozilla/5.0 (compatible; PokopiaGuideBot/1.0)" },
+          })
+          if (!res.ok) continue
+
+          const buffer = Buffer.from(await res.arrayBuffer())
+          if (buffer.length < 1024) {
+            tooSmall++
+            continue
+          }
+
+          const filePath = path.join(HABITATS_DIR, `habitat_${id}.png`)
+          await fs.writeFile(filePath, buffer)
+          console.log(`  Downloaded habitat_${id}.png (${buffer.length} bytes)`)
+          downloaded++
+          return
+        } catch {
+          continue
+        }
       }
-
-      const buffer = Buffer.from(await res.arrayBuffer())
-
-      // Skip placeholder images (< 1KB)
-      if (buffer.length < 1024) {
-        console.log(`  Skipped habitat_${id}.png: too small (${buffer.length} bytes, likely placeholder)`)
-        tooSmall++
-        continue
-      }
-
-      const filePath = path.join(HABITATS_DIR, `habitat_${id}.png`)
-      await fs.writeFile(filePath, buffer)
-      console.log(`  Downloaded habitat_${id}.png (${buffer.length} bytes)`)
-      downloaded++
-
-      await sleep(200) // Rate limit
-    } catch (err) {
-      console.log(`  Error downloading habitat_${id}.png: ${err.message}`)
+      console.log(`  Failed habitat_${id}.png`)
       failed++
-    }
-  }
+    },
+    5
+  )
 
   console.log(`\n  Habitat images: ${downloaded} downloaded, ${failed} failed, ${tooSmall} too small`)
 }
@@ -1477,8 +1480,14 @@ async function run() {
     }
   }
 
-  // Download missing habitat images from Game8
-  await downloadMissingHabitatImages(habitatIdToImageUrl)
+  // Collect all unique habitat IDs and download missing images
+  const allHabitatIds = new Set()
+  for (const { merged } of mergedResults) {
+    for (const h of merged.habitats) {
+      if (h.id != null) allHabitatIds.add(h.id)
+    }
+  }
+  await downloadMissingHabitatImages(allHabitatIds, habitatIdToImageUrl)
 
   // Save sync state
   const newState = {

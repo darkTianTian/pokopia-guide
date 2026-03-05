@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-05T15:57:49.894Z",
+  "lastSync": "2026-03-05T16:23:37.396Z",
   "newHabitats": [
     {
       "id": 28,
@@ -203,7 +203,7 @@
     },
     {
       "id": 184,
-      "name": "釣り堀",
+      "name": "Fishing Pond",
       "missingIn": [
         "ja",
         "zh"
@@ -211,7 +211,7 @@
     },
     {
       "id": 26,
-      "name": "ジムの救急所",
+      "name": "Gym First-Aid Station",
       "missingIn": [
         "ja",
         "zh"
@@ -219,7 +219,7 @@
     },
     {
       "id": 179,
-      "name": "悪の組織のアジト",
+      "name": "Evil Team Hideout",
       "missingIn": [
         "ja",
         "zh"
@@ -227,7 +227,7 @@
     },
     {
       "id": 78,
-      "name": "温泉の洗い場",
+      "name": "Hot Spring Wash Area",
       "missingIn": [
         "ja",
         "zh"
@@ -235,7 +235,7 @@
     },
     {
       "id": 66,
-      "name": "公園のベンチ",
+      "name": "Park Bench",
       "missingIn": [
         "ja",
         "zh"
@@ -259,7 +259,7 @@
     },
     {
       "id": 106,
-      "name": "うるおうゆうがな花畑",
+      "name": "Hydrated Graceful Flower Bed",
       "missingIn": [
         "ja",
         "zh"
@@ -267,7 +267,7 @@
     },
     {
       "id": 187,
-      "name": "Hydrated Red Tall Grass",
+      "name": "Hot Spring Fishing",
       "missingIn": [
         "ja",
         "zh"
@@ -283,7 +283,7 @@
     },
     {
       "id": 105,
-      "name": "木かげのゆうがな花畑",
+      "name": "Tree-Shaded Graceful Flower Bed",
       "missingIn": [
         "ja",
         "zh"
@@ -331,7 +331,7 @@
     },
     {
       "id": 197,
-      "name": "シールドのカセキ展示台",
+      "name": "Shield Fossil Display",
       "missingIn": [
         "ja",
         "zh"
