@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import { SafeImage } from "@/components/ui/safe-image"
 import {
   Card,
   CardContent,
@@ -45,7 +46,7 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
             </span>
           </div>
           <div className="flex h-[120px] items-center justify-center">
-            <Image
+            <SafeImage
               src={pokemon.image}
               alt={pokemon.name}
               width={120}
@@ -65,7 +66,7 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
                     key={s}
                     className="inline-flex items-center gap-1 rounded-full border bg-muted/50 px-2 py-1 text-sm"
                   >
-                    <Image
+                    <SafeImage
                       src={`/images/specialties/${s.replace(/ /g, "-")}.png`}
                       alt={(tr.specialties as Record<string, string>)[s] ?? s}
                       width={18}
@@ -102,7 +103,7 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
             <div className="flex gap-1">
               {hasTime ? (
                 pokopia.timeOfDay!.map((tod) => (
-                  <Image
+                  <SafeImage
                     key={tod}
                     src={`/images/time/${tod}.svg`}
                     alt={(tr.timeOfDay as Record<string, string>)[tod] ?? tod}
@@ -125,7 +126,7 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
             <div className="flex gap-1">
               {hasWeather ? (
                 pokopia.weather!.map((w) => (
-                  <Image
+                  <SafeImage
                     key={w}
                     src={`/images/weather/${w}.svg`}
                     alt={(tr.weather as Record<string, string>)[w] ?? w}
@@ -156,7 +157,7 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
                         : "border-green-500"
                   return (
                     <span key={h.id} className="inline-flex shrink-0 flex-col items-center gap-0.5">
-                      <Image
+                      <SafeImage
                         src={`/images/habitats/habitat_${h.id}.png`}
                         alt={h.name}
                         width={64}

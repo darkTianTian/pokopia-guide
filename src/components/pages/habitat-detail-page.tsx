@@ -1,4 +1,4 @@
-import Image from "next/image"
+import { SafeImage } from "@/components/ui/safe-image"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
 import { Badge } from "@/components/ui/badge"
@@ -39,7 +39,7 @@ export async function HabitatDetailPage({
         locale={locale}
       />
       <div className="mb-8 flex flex-col items-center gap-4 sm:flex-row sm:items-start">
-        <Image
+        <SafeImage
           src={habitat.image}
           alt={habitat.name}
           width={240}

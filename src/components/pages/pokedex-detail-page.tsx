@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { SafeImage } from "@/components/ui/safe-image"
 import { notFound } from "next/navigation"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -58,7 +59,7 @@ export async function PokedexDetailPage({
       </div>
 
       <div className="mb-8 flex justify-center">
-        <Image
+        <SafeImage
           src={pokemon.image}
           alt={pokemon.name}
           width={240}
@@ -83,7 +84,7 @@ export async function PokedexDetailPage({
                   <div className="flex flex-wrap gap-2">
                     {pokemon.pokopia.specialties.map((s) => (
                       <span key={s} className="inline-flex flex-col items-center gap-0.5">
-                        <Image
+                        <SafeImage
                           src={`/images/specialties/${s.replace(/ /g, "-")}.png`}
                           alt={t(translations, `specialties.${s}`)}
                           width={32}
@@ -115,7 +116,7 @@ export async function PokedexDetailPage({
                   <div className="flex flex-wrap gap-2">
                     {pokemon.pokopia.timeOfDay.map((tod) => (
                       <span key={tod} className="inline-flex flex-col items-center gap-0.5">
-                        <Image
+                        <SafeImage
                           src={`/images/time/${tod}.svg`}
                           alt={t(translations, `timeOfDay.${tod}`)}
                           width={28}
@@ -138,7 +139,7 @@ export async function PokedexDetailPage({
                   <div className="flex flex-wrap gap-2">
                     {pokemon.pokopia.weather.map((w) => (
                       <span key={w} className="inline-flex flex-col items-center gap-0.5">
-                        <Image
+                        <SafeImage
                           src={`/images/weather/${w}.svg`}
                           alt={t(translations, `weather.${w}`)}
                           width={28}
@@ -168,7 +169,7 @@ export async function PokedexDetailPage({
                             : "border-green-500"
                       return (
                         <div key={h.id} className="flex flex-col items-center gap-1">
-                          <Image
+                          <SafeImage
                             src={`/images/habitats/habitat_${h.id}.png`}
                             alt={h.name}
                             width={96}

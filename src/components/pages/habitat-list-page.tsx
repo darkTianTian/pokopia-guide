@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
+import { SafeImage } from "@/components/ui/safe-image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { getAllHabitatsWithPokemon } from "@/lib/habitat"
@@ -44,7 +44,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
             <Card className="transition-shadow hover:shadow-lg h-full">
               <CardHeader className="pb-2">
                 <div className="flex justify-center py-2">
-                  <Image
+                  <SafeImage
                     src={habitat.image}
                     alt={habitat.name}
                     width={160}
@@ -58,7 +58,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
                 <div className="flex items-center gap-2">
                   <div className="flex -space-x-2">
                     {habitat.pokemon.slice(0, 6).map(({ pokemon }) => (
-                      <Image
+                      <SafeImage
                         key={pokemon.id}
                         src={pokemon.image}
                         alt={pokemon.name}
