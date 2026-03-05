@@ -23,9 +23,9 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
         <h1 className="text-3xl font-bold">
           {t(translations, "pokedex.title")}
         </h1>
-        <p className="mt-2 text-muted-foreground">
+        <h2 className="mt-2 text-lg font-normal text-muted-foreground">
           {t(translations, "pokedex.subtitle")}
-        </p>
+        </h2>
         <p className="mt-1 text-sm text-muted-foreground">
           {t(translations, "pokedex.totalCount").replace("{{count}}", String(pokemon.length))}
         </p>
