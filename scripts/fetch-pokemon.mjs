@@ -2,6 +2,7 @@ import fs from "fs/promises"
 import path from "path"
 import { S3Client, PutObjectCommand, HeadObjectCommand } from "@aws-sdk/client-s3"
 import dotenv from "dotenv"
+import { POKOPIA_DEX, POKEAPI_NAME_MAP, SLUG_TO_POKOPIA_ID } from "./pokopia-dex.mjs"
 
 dotenv.config()
 
@@ -18,20 +19,6 @@ const R2 = new S3Client({
 
 const BUCKET = process.env.R2_BUCKET
 const PUBLIC_URL = process.env.R2_PUBLIC_URL
-
-// 96 confirmed Pokopia Pokémon (by national dex ID)
-const POKOPIA_DEX_IDS = [
-  1, 4, 6, 7, 8, 16, 18, 25, 35, 37,
-  39, 43, 46, 48, 50, 52, 54, 58, 59, 60,
-  63, 65, 66, 69, 74, 79, 83, 103, 104, 106,
-  107, 113, 123, 127, 129, 131, 133, 134, 136, 147,
-  148, 149, 163, 167, 172, 179, 180, 182, 183, 185,
-  194, 196, 197, 214, 236, 246, 248, 255, 270, 272,
-  278, 282, 296, 298, 303, 316, 351, 393, 415, 416,
-  422, 425, 439, 440, 447, 448, 470, 471, 529, 530,
-  532, 569, 570, 572, 573, 607, 612, 658, 700, 704,
-  706, 821, 884, 921, 952, 978,
-]
 
 const POKEAPI_BASE = "https://pokeapi.co/api/v2"
 
@@ -95,20 +82,18 @@ function getFlavorText(speciesData, lang) {
     (e) => e.language.name === lang
   )
   if (entries.length === 0) return ""
-  // Pick the last entry (usually most recent game)
   return entries[entries.length - 1].flavor_text.replace(/\n|\f/g, " ")
 }
 
-function buildPokemonJson(pokemonData, speciesData, locale) {
-  const langMap = { en: "en", zh: "zh-hant", ja: "ja" }
+function buildPokemonJson(pokemonData, speciesData, locale, pokopiaId, slug) {
   const nameGetters = {
     en: getEnglishName,
     zh: getChineseName,
     ja: getJapaneseName,
   }
+  const langMap = { en: "en", zh: "zh-hant", ja: "ja" }
 
   const name = nameGetters[locale](speciesData)
-  const slug = speciesData.name // e.g. "pikachu"
 
   const types = pokemonData.types
     .sort((a, b) => a.slot - b.slot)
@@ -135,7 +120,6 @@ function buildPokemonJson(pokemonData, speciesData, locale) {
     if (key) stats[key] = s.base_stat
   }
 
-  // Get ability names in the target language (fetched separately)
   const abilities = pokemonData.abilities
     .sort((a, b) => a.slot - b.slot)
     .map((a) => a.ability.name)
@@ -146,7 +130,7 @@ function buildPokemonJson(pokemonData, speciesData, locale) {
   const imageUrl = `${PUBLIC_URL}/pokemon/${slug}.png`
 
   return {
-    id: pokemonData.id,
+    id: pokopiaId,
     slug,
     name,
     types,
@@ -172,25 +156,37 @@ async function main() {
     await fs.mkdir(path.join(contentDir, locale, "pokemon"), { recursive: true })
   }
 
-  const total = POKOPIA_DEX_IDS.length
+  const entries = Object.entries(POKOPIA_DEX)
+  const total = entries.length
   let processed = 0
 
-  // Cache ability translations to avoid redundant API calls
   const abilityCache = new Map()
 
-  for (const dexId of POKOPIA_DEX_IDS) {
+  for (const [pokopiaIdStr, slug] of entries) {
+    const pokopiaId = parseInt(pokopiaIdStr)
     processed++
-    console.log(`[${processed}/${total}] Fetching #${dexId}...`)
+
+    // Skip if file already exists
+    const existingPath = path.join(contentDir, "en", "pokemon", `${slug}.json`)
+    try {
+      await fs.access(existingPath)
+      console.log(`[${processed}/${total}] Skipping #${pokopiaId} ${slug} (exists)`)
+      continue
+    } catch {
+      // File doesn't exist, proceed
+    }
+
+    console.log(`[${processed}/${total}] Fetching #${pokopiaId} ${slug}...`)
+
+    const apiName = POKEAPI_NAME_MAP[slug] || slug
 
     try {
       const [pokemonData, speciesData] = await Promise.all([
-        fetchJson(`${POKEAPI_BASE}/pokemon/${dexId}`),
-        fetchJson(`${POKEAPI_BASE}/pokemon-species/${dexId}`),
+        fetchJson(`${POKEAPI_BASE}/pokemon/${apiName}`),
+        fetchJson(`${POKEAPI_BASE}/pokemon-species/${apiName}`),
       ])
 
-      const slug = speciesData.name
-
-      // Upload image to R2 (HOME style)
+      // Upload image to R2
       const imageKey = `pokemon/${slug}.png`
       const imageExists = await r2ObjectExists(imageKey)
 
@@ -210,11 +206,10 @@ async function main() {
         console.log(`  Image already exists for ${slug}`)
       }
 
-      // Fetch translated ability names
       const langMap = { en: "en", zh: "zh-hant", ja: "ja" }
 
       for (const locale of ["en", "zh", "ja"]) {
-        const json = buildPokemonJson(pokemonData, speciesData, locale)
+        const json = buildPokemonJson(pokemonData, speciesData, locale, pokopiaId, slug)
 
         // Translate abilities
         const translatedAbilities = []
@@ -231,21 +226,15 @@ async function main() {
         }
         json.abilities = translatedAbilities
 
-        const filePath = path.join(
-          contentDir,
-          locale,
-          "pokemon",
-          `${slug}.json`
-        )
+        const filePath = path.join(contentDir, locale, "pokemon", `${slug}.json`)
         await fs.writeFile(filePath, JSON.stringify(json, null, 2) + "\n")
       }
 
       console.log(`  Done: ${slug}`)
     } catch (err) {
-      console.error(`  Error fetching #${dexId}: ${err.message}`)
+      console.error(`  Error fetching ${slug}: ${err.message}`)
     }
 
-    // Rate limit: ~1 request per 200ms to be polite to PokeAPI
     await sleep(200)
   }
 

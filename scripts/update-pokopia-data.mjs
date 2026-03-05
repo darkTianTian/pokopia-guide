@@ -3,6 +3,7 @@ import path from "path"
 import * as cheerio from "cheerio"
 import { S3Client, PutObjectCommand, HeadObjectCommand } from "@aws-sdk/client-s3"
 import dotenv from "dotenv"
+import { SLUG_TO_POKOPIA_ID, POKEAPI_NAME_MAP, getPokopiaId } from "./pokopia-dex.mjs"
 
 dotenv.config()
 
@@ -92,14 +93,26 @@ async function uploadToR2(key, buffer, contentType) {
   )
 }
 
-async function uploadPokemonImage(slug, pokemonId) {
+async function uploadPokemonImage(slug) {
   const imageKey = `pokemon/${slug}.png`
   const exists = await r2ObjectExists(imageKey)
   if (exists) return true
 
+  // Use PokeAPI slug-based endpoint for sprite URL
+  const apiName = POKEAPI_NAME_MAP[slug] || slug
+  let spriteId
+  try {
+    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${apiName}`)
+    if (!res.ok) return false
+    const data = await res.json()
+    spriteId = data.id
+  } catch {
+    return false
+  }
+
   // Try HOME sprite first, then official artwork
-  const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${pokemonId}.png`
-  const fallbackUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`
+  const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${spriteId}.png`
+  const fallbackUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${spriteId}.png`
 
   for (const url of [spriteUrl, fallbackUrl]) {
     try {
@@ -640,12 +653,6 @@ function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiList
 
 // --- New Pokemon: fetch from PokeAPI ---
 
-// Map Pokopia-specific names to PokeAPI species names
-const POKEAPI_NAME_MAP = {
-  "stereo-rotom": "rotom",
-  "paldean-wooper": "wooper",
-}
-
 async function fetchNewPokemonBase(slug) {
   const POKEAPI_BASE = "https://pokeapi.co/api/v2"
   const apiName = POKEAPI_NAME_MAP[slug] || slug
@@ -715,8 +722,12 @@ async function fetchNewPokemonBase(slug) {
         ? getFlavorText("zh-hant") || getFlavorText("zh-hans") || getFlavorText("en")
         : getFlavorText(langMap[locale]) || getFlavorText("en")
 
+    const pokopiaId = getPokopiaId(slug)
+    if (!pokopiaId) {
+      throw new Error(`${slug} is not in the Pokopia dex`)
+    }
     result[locale] = {
-      id: pokemonData.id,
+      id: pokopiaId,
       slug,
       name,
       types,
@@ -749,7 +760,7 @@ async function uploadAllMissingImages() {
       skipped++
       continue
     }
-    const success = await uploadPokemonImage(slug, data.id)
+    const success = await uploadPokemonImage(slug)
     if (success) uploaded++
     await sleep(100)
   }
@@ -865,8 +876,7 @@ async function run() {
         }
         // Upload image to R2
         if (!DRY_RUN) {
-          const pokemonId = baseData.en.id
-          await uploadPokemonImage(slug, pokemonId)
+          await uploadPokemonImage(slug)
         }
         newPokemon++
         await sleep(200) // Rate limit PokeAPI
@@ -878,8 +888,7 @@ async function run() {
     } else {
       // Ensure image exists for existing Pokemon too
       if (!DRY_RUN) {
-        const pokemonId = existingEn.id
-        await uploadPokemonImage(slug, pokemonId)
+        await uploadPokemonImage(slug)
       }
     }
 
