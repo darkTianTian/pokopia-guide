@@ -111,33 +111,6 @@ export async function PokedexDetailPage({
                 </Badge>
               </div>
 
-              {pokemon.pokopia.habitats && pokemon.pokopia.habitats.length > 0 && (
-                <div className="sm:col-span-2">
-                  <p className="mb-1 text-sm font-medium text-muted-foreground">
-                    {t(translations, "pokedex.habitatLabel")}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {pokemon.pokopia.habitats.map((h) => (
-                      <div key={h.id} className="flex items-center gap-2 rounded-lg border px-2 py-1.5">
-                        <Image
-                          src={`/images/habitats/habitat_${h.id}.png`}
-                          alt={h.name}
-                          width={40}
-                          height={40}
-                          className="rounded"
-                        />
-                        <div>
-                          <p className="text-sm font-medium">{h.name}</p>
-                          <Badge variant="secondary" className="text-xs">
-                            {t(translations, `rarity.${h.rarity}`)}
-                          </Badge>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
               {pokemon.pokopia.timeOfDay && pokemon.pokopia.timeOfDay.length > 0 && (
                 <div>
                   <p className="mb-1 text-sm font-medium text-muted-foreground">
@@ -180,6 +153,39 @@ export async function PokedexDetailPage({
                         </span>
                       </span>
                     ))}
+                  </div>
+                </div>
+              )}
+
+              {pokemon.pokopia.habitats && pokemon.pokopia.habitats.length > 0 && (
+                <div className="sm:col-span-2">
+                  <p className="mb-1 text-sm font-medium text-muted-foreground">
+                    {t(translations, "pokedex.habitatLabel")}
+                  </p>
+                  <div className="flex flex-wrap gap-3">
+                    {pokemon.pokopia.habitats.map((h) => {
+                      const borderColor =
+                        h.rarity === "very-rare"
+                          ? "border-purple-500"
+                          : h.rarity === "rare"
+                            ? "border-blue-500"
+                            : "border-green-500"
+                      return (
+                        <div key={h.id} className="flex flex-col items-center gap-1">
+                          <Image
+                            src={`/images/habitats/habitat_${h.id}.png`}
+                            alt={h.name}
+                            width={96}
+                            height={96}
+                            className={`rounded-lg border-2 ${borderColor}`}
+                          />
+                          <p className="max-w-[100px] truncate text-center text-xs font-medium">{h.name}</p>
+                          <Badge variant="secondary" className="text-[10px]">
+                            {t(translations, `rarity.${h.rarity}`)}
+                          </Badge>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
               )}
