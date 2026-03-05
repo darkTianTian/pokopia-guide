@@ -27,11 +27,6 @@
     ],
     "habitats": [
       {
-        "id": 31,
-        "name": "やさしい光でおやすみ",
-        "rarity": "common"
-      },
-      {
         "id": 6,
         "name": "高台の草むら",
         "rarity": "common"
@@ -39,6 +34,11 @@
       {
         "id": 8,
         "name": "きれいな花畑",
+        "rarity": "common"
+      },
+      {
+        "id": 31,
+        "name": "やさしい光でおやすみ",
         "rarity": "common"
       }
     ]

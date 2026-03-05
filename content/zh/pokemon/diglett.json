@@ -28,13 +28,13 @@
     ],
     "habitats": [
       {
-        "id": 119,
-        "name": "Container snacking",
+        "id": 99,
+        "name": "樹蔭紅色草叢",
         "rarity": "common"
       },
       {
-        "id": 99,
-        "name": "樹蔭紅色草叢",
+        "id": 119,
+        "name": "Habitat 119",
         "rarity": "common"
       }
     ]

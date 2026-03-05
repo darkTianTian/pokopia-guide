@@ -27,13 +27,13 @@
     "evolvesTo": null,
     "habitats": [
       {
-        "id": 14,
-        "name": "Flower garden",
+        "id": 12,
+        "name": "Elevated Flower Bed",
         "rarity": "rare"
       },
       {
-        "id": 12,
-        "name": "Elevated Flower Bed",
+        "id": 14,
+        "name": "Flower garden",
         "rarity": "rare"
       }
     ]

@@ -27,13 +27,13 @@
     "evolvesTo": null,
     "habitats": [
       {
-        "id": 14,
-        "name": "フラワーガーデン",
+        "id": 12,
+        "name": "高台の花畑",
         "rarity": "rare"
       },
       {
-        "id": 12,
-        "name": "高台の花畑",
+        "id": 14,
+        "name": "フラワーガーデン",
         "rarity": "rare"
       }
     ]

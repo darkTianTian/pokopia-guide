@@ -29,11 +29,6 @@
     ],
     "habitats": [
       {
-        "id": 53,
-        "name": "Hydrated yellow tall grass",
-        "rarity": "common"
-      },
-      {
         "id": 107,
         "name": "Flower Bed Stump Stage",
         "rarity": "common"

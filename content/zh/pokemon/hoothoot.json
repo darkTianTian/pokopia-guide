@@ -27,11 +27,6 @@
     ],
     "habitats": [
       {
-        "id": 31,
-        "name": "溫柔燈光晚安",
-        "rarity": "common"
-      },
-      {
         "id": 6,
         "name": "高台草叢",
         "rarity": "common"
@@ -39,6 +34,11 @@
       {
         "id": 8,
         "name": "美麗花田",
+        "rarity": "common"
+      },
+      {
+        "id": 31,
+        "name": "溫柔燈光晚安",
         "rarity": "common"
       }
     ]

@@ -27,11 +27,6 @@
     ],
     "habitats": [
       {
-        "id": 31,
-        "name": "Gently lit bed",
-        "rarity": "common"
-      },
-      {
         "id": 6,
         "name": "Elevated Tall Grass",
         "rarity": "common"
@@ -39,6 +34,11 @@
       {
         "id": 8,
         "name": "Pretty flower bed",
+        "rarity": "common"
+      },
+      {
+        "id": 31,
+        "name": "Gently lit bed",
         "rarity": "common"
       }
     ]

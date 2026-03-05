@@ -29,11 +29,6 @@
     ],
     "habitats": [
       {
-        "id": 55,
-        "name": "Overgrowth vending machie",
-        "rarity": "common"
-      },
-      {
         "id": 77,
         "name": "毛糸で編み物",
         "rarity": "common"

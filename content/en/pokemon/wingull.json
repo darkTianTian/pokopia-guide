@@ -29,13 +29,13 @@
     ],
     "habitats": [
       {
-        "id": 58,
-        "name": "Windy Flower Bed",
+        "id": 52,
+        "name": "Elevated Yellow Tall Grass",
         "rarity": "common"
       },
       {
-        "id": 52,
-        "name": "Elevated Yellow Tall Grass",
+        "id": 58,
+        "name": "Windy Flower Bed",
         "rarity": "common"
       }
     ]
