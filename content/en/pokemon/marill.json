@@ -30,11 +30,6 @@
     ],
     "habitats": [
       {
-        "id": 88,
-        "name": "Dock",
-        "rarity": "common"
-      },
-      {
         "id": 53,
         "name": "Hydrated yellow tall grass",
         "rarity": "common"

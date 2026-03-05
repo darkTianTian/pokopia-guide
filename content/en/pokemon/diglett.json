@@ -28,13 +28,13 @@
     ],
     "habitats": [
       {
-        "id": 119,
-        "name": "Container snacking",
+        "id": 99,
+        "name": "Tree-shaded red tall grass",
         "rarity": "common"
       },
       {
-        "id": 99,
-        "name": "Tree-shaded red tall grass",
+        "id": 119,
+        "name": "Container snacking",
         "rarity": "common"
       }
     ]

@@ -28,13 +28,13 @@
     ],
     "habitats": [
       {
-        "id": 119,
-        "name": "Container snacking",
+        "id": 99,
+        "name": "木かげの赤い草むら",
         "rarity": "common"
       },
       {
-        "id": 99,
-        "name": "木かげの赤い草むら",
+        "id": 119,
+        "name": "Habitat 119",
         "rarity": "common"
       }
     ]

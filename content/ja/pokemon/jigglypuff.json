@@ -29,11 +29,6 @@
     ],
     "habitats": [
       {
-        "id": 53,
-        "name": "うるおう黄色の草むら",
-        "rarity": "common"
-      },
-      {
         "id": 107,
         "name": "花畑の切り株ステージ",
         "rarity": "common"

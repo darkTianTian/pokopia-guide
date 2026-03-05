@@ -30,11 +30,6 @@
     ],
     "habitats": [
       {
-        "id": 88,
-        "name": "碼頭",
-        "rarity": "common"
-      },
-      {
         "id": 53,
         "name": "濕潤黃色草叢",
         "rarity": "common"

@@ -29,11 +29,6 @@
     ],
     "habitats": [
       {
-        "id": 53,
-        "name": "濕潤黃色草叢",
-        "rarity": "common"
-      },
-      {
         "id": 107,
         "name": "花田樹樁舞台",
         "rarity": "common"
