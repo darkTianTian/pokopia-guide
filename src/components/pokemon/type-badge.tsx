@@ -41,12 +41,12 @@ interface TypeBadgeProps {
 export function TypeBadge({ type, locale }: TypeBadgeProps) {
   const typeName = TYPE_NAMES_BY_LOCALE[locale][type] ?? type
   return (
-    <Badge className={`${TYPE_COLORS[type]} text-white border-0 flex items-center gap-1 pl-1 pr-2`}>
+    <Badge className={`${TYPE_COLORS[type]} text-white border-0 flex items-center gap-1 pl-1.5 pr-2.5 py-1 text-sm`}>
       <Image
         src={`/images/types/${type}.svg`}
         alt={typeName}
-        width={16}
-        height={16}
+        width={18}
+        height={18}
         className="shrink-0"
       />
       {typeName}

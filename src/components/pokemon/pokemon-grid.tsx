@@ -231,15 +231,15 @@ export function PokemonGrid({
               <button
                 key={s}
                 onClick={() => toggleSpec(s)}
-                className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-medium transition-opacity ${
+                className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-sm font-medium transition-opacity ${
                   selectedSpecs.size > 0 && !selectedSpecs.has(s) ? "opacity-30" : "opacity-100"
                 }`}
               >
                 <Image
-                  src={`/images/specialties/${s}.svg`}
+                  src={`/images/specialties/${s}.png`}
                   alt={(tr.specialties as Record<string, string>)[s] ?? s}
-                  width={14}
-                  height={14}
+                  width={18}
+                  height={18}
                   className="shrink-0"
                 />
                 {(tr.specialties as Record<string, string>)[s] ?? s}
