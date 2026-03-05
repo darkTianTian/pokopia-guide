@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-05T20:50:00.270Z",
+  "lastSync": "2026-03-05T21:45:58.163Z",
   "newHabitats": [
     {
       "id": 28,
@@ -418,7 +418,7 @@
     "game8Count": 170,
     "updated": 287,
     "skipped": 0,
-    "newPokemon": 1,
+    "newPokemon": 0,
     "errors": 3
   }
 }
