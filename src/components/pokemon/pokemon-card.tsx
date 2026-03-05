@@ -22,9 +22,10 @@ const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
 interface PokemonCardProps {
   pokemon: Pokemon
   locale: Locale
+  compact?: boolean
 }
 
-export function PokemonCard({ pokemon, locale }: PokemonCardProps) {
+export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
   const tr = TRANSLATIONS_BY_LOCALE[locale]
   const pokopia = pokemon.pokopia
 
@@ -92,7 +93,7 @@ export function PokemonCard({ pokemon, locale }: PokemonCardProps) {
             )}
           </div>
         </CardHeader>
-        <CardContent className="pt-0">
+        {!compact && <CardContent className="pt-0">
           {/* Time of Day */}
           <div className="mb-1.5 flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5">
             <span className="w-[72px] shrink-0 text-[11px] font-semibold text-muted-foreground">
@@ -175,7 +176,7 @@ export function PokemonCard({ pokemon, locale }: PokemonCardProps) {
               </div>
             )}
           </div>
-        </CardContent>
+        </CardContent>}
       </Card>
     </Link>
   )

@@ -7,6 +7,7 @@ import {
   type Locale,
 } from "@/i18n/config"
 import { LanguageSwitcher } from "./language-switcher"
+import { MobileNav } from "./mobile-nav"
 
 interface HeaderProps {
   locale: Locale
@@ -43,9 +44,11 @@ export async function Header({ locale }: HeaderProps) {
           className="mr-8 flex items-center gap-2 font-bold"
         >
           <span className="text-xl">🎮</span>
-          <span>{t(translations, "site.name")}</span>
+          <span className="hidden sm:inline">{t(translations, "site.name")}</span>
         </Link>
-        <nav className="flex flex-1 items-center gap-6 text-sm">
+
+        {/* Desktop nav */}
+        <nav className="hidden flex-1 items-center gap-6 text-sm md:flex">
           {navItems.slice(0, 3).map((item) => (
             <Link
               key={item.path}
@@ -96,7 +99,23 @@ export async function Header({ locale }: HeaderProps) {
             </Link>
           ))}
         </nav>
-        <LanguageSwitcher locale={locale} />
+
+        <div className="flex-1 md:hidden" />
+
+        {/* Desktop language switcher */}
+        <div className="hidden md:block">
+          <LanguageSwitcher locale={locale} />
+        </div>
+
+        {/* Mobile menu */}
+        <MobileNav
+          locale={locale}
+          navItems={navItems}
+          habitatLabel={t(translations, "nav.habitat")}
+          habitatSubItems={habitatSubItems}
+          comingSoonLabel={t(translations, "nav.comingSoon")}
+          getPath={(path) => getLocalePath(locale, path)}
+        />
       </div>
     </header>
   )
