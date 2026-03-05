@@ -5,5 +5,31 @@
   "types": [
     "poison"
   ],
-  "image": "https://assets.pokopiaguide.com/pokemon/gulpin.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/gulpin.png",
+  "pokopia": {
+    "specialties": [
+      "storage"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "meowth",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 19,
+        "name": "飢腸轆轆餐廳",
+        "rarity": "common"
+      }
+    ]
+  }
 }

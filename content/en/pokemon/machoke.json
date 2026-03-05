@@ -32,6 +32,11 @@
         "id": 103,
         "name": "Grassy training field",
         "rarity": "common"
+      },
+      {
+        "id": 127,
+        "name": "Box to the rhythm",
+        "rarity": "common"
       }
     ]
   }

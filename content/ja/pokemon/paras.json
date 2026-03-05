@@ -8,12 +8,25 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/paras.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "search"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "pidgey",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 12,
+        "name": "高台の花畑",
+        "rarity": "common"
+      },
+      {
+        "id": 14,
+        "name": "フラワーガーデン",
+        "rarity": "common"
+      }
+    ]
   }
 }

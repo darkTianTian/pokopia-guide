@@ -8,7 +8,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/igglybuff.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "hype"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -16,6 +18,12 @@
     "evolvesTo": [
       "jigglypuff"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 107,
+        "name": "花田樹樁舞台",
+        "rarity": "common"
+      }
+    ]
   }
 }

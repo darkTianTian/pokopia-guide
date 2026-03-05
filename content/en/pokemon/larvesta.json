@@ -8,7 +8,10 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/larvesta.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "burn",
+      "litter"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -16,6 +19,12 @@
     "evolvesTo": [
       "volcarona"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 105,
+        "name": "木かげのゆうがな花畑",
+        "rarity": "common"
+      }
+    ]
   }
 }

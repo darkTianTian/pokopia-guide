@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/gulpin.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "storage"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -22,6 +24,12 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "meowth",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 19,
+        "name": "腹ペコダイニング",
+        "rarity": "common"
+      }
+    ]
   }
 }

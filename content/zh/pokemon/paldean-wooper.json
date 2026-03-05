@@ -8,12 +8,29 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/paldean-wooper.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 54,
+        "name": "Marshy tall grass",
+        "rarity": "common"
+      }
+    ]
   }
 }

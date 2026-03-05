@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/psyduck.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "search"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -15,6 +17,12 @@
     "evolvesTo": [
       "golduck"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 78,
+        "name": "温泉の洗い場",
+        "rarity": "common"
+      }
+    ]
   }
 }

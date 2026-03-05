@@ -24,6 +24,12 @@
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 10,
+        "name": "濕潤花田",
+        "rarity": "rare"
+      }
+    ]
   }
 }

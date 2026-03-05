@@ -25,6 +25,22 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "makuhita",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 52,
+        "name": "高台の黄色の草むら",
+        "rarity": "rare"
+      },
+      {
+        "id": 51,
+        "name": "木かげの黄色の草むら",
+        "rarity": "rare"
+      },
+      {
+        "id": 80,
+        "name": "荷づくりできたよ",
+        "rarity": "rare"
+      }
+    ]
   }
 }

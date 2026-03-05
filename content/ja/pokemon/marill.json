@@ -24,12 +24,19 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesFrom": "azurill",
+    "evolvesTo": [
+      "azumarill"
+    ],
     "habitats": [
       {
         "id": 88,
         "name": "船着き場",
+        "rarity": "common"
+      },
+      {
+        "id": 53,
+        "name": "うるおう黄色の草むら",
         "rarity": "common"
       }
     ]

@@ -25,6 +25,22 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "makuhita",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 52,
+        "name": "高台黃色草叢",
+        "rarity": "rare"
+      },
+      {
+        "id": 51,
+        "name": "樹蔭黃色草叢",
+        "rarity": "rare"
+      },
+      {
+        "id": 80,
+        "name": "行李打包好了",
+        "rarity": "rare"
+      }
+    ]
   }
 }

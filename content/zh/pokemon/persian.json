@@ -7,12 +7,21 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/persian.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "trade",
+      "search"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "meowth",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 179,
+        "name": "悪の組織のアジト",
+        "rarity": "common"
+      }
+    ]
   }
 }

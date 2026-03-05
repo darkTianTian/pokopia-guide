@@ -25,6 +25,12 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "oddish",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 2,
+        "name": "樹蔭草叢",
+        "rarity": "rare"
+      }
+    ]
   }
 }

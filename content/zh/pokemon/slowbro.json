@@ -26,6 +26,17 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "slowpoke",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 5,
+        "name": "海浪邊草叢",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 184,
+        "name": "釣り堀",
+        "rarity": "rare"
+      }
+    ]
   }
 }

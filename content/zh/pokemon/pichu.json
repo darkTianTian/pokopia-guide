@@ -7,12 +7,29 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/pichu.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "generate"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "ponyta",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 20,
+        "name": "野餐餐桌",
+        "rarity": "common"
+      }
+    ]
   }
 }

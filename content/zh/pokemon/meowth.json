@@ -23,11 +23,19 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "persian",
+      "perrserker"
+    ],
     "habitats": [
       {
         "id": 91,
         "name": "Working the register",
+        "rarity": "common"
+      },
+      {
+        "id": 61,
+        "name": "休息處",
         "rarity": "common"
       }
     ]

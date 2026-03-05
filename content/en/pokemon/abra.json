@@ -23,7 +23,9 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "kadabra"
+    ],
     "habitats": [
       {
         "id": 152,

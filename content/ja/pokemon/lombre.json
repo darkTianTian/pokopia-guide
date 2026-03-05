@@ -8,14 +8,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/lombre.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "lotad",
     "evolvesTo": [
       "ludicolo"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 187,
+        "name": "温泉釣り",
+        "rarity": "common"
+      }
+    ]
   }
 }

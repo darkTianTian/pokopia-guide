@@ -24,6 +24,17 @@
     "evolvesTo": [
       "sliggoo"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 9,
+        "name": "木かげの花畑",
+        "rarity": "common"
+      },
+      {
+        "id": 41,
+        "name": "あまごいスポット",
+        "rarity": "common"
+      }
+    ]
   }
 }

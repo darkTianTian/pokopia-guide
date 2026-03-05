@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/cubone.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "build"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -15,6 +17,12 @@
     "evolvesTo": [
       "marowak"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 13,
+        "name": "花に囲まれたお墓",
+        "rarity": "common"
+      }
+    ]
   }
 }

@@ -8,12 +8,26 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/charizard.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "burn",
+      "fly"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "charmeleon",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 1,
+        "name": "綠色草叢",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 40,
+        "name": "果實盛宴營地",
+        "rarity": "rare"
+      }
+    ]
   }
 }

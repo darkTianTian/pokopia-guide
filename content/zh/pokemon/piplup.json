@@ -5,5 +5,33 @@
   "types": [
     "water"
   ],
-  "image": "https://assets.pokopiaguide.com/pokemon/piplup.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/piplup.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "prinplup"
+    ],
+    "habitats": [
+      {
+        "id": 53,
+        "name": "濕潤黃色草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

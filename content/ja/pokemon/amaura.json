@@ -8,14 +8,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/amaura.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "aurorus"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 200,
+        "name": "Sail Fossil display",
+        "rarity": "common"
+      }
+    ]
   }
 }

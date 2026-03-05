@@ -25,7 +25,9 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "marill"
+    ],
     "habitats": [
       {
         "id": 53,

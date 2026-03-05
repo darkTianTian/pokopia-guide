@@ -8,12 +8,20 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/litwick.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "burn"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "machoke",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 32,
+        "name": "墓前供品",
+        "rarity": "common"
+      }
+    ]
   }
 }

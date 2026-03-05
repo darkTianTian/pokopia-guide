@@ -25,7 +25,9 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "sirfetchd"
+    ],
     "habitats": [
       {
         "id": 80,

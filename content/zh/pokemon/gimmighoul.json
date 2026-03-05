@@ -10,13 +10,28 @@
     "specialties": [
       "appraise"
     ],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "gholdengo"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 129,
+        "name": "小博物館",
+        "rarity": "common"
+      }
+    ]
   }
 }

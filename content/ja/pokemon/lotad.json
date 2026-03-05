@@ -24,7 +24,9 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "lombre"
+    ],
     "habitats": [
       {
         "id": 101,
@@ -34,6 +36,11 @@
       {
         "id": 109,
         "name": "うきうきな水たまり",
+        "rarity": "common"
+      },
+      {
+        "id": 187,
+        "name": "温泉釣り",
         "rarity": "common"
       }
     ]

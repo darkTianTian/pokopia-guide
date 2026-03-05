@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/porygon.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "recycle"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

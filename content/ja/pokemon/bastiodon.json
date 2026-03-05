@@ -8,12 +8,21 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/bastiodon.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "crush",
+      "litter"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "shieldon",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 197,
+        "name": "シールドのカセキ展示台",
+        "rarity": "common"
+      }
+    ]
   }
 }

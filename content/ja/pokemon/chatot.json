@@ -8,12 +8,34 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/chatot.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "hype",
+      "fly"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 102,
+        "name": "高台の赤い草むら",
+        "rarity": "common"
+      },
+      {
+        "id": 125,
+        "name": "さえずりのリサイタル",
+        "rarity": "common"
+      }
+    ]
   }
 }

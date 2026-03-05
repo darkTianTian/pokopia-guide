@@ -8,7 +8,10 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/poliwrath.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "water",
+      "build"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

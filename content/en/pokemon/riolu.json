@@ -29,6 +29,11 @@
         "id": 98,
         "name": "Red tall grass",
         "rarity": "common"
+      },
+      {
+        "id": 127,
+        "name": "リズムに合わせてワンツー",
+        "rarity": "common"
       }
     ]
   }

@@ -24,6 +24,12 @@
     "evolvesTo": [
       "goodra"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 4,
+        "name": "濕潤草叢",
+        "rarity": "common"
+      }
+    ]
   }
 }

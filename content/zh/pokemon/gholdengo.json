@@ -9,11 +9,26 @@
   "image": "https://assets.pokopiaguide.com/pokemon/gholdengo.png",
   "pokopia": {
     "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "gimmighoul",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 129,
+        "name": "小博物館",
+        "rarity": "rare"
+      }
+    ]
   }
 }

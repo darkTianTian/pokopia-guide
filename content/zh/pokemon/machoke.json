@@ -32,6 +32,11 @@
         "id": 103,
         "name": "草叢訓練場",
         "rarity": "common"
+      },
+      {
+        "id": 127,
+        "name": "跟著節奏一二",
+        "rarity": "common"
       }
     ]
   }

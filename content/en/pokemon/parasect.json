@@ -30,6 +30,11 @@
         "id": 14,
         "name": "Flower garden",
         "rarity": "rare"
+      },
+      {
+        "id": 12,
+        "name": "高台の花畑",
+        "rarity": "rare"
       }
     ]
   }

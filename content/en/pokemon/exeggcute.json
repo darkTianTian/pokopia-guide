@@ -28,6 +28,17 @@
     "evolvesTo": [
       "exeggutor"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 57,
+        "name": "南国気分",
+        "rarity": "common"
+      },
+      {
+        "id": 59,
+        "name": "ビーチの木かげ",
+        "rarity": "common"
+      }
+    ]
   }
 }

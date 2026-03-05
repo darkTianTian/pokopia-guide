@@ -27,6 +27,12 @@
     "evolvesTo": [
       "electrode"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 66,
+        "name": "公園のベンチ",
+        "rarity": "common"
+      }
+    ]
   }
 }
