@@ -6,18 +6,6 @@
     "ground",
     "dragon"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 100,
-    "defense": 80,
-    "spAtk": 80,
-    "spDef": 80,
-    "speed": 100
-  },
-  "abilities": [
-    "levitate"
-  ],
-  "description": "It is nicknamed the Desert Spirit because the flapping of its wings sounds like a woman singing.",
   "image": "https://assets.pokopiaguide.com/pokemon/flygon.png",
   "pokopia": {
     "specialties": [],

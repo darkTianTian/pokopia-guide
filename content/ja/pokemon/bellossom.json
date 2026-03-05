@@ -5,19 +5,6 @@
   "types": [
     "grass"
   ],
-  "stats": {
-    "hp": 75,
-    "attack": 80,
-    "defense": 95,
-    "spAtk": 90,
-    "spDef": 100,
-    "speed": 50
-  },
-  "abilities": [
-    "ようりょくそ",
-    "いやしのこころ"
-  ],
-  "description": "ときおり　キレイハナが　集まって 踊るような　しぐさを　みせる。 太陽を呼ぶ　儀式と　言われる。",
   "image": "https://assets.pokopiaguide.com/pokemon/bellossom.png",
   "pokopia": {
     "specialties": [],

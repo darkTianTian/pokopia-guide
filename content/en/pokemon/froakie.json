@@ -5,19 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 41,
-    "attack": 56,
-    "defense": 40,
-    "spAtk": 62,
-    "spDef": 44,
-    "speed": 71
-  },
-  "abilities": [
-    "torrent",
-    "protean"
-  ],
-  "description": "It protects its skin by covering its body in delicate bubbles. Beneath its happy-go-lucky air, it keeps a watchful eye on its surroundings.",
   "image": "https://assets.pokopiaguide.com/pokemon/froakie.png",
   "pokopia": {
     "specialties": [

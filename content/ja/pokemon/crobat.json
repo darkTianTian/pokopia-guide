@@ -6,19 +6,6 @@
     "poison",
     "flying"
   ],
-  "stats": {
-    "hp": 85,
-    "attack": 90,
-    "defense": 80,
-    "spAtk": 70,
-    "spDef": 80,
-    "speed": 130
-  },
-  "abilities": [
-    "inner-focus",
-    "infiltrator"
-  ],
-  "description": "４枚の　羽を　自在に　操り 羽ばたく。　狭い　洞窟でも スピードを　落とさず　飛びまわれる。",
   "image": "https://assets.pokopiaguide.com/pokemon/crobat.png",
   "pokopia": {
     "specialties": [

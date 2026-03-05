@@ -6,20 +6,6 @@
     "fighting",
     "steel"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 110,
-    "defense": 70,
-    "spAtk": 115,
-    "spDef": 70,
-    "speed": 90
-  },
-  "abilities": [
-    "ふくつのこころ",
-    "せいしんりょく",
-    "せいぎのこころ"
-  ],
-  "description": "人の　考えていることも わかるので　正しい　心の トレーナーにしか　懐かない。",
   "image": "https://assets.pokopiaguide.com/pokemon/lucario.png",
   "pokopia": {
     "specialties": [],

@@ -5,19 +5,6 @@
   "types": [
     "grass"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 110,
-    "defense": 130,
-    "spAtk": 60,
-    "spDef": 65,
-    "speed": 95
-  },
-  "abilities": [
-    "リーフガード",
-    "ようりょくそ"
-  ],
-  "description": "しっぽは　鋭く　刃のよう。 大木も　真っ二つに　する 抜群の　切れ味を　誇る。",
   "image": "https://assets.pokopiaguide.com/pokemon/leafeon.png",
   "pokopia": {
     "specialties": [

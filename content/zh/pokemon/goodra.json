@@ -5,20 +5,6 @@
   "types": [
     "dragon"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 100,
-    "defense": 70,
-    "spAtk": 110,
-    "spDef": 150,
-    "speed": 80
-  },
-  "abilities": [
-    "食草",
-    "濕潤之軀",
-    "黏滑"
-  ],
-  "description": "用伸長角產生的力道來 攻擊對手，產生的威力比 重量級拳擊手的拳擊還強１００倍。",
   "image": "https://assets.pokopiaguide.com/pokemon/goodra.png",
   "pokopia": {
     "specialties": [],

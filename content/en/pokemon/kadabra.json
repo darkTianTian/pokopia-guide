@@ -5,20 +5,6 @@
   "types": [
     "psychic"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 35,
-    "defense": 30,
-    "spAtk": 120,
-    "spDef": 70,
-    "speed": 105
-  },
-  "abilities": [
-    "synchronize",
-    "inner-focus",
-    "magic-guard"
-  ],
-  "description": "There are rumors that a child with mystical powers became a Kadabra; however, this remains unverified. I suspect that the spoon Kadabra holds enhances its brain waves.",
   "image": "https://assets.pokopiaguide.com/pokemon/kadabra.png",
   "pokopia": {
     "specialties": [],

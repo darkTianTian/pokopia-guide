@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 80,
-    "defense": 50,
-    "spAtk": 35,
-    "spDef": 35,
-    "speed": 35
-  },
-  "abilities": [
-    "Guts",
-    "No Guard",
-    "Steadfast"
-  ],
-  "description": "Though as small as a child, it has strength enough to easily throw a well-built adult. Striving to become ever stronger, Machop trains by carrying a Graveler on its shoulders.",
   "image": "https://assets.pokopiaguide.com/pokemon/machop.png",
   "pokopia": {
     "specialties": [

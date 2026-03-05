@@ -5,19 +5,6 @@
   "types": [
     "ghost"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 70,
-    "defense": 130,
-    "spAtk": 60,
-    "spDef": 130,
-    "speed": 25
-  },
-  "abilities": [
-    "pressure",
-    "frisk"
-  ],
-  "description": "尋找遊盪的靈魂，吸入自己 空洞的身體裡。沒人知道 被吸入後會發生什麼事。",
   "image": "https://assets.pokopiaguide.com/pokemon/dusclops.png",
   "pokopia": {
     "specialties": [],

@@ -5,20 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 65,
-    "defense": 65,
-    "spAtk": 50,
-    "spDef": 50,
-    "speed": 90
-  },
-  "abilities": [
-    "water-absorb",
-    "damp",
-    "swift-swim"
-  ],
-  "description": "ぬめぬめとした　粘液状の 汗を　かく。　敵に　捕まっても ぬるりと　すり抜け　逃げるのだ。",
   "image": "https://assets.pokopiaguide.com/pokemon/poliwhirl.png",
   "pokopia": {
     "specialties": [],

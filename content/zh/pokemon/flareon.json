@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 130,
-    "defense": 60,
-    "spAtk": 95,
-    "spDef": 110,
-    "speed": 65
-  },
-  "abilities": [
-    "引火",
-    "毅力"
-  ],
-  "description": "會將吸入的空氣的一部分 傳送到自己體內的火囊裡， 製造出１７００度的火焰。",
   "image": "https://assets.pokopiaguide.com/pokemon/flareon.png",
   "pokopia": {
     "specialties": [

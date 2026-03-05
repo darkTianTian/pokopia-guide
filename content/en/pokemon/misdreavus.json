@@ -5,18 +5,6 @@
   "types": [
     "ghost"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 60,
-    "defense": 60,
-    "spAtk": 85,
-    "spDef": 85,
-    "speed": 85
-  },
-  "abilities": [
-    "levitate"
-  ],
-  "description": "It conceals itself in darkness, sending chills up travelers' spines with its childlike weeping. As it observes the frightened travelers with glee, the red orbs upon its chest let off an eerie light.",
   "image": "https://assets.pokopiaguide.com/pokemon/misdreavus.png",
   "pokopia": {
     "specialties": [

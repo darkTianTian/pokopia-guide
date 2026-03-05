@@ -6,20 +6,6 @@
     "normal",
     "fairy"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 20,
-    "defense": 40,
-    "spAtk": 20,
-    "spDef": 40,
-    "speed": 20
-  },
-  "abilities": [
-    "厚脂肪",
-    "大力士",
-    "食草"
-  ],
-  "description": "雖然是個性溫順的寶可夢， 但生氣時就會大力揮甩 尾巴上的大球來擊打對手。",
   "image": "https://assets.pokopiaguide.com/pokemon/azurill.png",
   "pokopia": {
     "specialties": [

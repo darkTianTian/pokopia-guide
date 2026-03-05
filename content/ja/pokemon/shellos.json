@@ -5,20 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 76,
-    "attack": 48,
-    "defense": 48,
-    "spAtk": 57,
-    "spDef": 62,
-    "speed": 34
-  },
-  "abilities": [
-    "ねんちゃく",
-    "よびみず",
-    "すなのちから"
-  ],
-  "description": "強く　触れると　紫色の 謎の　汁を　出す。　害は ないけれど　ネバネバするよ。",
   "image": "https://assets.pokopiaguide.com/pokemon/shellos.png",
   "pokopia": {
     "specialties": [

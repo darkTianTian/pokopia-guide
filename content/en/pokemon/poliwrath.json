@@ -6,20 +6,6 @@
     "water",
     "fighting"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 95,
-    "defense": 95,
-    "spAtk": 70,
-    "spDef": 90,
-    "speed": 70
-  },
-  "abilities": [
-    "water-absorb",
-    "damp",
-    "swift-swim"
-  ],
-  "description": "Poliwrath is skilled at both swimming and martial arts. It uses its well-trained arms to dish out powerful punches.",
   "image": "https://assets.pokopiaguide.com/pokemon/poliwrath.png",
   "pokopia": {
     "specialties": [],

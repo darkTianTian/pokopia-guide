@@ -6,20 +6,6 @@
     "bug",
     "grass"
   ],
-  "stats": {
-    "hp": 35,
-    "attack": 70,
-    "defense": 55,
-    "spAtk": 45,
-    "spDef": 55,
-    "speed": 25
-  },
-  "abilities": [
-    "ほうし",
-    "かんそうはだ",
-    "しめりけ"
-  ],
-  "description": "穴を掘り　木の根っこ　から 栄養を　摂るが　ほとんどは 背中の　キノコに　奪われる。",
   "image": "https://assets.pokopiaguide.com/pokemon/paras.png",
   "pokopia": {
     "specialties": [],

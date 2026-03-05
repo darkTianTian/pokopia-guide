@@ -6,20 +6,6 @@
     "flying",
     "steel"
   ],
-  "stats": {
-    "hp": 98,
-    "attack": 87,
-    "defense": 105,
-    "spAtk": 53,
-    "spDef": 85,
-    "speed": 67
-  },
-  "abilities": [
-    "pressure",
-    "unnerve",
-    "mirror-armor"
-  ],
-  "description": "擁有優秀飛行能力和 極度聰明頭腦的牠在伽勒爾地區 從事飛翔計程車的工作。",
   "image": "https://assets.pokopiaguide.com/pokemon/corviknight.png",
   "pokopia": {
     "specialties": [],

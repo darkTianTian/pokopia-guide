@@ -6,19 +6,6 @@
     "grass",
     "flying"
   ],
-  "stats": {
-    "hp": 78,
-    "attack": 75,
-    "defense": 75,
-    "spAtk": 70,
-    "spDef": 70,
-    "speed": 52
-  },
-  "abilities": [
-    "overgrow",
-    "long-reach"
-  ],
-  "description": "羽の　手入れを　怠らない。 身だしなみを　整える　だけでなく 刃羽根の　切れ味を　保つためだ。",
   "image": "https://assets.pokopiaguide.com/pokemon/dartrix.png",
   "pokopia": {
     "specialties": [

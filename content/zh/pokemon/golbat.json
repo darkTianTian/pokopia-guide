@@ -6,19 +6,6 @@
     "poison",
     "flying"
   ],
-  "stats": {
-    "hp": 75,
-    "attack": 80,
-    "defense": 70,
-    "spAtk": 65,
-    "spDef": 75,
-    "speed": 90
-  },
-  "abilities": [
-    "inner-focus",
-    "infiltrator"
-  ],
-  "description": "能以小小的腳靈巧地步行。 會無聲無息地靠近沉睡中的獵物， 用獠牙咬住對方並且吸食血液。",
   "image": "https://assets.pokopiaguide.com/pokemon/golbat.png",
   "pokopia": {
     "specialties": [

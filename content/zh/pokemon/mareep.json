@@ -5,19 +5,6 @@
   "types": [
     "electric"
   ],
-  "stats": {
-    "hp": 55,
-    "attack": 40,
-    "defense": 40,
-    "spAtk": 65,
-    "spDef": 45,
-    "speed": 35
-  },
-  "abilities": [
-    "靜電",
-    "正電"
-  ],
-  "description": "會累積絨毛摩擦時所產生的電力。 如果因為牠可愛而直接用手去摸， 就會被電得又麻又痛。",
   "image": "https://assets.pokopiaguide.com/pokemon/mareep.png",
   "pokopia": {
     "specialties": [

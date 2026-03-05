@@ -6,18 +6,6 @@
     "flying",
     "water"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 85,
-    "defense": 55,
-    "spAtk": 85,
-    "spDef": 95,
-    "speed": 85
-  },
-  "abilities": [
-    "gulp-missile"
-  ],
-  "description": "非常貪吃，會把刺梭魚整隻 吞進嘴裡。偶爾也會搞錯對象 去咬其他的寶可夢。",
   "image": "https://assets.pokopiaguide.com/pokemon/cramorant.png",
   "pokopia": {
     "specialties": [],

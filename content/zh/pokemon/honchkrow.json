@@ -6,20 +6,6 @@
     "dark",
     "flying"
   ],
-  "stats": {
-    "hp": 100,
-    "attack": 125,
-    "defense": 52,
-    "spAtk": 105,
-    "spDef": 52,
-    "speed": 71
-  },
-  "abilities": [
-    "insomnia",
-    "super-luck",
-    "moxie"
-  ],
-  "description": "與敵人的戰鬥幾乎全由手下來應付。 只有在最後給對手致命一擊的時候， 才會弄髒自己的手。",
   "image": "https://assets.pokopiaguide.com/pokemon/honchkrow.png",
   "pokopia": {
     "specialties": [],

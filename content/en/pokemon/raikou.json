@@ -5,23 +5,10 @@
   "types": [
     "electric"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 85,
-    "defense": 75,
-    "spAtk": 115,
-    "spDef": 100,
-    "speed": 115
-  },
-  "abilities": [
-    "pressure",
-    "inner-focus"
-  ],
-  "description": "Raikou embodies the speed of lightning. The roars of this Pokémon send shock waves shuddering through the air and shake the ground as if lightning bolts had come crashing down.",
   "image": "https://assets.pokopiaguide.com/pokemon/raikou.png",
   "pokopia": {
     "specialties": [
-      "generage"
+      "generate"
     ],
     "timeOfDay": null,
     "weather": null,

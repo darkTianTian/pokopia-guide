@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 105,
-    "attack": 140,
-    "defense": 95,
-    "spAtk": 55,
-    "spDef": 65,
-    "speed": 45
-  },
-  "abilities": [
-    "guts",
-    "sheer-force",
-    "iron-fist"
-  ],
-  "description": "When going all out, this Pokémon throws aside its concrete pillars and leaps at opponents to pummel them with its fists.",
   "image": "https://assets.pokopiaguide.com/pokemon/conkeldurr.png",
   "pokopia": {
     "specialties": [

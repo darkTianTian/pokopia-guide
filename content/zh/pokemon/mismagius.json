@@ -5,18 +5,6 @@
   "types": [
     "ghost"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 60,
-    "defense": 60,
-    "spAtk": 105,
-    "spDef": 105,
-    "speed": 105
-  },
-  "abilities": [
-    "levitate"
-  ],
-  "description": "會喃喃唸誦詛咒的話語， 使對手激烈頭痛，或是看見 恐怖的幻覺，藉此折磨對手。",
   "image": "https://assets.pokopiaguide.com/pokemon/mismagius.png",
   "pokopia": {
     "specialties": [],

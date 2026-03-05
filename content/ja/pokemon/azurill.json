@@ -6,20 +6,6 @@
     "normal",
     "fairy"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 20,
-    "defense": 40,
-    "spAtk": 20,
-    "spDef": 40,
-    "speed": 20
-  },
-  "abilities": [
-    "あついしぼう",
-    "ちからもち",
-    "そうしょく"
-  ],
-  "description": "おとなしい　ポケモンだが　怒ると しっぽの　大きな　玉を　ぶんぶん 振りまわして　叩きつけてくるぞ。",
   "image": "https://assets.pokopiaguide.com/pokemon/azurill.png",
   "pokopia": {
     "specialties": [

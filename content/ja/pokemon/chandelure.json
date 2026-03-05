@@ -6,20 +6,6 @@
     "ghost",
     "fire"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 55,
-    "defense": 90,
-    "spAtk": 145,
-    "spDef": 90,
-    "speed": 80
-  },
-  "abilities": [
-    "flash-fire",
-    "flame-body",
-    "infiltrator"
-  ],
-  "description": "シャンデラを　灯りの　かわりに していた　屋敷では　葬式が 絶えることが　なかった　という。",
   "image": "https://assets.pokopiaguide.com/pokemon/chandelure.png",
   "pokopia": {
     "specialties": [],

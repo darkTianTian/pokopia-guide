@@ -6,20 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 45,
-    "defense": 40,
-    "spAtk": 35,
-    "spDef": 35,
-    "speed": 56
-  },
-  "abilities": [
-    "銳利目光",
-    "蹣跚",
-    "健壯胸肌"
-  ],
-  "description": "性情溫馴，即使遭到襲擊 也很少反擊，只會朝對手 潑沙子來保護自己。",
   "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png",
   "pokopia": {
     "specialties": [

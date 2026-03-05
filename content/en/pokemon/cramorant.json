@@ -6,18 +6,6 @@
     "flying",
     "water"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 85,
-    "defense": 55,
-    "spAtk": 85,
-    "spDef": 95,
-    "speed": 85
-  },
-  "abilities": [
-    "gulp-missile"
-  ],
-  "description": "This hungry Pokémon swallows Arrokuda whole. Occasionally, it makes a mistake and tries to swallow a Pokémon other than its preferred prey.",
   "image": "https://assets.pokopiaguide.com/pokemon/cramorant.png",
   "pokopia": {
     "specialties": [],

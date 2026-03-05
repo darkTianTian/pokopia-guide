@@ -6,20 +6,6 @@
     "bug",
     "poison"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 90,
-    "defense": 70,
-    "spAtk": 60,
-    "spDef": 70,
-    "speed": 40
-  },
-  "abilities": [
-    "swarm",
-    "insomnia",
-    "sniper"
-  ],
-  "description": "會吐絲來捕捉獵物。 每到夜晚就會離開巢穴， 積極地展開狩獵。",
   "image": "https://assets.pokopiaguide.com/pokemon/ariados.png",
   "pokopia": {
     "specialties": [

@@ -5,20 +5,6 @@
   "types": [
     "fairy"
   ],
-  "stats": {
-    "hp": 95,
-    "attack": 70,
-    "defense": 73,
-    "spAtk": 95,
-    "spDef": 90,
-    "speed": 60
-  },
-  "abilities": [
-    "cute-charm",
-    "magic-guard",
-    "unaware"
-  ],
-  "description": "Legend says that on clear, quiet nights, it listens for the voices of its kin living on the moon. I, too, often think of my homeland, so far away.",
   "image": "https://assets.pokopiaguide.com/pokemon/clefable.png",
   "pokopia": {
     "specialties": [],

@@ -6,19 +6,6 @@
     "bug",
     "flying"
   ],
-  "stats": {
-    "hp": 30,
-    "attack": 30,
-    "defense": 42,
-    "spAtk": 30,
-    "spDef": 42,
-    "speed": 70
-  },
-  "abilities": [
-    "採蜜",
-    "活力"
-  ],
-  "description": "從早到晚都在採集花蜜。 這一切都是為了 自己的族群和蜂女王。",
   "image": "https://assets.pokopiaguide.com/pokemon/combee.png",
   "pokopia": {
     "specialties": [

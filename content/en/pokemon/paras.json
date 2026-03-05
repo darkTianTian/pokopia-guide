@@ -6,20 +6,6 @@
     "bug",
     "grass"
   ],
-  "stats": {
-    "hp": 35,
-    "attack": 70,
-    "defense": 55,
-    "spAtk": 45,
-    "spDef": 55,
-    "speed": 25
-  },
-  "abilities": [
-    "Effect Spore",
-    "Dry Skin",
-    "Damp"
-  ],
-  "description": "Sometimes seen at the foot of trees in humid forests. The mushrooms on its back—called tochukaso—are not present on infant specimens and instead emerge as Paras matures.",
   "image": "https://assets.pokopiaguide.com/pokemon/paras.png",
   "pokopia": {
     "specialties": [],

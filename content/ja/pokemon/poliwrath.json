@@ -6,20 +6,6 @@
     "water",
     "fighting"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 95,
-    "defense": 95,
-    "spAtk": 70,
-    "spDef": 90,
-    "speed": 70
-  },
-  "abilities": [
-    "water-absorb",
-    "damp",
-    "swift-swim"
-  ],
-  "description": "泳ぎ　だけでなく　格闘技も　得意。 鍛えあげた　腕から 豪快な　パンチを　繰りだす。",
   "image": "https://assets.pokopiaguide.com/pokemon/poliwrath.png",
   "pokopia": {
     "specialties": [],

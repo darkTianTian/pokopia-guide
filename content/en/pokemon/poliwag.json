@@ -5,20 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 50,
-    "defense": 40,
-    "spAtk": 40,
-    "spDef": 40,
-    "speed": 90
-  },
-  "abilities": [
-    "Water Absorb",
-    "Damp",
-    "Swift Swim"
-  ],
-  "description": "In rivers with fast-flowing water, this Pokémon will cling to a rock by using its thick lips, which act like a suction cup.",
   "image": "https://assets.pokopiaguide.com/pokemon/poliwag.png",
   "pokopia": {
     "specialties": [],

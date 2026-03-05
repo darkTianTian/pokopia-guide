@@ -17,9 +17,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const pokemon = await getPokemonBySlug(slug, "en")
   if (!pokemon) return { title: "Not Found" }
 
+  const types = pokemon.types.map((tp) => tp.charAt(0).toUpperCase() + tp.slice(1)).join("/")
+  const specialty = pokemon.pokopia?.specialties?.map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join(", ")
+  const description = `${pokemon.name} - ${types}${specialty ? `. Specialty: ${specialty}` : ""}`
+
   return {
     title: `${pokemon.name} — Pokédex`,
-    description: pokemon.description,
+    description,
     alternates: getPageAlternates("en", `/pokedex/${slug}`),
   }
 }

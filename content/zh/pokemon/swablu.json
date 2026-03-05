@@ -6,19 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 40,
-    "defense": 60,
-    "spAtk": 40,
-    "spDef": 75,
-    "speed": 50
-  },
-  "abilities": [
-    "natural-cure",
-    "cloud-nine"
-  ],
-  "description": "看起來就像是團綿雲，因此不易 被敵人發現。據說牠的翅膀是 在一代代的演變下成為白色的。",
   "image": "https://assets.pokopiaguide.com/pokemon/swablu.png",
   "pokopia": {
     "specialties": [

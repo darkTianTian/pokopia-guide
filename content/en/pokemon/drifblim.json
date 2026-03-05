@@ -6,20 +6,6 @@
     "ghost",
     "flying"
   ],
-  "stats": {
-    "hp": 150,
-    "attack": 80,
-    "defense": 44,
-    "spAtk": 90,
-    "spDef": 54,
-    "speed": 80
-  },
-  "abilities": [
-    "aftermath",
-    "unburden",
-    "flare-boost"
-  ],
-  "description": "It drifts along at dusk, perfectly silent. Its transient, melancholy aspect touches some people deeply—every so often, one will come upon a song or poem devoted to Drifblim.",
   "image": "https://assets.pokopiaguide.com/pokemon/drifblim.png",
   "pokopia": {
     "specialties": [],

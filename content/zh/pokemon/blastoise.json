@@ -5,19 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 79,
-    "attack": 83,
-    "defense": 100,
-    "spAtk": 85,
-    "spDef": 105,
-    "speed": 78
-  },
-  "abilities": [
-    "torrent",
-    "rain-dish"
-  ],
-  "description": "從甲殼上的大炮裡 放出的噴射水流 足以貫穿厚實的鐵板。",
   "image": "https://assets.pokopiaguide.com/pokemon/blastoise.png",
   "pokopia": {
     "specialties": [],

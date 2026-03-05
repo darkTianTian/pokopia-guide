@@ -6,20 +6,6 @@
     "normal",
     "fairy"
   ],
-  "stats": {
-    "hp": 115,
-    "attack": 45,
-    "defense": 20,
-    "spAtk": 45,
-    "spDef": 25,
-    "speed": 20
-  },
-  "abilities": [
-    "迷人之軀",
-    "好勝",
-    "友情防守"
-  ],
-  "description": "會自在地改變聲音的波長， 唱出一聽見就絕對會 昏昏欲睡的神奇旋律。",
   "image": "https://assets.pokopiaguide.com/pokemon/jigglypuff.png",
   "pokopia": {
     "specialties": [],

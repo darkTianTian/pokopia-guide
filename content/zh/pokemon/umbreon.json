@@ -5,19 +5,6 @@
   "types": [
     "dark"
   ],
-  "stats": {
-    "hp": 95,
-    "attack": 65,
-    "defense": 110,
-    "spAtk": 60,
-    "spDef": 130,
-    "speed": 65
-  },
-  "abilities": [
-    "同步",
-    "精神力"
-  ],
-  "description": "在滿月之夜或是興奮的時候， 牠身上圈圈一樣的花紋 就會發出金黃色的光。",
   "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png",
   "pokopia": {
     "specialties": [

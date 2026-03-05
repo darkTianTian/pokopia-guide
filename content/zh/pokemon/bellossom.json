@@ -5,19 +5,6 @@
   "types": [
     "grass"
   ],
-  "stats": {
-    "hp": 75,
-    "attack": 80,
-    "defense": 95,
-    "spAtk": 90,
-    "spDef": 100,
-    "speed": 50
-  },
-  "abilities": [
-    "葉綠素",
-    "治癒之心"
-  ],
-  "description": "有時美麗花們會聚在一起， 做出像是跳舞的動作。 據說這是呼喚太陽的儀式。",
   "image": "https://assets.pokopiaguide.com/pokemon/bellossom.png",
   "pokopia": {
     "specialties": [],

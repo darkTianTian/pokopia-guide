@@ -6,18 +6,6 @@
     "ground",
     "dragon"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 70,
-    "defense": 50,
-    "spAtk": 50,
-    "spDef": 50,
-    "speed": 70
-  },
-  "abilities": [
-    "levitate"
-  ],
-  "description": "To help make its wings grow, it dissolves quantities of prey in its digestive juices and guzzles them down every day.",
   "image": "https://assets.pokopiaguide.com/pokemon/vibrava.png",
   "pokopia": {
     "specialties": [],

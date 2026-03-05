@@ -5,20 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 160,
-    "attack": 110,
-    "defense": 65,
-    "spAtk": 65,
-    "spDef": 110,
-    "speed": 30
-  },
-  "abilities": [
-    "immunity",
-    "thick-fat",
-    "gluttony"
-  ],
-  "description": "擁有一個結實的胃， 即使吃了發霉腐爛的東西， 也完全不會吃壞肚子。",
   "image": "https://assets.pokopiaguide.com/pokemon/snorlax.png",
   "pokopia": {
     "specialties": [

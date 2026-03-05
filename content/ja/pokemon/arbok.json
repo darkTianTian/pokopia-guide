@@ -5,20 +5,6 @@
   "types": [
     "poison"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 95,
-    "defense": 69,
-    "spAtk": 65,
-    "spDef": 79,
-    "speed": 80
-  },
-  "abilities": [
-    "intimidate",
-    "shed-skin",
-    "unnerve"
-  ],
-  "description": "恐ろしげな　お腹の　模様は 研究の　結果　６種類ほど パターンが　確認されている。",
   "image": "https://assets.pokopiaguide.com/pokemon/arbok.png",
   "pokopia": {
     "specialties": [],

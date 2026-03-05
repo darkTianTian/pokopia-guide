@@ -5,19 +5,6 @@
   "types": [
     "psychic"
   ],
-  "stats": {
-    "hp": 106,
-    "attack": 110,
-    "defense": 90,
-    "spAtk": 154,
-    "spDef": 90,
-    "speed": 130
-  },
-  "abilities": [
-    "pressure",
-    "unnerve"
-  ],
-  "description": "ミュウの　遺伝子と　ほとんど 同じ。だが　大きさも　性格も 恐ろしいほど　違っている。",
   "image": "https://assets.pokopiaguide.com/pokemon/mewtwo.png",
   "pokopia": {
     "specialties": [],

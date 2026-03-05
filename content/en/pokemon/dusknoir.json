@@ -5,19 +5,6 @@
   "types": [
     "ghost"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 100,
-    "defense": 135,
-    "spAtk": 65,
-    "spDef": 135,
-    "speed": 45
-  },
-  "abilities": [
-    "pressure",
-    "frisk"
-  ],
-  "description": "Comes to those whose lives have come to an end and escorts their souls to the afterlife. Known to mistakenly take the souls of those who yet have life left in them, albeit rarely.",
   "image": "https://assets.pokopiaguide.com/pokemon/dusknoir.png",
   "pokopia": {
     "specialties": [],

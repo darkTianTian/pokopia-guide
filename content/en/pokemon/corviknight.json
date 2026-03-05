@@ -6,20 +6,6 @@
     "flying",
     "steel"
   ],
-  "stats": {
-    "hp": 98,
-    "attack": 87,
-    "defense": 105,
-    "spAtk": 53,
-    "spDef": 85,
-    "speed": 67
-  },
-  "abilities": [
-    "pressure",
-    "unnerve",
-    "mirror-armor"
-  ],
-  "description": "With their great intellect and flying skills, these Pokémon very successfully act as the Galar region’s airborne taxi service.",
   "image": "https://assets.pokopiaguide.com/pokemon/corviknight.png",
   "pokopia": {
     "specialties": [],

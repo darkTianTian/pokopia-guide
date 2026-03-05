@@ -6,20 +6,6 @@
     "psychic",
     "fairy"
   ],
-  "stats": {
-    "hp": 68,
-    "attack": 65,
-    "defense": 65,
-    "spAtk": 125,
-    "spDef": 115,
-    "speed": 80
-  },
-  "abilities": [
-    "同步",
-    "複製",
-    "心靈感應"
-  ],
-  "description": "如果是為了保護訓練家， 牠會不惜用盡自己的精神力量 製造出小型黑洞。",
   "image": "https://assets.pokopiaguide.com/pokemon/gardevoir.png",
   "pokopia": {
     "specialties": [],

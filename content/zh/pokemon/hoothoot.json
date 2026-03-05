@@ -6,20 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 30,
-    "defense": 30,
-    "spAtk": 36,
-    "spDef": 56,
-    "speed": 50
-  },
-  "abilities": [
-    "不眠",
-    "銳利目光",
-    "有色眼鏡"
-  ],
-  "description": "總是在固定的時間鳴叫， 因此也有訓練家 拿牠來代替鐘錶帶出門。",
   "image": "https://assets.pokopiaguide.com/pokemon/hoothoot.png",
   "pokopia": {
     "specialties": [

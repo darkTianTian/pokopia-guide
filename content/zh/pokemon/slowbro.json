@@ -6,20 +6,6 @@
     "water",
     "psychic"
   ],
-  "stats": {
-    "hp": 95,
-    "attack": 75,
-    "defense": 110,
-    "spAtk": 100,
-    "spDef": 80,
-    "speed": 30
-  },
-  "abilities": [
-    "oblivious",
-    "own-tempo",
-    "regenerator"
-  ],
-  "description": "被大舌貝狠狠咬下的衝擊讓牠 變得能用兩腳行走。如果大舌貝 脫落了，牠似乎就會變回呆呆獸。",
   "image": "https://assets.pokopiaguide.com/pokemon/slowbro.png",
   "pokopia": {
     "specialties": [

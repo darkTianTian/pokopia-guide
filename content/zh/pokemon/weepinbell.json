@@ -6,19 +6,6 @@
     "grass",
     "poison"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 90,
-    "defense": 50,
-    "spAtk": 85,
-    "spDef": 45,
-    "speed": 55
-  },
-  "abilities": [
-    "chlorophyll",
-    "gluttony"
-  ],
-  "description": "肚子餓的時候會把周圍 會動的東西全都吞下去， 然後用溶解液致其於死地。",
   "image": "https://assets.pokopiaguide.com/pokemon/weepinbell.png",
   "pokopia": {
     "specialties": [

@@ -5,19 +5,6 @@
   "types": [
     "dragon"
   ],
-  "stats": {
-    "hp": 41,
-    "attack": 64,
-    "defense": 45,
-    "spAtk": 50,
-    "spDef": 50,
-    "speed": 50
-  },
-  "abilities": [
-    "Shed Skin",
-    "Marvel Scale"
-  ],
-  "description": "This Pokémon was long considered to be no more than a myth. The small lump on a Dratini’s forehead is actually a horn that’s still coming in.",
   "image": "https://assets.pokopiaguide.com/pokemon/dratini.png",
   "pokopia": {
     "specialties": [

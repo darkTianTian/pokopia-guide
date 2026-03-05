@@ -6,20 +6,6 @@
     "water",
     "grass"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 70,
-    "defense": 70,
-    "spAtk": 90,
-    "spDef": 100,
-    "speed": 70
-  },
-  "abilities": [
-    "悠游自如",
-    "雨盤",
-    "我行我素"
-  ],
-  "description": "樂天河童會跟著 歡快的音樂搖擺身體， 藉而增強自己的力量。",
   "image": "https://assets.pokopiaguide.com/pokemon/ludicolo.png",
   "pokopia": {
     "specialties": [

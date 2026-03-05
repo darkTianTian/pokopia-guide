@@ -6,19 +6,6 @@
     "rock",
     "ground"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 64,
-    "defense": 50,
-    "spAtk": 45,
-    "spDef": 50,
-    "speed": 41
-  },
-  "abilities": [
-    "こんじょう",
-    "すながくれ"
-  ],
-  "description": "土を　食べて　生きている。 大きな　山ひとつ　食べ終わると 成長のため　眠りはじめる。",
   "image": "https://assets.pokopiaguide.com/pokemon/larvitar.png",
   "pokopia": {
     "specialties": [

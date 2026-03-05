@@ -5,20 +5,6 @@
   "types": [
     "dragon"
   ],
-  "stats": {
-    "hp": 68,
-    "attack": 75,
-    "defense": 53,
-    "spAtk": 83,
-    "spDef": 113,
-    "speed": 60
-  },
-  "abilities": [
-    "sap-sipper",
-    "hydration",
-    "gooey"
-  ],
-  "description": "A creature given to melancholy. I suspect its metallic shell developed as a result of the mucus on its skin reacting with the iron in Hisui's water.",
   "image": "https://assets.pokopiaguide.com/pokemon/sliggoo.png",
   "pokopia": {
     "specialties": [

@@ -6,20 +6,6 @@
     "psychic",
     "fairy"
   ],
-  "stats": {
-    "hp": 20,
-    "attack": 25,
-    "defense": 45,
-    "spAtk": 70,
-    "spDef": 90,
-    "speed": 60
-  },
-  "abilities": [
-    "隔音",
-    "過濾",
-    "技術高手"
-  ],
-  "description": "像徒弟一樣跟隨著 擅長跳舞的踏冰人偶， 拼命模仿牠的舞步。",
   "image": "https://assets.pokopiaguide.com/pokemon/mime-jr.png",
   "pokopia": {
     "specialties": [],

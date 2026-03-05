@@ -6,20 +6,6 @@
     "normal",
     "fairy"
   ],
-  "stats": {
-    "hp": 140,
-    "attack": 70,
-    "defense": 45,
-    "spAtk": 85,
-    "spDef": 50,
-    "speed": 45
-  },
-  "abilities": [
-    "cute-charm",
-    "competitive",
-    "frisk"
-  ],
-  "description": "以自己細緻的體毛為傲。 尤其額頭上的捲毛，更是有著 彷彿會一摸升天的極致觸感。",
   "image": "https://assets.pokopiaguide.com/pokemon/wigglytuff.png",
   "pokopia": {
     "specialties": [],

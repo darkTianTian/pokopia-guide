@@ -5,19 +5,6 @@
   "types": [
     "rock"
   ],
-  "stats": {
-    "hp": 67,
-    "attack": 125,
-    "defense": 40,
-    "spAtk": 30,
-    "spDef": 30,
-    "speed": 58
-  },
-  "abilities": [
-    "mold-breaker",
-    "sheer-force"
-  ],
-  "description": "特徵是堅硬的頭蓋骨。 會用頭錘撞斷樹木， 吃樹上長的樹果。",
   "image": "https://assets.pokopiaguide.com/pokemon/cranidos.png",
   "pokopia": {
     "specialties": [],

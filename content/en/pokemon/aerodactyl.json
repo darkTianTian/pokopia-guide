@@ -6,20 +6,6 @@
     "rock",
     "flying"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 105,
-    "defense": 65,
-    "spAtk": 60,
-    "spDef": 75,
-    "speed": 130
-  },
-  "abilities": [
-    "rock-head",
-    "pressure",
-    "unnerve"
-  ],
-  "description": "Aerodactyl’s sawlike fangs can shred skin to tatters—even the skin of Steel-type Pokémon.",
   "image": "https://assets.pokopiaguide.com/pokemon/aerodactyl.png",
   "pokopia": {
     "specialties": [],

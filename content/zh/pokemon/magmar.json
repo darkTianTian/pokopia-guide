@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 95,
-    "defense": 57,
-    "spAtk": 100,
-    "spDef": 85,
-    "speed": 93
-  },
-  "abilities": [
-    "flame-body",
-    "vital-spirit"
-  ],
-  "description": "全身時時刻刻都在燃燒。 人們認為牠是引起火災的 原因之一，非常畏懼牠。",
   "image": "https://assets.pokopiaguide.com/pokemon/magmar.png",
   "pokopia": {
     "specialties": [

@@ -6,19 +6,6 @@
     "grass",
     "poison"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 49,
-    "defense": 49,
-    "spAtk": 65,
-    "spDef": 65,
-    "speed": 45
-  },
-  "abilities": [
-    "しんりょく",
-    "ようりょくそ"
-  ],
-  "description": "生まれて　しばらくの　あいだ 背中の　タネに　つまった 栄養を　とって　育つ。",
   "image": "https://assets.pokopiaguide.com/pokemon/bulbasaur.png",
   "pokopia": {
     "specialties": [

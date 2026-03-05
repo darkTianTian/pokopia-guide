@@ -5,20 +5,6 @@
   "types": [
     "ground"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 100,
-    "defense": 45,
-    "spAtk": 45,
-    "spDef": 45,
-    "speed": 10
-  },
-  "abilities": [
-    "hyper-cutter",
-    "arena-trap",
-    "sheer-force"
-  ],
-  "description": "會建造絕對無法逃脫的 缽狀巢穴，並在巢穴裡 等著獵物自己掉進來。",
   "image": "https://assets.pokopiaguide.com/pokemon/trapinch.png",
   "pokopia": {
     "specialties": [

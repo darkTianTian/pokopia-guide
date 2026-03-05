@@ -6,20 +6,6 @@
     "psychic",
     "fairy"
   ],
-  "stats": {
-    "hp": 38,
-    "attack": 35,
-    "defense": 35,
-    "spAtk": 65,
-    "spDef": 55,
-    "speed": 50
-  },
-  "abilities": [
-    "synchronize",
-    "trace",
-    "telepathy"
-  ],
-  "description": "It resembles a maiden in appearance, but it wields strange powers to project visions of paradise. I suspect the crimson ornaments on its head are the key to its abilities.",
   "image": "https://assets.pokopiaguide.com/pokemon/kirlia.png",
   "pokopia": {
     "specialties": [

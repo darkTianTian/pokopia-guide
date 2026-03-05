@@ -6,20 +6,6 @@
     "dark",
     "flying"
   ],
-  "stats": {
-    "hp": 100,
-    "attack": 125,
-    "defense": 52,
-    "spAtk": 105,
-    "spDef": 52,
-    "speed": 71
-  },
-  "abilities": [
-    "insomnia",
-    "super-luck",
-    "moxie"
-  ],
-  "description": "One cry from this Pokémon, and a murder of Murkrow come flying. At such times, one would think the curtain of night had fallen, plunging the world into jet-black darkness.",
   "image": "https://assets.pokopiaguide.com/pokemon/honchkrow.png",
   "pokopia": {
     "specialties": [],

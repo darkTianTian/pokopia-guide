@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 80,
-    "defense": 50,
-    "spAtk": 35,
-    "spDef": 35,
-    "speed": 35
-  },
-  "abilities": [
-    "毅力",
-    "無防守",
-    "不屈之心"
-  ],
-  "description": "時時刻刻都充滿力量。 由於體力過剩而去舉岩石 消磨時間，也因此變得更強。",
   "image": "https://assets.pokopiaguide.com/pokemon/machop.png",
   "pokopia": {
     "specialties": [

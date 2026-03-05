@@ -6,20 +6,6 @@
     "water",
     "psychic"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 65,
-    "defense": 65,
-    "spAtk": 40,
-    "spDef": 40,
-    "speed": 15
-  },
-  "abilities": [
-    "どんかん",
-    "マイペース",
-    "さいせいりょく"
-  ],
-  "description": "しっぽを　水に　浸すと　甘味が にじみ出るので　それを　エサに ポケモンを　おびき寄せ　釣りあげる。",
   "image": "https://assets.pokopiaguide.com/pokemon/slowpoke.png",
   "pokopia": {
     "specialties": [

@@ -5,18 +5,6 @@
   "types": [
     "bug"
   ],
-  "stats": {
-    "hp": 47,
-    "attack": 62,
-    "defense": 45,
-    "spAtk": 55,
-    "spDef": 45,
-    "speed": 46
-  },
-  "abilities": [
-    "swarm"
-  ],
-  "description": "It uses its big jaws to dig nests into the forest floor, and it loves to feed on sweet tree sap.",
   "image": "https://assets.pokopiaguide.com/pokemon/grubbin.png",
   "pokopia": {
     "specialties": [

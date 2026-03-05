@@ -6,20 +6,6 @@
     "bug",
     "fighting"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 125,
-    "defense": 75,
-    "spAtk": 40,
-    "spDef": 95,
-    "speed": 85
-  },
-  "abilities": [
-    "むしのしらせ",
-    "こんじょう",
-    "じしんかじょう"
-  ],
-  "description": "自分の　体重の　１００倍の　重さでも 軽がる　持ち上げる 怪力　自慢の　ポケモン。",
   "image": "https://assets.pokopiaguide.com/pokemon/heracross.png",
   "pokopia": {
     "specialties": [

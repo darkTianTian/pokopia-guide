@@ -5,23 +5,10 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 120,
-    "attack": 95,
-    "defense": 95,
-    "spAtk": 55,
-    "spDef": 75,
-    "speed": 20
-  },
-  "abilities": [
-    "cheek-pouch",
-    "gluttony"
-  ],
-  "description": "どんなに　硬い　木の実の　殻も 自慢の　歯で　ボリボリ　齧る。 ガラルでは　よく　見る　ポケモン。",
   "image": "https://assets.pokopiaguide.com/pokemon/greedent.png",
   "pokopia": {
     "specialties": [
-      "party"
+      "hype"
     ],
     "timeOfDay": null,
     "weather": null,

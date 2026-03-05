@@ -5,20 +5,6 @@
   "types": [
     "ground"
   ],
-  "stats": {
-    "hp": 35,
-    "attack": 100,
-    "defense": 50,
-    "spAtk": 50,
-    "spDef": 70,
-    "speed": 120
-  },
-  "abilities": [
-    "sand-veil",
-    "arena-trap",
-    "sand-force"
-  ],
-  "description": "地下１００キロまで　掘り進む。 パワーを秘めた　三つ子の　ディグダ。 地面の下は　だれも　知らない。",
   "image": "https://assets.pokopiaguide.com/pokemon/dugtrio.png",
   "pokopia": {
     "specialties": [

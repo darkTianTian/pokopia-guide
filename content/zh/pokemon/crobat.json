@@ -6,19 +6,6 @@
     "poison",
     "flying"
   ],
-  "stats": {
-    "hp": 85,
-    "attack": 90,
-    "defense": 80,
-    "spAtk": 70,
-    "spDef": 80,
-    "speed": 130
-  },
-  "abilities": [
-    "inner-focus",
-    "infiltrator"
-  ],
-  "description": "能夠自在地控制４隻翅膀 振翅飛翔。即使是在狹窄的 洞窟裡也能毫不減速地飛舞。",
   "image": "https://assets.pokopiaguide.com/pokemon/crobat.png",
   "pokopia": {
     "specialties": [

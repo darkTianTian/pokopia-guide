@@ -6,20 +6,6 @@
     "bug",
     "poison"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 65,
-    "defense": 60,
-    "spAtk": 90,
-    "spDef": 75,
-    "speed": 90
-  },
-  "abilities": [
-    "shield-dust",
-    "tinted-lens",
-    "wonder-skin"
-  ],
-  "description": "翅膀上的鱗粉一旦沾到身上 就很難甩掉，而且鱗粉帶有的 毒素還會逐漸滲入體內。",
   "image": "https://assets.pokopiaguide.com/pokemon/venomoth.png",
   "pokopia": {
     "specialties": [

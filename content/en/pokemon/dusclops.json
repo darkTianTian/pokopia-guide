@@ -5,19 +5,6 @@
   "types": [
     "ghost"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 70,
-    "defense": 130,
-    "spAtk": 60,
-    "spDef": 130,
-    "speed": 25
-  },
-  "abilities": [
-    "pressure",
-    "frisk"
-  ],
-  "description": "There are rumors that peeking inside its bandage-wrapped body will cause one to get pulled in through the gaps between the bandages, never to return. I've been too scared to verify.",
   "image": "https://assets.pokopiaguide.com/pokemon/dusclops.png",
   "pokopia": {
     "specialties": [],

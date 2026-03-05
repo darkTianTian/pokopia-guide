@@ -5,19 +5,6 @@
   "types": [
     "fairy"
   ],
-  "stats": {
-    "hp": 95,
-    "attack": 65,
-    "defense": 65,
-    "spAtk": 110,
-    "spDef": 130,
-    "speed": 60
-  },
-  "abilities": [
-    "メロメロボディ",
-    "フェアリースキン"
-  ],
-  "description": "恐ろしい　ドラゴンポケモンを 美しい　ニンフィアが　退治する 童話が　ガラル地方に　残る。",
   "image": "https://assets.pokopiaguide.com/pokemon/sylveon.png",
   "pokopia": {
     "specialties": [

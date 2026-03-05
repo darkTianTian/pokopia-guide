@@ -6,20 +6,6 @@
     "psychic",
     "fairy"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 45,
-    "defense": 65,
-    "spAtk": 100,
-    "spDef": 120,
-    "speed": 90
-  },
-  "abilities": [
-    "soundproof",
-    "filter",
-    "technician"
-  ],
-  "description": "The behavior of this clown-like Pokémon reminds one of pantomime. It creates invisible walls using a force emitted from its fingertips.",
   "image": "https://assets.pokopiaguide.com/pokemon/mr-mime.png",
   "pokopia": {
     "specialties": [

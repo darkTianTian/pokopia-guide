@@ -6,20 +6,6 @@
     "ground",
     "steel"
   ],
-  "stats": {
-    "hp": 110,
-    "attack": 135,
-    "defense": 60,
-    "spAtk": 50,
-    "spDef": 65,
-    "speed": 88
-  },
-  "abilities": [
-    "撥沙",
-    "沙之力",
-    "破格"
-  ],
-  "description": "別名鑽頭王。在地底下 挖掘前進的速度 高達每小時１５０公里。",
   "image": "https://assets.pokopiaguide.com/pokemon/excadrill.png",
   "pokopia": {
     "specialties": [],

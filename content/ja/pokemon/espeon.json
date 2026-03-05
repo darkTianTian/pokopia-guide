@@ -5,19 +5,6 @@
   "types": [
     "psychic"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 65,
-    "defense": 60,
-    "spAtk": 130,
-    "spDef": 95,
-    "speed": 110
-  },
-  "abilities": [
-    "シンクロ",
-    "マジックミラー"
-  ],
-  "description": "額の　珠から　サイコパワーを 放射して　戦う。　パワーが つきると　珠の　色が　くすむ。",
   "image": "https://assets.pokopiaguide.com/pokemon/espeon.png",
   "pokopia": {
     "specialties": [

@@ -6,19 +6,6 @@
     "grass",
     "flying"
   ],
-  "stats": {
-    "hp": 68,
-    "attack": 55,
-    "defense": 55,
-    "spAtk": 50,
-    "spDef": 50,
-    "speed": 42
-  },
-  "abilities": [
-    "overgrow",
-    "long-reach"
-  ],
-  "description": "白天利用光合作用積蓄力量， 到了晚上則會悄無聲息地 在空中飛翔，尋找獵物。",
   "image": "https://assets.pokopiaguide.com/pokemon/rowlet.png",
   "pokopia": {
     "specialties": [],

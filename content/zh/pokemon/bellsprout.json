@@ -6,19 +6,6 @@
     "grass",
     "poison"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 75,
-    "defense": 35,
-    "spAtk": 70,
-    "spDef": 30,
-    "speed": 40
-  },
-  "abilities": [
-    "葉綠素",
-    "貪吃鬼"
-  ],
-  "description": "喜歡高溫多濕的環境。 會利用藤蔓捕捉小蟲 當成自己的食物。",
   "image": "https://assets.pokopiaguide.com/pokemon/bellsprout.png",
   "pokopia": {
     "specialties": [

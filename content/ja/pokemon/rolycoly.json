@@ -5,20 +5,6 @@
   "types": [
     "rock"
   ],
-  "stats": {
-    "hp": 30,
-    "attack": 40,
-    "defense": 50,
-    "spAtk": 40,
-    "spDef": 50,
-    "speed": 30
-  },
-  "abilities": [
-    "steam-engine",
-    "heatproof",
-    "flash-fire"
-  ],
-  "description": "岩だらけの　悪路を　ものともせず 一輪車のように　走りまわる。 石炭を　燃やして　生きている。",
   "image": "https://assets.pokopiaguide.com/pokemon/rolycoly.png",
   "pokopia": {
     "specialties": [],

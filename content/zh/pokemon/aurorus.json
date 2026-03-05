@@ -6,19 +6,6 @@
     "rock",
     "ice"
   ],
-  "stats": {
-    "hp": 123,
-    "attack": 77,
-    "defense": 72,
-    "spAtk": 99,
-    "spDef": 92,
-    "speed": 58
-  },
-  "abilities": [
-    "refrigerate",
-    "snow-warning"
-  ],
-  "description": "當牠大大地被激怒時， 就會噴出猛烈的冰氣 讓周圍一帶全被冰封。",
   "image": "https://assets.pokopiaguide.com/pokemon/aurorus.png",
   "pokopia": {
     "specialties": [],

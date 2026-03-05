@@ -6,18 +6,6 @@
     "ghost",
     "poison"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 50,
-    "defense": 45,
-    "spAtk": 115,
-    "spDef": 55,
-    "speed": 95
-  },
-  "abilities": [
-    "levitate"
-  ],
-  "description": "如果黑暗中空無一人， 但你卻感覺被什麼盯上了， 那麼鬼斯通一定就在那裡。",
   "image": "https://assets.pokopiaguide.com/pokemon/haunter.png",
   "pokopia": {
     "specialties": [],

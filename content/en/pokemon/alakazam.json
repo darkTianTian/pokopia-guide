@@ -5,20 +5,6 @@
   "types": [
     "psychic"
   ],
-  "stats": {
-    "hp": 55,
-    "attack": 50,
-    "defense": 45,
-    "spAtk": 135,
-    "spDef": 95,
-    "speed": 120
-  },
-  "abilities": [
-    "Synchronize",
-    "Inner Focus",
-    "Magic Guard"
-  ],
-  "description": "The longer Alakazam lives, the larger and heavier its head becomes. Our tests have shown that the strength of its psychic powers correlates positively to the weight of its head.",
   "image": "https://assets.pokopiaguide.com/pokemon/alakazam.png",
   "pokopia": {
     "specialties": [],

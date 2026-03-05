@@ -6,19 +6,6 @@
     "dragon",
     "flying"
   ],
-  "stats": {
-    "hp": 91,
-    "attack": 134,
-    "defense": 95,
-    "spAtk": 100,
-    "spDef": 100,
-    "speed": 80
-  },
-  "abilities": [
-    "精神力",
-    "多重鱗片"
-  ],
-  "description": "人們稱牠為大海的化身。 有許多船會在船頭設置 快龍的雕像。",
   "image": "https://assets.pokopiaguide.com/pokemon/dragonite.png",
   "pokopia": {
     "specialties": [

@@ -5,20 +5,6 @@
   "types": [
     "fairy"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 45,
-    "defense": 48,
-    "spAtk": 60,
-    "spDef": 65,
-    "speed": 35
-  },
-  "abilities": [
-    "メロメロボディ",
-    "マジックガード",
-    "フレンドガード"
-  ],
-  "description": "愛くるしい　しぐさと　鳴き声で かわいいと　大人気の　ポケモン。 だが　めったに　見つからない。",
   "image": "https://assets.pokopiaguide.com/pokemon/clefairy.png",
   "pokopia": {
     "specialties": [

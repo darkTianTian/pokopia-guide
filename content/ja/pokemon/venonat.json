@@ -6,20 +6,6 @@
     "bug",
     "poison"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 55,
-    "defense": 50,
-    "spAtk": 40,
-    "spDef": 55,
-    "speed": 45
-  },
-  "abilities": [
-    "ふくがん",
-    "いろめがね",
-    "にげあし"
-  ],
-  "description": "レーダーになる　大きな　目は 明るいところでは　小さな　目が 集まって　できているのが　わかる。",
   "image": "https://assets.pokopiaguide.com/pokemon/venonat.png",
   "pokopia": {
     "specialties": [

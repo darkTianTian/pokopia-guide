@@ -5,18 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 100,
-    "attack": 100,
-    "defense": 90,
-    "spAtk": 150,
-    "spDef": 140,
-    "speed": 90
-  },
-  "abilities": [
-    "drizzle"
-  ],
-  "description": "海の　化身　と 伝わる　ポケモン。 自然のエネルギーを　求めて　グラードンと 争いを　繰り返したという　伝説が　ある。",
   "image": "https://assets.pokopiaguide.com/pokemon/kyogre.png",
   "pokopia": {
     "specialties": [],

@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 86,
-    "defense": 60,
-    "spAtk": 55,
-    "spDef": 60,
-    "speed": 94
-  },
-  "abilities": [
-    "blaze",
-    "libero"
-  ],
-  "description": "會用腳把樹果從樹木上 踢落，用來練習挑球， 藉此鍛鍊自己的腳法。",
   "image": "https://assets.pokopiaguide.com/pokemon/raboot.png",
   "pokopia": {
     "specialties": [],

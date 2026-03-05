@@ -6,20 +6,6 @@
     "normal",
     "fairy"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 30,
-    "defense": 15,
-    "spAtk": 40,
-    "spDef": 20,
-    "speed": 15
-  },
-  "abilities": [
-    "cute-charm",
-    "competitive",
-    "friend-guard"
-  ],
-  "description": "Taking advantage of the softness of its body, Igglybuff moves as if bouncing. Its body turns a deep pink when its temperature rises.",
   "image": "https://assets.pokopiaguide.com/pokemon/igglybuff.png",
   "pokopia": {
     "specialties": [],

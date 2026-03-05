@@ -6,19 +6,6 @@
     "rock",
     "ground"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 64,
-    "defense": 50,
-    "spAtk": 45,
-    "spDef": 50,
-    "speed": 41
-  },
-  "abilities": [
-    "Guts",
-    "Sand Veil"
-  ],
-  "description": "It feeds on soil. After it has eaten a large mountain, it will fall asleep so it can grow.",
   "image": "https://assets.pokopiaguide.com/pokemon/larvitar.png",
   "pokopia": {
     "specialties": [

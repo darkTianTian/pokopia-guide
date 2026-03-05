@@ -5,18 +5,6 @@
   "types": [
     "dark"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 105,
-    "defense": 60,
-    "spAtk": 120,
-    "spDef": 60,
-    "speed": 105
-  },
-  "abilities": [
-    "illusion"
-  ],
-  "description": "孤獨的訓練家會命令 索羅亞克讓他看見幻影， 藉此紓解一個人的寂寞。",
   "image": "https://assets.pokopiaguide.com/pokemon/zoroark.png",
   "pokopia": {
     "specialties": [

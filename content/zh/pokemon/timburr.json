@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 75,
-    "attack": 80,
-    "defense": 55,
-    "spAtk": 25,
-    "spDef": 35,
-    "speed": 35
-  },
-  "abilities": [
-    "毅力",
-    "強行",
-    "鐵拳"
-  ],
-  "description": "如果搬運小匠可以搬起 自己體重３倍左右的木材， 就代表牠進化的日子要到了。",
   "image": "https://assets.pokopiaguide.com/pokemon/timburr.png",
   "pokopia": {
     "specialties": [

@@ -6,20 +6,6 @@
     "dragon",
     "ghost"
   ],
-  "stats": {
-    "hp": 68,
-    "attack": 80,
-    "defense": 50,
-    "spAtk": 60,
-    "spDef": 50,
-    "speed": 102
-  },
-  "abilities": [
-    "clear-body",
-    "infiltrator",
-    "cursed-body"
-  ],
-  "description": "要是沒讓自己在照顧的多龍梅西亞 乘在頭上就靜不下心來，甚至會 因此試圖把別的寶可夢放到頭上。",
   "image": "https://assets.pokopiaguide.com/pokemon/drakloak.png",
   "pokopia": {
     "specialties": [],

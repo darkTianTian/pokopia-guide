@@ -5,20 +5,6 @@
   "types": [
     "bug"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 125,
-    "defense": 100,
-    "spAtk": 55,
-    "spDef": 70,
-    "speed": 85
-  },
-  "abilities": [
-    "怪力鉗",
-    "破格",
-    "自信過度"
-  ],
-  "description": "會用角緊緊夾住獵物， 就這樣把對方剪成兩半 或是把牠硬扔到天邊去。",
   "image": "https://assets.pokopiaguide.com/pokemon/pinsir.png",
   "pokopia": {
     "specialties": [

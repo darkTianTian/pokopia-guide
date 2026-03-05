@@ -6,19 +6,6 @@
     "rock",
     "dragon"
   ],
-  "stats": {
-    "hp": 58,
-    "attack": 89,
-    "defense": 77,
-    "spAtk": 45,
-    "spDef": 45,
-    "speed": 48
-  },
-  "abilities": [
-    "strong-jaw",
-    "sturdy"
-  ],
-  "description": "任性且愛撒嬌。 即使牠只是鬧著玩， 也會讓訓練家受到重傷。",
   "image": "https://assets.pokopiaguide.com/pokemon/tyrunt.png",
   "pokopia": {
     "specialties": [],

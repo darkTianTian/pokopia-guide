@@ -6,20 +6,6 @@
     "water",
     "ice"
   ],
-  "stats": {
-    "hp": 130,
-    "attack": 85,
-    "defense": 80,
-    "spAtk": 85,
-    "spDef": 95,
-    "speed": 60
-  },
-  "abilities": [
-    "ちょすい",
-    "シェルアーマー",
-    "うるおいボディ"
-  ],
-  "description": "寒さに　強く　氷の　海も 平気。　皮膚は　スベスベで 少しだけ　ひんやり　しているよ。",
   "image": "https://assets.pokopiaguide.com/pokemon/lapras.png",
   "pokopia": {
     "specialties": [

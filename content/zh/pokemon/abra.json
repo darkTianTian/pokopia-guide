@@ -5,20 +5,6 @@
   "types": [
     "psychic"
   ],
-  "stats": {
-    "hp": 25,
-    "attack": 20,
-    "defense": 15,
-    "spAtk": 105,
-    "spDef": 55,
-    "speed": 90
-  },
-  "abilities": [
-    "同步",
-    "精神力",
-    "魔法防守"
-  ],
-  "description": "就算在睡夢中也能使用瞬間移動。 據說當牠睡得越熟， 瞬間移動的距離就會越遠。",
   "image": "https://assets.pokopiaguide.com/pokemon/abra.png",
   "pokopia": {
     "specialties": [

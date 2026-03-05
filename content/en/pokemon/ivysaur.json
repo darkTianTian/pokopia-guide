@@ -6,19 +6,6 @@
     "grass",
     "poison"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 62,
-    "defense": 63,
-    "spAtk": 80,
-    "spDef": 80,
-    "speed": 60
-  },
-  "abilities": [
-    "overgrow",
-    "chlorophyll"
-  ],
-  "description": "Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger.",
   "image": "https://assets.pokopiaguide.com/pokemon/ivysaur.png",
   "pokopia": {
     "specialties": [],

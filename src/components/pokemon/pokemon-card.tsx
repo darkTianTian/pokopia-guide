@@ -66,7 +66,7 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
                     className="inline-flex items-center gap-1 rounded-full border bg-muted/50 px-2 py-1 text-sm"
                   >
                     <Image
-                      src={`/images/specialties/${s}.png`}
+                      src={`/images/specialties/${s.replace(/ /g, "-")}.png`}
                       alt={(tr.specialties as Record<string, string>)[s] ?? s}
                       width={18}
                       height={18}

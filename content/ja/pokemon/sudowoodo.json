@@ -5,20 +5,6 @@
   "types": [
     "rock"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 100,
-    "defense": 115,
-    "spAtk": 30,
-    "spDef": 65,
-    "speed": 30
-  },
-  "abilities": [
-    "がんじょう",
-    "いしあたま",
-    "びびり"
-  ],
-  "description": "襲われないように　木のまねをする。 水が　苦手で　雨が　降り出すと いつの間にか　姿を　消す。",
   "image": "https://assets.pokopiaguide.com/pokemon/sudowoodo.png",
   "pokopia": {
     "specialties": [],

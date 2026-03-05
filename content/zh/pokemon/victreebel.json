@@ -6,19 +6,6 @@
     "grass",
     "poison"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 105,
-    "defense": 65,
-    "spAtk": 100,
-    "spDef": 70,
-    "speed": 70
-  },
-  "abilities": [
-    "chlorophyll",
-    "gluttony"
-  ],
-  "description": "會用花蜜的香氣引誘獵物。 據說被牠吞進了嘴裡的東西 只要１天就會溶解到連骨頭都不剩。",
   "image": "https://assets.pokopiaguide.com/pokemon/victreebel.png",
   "pokopia": {
     "specialties": [],

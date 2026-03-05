@@ -6,19 +6,6 @@
     "steel",
     "psychic"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 55,
-    "defense": 80,
-    "spAtk": 35,
-    "spDef": 60,
-    "speed": 30
-  },
-  "abilities": [
-    "clear-body",
-    "light-metal"
-  ],
-  "description": "The cells in this Pokémon’s body are composed of magnetic material. Instead of blood, magnetic forces flow through Beldum’s body.",
   "image": "https://assets.pokopiaguide.com/pokemon/beldum.png",
   "pokopia": {
     "specialties": [],

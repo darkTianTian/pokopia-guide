@@ -5,20 +5,6 @@
   "types": [
     "dragon"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 50,
-    "defense": 35,
-    "spAtk": 55,
-    "spDef": 75,
-    "speed": 40
-  },
-  "abilities": [
-    "食草",
-    "濕潤之軀",
-    "黏滑"
-  ],
-  "description": "牠的觸角是優秀的感覺器官。 只要感覺到有敵人就會立刻 躲起來，以此存活到了現在。",
   "image": "https://assets.pokopiaguide.com/pokemon/goomy.png",
   "pokopia": {
     "specialties": [

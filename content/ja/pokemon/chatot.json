@@ -6,20 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 76,
-    "attack": 65,
-    "defense": 45,
-    "spAtk": 92,
-    "spDef": 42,
-    "speed": 91
-  },
-  "abilities": [
-    "keen-eye",
-    "tangled-feet",
-    "big-pecks"
-  ],
-  "description": "人の　言葉を　覚えて　鳴く。 仲間が　一か所に　集まると みんな　同じ　言葉を　覚える。",
   "image": "https://assets.pokopiaguide.com/pokemon/chatot.png",
   "pokopia": {
     "specialties": [],

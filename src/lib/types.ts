@@ -21,15 +21,6 @@ export const POKEMON_TYPES = [
 
 export type PokemonType = (typeof POKEMON_TYPES)[number]
 
-export interface PokemonStats {
-  hp: number
-  attack: number
-  defense: number
-  spAtk: number
-  spDef: number
-  speed: number
-}
-
 export interface HabitatEntry {
   id: number
   name: string
@@ -52,9 +43,6 @@ export interface Pokemon {
   slug: string
   name: string
   types: PokemonType[]
-  stats: PokemonStats
-  abilities: string[]
-  description: string
   image: string
   pokopia?: PokopiaData | null
 }

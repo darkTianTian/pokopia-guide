@@ -5,20 +5,6 @@
   "types": [
     "psychic"
   ],
-  "stats": {
-    "hp": 25,
-    "attack": 20,
-    "defense": 15,
-    "spAtk": 105,
-    "spDef": 55,
-    "speed": 90
-  },
-  "abilities": [
-    "シンクロ",
-    "せいしんりょく",
-    "マジックガード"
-  ],
-  "description": "眠ったまま　テレポート　できる。 眠りが　深いほど　離れた　場所に 移動する　という。",
   "image": "https://assets.pokopiaguide.com/pokemon/abra.png",
   "pokopia": {
     "specialties": [

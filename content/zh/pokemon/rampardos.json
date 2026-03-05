@@ -5,19 +5,6 @@
   "types": [
     "rock"
   ],
-  "stats": {
-    "hp": 97,
-    "attack": 165,
-    "defense": 60,
-    "spAtk": 65,
-    "spDef": 50,
-    "speed": 58
-  },
-  "abilities": [
-    "mold-breaker",
-    "sheer-force"
-  ],
-  "description": "擅長頭錘的古代寶可夢。 因為大腦真的很小，所以也有說法 認為牠是因為太笨而滅亡的。",
   "image": "https://assets.pokopiaguide.com/pokemon/rampardos.png",
   "pokopia": {
     "specialties": [],

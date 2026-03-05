@@ -68,10 +68,6 @@ export async function PokedexDetailPage({
         />
       </div>
 
-      <p className="mb-8 text-lg text-muted-foreground">
-        {pokemon.description}
-      </p>
-
       {pokemon.pokopia && (
         <Card>
           <CardHeader>
@@ -88,7 +84,7 @@ export async function PokedexDetailPage({
                     {pokemon.pokopia.specialties.map((s) => (
                       <span key={s} className="inline-flex flex-col items-center gap-0.5">
                         <Image
-                          src={`/images/specialties/${s}.png`}
+                          src={`/images/specialties/${s.replace(/ /g, "-")}.png`}
                           alt={t(translations, `specialties.${s}`)}
                           width={32}
                           height={32}
@@ -218,7 +214,7 @@ export async function PokedexDetailPage({
             "@context": "https://schema.org",
             "@type": "Article",
             name: pokemon.name,
-            description: pokemon.description,
+            description: `${pokemon.name} - ${pokemon.types.map((t) => t.charAt(0).toUpperCase() + t.slice(1)).join("/")}${pokemon.pokopia?.specialties?.length ? `. Specialty: ${pokemon.pokopia.specialties.map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join(", ")}` : ""}`,
             mainEntityOfPage: `https://pokopiaguide.com${getLocalePath(locale, `/pokedex/${pokemon.slug}`)}`,
           }),
         }}

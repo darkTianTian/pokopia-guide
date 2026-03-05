@@ -6,19 +6,6 @@
     "fire",
     "flying"
   ],
-  "stats": {
-    "hp": 78,
-    "attack": 84,
-    "defense": 78,
-    "spAtk": 109,
-    "spDef": 85,
-    "speed": 100
-  },
-  "abilities": [
-    "もうか",
-    "サンパワー"
-  ],
-  "description": "地上　１４００メートル　まで 羽を　使って　飛ぶことができる。 高熱の　炎を　吐く。",
   "image": "https://assets.pokopiaguide.com/pokemon/charizard.png",
   "pokopia": {
     "specialties": [],

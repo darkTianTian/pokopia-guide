@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 72,
-    "attack": 60,
-    "defense": 30,
-    "spAtk": 20,
-    "spDef": 30,
-    "speed": 25
-  },
-  "abilities": [
-    "厚脂肪",
-    "毅力",
-    "強行"
-  ],
-  "description": "據說為了培育強大的幕下力士， 訓練家們會製作一種 傳統的火鍋料理。",
   "image": "https://assets.pokopiaguide.com/pokemon/makuhita.png",
   "pokopia": {
     "specialties": [

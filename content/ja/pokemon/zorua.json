@@ -5,18 +5,6 @@
   "types": [
     "dark"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 65,
-    "defense": 40,
-    "spAtk": 80,
-    "spDef": 40,
-    "speed": 65
-  },
-  "abilities": [
-    "イリュージョン"
-  ],
-  "description": "エサを　もとめて　人に　化け 町に　現れることも　あるぞ。 おもに　子どもに　化けている。",
   "image": "https://assets.pokopiaguide.com/pokemon/zorua.png",
   "pokopia": {
     "specialties": [

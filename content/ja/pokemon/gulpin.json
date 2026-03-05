@@ -5,20 +5,6 @@
   "types": [
     "poison"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 43,
-    "defense": 53,
-    "spAtk": 43,
-    "spDef": 53,
-    "speed": 40
-  },
-  "abilities": [
-    "ヘドロえき",
-    "ねんちゃく",
-    "くいしんぼう"
-  ],
-  "description": "体の　大部分が　胃袋で　できていて 心臓や　脳みそは　とても　小さい。 なんでも　溶かす　特殊な　胃液を　持つ。",
   "image": "https://assets.pokopiaguide.com/pokemon/gulpin.png",
   "pokopia": {
     "specialties": [],

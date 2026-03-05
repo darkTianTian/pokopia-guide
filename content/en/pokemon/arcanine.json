@@ -5,20 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 110,
-    "defense": 80,
-    "spAtk": 100,
-    "spDef": 80,
-    "speed": 95
-  },
-  "abilities": [
-    "Intimidate",
-    "Flash Fire",
-    "Justified"
-  ],
-  "description": "Snaps at its foes with fangs cloaked in blazing flame. Despite its bulk, it deftly feints every which way, leading opponents on a deceptively merry chase as it all but dances around them.",
   "image": "https://assets.pokopiaguide.com/pokemon/arcanine.png",
   "pokopia": {
     "specialties": [],

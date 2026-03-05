@@ -6,18 +6,6 @@
     "bug",
     "electric"
   ],
-  "stats": {
-    "hp": 57,
-    "attack": 82,
-    "defense": 95,
-    "spAtk": 55,
-    "spDef": 75,
-    "speed": 36
-  },
-  "abilities": [
-    "battery"
-  ],
-  "description": "食べた　落ち葉を　消化するとき 発電する　仕組み。　お腹の 電気袋に　充電される。",
   "image": "https://assets.pokopiaguide.com/pokemon/charjabug.png",
   "pokopia": {
     "specialties": [],

@@ -6,19 +6,6 @@
     "grass",
     "dark"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 115,
-    "defense": 60,
-    "spAtk": 115,
-    "spDef": 60,
-    "speed": 55
-  },
-  "abilities": [
-    "sand-veil",
-    "water-absorb"
-  ],
-  "description": "真夜中　砂漠を　歩く　旅人の　後ろを ぞろぞろと　集団で　くっついて　歩く。 疲れて　動けなく　なるのを　待っているのだ。",
   "image": "https://assets.pokopiaguide.com/pokemon/cacturne.png",
   "pokopia": {
     "specialties": [

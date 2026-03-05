@@ -5,20 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 76,
-    "attack": 48,
-    "defense": 48,
-    "spAtk": 57,
-    "spDef": 62,
-    "speed": 34
-  },
-  "abilities": [
-    "Sticky Hold",
-    "Storm Drain",
-    "Sand Force"
-  ],
-  "description": "Found in abundance on seashores bordering warm waters. Shellos are unexpectedly friendly and will crawl toward any person they see. Take care not to get coated in mucus!",
   "image": "https://assets.pokopiaguide.com/pokemon/shellos.png",
   "pokopia": {
     "specialties": [

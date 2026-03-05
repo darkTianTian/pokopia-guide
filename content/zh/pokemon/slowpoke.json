@@ -6,20 +6,6 @@
     "water",
     "psychic"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 65,
-    "defense": 65,
-    "spAtk": 40,
-    "spDef": 40,
-    "speed": 15
-  },
-  "abilities": [
-    "遲鈍",
-    "我行我素",
-    "再生力"
-  ],
-  "description": "尾巴浸在水裡時會滲出 甜味，牠會以此當誘餌 來吸引並且釣起寶可夢。",
   "image": "https://assets.pokopiaguide.com/pokemon/slowpoke.png",
   "pokopia": {
     "specialties": [

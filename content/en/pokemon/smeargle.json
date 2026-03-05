@@ -5,20 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 55,
-    "attack": 20,
-    "defense": 35,
-    "spAtk": 20,
-    "spDef": 45,
-    "speed": 75
-  },
-  "abilities": [
-    "own-tempo",
-    "technician",
-    "moody"
-  ],
-  "description": "It draws symbols with the fluid that oozes from the tip of its tail. Depending on the symbol, Smeargle fanatics will pay big money for them.",
   "image": "https://assets.pokopiaguide.com/pokemon/smeargle.png",
   "pokopia": {
     "specialties": [

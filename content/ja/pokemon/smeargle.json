@@ -5,20 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 55,
-    "attack": 20,
-    "defense": 35,
-    "spAtk": 20,
-    "spDef": 45,
-    "speed": 75
-  },
-  "abilities": [
-    "own-tempo",
-    "technician",
-    "moody"
-  ],
-  "description": "シッポの　先から　でる　体液で マークを　えがく。　マークに　よっては マニアに　高値で　取引される。",
   "image": "https://assets.pokopiaguide.com/pokemon/smeargle.png",
   "pokopia": {
     "specialties": [

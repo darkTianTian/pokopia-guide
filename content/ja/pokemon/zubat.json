@@ -6,19 +6,6 @@
     "poison",
     "flying"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 45,
-    "defense": 35,
-    "spAtk": 30,
-    "spDef": 40,
-    "speed": 55
-  },
-  "abilities": [
-    "inner-focus",
-    "infiltrator"
-  ],
-  "description": "陽の　当たらない　洞窟に　棲む。 朝になると　仲間で　集まり 体を　温めあいながら　寝る。",
   "image": "https://assets.pokopiaguide.com/pokemon/zubat.png",
   "pokopia": {
     "specialties": [

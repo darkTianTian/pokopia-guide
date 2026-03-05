@@ -6,19 +6,6 @@
     "grass",
     "poison"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 82,
-    "defense": 83,
-    "spAtk": 100,
-    "spDef": 100,
-    "speed": 80
-  },
-  "abilities": [
-    "overgrow",
-    "chlorophyll"
-  ],
-  "description": "A bewitching aroma wafts from its flower. The fragrance becalms those engaged in a battle.",
   "image": "https://assets.pokopiaguide.com/pokemon/venusaur.png",
   "pokopia": {
     "specialties": [],

@@ -6,19 +6,6 @@
     "grass",
     "dark"
   ],
-  "stats": {
-    "hp": 76,
-    "attack": 110,
-    "defense": 70,
-    "spAtk": 81,
-    "spDef": 70,
-    "speed": 123
-  },
-  "abilities": [
-    "overgrow",
-    "protean"
-  ],
-  "description": "With skillful misdirection, it rigs foes with pollen-packed flower bombs. Meowscarada sets off the bombs before its foes realize what’s going on.",
   "image": "https://assets.pokopiaguide.com/pokemon/meowscarada.png",
   "pokopia": {
     "specialties": [],

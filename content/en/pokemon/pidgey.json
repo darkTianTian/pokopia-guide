@@ -6,20 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 45,
-    "defense": 40,
-    "spAtk": 35,
-    "spDef": 35,
-    "speed": 56
-  },
-  "abilities": [
-    "Keen Eye",
-    "Tangled Feet",
-    "Big Pecks"
-  ],
-  "description": "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.",
   "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png",
   "pokopia": {
     "specialties": [

@@ -6,19 +6,6 @@
     "bug",
     "fire"
   ],
-  "stats": {
-    "hp": 85,
-    "attack": 60,
-    "defense": 65,
-    "spAtk": 135,
-    "spDef": 105,
-    "speed": 100
-  },
-  "abilities": [
-    "flame-body",
-    "swarm"
-  ],
-  "description": "燃えさかる　炎の　繭から 生まれる。　古代の　壁画に 炎の神として　描かれている。",
   "image": "https://assets.pokopiaguide.com/pokemon/volcarona.png",
   "pokopia": {
     "specialties": [],

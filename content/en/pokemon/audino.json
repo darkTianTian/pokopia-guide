@@ -5,20 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 103,
-    "attack": 60,
-    "defense": 86,
-    "spAtk": 60,
-    "spDef": 86,
-    "speed": 50
-  },
-  "abilities": [
-    "healer",
-    "regenerator",
-    "klutz"
-  ],
-  "description": "This Pokémon has a kind heart. By touching with its feelers, Audino can gauge other creatures’ feelings and physical conditions.",
   "image": "https://assets.pokopiaguide.com/pokemon/audino.png",
   "pokopia": {
     "specialties": [],

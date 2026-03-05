@@ -5,20 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 160,
-    "attack": 110,
-    "defense": 65,
-    "spAtk": 65,
-    "spDef": 110,
-    "speed": 30
-  },
-  "abilities": [
-    "immunity",
-    "thick-fat",
-    "gluttony"
-  ],
-  "description": "頑丈な　胃袋は　カビの 生えたものや　腐ったものを 食べても　壊れることはない。",
   "image": "https://assets.pokopiaguide.com/pokemon/snorlax.png",
   "pokopia": {
     "specialties": [

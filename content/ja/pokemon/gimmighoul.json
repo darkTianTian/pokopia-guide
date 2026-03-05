@@ -5,22 +5,10 @@
   "types": [
     "ghost"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 30,
-    "defense": 70,
-    "spAtk": 75,
-    "spDef": 70,
-    "speed": 10
-  },
-  "abilities": [
-    "rattled"
-  ],
-  "description": "It lives inside an old treasure chest. Sometimes it gets left in shop corners since no one realizes it’s actually a Pokémon.",
   "image": "https://assets.pokopiaguide.com/pokemon/gimmighoul.png",
   "pokopia": {
     "specialties": [
-      "collect"
+      "appraise"
     ],
     "timeOfDay": null,
     "weather": null,

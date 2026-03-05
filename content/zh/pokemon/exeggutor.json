@@ -6,19 +6,6 @@
     "grass",
     "psychic"
   ],
-  "stats": {
-    "hp": 95,
-    "attack": 95,
-    "defense": 85,
-    "spAtk": 125,
-    "spDef": 75,
-    "speed": 55
-  },
-  "abilities": [
-    "葉綠素",
-    "收穫"
-  ],
-  "description": "３顆頭團結一致發出的 精神力量威力強大。天氣 變陰時動作就會變得遲緩。",
   "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png",
   "pokopia": {
     "specialties": [

@@ -5,20 +5,6 @@
   "types": [
     "poison"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 95,
-    "defense": 69,
-    "spAtk": 65,
-    "spDef": 79,
-    "speed": 80
-  },
-  "abilities": [
-    "intimidate",
-    "shed-skin",
-    "unnerve"
-  ],
-  "description": "根據目前已知的研究結果， 長在牠肚子上的可怕花紋 一共有６種不同的類型。",
   "image": "https://assets.pokopiaguide.com/pokemon/arbok.png",
   "pokopia": {
     "specialties": [],

@@ -6,20 +6,6 @@
     "water",
     "grass"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 50,
-    "defense": 50,
-    "spAtk": 60,
-    "spDef": 70,
-    "speed": 50
-  },
-  "abilities": [
-    "swift-swim",
-    "rain-dish",
-    "own-tempo"
-  ],
-  "description": "日当たりの　良い　水辺に　棲む。 昼間は　水草の　ベッドで　眠り 日が　暮れると　動き出す。",
   "image": "https://assets.pokopiaguide.com/pokemon/lombre.png",
   "pokopia": {
     "specialties": [],

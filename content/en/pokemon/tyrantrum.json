@@ -6,19 +6,6 @@
     "rock",
     "dragon"
   ],
-  "stats": {
-    "hp": 82,
-    "attack": 121,
-    "defense": 119,
-    "spAtk": 69,
-    "spDef": 59,
-    "speed": 71
-  },
-  "abilities": [
-    "strong-jaw",
-    "rock-head"
-  ],
-  "description": "A single bite of Tyrantrum’s massive jaws will demolish a car. This Pokémon was the king of the ancient world.",
   "image": "https://assets.pokopiaguide.com/pokemon/tyrantrum.png",
   "pokopia": {
     "specialties": [

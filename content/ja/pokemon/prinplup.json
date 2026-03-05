@@ -5,19 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 64,
-    "attack": 66,
-    "defense": 68,
-    "spAtk": 81,
-    "spDef": 76,
-    "speed": 50
-  },
-  "abilities": [
-    "torrent",
-    "competitive"
-  ],
-  "description": "仲間を　作らずに　暮らす。 翼の　強烈な　一撃は 大木を　真っ二つに　へし折る。",
   "image": "https://assets.pokopiaguide.com/pokemon/prinplup.png",
   "pokopia": {
     "specialties": [

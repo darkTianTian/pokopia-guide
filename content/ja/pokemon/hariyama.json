@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 144,
-    "attack": 120,
-    "defense": 60,
-    "spAtk": 40,
-    "spDef": 60,
-    "speed": 50
-  },
-  "abilities": [
-    "thick-fat",
-    "guts",
-    "sheer-force"
-  ],
-  "description": "太って　大きな　ハリテヤマが 強いとは　限らない。　小柄でも 身軽で　技に　長けたものもいる。",
   "image": "https://assets.pokopiaguide.com/pokemon/hariyama.png",
   "pokopia": {
     "specialties": [

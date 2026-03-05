@@ -6,20 +6,6 @@
     "bug",
     "poison"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 90,
-    "defense": 70,
-    "spAtk": 60,
-    "spDef": 70,
-    "speed": 40
-  },
-  "abilities": [
-    "swarm",
-    "insomnia",
-    "sniper"
-  ],
-  "description": "糸を　はいて　獲物を　捕らえる。 夜に　なると　巣から　離れて 積極的に　狩りを　するぞ。",
   "image": "https://assets.pokopiaguide.com/pokemon/ariados.png",
   "pokopia": {
     "specialties": [

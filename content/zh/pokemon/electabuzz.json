@@ -5,19 +5,6 @@
   "types": [
     "electric"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 83,
-    "defense": 57,
-    "spAtk": 95,
-    "spDef": 85,
-    "speed": 105
-  },
-  "abilities": [
-    "static",
-    "vital-spirit"
-  ],
-  "description": "暴風雨來臨時，牠們會 聚集在高大的樹周圍， 靜靜地一直等待落雷。",
   "image": "https://assets.pokopiaguide.com/pokemon/electabuzz.png",
   "pokopia": {
     "specialties": [],

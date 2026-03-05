@@ -6,20 +6,6 @@
     "dragon",
     "ghost"
   ],
-  "stats": {
-    "hp": 88,
-    "attack": 120,
-    "defense": 75,
-    "spAtk": 100,
-    "spDef": 75,
-    "speed": 142
-  },
-  "abilities": [
-    "clear-body",
-    "infiltrator",
-    "cursed-body"
-  ],
-  "description": "Apparently the Dreepy inside Dragapult’s horns eagerly look forward to being launched out at Mach speeds.",
   "image": "https://assets.pokopiaguide.com/pokemon/dragapult.png",
   "pokopia": {
     "specialties": [],

@@ -5,20 +5,6 @@
   "types": [
     "ground"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 85,
-    "defense": 40,
-    "spAtk": 30,
-    "spDef": 45,
-    "speed": 68
-  },
-  "abilities": [
-    "Sand Rush",
-    "Sand Force",
-    "Mold Breaker"
-  ],
-  "description": "It’s a digger, using its claws to burrow through the ground. It causes damage to vegetable crops, so many farmers have little love for it.",
   "image": "https://assets.pokopiaguide.com/pokemon/drilbur.png",
   "pokopia": {
     "specialties": [

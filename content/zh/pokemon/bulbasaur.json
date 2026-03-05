@@ -6,19 +6,6 @@
     "grass",
     "poison"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 49,
-    "defense": 49,
-    "spAtk": 65,
-    "spDef": 65,
-    "speed": 45
-  },
-  "abilities": [
-    "茂盛",
-    "葉綠素"
-  ],
-  "description": "在出生後的一段時間內， 牠會吸收背上種子裡 儲存著的營養成長。",
   "image": "https://assets.pokopiaguide.com/pokemon/bulbasaur.png",
   "pokopia": {
     "specialties": [

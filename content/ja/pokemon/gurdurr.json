@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 85,
-    "attack": 105,
-    "defense": 85,
-    "spAtk": 40,
-    "spDef": 50,
-    "speed": 40
-  },
-  "abilities": [
-    "guts",
-    "sheer-force",
-    "iron-fist"
-  ],
-  "description": "鉄骨を　たくみに　操る。 解体は　得意だが　なにかを 組み立てるのは　苦手なのだ。",
   "image": "https://assets.pokopiaguide.com/pokemon/gurdurr.png",
   "pokopia": {
     "specialties": [

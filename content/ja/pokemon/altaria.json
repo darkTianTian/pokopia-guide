@@ -6,19 +6,6 @@
     "dragon",
     "flying"
   ],
-  "stats": {
-    "hp": 75,
-    "attack": 70,
-    "defense": 90,
-    "spAtk": 70,
-    "spDef": 105,
-    "speed": 80
-  },
-  "abilities": [
-    "natural-cure",
-    "cloud-nine"
-  ],
-  "description": "優しい　性質だが　怒らせると 鋭い　鳴き声で　威嚇して 容赦ない　攻撃を　くわえる。",
   "image": "https://assets.pokopiaguide.com/pokemon/altaria.png",
   "pokopia": {
     "specialties": [

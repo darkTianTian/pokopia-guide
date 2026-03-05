@@ -6,20 +6,6 @@
     "bug",
     "poison"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 90,
-    "defense": 70,
-    "spAtk": 60,
-    "spDef": 70,
-    "speed": 40
-  },
-  "abilities": [
-    "swarm",
-    "insomnia",
-    "sniper"
-  ],
-  "description": "It spews threads from its mouth to catch its prey. When night falls, it leaves its web to go hunt aggressively.",
   "image": "https://assets.pokopiaguide.com/pokemon/ariados.png",
   "pokopia": {
     "specialties": [

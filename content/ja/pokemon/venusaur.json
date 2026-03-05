@@ -6,19 +6,6 @@
     "grass",
     "poison"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 82,
-    "defense": 83,
-    "spAtk": 100,
-    "spDef": 100,
-    "speed": 80
-  },
-  "abilities": [
-    "overgrow",
-    "chlorophyll"
-  ],
-  "description": "花から　うっとりする　香りが ただよい　戦うものの　気持ちを なだめてしまう。",
   "image": "https://assets.pokopiaguide.com/pokemon/venusaur.png",
   "pokopia": {
     "specialties": [],

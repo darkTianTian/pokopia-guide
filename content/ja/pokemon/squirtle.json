@@ -5,19 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 44,
-    "attack": 48,
-    "defense": 65,
-    "spAtk": 50,
-    "spDef": 64,
-    "speed": 43
-  },
-  "abilities": [
-    "げきりゅう",
-    "あめうけざら"
-  ],
-  "description": "危なくなると　甲羅に　手足を 引っこめて　身を　守りながら 口から　水を　吹き出している。",
   "image": "https://assets.pokopiaguide.com/pokemon/squirtle.png",
   "pokopia": {
     "specialties": [

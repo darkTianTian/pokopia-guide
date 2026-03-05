@@ -6,19 +6,6 @@
     "water",
     "flying"
   ],
-  "stats": {
-    "hp": 95,
-    "attack": 125,
-    "defense": 79,
-    "spAtk": 60,
-    "spDef": 100,
-    "speed": 81
-  },
-  "abilities": [
-    "intimidate",
-    "moxie"
-  ],
-  "description": "一度　暴れだした　ギャラドスは 嵐が　吹き荒んでいようとも どんなものでも　焼きつくしてしまう。",
   "image": "https://assets.pokopiaguide.com/pokemon/gyarados.png",
   "pokopia": {
     "specialties": [],

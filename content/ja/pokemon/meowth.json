@@ -5,20 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 45,
-    "defense": 35,
-    "spAtk": 40,
-    "spDef": 40,
-    "speed": 90
-  },
-  "abilities": [
-    "ものひろい",
-    "テクニシャン",
-    "きんちょうかん"
-  ],
-  "description": "額の　小判が　汚れないよう まめに　顔を　洗う。　ガラルの ニャースとは　仲が　悪い。",
   "image": "https://assets.pokopiaguide.com/pokemon/meowth.png",
   "pokopia": {
     "specialties": [

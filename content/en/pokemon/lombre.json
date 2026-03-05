@@ -6,20 +6,6 @@
     "water",
     "grass"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 50,
-    "defense": 50,
-    "spAtk": 60,
-    "spDef": 70,
-    "speed": 50
-  },
-  "abilities": [
-    "swift-swim",
-    "rain-dish",
-    "own-tempo"
-  ],
-  "description": "It lives at the water’s edge where it is sunny. It sleeps on a bed of water grass by day and becomes active at night.",
   "image": "https://assets.pokopiaguide.com/pokemon/lombre.png",
   "pokopia": {
     "specialties": [],

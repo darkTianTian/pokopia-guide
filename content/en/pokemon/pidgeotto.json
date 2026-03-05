@@ -6,20 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 63,
-    "attack": 60,
-    "defense": 55,
-    "spAtk": 50,
-    "spDef": 50,
-    "speed": 71
-  },
-  "abilities": [
-    "keen-eye",
-    "tangled-feet",
-    "big-pecks"
-  ],
-  "description": "This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.",
   "image": "https://assets.pokopiaguide.com/pokemon/pidgeotto.png",
   "pokopia": {
     "specialties": [],

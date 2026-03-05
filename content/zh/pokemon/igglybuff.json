@@ -6,20 +6,6 @@
     "normal",
     "fairy"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 30,
-    "defense": 15,
-    "spAtk": 40,
-    "spDef": 20,
-    "speed": 15
-  },
-  "abilities": [
-    "cute-charm",
-    "competitive",
-    "friend-guard"
-  ],
-  "description": "會用柔軟的身體一彈一跳地 四處移動。體溫上升時， 身體就會變成深粉紅色。",
   "image": "https://assets.pokopiaguide.com/pokemon/igglybuff.png",
   "pokopia": {
     "specialties": [],
