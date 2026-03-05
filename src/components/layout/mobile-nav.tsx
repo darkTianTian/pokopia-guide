@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
-import { type Locale } from "@/i18n/config"
+import { getLocalePath, type Locale } from "@/i18n/config"
 import { LanguageSwitcher } from "./language-switcher"
 
 interface NavItem {
@@ -18,7 +18,6 @@ interface MobileNavProps {
   habitatLabel: string
   habitatSubItems: NavItem[]
   comingSoonLabel: string
-  getPath: (path: string) => string
 }
 
 export function MobileNav({
@@ -27,8 +26,8 @@ export function MobileNav({
   habitatLabel,
   habitatSubItems,
   comingSoonLabel,
-  getPath,
 }: MobileNavProps) {
+  const getPath = (path: string) => getLocalePath(locale, path)
   const [open, setOpen] = useState(false)
 
   return (

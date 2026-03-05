@@ -114,7 +114,6 @@ export async function Header({ locale }: HeaderProps) {
           habitatLabel={t(translations, "nav.habitat")}
           habitatSubItems={habitatSubItems}
           comingSoonLabel={t(translations, "nav.comingSoon")}
-          getPath={(path) => getLocalePath(locale, path)}
         />
       </div>
     </header>
