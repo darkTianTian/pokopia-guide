@@ -7,12 +7,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/arcanine.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "burn",
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "growlithe",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 129,
+        "name": "Mini museum",
+        "rarity": "rare"
+      }
+    ]
   }
 }

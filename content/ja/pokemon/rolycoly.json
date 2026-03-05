@@ -27,6 +27,12 @@
     "evolvesTo": [
       "carkol"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 132,
+        "name": "ふみきり",
+        "rarity": "common"
+      }
+    ]
   }
 }

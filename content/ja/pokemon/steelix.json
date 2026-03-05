@@ -9,11 +9,26 @@
   "image": "https://assets.pokopiaguide.com/pokemon/steelix.png",
   "pokopia": {
     "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "onix",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 117,
+        "name": "Clink-clang iron construction",
+        "rarity": "common"
+      }
+    ]
   }
 }

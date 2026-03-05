@@ -7,7 +7,10 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/clefable.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "hype",
+      "trade"
+    ],
     "timeOfDay": [
       "night"
     ],

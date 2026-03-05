@@ -12,14 +12,29 @@
       "teleport",
       "trade"
     ],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "ralts",
     "evolvesTo": [
       "gardevoir",
       "gallade"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 159,
+        "name": "Study Area",
+        "rarity": "rare"
+      }
+    ]
   }
 }
