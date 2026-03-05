@@ -1,7 +1,9 @@
 import { getAllPokemon } from "./pokemon"
 import type { Pokemon } from "./types"
 import type { Locale } from "@/i18n/config"
-import habitatMapping from "@/../content/habitat-mapping.json"
+import habitatMappingJa from "@/../content/habitat-mapping.json"
+import habitatMappingEn from "@/../content/habitat-mapping-en.json"
+import habitatMappingZh from "@/../content/habitat-mapping-zh.json"
 
 export interface HabitatWithPokemon {
   id: number
@@ -13,7 +15,11 @@ export interface HabitatWithPokemon {
   }[]
 }
 
-const habitatNames = habitatMapping as Record<string, string>
+const HABITAT_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
+  ja: habitatMappingJa,
+  en: habitatMappingEn,
+  zh: habitatMappingZh,
+}
 
 export async function getAllHabitatsWithPokemon(
   locale: Locale
@@ -29,6 +35,7 @@ export async function getAllHabitatsWithPokemon(
       if (existing) {
         existing.pokemon.push({ pokemon, rarity: habitat.rarity })
       } else {
+        const habitatNames = HABITAT_NAMES_BY_LOCALE[locale]
         habitatMap.set(habitat.id, {
           id: habitat.id,
           name: habitatNames[String(habitat.id)] ?? habitat.name,
@@ -51,5 +58,11 @@ export async function getHabitatWithPokemon(
 }
 
 export function getAllHabitatIds(): number[] {
-  return Object.keys(habitatNames).map(Number).sort((a, b) => a - b)
+  const allIds = new Set<string>()
+  for (const mapping of Object.values(HABITAT_NAMES_BY_LOCALE)) {
+    for (const id of Object.keys(mapping)) {
+      allIds.add(id)
+    }
+  }
+  return Array.from(allIds).map(Number).sort((a, b) => a - b)
 }

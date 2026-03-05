@@ -1,7 +1,6 @@
 import { SafeImage } from "@/components/ui/safe-image"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
-import { Badge } from "@/components/ui/badge"
 import { getHabitatWithPokemon } from "@/lib/habitat"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 import { notFound } from "next/navigation"
@@ -58,23 +57,19 @@ export async function HabitatDetailPage({
         </div>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {habitat.pokemon.map(({ pokemon, rarity }) => (
-          <div key={pokemon.id} className="relative">
-            <PokemonCard pokemon={pokemon} locale={locale} />
-            <Badge
-              variant={
-                rarity === "very-rare"
-                  ? "destructive"
-                  : rarity === "rare"
-                    ? "default"
-                    : "secondary"
-              }
-              className="absolute right-2 top-2"
-            >
-              {t(translations, `rarity.${rarity}`)}
-            </Badge>
-          </div>
-        ))}
+        {habitat.pokemon.map(({ pokemon, rarity }) => {
+          const borderColor =
+            rarity === "very-rare"
+              ? "border-purple-500"
+              : rarity === "rare"
+                ? "border-blue-500"
+                : "border-green-500"
+          return (
+            <div key={pokemon.id} className={`rounded-xl border-2 ${borderColor}`}>
+              <PokemonCard pokemon={pokemon} locale={locale} />
+            </div>
+          )
+        })}
       </div>
     </div>
   )
