@@ -7,12 +7,26 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/blastoise.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "water",
+      "trade"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "wartortle",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 4,
+        "name": "うるおう草むら",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 36,
+        "name": "日かげでプカプカ水遊び",
+        "rarity": "rare"
+      }
+    ]
   }
 }

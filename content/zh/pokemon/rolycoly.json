@@ -7,9 +7,21 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/rolycoly.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "burn",
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [

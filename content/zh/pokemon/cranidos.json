@@ -7,14 +7,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/cranidos.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "rampardos"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 194,
+        "name": "Skull Fossil display",
+        "rarity": "common"
+      }
+    ]
   }
 }

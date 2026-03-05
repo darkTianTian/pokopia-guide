@@ -24,7 +24,9 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "ariados"
+    ],
     "habitats": [
       {
         "id": 50,

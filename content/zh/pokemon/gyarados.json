@@ -8,7 +8,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/gyarados.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "water"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

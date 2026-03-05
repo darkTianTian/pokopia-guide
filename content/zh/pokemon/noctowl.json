@@ -23,6 +23,12 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "hoothoot",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 31,
+        "name": "溫柔燈光晚安",
+        "rarity": "common"
+      }
+    ]
   }
 }

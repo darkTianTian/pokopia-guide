@@ -10,11 +10,26 @@
     "specialties": [
       "hype"
     ],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "skwovet",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 133,
+        "name": "Chef's kitchen",
+        "rarity": "common"
+      }
+    ]
   }
 }

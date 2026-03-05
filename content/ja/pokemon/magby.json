@@ -26,6 +26,12 @@
     "evolvesTo": [
       "magmar"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 8,
+        "name": "きれいな花畑",
+        "rarity": "common"
+      }
+    ]
   }
 }

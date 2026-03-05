@@ -26,6 +26,12 @@
     "evolvesTo": [
       "haxorus"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 29,
+        "name": "伐木工人作業場",
+        "rarity": "common"
+      }
+    ]
   }
 }

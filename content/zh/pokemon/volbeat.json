@@ -7,12 +7,29 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/volbeat.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 10,
+        "name": "濕潤花田",
+        "rarity": "rare"
+      }
+    ]
   }
 }

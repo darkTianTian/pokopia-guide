@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/elekid.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "generate"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

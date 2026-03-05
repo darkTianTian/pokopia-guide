@@ -21,11 +21,18 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "venomoth"
+    ],
     "habitats": [
       {
         "id": 7,
         "name": "Illuminated tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 23,
+        "name": "照らされたベンチ",
         "rarity": "common"
       }
     ]

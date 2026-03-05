@@ -25,6 +25,12 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "zorua",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 56,
+        "name": "涼爽花田",
+        "rarity": "rare"
+      }
+    ]
   }
 }

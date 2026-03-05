@@ -23,7 +23,9 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "combusken"
+    ],
     "habitats": [
       {
         "id": 69,

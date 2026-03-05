@@ -7,14 +7,24 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/cleffa.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "clefairy"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 104,
+        "name": "ゆうがな花畑",
+        "rarity": "common"
+      }
+    ]
   }
 }

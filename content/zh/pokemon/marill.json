@@ -24,12 +24,19 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesFrom": "azurill",
+    "evolvesTo": [
+      "azumarill"
+    ],
     "habitats": [
       {
         "id": 88,
         "name": "碼頭",
+        "rarity": "common"
+      },
+      {
+        "id": 53,
+        "name": "濕潤黃色草叢",
         "rarity": "common"
       }
     ]

@@ -24,11 +24,18 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "flaaffy"
+    ],
     "habitats": [
       {
         "id": 55,
         "name": "Knitting station",
+        "rarity": "common"
+      },
+      {
+        "id": 77,
+        "name": "毛糸で編み物",
         "rarity": "common"
       }
     ]

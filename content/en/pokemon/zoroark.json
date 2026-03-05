@@ -25,6 +25,12 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "zorua",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 56,
+        "name": "Breezy flower bed",
+        "rarity": "rare"
+      }
+    ]
   }
 }

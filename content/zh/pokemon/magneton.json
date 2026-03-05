@@ -27,6 +27,12 @@
     "evolvesTo": [
       "magnezone"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 64,
+        "name": "垃圾桶滿了",
+        "rarity": "rare"
+      }
+    ]
   }
 }

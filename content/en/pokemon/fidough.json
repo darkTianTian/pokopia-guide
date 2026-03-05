@@ -7,14 +7,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/fidough.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "dachsbun"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 104,
+        "name": "ゆうがな花畑",
+        "rarity": "common"
+      }
+    ]
   }
 }

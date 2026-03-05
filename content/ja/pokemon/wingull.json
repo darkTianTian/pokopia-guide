@@ -24,11 +24,18 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "pelipper"
+    ],
     "habitats": [
       {
         "id": 58,
         "name": "風の花畑",
+        "rarity": "common"
+      },
+      {
+        "id": 52,
+        "name": "高台の黄色の草むら",
         "rarity": "common"
       }
     ]

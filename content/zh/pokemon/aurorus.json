@@ -8,12 +8,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/aurorus.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "crush",
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "amaura",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 201,
+        "name": "Tundra fossil dispolay",
+        "rarity": "common"
+      }
+    ]
   }
 }

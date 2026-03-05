@@ -7,12 +7,20 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "trade"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "nidorino",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 18,
+        "name": "修行の滝",
+        "rarity": "common"
+      }
+    ]
   }
 }

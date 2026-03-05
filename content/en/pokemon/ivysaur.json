@@ -8,14 +8,36 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/ivysaur.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "bulbasaur",
     "evolvesTo": [
       "venusaur"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 11,
+        "name": "花いっぱいの景色",
+        "rarity": "rare"
+      },
+      {
+        "id": 22,
+        "name": "緑のベンチ",
+        "rarity": "rare"
+      }
+    ]
   }
 }

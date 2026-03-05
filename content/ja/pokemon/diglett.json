@@ -29,6 +29,11 @@
         "id": 119,
         "name": "Container snacking",
         "rarity": "common"
+      },
+      {
+        "id": 99,
+        "name": "木かげの赤い草むら",
+        "rarity": "common"
       }
     ]
   }

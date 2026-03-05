@@ -28,6 +28,12 @@
     "evolvesTo": [
       "victreebel"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 21,
+        "name": "はなやかな机",
+        "rarity": "rare"
+      }
+    ]
   }
 }

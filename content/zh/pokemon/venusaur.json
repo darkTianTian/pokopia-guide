@@ -8,12 +8,26 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/venusaur.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "grow",
+      "litter"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "ivysaur",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 11,
+        "name": "花卉盛景",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 46,
+        "name": "庭園露台",
+        "rarity": "rare"
+      }
+    ]
   }
 }

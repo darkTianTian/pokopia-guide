@@ -24,7 +24,7 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": null,
+    "evolvesFrom": "combee",
     "evolvesTo": null,
     "habitats": [
       {

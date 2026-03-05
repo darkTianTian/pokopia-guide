@@ -28,6 +28,17 @@
     "evolvesTo": [
       "exeggutor"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 57,
+        "name": "南國風情",
+        "rarity": "common"
+      },
+      {
+        "id": 59,
+        "name": "海灘樹蔭",
+        "rarity": "common"
+      }
+    ]
   }
 }

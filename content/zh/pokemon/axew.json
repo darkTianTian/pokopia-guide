@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/axew.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "chop"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -15,6 +17,12 @@
     "evolvesTo": [
       "fraxure"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 44,
+        "name": "圓木溫暖",
+        "rarity": "common"
+      }
+    ]
   }
 }

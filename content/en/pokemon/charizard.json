@@ -8,12 +8,26 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/charizard.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "burn",
+      "fly"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "charmeleon",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 1,
+        "name": "緑の草むら",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 40,
+        "name": "きのみごちそうキャンプ",
+        "rarity": "rare"
+      }
+    ]
   }
 }

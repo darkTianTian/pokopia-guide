@@ -8,12 +8,26 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/slowking.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "water",
+      "teleport"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "slowpoke",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 5,
+        "name": "波打ちぎわの草むら",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 184,
+        "name": "釣り堀",
+        "rarity": "rare"
+      }
+    ]
   }
 }

@@ -8,7 +8,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/jigglypuff.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "hype"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -29,6 +31,11 @@
       {
         "id": 53,
         "name": "うるおう黄色の草むら",
+        "rarity": "common"
+      },
+      {
+        "id": 107,
+        "name": "花畑の切り株ステージ",
         "rarity": "common"
       }
     ]

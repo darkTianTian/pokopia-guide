@@ -23,10 +23,17 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "chansey"
+    ],
     "habitats": [
       {
         "id": 82,
+        "name": "Working the register",
+        "rarity": "common"
+      },
+      {
+        "id": 91,
         "name": "Working the register",
         "rarity": "common"
       }

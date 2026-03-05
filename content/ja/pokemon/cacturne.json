@@ -23,6 +23,12 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "cacnea",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 9,
+        "name": "木かげの花畑",
+        "rarity": "rare"
+      }
+    ]
   }
 }

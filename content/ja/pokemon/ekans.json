@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/ekans.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "search"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -15,6 +17,12 @@
     "evolvesTo": [
       "arbok"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 106,
+        "name": "うるおうゆうがな花畑",
+        "rarity": "common"
+      }
+    ]
   }
 }

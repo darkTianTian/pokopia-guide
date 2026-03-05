@@ -5,5 +5,38 @@
   "types": [
     "fire"
   ],
-  "image": "https://assets.pokopiaguide.com/pokemon/torchic.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/torchic.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "combusken"
+    ],
+    "habitats": [
+      {
+        "id": 69,
+        "name": "嘰嘰喳喳餵食",
+        "rarity": "common"
+      },
+      {
+        "id": 79,
+        "name": "度假村備餐",
+        "rarity": "common"
+      }
+    ]
+  }
 }

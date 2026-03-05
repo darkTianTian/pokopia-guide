@@ -23,7 +23,9 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "pawmo"
+    ],
     "habitats": [
       {
         "id": 56,

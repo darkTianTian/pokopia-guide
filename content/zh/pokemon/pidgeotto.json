@@ -8,7 +8,10 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/pidgeotto.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "fly",
+      "search"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -16,6 +19,12 @@
     "evolvesTo": [
       "pidgeot"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 6,
+        "name": "高台草叢",
+        "rarity": "rare"
+      }
+    ]
   }
 }
