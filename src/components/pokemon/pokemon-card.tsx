@@ -53,7 +53,7 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
               className="object-contain"
             />
           </div>
-          <div className="flex items-center justify-center gap-1.5">
+          <div className="flex flex-wrap items-center justify-center gap-1.5">
             {pokemon.types.map((type) => (
               <TypeBadge key={type} type={type} locale={locale} />
             ))}
@@ -63,13 +63,13 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
                 {pokopia.specialties.map((s) => (
                   <span
                     key={s}
-                    className="inline-flex items-center gap-0.5 rounded-full border bg-muted/50 px-1.5 py-0.5 text-xs"
+                    className="inline-flex items-center gap-1 rounded-full border bg-muted/50 px-2 py-1 text-sm"
                   >
                     <Image
-                      src={`/images/specialties/${s}.svg`}
+                      src={`/images/specialties/${s}.png`}
                       alt={(tr.specialties as Record<string, string>)[s] ?? s}
-                      width={14}
-                      height={14}
+                      width={18}
+                      height={18}
                       className="shrink-0"
                     />
                     {(tr.specialties as Record<string, string>)[s] ?? s}
@@ -79,12 +79,12 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
             ) : (
               <>
                 <span className="mx-0.5 text-muted-foreground/30">|</span>
-                <span className="inline-flex items-center gap-0.5 rounded-full border bg-muted/50 px-1.5 py-0.5 text-xs text-muted-foreground">
+                <span className="inline-flex items-center gap-1 rounded-full border bg-muted/50 px-2 py-1 text-sm text-muted-foreground">
                   <Image
                     src="/images/unknown.svg"
                     alt="?"
-                    width={14}
-                    height={14}
+                    width={18}
+                    height={18}
                     className="shrink-0"
                   />
                   {tr.pokedex.specialty}

@@ -88,7 +88,7 @@ export async function PokedexDetailPage({
                     {pokemon.pokopia.specialties.map((s) => (
                       <span key={s} className="inline-flex flex-col items-center gap-0.5">
                         <Image
-                          src={`/images/specialties/${s}.svg`}
+                          src={`/images/specialties/${s}.png`}
                           alt={t(translations, `specialties.${s}`)}
                           width={32}
                           height={32}
