@@ -42,8 +42,8 @@
     "multiplayerDesc": "フレンド訪問、4人オンライン、ゲーム共有機能"
   },
   "pokedex": {
-    "title": "ポケモン図鑑",
-    "description": "Pokémon Pokopia の世界に登場する全ポケモンの詳細データ、タイプ、特性、種族値を確認できます。",
+    "title": "ポケモン図鑑 - Pokopia 全ポケモンの生息地・出現時間・特技一覧",
+    "description": "Pokémon Pokopia 完全図鑑ガイド。全ポケモンのタイプ、特技スキル、生息地、出現時間帯、天候条件、進化ルートを網羅。お目当てのポケモンを素早く見つけよう。",
     "subtitle": "Pokémon Pokopia の世界の全ポケモンを閲覧",
     "totalCount": "全 {{count}} 匹",
     "breadcrumb": "図鑑",

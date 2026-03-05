@@ -42,8 +42,8 @@
     "multiplayerDesc": "好友互訪、4人連線、遊戲分享功能"
   },
   "pokedex": {
-    "title": "寶可夢圖鑑",
-    "description": "瀏覽 Pokémon Pokopia 世界中所有寶可夢的詳細資料、屬性、特性和種族值。",
+    "title": "寶可夢圖鑑 - Pokopia 全寶可夢資料、棲息地與出沒時間",
+    "description": "Pokémon Pokopia 完整圖鑑攻略。查詢所有寶可夢的屬性、特長技能、棲息地分佈、出沒時段、天氣條件與進化路線，助你快速找到想要的寶可夢。",
     "subtitle": "瀏覽 Pokémon Pokopia 世界中的所有寶可夢",
     "totalCount": "共 {{count}} 隻寶可夢",
     "breadcrumb": "圖鑑",

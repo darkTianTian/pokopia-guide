@@ -42,8 +42,8 @@
     "multiplayerDesc": "Friend visits, 4-player online, game sharing features"
   },
   "pokedex": {
-    "title": "Pokédex",
-    "description": "Browse all Pokémon in the Pokémon Pokopia world with detailed data, types, abilities, and base stats.",
+    "title": "Pokédex - All Pokémon in Pokopia with Stats & Habitats",
+    "description": "Complete Pokémon Pokopia Pokédex. Browse all available Pokémon with types, specialties, habitat locations, spawn times, weather conditions, and evolution chains.",
     "subtitle": "Browse all Pokémon in the Pokémon Pokopia world",
     "totalCount": "{{count}} Pokémon in total",
     "breadcrumb": "Pokédex",

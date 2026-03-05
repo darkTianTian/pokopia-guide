@@ -3,9 +3,9 @@ import { PokedexPage } from "@/components/pages/pokedex-page"
 import { getPageAlternates } from "@/i18n/config"
 
 export const metadata: Metadata = {
-  title: "Pokédex",
+  title: "Pokédex - All Pokémon in Pokopia with Stats & Habitats",
   description:
-    "Browse all Pokémon in the Pokopia world with detailed data, types, abilities, and base stats.",
+    "Complete Pokémon Pokopia Pokédex. Browse all available Pokémon with types, specialties, habitat locations, spawn times, weather conditions, and evolution chains.",
   alternates: getPageAlternates("en", "/pokedex"),
 }
 
