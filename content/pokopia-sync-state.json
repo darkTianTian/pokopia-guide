@@ -1,9 +1,9 @@
 {
-  "lastSync": "2026-03-05T15:36:55.015Z",
+  "lastSync": "2026-03-05T15:48:32.863Z",
   "newHabitats": [
     {
       "id": 28,
-      "name": "大きな荷物をのせて",
+      "name": "Large luggage carrier",
       "missingIn": [
         "ja",
         "zh"
@@ -35,7 +35,7 @@
     },
     {
       "id": 82,
-      "name": "Working the register",
+      "name": "Alarm clock sleep zone",
       "missingIn": [
         "ja",
         "zh"
@@ -43,7 +43,7 @@
     },
     {
       "id": 55,
-      "name": "Knitting station",
+      "name": "Overgrowth vending machie",
       "missingIn": [
         "ja",
         "zh"
@@ -195,7 +195,7 @@
     },
     {
       "id": 21,
-      "name": "はなやかな机",
+      "name": "Flowery Table",
       "missingIn": [
         "ja",
         "zh"
@@ -267,7 +267,7 @@
     },
     {
       "id": 187,
-      "name": "温泉釣り",
+      "name": "Hydrated Red Tall Grass",
       "missingIn": [
         "ja",
         "zh"
@@ -275,7 +275,7 @@
     },
     {
       "id": 125,
-      "name": "さえずりのリサイタル",
+      "name": "Chirping Recital",
       "missingIn": [
         "ja",
         "zh"
@@ -307,7 +307,7 @@
     },
     {
       "id": 169,
-      "name": "はかせを目指して研究中",
+      "name": "Professor's apprentice program",
       "missingIn": [
         "ja",
         "zh"
