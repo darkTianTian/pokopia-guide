@@ -1,0 +1,33 @@
+{
+  "id": 142,
+  "slug": "aerodactyl",
+  "name": "化石翼龍",
+  "types": [
+    "rock",
+    "flying"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 105,
+    "defense": 65,
+    "spAtk": 60,
+    "spDef": 75,
+    "speed": 130
+  },
+  "abilities": [
+    "rock-head",
+    "pressure",
+    "unnerve"
+  ],
+  "description": "擁有像鋸子般的牙齒， 就連鋼屬性寶可夢的 皮膚都能撕裂成碎片。",
+  "image": "https://assets.pokopiaguide.com/pokemon/aerodactyl.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

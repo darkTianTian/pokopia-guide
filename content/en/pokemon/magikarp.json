@@ -18,5 +18,29 @@
     "Rattled"
   ],
   "description": "A feeble, pitiful imbecile of a Pokémon that is nonetheless very hardy. Unperturbed by turbid water, it can be found living in all sorts of places.",
-  "image": "https://assets.pokopiaguide.com/pokemon/magikarp.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/magikarp.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gloom",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 185,
+        "name": "Ocean fishing spot",
+        "rarity": "common"
+      }
+    ]
+  }
 }

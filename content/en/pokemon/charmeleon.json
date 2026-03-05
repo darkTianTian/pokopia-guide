@@ -1,0 +1,50 @@
+{
+  "id": 5,
+  "slug": "charmeleon",
+  "name": "Charmeleon",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 58,
+    "attack": 64,
+    "defense": 58,
+    "spAtk": 80,
+    "spDef": 65,
+    "speed": 80
+  },
+  "abilities": [
+    "blaze",
+    "solar-power"
+  ],
+  "description": "If it becomes agitated during battle, it spouts intense flames, incinerating its surroundings.",
+  "image": "https://assets.pokopiaguide.com/pokemon/charmeleon.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charmander",
+    "evolvesTo": [
+      "charizard"
+    ],
+    "habitats": [
+      {
+        "id": 17,
+        "name": "Campsite",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -18,5 +18,31 @@
     "こんじょう"
   ],
   "description": "吸いこんだ　空気の　一部は 体内の　炎袋に　送られ １７００度の　炎に　なる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/flareon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/flareon.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 204,
+        "name": "もえるほどスパイシー",
+        "rarity": "common"
+      }
+    ]
+  }
 }

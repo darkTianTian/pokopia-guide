@@ -20,5 +20,37 @@
     "Sap Sipper"
   ],
   "description": "Although Azurill are normally docile, an angry one will swing around the big ball on its tail and try to smash its opponents.",
-  "image": "https://assets.pokopiaguide.com/pokemon/azurill.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/azurill.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 53,
+        "name": "Hydrated yellow tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 62,
+        "name": "Perpetual mess",
+        "rarity": "common"
+      }
+    ]
+  }
 }

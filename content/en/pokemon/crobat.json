@@ -1,0 +1,41 @@
+{
+  "id": 169,
+  "slug": "crobat",
+  "name": "Crobat",
+  "types": [
+    "poison",
+    "flying"
+  ],
+  "stats": {
+    "hp": 85,
+    "attack": 90,
+    "defense": 80,
+    "spAtk": 70,
+    "spDef": 80,
+    "speed": 130
+  },
+  "abilities": [
+    "inner-focus",
+    "infiltrator"
+  ],
+  "description": "Its hind limbs have become another set of wings. Crobat expertly maneuvers its four wings to dart in exquisite fashion through even the most confined caves without losing any speed.",
+  "image": "https://assets.pokopiaguide.com/pokemon/crobat.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "search"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "golbat",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

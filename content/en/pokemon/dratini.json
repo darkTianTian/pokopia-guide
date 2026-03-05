@@ -18,5 +18,31 @@
     "Marvel Scale"
   ],
   "description": "This Pokémon was long considered to be no more than a myth. The small lump on a Dratini’s forehead is actually a horn that’s still coming in.",
-  "image": "https://assets.pokopiaguide.com/pokemon/dratini.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/dratini.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "swinub",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 144,
+        "name": "Hydrated fluffy flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

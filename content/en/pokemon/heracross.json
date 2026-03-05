@@ -20,5 +20,32 @@
     "Moxie"
   ],
   "description": "This Pokémon has an unparalleled horn. Heracross itself demonstrates tremendous power—it's capable of throwing several people trained in the traditional arts of war at once.",
-  "image": "https://assets.pokopiaguide.com/pokemon/heracross.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/heracross.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "Tree-shaded  tall grass",
+        "rarity": "rare"
+      }
+    ]
+  }
 }

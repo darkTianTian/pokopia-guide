@@ -1,0 +1,48 @@
+{
+  "id": 42,
+  "slug": "golbat",
+  "name": "Golbat",
+  "types": [
+    "poison",
+    "flying"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 70,
+    "spAtk": 65,
+    "spDef": 75,
+    "speed": 90
+  },
+  "abilities": [
+    "inner-focus",
+    "infiltrator"
+  ],
+  "description": "It sinks its sharp fangs into other creatures and slurps up their blood. A closer look at the fangs reveals that they are hollow and akin to straws.",
+  "image": "https://assets.pokopiaguide.com/pokemon/golbat.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "zubat",
+    "evolvesTo": [
+      "crobat"
+    ],
+    "habitats": [
+      {
+        "id": 51,
+        "name": "Tree-shaded Yellow tall grass",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

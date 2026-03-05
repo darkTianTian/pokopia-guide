@@ -20,5 +20,14 @@
     "テレパシー"
   ],
   "description": "トレーナーを　守るためなら サイコパワーを　使いきり　小さな ブラックホールを　つくりだす。",
-  "image": "https://assets.pokopiaguide.com/pokemon/gardevoir.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/gardevoir.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "porygon",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

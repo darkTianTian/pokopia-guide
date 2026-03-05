@@ -1,0 +1,42 @@
+{
+  "id": 571,
+  "slug": "zoroark",
+  "name": "ゾロアーク",
+  "types": [
+    "dark"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 105,
+    "defense": 60,
+    "spAtk": 120,
+    "spDef": 60,
+    "speed": 105
+  },
+  "abilities": [
+    "illusion"
+  ],
+  "description": "孤独なトレーナーは　ゾロアークに 幻を　見せるように　命じて ひとりの　さみしさを　紛らわす。",
+  "image": "https://assets.pokopiaguide.com/pokemon/zoroark.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "zorua",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

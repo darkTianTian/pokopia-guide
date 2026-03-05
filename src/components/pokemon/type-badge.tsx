@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import type { PokemonType } from "@/lib/types"
 import type { Locale } from "@/i18n/config"
@@ -40,7 +41,14 @@ interface TypeBadgeProps {
 export function TypeBadge({ type, locale }: TypeBadgeProps) {
   const typeName = TYPE_NAMES_BY_LOCALE[locale][type] ?? type
   return (
-    <Badge className={`${TYPE_COLORS[type]} text-white border-0`}>
+    <Badge className={`${TYPE_COLORS[type]} text-white border-0 flex items-center gap-1 pl-1 pr-2`}>
+      <Image
+        src={`/images/types/${type}.svg`}
+        alt={typeName}
+        width={16}
+        height={16}
+        className="shrink-0"
+      />
       {typeName}
     </Badge>
   )

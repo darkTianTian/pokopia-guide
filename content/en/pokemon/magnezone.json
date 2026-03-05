@@ -1,0 +1,33 @@
+{
+  "id": 462,
+  "slug": "magnezone",
+  "name": "Magnezone",
+  "types": [
+    "electric",
+    "steel"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 70,
+    "defense": 115,
+    "spAtk": 130,
+    "spDef": 90,
+    "speed": 60
+  },
+  "abilities": [
+    "magnet-pull",
+    "sturdy",
+    "analytic"
+  ],
+  "description": "I theorize that a special magnetic field influenced this Pokémon, changing its molecular structure and causing it to evolve. It emits strange radio waves toward space from its antenna.",
+  "image": "https://assets.pokopiaguide.com/pokemon/magnezone.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "magneton",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

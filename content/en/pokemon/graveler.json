@@ -1,0 +1,52 @@
+{
+  "id": 75,
+  "slug": "graveler",
+  "name": "Graveler",
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 95,
+    "defense": 115,
+    "spAtk": 45,
+    "spDef": 45,
+    "speed": 35
+  },
+  "abilities": [
+    "rock-head",
+    "sturdy",
+    "sand-veil"
+  ],
+  "description": "Dwells in holes dug into sheer walls of stone. It enjoys rolling down slopes as though it were a boulder during a rockfall, so keep an eye upward while traversing mountain roads.",
+  "image": "https://assets.pokopiaguide.com/pokemon/graveler.png",
+  "pokopia": {
+    "specialties": [
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "geodude",
+    "evolvesTo": [
+      "golem"
+    ],
+    "habitats": [
+      {
+        "id": 111,
+        "name": "Mossy boulder",
+        "rarity": "common"
+      }
+    ]
+  }
+}

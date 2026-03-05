@@ -19,5 +19,14 @@
     "引爆"
   ],
   "description": "從右臂噴出的毒液十分危險， 虛弱的生物只要一沾到， 立刻就會丟掉性命。",
-  "image": "https://assets.pokopiaguide.com/pokemon/garbodor.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/garbodor.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "trubbish",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

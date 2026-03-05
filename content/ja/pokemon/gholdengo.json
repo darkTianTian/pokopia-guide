@@ -1,0 +1,31 @@
+{
+  "id": 1000,
+  "slug": "gholdengo",
+  "name": "サーフゴー",
+  "types": [
+    "steel",
+    "ghost"
+  ],
+  "stats": {
+    "hp": 87,
+    "attack": 60,
+    "defense": 95,
+    "spAtk": 133,
+    "spDef": 91,
+    "speed": 84
+  },
+  "abilities": [
+    "good-as-gold"
+  ],
+  "description": "It has a sturdy body made up of stacked coins. Gholdengo overwhelms its enemies by firing coin after coin at them in quick succession.",
+  "image": "https://assets.pokopiaguide.com/pokemon/gholdengo.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gimmighoul",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

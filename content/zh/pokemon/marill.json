@@ -20,5 +20,32 @@
     "食草"
   ],
   "description": "很能彈開水的體毛就算是 從寒冷的海裡上岸時也能 立刻乾掉，一點都不冷。",
-  "image": "https://assets.pokopiaguide.com/pokemon/marill.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/marill.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 88,
+        "name": "碼頭",
+        "rarity": "common"
+      }
+    ]
+  }
 }

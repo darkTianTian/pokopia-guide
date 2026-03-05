@@ -20,5 +20,31 @@
     "濕潤之軀"
   ],
   "description": "十分耐寒，不畏冰海。 皮膚滑滑的， 摸起來會有點涼。",
-  "image": "https://assets.pokopiaguide.com/pokemon/lapras.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/lapras.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tyrogue",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 60,
+        "name": "熱帶海濱",
+        "rarity": "common"
+      }
+    ]
+  }
 }

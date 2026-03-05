@@ -19,5 +19,31 @@
     "スキルリンク"
   ],
   "description": "しっぽで　なであって　挨拶。 しっぽの　毛が　大きな　ほうが 少し　威張っているぞ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/minccino.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/minccino.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 75,
+        "name": "お着がえスペース",
+        "rarity": "common"
+      }
+    ]
+  }
 }

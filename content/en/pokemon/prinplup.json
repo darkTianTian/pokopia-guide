@@ -1,0 +1,56 @@
+{
+  "id": 394,
+  "slug": "prinplup",
+  "name": "Prinplup",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 64,
+    "attack": 66,
+    "defense": 68,
+    "spAtk": 81,
+    "spDef": 76,
+    "speed": 50
+  },
+  "abilities": [
+    "torrent",
+    "competitive"
+  ],
+  "description": "It swims gracefully through the frigid sea and sings with a voice like the roaring tide. It has powerful, sturdy wings and dignity to match.",
+  "image": "https://assets.pokopiaguide.com/pokemon/prinplup.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "piplup",
+    "evolvesTo": [
+      "empoleon"
+    ],
+    "habitats": [
+      {
+        "id": 53,
+        "name": "Hydrated yellow tall grass",
+        "rarity": "rare"
+      },
+      {
+        "id": 86,
+        "name": "Waterwheel Spot",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

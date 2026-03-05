@@ -20,5 +20,32 @@
     "Own Tempo"
   ],
   "description": "If it hears festive music, it begins moving in rhythm in order to amplify its power.",
-  "image": "https://assets.pokopiaguide.com/pokemon/ludicolo.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/ludicolo.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 109,
+        "name": "Uplifting duckweed",
+        "rarity": "rare"
+      }
+    ]
+  }
 }

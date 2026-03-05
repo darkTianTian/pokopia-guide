@@ -1,0 +1,44 @@
+{
+  "id": 101,
+  "slug": "electrode",
+  "name": "マルマイン",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 70,
+    "spAtk": 80,
+    "spDef": 80,
+    "speed": 150
+  },
+  "abilities": [
+    "soundproof",
+    "static",
+    "aftermath"
+  ],
+  "description": "少しでも　衝撃を　与えると 体内の　エレクトンエネルギーが あふれて　爆発　してしまう。",
+  "image": "https://assets.pokopiaguide.com/pokemon/electrode.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "explode"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "voltorb",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

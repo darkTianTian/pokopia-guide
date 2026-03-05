@@ -1,0 +1,51 @@
+{
+  "id": 438,
+  "slug": "bonsly",
+  "name": "ウソハチ",
+  "types": [
+    "rock"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 80,
+    "defense": 95,
+    "spAtk": 10,
+    "spDef": 45,
+    "speed": 10
+  },
+  "abilities": [
+    "sturdy",
+    "rock-head",
+    "rattled"
+  ],
+  "description": "乾燥した　岩場に　暮らす。 緑の　玉は　乾くほど ツヤツヤと　鈍く　輝く。",
+  "image": "https://assets.pokopiaguide.com/pokemon/bonsly.png",
+  "pokopia": {
+    "specialties": [
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "sudowoodo"
+    ],
+    "habitats": [
+      {
+        "id": 99,
+        "name": "木かげの赤い草むら",
+        "rarity": "common"
+      }
+    ]
+  }
+}

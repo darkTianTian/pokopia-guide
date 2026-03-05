@@ -1,0 +1,32 @@
+{
+  "id": 395,
+  "slug": "empoleon",
+  "name": "エンペルト",
+  "types": [
+    "water",
+    "steel"
+  ],
+  "stats": {
+    "hp": 84,
+    "attack": 86,
+    "defense": 88,
+    "spAtk": 111,
+    "spDef": 101,
+    "speed": 60
+  },
+  "abilities": [
+    "torrent",
+    "competitive"
+  ],
+  "description": "クチバシから　伸びている　３本の ツノは　強さの　象徴。 リーダーが　一番　大きい。",
+  "image": "https://assets.pokopiaguide.com/pokemon/empoleon.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "prinplup",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

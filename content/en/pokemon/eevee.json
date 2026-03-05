@@ -19,5 +19,31 @@
     "Anticipation"
   ],
   "description": "Harbors the potential to evolve into manifold forms. Within Eevee lies the key to the mysteries of Pokémon evolution—I'm certain of it.",
-  "image": "https://assets.pokopiaguide.com/pokemon/eevee.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/eevee.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 8,
+        "name": "Pretty flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

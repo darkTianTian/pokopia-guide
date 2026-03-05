@@ -1,0 +1,52 @@
+{
+  "id": 203,
+  "slug": "girafarig",
+  "name": "キリンリキ",
+  "types": [
+    "normal",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 80,
+    "defense": 65,
+    "spAtk": 90,
+    "spDef": 65,
+    "speed": 85
+  },
+  "abilities": [
+    "inner-focus",
+    "early-bird",
+    "sap-sipper"
+  ],
+  "description": "尻尾の　脳は　考えごとが　出来ないほど 小さいけど　眠らなくても　平気　なので ２４時間　あたりを　見張り続けて　いるぞ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/girafarig.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "farigiraf"
+    ],
+    "habitats": [
+      {
+        "id": 143,
+        "name": "Tree-shaded fluffy flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -17,5 +17,31 @@
     "イリュージョン"
   ],
   "description": "エサを　もとめて　人に　化け 町に　現れることも　あるぞ。 おもに　子どもに　化けている。",
-  "image": "https://assets.pokopiaguide.com/pokemon/zorua.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/zorua.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 56,
+        "name": "すずしげな花畑",
+        "rarity": "common"
+      }
+    ]
+  }
 }

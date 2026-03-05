@@ -1,0 +1,35 @@
+{
+  "id": 280,
+  "slug": "ralts",
+  "name": "Ralts",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 28,
+    "attack": 25,
+    "defense": 25,
+    "spAtk": 45,
+    "spDef": 35,
+    "speed": 40
+  },
+  "abilities": [
+    "synchronize",
+    "trace",
+    "telepathy"
+  ],
+  "description": "Tends to prefer people with a chipper disposition to those who are gloomy, but it has shown no discrimination with regard to age or gender. Needs more research.",
+  "image": "https://assets.pokopiaguide.com/pokemon/ralts.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "kirlia"
+    ],
+    "habitats": []
+  }
+}

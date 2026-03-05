@@ -1,0 +1,32 @@
+{
+  "id": 724,
+  "slug": "decidueye",
+  "name": "狙射樹梟",
+  "types": [
+    "grass",
+    "ghost"
+  ],
+  "stats": {
+    "hp": 78,
+    "attack": 107,
+    "defense": 75,
+    "spAtk": 100,
+    "spDef": 100,
+    "speed": 70
+  },
+  "abilities": [
+    "overgrow",
+    "long-reach"
+  ],
+  "description": "只要０.１秒就可以在翅膀的 藤蔓上搭好箭羽、射向敵人， 並在敵人發現前貫穿其要害。",
+  "image": "https://assets.pokopiaguide.com/pokemon/decidueye.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dartrix",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

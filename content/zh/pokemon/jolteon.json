@@ -1,0 +1,48 @@
+{
+  "id": 135,
+  "slug": "jolteon",
+  "name": "雷伊布",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 60,
+    "spAtk": 110,
+    "spDef": 95,
+    "speed": 130
+  },
+  "abilities": [
+    "volt-absorb",
+    "quick-feet"
+  ],
+  "description": "有時會吸入空氣中 的負離子，吐出大約 １００００伏特的高壓電。",
+  "image": "https://assets.pokopiaguide.com/pokemon/jolteon.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 203,
+        "name": "電擊薯條",
+        "rarity": "common"
+      }
+    ]
+  }
+}

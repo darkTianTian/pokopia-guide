@@ -1,0 +1,31 @@
+{
+  "id": 815,
+  "slug": "cinderace",
+  "name": "Cinderace",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 116,
+    "defense": 75,
+    "spAtk": 65,
+    "spDef": 75,
+    "speed": 119
+  },
+  "abilities": [
+    "blaze",
+    "libero"
+  ],
+  "description": "It’s skilled at both offense and defense, and it gets pumped up when cheered on. But if it starts showboating, it could put itself in a tough spot.",
+  "image": "https://assets.pokopiaguide.com/pokemon/cinderace.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "raboot",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

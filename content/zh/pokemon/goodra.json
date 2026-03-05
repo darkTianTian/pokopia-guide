@@ -19,5 +19,14 @@
     "黏滑"
   ],
   "description": "用伸長角產生的力道來 攻擊對手，產生的威力比 重量級拳擊手的拳擊還強１００倍。",
-  "image": "https://assets.pokopiaguide.com/pokemon/goodra.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/goodra.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "graveler",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

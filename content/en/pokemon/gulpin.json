@@ -19,5 +19,23 @@
     "Gluttony"
   ],
   "description": "Most of Gulpin’s body is made up of its stomach—its heart and brain are very small in comparison. This Pokémon’s stomach contains special enzymes that dissolve anything.",
-  "image": "https://assets.pokopiaguide.com/pokemon/gulpin.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/gulpin.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "meowth",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

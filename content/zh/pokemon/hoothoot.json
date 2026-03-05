@@ -20,5 +20,29 @@
     "有色眼鏡"
   ],
   "description": "總是在固定的時間鳴叫， 因此也有訓練家 拿牠來代替鐘錶帶出門。",
-  "image": "https://assets.pokopiaguide.com/pokemon/hoothoot.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/hoothoot.png",
+  "pokopia": {
+    "specialties": [
+      "trade",
+      "fly"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 31,
+        "name": "溫柔燈光晚安",
+        "rarity": "common"
+      }
+    ]
+  }
 }

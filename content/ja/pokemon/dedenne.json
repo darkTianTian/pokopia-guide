@@ -1,0 +1,33 @@
+{
+  "id": 702,
+  "slug": "dedenne",
+  "name": "デデンネ",
+  "types": [
+    "electric",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 67,
+    "attack": 58,
+    "defense": 57,
+    "spAtk": 81,
+    "spDef": 67,
+    "speed": 101
+  },
+  "abilities": [
+    "cheek-pouch",
+    "pickup",
+    "plus"
+  ],
+  "description": "電気を　生みだす　力が　弱いので コンセントや　ほかの 電気ポケモンから　盗むのだ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/dedenne.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

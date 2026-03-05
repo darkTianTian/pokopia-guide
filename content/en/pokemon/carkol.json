@@ -1,0 +1,53 @@
+{
+  "id": 838,
+  "slug": "carkol",
+  "name": "Carkol",
+  "types": [
+    "rock",
+    "fire"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 60,
+    "defense": 90,
+    "spAtk": 60,
+    "spDef": 70,
+    "speed": 50
+  },
+  "abilities": [
+    "steam-engine",
+    "flame-body",
+    "flash-fire"
+  ],
+  "description": "By rapidly rolling its legs, it can travel at over 18 mph. The temperature of the flames it breathes exceeds 1,800 degrees Fahrenheit.",
+  "image": "https://assets.pokopiaguide.com/pokemon/carkol.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "rolycoly",
+    "evolvesTo": [
+      "coalossal"
+    ],
+    "habitats": [
+      {
+        "id": 132,
+        "name": "Railroad crossing",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 92,
+  "slug": "gastly",
+  "name": "ゴース",
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "stats": {
+    "hp": 30,
+    "attack": 35,
+    "defense": 30,
+    "spAtk": 100,
+    "spDef": 35,
+    "speed": 80
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "description": "薄い　ガスのような　体で どこにでも　忍びこむが 風が　吹くと　吹きとばされる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/gastly.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "haunter"
+    ],
+    "habitats": []
+  }
+}

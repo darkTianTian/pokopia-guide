@@ -20,5 +20,32 @@
     "じしんかじょう"
   ],
   "description": "自分の　体重の　１００倍の　重さでも 軽がる　持ち上げる 怪力　自慢の　ポケモン。",
-  "image": "https://assets.pokopiaguide.com/pokemon/heracross.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/heracross.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "木かげの草むら",
+        "rarity": "rare"
+      }
+    ]
+  }
 }

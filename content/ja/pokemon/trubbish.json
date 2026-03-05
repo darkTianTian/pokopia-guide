@@ -1,0 +1,51 @@
+{
+  "id": 568,
+  "slug": "trubbish",
+  "name": "ヤブクロン",
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 50,
+    "defense": 62,
+    "spAtk": 40,
+    "spDef": 62,
+    "speed": 65
+  },
+  "abilities": [
+    "stench",
+    "sticky-hold",
+    "aftermath"
+  ],
+  "description": "ゴミの　詰まった　ゴミ袋から 生まれた。　吐き出す　毒ガスは ガラルの　マタドガスの　好物。",
+  "image": "https://assets.pokopiaguide.com/pokemon/trubbish.png",
+  "pokopia": {
+    "specialties": [
+      "recycle"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "garbodor"
+    ],
+    "habitats": [
+      {
+        "id": 63,
+        "name": "ゴミ集積所",
+        "rarity": "common"
+      }
+    ]
+  }
+}

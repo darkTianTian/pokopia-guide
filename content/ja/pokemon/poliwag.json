@@ -19,5 +19,16 @@
     "すいすい"
   ],
   "description": "流れが　速い　川では ぶ厚い　唇を　吸盤のように 岩に　くっつけて　しがみつく。",
-  "image": "https://assets.pokopiaguide.com/pokemon/poliwag.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/poliwag.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "poliwhirl"
+    ],
+    "habitats": []
+  }
 }

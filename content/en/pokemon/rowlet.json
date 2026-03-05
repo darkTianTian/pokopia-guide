@@ -1,0 +1,34 @@
+{
+  "id": 722,
+  "slug": "rowlet",
+  "name": "Rowlet",
+  "types": [
+    "grass",
+    "flying"
+  ],
+  "stats": {
+    "hp": 68,
+    "attack": 55,
+    "defense": 55,
+    "spAtk": 50,
+    "spDef": 50,
+    "speed": 42
+  },
+  "abilities": [
+    "overgrow",
+    "long-reach"
+  ],
+  "description": "Flies noiselessly on delicate wings. It has mastered the art of deftly launching dagger-sharp feathers from those same wings.",
+  "image": "https://assets.pokopiaguide.com/pokemon/rowlet.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "dartrix"
+    ],
+    "habitats": []
+  }
+}

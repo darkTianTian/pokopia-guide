@@ -19,5 +19,31 @@
     "Sand Force"
   ],
   "description": "It burrows through the ground at a shallow depth. It leaves raised earth in its wake, making it easy to spot.",
-  "image": "https://assets.pokopiaguide.com/pokemon/diglett.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/diglett.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "bayleef",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 119,
+        "name": "Container snacking",
+        "rarity": "common"
+      }
+    ]
+  }
 }

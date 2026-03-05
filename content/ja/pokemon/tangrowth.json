@@ -1,0 +1,34 @@
+{
+  "id": 465,
+  "slug": "tangrowth",
+  "name": "モジャンボ",
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 100,
+    "attack": 100,
+    "defense": 125,
+    "spAtk": 110,
+    "spDef": 50,
+    "speed": 50
+  },
+  "abilities": [
+    "chlorophyll",
+    "leaf-guard",
+    "regenerator"
+  ],
+  "description": "暖かい　土地で　暮らす　ものほど ツルの　伸びが　早い。　伸びると 自ら　ちぎって　短くする。",
+  "image": "https://assets.pokopiaguide.com/pokemon/tangrowth.png",
+  "pokopia": {
+    "specialties": [
+      "appraise"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tangela",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

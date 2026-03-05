@@ -1,0 +1,51 @@
+{
+  "id": 935,
+  "slug": "charcadet",
+  "name": "炭小侍",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 50,
+    "defense": 40,
+    "spAtk": 50,
+    "spDef": 40,
+    "speed": 35
+  },
+  "abilities": [
+    "flash-fire",
+    "flame-body"
+  ],
+  "description": "Its firepower increases when it fights, reaching over 1,800 degrees Fahrenheit. It likes berries that are rich in fat.",
+  "image": "https://assets.pokopiaguide.com/pokemon/charcadet.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "armarouge",
+      "ceruledge"
+    ],
+    "habitats": [
+      {
+        "id": 115,
+        "name": "岩漿熱呼呼",
+        "rarity": "common"
+      }
+    ]
+  }
+}

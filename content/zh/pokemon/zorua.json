@@ -17,5 +17,31 @@
     "幻覺"
   ],
   "description": "為了尋找食物，有時還會 幻化成人類出現在城鎮裡。 通常都會變成小孩子。",
-  "image": "https://assets.pokopiaguide.com/pokemon/zorua.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/zorua.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 56,
+        "name": "涼爽花田",
+        "rarity": "common"
+      }
+    ]
+  }
 }

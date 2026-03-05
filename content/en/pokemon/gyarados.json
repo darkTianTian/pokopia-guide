@@ -1,0 +1,32 @@
+{
+  "id": 130,
+  "slug": "gyarados",
+  "name": "Gyarados",
+  "types": [
+    "water",
+    "flying"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 125,
+    "defense": 79,
+    "spAtk": 60,
+    "spDef": 100,
+    "speed": 81
+  },
+  "abilities": [
+    "intimidate",
+    "moxie"
+  ],
+  "description": "I suspect this Pokémon to be the true identity of a dragon written of in ancient texts, which claimed that it razed an entire village with white-hot beams from its maw.",
+  "image": "https://assets.pokopiaguide.com/pokemon/gyarados.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "magikarp",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

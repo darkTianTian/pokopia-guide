@@ -1,0 +1,34 @@
+{
+  "id": 446,
+  "slug": "munchlax",
+  "name": "Munchlax",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 135,
+    "attack": 85,
+    "defense": 40,
+    "spAtk": 40,
+    "spDef": 85,
+    "speed": 5
+  },
+  "abilities": [
+    "pickup",
+    "thick-fat",
+    "gluttony"
+  ],
+  "description": "Its robust stomach allows it to nonchalantly devour even rotted matter. It pays frequent visits to villages, seeking out food scraps intended for compost.",
+  "image": "https://assets.pokopiaguide.com/pokemon/munchlax.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "snorlax"
+    ],
+    "habitats": []
+  }
+}

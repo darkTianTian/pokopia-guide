@@ -1,0 +1,35 @@
+{
+  "id": 17,
+  "slug": "pidgeotto",
+  "name": "比比鳥",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 63,
+    "attack": 60,
+    "defense": 55,
+    "spAtk": 50,
+    "spDef": 50,
+    "speed": 71
+  },
+  "abilities": [
+    "keen-eye",
+    "tangled-feet",
+    "big-pecks"
+  ],
+  "description": "擁有著超乎尋常的體力， 會在廣大的地盤裡四處飛行， 到遠處去尋找食物。",
+  "image": "https://assets.pokopiaguide.com/pokemon/pidgeotto.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pidgey",
+    "evolvesTo": [
+      "pidgeot"
+    ],
+    "habitats": []
+  }
+}

@@ -20,5 +20,37 @@
     "そうしょく"
   ],
   "description": "おとなしい　ポケモンだが　怒ると しっぽの　大きな　玉を　ぶんぶん 振りまわして　叩きつけてくるぞ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/azurill.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/azurill.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 53,
+        "name": "うるおう黄色の草むら",
+        "rarity": "common"
+      },
+      {
+        "id": 62,
+        "name": "おかたづけをしよう",
+        "rarity": "common"
+      }
+    ]
+  }
 }

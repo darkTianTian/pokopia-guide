@@ -19,5 +19,32 @@
     "不屈之心"
   ],
   "description": "時時刻刻都充滿力量。 由於體力過剩而去舉岩石 消磨時間，也因此變得更強。",
-  "image": "https://assets.pokopiaguide.com/pokemon/machop.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/machop.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "cyndaquil",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 3,
+        "name": "岩蔭草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

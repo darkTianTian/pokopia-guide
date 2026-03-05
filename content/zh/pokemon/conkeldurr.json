@@ -1,0 +1,50 @@
+{
+  "id": 534,
+  "slug": "conkeldurr",
+  "name": "修建老匠",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 105,
+    "attack": 140,
+    "defense": 95,
+    "spAtk": 55,
+    "spDef": 65,
+    "speed": 45
+  },
+  "abilities": [
+    "guts",
+    "sheer-force",
+    "iron-fist"
+  ],
+  "description": "要是認真起來就會 扔掉手中的混凝土柱， 赤手空拳地撲向敵人。",
+  "image": "https://assets.pokopiaguide.com/pokemon/conkeldurr.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gurdurr",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 177,
+        "name": "Construction-site generator",
+        "rarity": "common"
+      }
+    ]
+  }
+}

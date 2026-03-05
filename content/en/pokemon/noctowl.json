@@ -1,0 +1,42 @@
+{
+  "id": 164,
+  "slug": "noctowl",
+  "name": "Noctowl",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 100,
+    "attack": 50,
+    "defense": 50,
+    "spAtk": 86,
+    "spDef": 96,
+    "speed": 70
+  },
+  "abilities": [
+    "insomnia",
+    "keen-eye",
+    "tinted-lens"
+  ],
+  "description": "When it needs to think, it rotates its head 180 degrees to sharpen its intellectual power.",
+  "image": "https://assets.pokopiaguide.com/pokemon/noctowl.png",
+  "pokopia": {
+    "specialties": [
+      "fly",
+      "trade"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "hoothoot",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

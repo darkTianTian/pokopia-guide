@@ -1,0 +1,53 @@
+{
+  "id": 885,
+  "slug": "dreepy",
+  "name": "ドラメシヤ",
+  "types": [
+    "dragon",
+    "ghost"
+  ],
+  "stats": {
+    "hp": 28,
+    "attack": 60,
+    "defense": 30,
+    "spAtk": 40,
+    "spDef": 30,
+    "speed": 82
+  },
+  "abilities": [
+    "clear-body",
+    "infiltrator",
+    "cursed-body"
+  ],
+  "description": "１匹では　子どもにも　負けるくらい 非力だが　仲間の　協力で 鍛えられ　進化して　強くなる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/dreepy.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "drakloak"
+    ],
+    "habitats": [
+      {
+        "id": 138,
+        "name": "Tree-shaded pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

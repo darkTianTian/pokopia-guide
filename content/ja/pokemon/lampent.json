@@ -1,0 +1,35 @@
+{
+  "id": 608,
+  "slug": "lampent",
+  "name": "ランプラー",
+  "types": [
+    "ghost",
+    "fire"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 40,
+    "defense": 60,
+    "spAtk": 95,
+    "spDef": 60,
+    "speed": 55
+  },
+  "abilities": [
+    "flash-fire",
+    "flame-body",
+    "infiltrator"
+  ],
+  "description": "ランプの　ふりをして　町中に 潜む。　死期が　近い　人を 見つけると　そっと　後を　つける。",
+  "image": "https://assets.pokopiaguide.com/pokemon/lampent.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "litwick",
+    "evolvesTo": [
+      "chandelure"
+    ],
+    "habitats": []
+  }
+}

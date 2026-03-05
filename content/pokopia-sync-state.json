@@ -1,0 +1,205 @@
+{
+  "lastSync": "2026-03-05T08:02:39.159Z",
+  "newHabitats": [
+    {
+      "id": 28,
+      "name": "Large luggage carrier",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 177,
+      "name": "Construction-site generator",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 176,
+      "name": "Nature's market",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Working the register",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Working the register",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Knitting station",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Waterwheel Spot",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 119,
+      "name": "Container snacking",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 123,
+      "name": "House party",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 138,
+      "name": "Tree-shaded pink tall grass",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 101,
+      "name": "Hydrated red tall grass",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 128,
+      "name": "Music and magazines",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 118,
+      "name": "Creepy white rocks",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 142,
+      "name": "Fluffy flower bed",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 152,
+      "name": "Fortune-teller's table",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 157,
+      "name": "Spotless Washing station",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 144,
+      "name": "Hydrated fluffy flower bed",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 145,
+      "name": "Waterside dinghy",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 141,
+      "name": "Concrete pipe secret base",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 143,
+      "name": "Tree-shaded fluffy flower bed",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 137,
+      "name": "Pink tall grass",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 147,
+      "name": "Birdsong garden",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 165,
+      "name": "Playland",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 139,
+      "name": "Hydrated pink tall grass",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "total": 286,
+    "updated": 183,
+    "skipped": 103,
+    "newPokemon": 0,
+    "errors": 7
+  }
+}

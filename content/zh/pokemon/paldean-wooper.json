@@ -1,0 +1,33 @@
+{
+  "id": 194,
+  "slug": "paldean-wooper",
+  "name": "烏波",
+  "types": [
+    "water",
+    "ground"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 45,
+    "defense": 45,
+    "spAtk": 25,
+    "spDef": 25,
+    "speed": 15
+  },
+  "abilities": [
+    "damp",
+    "water-absorb",
+    "unaware"
+  ],
+  "description": "為了在地面上行走時 不讓皮膚乾燥，會用 有毒的黏膜覆蓋身體。",
+  "image": "https://assets.pokopiaguide.com/pokemon/paldean-wooper.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

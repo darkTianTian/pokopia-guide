@@ -19,5 +19,32 @@
     "しゅうかく"
   ],
   "description": "３つの　頭が　一丸となって 撃つ　サイコパワーは　強力。 空が　曇ると　動きが　鈍る。",
-  "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "teleport"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "krabby",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 57,
+        "name": "南国気分",
+        "rarity": "very-rare"
+      }
+    ]
+  }
 }

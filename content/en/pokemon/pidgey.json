@@ -20,5 +20,38 @@
     "Big Pecks"
   ],
   "description": "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.",
-  "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png",
+  "pokopia": {
+    "specialties": [
+      "search",
+      "fly"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "pidgeotto"
+    ],
+    "habitats": [
+      {
+        "id": 6,
+        "name": "Highland Grass",
+        "rarity": "common"
+      },
+      {
+        "id": 8,
+        "name": "Pretty Flower Bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

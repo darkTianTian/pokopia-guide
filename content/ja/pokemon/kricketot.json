@@ -1,0 +1,55 @@
+{
+  "id": 401,
+  "slug": "kricketot",
+  "name": "コロボーシ",
+  "types": [
+    "bug"
+  ],
+  "stats": {
+    "hp": 37,
+    "attack": 25,
+    "defense": 41,
+    "spAtk": 25,
+    "spDef": 41,
+    "speed": 25
+  },
+  "abilities": [
+    "shed-skin",
+    "run-away"
+  ],
+  "description": "触覚　同士が　ぶつかると コロン　コロンと　木琴に　似た 音色を　奏でる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/kricketot.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "kricketune"
+    ],
+    "habitats": [
+      {
+        "id": 98,
+        "name": "赤い草むら",
+        "rarity": "common"
+      },
+      {
+        "id": 128,
+        "name": "Music and magazines",
+        "rarity": "common"
+      }
+    ]
+  }
+}

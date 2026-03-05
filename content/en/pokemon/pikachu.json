@@ -18,5 +18,18 @@
     "Lightning Rod"
   ],
   "description": "Possesses cheek sacs in which it stores electricity. This clever forest-dweller roasts tough berries with an electric shock before consuming them.",
-  "image": "https://assets.pokopiaguide.com/pokemon/pikachu.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/pikachu.png",
+  "pokopia": {
+    "specialties": [
+      "illuminate"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pichu",
+    "evolvesTo": [
+      "raichu"
+    ],
+    "habitats": []
+  }
 }

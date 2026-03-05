@@ -19,5 +19,34 @@
     "ちからずく"
   ],
   "description": "強い　マクノシタを　育てるために トレーナーたちが　伝統的に 作る　ナベ料理が　あるという。",
-  "image": "https://assets.pokopiaguide.com/pokemon/makuhita.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/makuhita.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "elekid",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 51,
+        "name": "木かげの黄色の草むら",
+        "rarity": "common"
+      },
+      {
+        "id": 80,
+        "name": "荷づくりできたよ",
+        "rarity": "common"
+      }
+    ]
+  }
 }

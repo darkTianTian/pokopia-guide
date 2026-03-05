@@ -1,0 +1,48 @@
+{
+  "id": 135,
+  "slug": "jolteon",
+  "name": "サンダース",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 60,
+    "spAtk": 110,
+    "spDef": 95,
+    "speed": 130
+  },
+  "abilities": [
+    "volt-absorb",
+    "quick-feet"
+  ],
+  "description": "空気中の　マイナスイオンを 吸いこんで　約１００００ボルトの 電気を　吐き出すことがある。",
+  "image": "https://assets.pokopiaguide.com/pokemon/jolteon.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 203,
+        "name": "シビれるポテト",
+        "rarity": "common"
+      }
+    ]
+  }
+}

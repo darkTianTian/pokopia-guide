@@ -20,5 +20,31 @@
     "Rain Dish"
   ],
   "description": "It soars on updrafts without flapping its wings. It makes a nest on sheer cliffs at the sea’s edge.",
-  "image": "https://assets.pokopiaguide.com/pokemon/wingull.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/wingull.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "fly"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 58,
+        "name": "Windy Flower Bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

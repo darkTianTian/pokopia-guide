@@ -19,5 +19,31 @@
     "友情防守"
   ],
   "description": "會把寶貝的渾圓石頭借給 變得友好的對象。如果不 還給牠的話，就會哭著大鬧。",
-  "image": "https://assets.pokopiaguide.com/pokemon/happiny.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/happiny.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 82,
+        "name": "Working the register",
+        "rarity": "common"
+      }
+    ]
+  }
 }

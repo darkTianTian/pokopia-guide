@@ -1,0 +1,51 @@
+{
+  "id": 438,
+  "slug": "bonsly",
+  "name": "盆才怪",
+  "types": [
+    "rock"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 80,
+    "defense": 95,
+    "spAtk": 10,
+    "spDef": 45,
+    "speed": 10
+  },
+  "abilities": [
+    "sturdy",
+    "rock-head",
+    "rattled"
+  ],
+  "description": "棲息在空氣乾燥岩石裸露的地方。 空氣越是乾燥，牠身上的綠球 就越是會泛出黯淡的光澤。",
+  "image": "https://assets.pokopiaguide.com/pokemon/bonsly.png",
+  "pokopia": {
+    "specialties": [
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "sudowoodo"
+    ],
+    "habitats": [
+      {
+        "id": 99,
+        "name": "樹蔭紅色草叢",
+        "rarity": "common"
+      }
+    ]
+  }
+}

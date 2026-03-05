@@ -1,0 +1,34 @@
+{
+  "id": 137,
+  "slug": "porygon",
+  "name": "Porygon",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 60,
+    "defense": 70,
+    "spAtk": 85,
+    "spDef": 75,
+    "speed": 40
+  },
+  "abilities": [
+    "trace",
+    "download",
+    "analytic"
+  ],
+  "description": "It has no discernible heartbeat and does not seem to draw breath, and yet it appears to function without issue. I cannot even begin to explain this utterly bizarre anomaly.",
+  "image": "https://assets.pokopiaguide.com/pokemon/porygon.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "porygon2"
+    ],
+    "habitats": []
+  }
+}

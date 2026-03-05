@@ -1,0 +1,32 @@
+{
+  "id": 53,
+  "slug": "persian",
+  "name": "Persian",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 70,
+    "defense": 60,
+    "spAtk": 65,
+    "spDef": 65,
+    "speed": 115
+  },
+  "abilities": [
+    "limber",
+    "technician",
+    "unnerve"
+  ],
+  "description": "Its elegant and refined behavior clashes with that of the barbaric Perrserker. The relationship between the two is one of mutual disdain.",
+  "image": "https://assets.pokopiaguide.com/pokemon/persian.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "meowth",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

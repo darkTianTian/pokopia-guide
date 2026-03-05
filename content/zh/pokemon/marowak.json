@@ -1,0 +1,32 @@
+{
+  "id": 105,
+  "slug": "marowak",
+  "name": "嘎啦嘎啦",
+  "types": [
+    "ground"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 80,
+    "defense": 110,
+    "spAtk": 50,
+    "spDef": 80,
+    "speed": 45
+  },
+  "abilities": [
+    "rock-head",
+    "lightning-rod",
+    "battle-armor"
+  ],
+  "description": "進化時，原本戴在頭上的母親 頭骨化為了牠身體的一部份。 不但如此，性格也變得很凶暴。",
+  "image": "https://assets.pokopiaguide.com/pokemon/marowak.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "cubone",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 462,
+  "slug": "magnezone",
+  "name": "自爆磁怪",
+  "types": [
+    "electric",
+    "steel"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 70,
+    "defense": 115,
+    "spAtk": 130,
+    "spDef": 90,
+    "speed": 60
+  },
+  "abilities": [
+    "magnet-pull",
+    "sturdy",
+    "analytic"
+  ],
+  "description": "人們認為牠是受到特殊 磁場的影響，導致身體的 分子結構發生變化才進化的。",
+  "image": "https://assets.pokopiaguide.com/pokemon/magnezone.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "magneton",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

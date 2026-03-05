@@ -20,5 +20,32 @@
     "さいせいりょく"
   ],
   "description": "しっぽを　水に　浸すと　甘味が にじみ出るので　それを　エサに ポケモンを　おびき寄せ　釣りあげる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/slowpoke.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/slowpoke.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "yawn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ekans",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 5,
+        "name": "波打ちぎわの草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

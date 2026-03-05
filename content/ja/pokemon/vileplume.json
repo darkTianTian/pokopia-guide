@@ -1,0 +1,32 @@
+{
+  "id": 45,
+  "slug": "vileplume",
+  "name": "ラフレシア",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 85,
+    "spAtk": 110,
+    "spDef": 90,
+    "speed": 50
+  },
+  "abilities": [
+    "chlorophyll",
+    "effect-spore"
+  ],
+  "description": "花びらが　大きいほど たくさん　花粉を　出すが 頭が　重たくて　疲れてしまうという。",
+  "image": "https://assets.pokopiaguide.com/pokemon/vileplume.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gloom",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

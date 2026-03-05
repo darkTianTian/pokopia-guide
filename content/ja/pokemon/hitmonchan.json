@@ -19,5 +19,31 @@
     "せいしんりょく"
   ],
   "description": "空気をも　切り裂く　パンチ。 だが　３分間　攻撃すると ひと休み　したくなるらしい。",
-  "image": "https://assets.pokopiaguide.com/pokemon/hitmonchan.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/hitmonchan.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "clefairy",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 24,
+        "name": "ジムの休けい所",
+        "rarity": "common"
+      }
+    ]
+  }
 }

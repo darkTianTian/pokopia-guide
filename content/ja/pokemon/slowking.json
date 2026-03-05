@@ -1,0 +1,33 @@
+{
+  "id": 199,
+  "slug": "slowking",
+  "name": "ヤドキング",
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 75,
+    "defense": 80,
+    "spAtk": 100,
+    "spDef": 110,
+    "speed": 30
+  },
+  "abilities": [
+    "oblivious",
+    "own-tempo",
+    "regenerator"
+  ],
+  "description": "尋ねれば　どんな　難題でも 解決してくれるが　ヤドキングの 言葉は　だれも　理解できない。",
+  "image": "https://assets.pokopiaguide.com/pokemon/slowking.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "slowpoke",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

@@ -18,5 +18,36 @@
     "かそく"
   ],
   "description": "体内に　炎を　燃やす　場所が　あるので 抱きしめると　ぽかぽか　とっても　暖かい。 全身　ふかふかの　羽毛に　覆われている。",
-  "image": "https://assets.pokopiaguide.com/pokemon/torchic.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/torchic.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 69,
+        "name": "ピヨピヨごはん",
+        "rarity": "common"
+      },
+      {
+        "id": 79,
+        "name": "リゾートでご飯のしたく",
+        "rarity": "common"
+      }
+    ]
+  }
 }

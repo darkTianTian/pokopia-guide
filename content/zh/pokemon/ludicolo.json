@@ -20,5 +20,32 @@
     "我行我素"
   ],
   "description": "樂天河童會跟著 歡快的音樂搖擺身體， 藉而增強自己的力量。",
-  "image": "https://assets.pokopiaguide.com/pokemon/ludicolo.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/ludicolo.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 109,
+        "name": "歡樂水窪",
+        "rarity": "rare"
+      }
+    ]
+  }
 }

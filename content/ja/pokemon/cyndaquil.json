@@ -1,0 +1,50 @@
+{
+  "id": 155,
+  "slug": "cyndaquil",
+  "name": "ヒノアラシ",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "spAtk": 60,
+    "spDef": 50,
+    "speed": 65
+  },
+  "abilities": [
+    "blaze",
+    "flash-fire"
+  ],
+  "description": "背中から　炎を　噴き上げて　身を　守る。 怒った　ときの　炎は　勢いが　いいが 疲れている　ときは　不完全燃焼する。",
+  "image": "https://assets.pokopiaguide.com/pokemon/cyndaquil.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "quilava"
+    ],
+    "habitats": [
+      {
+        "id": 141,
+        "name": "Concrete pipe secret base",
+        "rarity": "common"
+      }
+    ]
+  }
+}

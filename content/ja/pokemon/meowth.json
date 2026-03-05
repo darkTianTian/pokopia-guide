@@ -19,5 +19,31 @@
     "きんちょうかん"
   ],
   "description": "額の　小判が　汚れないよう まめに　顔を　洗う。　ガラルの ニャースとは　仲が　悪い。",
-  "image": "https://assets.pokopiaguide.com/pokemon/meowth.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/meowth.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 91,
+        "name": "Working the register",
+        "rarity": "common"
+      }
+    ]
+  }
 }

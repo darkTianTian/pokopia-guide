@@ -1,0 +1,31 @@
+{
+  "id": 927,
+  "slug": "dachsbun",
+  "name": "Dachsbun",
+  "types": [
+    "fairy"
+  ],
+  "stats": {
+    "hp": 57,
+    "attack": 80,
+    "defense": 115,
+    "spAtk": 50,
+    "spDef": 80,
+    "speed": 95
+  },
+  "abilities": [
+    "well-baked-body",
+    "aroma-veil"
+  ],
+  "description": "The surface of this Pokémon’s skin hardens when exposed to intense heat, and its body has an appetizing aroma.",
+  "image": "https://assets.pokopiaguide.com/pokemon/dachsbun.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "fidough",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

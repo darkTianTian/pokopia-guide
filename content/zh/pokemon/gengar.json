@@ -1,0 +1,31 @@
+{
+  "id": 94,
+  "slug": "gengar",
+  "name": "耿鬼",
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 60,
+    "spAtk": 130,
+    "spDef": 75,
+    "speed": 110
+  },
+  "abilities": [
+    "cursed-body"
+  ],
+  "description": "據說牠會為了奪取 山中遇難者的生命 而從黑暗中出現。",
+  "image": "https://assets.pokopiaguide.com/pokemon/gengar.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "haunter",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

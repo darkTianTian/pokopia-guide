@@ -1,0 +1,47 @@
+{
+  "id": 355,
+  "slug": "duskull",
+  "name": "夜巡靈",
+  "types": [
+    "ghost"
+  ],
+  "stats": {
+    "hp": 20,
+    "attack": 40,
+    "defense": 90,
+    "spAtk": 30,
+    "spDef": 90,
+    "speed": 25
+  },
+  "abilities": [
+    "levitate",
+    "frisk"
+  ],
+  "description": "會讓身體變透明， 然後偷偷地靠近獵物。 擁有穿過厚牆壁的能力。",
+  "image": "https://assets.pokopiaguide.com/pokemon/duskull.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "dusclops"
+    ],
+    "habitats": [
+      {
+        "id": 137,
+        "name": "Pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

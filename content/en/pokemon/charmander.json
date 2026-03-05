@@ -18,5 +18,33 @@
     "Solar Power"
   ],
   "description": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
-  "image": "https://assets.pokopiaguide.com/pokemon/charmander.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/charmander.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "charmeleon"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "Tall Grass",
+        "rarity": "common"
+      }
+    ]
+  }
 }

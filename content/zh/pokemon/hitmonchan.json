@@ -19,5 +19,31 @@
     "精神力"
   ],
   "description": "打出的拳擊甚至能劈開空氣。 但連續攻擊３分鐘後， 牠似乎就會想休息一下。",
-  "image": "https://assets.pokopiaguide.com/pokemon/hitmonchan.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/hitmonchan.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "clefairy",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 24,
+        "name": "健身房休息處",
+        "rarity": "common"
+      }
+    ]
+  }
 }

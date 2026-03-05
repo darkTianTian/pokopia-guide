@@ -19,5 +19,14 @@
     "緊張感"
   ],
   "description": "當牠帶著巨大轟鳴聲邁開腳步， 就連大山都會為之崩裂， 周遭的地形也會因而改變。",
-  "image": "https://assets.pokopiaguide.com/pokemon/tyranitar.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/tyranitar.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "chinchou",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

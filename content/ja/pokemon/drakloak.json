@@ -1,0 +1,35 @@
+{
+  "id": 886,
+  "slug": "drakloak",
+  "name": "ドロンチ",
+  "types": [
+    "dragon",
+    "ghost"
+  ],
+  "stats": {
+    "hp": 68,
+    "attack": 80,
+    "defense": 50,
+    "spAtk": 60,
+    "spDef": 50,
+    "speed": 102
+  },
+  "abilities": [
+    "clear-body",
+    "infiltrator",
+    "cursed-body"
+  ],
+  "description": "世話をする　ドラメシヤを　頭に 乗せていないと　落ち着かないので ほかの　ポケモンを　乗せようとする。",
+  "image": "https://assets.pokopiaguide.com/pokemon/drakloak.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dreepy",
+    "evolvesTo": [
+      "dragapult"
+    ],
+    "habitats": []
+  }
+}

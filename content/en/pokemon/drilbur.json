@@ -19,5 +19,31 @@
     "Mold Breaker"
   ],
   "description": "It’s a digger, using its claws to burrow through the ground. It causes damage to vegetable crops, so many farmers have little love for it.",
-  "image": "https://assets.pokopiaguide.com/pokemon/drilbur.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/drilbur.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 15,
+        "name": "Fresh Veggie Field",
+        "rarity": "common"
+      }
+    ]
+  }
 }

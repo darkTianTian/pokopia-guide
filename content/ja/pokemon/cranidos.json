@@ -1,0 +1,33 @@
+{
+  "id": 408,
+  "slug": "cranidos",
+  "name": "ズガイドス",
+  "types": [
+    "rock"
+  ],
+  "stats": {
+    "hp": 67,
+    "attack": 125,
+    "defense": 40,
+    "spAtk": 30,
+    "spDef": 30,
+    "speed": 58
+  },
+  "abilities": [
+    "mold-breaker",
+    "sheer-force"
+  ],
+  "description": "硬い　頭蓋骨が　特徴。 頭突きで　樹木を　へし折って 実った　きのみを　食っていた。",
+  "image": "https://assets.pokopiaguide.com/pokemon/cranidos.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "rampardos"
+    ],
+    "habitats": []
+  }
+}

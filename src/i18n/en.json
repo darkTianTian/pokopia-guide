@@ -10,6 +10,10 @@
     "guides": "Guides",
     "events": "Events",
     "habitat": "Habitat",
+    "habitatList": "Habitat List",
+    "habitatOverview": "Overview",
+    "habitatCrafting": "Crafting Recipes",
+    "comingSoon": "Soon",
     "explore": "Explore",
     "multiplayer": "Multiplayer"
   },
@@ -51,7 +55,14 @@
     "prev": "Previous",
     "next": "Next",
     "page": "Page",
-    "dataDisclaimer": "Data sourced from the main Pokémon series. Pokopia in-game data will be updated after release."
+    "dataDisclaimer": "Data sourced from the main Pokémon series. Pokopia in-game data will be updated after release.",
+    "pokopiaInfo": "Pokopia Info",
+    "specialty": "Specialty",
+    "habitatLabel": "Habitats",
+    "timeOfDay": "Time of Day",
+    "weatherLabel": "Weather",
+    "obtainMethod": "How to Obtain",
+    "evolution": "Evolution"
   },
   "guides": {
     "title": "Guide Articles",
@@ -81,7 +92,13 @@
     "title": "Habitat Building Guide",
     "metaTitle": "Habitat Building",
     "metaDescription": "Pokémon Pokopia habitat building guide: habitat creation, move-based environment modification, and furniture crafting recipes.",
-    "description": "Habitat creation, move-based environment modification, furniture crafting recipes and more are being prepared."
+    "description": "Habitat creation, move-based environment modification, furniture crafting recipes and more are being prepared.",
+    "listTitle": "Habitat List",
+    "listDescription": "Browse all habitats and discover which Pokémon can be found in each one.",
+    "listMetaDescription": "Complete list of all Pokémon Pokopia habitats with available Pokémon encounters.",
+    "pokemonCount": "Pokémon",
+    "detailDescription": "Pokémon that can be found in this habitat.",
+    "breadcrumbList": "Habitat List"
   },
   "quests": {
     "title": "Quest Guide",
@@ -110,6 +127,7 @@
     "guides": "Guides",
     "events": "Events",
     "habitat": "Habitat Building",
+    "habitatList": "Habitat List",
     "explore": "Exploration Map",
     "multiplayer": "Multiplayer Guide"
   },
@@ -124,6 +142,58 @@
     "spAtk": "Sp.Atk",
     "spDef": "Sp.Def",
     "speed": "Speed"
+  },
+  "timeOfDay": {
+    "dawn": "Dawn",
+    "day": "Daytime",
+    "dusk": "Dusk",
+    "night": "Nighttime"
+  },
+  "weather": {
+    "sunny": "Sunny",
+    "cloudy": "Cloudy",
+    "rainy": "Rainy",
+    "snowy": "Snowy"
+  },
+  "rarity": {
+    "common": "Common",
+    "rare": "Rare",
+    "very-rare": "Very Rare"
+  },
+  "obtainMethods": {
+    "habitat": "Found in Habitat",
+    "trade": "Trade",
+    "evolution": "Evolution",
+    "event": "Limited-Time Event",
+    "unknown": "Unknown"
+  },
+  "specialties": {
+    "grow": "Grow",
+    "burn": "Burn",
+    "water": "Water",
+    "build": "Build",
+    "chop": "Chop",
+    "crush": "Crush",
+    "search": "Search",
+    "fly": "Fly",
+    "gather": "Gather",
+    "generate": "Generate",
+    "illuminate": "Illuminate",
+    "explode": "Explode",
+    "bulldoze": "Bulldoze",
+    "recycle": "Recycle",
+    "trade": "Trade",
+    "storage": "Storage",
+    "teleport": "Teleport",
+    "litter": "Litter",
+    "paint": "Paint",
+    "appraise": "Appraise",
+    "dream-island": "Dream Island",
+    "gather-honey": "Gather Honey",
+    "yawn": "Yawn",
+    "eat": "Eat",
+    "hype": "Hype",
+    "transform": "Transform"
   },
   "types": {
     "normal": "Normal",

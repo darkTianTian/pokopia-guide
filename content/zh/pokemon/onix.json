@@ -1,0 +1,53 @@
+{
+  "id": 95,
+  "slug": "onix",
+  "name": "大岩蛇",
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 45,
+    "defense": 160,
+    "spAtk": 30,
+    "spDef": 45,
+    "speed": 70
+  },
+  "abilities": [
+    "rock-head",
+    "sturdy",
+    "weak-armor"
+  ],
+  "description": "彎曲扭動巨大結實的身體， 以時速８０公里的 猛烈勢頭挖掘前進。",
+  "image": "https://assets.pokopiaguide.com/pokemon/onix.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "steelix"
+    ],
+    "habitats": [
+      {
+        "id": 37,
+        "name": "沙沙草叢",
+        "rarity": "common"
+      }
+    ]
+  }
+}

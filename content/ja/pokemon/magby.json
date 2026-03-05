@@ -1,0 +1,44 @@
+{
+  "id": 240,
+  "slug": "magby",
+  "name": "ブビィ",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 75,
+    "defense": 37,
+    "spAtk": 70,
+    "spDef": 55,
+    "speed": 83
+  },
+  "abilities": [
+    "flame-body",
+    "vital-spirit"
+  ],
+  "description": "火山の　まわりに　棲んでいる。 １日の　終わりには　マグマに　浸かり 疲れを　癒している。",
+  "image": "https://assets.pokopiaguide.com/pokemon/magby.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "magmar"
+    ],
+    "habitats": []
+  }
+}

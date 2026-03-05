@@ -1,0 +1,50 @@
+{
+  "id": 279,
+  "slug": "pelipper",
+  "name": "Pelipper",
+  "types": [
+    "water",
+    "flying"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 100,
+    "spAtk": 95,
+    "spDef": 70,
+    "speed": 65
+  },
+  "abilities": [
+    "keen-eye",
+    "drizzle",
+    "rain-dish"
+  ],
+  "description": "Skimming the water’s surface, it dips its large bill in the sea, scoops up food and water, and carries it.",
+  "image": "https://assets.pokopiaguide.com/pokemon/pelipper.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "fly"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "wingull",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 58,
+        "name": "Windy Flower Bed",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

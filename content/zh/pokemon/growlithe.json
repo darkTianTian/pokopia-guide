@@ -19,5 +19,37 @@
     "正義之心"
   ],
   "description": "性格忠誠。 為了保護自己的訓練家， 會拼命地朝對手狂吠。",
-  "image": "https://assets.pokopiaguide.com/pokemon/growlithe.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/growlithe.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 62,
+        "name": "來整理吧",
+        "rarity": "common"
+      },
+      {
+        "id": 79,
+        "name": "度假村備餐",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -1,0 +1,32 @@
+{
+  "id": 105,
+  "slug": "marowak",
+  "name": "ガラガラ",
+  "types": [
+    "ground"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 80,
+    "defense": 110,
+    "spAtk": 50,
+    "spDef": 80,
+    "speed": 45
+  },
+  "abilities": [
+    "rock-head",
+    "lightning-rod",
+    "battle-armor"
+  ],
+  "description": "進化して　被っていた　母親の　骨が 一体化して　そのうえ 凶暴な　性格に　変わった。",
+  "image": "https://assets.pokopiaguide.com/pokemon/marowak.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "cubone",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

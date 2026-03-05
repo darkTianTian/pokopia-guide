@@ -20,5 +20,31 @@
     "あめうけざら"
   ],
   "description": "空気の　流れを　利用して 羽ばたかずに　空へ　舞い上がる。 海辺の　崖に　巣を　つくる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/wingull.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/wingull.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "fly"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 58,
+        "name": "風の花畑",
+        "rarity": "common"
+      }
+    ]
+  }
 }

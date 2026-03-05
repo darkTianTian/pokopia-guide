@@ -20,5 +20,31 @@
     "沙隱"
   ],
   "description": "大量棲息在山路之類的地方。 不小心踩到牠會讓牠生氣， 所以走路的時候要小心。",
-  "image": "https://assets.pokopiaguide.com/pokemon/geodude.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/geodude.png",
+  "pokopia": {
+    "specialties": [
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "totodile",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 1,
+        "name": "綠色草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

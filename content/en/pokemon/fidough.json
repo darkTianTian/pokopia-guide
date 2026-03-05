@@ -1,0 +1,33 @@
+{
+  "id": 926,
+  "slug": "fidough",
+  "name": "Fidough",
+  "types": [
+    "fairy"
+  ],
+  "stats": {
+    "hp": 37,
+    "attack": 55,
+    "defense": 70,
+    "spAtk": 30,
+    "spDef": 55,
+    "speed": 65
+  },
+  "abilities": [
+    "own-tempo",
+    "klutz"
+  ],
+  "description": "The yeast in Fidough’s breath is useful for cooking, so this Pokémon has been protected by people since long ago.",
+  "image": "https://assets.pokopiaguide.com/pokemon/fidough.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "dachsbun"
+    ],
+    "habitats": []
+  }
+}

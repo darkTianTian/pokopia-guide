@@ -1,0 +1,32 @@
+{
+  "id": 89,
+  "slug": "muk",
+  "name": "臭臭泥",
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 105,
+    "attack": 105,
+    "defense": 75,
+    "spAtk": 65,
+    "spDef": 100,
+    "speed": 50
+  },
+  "abilities": [
+    "stench",
+    "sticky-hold",
+    "poison-touch"
+  ],
+  "description": "奇臭無比！雖然臭到令人昏倒， 但臭臭泥的鼻子已經退化， 所以牠自己聞不到味道。",
+  "image": "https://assets.pokopiaguide.com/pokemon/muk.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "grimer",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

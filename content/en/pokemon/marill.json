@@ -20,5 +20,32 @@
     "Sap Sipper"
   ],
   "description": "Even after Marill swims in a cold sea, its water- repellent fur dries almost as soon as Marill leaves the water. That’s why this Pokémon is never cold.",
-  "image": "https://assets.pokopiaguide.com/pokemon/marill.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/marill.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 88,
+        "name": "Dock",
+        "rarity": "common"
+      }
+    ]
+  }
 }

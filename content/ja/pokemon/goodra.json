@@ -19,5 +19,14 @@
     "ぬめぬめ"
   ],
   "description": "長い　ツノを　伸ばす　勢いで 攻撃。　威力は　ヘビー級 ボクサーの　パンチの　１００倍だ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/goodra.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/goodra.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "graveler",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

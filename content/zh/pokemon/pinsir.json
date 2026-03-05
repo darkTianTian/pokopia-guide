@@ -19,5 +19,26 @@
     "自信過度"
   ],
   "description": "會用角緊緊夾住獵物， 就這樣把對方剪成兩半 或是把牠硬扔到天邊去。",
-  "image": "https://assets.pokopiaguide.com/pokemon/pinsir.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/pinsir.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "oddish",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

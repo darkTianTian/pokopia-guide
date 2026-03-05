@@ -30,6 +30,23 @@ export interface PokemonStats {
   speed: number
 }
 
+export interface HabitatEntry {
+  id: number
+  name: string
+  rarity: "common" | "rare" | "very-rare"
+  area?: string
+}
+
+export interface PokopiaData {
+  specialties: string[]
+  habitats: HabitatEntry[]
+  timeOfDay: string[] | null
+  weather: string[] | null
+  obtainMethod: "habitat" | "trade" | "evolution" | "event" | "unknown"
+  evolvesFrom: string | null
+  evolvesTo: string[] | null
+}
+
 export interface Pokemon {
   id: number
   slug: string
@@ -39,6 +56,7 @@ export interface Pokemon {
   abilities: string[]
   description: string
   image: string
+  pokopia?: PokopiaData | null
 }
 
 export interface Guide {

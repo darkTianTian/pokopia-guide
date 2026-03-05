@@ -1,0 +1,32 @@
+{
+  "id": 257,
+  "slug": "blaziken",
+  "name": "バシャーモ",
+  "types": [
+    "fire",
+    "fighting"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 120,
+    "defense": 70,
+    "spAtk": 110,
+    "spDef": 70,
+    "speed": 80
+  },
+  "abilities": [
+    "blaze",
+    "speed-boost"
+  ],
+  "description": "強靭な　足腰を　持ち　３０階　建ての ビルも　楽々　飛び越す　ことが　できる。 炎の　パンチで　相手を　黒焦げに　する。",
+  "image": "https://assets.pokopiaguide.com/pokemon/blaziken.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "combusken",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

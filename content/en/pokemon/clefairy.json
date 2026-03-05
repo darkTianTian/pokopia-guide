@@ -19,5 +19,28 @@
     "Friend Guard"
   ],
   "description": "It can be found in quiet mountain areas on a full moon's night. Its dancing and its tiny, faintly glowing wings confer upon it a lovely fairylike quality.",
-  "image": "https://assets.pokopiaguide.com/pokemon/clefairy.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/clefairy.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dragonair",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 131,
+        "name": "Bronze landmark",
+        "rarity": "common"
+      }
+    ]
+  }
 }

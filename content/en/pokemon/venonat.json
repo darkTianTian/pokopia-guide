@@ -20,5 +20,28 @@
     "Run Away"
   ],
   "description": "Its large eyes act as radar. In a bright place, you can see that they are clusters of many tiny eyes.",
-  "image": "https://assets.pokopiaguide.com/pokemon/venonat.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/venonat.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 7,
+        "name": "Illuminated tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -1,0 +1,34 @@
+{
+  "id": 698,
+  "slug": "amaura",
+  "name": "冰雪龍",
+  "types": [
+    "rock",
+    "ice"
+  ],
+  "stats": {
+    "hp": 77,
+    "attack": 59,
+    "defense": 50,
+    "spAtk": 67,
+    "spDef": 63,
+    "speed": 46
+  },
+  "abilities": [
+    "refrigerate",
+    "snow-warning"
+  ],
+  "description": "已經滅絕的古代寶可夢。 有時候還會以冰封狀態 被發現喔。",
+  "image": "https://assets.pokopiaguide.com/pokemon/amaura.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "aurorus"
+    ],
+    "habitats": []
+  }
+}

@@ -19,5 +19,31 @@
     "すなのちから"
   ],
   "description": "地中の　浅いところを　移動。 掘り進んだあとは　地面が 盛り上がっているので　すぐわかる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/diglett.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/diglett.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "bayleef",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 119,
+        "name": "Container snacking",
+        "rarity": "common"
+      }
+    ]
+  }
 }

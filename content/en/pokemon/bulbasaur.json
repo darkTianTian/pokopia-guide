@@ -19,5 +19,38 @@
     "Chlorophyll"
   ],
   "description": "While it is young, it uses the nutrients that are stored in the seed on its back in order to grow.",
-  "image": "https://assets.pokopiaguide.com/pokemon/bulbasaur.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/bulbasaur.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "ivysaur"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "Tall Grass",
+        "rarity": "common"
+      },
+      {
+        "id": 22,
+        "name": "Green Bench",
+        "rarity": "common"
+      }
+    ]
+  }
 }

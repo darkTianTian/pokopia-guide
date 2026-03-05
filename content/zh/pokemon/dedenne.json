@@ -1,0 +1,33 @@
+{
+  "id": 702,
+  "slug": "dedenne",
+  "name": "咚咚鼠",
+  "types": [
+    "electric",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 67,
+    "attack": 58,
+    "defense": 57,
+    "spAtk": 81,
+    "spDef": 67,
+    "speed": 101
+  },
+  "abilities": [
+    "cheek-pouch",
+    "pickup",
+    "plus"
+  ],
+  "description": "由於發電的能力不強， 因此會從插座或其他的 電氣寶可夢那裡偷電。",
+  "image": "https://assets.pokopiaguide.com/pokemon/dedenne.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

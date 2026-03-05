@@ -18,5 +18,27 @@
     "Competitive"
   ],
   "description": "Prefers cold climes and appears along coasts. It's an adorable little thing—as cute as any child—but it's also prideful, unwilling to accept handouts from people.",
-  "image": "https://assets.pokopiaguide.com/pokemon/piplup.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/piplup.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "prinplup"
+    ],
+    "habitats": []
+  }
 }

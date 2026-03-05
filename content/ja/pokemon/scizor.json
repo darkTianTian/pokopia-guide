@@ -1,0 +1,50 @@
+{
+  "id": 212,
+  "slug": "scizor",
+  "name": "ハッサム",
+  "types": [
+    "bug",
+    "steel"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 130,
+    "defense": 100,
+    "spAtk": 55,
+    "spDef": 80,
+    "speed": 65
+  },
+  "abilities": [
+    "swarm",
+    "technician",
+    "light-metal"
+  ],
+  "description": "体は　細いが　攻撃力は　凄まじい。 体の　筋肉も 金属で　できているのだ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/scizor.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "scyther",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "木かげの草むら",
+        "rarity": "common"
+      }
+    ]
+  }
+}

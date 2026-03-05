@@ -19,5 +19,14 @@
     "やるき"
   ],
   "description": "手ごろな　相手を　見つけると すぐに　殴りかかってくるので 小さくても　油断ならない。",
-  "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "nidorino",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

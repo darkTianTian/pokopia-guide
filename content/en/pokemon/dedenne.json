@@ -1,0 +1,33 @@
+{
+  "id": 702,
+  "slug": "dedenne",
+  "name": "Dedenne",
+  "types": [
+    "electric",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 67,
+    "attack": 58,
+    "defense": 57,
+    "spAtk": 81,
+    "spDef": 67,
+    "speed": 101
+  },
+  "abilities": [
+    "cheek-pouch",
+    "pickup",
+    "plus"
+  ],
+  "description": "Since Dedenne can’t generate much electricity on its own, it steals electricity from outlets or other electric Pokémon.",
+  "image": "https://assets.pokopiaguide.com/pokemon/dedenne.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

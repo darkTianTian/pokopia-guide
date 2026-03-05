@@ -1,0 +1,32 @@
+{
+  "id": 45,
+  "slug": "vileplume",
+  "name": "霸王花",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 85,
+    "spAtk": 110,
+    "spDef": 90,
+    "speed": 50
+  },
+  "abilities": [
+    "chlorophyll",
+    "effect-spore"
+  ],
+  "description": "雖然花瓣越大就能放出 越多的花粉，但頭部也會 隨之變重而容易疲倦。",
+  "image": "https://assets.pokopiaguide.com/pokemon/vileplume.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gloom",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

@@ -17,5 +17,31 @@
     "Illusion"
   ],
   "description": "A once-departed soul, returned to life in Hisui. Derives power from resentment, which rises as energy atop its head and takes on the forms of foes. In this way, Zorua vents lingering malice.",
-  "image": "https://assets.pokopiaguide.com/pokemon/zorua.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/zorua.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 56,
+        "name": "Breezy flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

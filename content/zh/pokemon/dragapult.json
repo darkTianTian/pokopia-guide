@@ -1,0 +1,33 @@
+{
+  "id": 887,
+  "slug": "dragapult",
+  "name": "多龍巴魯托",
+  "types": [
+    "dragon",
+    "ghost"
+  ],
+  "stats": {
+    "hp": 88,
+    "attack": 120,
+    "defense": 75,
+    "spAtk": 100,
+    "spDef": 75,
+    "speed": 142
+  },
+  "abilities": [
+    "clear-body",
+    "infiltrator",
+    "cursed-body"
+  ],
+  "description": "牠角裡的多龍梅西亞 似乎滿心期待著能被 以音速發射出去。",
+  "image": "https://assets.pokopiaguide.com/pokemon/dragapult.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "drakloak",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

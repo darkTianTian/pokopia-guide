@@ -19,5 +19,31 @@
     "マジックガード"
   ],
   "description": "眠ったまま　テレポート　できる。 眠りが　深いほど　離れた　場所に 移動する　という。",
-  "image": "https://assets.pokopiaguide.com/pokemon/abra.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/abra.png",
+  "pokopia": {
+    "specialties": [
+      "teleport"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 152,
+        "name": "Fortune-teller's table",
+        "rarity": "common"
+      }
+    ]
+  }
 }

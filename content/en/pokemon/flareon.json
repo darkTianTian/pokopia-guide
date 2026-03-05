@@ -18,5 +18,31 @@
     "Guts"
   ],
   "description": "Flames burn within a saclike organ inside this Pokémon. When Flareon inhales, these flames grow in intensity, reaching a mighty 3,000 degrees Fahrenheit.",
-  "image": "https://assets.pokopiaguide.com/pokemon/flareon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/flareon.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 204,
+        "name": "Burning-hot spice",
+        "rarity": "common"
+      }
+    ]
+  }
 }

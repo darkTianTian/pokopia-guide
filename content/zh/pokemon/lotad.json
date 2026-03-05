@@ -20,5 +20,36 @@
     "我行我素"
   ],
   "description": "因為葉子長得太大太重， 所以才會改變習性， 漂浮在水面上生活。",
-  "image": "https://assets.pokopiaguide.com/pokemon/lotad.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/lotad.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 101,
+        "name": "Hydrated red tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 109,
+        "name": "歡樂水窪",
+        "rarity": "common"
+      }
+    ]
+  }
 }

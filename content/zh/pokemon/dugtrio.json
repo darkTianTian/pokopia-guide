@@ -1,0 +1,50 @@
+{
+  "id": 51,
+  "slug": "dugtrio",
+  "name": "三地鼠",
+  "types": [
+    "ground"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 100,
+    "defense": 50,
+    "spAtk": 50,
+    "spDef": 70,
+    "speed": 120
+  },
+  "abilities": [
+    "sand-veil",
+    "arena-trap",
+    "sand-force"
+  ],
+  "description": "三胞胎的地鼠，擁有能夠挖掘到 地下１００公里深的潛力。沒人知道 牠在地下的部分究竟長成什麼樣子。",
+  "image": "https://assets.pokopiaguide.com/pokemon/dugtrio.png",
+  "pokopia": {
+    "specialties": [
+      "hype",
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "diglett",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 123,
+        "name": "House party",
+        "rarity": "common"
+      }
+    ]
+  }
+}

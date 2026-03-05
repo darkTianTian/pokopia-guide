@@ -1,0 +1,33 @@
+{
+  "id": 441,
+  "slug": "chatot",
+  "name": "聒噪鳥",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 76,
+    "attack": 65,
+    "defense": 45,
+    "spAtk": 92,
+    "spDef": 42,
+    "speed": 91
+  },
+  "abilities": [
+    "keen-eye",
+    "tangled-feet",
+    "big-pecks"
+  ],
+  "description": "A versatile performer skilled in the imitation of human speech. It is said that older, more experienced Chatot can even understand the meaning of the words they mimic.",
+  "image": "https://assets.pokopiaguide.com/pokemon/chatot.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

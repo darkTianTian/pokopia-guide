@@ -1,0 +1,31 @@
+{
+  "id": 9,
+  "slug": "blastoise",
+  "name": "カメックス",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 79,
+    "attack": 83,
+    "defense": 100,
+    "spAtk": 85,
+    "spDef": 105,
+    "speed": 78
+  },
+  "abilities": [
+    "torrent",
+    "rain-dish"
+  ],
+  "description": "甲羅の　ロケット砲　から 噴き出した　ジェット水流は ぶ厚い　鉄板も　つらぬく。",
+  "image": "https://assets.pokopiaguide.com/pokemon/blastoise.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "wartortle",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

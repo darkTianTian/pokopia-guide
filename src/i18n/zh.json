@@ -10,6 +10,10 @@
     "guides": "攻略",
     "events": "活動",
     "habitat": "家園建設",
+    "habitatList": "棲息地列表",
+    "habitatOverview": "總覽",
+    "habitatCrafting": "家具製作配方",
+    "comingSoon": "即將推出",
     "explore": "探索地圖",
     "multiplayer": "連線指南"
   },
@@ -51,7 +55,15 @@
     "prev": "上一頁",
     "next": "下一頁",
     "page": "第",
-    "dataDisclaimer": "資料來源於寶可夢主系列遊戲，Pokopia 遊戲內實際資料將在發售後更新。"
+    "dataDisclaimer": "資料來源於寶可夢主系列遊戲，Pokopia 遊戲內實際資料將在發售後更新。",
+    "pokopiaInfo": "Pokopia 資訊",
+    "specialty": "特長",
+    "habitatLabel": "棲息地",
+
+    "timeOfDay": "出現時間",
+    "weatherLabel": "天氣",
+    "obtainMethod": "獲取方式",
+    "evolution": "進化"
   },
   "guides": {
     "title": "攻略文章",
@@ -81,7 +93,13 @@
     "title": "家園建設攻略",
     "metaTitle": "家園建設",
     "metaDescription": "Pokémon Pokopia 家園建設攻略：棲息地創造、招式改造環境、家具製作配方一網打盡。",
-    "description": "棲息地創造、招式改造環境、家具製作配方等內容正在緊鑼密鼓地準備中。"
+    "description": "棲息地創造、招式改造環境、家具製作配方等內容正在緊鑼密鼓地準備中。",
+    "listTitle": "棲息地列表",
+    "listDescription": "瀏覽所有棲息地，了解每個棲息地中可以遇到的寶可夢。",
+    "listMetaDescription": "Pokémon Pokopia 完整棲息地列表，查看各棲息地可遇寶可夢。",
+    "pokemonCount": "隻寶可夢",
+    "detailDescription": "在這個棲息地中可以遇到的寶可夢。",
+    "breadcrumbList": "棲息地列表"
   },
   "quests": {
     "title": "任務攻略",
@@ -110,6 +128,7 @@
     "guides": "攻略文章",
     "events": "限時活動",
     "habitat": "家園建設",
+    "habitatList": "棲息地列表",
     "explore": "探索地圖",
     "multiplayer": "連線指南"
   },
@@ -124,6 +143,58 @@
     "spAtk": "特攻",
     "spDef": "特防",
     "speed": "速度"
+  },
+  "timeOfDay": {
+    "dawn": "黎明",
+    "day": "白天",
+    "dusk": "黃昏",
+    "night": "夜晚"
+  },
+  "weather": {
+    "sunny": "晴天",
+    "cloudy": "陰天",
+    "rainy": "雨天",
+    "snowy": "雪天"
+  },
+  "rarity": {
+    "common": "普通",
+    "rare": "稀有",
+    "very-rare": "非常稀有"
+  },
+  "obtainMethods": {
+    "habitat": "棲息地出現",
+    "trade": "交易獲取",
+    "evolution": "進化",
+    "event": "限時活動",
+    "unknown": "未知"
+  },
+  "specialties": {
+    "grow": "栽培",
+    "burn": "燃燒",
+    "water": "澆水",
+    "build": "建造",
+    "chop": "砍伐",
+    "crush": "粉碎",
+    "search": "搜索",
+    "fly": "飛行",
+    "gather": "收集",
+    "generate": "發電",
+    "illuminate": "照明",
+    "explode": "爆破",
+    "bulldoze": "推平",
+    "recycle": "回收",
+    "trade": "交易",
+    "storage": "儲物",
+    "teleport": "傳送",
+    "litter": "掉落",
+    "paint": "上色",
+    "appraise": "鑑定",
+    "dream-island": "夢之島",
+    "gather-honey": "採蜜",
+    "yawn": "哈欠",
+    "eat": "進食",
+    "hype": "鼓舞",
+    "transform": "變身"
   },
   "types": {
     "normal": "一般",

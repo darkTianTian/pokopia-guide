@@ -1,0 +1,32 @@
+{
+  "id": 395,
+  "slug": "empoleon",
+  "name": "Empoleon",
+  "types": [
+    "water",
+    "steel"
+  ],
+  "stats": {
+    "hp": 84,
+    "attack": 86,
+    "defense": 88,
+    "spAtk": 111,
+    "spDef": 101,
+    "speed": 60
+  },
+  "abilities": [
+    "torrent",
+    "competitive"
+  ],
+  "description": "Since ancient times, it has been revered by the people of Hisui, who call it the Master of the Waves. Its wings are a match for even master-crafted blades.",
+  "image": "https://assets.pokopiaguide.com/pokemon/empoleon.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "prinplup",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

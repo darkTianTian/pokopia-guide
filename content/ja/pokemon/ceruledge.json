@@ -1,0 +1,32 @@
+{
+  "id": 937,
+  "slug": "ceruledge",
+  "name": "ソウブレイズ",
+  "types": [
+    "fire",
+    "ghost"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 125,
+    "defense": 80,
+    "spAtk": 60,
+    "spDef": 100,
+    "speed": 85
+  },
+  "abilities": [
+    "flash-fire",
+    "weak-armor"
+  ],
+  "description": "An old set of armor steeped in grudges caused this Pokémon’s evolution. Ceruledge cuts its enemies to pieces without mercy.",
+  "image": "https://assets.pokopiaguide.com/pokemon/ceruledge.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charcadet",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

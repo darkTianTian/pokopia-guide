@@ -20,5 +20,16 @@
     "Technician"
   ],
   "description": "Known to turn up in bustling marketplaces now and again. It mimics people much as a child would, then watches how they react, eyes sparkling.",
-  "image": "https://assets.pokopiaguide.com/pokemon/mime-jr.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/mime-jr.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "mr-mime"
+    ],
+    "habitats": []
+  }
 }

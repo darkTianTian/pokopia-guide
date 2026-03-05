@@ -1,0 +1,33 @@
+{
+  "id": 907,
+  "slug": "floragato",
+  "name": "蒂蕾喵",
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 61,
+    "attack": 80,
+    "defense": 63,
+    "spAtk": 60,
+    "spDef": 63,
+    "speed": 83
+  },
+  "abilities": [
+    "overgrow",
+    "protean"
+  ],
+  "description": "The hardness of Floragato’s fur depends on the Pokémon’s mood. When Floragato is prepared to battle, its fur becomes pointed and needle sharp.",
+  "image": "https://assets.pokopiaguide.com/pokemon/floragato.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "sprigatito",
+    "evolvesTo": [
+      "meowscarada"
+    ],
+    "habitats": []
+  }
+}

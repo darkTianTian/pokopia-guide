@@ -19,5 +19,16 @@
     "すいすい"
   ],
   "description": "ストレスが　溜まると　頭痛が エスカレート。　強力な　念力で まわりを　圧倒する。",
-  "image": "https://assets.pokopiaguide.com/pokemon/psyduck.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/psyduck.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "golduck"
+    ],
+    "habitats": []
+  }
 }

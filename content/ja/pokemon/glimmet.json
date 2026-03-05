@@ -1,0 +1,51 @@
+{
+  "id": 969,
+  "slug": "glimmet",
+  "name": "キラーメ",
+  "types": [
+    "rock",
+    "poison"
+  ],
+  "stats": {
+    "hp": 48,
+    "attack": 35,
+    "defense": 42,
+    "spAtk": 105,
+    "spDef": 60,
+    "speed": 60
+  },
+  "abilities": [
+    "toxic-debris",
+    "corrosion"
+  ],
+  "description": "Glimmet’s toxic mineral crystals look just like flower petals. This Pokémon scatters poisonous powder like pollen to protect itself.",
+  "image": "https://assets.pokopiaguide.com/pokemon/glimmet.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "glimmora"
+    ],
+    "habitats": [
+      {
+        "id": 118,
+        "name": "Creepy white rocks",
+        "rarity": "common"
+      }
+    ]
+  }
+}

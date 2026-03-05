@@ -19,5 +19,31 @@
     "沙之力"
   ],
   "description": "如果用力按住牠， 牠就會分泌出神秘的紫色液體。 雖然液體無害，不過黏糊糊的。",
-  "image": "https://assets.pokopiaguide.com/pokemon/shellos.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/shellos.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "growlithe",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 27,
+        "name": "路標看板",
+        "rarity": "common"
+      }
+    ]
+  }
 }

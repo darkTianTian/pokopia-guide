@@ -19,5 +19,31 @@
     "危險預知"
   ],
   "description": "由於不穩定的基因， 蘊含著各式各樣進化 可能性的特殊寶可夢。",
-  "image": "https://assets.pokopiaguide.com/pokemon/eevee.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/eevee.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 8,
+        "name": "美麗花田",
+        "rarity": "common"
+      }
+    ]
+  }
 }

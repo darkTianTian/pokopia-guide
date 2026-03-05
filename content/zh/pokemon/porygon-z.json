@@ -1,0 +1,32 @@
+{
+  "id": 474,
+  "slug": "porygon-z",
+  "name": "多邊獸Ｚ",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 85,
+    "attack": 80,
+    "defense": 70,
+    "spAtk": 135,
+    "spDef": 75,
+    "speed": 90
+  },
+  "abilities": [
+    "adaptability",
+    "download",
+    "analytic"
+  ],
+  "description": "據說是在追加程式後進化了， 但牠的改變是否真的是進化， 在學術界也是意見分歧。",
+  "image": "https://assets.pokopiaguide.com/pokemon/porygon-z.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "porygon2",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

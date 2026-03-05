@@ -1,0 +1,44 @@
+{
+  "id": 36,
+  "slug": "clefable",
+  "name": "皮可西",
+  "types": [
+    "fairy"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 70,
+    "defense": 73,
+    "spAtk": 95,
+    "spDef": 90,
+    "speed": 60
+  },
+  "abilities": [
+    "cute-charm",
+    "magic-guard",
+    "unaware"
+  ],
+  "description": "聽覺靈敏，連１公里以外 針落地的聲音都聽得見， 因此平時會待在安靜的地方。",
+  "image": "https://assets.pokopiaguide.com/pokemon/clefable.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "clefairy",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 131,
+        "name": "銅像觀光點",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

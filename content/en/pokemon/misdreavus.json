@@ -1,0 +1,46 @@
+{
+  "id": 200,
+  "slug": "misdreavus",
+  "name": "Misdreavus",
+  "types": [
+    "ghost"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 60,
+    "spAtk": 85,
+    "spDef": 85,
+    "speed": 85
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "description": "It conceals itself in darkness, sending chills up travelers' spines with its childlike weeping. As it observes the frightened travelers with glee, the red orbs upon its chest let off an eerie light.",
+  "image": "https://assets.pokopiaguide.com/pokemon/misdreavus.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "mismagius"
+    ],
+    "habitats": [
+      {
+        "id": 142,
+        "name": "Fluffy flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
+}

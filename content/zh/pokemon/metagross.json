@@ -1,0 +1,32 @@
+{
+  "id": 376,
+  "slug": "metagross",
+  "name": "巨金怪",
+  "types": [
+    "steel",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 135,
+    "defense": 130,
+    "spAtk": 95,
+    "spDef": 90,
+    "speed": 70
+  },
+  "abilities": [
+    "clear-body",
+    "light-metal"
+  ],
+  "description": "２隻金屬怪組合起來的 樣子。會發揮堪比超級 電腦的智能去打倒敵人。",
+  "image": "https://assets.pokopiaguide.com/pokemon/metagross.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "metang",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

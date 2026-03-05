@@ -1,0 +1,32 @@
+{
+  "id": 237,
+  "slug": "hitmontop",
+  "name": "Hitmontop",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 95,
+    "defense": 95,
+    "spAtk": 35,
+    "spDef": 110,
+    "speed": 70
+  },
+  "abilities": [
+    "intimidate",
+    "technician",
+    "steadfast"
+  ],
+  "description": "After doing a handstand to throw off the opponent’s timing, it presents its fancy kick moves.",
+  "image": "https://assets.pokopiaguide.com/pokemon/hitmontop.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tyrogue",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

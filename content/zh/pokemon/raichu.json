@@ -1,0 +1,49 @@
+{
+  "id": 26,
+  "slug": "raichu",
+  "name": "雷丘",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 90,
+    "defense": 55,
+    "spAtk": 90,
+    "spDef": 80,
+    "speed": 110
+  },
+  "abilities": [
+    "static",
+    "lightning-rod"
+  ],
+  "description": "如果電囊空了， 牠就會直直地豎起尾巴， 收集空氣中的電流。",
+  "image": "https://assets.pokopiaguide.com/pokemon/raichu.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pikachu",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 176,
+        "name": "Nature's market",
+        "rarity": "common"
+      }
+    ]
+  }
+}

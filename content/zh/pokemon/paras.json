@@ -20,5 +20,14 @@
     "濕氣"
   ],
   "description": "會挖掘洞穴，從樹木的根部 獲取營養，但幾乎所有的營養 都會被背上的蘑菇奪走。",
-  "image": "https://assets.pokopiaguide.com/pokemon/paras.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/paras.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pidgey",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

@@ -19,5 +19,31 @@
     "活力"
   ],
   "description": "從早到晚都在採集花蜜。 這一切都是為了 自己的族群和蜂女王。",
-  "image": "https://assets.pokopiaguide.com/pokemon/combee.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/combee.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "mankey",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 8,
+        "name": "美麗花田",
+        "rarity": "common"
+      }
+    ]
+  }
 }

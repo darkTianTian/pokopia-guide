@@ -19,5 +19,22 @@
     "かるわざ"
   ],
   "description": "脚が　自由に　伸び縮みして 遠く　離れている　場合でも 相手を　蹴り上げることが　できる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/hitmonlee.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/hitmonlee.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tyrogue",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 25,
+        "name": "かけこみ救急所",
+        "rarity": "common"
+      }
+    ]
+  }
 }

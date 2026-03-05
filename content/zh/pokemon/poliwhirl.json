@@ -1,0 +1,35 @@
+{
+  "id": 61,
+  "slug": "poliwhirl",
+  "name": "蚊香君",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 65,
+    "spAtk": 50,
+    "spDef": 50,
+    "speed": 90
+  },
+  "abilities": [
+    "water-absorb",
+    "damp",
+    "swift-swim"
+  ],
+  "description": "流的汗是又黏又滑的黏液狀。 即使被敵人捉住， 也能滑溜溜地輕易逃脫。",
+  "image": "https://assets.pokopiaguide.com/pokemon/poliwhirl.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "poliwag",
+    "evolvesTo": [
+      "poliwrath",
+      "politoed"
+    ],
+    "habitats": []
+  }
+}

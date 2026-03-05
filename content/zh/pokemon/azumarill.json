@@ -1,0 +1,49 @@
+{
+  "id": 184,
+  "slug": "azumarill",
+  "name": "瑪力露麗",
+  "types": [
+    "water",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 100,
+    "attack": 50,
+    "defense": 80,
+    "spAtk": 60,
+    "spDef": 80,
+    "speed": 50
+  },
+  "abilities": [
+    "thick-fat",
+    "huge-power",
+    "sap-sipper"
+  ],
+  "description": "會製作填滿空氣的泡泡。 當露力麗到河裡玩耍的時候， 牠就會用泡泡把露力麗包起來。",
+  "image": "https://assets.pokopiaguide.com/pokemon/azumarill.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "buil"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "marill",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 88,
+        "name": "碼頭",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

@@ -18,5 +18,27 @@
     "Rain Dish"
   ],
   "description": "It cleverly controls its furry ears and tail to maintain its balance while swimming.",
-  "image": "https://assets.pokopiaguide.com/pokemon/wartortle.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/wartortle.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "squirtle",
+    "evolvesTo": [
+      "blastoise"
+    ],
+    "habitats": []
+  }
 }

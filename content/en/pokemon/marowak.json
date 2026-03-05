@@ -1,0 +1,32 @@
+{
+  "id": 105,
+  "slug": "marowak",
+  "name": "Marowak",
+  "types": [
+    "ground"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 80,
+    "defense": 110,
+    "spAtk": 50,
+    "spDef": 80,
+    "speed": 45
+  },
+  "abilities": [
+    "rock-head",
+    "lightning-rod",
+    "battle-armor"
+  ],
+  "description": "When this Pokémon evolved, the skull of its mother fused to it. Marowak’s temperament also turned vicious at the same time.",
+  "image": "https://assets.pokopiaguide.com/pokemon/marowak.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "cubone",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

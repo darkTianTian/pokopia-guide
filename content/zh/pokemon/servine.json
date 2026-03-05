@@ -1,0 +1,33 @@
+{
+  "id": 496,
+  "slug": "servine",
+  "name": "青藤蛇",
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 75,
+    "spAtk": 60,
+    "spDef": 75,
+    "speed": 83
+  },
+  "abilities": [
+    "overgrow",
+    "contrary"
+  ],
+  "description": "When it gets dirty, its leaves can’t be used in photosynthesis, so it always keeps itself clean.",
+  "image": "https://assets.pokopiaguide.com/pokemon/servine.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "snivy",
+    "evolvesTo": [
+      "serperior"
+    ],
+    "habitats": []
+  }
+}

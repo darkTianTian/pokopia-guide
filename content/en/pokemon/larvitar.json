@@ -19,5 +19,32 @@
     "Sand Veil"
   ],
   "description": "It feeds on soil. After it has eaten a large mountain, it will fall asleep so it can grow.",
-  "image": "https://assets.pokopiaguide.com/pokemon/larvitar.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/larvitar.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "golbat",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 110,
+        "name": "Mossy rest spot",
+        "rarity": "common"
+      }
+    ]
+  }
 }

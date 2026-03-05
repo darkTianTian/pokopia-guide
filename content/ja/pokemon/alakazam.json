@@ -19,5 +19,14 @@
     "マジックガード"
   ],
   "description": "強力な　超能力を　操る。 両手の　スプーンは その　力で　作りだしたという。",
-  "image": "https://assets.pokopiaguide.com/pokemon/alakazam.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/alakazam.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kadabra",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

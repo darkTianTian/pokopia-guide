@@ -18,5 +18,16 @@
     "神奇鱗片"
   ],
   "description": "能將力量集中在尾巴的珠子， 藉此操縱天氣。全身散發著 氣場的樣子非常神秘。",
-  "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dratini",
+    "evolvesTo": [
+      "dragonite"
+    ],
+    "habitats": []
+  }
 }

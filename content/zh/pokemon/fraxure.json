@@ -1,0 +1,45 @@
+{
+  "id": 611,
+  "slug": "fraxure",
+  "name": "斧牙龍",
+  "types": [
+    "dragon"
+  ],
+  "stats": {
+    "hp": 66,
+    "attack": 117,
+    "defense": 70,
+    "spAtk": 40,
+    "spDef": 50,
+    "speed": 67
+  },
+  "abilities": [
+    "rivalry",
+    "mold-breaker",
+    "unnerve"
+  ],
+  "description": "皮膚像盔甲一樣堅硬。 非常擅長在撞擊的同時 用牙齒猛刺的戰法。",
+  "image": "https://assets.pokopiaguide.com/pokemon/fraxure.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "axew",
+    "evolvesTo": [
+      "haxorus"
+    ],
+    "habitats": []
+  }
+}

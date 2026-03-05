@@ -1,0 +1,31 @@
+{
+  "id": 157,
+  "slug": "typhlosion",
+  "name": "バクフーン",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 78,
+    "attack": 84,
+    "defense": 78,
+    "spAtk": 109,
+    "spDef": 85,
+    "speed": 100
+  },
+  "abilities": [
+    "blaze",
+    "flash-fire"
+  ],
+  "description": "灼熱の　炎で　周りに　陽炎を つくりだして　姿を　隠す　ことが　できる。 燃えあがる　爆風は　すべてを　焼き尽くすぞ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/typhlosion.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "quilava",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

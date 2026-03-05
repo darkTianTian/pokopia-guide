@@ -18,5 +18,31 @@
     "Chlorophyll"
   ],
   "description": "Cells similar to those of plants have been found in its fur. Its hard tail can fell a large tree with one stroke, and the tail's sharpness exceeds even that of a sword crafted by a master.",
-  "image": "https://assets.pokopiaguide.com/pokemon/leafeon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/leafeon.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "shroomish",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 207,
+        "name": "Leafy greens sandwich",
+        "rarity": "common"
+      }
+    ]
+  }
 }

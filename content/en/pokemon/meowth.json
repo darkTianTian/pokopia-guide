@@ -19,5 +19,31 @@
     "Unnerve"
   ],
   "description": "It loves to collect shiny things. If it’s in a good mood, it might even let its Trainer have a look at its hoard of treasures.",
-  "image": "https://assets.pokopiaguide.com/pokemon/meowth.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/meowth.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 91,
+        "name": "Working the register",
+        "rarity": "common"
+      }
+    ]
+  }
 }

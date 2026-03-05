@@ -20,5 +20,31 @@
     "雨盤"
   ],
   "description": "利用氣流， 不拍打翅膀就能飛上天空。 會在海邊的岩壁上築巢。",
-  "image": "https://assets.pokopiaguide.com/pokemon/wingull.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/wingull.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "fly"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 58,
+        "name": "風之花田",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -18,5 +18,16 @@
     "Marvel Scale"
   ],
   "description": "This Pokémon gathers power in the orbs on its tail and controls the weather. When enshrouded by an aura, Dragonair has a mystical appearance.",
-  "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dratini",
+    "evolvesTo": [
+      "dragonite"
+    ],
+    "habitats": []
+  }
 }

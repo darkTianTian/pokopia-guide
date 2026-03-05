@@ -1,0 +1,33 @@
+{
+  "id": 423,
+  "slug": "gastrodon",
+  "name": "海兔獸",
+  "types": [
+    "water",
+    "ground"
+  ],
+  "stats": {
+    "hp": 111,
+    "attack": 83,
+    "defense": 68,
+    "spAtk": 92,
+    "spDef": 82,
+    "speed": 39
+  },
+  "abilities": [
+    "sticky-hold",
+    "storm-drain",
+    "sand-force"
+  ],
+  "description": "身體軟綿綿的但十分強韌。 因為牠身體的軟度可以 幫助牠分散所受到的衝擊。",
+  "image": "https://assets.pokopiaguide.com/pokemon/gastrodon.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "shellos",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

@@ -19,5 +19,14 @@
     "正義之心"
   ],
   "description": "從古時候起就是擄獲 眾多人心的美麗寶可夢。 能像飛一樣輕盈地奔跑。",
-  "image": "https://assets.pokopiaguide.com/pokemon/arcanine.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/arcanine.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "grimer",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

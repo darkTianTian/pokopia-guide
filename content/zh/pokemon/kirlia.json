@@ -1,0 +1,39 @@
+{
+  "id": 281,
+  "slug": "kirlia",
+  "name": "奇魯莉安",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 38,
+    "attack": 35,
+    "defense": 35,
+    "spAtk": 65,
+    "spDef": 55,
+    "speed": 50
+  },
+  "abilities": [
+    "synchronize",
+    "trace",
+    "telepathy"
+  ],
+  "description": "能夠操縱精神力量 來扭曲周圍的空間， 讓自己看見未來。",
+  "image": "https://assets.pokopiaguide.com/pokemon/kirlia.png",
+  "pokopia": {
+    "specialties": [
+      "teleport",
+      "trade"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ralts",
+    "evolvesTo": [
+      "gardevoir",
+      "gallade"
+    ],
+    "habitats": []
+  }
+}

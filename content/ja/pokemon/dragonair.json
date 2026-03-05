@@ -18,5 +18,16 @@
     "ふしぎなうろこ"
   ],
   "description": "きれいな　海や　湖に　棲む。 天候を　操る　力で 風に　乗り　空へと　昇る。",
-  "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dratini",
+    "evolvesTo": [
+      "dragonite"
+    ],
+    "habitats": []
+  }
 }

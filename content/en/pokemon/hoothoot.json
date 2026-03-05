@@ -20,5 +20,29 @@
     "Tinted Lens"
   ],
   "description": "It begins to hoot at the same time every day. Some Trainers use them in place of clocks.",
-  "image": "https://assets.pokopiaguide.com/pokemon/hoothoot.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/hoothoot.png",
+  "pokopia": {
+    "specialties": [
+      "trade",
+      "fly"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 31,
+        "name": "Gently lit bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

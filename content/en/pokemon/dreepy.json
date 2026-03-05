@@ -1,0 +1,53 @@
+{
+  "id": 885,
+  "slug": "dreepy",
+  "name": "Dreepy",
+  "types": [
+    "dragon",
+    "ghost"
+  ],
+  "stats": {
+    "hp": 28,
+    "attack": 60,
+    "defense": 30,
+    "spAtk": 40,
+    "spDef": 30,
+    "speed": 82
+  },
+  "abilities": [
+    "clear-body",
+    "infiltrator",
+    "cursed-body"
+  ],
+  "description": "If this weak Pokémon is by itself, a mere child could defeat it. But if Dreepy has friends to help it train, it can evolve and become much stronger.",
+  "image": "https://assets.pokopiaguide.com/pokemon/dreepy.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "drakloak"
+    ],
+    "habitats": [
+      {
+        "id": 138,
+        "name": "Tree-shaded pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

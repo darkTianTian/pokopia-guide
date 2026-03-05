@@ -19,5 +19,14 @@
     "Rattled"
   ],
   "description": "Though it pretends to be a tree, it fails to fool even children. To the touch, its body feels more like rock than tree bark. Sudowoodo's extreme aversion to water merits special note.",
-  "image": "https://assets.pokopiaguide.com/pokemon/sudowoodo.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/sudowoodo.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ledyba",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

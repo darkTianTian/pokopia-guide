@@ -20,5 +20,32 @@
     "再生力"
   ],
   "description": "尾巴浸在水裡時會滲出 甜味，牠會以此當誘餌 來吸引並且釣起寶可夢。",
-  "image": "https://assets.pokopiaguide.com/pokemon/slowpoke.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/slowpoke.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "yawn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ekans",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 5,
+        "name": "海浪邊草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

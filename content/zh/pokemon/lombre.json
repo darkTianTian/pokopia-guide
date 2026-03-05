@@ -1,0 +1,35 @@
+{
+  "id": 271,
+  "slug": "lombre",
+  "name": "蓮帽小童",
+  "types": [
+    "water",
+    "grass"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 50,
+    "spAtk": 60,
+    "spDef": 70,
+    "speed": 50
+  },
+  "abilities": [
+    "swift-swim",
+    "rain-dish",
+    "own-tempo"
+  ],
+  "description": "住在日照充足的水邊。 白天在水草做的床上睡覺， 太陽下山後就會出來活動。",
+  "image": "https://assets.pokopiaguide.com/pokemon/lombre.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "lotad",
+    "evolvesTo": [
+      "ludicolo"
+    ],
+    "habitats": []
+  }
+}

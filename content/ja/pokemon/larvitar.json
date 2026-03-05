@@ -19,5 +19,32 @@
     "すながくれ"
   ],
   "description": "土を　食べて　生きている。 大きな　山ひとつ　食べ終わると 成長のため　眠りはじめる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/larvitar.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/larvitar.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "golbat",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 110,
+        "name": "コケまみれ",
+        "rarity": "common"
+      }
+    ]
+  }
 }

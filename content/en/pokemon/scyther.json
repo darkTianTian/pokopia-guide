@@ -20,5 +20,31 @@
     "Steadfast"
   ],
   "description": "The large, wickedly sharp scythes on its forearms are truly fearsome weapons. Prey's attempts to flee are unfailingly thwarted by this Pokémon's nimble motions.",
-  "image": "https://assets.pokopiaguide.com/pokemon/scyther.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/scyther.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "zubat",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "Tree-shaded  tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
 }

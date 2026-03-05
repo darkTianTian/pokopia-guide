@@ -20,5 +20,32 @@
     "自信過度"
   ],
   "description": "能夠輕輕鬆鬆舉起比自己 體重還要重１００倍的物體， 是以一身怪力為傲的寶可夢。",
-  "image": "https://assets.pokopiaguide.com/pokemon/heracross.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/heracross.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "樹蔭草叢",
+        "rarity": "rare"
+      }
+    ]
+  }
 }

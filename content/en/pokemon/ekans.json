@@ -1,0 +1,34 @@
+{
+  "id": 23,
+  "slug": "ekans",
+  "name": "Ekans",
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 60,
+    "defense": 44,
+    "spAtk": 40,
+    "spDef": 54,
+    "speed": 55
+  },
+  "abilities": [
+    "intimidate",
+    "shed-skin",
+    "unnerve"
+  ],
+  "description": "The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest.",
+  "image": "https://assets.pokopiaguide.com/pokemon/ekans.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "arbok"
+    ],
+    "habitats": []
+  }
+}

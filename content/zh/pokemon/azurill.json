@@ -20,5 +20,37 @@
     "食草"
   ],
   "description": "雖然是個性溫順的寶可夢， 但生氣時就會大力揮甩 尾巴上的大球來擊打對手。",
-  "image": "https://assets.pokopiaguide.com/pokemon/azurill.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/azurill.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 53,
+        "name": "濕潤黃色草叢",
+        "rarity": "common"
+      },
+      {
+        "id": 62,
+        "name": "來整理吧",
+        "rarity": "common"
+      }
+    ]
+  }
 }

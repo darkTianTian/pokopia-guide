@@ -1,0 +1,53 @@
+{
+  "id": 95,
+  "slug": "onix",
+  "name": "Onix",
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 45,
+    "defense": 160,
+    "spAtk": 30,
+    "spDef": 45,
+    "speed": 70
+  },
+  "abilities": [
+    "rock-head",
+    "sturdy",
+    "weak-armor"
+  ],
+  "description": "This chain of immense stones resembles a giant serpent. Tremors shake the earth above as it burrows deep beneath the ground, feeding on boulders as it goes.",
+  "image": "https://assets.pokopiaguide.com/pokemon/onix.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "steelix"
+    ],
+    "habitats": [
+      {
+        "id": 37,
+        "name": "Smooth tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

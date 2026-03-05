@@ -1,0 +1,48 @@
+{
+  "id": 239,
+  "slug": "elekid",
+  "name": "エレキッド",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 63,
+    "defense": 37,
+    "spAtk": 65,
+    "spDef": 55,
+    "speed": 95
+  },
+  "abilities": [
+    "static",
+    "vital-spirit"
+  ],
+  "description": "まだ　電気を　溜めるのが　下手。 電気を　食べるために　民家に 忍びこみ　コンセントを　探す。",
+  "image": "https://assets.pokopiaguide.com/pokemon/elekid.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "electabuzz"
+    ],
+    "habitats": [
+      {
+        "id": 84,
+        "name": "自販機セット",
+        "rarity": "common"
+      }
+    ]
+  }
+}

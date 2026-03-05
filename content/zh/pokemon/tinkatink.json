@@ -1,0 +1,35 @@
+{
+  "id": 957,
+  "slug": "tinkatink",
+  "name": "小鍛匠",
+  "types": [
+    "fairy",
+    "steel"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 45,
+    "defense": 45,
+    "spAtk": 35,
+    "spDef": 64,
+    "speed": 58
+  },
+  "abilities": [
+    "mold-breaker",
+    "own-tempo",
+    "pickpocket"
+  ],
+  "description": "This Pokémon pounds iron scraps together to make a hammer. It will remake the hammer again and again until it’s satisfied with the result.",
+  "image": "https://assets.pokopiaguide.com/pokemon/tinkatink.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "tinkatuff"
+    ],
+    "habitats": []
+  }
+}

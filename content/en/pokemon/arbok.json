@@ -1,0 +1,32 @@
+{
+  "id": 24,
+  "slug": "arbok",
+  "name": "Arbok",
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 95,
+    "defense": 69,
+    "spAtk": 65,
+    "spDef": 79,
+    "speed": 80
+  },
+  "abilities": [
+    "intimidate",
+    "shed-skin",
+    "unnerve"
+  ],
+  "description": "The frightening patterns on its belly have been studied. Six variations have been confirmed.",
+  "image": "https://assets.pokopiaguide.com/pokemon/arbok.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ekans",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

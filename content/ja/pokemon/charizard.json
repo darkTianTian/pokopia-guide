@@ -19,5 +19,14 @@
     "サンパワー"
   ],
   "description": "地上　１４００メートル　まで 羽を　使って　飛ぶことができる。 高熱の　炎を　吐く。",
-  "image": "https://assets.pokopiaguide.com/pokemon/charizard.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/charizard.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charmeleon",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

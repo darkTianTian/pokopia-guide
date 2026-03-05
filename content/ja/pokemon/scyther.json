@@ -20,5 +20,31 @@
     "ふくつのこころ"
   ],
   "description": "森の中で　たくさんの　木が 切り倒された　場所を　見つけたら そこは　ストライクの　縄張りだ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/scyther.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/scyther.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "zubat",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "木かげの草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

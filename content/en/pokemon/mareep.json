@@ -18,5 +18,32 @@
     "Plus"
   ],
   "description": "Rubbing its fleece generates electricity. You’ll want to pet it because it’s cute, but if you use your bare hand, you’ll get a painful shock.",
-  "image": "https://assets.pokopiaguide.com/pokemon/mareep.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/mareep.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 55,
+        "name": "Knitting station",
+        "rarity": "common"
+      }
+    ]
+  }
 }

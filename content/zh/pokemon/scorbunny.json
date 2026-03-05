@@ -1,0 +1,50 @@
+{
+  "id": 813,
+  "slug": "scorbunny",
+  "name": "炎兔兒",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 71,
+    "defense": 40,
+    "spAtk": 40,
+    "spDef": 40,
+    "speed": 69
+  },
+  "abilities": [
+    "blaze",
+    "libero"
+  ],
+  "description": "一旦做好了戰鬥的準備， 牠鼻頭上和腳底的肉球 就會散發出極度的高溫。",
+  "image": "https://assets.pokopiaguide.com/pokemon/scorbunny.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "raboot"
+    ],
+    "habitats": [
+      {
+        "id": 98,
+        "name": "紅色草叢",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": 198,
+  "slug": "murkrow",
+  "name": "Murkrow",
+  "types": [
+    "dark",
+    "flying"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 85,
+    "defense": 42,
+    "spAtk": 85,
+    "spDef": 42,
+    "speed": 91
+  },
+  "abilities": [
+    "insomnia",
+    "super-luck",
+    "prankster"
+  ],
+  "description": "Widely shunned as a bearer of ill fortune. Upon crossing paths with this creature, I've been told one must chant ”Workrum, Workrum—bad luck, don't come” as a protective incantation.",
+  "image": "https://assets.pokopiaguide.com/pokemon/murkrow.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "honchkrow"
+    ],
+    "habitats": []
+  }
+}

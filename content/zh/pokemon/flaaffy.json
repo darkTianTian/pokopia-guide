@@ -18,5 +18,26 @@
     "正電"
   ],
   "description": "會將電力儲存在鬆軟的毛中。 因為儲存了太多電力， 身上有些地方變得光禿禿的。",
-  "image": "https://assets.pokopiaguide.com/pokemon/flaaffy.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/flaaffy.png",
+  "pokopia": {
+    "specialties": [
+      "litter",
+      "generate"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "rhyhorn",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

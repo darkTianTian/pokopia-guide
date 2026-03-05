@@ -19,5 +19,31 @@
     "Magic Guard"
   ],
   "description": "Spends 18 hours of the day sleeping. Even while asleep, Abra can control its psychic powers—should danger approach, the Pokémon will simply teleport away.",
-  "image": "https://assets.pokopiaguide.com/pokemon/abra.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/abra.png",
+  "pokopia": {
+    "specialties": [
+      "teleport"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 152,
+        "name": "Fortune-teller's table",
+        "rarity": "common"
+      }
+    ]
+  }
 }

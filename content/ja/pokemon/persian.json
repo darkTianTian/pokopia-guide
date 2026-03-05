@@ -1,0 +1,32 @@
+{
+  "id": 53,
+  "slug": "persian",
+  "name": "ペルシアン",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 70,
+    "defense": 60,
+    "spAtk": 65,
+    "spDef": 65,
+    "speed": 115
+  },
+  "abilities": [
+    "limber",
+    "technician",
+    "unnerve"
+  ],
+  "description": "優雅で　上品な　身のこなし。 野蛮な　ニャイキングとは　そりが あわず　お互いを　見下している。",
+  "image": "https://assets.pokopiaguide.com/pokemon/persian.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "meowth",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

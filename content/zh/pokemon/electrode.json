@@ -1,0 +1,44 @@
+{
+  "id": 101,
+  "slug": "electrode",
+  "name": "頑皮雷彈",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 70,
+    "spAtk": 80,
+    "spDef": 80,
+    "speed": 150
+  },
+  "abilities": [
+    "soundproof",
+    "static",
+    "aftermath"
+  ],
+  "description": "只要受到任何一點衝擊， 體內的電能就會迅速膨脹 然後爆炸。",
+  "image": "https://assets.pokopiaguide.com/pokemon/electrode.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "explode"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "voltorb",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

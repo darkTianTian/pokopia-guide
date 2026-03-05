@@ -1,0 +1,33 @@
+{
+  "id": 208,
+  "slug": "steelix",
+  "name": "ハガネール",
+  "types": [
+    "steel",
+    "ground"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 85,
+    "defense": 200,
+    "spAtk": 55,
+    "spDef": 65,
+    "speed": 30
+  },
+  "abilities": [
+    "rock-head",
+    "sturdy",
+    "sheer-force"
+  ],
+  "description": "土と　一緒に　飲みこんだ 鉄分が　溜まっていって　体が 変化したとも　考えられる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/steelix.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "onix",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

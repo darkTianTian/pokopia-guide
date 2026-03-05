@@ -1,0 +1,52 @@
+{
+  "id": 723,
+  "slug": "dartrix",
+  "name": "投羽梟",
+  "types": [
+    "grass",
+    "flying"
+  ],
+  "stats": {
+    "hp": 78,
+    "attack": 75,
+    "defense": 75,
+    "spAtk": 70,
+    "spDef": 70,
+    "speed": 52
+  },
+  "abilities": [
+    "overgrow",
+    "long-reach"
+  ],
+  "description": "對整理翅膀絲毫不會怠慢。 這不單是因為牠注重形象， 也是為了讓刃羽保持銳利。",
+  "image": "https://assets.pokopiaguide.com/pokemon/dartrix.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "rowlet",
+    "evolvesTo": [
+      "decidueye"
+    ],
+    "habitats": [
+      {
+        "id": 100,
+        "name": "三角樹蔭與岩石草叢",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -20,5 +20,31 @@
     "ねつぼうそう"
   ],
   "description": "魂が　集まり　生まれた。 湿気の　多い　季節には 大量に　現れることも。",
-  "image": "https://assets.pokopiaguide.com/pokemon/drifloon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/drifloon.png",
+  "pokopia": {
+    "specialties": [
+      "dream island"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "poliwag",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 16,
+        "name": "あたたかな風に乗って",
+        "rarity": "common"
+      }
+    ]
+  }
 }

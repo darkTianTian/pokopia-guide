@@ -20,5 +20,31 @@
     "スナイパー"
   ],
   "description": "キバの　毒は　さほど　強くないが 巣に　かかって　動けない　獲物を 弱らせるには　充分。",
-  "image": "https://assets.pokopiaguide.com/pokemon/spinarak.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/spinarak.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 50,
+        "name": "黄色の草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

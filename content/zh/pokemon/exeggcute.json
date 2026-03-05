@@ -1,0 +1,46 @@
+{
+  "id": 102,
+  "slug": "exeggcute",
+  "name": "蛋蛋",
+  "types": [
+    "grass",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 40,
+    "defense": 80,
+    "spAtk": 60,
+    "spDef": 45,
+    "speed": 40
+  },
+  "abilities": [
+    "chlorophyll",
+    "harvest"
+  ],
+  "description": "非得湊齊６隻才會有安全感。 那怕只是少了１隻，都會立刻 變得很膽小，隨時想要逃跑。",
+  "image": "https://assets.pokopiaguide.com/pokemon/exeggcute.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "teleport"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "exeggutor"
+    ],
+    "habitats": []
+  }
+}

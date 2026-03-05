@@ -1,0 +1,33 @@
+{
+  "id": 426,
+  "slug": "drifblim",
+  "name": "フワライド",
+  "types": [
+    "ghost",
+    "flying"
+  ],
+  "stats": {
+    "hp": 150,
+    "attack": 80,
+    "defense": 44,
+    "spAtk": 90,
+    "spDef": 54,
+    "speed": 80
+  },
+  "abilities": [
+    "aftermath",
+    "unburden",
+    "flare-boost"
+  ],
+  "description": "人や　ポケモンを　つかんで そのまま　どこかへ　運んでいく。 行き先は　だれも　知らない。",
+  "image": "https://assets.pokopiaguide.com/pokemon/drifblim.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "drifloon",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

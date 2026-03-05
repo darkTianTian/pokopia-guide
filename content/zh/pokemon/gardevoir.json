@@ -20,5 +20,14 @@
     "心靈感應"
   ],
   "description": "如果是為了保護訓練家， 牠會不惜用盡自己的精神力量 製造出小型黑洞。",
-  "image": "https://assets.pokopiaguide.com/pokemon/gardevoir.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/gardevoir.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "porygon",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

@@ -1,0 +1,31 @@
+{
+  "id": 330,
+  "slug": "flygon",
+  "name": "沙漠蜻蜓",
+  "types": [
+    "ground",
+    "dragon"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 100,
+    "defense": 80,
+    "spAtk": 80,
+    "spDef": 80,
+    "speed": 100
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "description": "由於牠揮動翅膀的聲音 好似女性優美的歌聲， 因此被稱為沙漠精靈。",
+  "image": "https://assets.pokopiaguide.com/pokemon/flygon.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "vibrava",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

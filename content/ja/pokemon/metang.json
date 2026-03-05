@@ -1,0 +1,34 @@
+{
+  "id": 375,
+  "slug": "metang",
+  "name": "メタング",
+  "types": [
+    "steel",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 75,
+    "defense": 100,
+    "spAtk": 55,
+    "spDef": 80,
+    "speed": 50
+  },
+  "abilities": [
+    "clear-body",
+    "light-metal"
+  ],
+  "description": "磁力で　空を　飛ぶ。　険しい 山岳を　縫うように　高速で 飛行して　獲物を　追いつめる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/metang.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "beldum",
+    "evolvesTo": [
+      "metagross"
+    ],
+    "habitats": []
+  }
+}

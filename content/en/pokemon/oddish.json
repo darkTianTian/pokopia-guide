@@ -19,5 +19,31 @@
     "Run Away"
   ],
   "description": "During the day, it stays in the cold underground to avoid the sun. It grows by bathing in moonlight.",
-  "image": "https://assets.pokopiaguide.com/pokemon/oddish.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/oddish.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "gloom"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "Tall Grass",
+        "rarity": "common"
+      }
+    ]
+  }
 }

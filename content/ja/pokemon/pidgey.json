@@ -20,5 +20,38 @@
     "はとむね"
   ],
   "description": "おとなしい　性格で　襲われても 反撃　せずに　砂を　かけて 身を　守ることが　多い。",
-  "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png",
+  "pokopia": {
+    "specialties": [
+      "search",
+      "fly"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "pidgeotto"
+    ],
+    "habitats": [
+      {
+        "id": 6,
+        "name": "高台の草むら",
+        "rarity": "common"
+      },
+      {
+        "id": 8,
+        "name": "きれいな花畑",
+        "rarity": "common"
+      }
+    ]
+  }
 }

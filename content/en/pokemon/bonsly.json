@@ -1,0 +1,51 @@
+{
+  "id": 438,
+  "slug": "bonsly",
+  "name": "Bonsly",
+  "types": [
+    "rock"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 80,
+    "defense": 95,
+    "spAtk": 10,
+    "spDef": 45,
+    "speed": 10
+  },
+  "abilities": [
+    "sturdy",
+    "rock-head",
+    "rattled"
+  ],
+  "description": "Its tears elicit sympathy from those who see them, but do not be deceived! This expulsion of body water is merely a physiological mechanism for keeping itself in good health.",
+  "image": "https://assets.pokopiaguide.com/pokemon/bonsly.png",
+  "pokopia": {
+    "specialties": [
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "sudowoodo"
+    ],
+    "habitats": [
+      {
+        "id": 99,
+        "name": "Tree-shaded red tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

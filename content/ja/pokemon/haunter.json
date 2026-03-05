@@ -1,0 +1,33 @@
+{
+  "id": 93,
+  "slug": "haunter",
+  "name": "ゴースト",
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 50,
+    "defense": 45,
+    "spAtk": 115,
+    "spDef": 55,
+    "speed": 95
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "description": "暗闇で　だれもいないのに 見られているような　気がしたら そこに　ゴーストが　いるのだ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/haunter.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gastly",
+    "evolvesTo": [
+      "gengar"
+    ],
+    "habitats": []
+  }
+}

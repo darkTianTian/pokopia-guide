@@ -19,5 +19,14 @@
     "Vital Spirit"
   ],
   "description": "Even though it is small, it can’t be ignored because it will slug any handy target without warning.",
-  "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "nidorino",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

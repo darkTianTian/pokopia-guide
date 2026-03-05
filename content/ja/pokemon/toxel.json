@@ -1,0 +1,35 @@
+{
+  "id": 848,
+  "slug": "toxel",
+  "name": "エレズン",
+  "types": [
+    "electric",
+    "poison"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 38,
+    "defense": 35,
+    "spAtk": 54,
+    "spDef": 35,
+    "speed": 40
+  },
+  "abilities": [
+    "rattled",
+    "static",
+    "klutz"
+  ],
+  "description": "毒素を　化学変化　させて 電気を　出す。　電力は 弱いが　ビリビリと　痺れる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/toxel.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "toxtricity"
+    ],
+    "habitats": []
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": 324,
+  "slug": "torkoal",
+  "name": "Torkoal",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 140,
+    "spAtk": 85,
+    "spDef": 70,
+    "speed": 20
+  },
+  "abilities": [
+    "white-smoke",
+    "drought",
+    "shell-armor"
+  ],
+  "description": "You find abandoned coal mines full of them. They dig tirelessly in search of coal.",
+  "image": "https://assets.pokopiaguide.com/pokemon/torkoal.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 112,
+        "name": "Mossy hot spring",
+        "rarity": "common"
+      }
+    ]
+  }
+}

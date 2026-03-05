@@ -10,6 +10,10 @@
     "guides": "攻略",
     "events": "イベント",
     "habitat": "ホーム建設",
+    "habitatList": "生息地一覧",
+    "habitatOverview": "概要",
+    "habitatCrafting": "家具クラフトレシピ",
+    "comingSoon": "近日公開",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイ"
   },
@@ -51,7 +55,14 @@
     "prev": "前へ",
     "next": "次へ",
     "page": "ページ",
-    "dataDisclaimer": "データはポケモン本編シリーズに基づいています。Pokopia のゲーム内データは発売後に更新予定です。"
+    "dataDisclaimer": "データはポケモン本編シリーズに基づいています。Pokopia のゲーム内データは発売後に更新予定です。",
+    "pokopiaInfo": "Pokopia 情報",
+    "specialty": "とくぎ",
+    "habitatLabel": "生息地",
+    "timeOfDay": "出現時間",
+    "weatherLabel": "天気",
+    "obtainMethod": "入手方法",
+    "evolution": "進化"
   },
   "guides": {
     "title": "攻略記事",
@@ -81,7 +92,13 @@
     "title": "ホーム建設攻略",
     "metaTitle": "ホーム建設",
     "metaDescription": "Pokémon Pokopia ホーム建設攻略：生息地作成、技による環境改造、家具制作レシピ。",
-    "description": "生息地作成、技による環境改造、家具制作レシピなどのコンテンツを準備中です。"
+    "description": "生息地作成、技による環境改造、家具制作レシピなどのコンテンツを準備中です。",
+    "listTitle": "生息地一覧",
+    "listDescription": "すべての生息地を閲覧し、各生息地で出会えるポケモンを確認できます。",
+    "listMetaDescription": "Pokémon Pokopia 全生息地一覧。各生息地で出現するポケモンを確認。",
+    "pokemonCount": "匹のポケモン",
+    "detailDescription": "この生息地で出会えるポケモン。",
+    "breadcrumbList": "生息地一覧"
   },
   "quests": {
     "title": "クエスト攻略",
@@ -110,6 +127,7 @@
     "guides": "攻略記事",
     "events": "イベント",
     "habitat": "ホーム建設",
+    "habitatList": "生息地一覧",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイガイド"
   },
@@ -124,6 +142,58 @@
     "spAtk": "とくこう",
     "spDef": "とくぼう",
     "speed": "すばやさ"
+  },
+  "timeOfDay": {
+    "dawn": "明け方",
+    "day": "昼",
+    "dusk": "夕方",
+    "night": "夜"
+  },
+  "weather": {
+    "sunny": "晴れ",
+    "cloudy": "曇り",
+    "rainy": "雨",
+    "snowy": "雪"
+  },
+  "rarity": {
+    "common": "ふつう",
+    "rare": "珍しい",
+    "very-rare": "とても珍しい"
+  },
+  "obtainMethods": {
+    "habitat": "生息地で出現",
+    "trade": "交換",
+    "evolution": "進化",
+    "event": "期間限定イベント",
+    "unknown": "不明"
+  },
+  "specialties": {
+    "grow": "さいばい",
+    "burn": "もやす",
+    "water": "うるおす",
+    "build": "けんちく",
+    "chop": "きる",
+    "crush": "くだく",
+    "search": "さがす",
+    "fly": "とぶ",
+    "gather": "あつめる",
+    "generate": "はつでん",
+    "illuminate": "てらす",
+    "explode": "はっぱ",
+    "bulldoze": "ならす",
+    "recycle": "リサイクル",
+    "trade": "こうかん",
+    "storage": "もちもの",
+    "teleport": "テレポート",
+    "litter": "おとす",
+    "paint": "ぬる",
+    "appraise": "かんてい",
+    "dream-island": "ゆめのしま",
+    "gather-honey": "みつあつめ",
+    "yawn": "あくび",
+    "eat": "たべる",
+    "hype": "もりあげ",
+    "transform": "へんしん"
   },
   "types": {
     "normal": "ノーマル",

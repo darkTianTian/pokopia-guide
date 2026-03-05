@@ -1,0 +1,46 @@
+{
+  "id": 102,
+  "slug": "exeggcute",
+  "name": "Exeggcute",
+  "types": [
+    "grass",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 40,
+    "defense": 80,
+    "spAtk": 60,
+    "spDef": 45,
+    "speed": 40
+  },
+  "abilities": [
+    "chlorophyll",
+    "harvest"
+  ],
+  "description": "These Pokémon get nervous when they’re not in a group of six. The minute even one member of the group goes missing, Exeggcute become cowardly.",
+  "image": "https://assets.pokopiaguide.com/pokemon/exeggcute.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "teleport"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "exeggutor"
+    ],
+    "habitats": []
+  }
+}

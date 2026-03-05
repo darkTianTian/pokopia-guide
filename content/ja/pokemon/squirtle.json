@@ -18,5 +18,38 @@
     "あめうけざら"
   ],
   "description": "危なくなると　甲羅に　手足を 引っこめて　身を　守りながら 口から　水を　吹き出している。",
-  "image": "https://assets.pokopiaguide.com/pokemon/squirtle.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/squirtle.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "wartortle"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "緑の草むら",
+        "rarity": "common"
+      },
+      {
+        "id": 4,
+        "name": "うるおう草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

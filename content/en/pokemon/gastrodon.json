@@ -1,0 +1,33 @@
+{
+  "id": 423,
+  "slug": "gastrodon",
+  "name": "Gastrodon",
+  "types": [
+    "water",
+    "ground"
+  ],
+  "stats": {
+    "hp": 111,
+    "attack": 83,
+    "defense": 68,
+    "spAtk": 92,
+    "spDef": 82,
+    "speed": 39
+  },
+  "abilities": [
+    "sticky-hold",
+    "storm-drain",
+    "sand-force"
+  ],
+  "description": "Eats beach sand for nourishment. Should one Gastrodon encounter another of a different color, a fierce battle will inevitably ensue.",
+  "image": "https://assets.pokopiaguide.com/pokemon/gastrodon.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "shellos",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

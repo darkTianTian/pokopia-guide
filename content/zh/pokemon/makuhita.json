@@ -19,5 +19,34 @@
     "強行"
   ],
   "description": "據說為了培育強大的幕下力士， 訓練家們會製作一種 傳統的火鍋料理。",
-  "image": "https://assets.pokopiaguide.com/pokemon/makuhita.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/makuhita.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "elekid",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 51,
+        "name": "樹蔭黃色草叢",
+        "rarity": "common"
+      },
+      {
+        "id": 80,
+        "name": "行李打包好了",
+        "rarity": "common"
+      }
+    ]
+  }
 }

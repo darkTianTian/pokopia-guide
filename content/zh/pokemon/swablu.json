@@ -1,0 +1,51 @@
+{
+  "id": 333,
+  "slug": "swablu",
+  "name": "青綿鳥",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 40,
+    "defense": 60,
+    "spAtk": 40,
+    "spDef": 75,
+    "speed": 50
+  },
+  "abilities": [
+    "natural-cure",
+    "cloud-nine"
+  ],
+  "description": "看起來就像是團綿雲，因此不易 被敵人發現。據說牠的翅膀是 在一代代的演變下成為白色的。",
+  "image": "https://assets.pokopiaguide.com/pokemon/swablu.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "altaria"
+    ],
+    "habitats": [
+      {
+        "id": 137,
+        "name": "Pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

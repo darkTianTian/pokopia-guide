@@ -20,5 +20,14 @@
     "健壯胸肌"
   ],
   "description": "會以２馬赫的速度飛行 來尋找食物。巨大的爪子 是很可怕的武器。",
-  "image": "https://assets.pokopiaguide.com/pokemon/pidgeot.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/pidgeot.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "metapod",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

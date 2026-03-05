@@ -19,5 +19,16 @@
     "Swift Swim"
   ],
   "description": "Suffers perpetual headaches. If the agony grows too great, Psyduck's latent power erupts, contrary to Psyduck's intent. Ergo, I am exploring ways to ease the pain.",
-  "image": "https://assets.pokopiaguide.com/pokemon/psyduck.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/psyduck.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "golduck"
+    ],
+    "habitats": []
+  }
 }

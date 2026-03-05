@@ -20,5 +20,31 @@
     "友情防守"
   ],
   "description": "會自在地改變聲音的波長， 唱出一聽見就絕對會 昏昏欲睡的神奇旋律。",
-  "image": "https://assets.pokopiaguide.com/pokemon/jigglypuff.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/jigglypuff.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "igglybuff",
+    "evolvesTo": [
+      "wigglytuff"
+    ],
+    "habitats": [
+      {
+        "id": 53,
+        "name": "濕潤黃色草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

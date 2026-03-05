@@ -19,5 +19,31 @@
     "はとむね"
   ],
   "description": "小さい　体で　機敏に　飛んで 隙を　突く　戦法で　体の 大きな　相手を　手玉に取る。",
-  "image": "https://assets.pokopiaguide.com/pokemon/rookidee.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/rookidee.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "torchic",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 142,
+        "name": "Fluffy flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

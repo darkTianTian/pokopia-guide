@@ -1,0 +1,31 @@
+{
+  "id": 38,
+  "slug": "ninetales",
+  "name": "キュウコン",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 73,
+    "attack": 76,
+    "defense": 75,
+    "spAtk": 81,
+    "spDef": 100,
+    "speed": 100
+  },
+  "abilities": [
+    "flash-fire",
+    "drought"
+  ],
+  "description": "頭が良くて　執念深い。 ふざけて　しっぽを　つかむと １０００年　たたられるという。",
+  "image": "https://assets.pokopiaguide.com/pokemon/ninetales.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "vulpix",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 736,
+  "slug": "grubbin",
+  "name": "アゴジムシ",
+  "types": [
+    "bug"
+  ],
+  "stats": {
+    "hp": 47,
+    "attack": 62,
+    "defense": 45,
+    "spAtk": 55,
+    "spDef": 45,
+    "speed": 46
+  },
+  "abilities": [
+    "swarm"
+  ],
+  "description": "大きな　顎で　森の　地面を 掘って　巣穴を　つくる。 甘い　樹液が　大好物。",
+  "image": "https://assets.pokopiaguide.com/pokemon/grubbin.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "charjabug"
+    ],
+    "habitats": []
+  }
+}

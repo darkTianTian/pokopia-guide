@@ -20,5 +20,31 @@
     "Flare Boost"
   ],
   "description": "Said to lure away young children and carry them off to the afterlife. Some whisper that Drifloon are formed of reincarnated human souls, but these rumors are as yet unconfirmed.",
-  "image": "https://assets.pokopiaguide.com/pokemon/drifloon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/drifloon.png",
+  "pokopia": {
+    "specialties": [
+      "dream island"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "poliwag",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 16,
+        "name": "Riding warm updrafts",
+        "rarity": "common"
+      }
+    ]
+  }
 }

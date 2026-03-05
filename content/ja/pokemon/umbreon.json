@@ -18,5 +18,31 @@
     "せいしんりょく"
   ],
   "description": "満月の　夜や　興奮 したとき　全身の　輪っか模様は 黄色く　光る。",
-  "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 206,
+        "name": "ブラックな味わい",
+        "rarity": "common"
+      }
+    ]
+  }
 }

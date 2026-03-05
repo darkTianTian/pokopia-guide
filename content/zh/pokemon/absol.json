@@ -1,0 +1,32 @@
+{
+  "id": 359,
+  "slug": "absol",
+  "name": "阿勃梭魯",
+  "types": [
+    "dark"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 130,
+    "defense": 60,
+    "spAtk": 75,
+    "spDef": 60,
+    "speed": 75
+  },
+  "abilities": [
+    "pressure",
+    "super-luck",
+    "justified"
+  ],
+  "description": "由於擁有察覺危險的能力， 因此牠被人們誤解是 會招來災禍的寶可夢。",
+  "image": "https://assets.pokopiaguide.com/pokemon/absol.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

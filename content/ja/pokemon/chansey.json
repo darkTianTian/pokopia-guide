@@ -19,5 +19,14 @@
     "いやしのこころ"
   ],
   "description": "もともとは　動きが　鈍かった。 タマゴを　狙うものから　守るため 逃げ足が　速くなった。",
-  "image": "https://assets.pokopiaguide.com/pokemon/chansey.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/chansey.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "voltorb",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

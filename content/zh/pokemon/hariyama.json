@@ -1,0 +1,44 @@
+{
+  "id": 297,
+  "slug": "hariyama",
+  "name": "鐵掌力士",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 144,
+    "attack": 120,
+    "defense": 60,
+    "spAtk": 40,
+    "spDef": 60,
+    "speed": 50
+  },
+  "abilities": [
+    "thick-fat",
+    "guts",
+    "sheer-force"
+  ],
+  "description": "體型壯碩的鐵掌力士未必就很強。 也有體型雖小，但身輕如燕 且技巧高超的鐵掌力士存在。",
+  "image": "https://assets.pokopiaguide.com/pokemon/hariyama.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "makuhita",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

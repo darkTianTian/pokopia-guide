@@ -18,5 +18,31 @@
     "葉綠素"
   ],
   "description": "尾巴如同銳利的刀刃， 鋒利得無與倫比， 連大樹都能一刀兩斷。",
-  "image": "https://assets.pokopiaguide.com/pokemon/leafeon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/leafeon.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "shroomish",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 207,
+        "name": "綠色三明治",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -1,0 +1,30 @@
+{
+  "id": 429,
+  "slug": "mismagius",
+  "name": "ムウマージ",
+  "types": [
+    "ghost"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 60,
+    "spAtk": 105,
+    "spDef": 105,
+    "speed": 105
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "description": "呪いの　言葉を　つぶやいて ひどい　頭痛や　恐ろしい 幻を　見せて　苦しめる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/mismagius.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "misdreavus",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

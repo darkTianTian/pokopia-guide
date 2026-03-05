@@ -1,0 +1,50 @@
+{
+  "id": 47,
+  "slug": "parasect",
+  "name": "パラセクト",
+  "types": [
+    "bug",
+    "grass"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 95,
+    "defense": 80,
+    "spAtk": 60,
+    "spDef": 80,
+    "speed": 30
+  },
+  "abilities": [
+    "effect-spore",
+    "dry-skin",
+    "damp"
+  ],
+  "description": "ずっと　エキスを　吸い続けられ もはや　ムシではなく　背中の キノコが　考えているようだ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/parasect.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "paras",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 14,
+        "name": "フラワーガーデン",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

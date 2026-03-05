@@ -1,0 +1,43 @@
+{
+  "id": 314,
+  "slug": "illumise",
+  "name": "イルミーゼ",
+  "types": [
+    "bug"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 47,
+    "defense": 75,
+    "spAtk": 73,
+    "spDef": 85,
+    "speed": 85
+  },
+  "abilities": [
+    "oblivious",
+    "tinted-lens",
+    "prankster"
+  ],
+  "description": "バルビートを　誘導して　サインを　描く。 複雑な　サインを　描く　イルミーゼほど 仲間から　尊敬されると　いわれているよ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/illumise.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

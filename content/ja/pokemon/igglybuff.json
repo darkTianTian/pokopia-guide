@@ -1,0 +1,35 @@
+{
+  "id": 174,
+  "slug": "igglybuff",
+  "name": "ププリン",
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 30,
+    "defense": 15,
+    "spAtk": 40,
+    "spDef": 20,
+    "speed": 15
+  },
+  "abilities": [
+    "cute-charm",
+    "competitive",
+    "friend-guard"
+  ],
+  "description": "柔らかい　体で　弾むように 動きまわる。　体温が　上がると 体は　濃い　ピンク色になる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/igglybuff.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "jigglypuff"
+    ],
+    "habitats": []
+  }
+}

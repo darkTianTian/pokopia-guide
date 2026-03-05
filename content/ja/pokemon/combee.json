@@ -19,5 +19,31 @@
     "はりきり"
   ],
   "description": "夜明けから　日暮れまで　蜜を 集めつづける。　すべては 群れと　ビークインの　ためだ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/combee.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/combee.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "mankey",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 8,
+        "name": "きれいな花畑",
+        "rarity": "common"
+      }
+    ]
+  }
 }

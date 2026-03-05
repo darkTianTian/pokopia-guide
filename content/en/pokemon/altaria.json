@@ -1,0 +1,50 @@
+{
+  "id": 334,
+  "slug": "altaria",
+  "name": "Altaria",
+  "types": [
+    "dragon",
+    "flying"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 70,
+    "defense": 90,
+    "spAtk": 70,
+    "spDef": 105,
+    "speed": 80
+  },
+  "abilities": [
+    "natural-cure",
+    "cloud-nine"
+  ],
+  "description": "This Pokémon has a kind disposition, but if it’s provoked, it will threaten opponents with shrill cries before attacking them without mercy.",
+  "image": "https://assets.pokopiaguide.com/pokemon/altaria.png",
+  "pokopia": {
+    "specialties": [
+      "litter",
+      "fly"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "swablu",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 147,
+        "name": "Birdsong garden",
+        "rarity": "common"
+      }
+    ]
+  }
+}

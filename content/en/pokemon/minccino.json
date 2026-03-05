@@ -19,5 +19,31 @@
     "Skill Link"
   ],
   "description": "They pet each other with their tails as a form of greeting. Of the two, the one whose tail is fluffier is a bit more boastful.",
-  "image": "https://assets.pokopiaguide.com/pokemon/minccino.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/minccino.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 75,
+        "name": "Changing area",
+        "rarity": "common"
+      }
+    ]
+  }
 }

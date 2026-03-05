@@ -1,0 +1,32 @@
+{
+  "id": 110,
+  "slug": "weezing",
+  "name": "マタドガス",
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 120,
+    "spAtk": 85,
+    "spDef": 70,
+    "speed": 60
+  },
+  "abilities": [
+    "levitate",
+    "neutralizing-gas",
+    "stench"
+  ],
+  "description": "ガラルの　マタドガスよりも　空気を 吸いこむ　力は　少し　弱いが 作りだす　毒素は　強力。",
+  "image": "https://assets.pokopiaguide.com/pokemon/weezing.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "koffing",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

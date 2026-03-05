@@ -1,0 +1,50 @@
+{
+  "id": 656,
+  "slug": "froakie",
+  "name": "ケロマツ",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 41,
+    "attack": 56,
+    "defense": 40,
+    "spAtk": 62,
+    "spDef": 44,
+    "speed": 71
+  },
+  "abilities": [
+    "torrent",
+    "protean"
+  ],
+  "description": "繊細な　泡で　体を　包み 肌を　守る。のんきに　見せかけて 抜け目なく　周囲を　うかがう。",
+  "image": "https://assets.pokopiaguide.com/pokemon/froakie.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "frogadier"
+    ],
+    "habitats": [
+      {
+        "id": 139,
+        "name": "Hydrated pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

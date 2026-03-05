@@ -2,43 +2,11 @@ import Image from "next/image"
 import { notFound } from "next/navigation"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { TypeBadge } from "@/components/pokemon/type-badge"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
 import { getAllPokemon, getPokemonBySlug } from "@/lib/pokemon"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
-import type { PokemonStats } from "@/lib/types"
-
-const STAT_KEYS: (keyof PokemonStats)[] = [
-  "hp",
-  "attack",
-  "defense",
-  "spAtk",
-  "spDef",
-  "speed",
-]
-
-const STAT_MAX = 255
-
-function StatBar({ label, value }: { label: string; value: number }) {
-  const percentage = (value / STAT_MAX) * 100
-
-  return (
-    <div className="flex items-center gap-3">
-      <span className="w-12 text-right text-sm text-muted-foreground">
-        {label}
-      </span>
-      <span className="w-8 text-right text-sm font-medium">{value}</span>
-      <div className="h-2.5 flex-1 rounded-full bg-muted">
-        <div
-          className="h-full rounded-full bg-primary transition-all"
-          style={{ width: `${percentage}%` }}
-        />
-      </div>
-    </div>
-  )
-}
 
 interface PokedexDetailPageProps {
   slug: string
@@ -58,8 +26,6 @@ export async function PokedexDetailPage({
   if (!pokemon) {
     notFound()
   }
-
-  const totalStats = Object.values(pokemon.stats).reduce((a, b) => a + b, 0)
 
   const relatedPokemon = allPokemon
     .filter((p) => p.slug !== pokemon.slug && p.types.some((type) => pokemon.types.includes(type)))
@@ -106,46 +72,121 @@ export async function PokedexDetailPage({
         {pokemon.description}
       </p>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      {pokemon.pokopia && (
         <Card>
           <CardHeader>
-            <CardTitle>{t(translations, "pokedex.baseStats")}</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            {STAT_KEYS.map((key) => (
-              <StatBar
-                key={key}
-                label={t(translations, `stats.${key}`)}
-                value={pokemon.stats[key]}
-              />
-            ))}
-            <Separator />
-            <div className="flex items-center gap-3">
-              <span className="w-12 text-right text-sm font-medium">
-                {t(translations, "pokedex.total")}
-              </span>
-              <span className="w-8 text-right text-sm font-bold">
-                {totalStats}
-              </span>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>{t(translations, "pokedex.abilities")}</CardTitle>
+            <CardTitle>{t(translations, "pokedex.pokopiaInfo")}</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="flex flex-wrap gap-2">
-              {pokemon.abilities.map((ability) => (
-                <Badge key={ability} variant="outline">
-                  {ability}
+            <div className="grid gap-3 sm:grid-cols-2">
+              {pokemon.pokopia.specialties.length > 0 && (
+                <div>
+                  <p className="mb-1 text-sm font-medium text-muted-foreground">
+                    {t(translations, "pokedex.specialty")}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {pokemon.pokopia.specialties.map((s) => (
+                      <span key={s} className="inline-flex flex-col items-center gap-0.5">
+                        <Image
+                          src={`/images/specialties/${s}.svg`}
+                          alt={t(translations, `specialties.${s}`)}
+                          width={32}
+                          height={32}
+                        />
+                        <span className="text-xs text-muted-foreground">
+                          {t(translations, `specialties.${s}`)}
+                        </span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div>
+                <p className="mb-1 text-sm font-medium text-muted-foreground">
+                  {t(translations, "pokedex.obtainMethod")}
+                </p>
+                <Badge variant="outline">
+                  {t(translations, `obtainMethods.${pokemon.pokopia.obtainMethod}`)}
                 </Badge>
-              ))}
+              </div>
+
+              {pokemon.pokopia.habitats && pokemon.pokopia.habitats.length > 0 && (
+                <div className="sm:col-span-2">
+                  <p className="mb-1 text-sm font-medium text-muted-foreground">
+                    {t(translations, "pokedex.habitatLabel")}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {pokemon.pokopia.habitats.map((h) => (
+                      <div key={h.id} className="flex items-center gap-2 rounded-lg border px-2 py-1.5">
+                        <Image
+                          src={`/images/habitats/habitat_${h.id}.png`}
+                          alt={h.name}
+                          width={40}
+                          height={40}
+                          className="rounded"
+                        />
+                        <div>
+                          <p className="text-sm font-medium">{h.name}</p>
+                          <Badge variant="secondary" className="text-xs">
+                            {t(translations, `rarity.${h.rarity}`)}
+                          </Badge>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {pokemon.pokopia.timeOfDay && pokemon.pokopia.timeOfDay.length > 0 && (
+                <div>
+                  <p className="mb-1 text-sm font-medium text-muted-foreground">
+                    {t(translations, "pokedex.timeOfDay")}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {pokemon.pokopia.timeOfDay.map((tod) => (
+                      <span key={tod} className="inline-flex flex-col items-center gap-0.5">
+                        <Image
+                          src={`/images/time/${tod}.svg`}
+                          alt={t(translations, `timeOfDay.${tod}`)}
+                          width={28}
+                          height={28}
+                        />
+                        <span className="text-xs text-muted-foreground">
+                          {t(translations, `timeOfDay.${tod}`)}
+                        </span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {pokemon.pokopia.weather && pokemon.pokopia.weather.length > 0 && (
+                <div>
+                  <p className="mb-1 text-sm font-medium text-muted-foreground">
+                    {t(translations, "pokedex.weatherLabel")}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {pokemon.pokopia.weather.map((w) => (
+                      <span key={w} className="inline-flex flex-col items-center gap-0.5">
+                        <Image
+                          src={`/images/weather/${w}.svg`}
+                          alt={t(translations, `weather.${w}`)}
+                          width={28}
+                          height={28}
+                        />
+                        <span className="text-xs text-muted-foreground">
+                          {t(translations, `weather.${w}`)}
+                        </span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </CardContent>
         </Card>
-      </div>
+      )}
 
       {relatedPokemon.length > 0 && (
         <section className="mt-12">

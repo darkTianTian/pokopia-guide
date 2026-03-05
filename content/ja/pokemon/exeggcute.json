@@ -1,0 +1,46 @@
+{
+  "id": 102,
+  "slug": "exeggcute",
+  "name": "タマタマ",
+  "types": [
+    "grass",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 40,
+    "defense": 80,
+    "spAtk": 60,
+    "spDef": 45,
+    "speed": 40
+  },
+  "abilities": [
+    "chlorophyll",
+    "harvest"
+  ],
+  "description": "６匹で　いないと　落ち着かない。 １匹でも　いなくなると　とたんに 逃げ腰に　なるのだ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/exeggcute.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "teleport"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "exeggutor"
+    ],
+    "habitats": []
+  }
+}

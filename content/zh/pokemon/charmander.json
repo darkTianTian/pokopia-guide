@@ -18,5 +18,33 @@
     "太陽之力"
   ],
   "description": "從出生時開始尾巴上 就有火焰在燃燒。 火焰熄滅時，生命也會結束。",
-  "image": "https://assets.pokopiaguide.com/pokemon/charmander.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/charmander.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "charmeleon"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "綠色草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

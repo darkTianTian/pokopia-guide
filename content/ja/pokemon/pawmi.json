@@ -19,5 +19,36 @@
     "てつのこぶし"
   ],
   "description": "The pads of its paws are electricity-discharging organs. Pawmi fires electricity from its forepaws while standing unsteadily on its hind legs.",
-  "image": "https://assets.pokopiaguide.com/pokemon/pawmi.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/pawmi.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 56,
+        "name": "すずしげな花畑",
+        "rarity": "common"
+      },
+      {
+        "id": 67,
+        "name": "腹ペコレストラン",
+        "rarity": "common"
+      }
+    ]
+  }
 }

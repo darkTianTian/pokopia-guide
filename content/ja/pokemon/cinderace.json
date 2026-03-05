@@ -1,0 +1,31 @@
+{
+  "id": 815,
+  "slug": "cinderace",
+  "name": "エースバーン",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 116,
+    "defense": 75,
+    "spAtk": 65,
+    "spDef": 75,
+    "speed": 119
+  },
+  "abilities": [
+    "blaze",
+    "libero"
+  ],
+  "description": "攻守に　優れ　応援されると さらに　燃えるが　スタンドプレイに 走り　ピンチを　招くこともある。",
+  "image": "https://assets.pokopiaguide.com/pokemon/cinderace.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "raboot",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

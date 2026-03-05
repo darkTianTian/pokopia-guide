@@ -19,5 +19,14 @@
     "Unnerve"
   ],
   "description": "While usually kindhearted, it can be terrifying if angered. Tusks that can slice through steel beams are how Haxorus deals with its adversaries.",
-  "image": "https://assets.pokopiaguide.com/pokemon/haxorus.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/haxorus.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tentacool",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

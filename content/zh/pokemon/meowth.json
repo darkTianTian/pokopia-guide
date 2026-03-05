@@ -19,5 +19,31 @@
     "緊張感"
   ],
   "description": "為了不弄髒額頭上的 金幣，會常常洗臉。 和伽勒爾的喵喵關係不好。",
-  "image": "https://assets.pokopiaguide.com/pokemon/meowth.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/meowth.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 91,
+        "name": "Working the register",
+        "rarity": "common"
+      }
+    ]
+  }
 }

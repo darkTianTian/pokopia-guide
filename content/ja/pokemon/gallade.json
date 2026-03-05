@@ -1,0 +1,33 @@
+{
+  "id": 475,
+  "slug": "gallade",
+  "name": "エルレイド",
+  "types": [
+    "psychic",
+    "fighting"
+  ],
+  "stats": {
+    "hp": 68,
+    "attack": 125,
+    "defense": 65,
+    "spAtk": 65,
+    "spDef": 115,
+    "speed": 80
+  },
+  "abilities": [
+    "steadfast",
+    "sharpness",
+    "justified"
+  ],
+  "description": "助けを　求める　感情を 敏感に　キャッチ。　相手の もとへ　馳せ参じ　加勢するぞ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/gallade.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kirlia",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

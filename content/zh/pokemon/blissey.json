@@ -1,0 +1,32 @@
+{
+  "id": 242,
+  "slug": "blissey",
+  "name": "幸福蛋",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 255,
+    "attack": 10,
+    "defense": 10,
+    "spAtk": 75,
+    "spDef": 135,
+    "speed": 55
+  },
+  "abilities": [
+    "natural-cure",
+    "serene-grace",
+    "healer"
+  ],
+  "description": "會生下飽含幸福的神奇的蛋。 據說吃下蛋的人，就能夠 對任何人都很溫和相待。",
+  "image": "https://assets.pokopiaguide.com/pokemon/blissey.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "chansey",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

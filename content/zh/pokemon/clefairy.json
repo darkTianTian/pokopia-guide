@@ -19,5 +19,28 @@
     "友情防守"
   ],
   "description": "因可愛的舉止和叫聲 而廣受歡迎的寶可夢。 不過很少被人發現。",
-  "image": "https://assets.pokopiaguide.com/pokemon/clefairy.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/clefairy.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dragonair",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 131,
+        "name": "銅像觀光點",
+        "rarity": "common"
+      }
+    ]
+  }
 }

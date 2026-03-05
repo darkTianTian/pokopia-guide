@@ -18,5 +18,31 @@
     "精神力"
   ],
   "description": "在滿月之夜或是興奮的時候， 牠身上圈圈一樣的花紋 就會發出金黃色的光。",
-  "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 206,
+        "name": "黑色風味",
+        "rarity": "common"
+      }
+    ]
+  }
 }

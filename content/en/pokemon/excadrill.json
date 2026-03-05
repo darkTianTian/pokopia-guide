@@ -20,5 +20,14 @@
     "Mold Breaker"
   ],
   "description": "Known as the Drill King, this Pokémon can tunnel through the terrain at speeds of over 90 mph.",
-  "image": "https://assets.pokopiaguide.com/pokemon/excadrill.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/excadrill.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "abra",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

@@ -1,0 +1,33 @@
+{
+  "id": 329,
+  "slug": "vibrava",
+  "name": "ビブラーバ",
+  "types": [
+    "ground",
+    "dragon"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 70,
+    "defense": 50,
+    "spAtk": 50,
+    "spDef": 50,
+    "speed": 70
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "description": "ハネを　成長　させるために 毎日　大量の　獲物を 消化液で　溶かして　すする。",
+  "image": "https://assets.pokopiaguide.com/pokemon/vibrava.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "trapinch",
+    "evolvesTo": [
+      "flygon"
+    ],
+    "habitats": []
+  }
+}

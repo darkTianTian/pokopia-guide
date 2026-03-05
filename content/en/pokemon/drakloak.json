@@ -1,0 +1,35 @@
+{
+  "id": 886,
+  "slug": "drakloak",
+  "name": "Drakloak",
+  "types": [
+    "dragon",
+    "ghost"
+  ],
+  "stats": {
+    "hp": 68,
+    "attack": 80,
+    "defense": 50,
+    "spAtk": 60,
+    "spDef": 50,
+    "speed": 102
+  },
+  "abilities": [
+    "clear-body",
+    "infiltrator",
+    "cursed-body"
+  ],
+  "description": "Without a Dreepy to place on its head and care for, it gets so uneasy it’ll try to substitute any Pokémon it finds for the missing Dreepy.",
+  "image": "https://assets.pokopiaguide.com/pokemon/drakloak.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dreepy",
+    "evolvesTo": [
+      "dragapult"
+    ],
+    "habitats": []
+  }
+}

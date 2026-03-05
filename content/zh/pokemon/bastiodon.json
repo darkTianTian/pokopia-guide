@@ -1,0 +1,32 @@
+{
+  "id": 411,
+  "slug": "bastiodon",
+  "name": "護城龍",
+  "types": [
+    "rock",
+    "steel"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 52,
+    "defense": 168,
+    "spAtk": 47,
+    "spDef": 138,
+    "speed": 30
+  },
+  "abilities": [
+    "sturdy",
+    "soundproof"
+  ],
+  "description": "大約１億年前的寶可夢。 結實到極點的臉擁有 超越鋼鐵的硬度。",
+  "image": "https://assets.pokopiaguide.com/pokemon/bastiodon.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "shieldon",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

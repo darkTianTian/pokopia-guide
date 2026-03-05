@@ -20,5 +20,38 @@
     "健壯胸肌"
   ],
   "description": "性情溫馴，即使遭到襲擊 也很少反擊，只會朝對手 潑沙子來保護自己。",
-  "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png",
+  "pokopia": {
+    "specialties": [
+      "search",
+      "fly"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "pidgeotto"
+    ],
+    "habitats": [
+      {
+        "id": 6,
+        "name": "高地草叢",
+        "rarity": "common"
+      },
+      {
+        "id": 8,
+        "name": "美麗花田",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -1,0 +1,33 @@
+{
+  "id": 475,
+  "slug": "gallade",
+  "name": "Gallade",
+  "types": [
+    "psychic",
+    "fighting"
+  ],
+  "stats": {
+    "hp": 68,
+    "attack": 125,
+    "defense": 65,
+    "spAtk": 65,
+    "spDef": 115,
+    "speed": 80
+  },
+  "abilities": [
+    "steadfast",
+    "sharpness",
+    "justified"
+  ],
+  "description": "The blades extending from its elbows are sharper than the finest swords. Its swordsmanship, albeit self-taught, is astonishingly impressive.",
+  "image": "https://assets.pokopiaguide.com/pokemon/gallade.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kirlia",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

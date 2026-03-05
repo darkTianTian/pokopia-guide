@@ -1,0 +1,34 @@
+{
+  "id": 256,
+  "slug": "combusken",
+  "name": "Combusken",
+  "types": [
+    "fire",
+    "fighting"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 85,
+    "defense": 60,
+    "spAtk": 85,
+    "spDef": 60,
+    "speed": 55
+  },
+  "abilities": [
+    "blaze",
+    "speed-boost"
+  ],
+  "description": "Combusken battles with the intensely hot flames it spews from its beak and with outstandingly destructive kicks. This Pokémon’s cry is very loud and distracting.",
+  "image": "https://assets.pokopiaguide.com/pokemon/combusken.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "torchic",
+    "evolvesTo": [
+      "blaziken"
+    ],
+    "habitats": []
+  }
+}

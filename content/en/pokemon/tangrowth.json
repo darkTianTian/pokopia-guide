@@ -1,0 +1,34 @@
+{
+  "id": 465,
+  "slug": "tangrowth",
+  "name": "Tangrowth",
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 100,
+    "attack": 100,
+    "defense": 125,
+    "spAtk": 110,
+    "spDef": 50,
+    "speed": 50
+  },
+  "abilities": [
+    "chlorophyll",
+    "leaf-guard",
+    "regenerator"
+  ],
+  "description": "Draped with long vines, it resembles a shrub in appearance. It swings bundles of vines as though they were arms, wrapping them around prey to ensnare them.",
+  "image": "https://assets.pokopiaguide.com/pokemon/tangrowth.png",
+  "pokopia": {
+    "specialties": [
+      "appraise"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tangela",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": 848,
+  "slug": "toxel",
+  "name": "Toxel",
+  "types": [
+    "electric",
+    "poison"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 38,
+    "defense": 35,
+    "spAtk": 54,
+    "spDef": 35,
+    "speed": 40
+  },
+  "abilities": [
+    "rattled",
+    "static",
+    "klutz"
+  ],
+  "description": "It manipulates the chemical makeup of its poison to produce electricity. The voltage is weak, but it can cause a tingling paralysis.",
+  "image": "https://assets.pokopiaguide.com/pokemon/toxel.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "toxtricity"
+    ],
+    "habitats": []
+  }
+}

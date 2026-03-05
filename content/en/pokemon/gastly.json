@@ -1,0 +1,33 @@
+{
+  "id": 92,
+  "slug": "gastly",
+  "name": "Gastly",
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "stats": {
+    "hp": 30,
+    "attack": 35,
+    "defense": 30,
+    "spAtk": 100,
+    "spDef": 35,
+    "speed": 80
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "description": "Gaseous and completely impalpable. Also highly dangerous— inhaling part of its poisonous body will cause one to faint instantly.",
+  "image": "https://assets.pokopiaguide.com/pokemon/gastly.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "haunter"
+    ],
+    "habitats": []
+  }
+}

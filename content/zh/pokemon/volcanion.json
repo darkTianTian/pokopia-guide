@@ -1,0 +1,33 @@
+{
+  "id": 721,
+  "slug": "volcanion",
+  "name": "波爾凱尼恩",
+  "types": [
+    "fire",
+    "water"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 110,
+    "defense": 120,
+    "spAtk": 130,
+    "spDef": 90,
+    "speed": 70
+  },
+  "abilities": [
+    "water-absorb"
+  ],
+  "description": "It expels its internal steam from the arms on its back. It has enough power to blow away a mountain.",
+  "image": "https://assets.pokopiaguide.com/pokemon/volcanion.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

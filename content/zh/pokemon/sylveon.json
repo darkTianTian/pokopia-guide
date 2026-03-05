@@ -18,5 +18,31 @@
     "妖精皮膚"
   ],
   "description": "伽勒爾地區的童話中有著 美麗的仙子伊布擊退了 可怕的龍寶可夢的故事。",
-  "image": "https://assets.pokopiaguide.com/pokemon/sylveon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/sylveon.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "slakoth",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 209,
+        "name": "可愛蛋糕",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -18,5 +18,14 @@
     "いやしのこころ"
   ],
   "description": "ときおり　キレイハナが　集まって 踊るような　しぐさを　みせる。 太陽を呼ぶ　儀式と　言われる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/bellossom.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/bellossom.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gloom",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

@@ -1,0 +1,33 @@
+{
+  "id": 819,
+  "slug": "skwovet",
+  "name": "貪心栗鼠",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 55,
+    "defense": 55,
+    "spAtk": 35,
+    "spDef": 35,
+    "speed": 25
+  },
+  "abilities": [
+    "cheek-pouch",
+    "gluttony"
+  ],
+  "description": "由於牠無論何時都在吃樹果， 使得牠比外表看起來還要頑強。 會出現在田地裡尋找樹果。",
+  "image": "https://assets.pokopiaguide.com/pokemon/skwovet.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "greedent"
+    ],
+    "habitats": []
+  }
+}

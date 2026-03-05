@@ -1,0 +1,32 @@
+{
+  "id": 237,
+  "slug": "hitmontop",
+  "name": "カポエラー",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 95,
+    "defense": 95,
+    "spAtk": 35,
+    "spDef": 110,
+    "speed": 70
+  },
+  "abilities": [
+    "intimidate",
+    "technician",
+    "steadfast"
+  ],
+  "description": "逆立ちを　することで　相手の タイミングを　狂わせ　そのすきに 派手な　キック技を　おみまいする。",
+  "image": "https://assets.pokopiaguide.com/pokemon/hitmontop.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tyrogue",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

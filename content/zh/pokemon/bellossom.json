@@ -18,5 +18,14 @@
     "治癒之心"
   ],
   "description": "有時美麗花們會聚在一起， 做出像是跳舞的動作。 據說這是呼喚太陽的儀式。",
-  "image": "https://assets.pokopiaguide.com/pokemon/bellossom.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/bellossom.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gloom",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

@@ -1,0 +1,50 @@
+{
+  "id": 697,
+  "slug": "tyrantrum",
+  "name": "怪顎龍",
+  "types": [
+    "rock",
+    "dragon"
+  ],
+  "stats": {
+    "hp": 82,
+    "attack": 121,
+    "defense": 119,
+    "spAtk": 69,
+    "spDef": 59,
+    "speed": 71
+  },
+  "abilities": [
+    "strong-jaw",
+    "rock-head"
+  ],
+  "description": "只要牠的大顎一咬， 就連汽車也會被粉碎。 是古代世界的王者。",
+  "image": "https://assets.pokopiaguide.com/pokemon/tyrantrum.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tyrunt",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 199,
+        "name": "暴君化石展示台",
+        "rarity": "common"
+      }
+    ]
+  }
+}

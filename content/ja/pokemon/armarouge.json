@@ -1,0 +1,32 @@
+{
+  "id": 936,
+  "slug": "armarouge",
+  "name": "グレンアルマ",
+  "types": [
+    "fire",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 85,
+    "attack": 60,
+    "defense": 100,
+    "spAtk": 125,
+    "spDef": 80,
+    "speed": 75
+  },
+  "abilities": [
+    "flash-fire",
+    "weak-armor"
+  ],
+  "description": "This Pokémon clads itself in armor that has been fortified by psychic and fire energy, and it shoots blazing fireballs.",
+  "image": "https://assets.pokopiaguide.com/pokemon/armarouge.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charcadet",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

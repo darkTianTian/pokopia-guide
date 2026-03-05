@@ -1,0 +1,31 @@
+{
+  "id": 815,
+  "slug": "cinderace",
+  "name": "閃焰王牌",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 116,
+    "defense": 75,
+    "spAtk": 65,
+    "spDef": 75,
+    "speed": 119
+  },
+  "abilities": [
+    "blaze",
+    "libero"
+  ],
+  "description": "擁有熟練的進攻和防守技巧。 只要得到聲援就會更有衝勁， 但有時會為了出風頭而弄巧成拙。",
+  "image": "https://assets.pokopiaguide.com/pokemon/cinderace.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "raboot",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

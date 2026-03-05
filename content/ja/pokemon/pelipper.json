@@ -1,0 +1,50 @@
+{
+  "id": 279,
+  "slug": "pelipper",
+  "name": "ペリッパー",
+  "types": [
+    "water",
+    "flying"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 100,
+    "spAtk": 95,
+    "spDef": 70,
+    "speed": 65
+  },
+  "abilities": [
+    "keen-eye",
+    "drizzle",
+    "rain-dish"
+  ],
+  "description": "海面　すれすれを　飛んで 大きな　くちばしで　海水ごと エサを　すくい取って　運ぶのだ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/pelipper.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "fly"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "wingull",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 58,
+        "name": "風の花畑",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

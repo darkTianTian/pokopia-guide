@@ -19,5 +19,32 @@
     "貪吃鬼"
   ],
   "description": "喜歡高溫多濕的環境。 會利用藤蔓捕捉小蟲 當成自己的食物。",
-  "image": "https://assets.pokopiaguide.com/pokemon/bellsprout.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/bellsprout.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "樹蔭草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

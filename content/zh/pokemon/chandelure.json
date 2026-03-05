@@ -1,0 +1,33 @@
+{
+  "id": 609,
+  "slug": "chandelure",
+  "name": "水晶燈火靈",
+  "types": [
+    "ghost",
+    "fire"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 55,
+    "defense": 90,
+    "spAtk": 145,
+    "spDef": 90,
+    "speed": 80
+  },
+  "abilities": [
+    "flash-fire",
+    "flame-body",
+    "infiltrator"
+  ],
+  "description": "據說在用水晶燈火靈 來充當照明設備的房子裡， 喪事會接連不斷。",
+  "image": "https://assets.pokopiaguide.com/pokemon/chandelure.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "lampent",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

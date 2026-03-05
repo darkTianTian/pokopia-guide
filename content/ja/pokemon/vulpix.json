@@ -18,5 +18,31 @@
     "ひでり"
   ],
   "description": "６本の　しっぽは　育つごとに 毛並みが　良くなり　美しくなる。 抱きしめると　ほんのり　温かい。",
-  "image": "https://assets.pokopiaguide.com/pokemon/vulpix.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/vulpix.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 142,
+        "name": "Fluffy flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

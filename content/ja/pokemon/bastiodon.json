@@ -1,0 +1,32 @@
+{
+  "id": 411,
+  "slug": "bastiodon",
+  "name": "トリデプス",
+  "types": [
+    "rock",
+    "steel"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 52,
+    "defense": 168,
+    "spAtk": 47,
+    "spDef": 138,
+    "speed": 30
+  },
+  "abilities": [
+    "sturdy",
+    "soundproof"
+  ],
+  "description": "約１億年前の　ポケモン。 恐ろしく　頑丈な　顔は 鋼鉄以上の　硬度を　持つ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/bastiodon.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "shieldon",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

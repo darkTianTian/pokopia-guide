@@ -20,5 +20,14 @@
     "Justified"
   ],
   "description": "A most gallant-looking creature. It emits energy waves and controls them with precision, using them to sense even faraway beings. I have given the name ”aura” to this power.",
-  "image": "https://assets.pokopiaguide.com/pokemon/lucario.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/lucario.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "flaaffy",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

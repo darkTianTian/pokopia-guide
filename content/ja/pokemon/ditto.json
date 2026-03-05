@@ -1,0 +1,33 @@
+{
+  "id": 132,
+  "slug": "ditto",
+  "name": "メタモン",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 48,
+    "attack": 48,
+    "defense": 48,
+    "spAtk": 48,
+    "spDef": 48,
+    "speed": 48
+  },
+  "abilities": [
+    "limber",
+    "imposter"
+  ],
+  "description": "メタモン同士　出会ってしまうと 相手そっくりの　形に　なろうと いつもより　激しく　動く。",
+  "image": "https://assets.pokopiaguide.com/pokemon/ditto.png",
+  "pokopia": {
+    "specialties": [
+      "transform"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

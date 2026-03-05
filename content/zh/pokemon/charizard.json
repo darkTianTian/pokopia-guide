@@ -19,5 +19,14 @@
     "太陽之力"
   ],
   "description": "能用翅膀飛到距離地面 １４００公尺的高度。 會吐出高溫的火焰。",
-  "image": "https://assets.pokopiaguide.com/pokemon/charizard.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/charizard.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charmeleon",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

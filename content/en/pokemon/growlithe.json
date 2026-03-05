@@ -19,5 +19,37 @@
     "Justified"
   ],
   "description": "They patrol their territory in pairs. I believe the igneous rock components in the fur of this species are the result of volcanic activity in its habitat.",
-  "image": "https://assets.pokopiaguide.com/pokemon/growlithe.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/growlithe.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 62,
+        "name": "Perpetual mess",
+        "rarity": "common"
+      },
+      {
+        "id": 79,
+        "name": "Resort meal prep",
+        "rarity": "common"
+      }
+    ]
+  }
 }

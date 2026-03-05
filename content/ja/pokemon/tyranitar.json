@@ -19,5 +19,14 @@
     "きんちょうかん"
   ],
   "description": "地響きを　鳴らしながら　歩くと 大きな　山でさえ　崩れ まわりの　地形は　変わってしまう。",
-  "image": "https://assets.pokopiaguide.com/pokemon/tyranitar.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/tyranitar.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "chinchou",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

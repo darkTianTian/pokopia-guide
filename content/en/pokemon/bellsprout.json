@@ -19,5 +19,32 @@
     "Gluttony"
   ],
   "description": "Prefers hot and humid places. It ensnares tiny bugs with its vines and devours them.",
-  "image": "https://assets.pokopiaguide.com/pokemon/bellsprout.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/bellsprout.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "Tree-shaded  tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
 }

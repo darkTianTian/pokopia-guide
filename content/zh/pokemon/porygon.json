@@ -1,0 +1,34 @@
+{
+  "id": 137,
+  "slug": "porygon",
+  "name": "多邊獸",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 60,
+    "defense": 70,
+    "spAtk": 85,
+    "spDef": 75,
+    "speed": 40
+  },
+  "abilities": [
+    "trace",
+    "download",
+    "analytic"
+  ],
+  "description": "近年在電腦空間大展身手。 會四處巡邏查看 有沒有可疑的資料。",
+  "image": "https://assets.pokopiaguide.com/pokemon/porygon.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "porygon2"
+    ],
+    "habitats": []
+  }
+}

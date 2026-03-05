@@ -1,0 +1,33 @@
+{
+  "id": 820,
+  "slug": "greedent",
+  "name": "Greedent",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 120,
+    "attack": 95,
+    "defense": 95,
+    "spAtk": 55,
+    "spDef": 75,
+    "speed": 20
+  },
+  "abilities": [
+    "cheek-pouch",
+    "gluttony"
+  ],
+  "description": "Common throughout the Galar region, this Pokémon has strong teeth and can chew through the toughest of berry shells.",
+  "image": "https://assets.pokopiaguide.com/pokemon/greedent.png",
+  "pokopia": {
+    "specialties": [
+      "party"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "skwovet",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

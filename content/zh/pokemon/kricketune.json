@@ -1,0 +1,48 @@
+{
+  "id": 402,
+  "slug": "kricketune",
+  "name": "音箱蟀",
+  "types": [
+    "bug"
+  ],
+  "stats": {
+    "hp": 77,
+    "attack": 85,
+    "defense": 51,
+    "spAtk": 55,
+    "spDef": 51,
+    "speed": 65
+  },
+  "abilities": [
+    "swarm",
+    "technician"
+  ],
+  "description": "It uses its cutlass-like arms to produce sound, the melody of which varies from individual to individual. It is a worthwhile endeavor to seek out one's favorite tunes.",
+  "image": "https://assets.pokopiaguide.com/pokemon/kricketune.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kricketot",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 128,
+        "name": "Music and magazines",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": 71,
+  "slug": "victreebel",
+  "name": "ウツボット",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 105,
+    "defense": 65,
+    "spAtk": 100,
+    "spDef": 70,
+    "speed": 70
+  },
+  "abilities": [
+    "chlorophyll",
+    "gluttony"
+  ],
+  "description": "ミツの　香りで　獲物を　誘う。 口の中に　入れたものは　１日で ホネまで　溶かしてしまうという。",
+  "image": "https://assets.pokopiaguide.com/pokemon/victreebel.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "weepinbell",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

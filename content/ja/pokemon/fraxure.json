@@ -1,0 +1,45 @@
+{
+  "id": 611,
+  "slug": "fraxure",
+  "name": "オノンド",
+  "types": [
+    "dragon"
+  ],
+  "stats": {
+    "hp": 66,
+    "attack": 117,
+    "defense": 70,
+    "spAtk": 40,
+    "spDef": 50,
+    "speed": 67
+  },
+  "abilities": [
+    "rivalry",
+    "mold-breaker",
+    "unnerve"
+  ],
+  "description": "鎧の　ように　硬い　皮膚。 体当たりと　同時に　キバを 突き刺す　戦法が　得意　だぞ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/fraxure.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "axew",
+    "evolvesTo": [
+      "haxorus"
+    ],
+    "habitats": []
+  }
+}

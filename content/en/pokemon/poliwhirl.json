@@ -1,0 +1,35 @@
+{
+  "id": 61,
+  "slug": "poliwhirl",
+  "name": "Poliwhirl",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 65,
+    "spAtk": 50,
+    "spDef": 50,
+    "speed": 90
+  },
+  "abilities": [
+    "water-absorb",
+    "damp",
+    "swift-swim"
+  ],
+  "description": "This Pokémon’s sweat is a slimy mucus. When captured, Poliwhirl can slither from its enemies’ grasp and escape.",
+  "image": "https://assets.pokopiaguide.com/pokemon/poliwhirl.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "poliwag",
+    "evolvesTo": [
+      "poliwrath",
+      "politoed"
+    ],
+    "habitats": []
+  }
+}

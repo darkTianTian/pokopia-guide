@@ -20,5 +20,32 @@
     "不服輸"
   ],
   "description": "用植物的莖來戰鬥。 莖的揮舞方式存在著 好幾種不同的流派。",
-  "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 80,
+        "name": "行李打包好了",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -1,0 +1,52 @@
+{
+  "id": 67,
+  "slug": "machoke",
+  "name": "豪力",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 100,
+    "defense": 70,
+    "spAtk": 50,
+    "spDef": 60,
+    "speed": 45
+  },
+  "abilities": [
+    "guts",
+    "no-guard",
+    "steadfast"
+  ],
+  "description": "有著不會疲勞的強韌肉體。 會去幫助人類完成例如 搬運沉重行李之類的工作。",
+  "image": "https://assets.pokopiaguide.com/pokemon/machoke.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "machop",
+    "evolvesTo": [
+      "machamp"
+    ],
+    "habitats": [
+      {
+        "id": 103,
+        "name": "草叢訓練場",
+        "rarity": "common"
+      }
+    ]
+  }
+}

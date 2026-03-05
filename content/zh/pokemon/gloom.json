@@ -1,0 +1,52 @@
+{
+  "id": 44,
+  "slug": "gloom",
+  "name": "臭臭花",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 70,
+    "spAtk": 85,
+    "spDef": 75,
+    "speed": 40
+  },
+  "abilities": [
+    "chlorophyll",
+    "stench"
+  ],
+  "description": "看似口水的東西其實是 甜甜的蜜。非常黏稠， 只要碰到就會一直黏住。",
+  "image": "https://assets.pokopiaguide.com/pokemon/gloom.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "oddish",
+    "evolvesTo": [
+      "vileplume",
+      "bellossom"
+    ],
+    "habitats": [
+      {
+        "id": 57,
+        "name": "南國風情",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -19,5 +19,32 @@
     "沙隱"
   ],
   "description": "靠吃泥土維生。 吃掉一座大山後， 就會為了成長而開始沉睡。",
-  "image": "https://assets.pokopiaguide.com/pokemon/larvitar.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/larvitar.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "golbat",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 110,
+        "name": "苔蘚遍布",
+        "rarity": "common"
+      }
+    ]
+  }
 }

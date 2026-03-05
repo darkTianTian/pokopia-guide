@@ -1,0 +1,50 @@
+{
+  "id": 5,
+  "slug": "charmeleon",
+  "name": "火恐龍",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 58,
+    "attack": 64,
+    "defense": 58,
+    "spAtk": 80,
+    "spDef": 65,
+    "speed": 80
+  },
+  "abilities": [
+    "blaze",
+    "solar-power"
+  ],
+  "description": "如果牠在戰鬥中亢奮起來， 就會噴出灼熱的火焰， 把周圍的東西燒得一乾二淨。",
+  "image": "https://assets.pokopiaguide.com/pokemon/charmeleon.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charmander",
+    "evolvesTo": [
+      "charizard"
+    ],
+    "habitats": [
+      {
+        "id": 17,
+        "name": "露營套組",
+        "rarity": "common"
+      }
+    ]
+  }
+}

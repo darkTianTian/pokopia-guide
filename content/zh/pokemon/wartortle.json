@@ -18,5 +18,27 @@
     "雨盤"
   ],
   "description": "會靈巧地擺動自己 毛茸茸的耳朵和尾巴， 藉此在水中保持平衡。",
-  "image": "https://assets.pokopiaguide.com/pokemon/wartortle.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/wartortle.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "squirtle",
+    "evolvesTo": [
+      "blastoise"
+    ],
+    "habitats": []
+  }
 }

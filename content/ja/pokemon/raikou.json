@@ -1,0 +1,33 @@
+{
+  "id": 243,
+  "slug": "raikou",
+  "name": "ライコウ",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 85,
+    "defense": 75,
+    "spAtk": 115,
+    "spDef": 100,
+    "speed": 115
+  },
+  "abilities": [
+    "pressure",
+    "inner-focus"
+  ],
+  "description": "雷の　スピードを　宿した　ポケモン。 その　遠ぼえは　雷が　落ちた　ときの ように　空気を　震わせ　大地を　揺るがす。",
+  "image": "https://assets.pokopiaguide.com/pokemon/raikou.png",
+  "pokopia": {
+    "specialties": [
+      "generage"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

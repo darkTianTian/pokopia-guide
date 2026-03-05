@@ -1,0 +1,32 @@
+{
+  "id": 53,
+  "slug": "persian",
+  "name": "貓老大",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 70,
+    "defense": 60,
+    "spAtk": 65,
+    "spDef": 65,
+    "speed": 115
+  },
+  "abilities": [
+    "limber",
+    "technician",
+    "unnerve"
+  ],
+  "description": "擁有優雅高貴的身姿。 與野蠻的喵頭目個性不合， 互相看不起對方。",
+  "image": "https://assets.pokopiaguide.com/pokemon/persian.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "meowth",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

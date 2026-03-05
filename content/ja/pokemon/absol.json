@@ -1,0 +1,32 @@
+{
+  "id": 359,
+  "slug": "absol",
+  "name": "アブソル",
+  "types": [
+    "dark"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 130,
+    "defense": 60,
+    "spAtk": 75,
+    "spDef": 60,
+    "speed": 75
+  },
+  "abilities": [
+    "pressure",
+    "super-luck",
+    "justified"
+  ],
+  "description": "危険を　察知する　能力を 持つがゆえに　人からは　災いを もたらす　ポケモンと　誤解された。",
+  "image": "https://assets.pokopiaguide.com/pokemon/absol.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

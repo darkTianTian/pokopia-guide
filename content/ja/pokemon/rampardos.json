@@ -1,0 +1,31 @@
+{
+  "id": 409,
+  "slug": "rampardos",
+  "name": "ラムパルド",
+  "types": [
+    "rock"
+  ],
+  "stats": {
+    "hp": 97,
+    "attack": 165,
+    "defense": 60,
+    "spAtk": 65,
+    "spDef": 50,
+    "speed": 58
+  },
+  "abilities": [
+    "mold-breaker",
+    "sheer-force"
+  ],
+  "description": "頭突きが　得意な　古代のポケモン。 本当に　脳みそが　小さいので 愚かで　滅んだという説も　ある。",
+  "image": "https://assets.pokopiaguide.com/pokemon/rampardos.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "cranidos",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

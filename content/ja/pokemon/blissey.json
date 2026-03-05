@@ -1,0 +1,32 @@
+{
+  "id": 242,
+  "slug": "blissey",
+  "name": "ハピナス",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 255,
+    "attack": 10,
+    "defense": 10,
+    "spAtk": 75,
+    "spDef": 135,
+    "speed": 55
+  },
+  "abilities": [
+    "natural-cure",
+    "serene-grace",
+    "healer"
+  ],
+  "description": "幸せが　詰まった　不思議な タマゴを　産む。　食べた　人は 誰にでも　優しくなれるという。",
+  "image": "https://assets.pokopiaguide.com/pokemon/blissey.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "chansey",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

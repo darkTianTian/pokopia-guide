@@ -1,0 +1,33 @@
+{
+  "id": 814,
+  "slug": "raboot",
+  "name": "Raboot",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 86,
+    "defense": 60,
+    "spAtk": 55,
+    "spDef": 60,
+    "speed": 94
+  },
+  "abilities": [
+    "blaze",
+    "libero"
+  ],
+  "description": "It kicks berries right off the branches of trees and then juggles them with its feet, practicing its footwork.",
+  "image": "https://assets.pokopiaguide.com/pokemon/raboot.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "scorbunny",
+    "evolvesTo": [
+      "cinderace"
+    ],
+    "habitats": []
+  }
+}

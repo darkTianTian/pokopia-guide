@@ -20,5 +20,31 @@
     "Hydration"
   ],
   "description": "Crossing icy seas is no issue for this cold-resistant Pokémon. Its smooth skin is a little cool to the touch.",
-  "image": "https://assets.pokopiaguide.com/pokemon/lapras.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/lapras.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tyrogue",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 60,
+        "name": "Tropical seaside",
+        "rarity": "common"
+      }
+    ]
+  }
 }

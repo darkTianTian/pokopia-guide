@@ -1,0 +1,30 @@
+{
+  "id": 429,
+  "slug": "mismagius",
+  "name": "Mismagius",
+  "types": [
+    "ghost"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 60,
+    "spAtk": 105,
+    "spDef": 105,
+    "speed": 105
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "description": "The incantations Mismagius chants can ward against misfortune, so a custom exists of inviting it into one's home. Incur the Pokémon's displeasure, however, and disaster will surely ensue.",
+  "image": "https://assets.pokopiaguide.com/pokemon/mismagius.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "misdreavus",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

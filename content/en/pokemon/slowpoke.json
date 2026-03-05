@@ -20,5 +20,32 @@
     "Regenerator"
   ],
   "description": "When this Pokémon’s tail is soaked in water, sweetness seeps from it. Slowpoke uses this trait to lure in and fish up other Pokémon.",
-  "image": "https://assets.pokopiaguide.com/pokemon/slowpoke.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/slowpoke.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "yawn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ekans",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 5,
+        "name": "Seaside Tall Grass",
+        "rarity": "common"
+      }
+    ]
+  }
 }

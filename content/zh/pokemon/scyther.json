@@ -20,5 +20,31 @@
     "不屈之心"
   ],
   "description": "如果在森林裡發現了 有很多樹被砍倒的地方， 那就是飛天螳螂的地盤。",
-  "image": "https://assets.pokopiaguide.com/pokemon/scyther.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/scyther.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "zubat",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "樹蔭草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

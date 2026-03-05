@@ -1,0 +1,43 @@
+{
+  "id": 736,
+  "slug": "grubbin",
+  "name": "強顎雞母蟲",
+  "types": [
+    "bug"
+  ],
+  "stats": {
+    "hp": 47,
+    "attack": 62,
+    "defense": 45,
+    "spAtk": 55,
+    "spDef": 45,
+    "speed": 46
+  },
+  "abilities": [
+    "swarm"
+  ],
+  "description": "會用巨大的顎部 在森林中挖地製造巢穴。 最喜歡甜甜的樹汁。",
+  "image": "https://assets.pokopiaguide.com/pokemon/grubbin.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "charjabug"
+    ],
+    "habitats": []
+  }
+}

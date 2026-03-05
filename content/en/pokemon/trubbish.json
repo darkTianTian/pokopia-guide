@@ -1,0 +1,51 @@
+{
+  "id": 568,
+  "slug": "trubbish",
+  "name": "Trubbish",
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 50,
+    "defense": 62,
+    "spAtk": 40,
+    "spDef": 62,
+    "speed": 65
+  },
+  "abilities": [
+    "stench",
+    "sticky-hold",
+    "aftermath"
+  ],
+  "description": "This Pokémon was born from a bag stuffed with trash. Galarian Weezing relish the fumes belched by Trubbish.",
+  "image": "https://assets.pokopiaguide.com/pokemon/trubbish.png",
+  "pokopia": {
+    "specialties": [
+      "recycle"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "garbodor"
+    ],
+    "habitats": [
+      {
+        "id": 63,
+        "name": "Trash collection site",
+        "rarity": "common"
+      }
+    ]
+  }
+}

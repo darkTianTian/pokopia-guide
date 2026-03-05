@@ -1,0 +1,35 @@
+{
+  "id": 940,
+  "slug": "wattrel",
+  "name": "Wattrel",
+  "types": [
+    "electric",
+    "flying"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 40,
+    "defense": 35,
+    "spAtk": 55,
+    "spDef": 40,
+    "speed": 70
+  },
+  "abilities": [
+    "wind-power",
+    "volt-absorb",
+    "competitive"
+  ],
+  "description": "These Pokémon make their nests on coastal cliffs. The nests have a strange, crackling texture, and they’re a popular delicacy.",
+  "image": "https://assets.pokopiaguide.com/pokemon/wattrel.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "kilowattrel"
+    ],
+    "habitats": []
+  }
+}

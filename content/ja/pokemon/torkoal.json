@@ -1,0 +1,49 @@
+{
+  "id": 324,
+  "slug": "torkoal",
+  "name": "コータス",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 140,
+    "spAtk": 85,
+    "spDef": 70,
+    "speed": 20
+  },
+  "abilities": [
+    "white-smoke",
+    "drought",
+    "shell-armor"
+  ],
+  "description": "使われなくなった　炭鉱には たくさんの　コータスが　棲みついて 石炭を　せっせと　掘っている。",
+  "image": "https://assets.pokopiaguide.com/pokemon/torkoal.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 112,
+        "name": "コケむす温泉",
+        "rarity": "common"
+      }
+    ]
+  }
+}

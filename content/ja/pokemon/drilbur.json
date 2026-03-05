@@ -19,5 +19,31 @@
     "かたやぶり"
   ],
   "description": "ツメで　地中を　掘り進むので 育てた　野菜が　傷むと 農業関係者は　嫌う。",
-  "image": "https://assets.pokopiaguide.com/pokemon/drilbur.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/drilbur.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 15,
+        "name": "フレッシュ野菜畑",
+        "rarity": "common"
+      }
+    ]
+  }
 }

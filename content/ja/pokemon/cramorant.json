@@ -1,0 +1,31 @@
+{
+  "id": 845,
+  "slug": "cramorant",
+  "name": "ウッウ",
+  "types": [
+    "flying",
+    "water"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 55,
+    "spAtk": 85,
+    "spDef": 95,
+    "speed": 85
+  },
+  "abilities": [
+    "gulp-missile"
+  ],
+  "description": "食いしん坊で　エサの　サシカマスを 丸飲みするが　たまに　間違えて ほかの　ポケモンに　食らいつく。",
+  "image": "https://assets.pokopiaguide.com/pokemon/cramorant.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

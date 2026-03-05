@@ -1,0 +1,52 @@
+{
+  "id": 75,
+  "slug": "graveler",
+  "name": "ゴローン",
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 95,
+    "defense": 115,
+    "spAtk": 45,
+    "spDef": 45,
+    "speed": 35
+  },
+  "abilities": [
+    "rock-head",
+    "sturdy",
+    "sand-veil"
+  ],
+  "description": "山道を　よく　転がっている。 通り道に　なにが　あろうと 一切　気に　していない。",
+  "image": "https://assets.pokopiaguide.com/pokemon/graveler.png",
+  "pokopia": {
+    "specialties": [
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "geodude",
+    "evolvesTo": [
+      "golem"
+    ],
+    "habitats": [
+      {
+        "id": 111,
+        "name": "コケまみれの岩",
+        "rarity": "common"
+      }
+    ]
+  }
+}

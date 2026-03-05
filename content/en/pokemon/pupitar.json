@@ -1,0 +1,51 @@
+{
+  "id": 247,
+  "slug": "pupitar",
+  "name": "Pupitar",
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 84,
+    "defense": 70,
+    "spAtk": 65,
+    "spDef": 70,
+    "speed": 51
+  },
+  "abilities": [
+    "shed-skin"
+  ],
+  "description": "It will not stay still, even while it’s a pupa. It already has arms and legs under its solid shell.",
+  "image": "https://assets.pokopiaguide.com/pokemon/pupitar.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "larvitar",
+    "evolvesTo": [
+      "tyranitar"
+    ],
+    "habitats": [
+      {
+        "id": 138,
+        "name": "Tree-shaded pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

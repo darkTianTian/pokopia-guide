@@ -1,0 +1,32 @@
+{
+  "id": 317,
+  "slug": "swalot",
+  "name": "Swalot",
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 100,
+    "attack": 73,
+    "defense": 83,
+    "spAtk": 73,
+    "spDef": 83,
+    "speed": 55
+  },
+  "abilities": [
+    "liquid-ooze",
+    "sticky-hold",
+    "gluttony"
+  ],
+  "description": "Swalot has no teeth, so what it eats, it swallows whole, no matter what. Its cavernous mouth yawns widely. An automobile tire could easily fit inside this Pokémon’s mouth.",
+  "image": "https://assets.pokopiaguide.com/pokemon/swalot.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gulpin",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

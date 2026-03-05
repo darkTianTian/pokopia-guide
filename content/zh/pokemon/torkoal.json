@@ -1,0 +1,49 @@
+{
+  "id": 324,
+  "slug": "torkoal",
+  "name": "煤炭龜",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 140,
+    "spAtk": 85,
+    "spDef": 70,
+    "speed": 20
+  },
+  "abilities": [
+    "white-smoke",
+    "drought",
+    "shell-armor"
+  ],
+  "description": "在廢棄不用的煤礦坑中 住著許多的煤炭龜。 牠們會不停地挖掘煤炭。",
+  "image": "https://assets.pokopiaguide.com/pokemon/torkoal.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 112,
+        "name": "苔蘚溫泉",
+        "rarity": "common"
+      }
+    ]
+  }
+}

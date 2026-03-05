@@ -1,0 +1,31 @@
+{
+  "id": 738,
+  "slug": "vikavolt",
+  "name": "Vikavolt",
+  "types": [
+    "bug",
+    "electric"
+  ],
+  "stats": {
+    "hp": 77,
+    "attack": 70,
+    "defense": 90,
+    "spAtk": 145,
+    "spDef": 75,
+    "speed": 43
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "description": "If it carries a Charjabug to use as a spare battery, a flying Vikavolt can rapidly fire high-powered beams of electricity.",
+  "image": "https://assets.pokopiaguide.com/pokemon/vikavolt.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charjabug",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": 922,
+  "slug": "pawmo",
+  "name": "布土撥",
+  "types": [
+    "electric",
+    "fighting"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 75,
+    "defense": 40,
+    "spAtk": 50,
+    "spDef": 40,
+    "speed": 85
+  },
+  "abilities": [
+    "volt-absorb",
+    "natural-cure",
+    "iron-fist"
+  ],
+  "description": "Pawmo uses a unique fighting technique in which it uses its forepaws to strike foes and zap them with electricity from its paw pads simultaneously.",
+  "image": "https://assets.pokopiaguide.com/pokemon/pawmo.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pawmi",
+    "evolvesTo": [
+      "pawmot"
+    ],
+    "habitats": [
+      {
+        "id": 67,
+        "name": "飢腸轆轆餐廳",
+        "rarity": "common"
+      }
+    ]
+  }
+}

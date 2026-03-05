@@ -1,0 +1,34 @@
+{
+  "id": 610,
+  "slug": "axew",
+  "name": "Axew",
+  "types": [
+    "dragon"
+  ],
+  "stats": {
+    "hp": 46,
+    "attack": 87,
+    "defense": 60,
+    "spAtk": 30,
+    "spDef": 40,
+    "speed": 57
+  },
+  "abilities": [
+    "rivalry",
+    "mold-breaker",
+    "unnerve"
+  ],
+  "description": "They play with each other by knocking their large tusks together. Their tusks break sometimes, but they grow back so quickly that it isn’t a concern.",
+  "image": "https://assets.pokopiaguide.com/pokemon/axew.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "fraxure"
+    ],
+    "habitats": []
+  }
+}

@@ -20,5 +20,14 @@
     "せいぎのこころ"
   ],
   "description": "人の　考えていることも わかるので　正しい　心の トレーナーにしか　懐かない。",
-  "image": "https://assets.pokopiaguide.com/pokemon/lucario.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/lucario.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "flaaffy",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

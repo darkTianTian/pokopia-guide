@@ -1,0 +1,35 @@
+{
+  "id": 959,
+  "slug": "tinkaton",
+  "name": "巨鍛匠",
+  "types": [
+    "fairy",
+    "steel"
+  ],
+  "stats": {
+    "hp": 85,
+    "attack": 75,
+    "defense": 77,
+    "spAtk": 70,
+    "spDef": 105,
+    "speed": 94
+  },
+  "abilities": [
+    "mold-breaker",
+    "own-tempo",
+    "pickpocket"
+  ],
+  "description": "The hammer tops 220 pounds, yet it gets swung around easily by Tinkaton as it steals whatever it pleases and carries its plunder back home.",
+  "image": "https://assets.pokopiaguide.com/pokemon/tinkaton.png",
+  "pokopia": {
+    "specialties": [
+      "engineer"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tinkatuff",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

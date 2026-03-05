@@ -19,5 +19,31 @@
     "連續攻擊"
   ],
   "description": "用尾巴互相撫摸來打招呼。 尾巴的毛比較蓬鬆的那一方 會表現得稍微威風些。",
-  "image": "https://assets.pokopiaguide.com/pokemon/minccino.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/minccino.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 75,
+        "name": "換裝空間",
+        "rarity": "common"
+      }
+    ]
+  }
 }

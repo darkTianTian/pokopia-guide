@@ -18,5 +18,18 @@
     "ひらいしん"
   ],
   "description": "おたがいの　しっぽを　くっつけて 電気を　流しあうのが ピカチュウ　同士の　挨拶だ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/pikachu.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/pikachu.png",
+  "pokopia": {
+    "specialties": [
+      "illuminate"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pichu",
+    "evolvesTo": [
+      "raichu"
+    ],
+    "habitats": []
+  }
 }

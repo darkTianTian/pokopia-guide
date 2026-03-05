@@ -1,0 +1,48 @@
+{
+  "id": 331,
+  "slug": "cacnea",
+  "name": "刺球仙人掌",
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 85,
+    "defense": 40,
+    "spAtk": 85,
+    "spDef": 40,
+    "speed": 35
+  },
+  "abilities": [
+    "sand-veil",
+    "water-absorb"
+  ],
+  "description": "The more arid and harsh the environment, the more pretty and fragrant a flower Cacnea grows. This Pokémon battles by wildly swinging its thorny arms.",
+  "image": "https://assets.pokopiaguide.com/pokemon/cacnea.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "cacturne"
+    ],
+    "habitats": [
+      {
+        "id": 42,
+        "name": "晴天地點",
+        "rarity": "common"
+      }
+    ]
+  }
+}

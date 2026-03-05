@@ -1,0 +1,51 @@
+{
+  "id": 533,
+  "slug": "gurdurr",
+  "name": "鐵骨土人",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 85,
+    "attack": 105,
+    "defense": 85,
+    "spAtk": 40,
+    "spDef": 50,
+    "speed": 40
+  },
+  "abilities": [
+    "guts",
+    "sheer-force",
+    "iron-fist"
+  ],
+  "description": "能夠靈巧地操縱鋼骨。 雖然對拆除得心應手， 但卻不太擅長組裝。",
+  "image": "https://assets.pokopiaguide.com/pokemon/gurdurr.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "timburr",
+    "evolvesTo": [
+      "conkeldurr"
+    ],
+    "habitats": [
+      {
+        "id": 28,
+        "name": "Large luggage carrier",
+        "rarity": "common"
+      }
+    ]
+  }
+}

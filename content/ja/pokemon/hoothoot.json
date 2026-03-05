@@ -20,5 +20,29 @@
     "いろめがね"
   ],
   "description": "いつも　きまった　時間になると 鳴きだすので　時計代わりに 連れ歩く　トレーナーもいる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/hoothoot.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/hoothoot.png",
+  "pokopia": {
+    "specialties": [
+      "trade",
+      "fly"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 31,
+        "name": "やさしい光でおやすみ",
+        "rarity": "common"
+      }
+    ]
+  }
 }

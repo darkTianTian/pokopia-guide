@@ -1,0 +1,43 @@
+{
+  "id": 466,
+  "slug": "electivire",
+  "name": "Electivire",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 123,
+    "defense": 67,
+    "spAtk": 95,
+    "spDef": 85,
+    "speed": 95
+  },
+  "abilities": [
+    "motor-drive",
+    "vital-spirit"
+  ],
+  "description": "Its evolution was induced by an unusual item, and its electrical output rises along with its heart rate. From its tails, it can unleash an electric current measuring 20,000 volts.",
+  "image": "https://assets.pokopiaguide.com/pokemon/electivire.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "electabuzz",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

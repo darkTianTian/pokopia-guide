@@ -19,5 +19,14 @@
     "連續攻擊"
   ],
   "description": "覆蓋著特別油脂的毛髮 可以擋住攻擊。這種油 以高價在市場上流通。",
-  "image": "https://assets.pokopiaguide.com/pokemon/cinccino.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/cinccino.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "minccino",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

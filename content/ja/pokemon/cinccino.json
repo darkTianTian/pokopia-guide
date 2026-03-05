@@ -19,5 +19,14 @@
     "スキルリンク"
   ],
   "description": "特別な　油の　染みた　毛は 攻撃を　受け流す。　油は 高値で　取り引き　されている。",
-  "image": "https://assets.pokopiaguide.com/pokemon/cinccino.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/cinccino.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "minccino",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

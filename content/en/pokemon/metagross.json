@@ -1,0 +1,32 @@
+{
+  "id": 376,
+  "slug": "metagross",
+  "name": "Metagross",
+  "types": [
+    "steel",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 135,
+    "defense": 130,
+    "spAtk": 95,
+    "spDef": 90,
+    "speed": 70
+  },
+  "abilities": [
+    "clear-body",
+    "light-metal"
+  ],
+  "description": "Metagross is the result of the fusion of two Metang. This Pokémon defeats its opponents through use of its supercomputer-level brain.",
+  "image": "https://assets.pokopiaguide.com/pokemon/metagross.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "metang",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

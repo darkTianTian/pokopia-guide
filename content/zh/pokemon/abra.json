@@ -19,5 +19,31 @@
     "魔法防守"
   ],
   "description": "就算在睡夢中也能使用瞬間移動。 據說當牠睡得越熟， 瞬間移動的距離就會越遠。",
-  "image": "https://assets.pokopiaguide.com/pokemon/abra.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/abra.png",
+  "pokopia": {
+    "specialties": [
+      "teleport"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 152,
+        "name": "Fortune-teller's table",
+        "rarity": "common"
+      }
+    ]
+  }
 }

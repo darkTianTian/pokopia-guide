@@ -18,5 +18,33 @@
     "サンパワー"
   ],
   "description": "生まれたときから　しっぽに　炎が ともっている。　炎が　消えたとき その　命は　終わって　しまう。",
-  "image": "https://assets.pokopiaguide.com/pokemon/charmander.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/charmander.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "charmeleon"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "緑の草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

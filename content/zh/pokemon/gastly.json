@@ -1,0 +1,33 @@
+{
+  "id": 92,
+  "slug": "gastly",
+  "name": "鬼斯",
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "stats": {
+    "hp": 30,
+    "attack": 35,
+    "defense": 30,
+    "spAtk": 100,
+    "spDef": 35,
+    "speed": 80
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "description": "能用稀薄氣體狀的 身體潛入任何地方， 但只要起風就會被吹跑。",
+  "image": "https://assets.pokopiaguide.com/pokemon/gastly.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "haunter"
+    ],
+    "habitats": []
+  }
+}

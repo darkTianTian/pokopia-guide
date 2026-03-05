@@ -1,0 +1,32 @@
+{
+  "id": 3,
+  "slug": "venusaur",
+  "name": "妙蛙花",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 82,
+    "defense": 83,
+    "spAtk": 100,
+    "spDef": 100,
+    "speed": 80
+  },
+  "abilities": [
+    "overgrow",
+    "chlorophyll"
+  ],
+  "description": "花朵散發出的迷人香味， 能安撫激動的心情， 甚至消弭鬥爭。",
+  "image": "https://assets.pokopiaguide.com/pokemon/venusaur.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ivysaur",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

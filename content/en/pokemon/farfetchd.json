@@ -20,5 +20,32 @@
     "Defiant"
   ],
   "description": "They use a plant stalk as a weapon, but not all of them use it in the same way. Several distinct styles of stalk fighting have been observed.",
-  "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 80,
+        "name": "All packed up",
+        "rarity": "common"
+      }
+    ]
+  }
 }

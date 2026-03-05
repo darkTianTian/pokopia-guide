@@ -1,0 +1,35 @@
+{
+  "id": 198,
+  "slug": "murkrow",
+  "name": "黑暗鴉",
+  "types": [
+    "dark",
+    "flying"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 85,
+    "defense": 42,
+    "spAtk": 85,
+    "spDef": 42,
+    "speed": 91
+  },
+  "abilities": [
+    "insomnia",
+    "super-luck",
+    "prankster"
+  ],
+  "description": "會為了老大尋找閃閃發亮的東西。 被人們視為不吉利的象徵， 厭惡牠的人也很多。",
+  "image": "https://assets.pokopiaguide.com/pokemon/murkrow.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "honchkrow"
+    ],
+    "habitats": []
+  }
+}

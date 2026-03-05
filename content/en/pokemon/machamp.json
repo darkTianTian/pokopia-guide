@@ -1,0 +1,32 @@
+{
+  "id": 68,
+  "slug": "machamp",
+  "name": "Machamp",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 130,
+    "defense": 80,
+    "spAtk": 65,
+    "spDef": 85,
+    "speed": 55
+  },
+  "abilities": [
+    "guts",
+    "no-guard",
+    "steadfast"
+  ],
+  "description": "In close combat, its four arms afford it offensive and defensive supremacy. In but a blink, this valiant Pokémon can overwhelm its foes with more than 1,000 blows from its fists.",
+  "image": "https://assets.pokopiaguide.com/pokemon/machamp.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "machoke",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

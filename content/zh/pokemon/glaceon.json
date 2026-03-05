@@ -18,5 +18,31 @@
     "冰凍之軀"
   ],
   "description": "冰伊布釋放出的冷氣能 製造出粉狀的雪。這使牠受到 各個滑雪場的熱烈歡迎。",
-  "image": "https://assets.pokopiaguide.com/pokemon/glaceon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/glaceon.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 208,
+        "name": "冰涼刨冰",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -19,5 +19,32 @@
     "ふくつのこころ"
   ],
   "description": "いつも　パワフル。　体力が 有り余っているので　暇つぶしに 岩を持ち上げ　さらに　強くなる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/machop.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/machop.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "cyndaquil",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 3,
+        "name": "岩かげの草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -20,5 +20,31 @@
     "フレンドガード"
   ],
   "description": "声の　波長を　自在に　変えて 聞くと　絶対に　眠くなる 不思議な　メロディーを　歌う。",
-  "image": "https://assets.pokopiaguide.com/pokemon/jigglypuff.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/jigglypuff.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "igglybuff",
+    "evolvesTo": [
+      "wigglytuff"
+    ],
+    "habitats": [
+      {
+        "id": 53,
+        "name": "うるおう黄色の草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

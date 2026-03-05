@@ -1,0 +1,33 @@
+{
+  "id": 496,
+  "slug": "servine",
+  "name": "ジャノビー",
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 75,
+    "spAtk": 60,
+    "spDef": 75,
+    "speed": 83
+  },
+  "abilities": [
+    "overgrow",
+    "contrary"
+  ],
+  "description": "体が　汚れると　葉っぱで 光合成が　できなくなるので いつも　清潔に　している。",
+  "image": "https://assets.pokopiaguide.com/pokemon/servine.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "snivy",
+    "evolvesTo": [
+      "serperior"
+    ],
+    "habitats": []
+  }
+}

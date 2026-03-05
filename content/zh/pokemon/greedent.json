@@ -1,0 +1,33 @@
+{
+  "id": 820,
+  "slug": "greedent",
+  "name": "藏飽栗鼠",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 120,
+    "attack": 95,
+    "defense": 95,
+    "spAtk": 55,
+    "spDef": 75,
+    "speed": 20
+  },
+  "abilities": [
+    "cheek-pouch",
+    "gluttony"
+  ],
+  "description": "無論多麼堅硬的樹果殼 都能用引以為傲的大牙咬碎。 在伽勒爾是很常見的寶可夢。",
+  "image": "https://assets.pokopiaguide.com/pokemon/greedent.png",
+  "pokopia": {
+    "specialties": [
+      "party"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "skwovet",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

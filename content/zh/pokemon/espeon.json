@@ -18,5 +18,31 @@
     "魔法鏡"
   ],
   "description": "從額頭的珠子放射出精神力量 進行戰鬥。當力量用盡時， 珠子的顏色也會褪去。",
-  "image": "https://assets.pokopiaguide.com/pokemon/espeon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/espeon.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "surskit",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 205,
+        "name": "優雅午後",
+        "rarity": "common"
+      }
+    ]
+  }
 }

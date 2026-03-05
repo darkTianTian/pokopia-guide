@@ -19,5 +19,32 @@
     "Harvest"
   ],
   "description": "When they work together, Exeggutor’s three heads can put out powerful psychic energy. Cloudy days make this Pokémon sluggish.",
-  "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "teleport"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "krabby",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 57,
+        "name": "Tropical vibes",
+        "rarity": "very-rare"
+      }
+    ]
+  }
 }

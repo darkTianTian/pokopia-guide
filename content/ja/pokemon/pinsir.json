@@ -19,5 +19,26 @@
     "じしんかじょう"
   ],
   "description": "ツノで　獲物を　挟みこみ そのまま　まっぷたつに　するか 強引に　投げ飛ばしてしまう。",
-  "image": "https://assets.pokopiaguide.com/pokemon/pinsir.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/pinsir.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "oddish",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

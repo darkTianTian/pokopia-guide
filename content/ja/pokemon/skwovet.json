@@ -1,0 +1,33 @@
+{
+  "id": 819,
+  "slug": "skwovet",
+  "name": "ホシガリス",
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 55,
+    "defense": 55,
+    "spAtk": 35,
+    "spDef": 35,
+    "speed": 25
+  },
+  "abilities": [
+    "cheek-pouch",
+    "gluttony"
+  ],
+  "description": "つねに　木の実を　食っているので 見かけ以上に　タフ。　木の実を 狙って　畑に　現れる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/skwovet.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "greedent"
+    ],
+    "habitats": []
+  }
+}

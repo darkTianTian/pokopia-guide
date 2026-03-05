@@ -1,0 +1,52 @@
+{
+  "id": 67,
+  "slug": "machoke",
+  "name": "ゴーリキー",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 100,
+    "defense": 70,
+    "spAtk": 50,
+    "spDef": 60,
+    "speed": 45
+  },
+  "abilities": [
+    "guts",
+    "no-guard",
+    "steadfast"
+  ],
+  "description": "疲れることのない　強靭な 肉体を　もつ。　重い　荷物の 運搬などの　仕事を　手伝う。",
+  "image": "https://assets.pokopiaguide.com/pokemon/machoke.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "machop",
+    "evolvesTo": [
+      "machamp"
+    ],
+    "habitats": [
+      {
+        "id": 103,
+        "name": "草むらトレーニング場",
+        "rarity": "common"
+      }
+    ]
+  }
+}

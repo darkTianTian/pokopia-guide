@@ -20,5 +20,31 @@
     "狙擊手"
   ],
   "description": "牙齒的毒性並不強烈， 但用來削弱那些掛在蛛網上 無法動彈的獵物是綽綽有餘。",
-  "image": "https://assets.pokopiaguide.com/pokemon/spinarak.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/spinarak.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 50,
+        "name": "黃色草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

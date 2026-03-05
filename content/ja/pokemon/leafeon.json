@@ -18,5 +18,31 @@
     "ようりょくそ"
   ],
   "description": "しっぽは　鋭く　刃のよう。 大木も　真っ二つに　する 抜群の　切れ味を　誇る。",
-  "image": "https://assets.pokopiaguide.com/pokemon/leafeon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/leafeon.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "shroomish",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 207,
+        "name": "緑のサンドイッチ",
+        "rarity": "common"
+      }
+    ]
+  }
 }

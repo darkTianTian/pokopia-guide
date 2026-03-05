@@ -18,5 +18,31 @@
     "濕潤之軀"
   ],
   "description": "身體細胞的結構與水分子相似。 牠能和水融為一體， 讓別人無法看見牠。",
-  "image": "https://assets.pokopiaguide.com/pokemon/vaporeon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/vaporeon.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ralts",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 202,
+        "name": "繽紛藍色",
+        "rarity": "common"
+      }
+    ]
+  }
 }

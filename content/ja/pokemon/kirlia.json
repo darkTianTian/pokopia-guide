@@ -1,0 +1,39 @@
+{
+  "id": 281,
+  "slug": "kirlia",
+  "name": "キルリア",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 38,
+    "attack": 35,
+    "defense": 35,
+    "spAtk": 65,
+    "spDef": 55,
+    "speed": 50
+  },
+  "abilities": [
+    "synchronize",
+    "trace",
+    "telepathy"
+  ],
+  "description": "サイコパワーを　操り　まわりの 空間を　ねじ曲げる　ことで 未来を　見通す　ことが　できる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/kirlia.png",
+  "pokopia": {
+    "specialties": [
+      "teleport",
+      "trade"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ralts",
+    "evolvesTo": [
+      "gardevoir",
+      "gallade"
+    ],
+    "habitats": []
+  }
+}

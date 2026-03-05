@@ -19,5 +19,14 @@
     "膽怯"
   ],
   "description": "為了不被襲擊而模仿樹的樣子。 很討厭水，所以一開始下雨 就會在不知不覺間消失無蹤。",
-  "image": "https://assets.pokopiaguide.com/pokemon/sudowoodo.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/sudowoodo.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ledyba",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

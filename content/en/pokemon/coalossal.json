@@ -1,0 +1,33 @@
+{
+  "id": 839,
+  "slug": "coalossal",
+  "name": "Coalossal",
+  "types": [
+    "rock",
+    "fire"
+  ],
+  "stats": {
+    "hp": 110,
+    "attack": 80,
+    "defense": 120,
+    "spAtk": 80,
+    "spDef": 90,
+    "speed": 30
+  },
+  "abilities": [
+    "steam-engine",
+    "flame-body",
+    "flash-fire"
+  ],
+  "description": "While it’s engaged in battle, its mountain of coal will burn bright red, sending off sparks that scorch the surrounding area.",
+  "image": "https://assets.pokopiaguide.com/pokemon/coalossal.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "carkol",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

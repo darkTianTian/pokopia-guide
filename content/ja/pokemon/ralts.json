@@ -1,0 +1,35 @@
+{
+  "id": 280,
+  "slug": "ralts",
+  "name": "ラルトス",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 28,
+    "attack": 25,
+    "defense": 25,
+    "spAtk": 45,
+    "spDef": 35,
+    "speed": 40
+  },
+  "abilities": [
+    "synchronize",
+    "trace",
+    "telepathy"
+  ],
+  "description": "赤いツノで　人や　ポケモンの 温かな　気持ちを　キャッチすると 全身が　ほのかに　熱くなる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/ralts.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "kirlia"
+    ],
+    "habitats": []
+  }
+}

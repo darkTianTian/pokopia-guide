@@ -19,5 +19,31 @@
     "惡作劇之心"
   ],
   "description": "除了能讀懂對手的感情， 也能以「波導」這種形式的波 來觀察大自然的樣子。",
-  "image": "https://assets.pokopiaguide.com/pokemon/riolu.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/riolu.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "mareep",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 98,
+        "name": "紅色草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

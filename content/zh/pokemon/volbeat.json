@@ -1,0 +1,32 @@
+{
+  "id": 313,
+  "slug": "volbeat",
+  "name": "電螢蟲",
+  "types": [
+    "bug"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 73,
+    "defense": 75,
+    "spAtk": 47,
+    "spDef": 85,
+    "speed": 85
+  },
+  "abilities": [
+    "illuminate",
+    "swarm",
+    "prankster"
+  ],
+  "description": "Volbeat’s tail glows like a lightbulb. With other Volbeat, it uses its tail to draw geometric shapes in the night sky. This Pokémon loves the sweet aroma given off by Illumise.",
+  "image": "https://assets.pokopiaguide.com/pokemon/volbeat.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

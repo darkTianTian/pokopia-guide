@@ -19,5 +19,31 @@
     "沙之力"
   ],
   "description": "在地下較淺的地方移動。 被牠挖掘過的地面會鼓起來， 所以非常容易發現。",
-  "image": "https://assets.pokopiaguide.com/pokemon/diglett.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/diglett.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "bayleef",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 119,
+        "name": "Container snacking",
+        "rarity": "common"
+      }
+    ]
+  }
 }

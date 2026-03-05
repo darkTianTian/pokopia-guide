@@ -20,5 +20,32 @@
     "マイペース"
   ],
   "description": "陽気な　リズムに　あわせて 体を　動かす　ことで パワーを　増幅させて　いるのだ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/ludicolo.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/ludicolo.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 109,
+        "name": "うきうきな水たまり",
+        "rarity": "rare"
+      }
+    ]
+  }
 }

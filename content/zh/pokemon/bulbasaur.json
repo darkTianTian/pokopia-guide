@@ -19,5 +19,38 @@
     "葉綠素"
   ],
   "description": "在出生後的一段時間內， 牠會吸收背上種子裡 儲存著的營養成長。",
-  "image": "https://assets.pokopiaguide.com/pokemon/bulbasaur.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/bulbasaur.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "ivysaur"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "綠色草叢",
+        "rarity": "common"
+      },
+      {
+        "id": 22,
+        "name": "綠色長椅",
+        "rarity": "common"
+      }
+    ]
+  }
 }

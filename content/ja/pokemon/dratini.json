@@ -18,5 +18,31 @@
     "ふしぎなうろこ"
   ],
   "description": "ながく　幻と　言われていた。 額にある　小さな　突起は 成長途中の　ツノ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/dratini.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/dratini.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "swinub",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 144,
+        "name": "Hydrated fluffy flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

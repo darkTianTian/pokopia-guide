@@ -19,5 +19,31 @@
     "Big Pecks"
   ],
   "description": "Jumping nimbly about, this small-bodied Pokémon takes advantage of even the slightest opportunity to disorient larger opponents.",
-  "image": "https://assets.pokopiaguide.com/pokemon/rookidee.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/rookidee.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "torchic",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 142,
+        "name": "Fluffy flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

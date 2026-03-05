@@ -1,0 +1,33 @@
+{
+  "id": 62,
+  "slug": "poliwrath",
+  "name": "蚊香泳士",
+  "types": [
+    "water",
+    "fighting"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 95,
+    "defense": 95,
+    "spAtk": 70,
+    "spDef": 90,
+    "speed": 70
+  },
+  "abilities": [
+    "water-absorb",
+    "damp",
+    "swift-swim"
+  ],
+  "description": "除了游泳之外，也擅長使用 格鬥技。完美鍛鍊的手臂 可以使出豪邁的拳擊。",
+  "image": "https://assets.pokopiaguide.com/pokemon/poliwrath.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "poliwhirl",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

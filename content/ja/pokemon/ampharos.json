@@ -1,0 +1,31 @@
+{
+  "id": 181,
+  "slug": "ampharos",
+  "name": "デンリュウ",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 75,
+    "defense": 85,
+    "spAtk": 115,
+    "spDef": 90,
+    "speed": 55
+  },
+  "abilities": [
+    "static",
+    "plus"
+  ],
+  "description": "シッポは　強く　明るく　輝く。 船乗りたちの　道しるべ　として 昔から　大切に　されてきた。",
+  "image": "https://assets.pokopiaguide.com/pokemon/ampharos.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "flaaffy",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

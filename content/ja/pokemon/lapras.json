@@ -20,5 +20,31 @@
     "うるおいボディ"
   ],
   "description": "寒さに　強く　氷の　海も 平気。　皮膚は　スベスベで 少しだけ　ひんやり　しているよ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/lapras.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/lapras.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tyrogue",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 60,
+        "name": "トロピカルシーサイド",
+        "rarity": "common"
+      }
+    ]
+  }
 }

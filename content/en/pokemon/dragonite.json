@@ -19,5 +19,32 @@
     "Multiscale"
   ],
   "description": "This Pokémon is known as the Sea Incarnate. Figureheads that resemble Dragonite decorate the bows of many ships.",
-  "image": "https://assets.pokopiaguide.com/pokemon/dragonite.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/dragonite.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "fly"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 145,
+        "name": "Waterside dinghy",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -19,5 +19,14 @@
     "Gooey"
   ],
   "description": "Able to freely control the hardness of its metallic shell. It loathes solitude and is extremely clingy—it will fume and run riot if those dearest to it ever leave its side.",
-  "image": "https://assets.pokopiaguide.com/pokemon/goodra.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/goodra.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "graveler",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

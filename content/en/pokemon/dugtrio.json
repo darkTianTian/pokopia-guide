@@ -1,0 +1,50 @@
+{
+  "id": 51,
+  "slug": "dugtrio",
+  "name": "Dugtrio",
+  "types": [
+    "ground"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 100,
+    "defense": 50,
+    "spAtk": 50,
+    "spDef": 70,
+    "speed": 120
+  },
+  "abilities": [
+    "sand-veil",
+    "arena-trap",
+    "sand-force"
+  ],
+  "description": "These Diglett triplets dig over 60 miles below sea level. No one knows what it’s like underground.",
+  "image": "https://assets.pokopiaguide.com/pokemon/dugtrio.png",
+  "pokopia": {
+    "specialties": [
+      "hype",
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "diglett",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 123,
+        "name": "House party",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": 146,
+  "slug": "moltres",
+  "name": "火焰鳥",
+  "types": [
+    "fire",
+    "flying"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 100,
+    "defense": 90,
+    "spAtk": 125,
+    "spDef": 85,
+    "speed": 90
+  },
+  "abilities": [
+    "pressure",
+    "flame-body"
+  ],
+  "description": "相傳牠會以美麗燃燒的 翅膀照亮山路，救助在 山中遇險的人。",
+  "image": "https://assets.pokopiaguide.com/pokemon/moltres.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

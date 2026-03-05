@@ -1,0 +1,33 @@
+{
+  "id": 475,
+  "slug": "gallade",
+  "name": "艾路雷朵",
+  "types": [
+    "psychic",
+    "fighting"
+  ],
+  "stats": {
+    "hp": 68,
+    "attack": 125,
+    "defense": 65,
+    "spAtk": 65,
+    "spDef": 115,
+    "speed": 80
+  },
+  "abilities": [
+    "steadfast",
+    "sharpness",
+    "justified"
+  ],
+  "description": "能夠敏銳地感知到 尋求幫助的感情， 並且火速趕去援助對方。",
+  "image": "https://assets.pokopiaguide.com/pokemon/gallade.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kirlia",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

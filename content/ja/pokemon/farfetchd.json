@@ -20,5 +20,32 @@
     "まけんき"
   ],
   "description": "植物の　茎で　戦う。 茎の　振り方には　いくつかの 流派の　ようなものが　ある。",
-  "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 80,
+        "name": "荷づくりできたよ",
+        "rarity": "common"
+      }
+    ]
+  }
 }

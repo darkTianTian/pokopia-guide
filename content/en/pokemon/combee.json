@@ -19,5 +19,31 @@
     "Hustle"
   ],
   "description": "They swear fealty to a queen Pokémon and work diligently to gather nectar. Each swarm produces a different flavor of honey.",
-  "image": "https://assets.pokopiaguide.com/pokemon/combee.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/combee.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "mankey",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 8,
+        "name": "Pretty flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

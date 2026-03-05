@@ -1,0 +1,31 @@
+{
+  "id": 181,
+  "slug": "ampharos",
+  "name": "Ampharos",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 75,
+    "defense": 85,
+    "spAtk": 115,
+    "spDef": 90,
+    "speed": 55
+  },
+  "abilities": [
+    "static",
+    "plus"
+  ],
+  "description": "Its tail shines bright and strong. It has been prized since long ago as a beacon for sailors.",
+  "image": "https://assets.pokopiaguide.com/pokemon/ampharos.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "flaaffy",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

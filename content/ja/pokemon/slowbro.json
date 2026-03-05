@@ -1,0 +1,45 @@
+{
+  "id": 80,
+  "slug": "slowbro",
+  "name": "ヤドラン",
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 75,
+    "defense": 110,
+    "spAtk": 100,
+    "spDef": 80,
+    "speed": 30
+  },
+  "abilities": [
+    "oblivious",
+    "own-tempo",
+    "regenerator"
+  ],
+  "description": "シェルダーに　噛まれた　ショックで 二足歩行になった。　シェルダーが 離れると　ヤドンに　戻るらしい。",
+  "image": "https://assets.pokopiaguide.com/pokemon/slowbro.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "slowpoke",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

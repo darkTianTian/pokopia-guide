@@ -18,5 +18,31 @@
     "神奇鱗片"
   ],
   "description": "長久以來被認為只存在於 幻想之中。額頭上小小的 突起是正在成長的角。",
-  "image": "https://assets.pokopiaguide.com/pokemon/dratini.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/dratini.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "swinub",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 144,
+        "name": "Hydrated fluffy flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

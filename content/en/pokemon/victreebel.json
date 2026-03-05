@@ -1,0 +1,32 @@
+{
+  "id": 71,
+  "slug": "victreebel",
+  "name": "Victreebel",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 105,
+    "defense": 65,
+    "spAtk": 100,
+    "spDef": 70,
+    "speed": 70
+  },
+  "abilities": [
+    "chlorophyll",
+    "gluttony"
+  ],
+  "description": "Lures prey with the sweet aroma of honey. Swallowed whole, the prey is dissolved in a day, bones and all.",
+  "image": "https://assets.pokopiaguide.com/pokemon/victreebel.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "weepinbell",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

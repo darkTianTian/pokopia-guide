@@ -18,5 +18,31 @@
     "毅力"
   ],
   "description": "會將吸入的空氣的一部分 傳送到自己體內的火囊裡， 製造出１７００度的火焰。",
-  "image": "https://assets.pokopiaguide.com/pokemon/flareon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/flareon.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 204,
+        "name": "火辣辣辛辣",
+        "rarity": "common"
+      }
+    ]
+  }
 }

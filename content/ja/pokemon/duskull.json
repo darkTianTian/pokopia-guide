@@ -1,0 +1,47 @@
+{
+  "id": 355,
+  "slug": "duskull",
+  "name": "ヨマワル",
+  "types": [
+    "ghost"
+  ],
+  "stats": {
+    "hp": 20,
+    "attack": 40,
+    "defense": 90,
+    "spAtk": 30,
+    "spDef": 90,
+    "speed": 25
+  },
+  "abilities": [
+    "levitate",
+    "frisk"
+  ],
+  "description": "姿を　透明に　して　そっと 獲物に　近寄る。　厚い　壁を 通りぬける　能力を　もつ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/duskull.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "dusclops"
+    ],
+    "habitats": [
+      {
+        "id": 137,
+        "name": "Pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

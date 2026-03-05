@@ -1,0 +1,50 @@
+{
+  "id": 5,
+  "slug": "charmeleon",
+  "name": "リザード",
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 58,
+    "attack": 64,
+    "defense": 58,
+    "spAtk": 80,
+    "spDef": 65,
+    "speed": 80
+  },
+  "abilities": [
+    "blaze",
+    "solar-power"
+  ],
+  "description": "戦いで　気持ちが　たかぶると 灼熱の　炎を　吹きながら あたりを　燃やしてまわる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/charmeleon.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charmander",
+    "evolvesTo": [
+      "charizard"
+    ],
+    "habitats": [
+      {
+        "id": 17,
+        "name": "キャンプセット",
+        "rarity": "common"
+      }
+    ]
+  }
+}

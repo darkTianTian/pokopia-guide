@@ -1,0 +1,35 @@
+{
+  "id": 280,
+  "slug": "ralts",
+  "name": "拉魯拉絲",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 28,
+    "attack": 25,
+    "defense": 25,
+    "spAtk": 45,
+    "spDef": 35,
+    "speed": 40
+  },
+  "abilities": [
+    "synchronize",
+    "trace",
+    "telepathy"
+  ],
+  "description": "用紅色的角感知到 人和寶可夢的溫情後， 全身也會變得有點暖暖的。",
+  "image": "https://assets.pokopiaguide.com/pokemon/ralts.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "kirlia"
+    ],
+    "habitats": []
+  }
+}

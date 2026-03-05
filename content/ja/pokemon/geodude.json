@@ -20,5 +20,31 @@
     "すながくれ"
   ],
   "description": "山道　などに　多く　生息。 気づかずに　踏みつけると 怒りだすので　要注意だ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/geodude.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/geodude.png",
+  "pokopia": {
+    "specialties": [
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "totodile",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 1,
+        "name": "緑の草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

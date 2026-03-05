@@ -1,0 +1,53 @@
+{
+  "id": 838,
+  "slug": "carkol",
+  "name": "トロッゴン",
+  "types": [
+    "rock",
+    "fire"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 60,
+    "defense": 90,
+    "spAtk": 60,
+    "spDef": 70,
+    "speed": 50
+  },
+  "abilities": [
+    "steam-engine",
+    "flame-body",
+    "flash-fire"
+  ],
+  "description": "脚を　高速で　回転させて 時速３０キロで　走る。　摂氏 １０００度の　炎を　噴き出す。",
+  "image": "https://assets.pokopiaguide.com/pokemon/carkol.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "rolycoly",
+    "evolvesTo": [
+      "coalossal"
+    ],
+    "habitats": [
+      {
+        "id": 132,
+        "name": "ふみきり",
+        "rarity": "common"
+      }
+    ]
+  }
+}

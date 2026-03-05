@@ -20,5 +20,14 @@
     "すりぬけ"
   ],
   "description": "吸い取る　命が　若ければ 若いほど　頭の　炎は 大きく　妖しく　燃え上がる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/litwick.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/litwick.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "machoke",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

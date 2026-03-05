@@ -20,5 +20,32 @@
     "そうしょく"
   ],
   "description": "よく　水を　弾く　体毛は 冷たい　海から　上がったときでも すぐに　乾いて　寒くないのだ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/marill.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/marill.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 88,
+        "name": "船着き場",
+        "rarity": "common"
+      }
+    ]
+  }
 }

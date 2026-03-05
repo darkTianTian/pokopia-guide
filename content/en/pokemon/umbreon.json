@@ -18,5 +18,31 @@
     "Inner Focus"
   ],
   "description": "It is most active in the wee hours of the night, when moonlight bathes the land. Its large eyes can pierce the darkness and perceive prey with absolute clarity.",
-  "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 206,
+        "name": "Dark-chocolate cookies",
+        "rarity": "common"
+      }
+    ]
+  }
 }

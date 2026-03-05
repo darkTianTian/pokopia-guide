@@ -1,0 +1,46 @@
+{
+  "id": 100,
+  "slug": "voltorb",
+  "name": "Voltorb",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 30,
+    "defense": 50,
+    "spAtk": 55,
+    "spDef": 55,
+    "speed": 100
+  },
+  "abilities": [
+    "soundproof",
+    "static",
+    "aftermath"
+  ],
+  "description": "An enigmatic Pokémon that happens to bear a resemblance to a Poké Ball. When excited, it discharges the electric current it has stored in its belly, then lets out a great, uproarious laugh.",
+  "image": "https://assets.pokopiaguide.com/pokemon/voltorb.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "explode"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "electrode"
+    ],
+    "habitats": []
+  }
+}

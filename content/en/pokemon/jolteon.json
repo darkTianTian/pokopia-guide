@@ -1,0 +1,48 @@
+{
+  "id": 135,
+  "slug": "jolteon",
+  "name": "Jolteon",
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 60,
+    "spAtk": 110,
+    "spDef": 95,
+    "speed": 130
+  },
+  "abilities": [
+    "volt-absorb",
+    "quick-feet"
+  ],
+  "description": "Bristles its fur into sharp, needlelike points when enraged. One can hear electricity crackle in its breath when it exhales.",
+  "image": "https://assets.pokopiaguide.com/pokemon/jolteon.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 203,
+        "name": "Electrifying potatoes",
+        "rarity": "common"
+      }
+    ]
+  }
+}

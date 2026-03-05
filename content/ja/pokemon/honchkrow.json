@@ -1,0 +1,33 @@
+{
+  "id": 430,
+  "slug": "honchkrow",
+  "name": "ドンカラス",
+  "types": [
+    "dark",
+    "flying"
+  ],
+  "stats": {
+    "hp": 100,
+    "attack": 125,
+    "defense": 52,
+    "spAtk": 105,
+    "spDef": 52,
+    "speed": 71
+  },
+  "abilities": [
+    "insomnia",
+    "super-luck",
+    "moxie"
+  ],
+  "description": "敵と　戦うのは　ほぼ　子分。 自分の　手を　汚すのは　相手に 最後の　止めを　刺すときだけ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/honchkrow.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "murkrow",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

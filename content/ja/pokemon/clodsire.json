@@ -1,0 +1,33 @@
+{
+  "id": 980,
+  "slug": "clodsire",
+  "name": "ドオー",
+  "types": [
+    "poison",
+    "ground"
+  ],
+  "stats": {
+    "hp": 130,
+    "attack": 75,
+    "defense": 60,
+    "spAtk": 45,
+    "spDef": 100,
+    "speed": 20
+  },
+  "abilities": [
+    "poison-point",
+    "water-absorb",
+    "unaware"
+  ],
+  "description": "It lives at the bottom of ponds and swamps. It will carry Wooper on its back and ferry them across water from one shore to the other.",
+  "image": "https://assets.pokopiaguide.com/pokemon/clodsire.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "wooper",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

@@ -19,5 +19,31 @@
     "逃跑"
   ],
   "description": "白天為了躲避太陽， 會鑽進涼爽的地下。 藉由沐浴月光來成長。",
-  "image": "https://assets.pokopiaguide.com/pokemon/oddish.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/oddish.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "gloom"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "綠色草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -1,0 +1,32 @@
+{
+  "id": 699,
+  "slug": "aurorus",
+  "name": "Aurorus",
+  "types": [
+    "rock",
+    "ice"
+  ],
+  "stats": {
+    "hp": 123,
+    "attack": 77,
+    "defense": 72,
+    "spAtk": 99,
+    "spDef": 92,
+    "speed": 58
+  },
+  "abilities": [
+    "refrigerate",
+    "snow-warning"
+  ],
+  "description": "When gripped by rage, Aurorus will emanate freezing air, covering everything around it in ice.",
+  "image": "https://assets.pokopiaguide.com/pokemon/aurorus.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "amaura",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

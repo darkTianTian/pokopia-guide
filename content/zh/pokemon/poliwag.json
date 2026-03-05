@@ -19,5 +19,16 @@
     "悠游自如"
   ],
   "description": "在水流湍急的河川裡， 會把厚厚的嘴唇當作吸盤， 吸附在岩石上避免被沖走。",
-  "image": "https://assets.pokopiaguide.com/pokemon/poliwag.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/poliwag.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "poliwhirl"
+    ],
+    "habitats": []
+  }
 }

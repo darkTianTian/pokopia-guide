@@ -1,0 +1,32 @@
+{
+  "id": 186,
+  "slug": "politoed",
+  "name": "蚊香蛙皇",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 75,
+    "defense": 75,
+    "spAtk": 90,
+    "spDef": 100,
+    "speed": 70
+  },
+  "abilities": [
+    "water-absorb",
+    "damp",
+    "drizzle"
+  ],
+  "description": "雄性的叫聲比雌性更巨大。 叫聲低沉有魄力的蚊香蛙皇 更能受到雌性喜愛。",
+  "image": "https://assets.pokopiaguide.com/pokemon/politoed.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "poliwhirl",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

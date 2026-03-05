@@ -1,0 +1,34 @@
+{
+  "id": 696,
+  "slug": "tyrunt",
+  "name": "チゴラス",
+  "types": [
+    "rock",
+    "dragon"
+  ],
+  "stats": {
+    "hp": 58,
+    "attack": 89,
+    "defense": 77,
+    "spAtk": 45,
+    "spDef": 45,
+    "speed": 48
+  },
+  "abilities": [
+    "strong-jaw",
+    "sturdy"
+  ],
+  "description": "わがままだが　甘えん坊。 じゃれてるだけで　トレーナーに 大けがを　負わせてしまう。",
+  "image": "https://assets.pokopiaguide.com/pokemon/tyrunt.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "tyrantrum"
+    ],
+    "habitats": []
+  }
+}

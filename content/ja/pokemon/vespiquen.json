@@ -19,5 +19,32 @@
     "きんちょうかん"
   ],
   "description": "フェロモンを　放つ　量が 多い　ビークインほど　多くの ミツハニーを　従えている。",
-  "image": "https://assets.pokopiaguide.com/pokemon/vespiquen.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/vespiquen.png",
+  "pokopia": {
+    "specialties": [
+      "gather honey",
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 11,
+        "name": "花いっぱいの景色",
+        "rarity": "common"
+      }
+    ]
+  }
 }

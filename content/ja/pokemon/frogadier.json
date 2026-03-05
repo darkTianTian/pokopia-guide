@@ -1,0 +1,33 @@
+{
+  "id": 657,
+  "slug": "frogadier",
+  "name": "ゲコガシラ",
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 54,
+    "attack": 63,
+    "defense": 52,
+    "spAtk": 83,
+    "spDef": 56,
+    "speed": 97
+  },
+  "abilities": [
+    "torrent",
+    "protean"
+  ],
+  "description": "身軽さは　だれにも　負けない。 ６００メートルを　超える　タワーの 天辺まで　１分で　登りきる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/frogadier.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "froakie",
+    "evolvesTo": [
+      "greninja"
+    ],
+    "habitats": []
+  }
+}

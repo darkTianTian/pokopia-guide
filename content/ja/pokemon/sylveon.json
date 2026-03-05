@@ -18,5 +18,31 @@
     "フェアリースキン"
   ],
   "description": "恐ろしい　ドラゴンポケモンを 美しい　ニンフィアが　退治する 童話が　ガラル地方に　残る。",
-  "image": "https://assets.pokopiaguide.com/pokemon/sylveon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/sylveon.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "slakoth",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 209,
+        "name": "ラブリーなケーキ",
+        "rarity": "common"
+      }
+    ]
+  }
 }

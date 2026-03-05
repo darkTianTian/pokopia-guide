@@ -18,5 +18,31 @@
     "Magic Bounce"
   ],
   "description": "Wields an arcane power with which it can predict the weather and even people's thoughts. When bathed in sunshine, the scarlet orb on its brow glows and builds energy.",
-  "image": "https://assets.pokopiaguide.com/pokemon/espeon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/espeon.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "surskit",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 205,
+        "name": "Elegant daytime treats",
+        "rarity": "common"
+      }
+    ]
+  }
 }

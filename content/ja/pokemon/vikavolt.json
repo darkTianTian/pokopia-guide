@@ -1,0 +1,31 @@
+{
+  "id": 738,
+  "slug": "vikavolt",
+  "name": "クワガノン",
+  "types": [
+    "bug",
+    "electric"
+  ],
+  "stats": {
+    "hp": 77,
+    "attack": 70,
+    "defense": 90,
+    "spAtk": 145,
+    "spDef": 75,
+    "speed": 43
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "description": "予備バッテリーとして　デンヂムシを 抱えて　飛べば　大電力の 電磁ビームを　連射できる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/vikavolt.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charjabug",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

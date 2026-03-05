@@ -19,5 +19,31 @@
     "にげあし"
   ],
   "description": "昼間は　太陽を　避けるため 冷たい　地面に　もぐっている。 月の光を　浴びて　育つ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/oddish.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/oddish.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "gloom"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "緑の草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

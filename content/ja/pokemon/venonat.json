@@ -20,5 +20,28 @@
     "にげあし"
   ],
   "description": "レーダーになる　大きな　目は 明るいところでは　小さな　目が 集まって　できているのが　わかる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/venonat.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/venonat.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 7,
+        "name": "照らされた草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

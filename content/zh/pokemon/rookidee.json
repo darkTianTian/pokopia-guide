@@ -19,5 +19,31 @@
     "健壯胸肌"
   ],
   "description": "嬌小的體型讓牠能敏捷地飛翔。 攻其不備的戰法將體型巨大 的對手玩弄於股掌之間。",
-  "image": "https://assets.pokopiaguide.com/pokemon/rookidee.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/rookidee.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "torchic",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 142,
+        "name": "Fluffy flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
 }

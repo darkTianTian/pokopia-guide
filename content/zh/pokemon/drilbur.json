@@ -19,5 +19,31 @@
     "破格"
   ],
   "description": "會用爪子在地底挖掘前進。 一些農民因為擔心牠會 因此糟蹋蔬菜而討厭牠。",
-  "image": "https://assets.pokopiaguide.com/pokemon/drilbur.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/drilbur.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 15,
+        "name": "新鮮蔬菜田",
+        "rarity": "common"
+      }
+    ]
+  }
 }

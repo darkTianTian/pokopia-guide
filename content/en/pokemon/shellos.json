@@ -19,5 +19,31 @@
     "Sand Force"
   ],
   "description": "Found in abundance on seashores bordering warm waters. Shellos are unexpectedly friendly and will crawl toward any person they see. Take care not to get coated in mucus!",
-  "image": "https://assets.pokopiaguide.com/pokemon/shellos.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/shellos.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "growlithe",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 27,
+        "name": "Road Sign",
+        "rarity": "common"
+      }
+    ]
+  }
 }

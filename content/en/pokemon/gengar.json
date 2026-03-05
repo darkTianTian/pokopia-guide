@@ -1,0 +1,31 @@
+{
+  "id": 94,
+  "slug": "gengar",
+  "name": "Gengar",
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 60,
+    "spAtk": 130,
+    "spDef": 75,
+    "speed": 110
+  },
+  "abilities": [
+    "cursed-body"
+  ],
+  "description": "Possesses potential victims' shadows in an effort to steal away the victims' lives. If your shadow begins to laugh, you must take hold of a protective charm posthaste!",
+  "image": "https://assets.pokopiaguide.com/pokemon/gengar.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "haunter",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

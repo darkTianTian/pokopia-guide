@@ -19,5 +19,31 @@
     "てつのこぶし"
   ],
   "description": "自分の　３倍くらいの　角材を 持つように　なった　ドッコラーは 進化の　日が　近い。",
-  "image": "https://assets.pokopiaguide.com/pokemon/timburr.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/timburr.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kadabra",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 3,
+        "name": "岩かげの草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

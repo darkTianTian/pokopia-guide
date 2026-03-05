@@ -1,0 +1,34 @@
+{
+  "id": 698,
+  "slug": "amaura",
+  "name": "アマルス",
+  "types": [
+    "rock",
+    "ice"
+  ],
+  "stats": {
+    "hp": 77,
+    "attack": 59,
+    "defense": 50,
+    "spAtk": 67,
+    "spDef": 63,
+    "speed": 46
+  },
+  "abilities": [
+    "refrigerate",
+    "snow-warning"
+  ],
+  "description": "全滅した　古代の　ポケモン。 氷漬けの　状態で 発見されることも　あるぞ。",
+  "image": "https://assets.pokopiaguide.com/pokemon/amaura.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "aurorus"
+    ],
+    "habitats": []
+  }
+}

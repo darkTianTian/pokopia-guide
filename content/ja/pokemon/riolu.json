@@ -19,5 +19,31 @@
     "いたずらごころ"
   ],
   "description": "相手の　感情　だけでなく 自然の　様子も　波動　という 波の　形で　感じとる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/riolu.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/riolu.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "mareep",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 98,
+        "name": "赤い草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

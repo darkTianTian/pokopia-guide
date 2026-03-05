@@ -1,0 +1,50 @@
+{
+  "id": 906,
+  "slug": "sprigatito",
+  "name": "ニャオハ",
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 61,
+    "defense": 54,
+    "spAtk": 45,
+    "spDef": 45,
+    "speed": 65
+  },
+  "abilities": [
+    "overgrow",
+    "protean"
+  ],
+  "description": "The sweet scent its body gives off mesmerizes those around it. The scent grows stronger when this Pokémon is in the sun.",
+  "image": "https://assets.pokopiaguide.com/pokemon/sprigatito.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "floragato"
+    ],
+    "habitats": [
+      {
+        "id": 138,
+        "name": "Tree-shaded pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

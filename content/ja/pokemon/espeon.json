@@ -18,5 +18,31 @@
     "マジックミラー"
   ],
   "description": "額の　珠から　サイコパワーを 放射して　戦う。　パワーが つきると　珠の　色が　くすむ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/espeon.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/espeon.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "surskit",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 205,
+        "name": "エレガントな昼下がり",
+        "rarity": "common"
+      }
+    ]
+  }
 }

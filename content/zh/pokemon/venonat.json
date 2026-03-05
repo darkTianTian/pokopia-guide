@@ -20,5 +20,28 @@
     "逃跑"
   ],
   "description": "在明亮的地方看就會發現 那對有著雷達作用的大眼睛， 是由許多小眼睛聚集而成的。",
-  "image": "https://assets.pokopiaguide.com/pokemon/venonat.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/venonat.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 7,
+        "name": "被照亮的草叢",
+        "rarity": "common"
+      }
+    ]
+  }
 }

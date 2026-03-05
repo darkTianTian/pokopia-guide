@@ -1,0 +1,46 @@
+{
+  "id": 70,
+  "slug": "weepinbell",
+  "name": "ウツドン",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 50,
+    "spAtk": 85,
+    "spDef": 45,
+    "speed": 55
+  },
+  "abilities": [
+    "chlorophyll",
+    "gluttony"
+  ],
+  "description": "お腹が　減ると　手あたり次第に 動くものを　飲みこんでは 溶解液で　とどめを　さす。",
+  "image": "https://assets.pokopiaguide.com/pokemon/weepinbell.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "bellsprout",
+    "evolvesTo": [
+      "victreebel"
+    ],
+    "habitats": []
+  }
+}

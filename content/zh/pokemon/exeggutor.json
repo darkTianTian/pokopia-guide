@@ -19,5 +19,32 @@
     "收穫"
   ],
   "description": "３顆頭團結一致發出的 精神力量威力強大。天氣 變陰時動作就會變得遲緩。",
-  "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "teleport"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "krabby",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 57,
+        "name": "南國風情",
+        "rarity": "very-rare"
+      }
+    ]
+  }
 }

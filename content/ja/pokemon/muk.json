@@ -1,0 +1,32 @@
+{
+  "id": 89,
+  "slug": "muk",
+  "name": "ベトベトン",
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 105,
+    "attack": 105,
+    "defense": 75,
+    "spAtk": 65,
+    "spDef": 100,
+    "speed": 50
+  },
+  "abilities": [
+    "stench",
+    "sticky-hold",
+    "poison-touch"
+  ],
+  "description": "とっても　臭い！　気絶するほど 強烈だが　ベトベトンは　鼻が 退化して　臭いを　感じない。",
+  "image": "https://assets.pokopiaguide.com/pokemon/muk.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "grimer",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

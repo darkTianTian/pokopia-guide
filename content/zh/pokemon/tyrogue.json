@@ -19,5 +19,14 @@
     "幹勁"
   ],
   "description": "體型雖小卻不可輕視， 因為牠只要發現合適的對手， 就會馬上撲上去大打出手。",
-  "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "nidorino",
+    "evolvesTo": null,
+    "habitats": []
+  }
 }

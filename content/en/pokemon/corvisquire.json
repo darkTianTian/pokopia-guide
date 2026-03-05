@@ -1,0 +1,34 @@
+{
+  "id": 822,
+  "slug": "corvisquire",
+  "name": "Corvisquire",
+  "types": [
+    "flying"
+  ],
+  "stats": {
+    "hp": 68,
+    "attack": 67,
+    "defense": 55,
+    "spAtk": 43,
+    "spDef": 55,
+    "speed": 77
+  },
+  "abilities": [
+    "keen-eye",
+    "unnerve",
+    "big-pecks"
+  ],
+  "description": "The lessons of many harsh battles have taught it how to accurately judge an opponent’s strength.",
+  "image": "https://assets.pokopiaguide.com/pokemon/corvisquire.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "rookidee",
+    "evolvesTo": [
+      "corviknight"
+    ],
+    "habitats": []
+  }
+}

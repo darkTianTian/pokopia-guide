@@ -1,0 +1,31 @@
+{
+  "id": 497,
+  "slug": "serperior",
+  "name": "ジャローダ",
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 75,
+    "defense": 95,
+    "spAtk": 75,
+    "spDef": 95,
+    "speed": 113
+  },
+  "abilities": [
+    "overgrow",
+    "contrary"
+  ],
+  "description": "にらむだけで　相手の　動きを 止めてしまう。太陽エネルギーを 体内で　増幅させる。",
+  "image": "https://assets.pokopiaguide.com/pokemon/serperior.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "servine",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

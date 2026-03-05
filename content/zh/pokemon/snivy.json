@@ -1,0 +1,50 @@
+{
+  "id": 495,
+  "slug": "snivy",
+  "name": "藤藤蛇",
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 45,
+    "defense": 55,
+    "spAtk": 45,
+    "spDef": 55,
+    "speed": 63
+  },
+  "abilities": [
+    "overgrow",
+    "contrary"
+  ],
+  "description": "They photosynthesize by bathing their tails in sunlight. When they are not feeling well, their tails droop.",
+  "image": "https://assets.pokopiaguide.com/pokemon/snivy.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "servine"
+    ],
+    "habitats": [
+      {
+        "id": 165,
+        "name": "Playland",
+        "rarity": "common"
+      }
+    ]
+  }
+}

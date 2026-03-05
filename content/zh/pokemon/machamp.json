@@ -1,0 +1,32 @@
+{
+  "id": 68,
+  "slug": "machamp",
+  "name": "怪力",
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 130,
+    "defense": 80,
+    "spAtk": 65,
+    "spDef": 85,
+    "speed": 55
+  },
+  "abilities": [
+    "guts",
+    "no-guard",
+    "steadfast"
+  ],
+  "description": "４隻手臂在思考之前 就會反射性地行動， 使出多發拳擊。",
+  "image": "https://assets.pokopiaguide.com/pokemon/machamp.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "machoke",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

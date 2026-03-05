@@ -18,5 +18,29 @@
     "膽怯"
   ],
   "description": "又弱又可憐的寶可夢。 在水流比較快的地方， 只能任憑自己被水沖走。",
-  "image": "https://assets.pokopiaguide.com/pokemon/magikarp.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/magikarp.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gloom",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 185,
+        "name": "海釣",
+        "rarity": "common"
+      }
+    ]
+  }
 }

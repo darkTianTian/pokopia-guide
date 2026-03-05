@@ -19,5 +19,32 @@
     "くいしんぼう"
   ],
   "description": "温度が　高く　湿度の　ある ところを　好む。ツルを　使って 小さなムシを　捕らえて　食べる。",
-  "image": "https://assets.pokopiaguide.com/pokemon/bellsprout.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/bellsprout.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "木かげの草むら",
+        "rarity": "common"
+      }
+    ]
+  }
 }

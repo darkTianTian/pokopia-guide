@@ -19,5 +19,38 @@
     "ようりょくそ"
   ],
   "description": "生まれて　しばらくの　あいだ 背中の　タネに　つまった 栄養を　とって　育つ。",
-  "image": "https://assets.pokopiaguide.com/pokemon/bulbasaur.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/bulbasaur.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "ivysaur"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "緑の草むら",
+        "rarity": "common"
+      },
+      {
+        "id": 22,
+        "name": "緑のベンチ",
+        "rarity": "common"
+      }
+    ]
+  }
 }

@@ -19,5 +19,22 @@
     "輕裝"
   ],
   "description": "雙腿能夠自由伸縮， 即使離得很遠也能 把對手一腳踢飛。",
-  "image": "https://assets.pokopiaguide.com/pokemon/hitmonlee.png"
+  "image": "https://assets.pokopiaguide.com/pokemon/hitmonlee.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tyrogue",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 25,
+        "name": "緊急救護站",
+        "rarity": "common"
+      }
+    ]
+  }
 }
