@@ -28,11 +28,6 @@
     ],
     "habitats": [
       {
-        "id": 28,
-        "name": "Large luggage carrier",
-        "rarity": "common"
-      },
-      {
         "id": 3,
         "name": "岩蔭草叢",
         "rarity": "rare"
