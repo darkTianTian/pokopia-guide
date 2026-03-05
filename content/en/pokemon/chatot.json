@@ -28,12 +28,12 @@
     "habitats": [
       {
         "id": 102,
-        "name": "高台の赤い草むら",
+        "name": "Elevated Red Tall Grass",
         "rarity": "common"
       },
       {
         "id": 125,
-        "name": "さえずりのリサイタル",
+        "name": "Chirping Recital",
         "rarity": "common"
       }
     ]

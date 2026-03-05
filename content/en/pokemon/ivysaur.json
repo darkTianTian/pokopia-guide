@@ -30,12 +30,12 @@
     "habitats": [
       {
         "id": 11,
-        "name": "花いっぱいの景色",
+        "name": "Field of Flowers",
         "rarity": "rare"
       },
       {
         "id": 22,
-        "name": "緑のベンチ",
+        "name": "Bench With Greenery",
         "rarity": "rare"
       }
     ]

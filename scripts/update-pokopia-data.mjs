@@ -778,17 +778,22 @@ async function scrapeGameWith(jaNameToSlug) {
 // --- Habitat Name Localization ---
 
 async function loadHabitatMappings() {
+  const en = (await loadJson(path.join(CONTENT_DIR, "habitat-mapping-en.json"))) || {}
   const ja = (await loadJson(path.join(CONTENT_DIR, "habitat-mapping.json"))) || {}
   const zh = (await loadJson(path.join(CONTENT_DIR, "habitat-mapping-zh.json"))) || {}
-  return { ja, zh }
+  return { en, ja, zh }
+}
+
+async function saveHabitatMappings(mappings) {
+  await writeJson(path.join(CONTENT_DIR, "habitat-mapping-en.json"), mappings.en)
 }
 
 function getLocalizedHabitatName(habitat, locale, mappings) {
   const idStr = String(habitat.id)
-  if (locale === "en") return habitat.name
+  if (locale === "en" && mappings.en[idStr]) return mappings.en[idStr]
   if (locale === "ja" && mappings.ja[idStr]) return mappings.ja[idStr]
   if (locale === "zh" && mappings.zh[idStr]) return mappings.zh[idStr]
-  // Fallback to English name
+  // Fallback: use whatever name we have
   return habitat.name
 }
 
@@ -1294,8 +1299,9 @@ async function run() {
     )
   }
 
-  // Phase 2: Merge and write (synchronous, fast)
-  console.log(`\nMerging and writing data...`)
+  // Phase 2: Merge data and collect EN habitat names
+  console.log(`\nMerging data...`)
+  const mergedResults = []
   for (const { slug, meta, serebiiEntry } of toProcess) {
     const { dexNumber, name } = meta
     const existingEn = existingPokemon.get(slug)?.en
@@ -1312,27 +1318,48 @@ async function run() {
     const existingPokopia = existingEn?.pokopia || null
     const merged = mergePokopiaData(existingPokopia, serebiiDetail, g8, serebiiEntry || null, gw)
 
-    // Correlate Game8 habitat names with merged habitat IDs to build image URL mapping
+    // Collect EN habitat names from Serebii (authoritative: has ID + English name)
+    if (serebiiDetail?.habitats) {
+      for (const h of serebiiDetail.habitats) {
+        if (h.id != null && h.name) {
+          habitatMappings.en[String(h.id)] = h.name
+        }
+      }
+    }
+
+    // Correlate Game8 habitat names with merged habitat IDs
     if (g8 && g8.habitats.length > 0 && merged.habitats.length > 0) {
+      // Direct name matching
       for (const mergedH of merged.habitats) {
-        if (habitatIdToImageUrl.has(mergedH.id)) continue
         const mergedNameLower = mergedH.name.toLowerCase().trim()
         for (const g8Name of g8.habitats) {
           const g8NameLower = g8Name.toLowerCase().trim()
           if (g8NameLower === mergedNameLower) {
-            const url = habitatImageMap.get(g8NameLower)
-            if (url) habitatIdToImageUrl.set(mergedH.id, url)
+            if (!habitatIdToImageUrl.has(mergedH.id)) {
+              const url = habitatImageMap.get(g8NameLower)
+              if (url) habitatIdToImageUrl.set(mergedH.id, url)
+            }
+            // Game8 name is English — use as EN mapping if not already set by Serebii
+            if (!habitatMappings.en[String(mergedH.id)]) {
+              habitatMappings.en[String(mergedH.id)] = g8Name
+            }
             break
           }
         }
       }
+      // Positional matching when counts are equal
       if (g8.habitats.length === merged.habitats.length) {
         for (let i = 0; i < merged.habitats.length; i++) {
           const hId = merged.habitats[i].id
-          if (habitatIdToImageUrl.has(hId)) continue
-          const g8NameLower = g8.habitats[i].toLowerCase().trim()
-          const url = habitatImageMap.get(g8NameLower)
-          if (url) habitatIdToImageUrl.set(hId, url)
+          const g8Name = g8.habitats[i]
+          const g8NameLower = g8Name.toLowerCase().trim()
+          if (!habitatIdToImageUrl.has(hId)) {
+            const url = habitatImageMap.get(g8NameLower)
+            if (url) habitatIdToImageUrl.set(hId, url)
+          }
+          if (!habitatMappings.en[String(hId)]) {
+            habitatMappings.en[String(hId)] = g8Name
+          }
         }
       }
     }
@@ -1368,8 +1395,22 @@ async function run() {
       }
     }
 
-    // Write to all 3 locales
-    if (!DRY_RUN) {
+    // Store merged data for deferred writing (after all EN names are collected)
+    mergedResults.push({ slug, merged })
+
+    updated++
+    console.log(
+      `  ${name}: ${merged.specialties.join(", ") || "no specialty"} | ` +
+        `${merged.habitats.length} habitat(s) | ` +
+        `time: ${merged.timeOfDay?.join(", ") || "null"} | ` +
+        `weather: ${merged.weather?.join(", ") || "null"}`
+    )
+  }
+
+  // Phase 3: Write all files (deferred so EN habitat names are fully built)
+  if (!DRY_RUN) {
+    console.log(`\nWriting ${mergedResults.length} Pokémon files...`)
+    for (const { slug, merged } of mergedResults) {
       for (const locale of LOCALES) {
         const pokemonData = existingPokemon.get(slug)?.[locale]
         if (!pokemonData) continue
@@ -1391,14 +1432,6 @@ async function run() {
         await writeJson(filePath, updatedData)
       }
     }
-
-    updated++
-    console.log(
-      `  ${name}: ${merged.specialties.join(", ") || "no specialty"} | ` +
-        `${merged.habitats.length} habitat(s) | ` +
-        `time: ${merged.timeOfDay?.join(", ") || "null"} | ` +
-        `weather: ${merged.weather?.join(", ") || "null"}`
-    )
   }
 
   // Download missing habitat images from Game8
@@ -1426,6 +1459,8 @@ async function run() {
   }
   if (!DRY_RUN) {
     await saveSyncState(newState)
+    await saveHabitatMappings(habitatMappings)
+    console.log(`Saved EN habitat mapping: ${Object.keys(habitatMappings.en).length} entries`)
   }
 
   console.log("\n--- Summary ---")

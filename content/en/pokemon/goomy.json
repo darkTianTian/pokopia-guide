@@ -27,12 +27,12 @@
     "habitats": [
       {
         "id": 9,
-        "name": "木かげの花畑",
+        "name": "Tree-Shaded Flower Bed",
         "rarity": "common"
       },
       {
         "id": 41,
-        "name": "あまごいスポット",
+        "name": "Rain Dance site",
         "rarity": "common"
       }
     ]

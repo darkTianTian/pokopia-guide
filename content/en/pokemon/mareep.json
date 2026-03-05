@@ -30,12 +30,12 @@
     "habitats": [
       {
         "id": 55,
-        "name": "Knitting station",
+        "name": "Overgrowth vending machie",
         "rarity": "common"
       },
       {
         "id": 77,
-        "name": "毛糸で編み物",
+        "name": "Knitting station",
         "rarity": "common"
       }
     ]
