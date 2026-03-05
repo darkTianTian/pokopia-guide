@@ -6,19 +6,6 @@
     "rock",
     "dark"
   ],
-  "stats": {
-    "hp": 100,
-    "attack": 134,
-    "defense": 110,
-    "spAtk": 95,
-    "spDef": 100,
-    "speed": 61
-  },
-  "abilities": [
-    "揚沙",
-    "緊張感"
-  ],
-  "description": "當牠帶著巨大轟鳴聲邁開腳步， 就連大山都會為之崩裂， 周遭的地形也會因而改變。",
   "image": "https://assets.pokopiaguide.com/pokemon/tyranitar.png",
   "pokopia": {
     "specialties": [],

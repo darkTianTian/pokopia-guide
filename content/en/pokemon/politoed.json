@@ -5,20 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 75,
-    "defense": 75,
-    "spAtk": 90,
-    "spDef": 100,
-    "speed": 70
-  },
-  "abilities": [
-    "water-absorb",
-    "damp",
-    "drizzle"
-  ],
-  "description": "The cry of a male is louder than that of a female. Male Politoed with deep, menacing voices find more popularity with the opposite gender.",
   "image": "https://assets.pokopiaguide.com/pokemon/politoed.png",
   "pokopia": {
     "specialties": [],

@@ -5,20 +5,6 @@
   "types": [
     "poison"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 80,
-    "defense": 50,
-    "spAtk": 40,
-    "spDef": 50,
-    "speed": 25
-  },
-  "abilities": [
-    "stench",
-    "sticky-hold",
-    "poison-touch"
-  ],
-  "description": "ヘドロが　固まって　生まれた。 臭くて　さわることが　できないし 通った跡には　草も　生えない。",
   "image": "https://assets.pokopiaguide.com/pokemon/grimer.png",
   "pokopia": {
     "specialties": [],

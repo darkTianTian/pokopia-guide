@@ -5,19 +5,6 @@
   "types": [
     "ghost"
   ],
-  "stats": {
-    "hp": 20,
-    "attack": 40,
-    "defense": 90,
-    "spAtk": 30,
-    "spDef": 90,
-    "speed": 25
-  },
-  "abilities": [
-    "levitate",
-    "frisk"
-  ],
-  "description": "I've heard that the children of Hisui all begin to behave once they've been told the story of how this Pokémon roams about before the witching hour to spirit away misbehaving children.",
   "image": "https://assets.pokopiaguide.com/pokemon/duskull.png",
   "pokopia": {
     "specialties": [

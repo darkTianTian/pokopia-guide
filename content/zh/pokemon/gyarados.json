@@ -6,19 +6,6 @@
     "water",
     "flying"
   ],
-  "stats": {
-    "hp": 95,
-    "attack": 125,
-    "defense": 79,
-    "spAtk": 60,
-    "spDef": 100,
-    "speed": 81
-  },
-  "abilities": [
-    "intimidate",
-    "moxie"
-  ],
-  "description": "就算是在狂風暴雨中， 只要發狂的暴鯉龍出現， 一切都會被牠燒毀殆盡。",
   "image": "https://assets.pokopiaguide.com/pokemon/gyarados.png",
   "pokopia": {
     "specialties": [],

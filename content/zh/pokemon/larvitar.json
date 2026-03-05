@@ -6,19 +6,6 @@
     "rock",
     "ground"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 64,
-    "defense": 50,
-    "spAtk": 45,
-    "spDef": 50,
-    "speed": 41
-  },
-  "abilities": [
-    "毅力",
-    "沙隱"
-  ],
-  "description": "靠吃泥土維生。 吃掉一座大山後， 就會為了成長而開始沉睡。",
   "image": "https://assets.pokopiaguide.com/pokemon/larvitar.png",
   "pokopia": {
     "specialties": [

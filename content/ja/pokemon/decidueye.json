@@ -6,19 +6,6 @@
     "grass",
     "ghost"
   ],
-  "stats": {
-    "hp": 78,
-    "attack": 107,
-    "defense": 75,
-    "spAtk": 100,
-    "spDef": 100,
-    "speed": 70
-  },
-  "abilities": [
-    "overgrow",
-    "long-reach"
-  ],
-  "description": "０．１秒で　矢羽根を　翼の 蔓に　つがえて　放つ。　相手が 気づく前に　急所を　射貫く。",
   "image": "https://assets.pokopiaguide.com/pokemon/decidueye.png",
   "pokopia": {
     "specialties": [],

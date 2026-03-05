@@ -6,20 +6,6 @@
     "fighting",
     "steel"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 110,
-    "defense": 70,
-    "spAtk": 115,
-    "spDef": 70,
-    "speed": 90
-  },
-  "abilities": [
-    "Steadfast",
-    "Inner Focus",
-    "Justified"
-  ],
-  "description": "A most gallant-looking creature. It emits energy waves and controls them with precision, using them to sense even faraway beings. I have given the name ”aura” to this power.",
   "image": "https://assets.pokopiaguide.com/pokemon/lucario.png",
   "pokopia": {
     "specialties": [],

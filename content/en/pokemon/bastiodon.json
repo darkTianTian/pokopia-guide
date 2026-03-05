@@ -6,19 +6,6 @@
     "rock",
     "steel"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 52,
-    "defense": 168,
-    "spAtk": 47,
-    "spDef": 138,
-    "speed": 30
-  },
-  "abilities": [
-    "sturdy",
-    "soundproof"
-  ],
-  "description": "Its face is sturdy—as strong as diamond—and this hardness offers a very stable defense. Much about this species is still unknown, such as its natural habitat.",
   "image": "https://assets.pokopiaguide.com/pokemon/bastiodon.png",
   "pokopia": {
     "specialties": [],

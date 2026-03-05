@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 58,
-    "attack": 64,
-    "defense": 58,
-    "spAtk": 80,
-    "spDef": 65,
-    "speed": 80
-  },
-  "abilities": [
-    "blaze",
-    "flash-fire"
-  ],
-  "description": "炎の　勢いと　熱風で　威嚇する。 素早い　身のこなしで　相手の　攻撃を かわしながら　同時に　炎で　燃やす。",
   "image": "https://assets.pokopiaguide.com/pokemon/quilava.png",
   "pokopia": {
     "specialties": [],

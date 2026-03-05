@@ -5,20 +5,6 @@
   "types": [
     "ground"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 50,
-    "defense": 95,
-    "spAtk": 40,
-    "spDef": 50,
-    "speed": 35
-  },
-  "abilities": [
-    "Rock Head",
-    "Lightning Rod",
-    "Battle Armor"
-  ],
-  "description": "This Pokémon wears the skull of its deceased mother. Sometimes Cubone’s dreams make it cry, but each tear Cubone sheds makes it stronger.",
   "image": "https://assets.pokopiaguide.com/pokemon/cubone.png",
   "pokopia": {
     "specialties": [],

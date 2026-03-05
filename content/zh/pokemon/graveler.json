@@ -6,20 +6,6 @@
     "rock",
     "ground"
   ],
-  "stats": {
-    "hp": 55,
-    "attack": 95,
-    "defense": 115,
-    "spAtk": 45,
-    "spDef": 45,
-    "speed": 35
-  },
-  "abilities": [
-    "rock-head",
-    "sturdy",
-    "sand-veil"
-  ],
-  "description": "經常在山路上滾動。 滾動時從不會去理會 前面的路上有什麼東西。",
   "image": "https://assets.pokopiaguide.com/pokemon/graveler.png",
   "pokopia": {
     "specialties": [

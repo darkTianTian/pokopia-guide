@@ -6,18 +6,6 @@
     "fire",
     "water"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 110,
-    "defense": 120,
-    "spAtk": 130,
-    "spDef": 90,
-    "speed": 70
-  },
-  "abilities": [
-    "water-absorb"
-  ],
-  "description": "背中の　アームから 体内の　水蒸気を　噴射する。 山　ひとつ　吹き飛ばす　威力。",
   "image": "https://assets.pokopiaguide.com/pokemon/volcanion.png",
   "pokopia": {
     "specialties": [

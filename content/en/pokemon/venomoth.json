@@ -6,20 +6,6 @@
     "bug",
     "poison"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 65,
-    "defense": 60,
-    "spAtk": 90,
-    "spDef": 75,
-    "speed": 90
-  },
-  "abilities": [
-    "shield-dust",
-    "tinted-lens",
-    "wonder-skin"
-  ],
-  "description": "The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact.",
   "image": "https://assets.pokopiaguide.com/pokemon/venomoth.png",
   "pokopia": {
     "specialties": [

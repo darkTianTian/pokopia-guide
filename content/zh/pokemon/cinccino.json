@@ -5,20 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 75,
-    "attack": 95,
-    "defense": 60,
-    "spAtk": 65,
-    "spDef": 60,
-    "speed": 115
-  },
-  "abilities": [
-    "迷人之軀",
-    "技術高手",
-    "連續攻擊"
-  ],
-  "description": "覆蓋著特別油脂的毛髮 可以擋住攻擊。這種油 以高價在市場上流通。",
   "image": "https://assets.pokopiaguide.com/pokemon/cinccino.png",
   "pokopia": {
     "specialties": [],

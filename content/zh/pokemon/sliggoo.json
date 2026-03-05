@@ -5,20 +5,6 @@
   "types": [
     "dragon"
   ],
-  "stats": {
-    "hp": 68,
-    "attack": 75,
-    "defense": 53,
-    "spAtk": 83,
-    "spDef": 113,
-    "speed": 60
-  },
-  "abilities": [
-    "sap-sipper",
-    "hydration",
-    "gooey"
-  ],
-  "description": "背上的突起物裡裝著牠 小小的腦子，裡面只想著 吃飯和逃離敵人這兩件事。",
   "image": "https://assets.pokopiaguide.com/pokemon/sliggoo.png",
   "pokopia": {
     "specialties": [

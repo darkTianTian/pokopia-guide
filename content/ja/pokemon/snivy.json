@@ -5,19 +5,6 @@
   "types": [
     "grass"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 45,
-    "defense": 55,
-    "spAtk": 45,
-    "spDef": 55,
-    "speed": 63
-  },
-  "abilities": [
-    "overgrow",
-    "contrary"
-  ],
-  "description": "尻尾で　太陽の光を　浴びて 光合成を　する。元気を　なくすと 尻尾が　たれさがる。",
   "image": "https://assets.pokopiaguide.com/pokemon/snivy.png",
   "pokopia": {
     "specialties": [

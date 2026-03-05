@@ -5,19 +5,6 @@
   "types": [
     "bug"
   ],
-  "stats": {
-    "hp": 77,
-    "attack": 85,
-    "defense": 51,
-    "spAtk": 55,
-    "spDef": 51,
-    "speed": 65
-  },
-  "abilities": [
-    "swarm",
-    "technician"
-  ],
-  "description": "感情を　メロディで　表す。 メロディの　法則性を 学者たちが　研究している。",
   "image": "https://assets.pokopiaguide.com/pokemon/kricketune.png",
   "pokopia": {
     "specialties": [

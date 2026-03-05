@@ -6,19 +6,6 @@
     "bug",
     "flying"
   ],
-  "stats": {
-    "hp": 30,
-    "attack": 30,
-    "defense": 42,
-    "spAtk": 30,
-    "spDef": 42,
-    "speed": 70
-  },
-  "abilities": [
-    "Honey Gather",
-    "Hustle"
-  ],
-  "description": "They swear fealty to a queen Pokémon and work diligently to gather nectar. Each swarm produces a different flavor of honey.",
   "image": "https://assets.pokopiaguide.com/pokemon/combee.png",
   "pokopia": {
     "specialties": [

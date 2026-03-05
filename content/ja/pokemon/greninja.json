@@ -6,19 +6,6 @@
     "water",
     "dark"
   ],
-  "stats": {
-    "hp": 72,
-    "attack": 95,
-    "defense": 67,
-    "spAtk": 103,
-    "spDef": 71,
-    "speed": 122
-  },
-  "abilities": [
-    "げきりゅう",
-    "へんげんじざい"
-  ],
-  "description": "忍者のように　神出鬼没。 素早い　動きで　翻弄しつつ 水の　手裏剣で　切り裂く。",
   "image": "https://assets.pokopiaguide.com/pokemon/greninja.png",
   "pokopia": {
     "specialties": [],

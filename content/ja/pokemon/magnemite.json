@@ -6,20 +6,6 @@
     "electric",
     "steel"
   ],
-  "stats": {
-    "hp": 25,
-    "attack": 35,
-    "defense": 70,
-    "spAtk": 95,
-    "spDef": 55,
-    "speed": 45
-  },
-  "abilities": [
-    "magnet-pull",
-    "sturdy",
-    "analytic"
-  ],
-  "description": "電気を　食って　生きている。 左右の　ユニットから　電磁波を 放射しながら　空を　飛ぶ。",
   "image": "https://assets.pokopiaguide.com/pokemon/magnemite.png",
   "pokopia": {
     "specialties": [],

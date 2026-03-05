@@ -5,20 +5,6 @@
   "types": [
     "poison"
   ],
-  "stats": {
-    "hp": 35,
-    "attack": 60,
-    "defense": 44,
-    "spAtk": 40,
-    "spDef": 54,
-    "speed": 55
-  },
-  "abilities": [
-    "intimidate",
-    "shed-skin",
-    "unnerve"
-  ],
-  "description": "育つほどに　どんどん　長くなる。 そして　夜中は　木の枝に グルグルと　からまって　休む。",
   "image": "https://assets.pokopiaguide.com/pokemon/ekans.png",
   "pokopia": {
     "specialties": [],

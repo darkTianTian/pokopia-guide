@@ -5,19 +5,6 @@
   "types": [
     "ghost"
   ],
-  "stats": {
-    "hp": 20,
-    "attack": 40,
-    "defense": 90,
-    "spAtk": 30,
-    "spDef": 90,
-    "speed": 25
-  },
-  "abilities": [
-    "levitate",
-    "frisk"
-  ],
-  "description": "會讓身體變透明， 然後偷偷地靠近獵物。 擁有穿過厚牆壁的能力。",
   "image": "https://assets.pokopiaguide.com/pokemon/duskull.png",
   "pokopia": {
     "specialties": [

@@ -6,19 +6,6 @@
     "rock",
     "ice"
   ],
-  "stats": {
-    "hp": 123,
-    "attack": 77,
-    "defense": 72,
-    "spAtk": 99,
-    "spDef": 92,
-    "speed": 58
-  },
-  "abilities": [
-    "refrigerate",
-    "snow-warning"
-  ],
-  "description": "激しい　怒りに　かられると 猛烈な　冷気を　噴き出して あたり一面を　氷漬けにする。",
   "image": "https://assets.pokopiaguide.com/pokemon/aurorus.png",
   "pokopia": {
     "specialties": [],

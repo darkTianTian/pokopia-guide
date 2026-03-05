@@ -6,20 +6,6 @@
     "electric",
     "steel"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 60,
-    "defense": 95,
-    "spAtk": 120,
-    "spDef": 70,
-    "speed": 70
-  },
-  "abilities": [
-    "magnet-pull",
-    "sturdy",
-    "analytic"
-  ],
-  "description": "Three Magnemite gathered to evolve into this Pokémon. The source of much vexation on my part, as its powerful magnetism destroys my research equipment.",
   "image": "https://assets.pokopiaguide.com/pokemon/magneton.png",
   "pokopia": {
     "specialties": [

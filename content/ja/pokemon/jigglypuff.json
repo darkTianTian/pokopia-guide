@@ -6,20 +6,6 @@
     "normal",
     "fairy"
   ],
-  "stats": {
-    "hp": 115,
-    "attack": 45,
-    "defense": 20,
-    "spAtk": 45,
-    "spDef": 25,
-    "speed": 20
-  },
-  "abilities": [
-    "メロメロボディ",
-    "かちき",
-    "フレンドガード"
-  ],
-  "description": "声の　波長を　自在に　変えて 聞くと　絶対に　眠くなる 不思議な　メロディーを　歌う。",
   "image": "https://assets.pokopiaguide.com/pokemon/jigglypuff.png",
   "pokopia": {
     "specialties": [],

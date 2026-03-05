@@ -5,19 +5,6 @@
   "types": [
     "ice"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 60,
-    "defense": 110,
-    "spAtk": 130,
-    "spDef": 95,
-    "speed": 65
-  },
-  "abilities": [
-    "雪隱",
-    "冰凍之軀"
-  ],
-  "description": "冰伊布釋放出的冷氣能 製造出粉狀的雪。這使牠受到 各個滑雪場的熱烈歡迎。",
   "image": "https://assets.pokopiaguide.com/pokemon/glaceon.png",
   "pokopia": {
     "specialties": [

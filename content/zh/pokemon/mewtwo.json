@@ -5,19 +5,6 @@
   "types": [
     "psychic"
   ],
-  "stats": {
-    "hp": 106,
-    "attack": 110,
-    "defense": 90,
-    "spAtk": 154,
-    "spDef": 90,
-    "speed": 130
-  },
-  "abilities": [
-    "pressure",
-    "unnerve"
-  ],
-  "description": "身上的基因與夢幻幾乎一樣， 但無論是體型大小還是性格 都與夢幻有著巨大的差別。",
   "image": "https://assets.pokopiaguide.com/pokemon/mewtwo.png",
   "pokopia": {
     "specialties": [],

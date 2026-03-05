@@ -6,18 +6,6 @@
     "ground",
     "dragon"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 100,
-    "defense": 80,
-    "spAtk": 80,
-    "spDef": 80,
-    "speed": 100
-  },
-  "abilities": [
-    "levitate"
-  ],
-  "description": "はばたく　音が　女の人の 美しい　歌声に　似ているため 砂漠の精霊　と　呼ばれている。",
   "image": "https://assets.pokopiaguide.com/pokemon/flygon.png",
   "pokopia": {
     "specialties": [],

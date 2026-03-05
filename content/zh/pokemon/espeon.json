@@ -5,19 +5,6 @@
   "types": [
     "psychic"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 65,
-    "defense": 60,
-    "spAtk": 130,
-    "spDef": 95,
-    "speed": 110
-  },
-  "abilities": [
-    "同步",
-    "魔法鏡"
-  ],
-  "description": "從額頭的珠子放射出精神力量 進行戰鬥。當力量用盡時， 珠子的顏色也會褪去。",
   "image": "https://assets.pokopiaguide.com/pokemon/espeon.png",
   "pokopia": {
     "specialties": [

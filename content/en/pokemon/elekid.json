@@ -5,19 +5,6 @@
   "types": [
     "electric"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 63,
-    "defense": 37,
-    "spAtk": 65,
-    "spDef": 55,
-    "speed": 95
-  },
-  "abilities": [
-    "static",
-    "vital-spirit"
-  ],
-  "description": "They generate electricity by spinning their arms. During a thunderstorm, if one hears the lively voices of children out in the wilderness, what one is actually hearing are the voices of Elekid.",
   "image": "https://assets.pokopiaguide.com/pokemon/elekid.png",
   "pokopia": {
     "specialties": [],

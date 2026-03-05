@@ -5,19 +5,6 @@
   "types": [
     "electric"
   ],
-  "stats": {
-    "hp": 55,
-    "attack": 40,
-    "defense": 40,
-    "spAtk": 65,
-    "spDef": 45,
-    "speed": 35
-  },
-  "abilities": [
-    "Static",
-    "Plus"
-  ],
-  "description": "Rubbing its fleece generates electricity. You’ll want to pet it because it’s cute, but if you use your bare hand, you’ll get a painful shock.",
   "image": "https://assets.pokopiaguide.com/pokemon/mareep.png",
   "pokopia": {
     "specialties": [

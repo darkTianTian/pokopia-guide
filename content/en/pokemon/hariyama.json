@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 144,
-    "attack": 120,
-    "defense": 60,
-    "spAtk": 40,
-    "spDef": 60,
-    "speed": 50
-  },
-  "abilities": [
-    "thick-fat",
-    "guts",
-    "sheer-force"
-  ],
-  "description": "Hariyama that are big and fat aren’t necessarily strong. There are some small ones that move nimbly and use moves skillfully.",
   "image": "https://assets.pokopiaguide.com/pokemon/hariyama.png",
   "pokopia": {
     "specialties": [

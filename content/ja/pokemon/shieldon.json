@@ -6,19 +6,6 @@
     "rock",
     "steel"
   ],
-  "stats": {
-    "hp": 30,
-    "attack": 42,
-    "defense": 118,
-    "spAtk": 42,
-    "spDef": 88,
-    "speed": 30
-  },
-  "abilities": [
-    "sturdy",
-    "soundproof"
-  ],
-  "description": "太古の　地層から　化石が 見つかるが　顔の　部分　以外が 発見　されたことは　ない。",
   "image": "https://assets.pokopiaguide.com/pokemon/shieldon.png",
   "pokopia": {
     "specialties": [],

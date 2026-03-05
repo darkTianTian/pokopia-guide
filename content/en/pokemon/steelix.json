@@ -6,20 +6,6 @@
     "steel",
     "ground"
   ],
-  "stats": {
-    "hp": 75,
-    "attack": 85,
-    "defense": 200,
-    "spAtk": 55,
-    "spDef": 65,
-    "speed": 30
-  },
-  "abilities": [
-    "rock-head",
-    "sturdy",
-    "sheer-force"
-  ],
-  "description": "This Pokémon evolved through use of a strange item. Its body is coated with steel powder and notably hard—not even diamond can leave so much as a scratch.",
   "image": "https://assets.pokopiaguide.com/pokemon/steelix.png",
   "pokopia": {
     "specialties": [],

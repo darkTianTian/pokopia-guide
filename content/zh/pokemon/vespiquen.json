@@ -6,23 +6,10 @@
     "bug",
     "flying"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 80,
-    "defense": 102,
-    "spAtk": 80,
-    "spDef": 102,
-    "speed": 40
-  },
-  "abilities": [
-    "壓迫感",
-    "緊張感"
-  ],
-  "description": "能釋放越多費洛蒙的蜂女王， 就能讓越多的三蜜蜂 聽從自己的指揮。",
   "image": "https://assets.pokopiaguide.com/pokemon/vespiquen.png",
   "pokopia": {
     "specialties": [
-      "gather honey",
+      "gather",
       "search"
     ],
     "timeOfDay": [

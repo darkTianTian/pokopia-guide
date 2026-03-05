@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 39,
-    "attack": 52,
-    "defense": 43,
-    "spAtk": 60,
-    "spDef": 50,
-    "speed": 65
-  },
-  "abilities": [
-    "blaze",
-    "flash-fire"
-  ],
-  "description": "Hails from the Johto region. Though usually curled into a ball due to its timid disposition, it harbors tremendous firepower.",
   "image": "https://assets.pokopiaguide.com/pokemon/cyndaquil.png",
   "pokopia": {
     "specialties": [

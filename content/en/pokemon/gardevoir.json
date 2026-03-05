@@ -6,20 +6,6 @@
     "psychic",
     "fairy"
   ],
-  "stats": {
-    "hp": 68,
-    "attack": 65,
-    "defense": 65,
-    "spAtk": 125,
-    "spDef": 115,
-    "speed": 80
-  },
-  "abilities": [
-    "Synchronize",
-    "Trace",
-    "Telepathy"
-  ],
-  "description": "It will dedicate itself to defending a master it has come to adore. Its pure white dress, reminiscent of those worn by ladies of nobility, is the dress of one who is willing to risk their life.",
   "image": "https://assets.pokopiaguide.com/pokemon/gardevoir.png",
   "pokopia": {
     "specialties": [],

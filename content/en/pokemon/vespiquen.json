@@ -6,23 +6,10 @@
     "bug",
     "flying"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 80,
-    "defense": 102,
-    "spAtk": 80,
-    "spDef": 102,
-    "speed": 40
-  },
-  "abilities": [
-    "Pressure",
-    "Unnerve"
-  ],
-  "description": "Commands its subjects to build its hive. It will dispatch any interlopers who dare sneak into its nest and use them as nourishment for itself.",
   "image": "https://assets.pokopiaguide.com/pokemon/vespiquen.png",
   "pokopia": {
     "specialties": [
-      "gather honey",
+      "gather",
       "search"
     ],
     "timeOfDay": [

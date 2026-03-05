@@ -5,19 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 44,
-    "attack": 48,
-    "defense": 65,
-    "spAtk": 50,
-    "spDef": 64,
-    "speed": 43
-  },
-  "abilities": [
-    "激流",
-    "雨盤"
-  ],
-  "description": "當牠遇到危險的時候， 會將四肢收回甲殼裡保護自己， 同時從嘴裡噴出水來。",
   "image": "https://assets.pokopiaguide.com/pokemon/squirtle.png",
   "pokopia": {
     "specialties": [

@@ -5,20 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 52,
-    "defense": 48,
-    "spAtk": 65,
-    "spDef": 50,
-    "speed": 55
-  },
-  "abilities": [
-    "濕氣",
-    "無關天氣",
-    "悠游自如"
-  ],
-  "description": "頭痛會隨著壓力累積而 更加劇烈。會用強大的 念力壓倒周圍的一切。",
   "image": "https://assets.pokopiaguide.com/pokemon/psyduck.png",
   "pokopia": {
     "specialties": [],

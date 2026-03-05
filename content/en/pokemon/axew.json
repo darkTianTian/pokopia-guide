@@ -5,20 +5,6 @@
   "types": [
     "dragon"
   ],
-  "stats": {
-    "hp": 46,
-    "attack": 87,
-    "defense": 60,
-    "spAtk": 30,
-    "spDef": 40,
-    "speed": 57
-  },
-  "abilities": [
-    "rivalry",
-    "mold-breaker",
-    "unnerve"
-  ],
-  "description": "They play with each other by knocking their large tusks together. Their tusks break sometimes, but they grow back so quickly that it isn’t a concern.",
   "image": "https://assets.pokopiaguide.com/pokemon/axew.png",
   "pokopia": {
     "specialties": [],

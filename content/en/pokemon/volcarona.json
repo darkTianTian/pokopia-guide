@@ -6,19 +6,6 @@
     "bug",
     "fire"
   ],
-  "stats": {
-    "hp": 85,
-    "attack": 60,
-    "defense": 65,
-    "spAtk": 135,
-    "spDef": 105,
-    "speed": 100
-  },
-  "abilities": [
-    "flame-body",
-    "swarm"
-  ],
-  "description": "This Pokémon emerges from a cocoon formed of raging flames. Ancient murals depict Volcarona as a deity of fire.",
   "image": "https://assets.pokopiaguide.com/pokemon/volcarona.png",
   "pokopia": {
     "specialties": [],

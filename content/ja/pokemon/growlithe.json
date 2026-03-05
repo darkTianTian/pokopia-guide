@@ -5,20 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 55,
-    "attack": 70,
-    "defense": 45,
-    "spAtk": 70,
-    "spDef": 50,
-    "speed": 60
-  },
-  "abilities": [
-    "いかく",
-    "もらいび",
-    "せいぎのこころ"
-  ],
-  "description": "忠実な　性格で　親の トレーナーを　守るため　必死に 相手に　吠えかかる。",
   "image": "https://assets.pokopiaguide.com/pokemon/growlithe.png",
   "pokopia": {
     "specialties": [

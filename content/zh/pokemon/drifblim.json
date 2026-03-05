@@ -6,20 +6,6 @@
     "ghost",
     "flying"
   ],
-  "stats": {
-    "hp": 150,
-    "attack": 80,
-    "defense": 44,
-    "spAtk": 90,
-    "spDef": 54,
-    "speed": 80
-  },
-  "abilities": [
-    "aftermath",
-    "unburden",
-    "flare-boost"
-  ],
-  "description": "會抓住人和寶可夢， 然後運到某個地方。 沒人知道那地方是哪裡。",
   "image": "https://assets.pokopiaguide.com/pokemon/drifblim.png",
   "pokopia": {
     "specialties": [],

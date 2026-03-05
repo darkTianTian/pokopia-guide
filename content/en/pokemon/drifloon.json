@@ -6,24 +6,10 @@
     "ghost",
     "flying"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 50,
-    "defense": 34,
-    "spAtk": 60,
-    "spDef": 44,
-    "speed": 70
-  },
-  "abilities": [
-    "Aftermath",
-    "Unburden",
-    "Flare Boost"
-  ],
-  "description": "Said to lure away young children and carry them off to the afterlife. Some whisper that Drifloon are formed of reincarnated human souls, but these rumors are as yet unconfirmed.",
   "image": "https://assets.pokopiaguide.com/pokemon/drifloon.png",
   "pokopia": {
     "specialties": [
-      "dream island"
+      "fly"
     ],
     "timeOfDay": [
       "dawn",

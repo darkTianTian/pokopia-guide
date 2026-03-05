@@ -6,20 +6,6 @@
     "water",
     "ground"
   ],
-  "stats": {
-    "hp": 111,
-    "attack": 83,
-    "defense": 68,
-    "spAtk": 92,
-    "spDef": 82,
-    "speed": 39
-  },
-  "abilities": [
-    "sticky-hold",
-    "storm-drain",
-    "sand-force"
-  ],
-  "description": "グニャグニャの　体　だけれど かなり　タフ。　軟らかさが 衝撃を　分散するのだ。",
   "image": "https://assets.pokopiaguide.com/pokemon/gastrodon.png",
   "pokopia": {
     "specialties": [],

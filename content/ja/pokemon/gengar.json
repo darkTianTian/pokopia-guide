@@ -6,18 +6,6 @@
     "ghost",
     "poison"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 65,
-    "defense": 60,
-    "spAtk": 130,
-    "spDef": 75,
-    "speed": 110
-  },
-  "abilities": [
-    "cursed-body"
-  ],
-  "description": "山で　遭難したとき 命を　奪いに　暗闇から 現れることが　あるという。",
   "image": "https://assets.pokopiaguide.com/pokemon/gengar.png",
   "pokopia": {
     "specialties": [],

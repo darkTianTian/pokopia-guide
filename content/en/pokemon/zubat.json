@@ -6,19 +6,6 @@
     "poison",
     "flying"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 45,
-    "defense": 35,
-    "spAtk": 30,
-    "spDef": 40,
-    "speed": 55
-  },
-  "abilities": [
-    "inner-focus",
-    "infiltrator"
-  ],
-  "description": "Makes its home in gloomy caves. Atrophied eyes have left this Pokémon blind, so it scans its surroundings via sound waves that it emits from its mouth as it flies.",
   "image": "https://assets.pokopiaguide.com/pokemon/zubat.png",
   "pokopia": {
     "specialties": [

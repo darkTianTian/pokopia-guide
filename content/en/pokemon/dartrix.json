@@ -6,19 +6,6 @@
     "grass",
     "flying"
   ],
-  "stats": {
-    "hp": 78,
-    "attack": 75,
-    "defense": 75,
-    "spAtk": 70,
-    "spDef": 70,
-    "speed": 52
-  },
-  "abilities": [
-    "overgrow",
-    "long-reach"
-  ],
-  "description": "Regularly basks in sunlight to gather power—presumably due to the frigid climate. Nonetheless, the edges of the blade quills set into its wings are keen as ever.",
   "image": "https://assets.pokopiaguide.com/pokemon/dartrix.png",
   "pokopia": {
     "specialties": [

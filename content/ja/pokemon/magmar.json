@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 95,
-    "defense": 57,
-    "spAtk": 100,
-    "spDef": 85,
-    "speed": 93
-  },
-  "abilities": [
-    "flame-body",
-    "vital-spirit"
-  ],
-  "description": "全身が　つねに　燃えている。 火事を　起こす　原因の ひとつとして　恐れられる。",
   "image": "https://assets.pokopiaguide.com/pokemon/magmar.png",
   "pokopia": {
     "specialties": [

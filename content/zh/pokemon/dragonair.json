@@ -5,19 +5,6 @@
   "types": [
     "dragon"
   ],
-  "stats": {
-    "hp": 61,
-    "attack": 84,
-    "defense": 65,
-    "spAtk": 70,
-    "spDef": 70,
-    "speed": 70
-  },
-  "abilities": [
-    "蛻皮",
-    "神奇鱗片"
-  ],
-  "description": "能將力量集中在尾巴的珠子， 藉此操縱天氣。全身散發著 氣場的樣子非常神秘。",
   "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png",
   "pokopia": {
     "specialties": [],

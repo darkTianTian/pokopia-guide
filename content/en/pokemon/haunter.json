@@ -6,18 +6,6 @@
     "ghost",
     "poison"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 50,
-    "defense": 45,
-    "spAtk": 115,
-    "spDef": 55,
-    "speed": 95
-  },
-  "abilities": [
-    "levitate"
-  ],
-  "description": "This frightful, malevolent spirit can glide through walls, appearing wherever it likes. According to rumor, victims of a Haunter's lick will wither to death day by day.",
   "image": "https://assets.pokopiaguide.com/pokemon/haunter.png",
   "pokopia": {
     "specialties": [],

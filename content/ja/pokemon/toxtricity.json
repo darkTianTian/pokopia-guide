@@ -6,20 +6,6 @@
     "electric",
     "poison"
   ],
-  "stats": {
-    "hp": 75,
-    "attack": 98,
-    "defense": 70,
-    "spAtk": 114,
-    "spDef": 70,
-    "speed": 75
-  },
-  "abilities": [
-    "punk-rock",
-    "plus",
-    "technician"
-  ],
-  "description": "ケンカ腰で　気が　短い。 よどんだ　水を　がぶ飲みして 水中の　毒素を　取りこむ。",
   "image": "https://assets.pokopiaguide.com/pokemon/toxtricity.png",
   "pokopia": {
     "specialties": [],

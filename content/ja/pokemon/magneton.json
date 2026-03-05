@@ -6,20 +6,6 @@
     "electric",
     "steel"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 60,
-    "defense": 95,
-    "spAtk": 120,
-    "spDef": 70,
-    "speed": 70
-  },
-  "abilities": [
-    "magnet-pull",
-    "sturdy",
-    "analytic"
-  ],
-  "description": "強い　磁力を　たえず　放つ。 レアコイルが　近づくと　大抵の コンピュータは　異常を　きたす。",
   "image": "https://assets.pokopiaguide.com/pokemon/magneton.png",
   "pokopia": {
     "specialties": [

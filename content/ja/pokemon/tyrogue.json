@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 35,
-    "attack": 35,
-    "defense": 35,
-    "spAtk": 35,
-    "spDef": 35,
-    "speed": 35
-  },
-  "abilities": [
-    "こんじょう",
-    "ふくつのこころ",
-    "やるき"
-  ],
-  "description": "手ごろな　相手を　見つけると すぐに　殴りかかってくるので 小さくても　油断ならない。",
   "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png",
   "pokopia": {
     "specialties": [],

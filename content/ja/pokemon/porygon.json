@@ -5,20 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 60,
-    "defense": 70,
-    "spAtk": 85,
-    "spDef": 75,
-    "speed": 40
-  },
-  "abilities": [
-    "trace",
-    "download",
-    "analytic"
-  ],
-  "description": "近年は　電脳空間で　大活躍。 怪しい　データが　ないか チェックして　まわっている。",
   "image": "https://assets.pokopiaguide.com/pokemon/porygon.png",
   "pokopia": {
     "specialties": [],

@@ -6,20 +6,6 @@
     "normal",
     "fairy"
   ],
-  "stats": {
-    "hp": 140,
-    "attack": 70,
-    "defense": 45,
-    "spAtk": 85,
-    "spDef": 50,
-    "speed": 45
-  },
-  "abilities": [
-    "cute-charm",
-    "competitive",
-    "frisk"
-  ],
-  "description": "きめ細やかな　体毛が　自慢。 とくに　額の　巻き毛は 天にも　昇る　極上の　手触り。",
   "image": "https://assets.pokopiaguide.com/pokemon/wigglytuff.png",
   "pokopia": {
     "specialties": [],

@@ -6,20 +6,6 @@
     "water",
     "grass"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 30,
-    "defense": 30,
-    "spAtk": 40,
-    "spDef": 50,
-    "speed": 30
-  },
-  "abilities": [
-    "悠游自如",
-    "雨盤",
-    "我行我素"
-  ],
-  "description": "因為葉子長得太大太重， 所以才會改變習性， 漂浮在水面上生活。",
   "image": "https://assets.pokopiaguide.com/pokemon/lotad.png",
   "pokopia": {
     "specialties": [

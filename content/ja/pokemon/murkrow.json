@@ -6,20 +6,6 @@
     "dark",
     "flying"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 85,
-    "defense": 42,
-    "spAtk": 85,
-    "spDef": 42,
-    "speed": 91
-  },
-  "abilities": [
-    "insomnia",
-    "super-luck",
-    "prankster"
-  ],
-  "description": "ボスのために　キラキラ　光るものを 探している。　不吉な　存在と いわれ　忌み嫌う　人も　多い。",
   "image": "https://assets.pokopiaguide.com/pokemon/murkrow.png",
   "pokopia": {
     "specialties": [],

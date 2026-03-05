@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 86,
-    "defense": 60,
-    "spAtk": 55,
-    "spDef": 60,
-    "speed": 94
-  },
-  "abilities": [
-    "blaze",
-    "libero"
-  ],
-  "description": "手を　使わずに　木の　枝から 木の実を　摘み取り　リフティング。 足技を　磨く　練習。",
   "image": "https://assets.pokopiaguide.com/pokemon/raboot.png",
   "pokopia": {
     "specialties": [],

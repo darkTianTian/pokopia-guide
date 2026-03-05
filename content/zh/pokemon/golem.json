@@ -6,20 +6,6 @@
     "rock",
     "ground"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 120,
-    "defense": 130,
-    "spAtk": 55,
-    "spDef": 65,
-    "speed": 45
-  },
-  "abilities": [
-    "rock-head",
-    "sturdy",
-    "sand-veil"
-  ],
-  "description": "剛蛻皮的時候身體比較軟 而且顏色偏白，但在接觸到 空氣後很快就會變硬。",
   "image": "https://assets.pokopiaguide.com/pokemon/golem.png",
   "pokopia": {
     "specialties": [],

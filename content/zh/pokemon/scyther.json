@@ -6,20 +6,6 @@
     "bug",
     "flying"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 110,
-    "defense": 80,
-    "spAtk": 55,
-    "spDef": 80,
-    "speed": 105
-  },
-  "abilities": [
-    "蟲之預感",
-    "技術高手",
-    "不屈之心"
-  ],
-  "description": "如果在森林裡發現了 有很多樹被砍倒的地方， 那就是飛天螳螂的地盤。",
   "image": "https://assets.pokopiaguide.com/pokemon/scyther.png",
   "pokopia": {
     "specialties": [

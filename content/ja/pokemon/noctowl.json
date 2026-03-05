@@ -6,20 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 100,
-    "attack": 50,
-    "defense": 50,
-    "spAtk": 86,
-    "spDef": 96,
-    "speed": 70
-  },
-  "abilities": [
-    "insomnia",
-    "keen-eye",
-    "tinted-lens"
-  ],
-  "description": "ものごとを　考えだすと 首を　１８０度　回転　させて 頭の　働きを　高める。",
   "image": "https://assets.pokopiaguide.com/pokemon/noctowl.png",
   "pokopia": {
     "specialties": [

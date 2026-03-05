@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 60,
-    "defense": 40,
-    "spAtk": 70,
-    "spDef": 50,
-    "speed": 45
-  },
-  "abilities": [
-    "Blaze",
-    "Speed Boost"
-  ],
-  "description": "Torchic has a place inside its body where it keeps its flame. Give it a hug—it will be glowing with warmth. This Pokémon is covered all over by a fluffy coat of down.",
   "image": "https://assets.pokopiaguide.com/pokemon/torchic.png",
   "pokopia": {
     "specialties": [

@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 70,
-    "defense": 40,
-    "spAtk": 35,
-    "spDef": 40,
-    "speed": 60
-  },
-  "abilities": [
-    "不屈之心",
-    "精神力",
-    "惡作劇之心"
-  ],
-  "description": "除了能讀懂對手的感情， 也能以「波導」這種形式的波 來觀察大自然的樣子。",
   "image": "https://assets.pokopiaguide.com/pokemon/riolu.png",
   "pokopia": {
     "specialties": [

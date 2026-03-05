@@ -40,6 +40,20 @@ const TYPE_COLORS: Record<PokemonType, string> = {
 
 const PAGE_SIZE = 24
 
+function getPageNumbers(current: number, total: number): (number | "...")[] {
+  if (total <= 7) {
+    return Array.from({ length: total }, (_, i) => i + 1)
+  }
+  const pages: (number | "...")[] = [1]
+  if (current > 3) pages.push("...")
+  const start = Math.max(2, current - 1)
+  const end = Math.min(total - 1, current + 1)
+  for (let i = start; i <= end; i++) pages.push(i)
+  if (current < total - 2) pages.push("...")
+  pages.push(total)
+  return pages
+}
+
 interface PokemonGridProps {
   pokemon: Pokemon[]
   locale: Locale
@@ -236,7 +250,7 @@ export function PokemonGrid({
                 }`}
               >
                 <Image
-                  src={`/images/specialties/${s}.png`}
+                  src={`/images/specialties/${s.replace(/ /g, "-")}.png`}
                   alt={(tr.specialties as Record<string, string>)[s] ?? s}
                   width={18}
                   height={18}
@@ -263,7 +277,7 @@ export function PokemonGrid({
       )}
 
       {totalPages > 1 && (
-        <div className="mt-8 flex items-center justify-center gap-4">
+        <div className="mt-8 flex items-center justify-center gap-1.5">
           <Button
             variant="outline"
             size="sm"
@@ -272,9 +286,23 @@ export function PokemonGrid({
           >
             {prevLabel}
           </Button>
-          <span className="text-sm text-muted-foreground">
-            {pageLabel} {safePagee} / {totalPages}
-          </span>
+          {getPageNumbers(safePagee, totalPages).map((p, i) =>
+            p === "..." ? (
+              <span key={`ellipsis-${i}`} className="px-1 text-sm text-muted-foreground">
+                ...
+              </span>
+            ) : (
+              <Button
+                key={p}
+                variant={p === safePagee ? "default" : "outline"}
+                size="sm"
+                className="min-w-[36px]"
+                onClick={() => changePage(p as number)}
+              >
+                {p}
+              </Button>
+            )
+          )}
           <Button
             variant="outline"
             size="sm"

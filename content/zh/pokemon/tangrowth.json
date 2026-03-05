@@ -5,20 +5,6 @@
   "types": [
     "grass"
   ],
-  "stats": {
-    "hp": 100,
-    "attack": 100,
-    "defense": 125,
-    "spAtk": 110,
-    "spDef": 50,
-    "speed": 50
-  },
-  "abilities": [
-    "chlorophyll",
-    "leaf-guard",
-    "regenerator"
-  ],
-  "description": "棲息的地方越溫暖，藤蔓就會 長得越快。當藤蔓變得太長時， 就會自己扯斷它來調整長度。",
   "image": "https://assets.pokopiaguide.com/pokemon/tangrowth.png",
   "pokopia": {
     "specialties": [

@@ -6,20 +6,6 @@
     "normal",
     "fairy"
   ],
-  "stats": {
-    "hp": 140,
-    "attack": 70,
-    "defense": 45,
-    "spAtk": 85,
-    "spDef": 50,
-    "speed": 45
-  },
-  "abilities": [
-    "cute-charm",
-    "competitive",
-    "frisk"
-  ],
-  "description": "It’s proud of its fur, which is fine and delicate. In particular, the curl on its forehead has a texture that’s perfectly heavenly.",
   "image": "https://assets.pokopiaguide.com/pokemon/wigglytuff.png",
   "pokopia": {
     "specialties": [],

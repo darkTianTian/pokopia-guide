@@ -6,20 +6,6 @@
     "electric",
     "fighting"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 115,
-    "defense": 70,
-    "spAtk": 70,
-    "spDef": 60,
-    "speed": 105
-  },
-  "abilities": [
-    "volt-absorb",
-    "natural-cure",
-    "iron-fist"
-  ],
-  "description": "Pawmot’s fluffy fur acts as a battery. It can store the same amount of electricity as an electric car.",
   "image": "https://assets.pokopiaguide.com/pokemon/pawmot.png",
   "pokopia": {
     "specialties": [],

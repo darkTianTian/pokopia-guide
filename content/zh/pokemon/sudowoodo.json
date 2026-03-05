@@ -5,20 +5,6 @@
   "types": [
     "rock"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 100,
-    "defense": 115,
-    "spAtk": 30,
-    "spDef": 65,
-    "speed": 30
-  },
-  "abilities": [
-    "結實",
-    "堅硬腦袋",
-    "膽怯"
-  ],
-  "description": "為了不被襲擊而模仿樹的樣子。 很討厭水，所以一開始下雨 就會在不知不覺間消失無蹤。",
   "image": "https://assets.pokopiaguide.com/pokemon/sudowoodo.png",
   "pokopia": {
     "specialties": [],

@@ -5,20 +5,6 @@
   "types": [
     "dragon"
   ],
-  "stats": {
-    "hp": 68,
-    "attack": 75,
-    "defense": 53,
-    "spAtk": 83,
-    "spDef": 113,
-    "speed": 60
-  },
-  "abilities": [
-    "sap-sipper",
-    "hydration",
-    "gooey"
-  ],
-  "description": "背中の　突起の　中に　小さな 脳みそが　ある。　エサと　敵から 逃げることしか　考えていない。",
   "image": "https://assets.pokopiaguide.com/pokemon/sliggoo.png",
   "pokopia": {
     "specialties": [

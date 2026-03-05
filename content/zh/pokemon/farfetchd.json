@@ -6,20 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 52,
-    "attack": 90,
-    "defense": 55,
-    "spAtk": 58,
-    "spDef": 62,
-    "speed": 60
-  },
-  "abilities": [
-    "銳利目光",
-    "精神力",
-    "不服輸"
-  ],
-  "description": "用植物的莖來戰鬥。 莖的揮舞方式存在著 好幾種不同的流派。",
   "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png",
   "pokopia": {
     "specialties": [

@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 130,
-    "defense": 60,
-    "spAtk": 95,
-    "spDef": 110,
-    "speed": 65
-  },
-  "abilities": [
-    "Flash Fire",
-    "Guts"
-  ],
-  "description": "Flames burn within a saclike organ inside this Pokémon. When Flareon inhales, these flames grow in intensity, reaching a mighty 3,000 degrees Fahrenheit.",
   "image": "https://assets.pokopiaguide.com/pokemon/flareon.png",
   "pokopia": {
     "specialties": [

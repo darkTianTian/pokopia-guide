@@ -5,20 +5,6 @@
   "types": [
     "ground"
   ],
-  "stats": {
-    "hp": 10,
-    "attack": 55,
-    "defense": 25,
-    "spAtk": 35,
-    "spDef": 45,
-    "speed": 95
-  },
-  "abilities": [
-    "沙隱",
-    "沙穴",
-    "沙之力"
-  ],
-  "description": "在地下較淺的地方移動。 被牠挖掘過的地面會鼓起來， 所以非常容易發現。",
   "image": "https://assets.pokopiaguide.com/pokemon/diglett.png",
   "pokopia": {
     "specialties": [

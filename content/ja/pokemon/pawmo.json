@@ -6,20 +6,6 @@
     "electric",
     "fighting"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 75,
-    "defense": 40,
-    "spAtk": 50,
-    "spDef": 40,
-    "speed": 85
-  },
-  "abilities": [
-    "volt-absorb",
-    "natural-cure",
-    "iron-fist"
-  ],
-  "description": "Pawmo uses a unique fighting technique in which it uses its forepaws to strike foes and zap them with electricity from its paw pads simultaneously.",
   "image": "https://assets.pokopiaguide.com/pokemon/pawmo.png",
   "pokopia": {
     "specialties": [

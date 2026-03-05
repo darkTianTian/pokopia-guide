@@ -6,20 +6,6 @@
     "ghost",
     "fire"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 40,
-    "defense": 60,
-    "spAtk": 95,
-    "spDef": 60,
-    "speed": 55
-  },
-  "abilities": [
-    "flash-fire",
-    "flame-body",
-    "infiltrator"
-  ],
-  "description": "偽裝成燈的樣子藏身在城鎮裡。 一旦發現了臨近死期的人， 便會悄悄地跟在後面。",
   "image": "https://assets.pokopiaguide.com/pokemon/lampent.png",
   "pokopia": {
     "specialties": [],

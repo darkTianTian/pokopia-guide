@@ -6,20 +6,6 @@
     "psychic",
     "fairy"
   ],
-  "stats": {
-    "hp": 20,
-    "attack": 25,
-    "defense": 45,
-    "spAtk": 70,
-    "spDef": 90,
-    "speed": 60
-  },
-  "abilities": [
-    "ぼうおん",
-    "フィルター",
-    "テクニシャン"
-  ],
-  "description": "ダンスの　うまい　バリコオルに 弟子の　ように　付き従い ステップを　懸命に　真似する。",
   "image": "https://assets.pokopiaguide.com/pokemon/mime-jr.png",
   "pokopia": {
     "specialties": [],

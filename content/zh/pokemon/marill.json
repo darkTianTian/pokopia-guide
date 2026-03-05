@@ -6,20 +6,6 @@
     "water",
     "fairy"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 20,
-    "defense": 50,
-    "spAtk": 20,
-    "spDef": 50,
-    "speed": 40
-  },
-  "abilities": [
-    "厚脂肪",
-    "大力士",
-    "食草"
-  ],
-  "description": "很能彈開水的體毛就算是 從寒冷的海裡上岸時也能 立刻乾掉，一點都不冷。",
   "image": "https://assets.pokopiaguide.com/pokemon/marill.png",
   "pokopia": {
     "specialties": [

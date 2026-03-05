@@ -6,19 +6,6 @@
     "poison",
     "flying"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 45,
-    "defense": 35,
-    "spAtk": 30,
-    "spDef": 40,
-    "speed": 55
-  },
-  "abilities": [
-    "inner-focus",
-    "infiltrator"
-  ],
-  "description": "棲息在陽光照射不到的洞窟裡。 到了早上就會和夥伴相聚， 一邊互相取暖一邊睡覺。",
   "image": "https://assets.pokopiaguide.com/pokemon/zubat.png",
   "pokopia": {
     "specialties": [

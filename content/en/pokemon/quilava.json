@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 58,
-    "attack": 64,
-    "defense": 58,
-    "spAtk": 80,
-    "spDef": 65,
-    "speed": 80
-  },
-  "abilities": [
-    "blaze",
-    "flash-fire"
-  ],
-  "description": "This creature's fur is most mysterious—it is wholly impervious to the burning touch of flame. Should Quilava turn its back to you, take heed! Such a posture indicates a forthcoming attack.",
   "image": "https://assets.pokopiaguide.com/pokemon/quilava.png",
   "pokopia": {
     "specialties": [],

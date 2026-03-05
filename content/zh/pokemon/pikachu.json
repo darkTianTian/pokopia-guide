@@ -5,19 +5,6 @@
   "types": [
     "electric"
   ],
-  "stats": {
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAtk": 50,
-    "spDef": 50,
-    "speed": 90
-  },
-  "abilities": [
-    "靜電",
-    "避雷針"
-  ],
-  "description": "皮卡丘們把尾巴 貼在一起交換電流， 其實是在互相打招呼。",
   "image": "https://assets.pokopiaguide.com/pokemon/pikachu.png",
   "pokopia": {
     "specialties": [

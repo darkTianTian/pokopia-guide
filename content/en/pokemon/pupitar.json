@@ -6,18 +6,6 @@
     "rock",
     "ground"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 84,
-    "defense": 70,
-    "spAtk": 65,
-    "spDef": 70,
-    "speed": 51
-  },
-  "abilities": [
-    "shed-skin"
-  ],
-  "description": "It will not stay still, even while it’s a pupa. It already has arms and legs under its solid shell.",
   "image": "https://assets.pokopiaguide.com/pokemon/pupitar.png",
   "pokopia": {
     "specialties": [

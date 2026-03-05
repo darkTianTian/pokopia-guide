@@ -3,7 +3,7 @@ import path from "path"
 import * as cheerio from "cheerio"
 import { S3Client, PutObjectCommand, HeadObjectCommand } from "@aws-sdk/client-s3"
 import dotenv from "dotenv"
-import { SLUG_TO_POKOPIA_ID, POKEAPI_NAME_MAP, getPokopiaId } from "./pokopia-dex.mjs"
+import { POKEAPI_NAME_MAP } from "./pokopia-dex.mjs"
 
 dotenv.config()
 
@@ -25,6 +25,7 @@ const PUBLIC_URL = process.env.R2_PUBLIC_URL || "https://assets.pokopiaguide.com
 const SEREBII_BASE = "https://serebii.net"
 const SEREBII_LIST_URL = `${SEREBII_BASE}/pokemonpokopia/availablepokemon.shtml`
 const GAME8_URL = "https://game8.co/games/Pokemon-Pokopia/archives/578286"
+const GAMEWITH_URL = "https://gamewith.jp/pocoapokemon/530830"
 const CONTENT_DIR = path.join(process.cwd(), "content")
 const SYNC_STATE_PATH = path.join(CONTENT_DIR, "pokopia-sync-state.json")
 
@@ -53,13 +54,67 @@ const RARITY_MAP = {
   "very rare": "very-rare",
 }
 
+// --- GameWith Mapping Tables ---
+
+const GAMEWITH_SKILL_MAP = {
+  "うるおす": "water",
+  "さいばい": "grow",
+  "もやす": "burn",
+  "けんちく": "build",
+  "とりひき": "trade",
+  "きをきる": "chop",
+  "そらをとぶ": "fly",
+  "ゆめしま": "dream island",
+  "ちらかす": "litter",
+  "はつでん": "generate",
+  "しわける": "gather",
+  "さがしもの": "search",
+  "もりあげる": "hype",
+  "つぶす": "crush",
+  "あくび": "yawn",
+  "じならし": "bulldoze",
+  "ミツあつめ": "gather honey",
+  "テレポート": "teleport",
+  "リサイクル": "recycle",
+  "コレクター": "appraise",
+  "しゅうのう": "storage",
+  "ばくはつ": "explode",
+}
+
+const GAMEWITH_TYPE_MAP = {
+  "ノーマル": "normal", "ほのお": "fire", "みず": "water",
+  "でんき": "electric", "くさ": "grass", "こおり": "ice",
+  "かくとう": "fighting", "どく": "poison", "じめん": "ground",
+  "ひこう": "flying", "エスパー": "psychic", "むし": "bug",
+  "いわ": "rock", "ゴースト": "ghost", "ドラゴン": "dragon",
+  "あく": "dark", "はがね": "steel", "フェアリー": "fairy",
+}
+
+const GAMEWITH_TIME_MAP = { "朝": "dawn", "昼": "day", "夕": "dusk", "夜": "night" }
+
+const GAMEWITH_WEATHER_MAP = { "晴": "sunny", "曇": "cloudy", "雨": "rainy", "雪": "snowy" }
+
+const GAMEWITH_RARITY_MAP = { 0: "common", 1: "common", 2: "rare", 3: "very-rare" }
+
 // Known valid specialties in the game
+// Multi-word specialties use spaces (matching Serebii), icons use hyphenated filenames
 const VALID_SPECIALTIES = new Set([
   "grow", "burn", "water", "fly", "search", "chop", "build", "crush",
   "bulldoze", "trade", "generate", "explode", "hype", "gather", "paint",
   "eat", "teleport", "illuminate", "transform", "recycle", "appraise",
   "litter", "sing", "cool", "spark", "psychic", "dig", "cut", "swim",
+  "yawn", "gather honey", "dream island", "storage",
 ])
+
+// Normalize typos/aliases from Serebii/Game8 to valid keys
+const SPECIALTY_NORMALIZE_MAP = {
+  "collect": "appraise",
+  "party": "hype",
+  "generage": "generate",
+  "dj": "hype",
+  "engineer": "build",
+  "buil": "build",
+}
 
 // --- CLI args ---
 
@@ -173,6 +228,14 @@ async function saveSyncState(state) {
   await writeJson(SYNC_STATE_PATH, state)
 }
 
+function normalizeSpecialty(raw) {
+  const lower = raw.toLowerCase().trim()
+  const mapped = SPECIALTY_NORMALIZE_MAP[lower]
+  if (mapped) return mapped
+  if (VALID_SPECIALTIES.has(lower)) return lower
+  return lower // return as-is, will be caught by validation
+}
+
 function normalizeSlug(name) {
   return name
     .toLowerCase()
@@ -239,8 +302,8 @@ async function scrapeSerebiiList() {
     $(cells[3])
       .find("a u")
       .each((_j, el) => {
-        const specialty = $(el).text().trim().toLowerCase()
-        if (specialty) specialties.push(specialty)
+        const raw = $(el).text().trim().toLowerCase()
+        if (raw) specialties.push(normalizeSpecialty(raw))
       })
 
     results.push({
@@ -275,8 +338,8 @@ async function scrapeSerebiiDetail(url) {
       const row = $(el).closest("tr").next("tr")
       const specialtyCell = row.find("td.cen").first()
       specialtyCell.find("a u").each((_j, link) => {
-        const specialty = $(link).text().trim().toLowerCase()
-        if (specialty) result.specialties.push(specialty)
+        const raw = $(link).text().trim().toLowerCase()
+        if (raw) result.specialties.push(normalizeSpecialty(raw))
       })
     }
   })
@@ -479,7 +542,10 @@ async function scrapeGame8() {
     const specialties = []
     specCell.find("img[width='30']").each((_j, img) => {
       const alt = ($(img).attr("alt") || "").trim().toLowerCase()
-      if (alt && alt !== "tbd" && VALID_SPECIALTIES.has(alt)) specialties.push(alt)
+      if (alt && alt !== "tbd") {
+        const normalized = normalizeSpecialty(alt)
+        if (VALID_SPECIALTIES.has(normalized)) specialties.push(normalized)
+      }
     })
     // Fallback: parse text if no icons
     if (specialties.length === 0) {
@@ -487,7 +553,10 @@ async function scrapeGame8() {
       if (specText && specText !== "tbd") {
         specText.split(/[,\n]/).forEach((s) => {
           const trimmed = s.trim()
-          if (trimmed && VALID_SPECIALTIES.has(trimmed)) specialties.push(trimmed)
+          if (trimmed) {
+            const normalized = normalizeSpecialty(trimmed)
+            if (VALID_SPECIALTIES.has(normalized)) specialties.push(normalized)
+          }
         })
       }
     }
@@ -505,6 +574,179 @@ async function scrapeGame8() {
   })
 
   console.log(`  Found ${results.size} Pokémon on Game8`)
+  return results
+}
+
+// --- Japanese Name → Slug Mapping ---
+
+async function buildJaNameToSlugMap() {
+  const jaNameToSlug = new Map()
+  const dir = path.join(CONTENT_DIR, "ja", "pokemon")
+  try {
+    const files = await fs.readdir(dir)
+    for (const file of files) {
+      if (!file.endsWith(".json")) continue
+      const data = await loadJson(path.join(dir, file))
+      if (data?.name) {
+        jaNameToSlug.set(data.name, data.slug)
+      }
+    }
+  } catch {
+    // Directory might not exist yet
+  }
+
+  // Special mappings for names that differ from content files
+  const SPECIAL_JA_SLUG = {
+    "パルデアウパー": "paldean-wooper",
+    "ステレオロトム": "stereo-rotom",
+  }
+  for (const [jaName, slug] of Object.entries(SPECIAL_JA_SLUG)) {
+    jaNameToSlug.set(jaName, slug)
+  }
+
+  return jaNameToSlug
+}
+
+// --- GameWith Scraper ---
+
+function parseGameWithJsObject(html, varName) {
+  // Extract window.wmt.{varName}=[...]; from HTML
+  const pattern = new RegExp(`window\\.wmt\\.${varName}\\s*=\\s*\\[`, "s")
+  const match = html.match(pattern)
+  if (!match) return null
+
+  const startIdx = html.indexOf("[", match.index + match[0].length - 1)
+  let depth = 0
+  let endIdx = startIdx
+  for (let i = startIdx; i < html.length; i++) {
+    if (html[i] === "[") depth++
+    else if (html[i] === "]") {
+      depth--
+      if (depth === 0) {
+        endIdx = i + 1
+        break
+      }
+    }
+  }
+
+  const rawJs = html.slice(startIdx, endIdx)
+
+  // Convert JS object literal to valid JSON:
+  // - Single quotes → double quotes (but handle escaped quotes)
+  // - Unquoted keys → quoted keys
+  // - Remove trailing commas
+  const jsonStr = rawJs
+    .replace(/'/g, '"')
+    .replace(/([{,]\s*)(\w+)\s*:/g, '$1"$2":')
+    .replace(/,\s*([}\]])/g, "$1")
+
+  try {
+    return JSON.parse(jsonStr)
+  } catch (err) {
+    console.error(`  Failed to parse GameWith ${varName}: ${err.message}`)
+    return null
+  }
+}
+
+async function scrapeGameWith(jaNameToSlug) {
+  console.log("Fetching GameWith page...")
+  const html = await fetchHtml(GAMEWITH_URL)
+
+  const pokemonDatas = parseGameWithJsObject(html, "pokemonDatas")
+  const skillDatas = parseGameWithJsObject(html, "skillDatas")
+  const habitatDatas = parseGameWithJsObject(html, "habitatDatas")
+
+  if (!pokemonDatas) {
+    console.error("  Failed to extract pokemonDatas from GameWith")
+    return new Map()
+  }
+
+  // Build skill ID → english name map
+  const skillIdToEn = new Map()
+  if (skillDatas) {
+    for (const skill of skillDatas) {
+      const enName = GAMEWITH_SKILL_MAP[skill.n]
+      if (enName) {
+        skillIdToEn.set(String(skill.id), enName)
+      }
+    }
+  }
+
+  // Build habitat ID → english name map (from our habitat mapping)
+  const habitatIdToName = new Map()
+  if (habitatDatas) {
+    for (const h of habitatDatas) {
+      habitatIdToName.set(String(h.id), h.n)
+    }
+  }
+
+  const results = new Map()
+
+  for (const poke of pokemonDatas) {
+    const jaName = poke.n
+    const slug = jaNameToSlug.get(jaName)
+    if (!slug) {
+      console.log(`  GameWith: unmapped name "${jaName}", skipping`)
+      continue
+    }
+
+    // Map types
+    const types = (poke.t || [])
+      .map((t) => GAMEWITH_TYPE_MAP[t])
+      .filter(Boolean)
+
+    // Map specialties from skill IDs
+    const specialties = (poke.skills || [])
+      .map((sid) => skillIdToEn.get(String(sid)))
+      .filter(Boolean)
+
+    // Map habitats from conditions
+    const habitats = []
+    const timeOfDaySet = new Set()
+    const weatherSet = new Set()
+
+    for (const cond of poke.conditions || []) {
+      const hId = parseInt(cond.hId, 10)
+      const rarity = GAMEWITH_RARITY_MAP[cond.lv] || "common"
+      const hName = habitatIdToName.get(String(cond.hId)) || `Habitat ${cond.hId}`
+
+      habitats.push({ id: hId, name: hName, rarity })
+
+      // Extract time of day from condition
+      if (cond.time) {
+        const times = String(cond.time).split("/")
+        for (const t of times) {
+          const mapped = GAMEWITH_TIME_MAP[t.trim()]
+          if (mapped) timeOfDaySet.add(mapped)
+        }
+      }
+
+      // Extract weather from condition
+      if (cond.wx) {
+        const weathers = String(cond.wx).split("/")
+        for (const w of weathers) {
+          const mapped = GAMEWITH_WEATHER_MAP[w.trim()]
+          if (mapped) weatherSet.add(mapped)
+        }
+      }
+    }
+
+    // Parse dex number from 'no' field (e.g., "001" → 1)
+    const dexNumber = poke.no ? parseInt(poke.no, 10) : null
+
+    results.set(slug, {
+      name: jaName,
+      slug,
+      dexNumber,
+      types,
+      specialties,
+      habitats,
+      timeOfDay: timeOfDaySet.size > 0 ? [...timeOfDaySet] : null,
+      weather: weatherSet.size > 0 ? [...weatherSet] : null,
+    })
+  }
+
+  console.log(`  Found ${results.size} Pokémon on GameWith (${pokemonDatas.length} total, ${pokemonDatas.length - results.size} unmapped)`)
   return results
 }
 
@@ -592,13 +834,16 @@ function mergeHabitats(existing, scraped) {
   return Array.from(merged.values())
 }
 
-function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiListEntry) {
+function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiListEntry, gameWithData) {
   const existing = existingPokopia || {}
 
-  // Specialties: prefer existing > serebii list > serebii detail > game8
-  let specialties = existing.specialties
+  // Specialties: prefer existing > GameWith > serebii list > serebii detail > game8
+  // Always normalize to fix legacy invalid values
+  let specialties = existing.specialties?.map(normalizeSpecialty)
   if (!specialties || specialties.length === 0) {
-    if (serebiiListEntry?.specialties?.length > 0) {
+    if (gameWithData?.specialties?.length > 0) {
+      specialties = gameWithData.specialties
+    } else if (serebiiListEntry?.specialties?.length > 0) {
       specialties = serebiiListEntry.specialties
     } else if (serebiiDetail?.specialties?.length > 0) {
       specialties = serebiiDetail.specialties
@@ -609,26 +854,33 @@ function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiList
     }
   }
 
-  // Habitats: merge from serebii detail and existing
+  // Habitats: merge from all sources
   let habitats = existing.habitats || []
+  if (gameWithData?.habitats?.length > 0) {
+    habitats = mergeHabitats(habitats, gameWithData.habitats)
+  }
   if (serebiiDetail?.habitats?.length > 0) {
     habitats = mergeHabitats(habitats, serebiiDetail.habitats)
   }
 
-  // Time of day: prefer existing > serebii detail > game8
+  // Time of day: prefer existing > GameWith > serebii detail > game8
   let timeOfDay = existing.timeOfDay !== undefined ? existing.timeOfDay : null
   if (timeOfDay === null || timeOfDay === undefined) {
-    if (serebiiDetail?.timeOfDay) {
+    if (gameWithData?.timeOfDay) {
+      timeOfDay = gameWithData.timeOfDay
+    } else if (serebiiDetail?.timeOfDay) {
       timeOfDay = serebiiDetail.timeOfDay
     } else if (game8Data?.timeOfDay) {
       timeOfDay = game8Data.timeOfDay
     }
   }
 
-  // Weather: prefer existing > serebii detail > game8
+  // Weather: prefer existing > GameWith > serebii detail > game8
   let weather = existing.weather !== undefined ? existing.weather : null
   if (weather === null || weather === undefined) {
-    if (serebiiDetail?.weather) {
+    if (gameWithData?.weather) {
+      weather = gameWithData.weather
+    } else if (serebiiDetail?.weather) {
       weather = serebiiDetail.weather
     } else if (game8Data?.weather) {
       weather = game8Data.weather
@@ -653,7 +905,7 @@ function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiList
 
 // --- New Pokemon: fetch from PokeAPI ---
 
-async function fetchNewPokemonBase(slug) {
+async function fetchNewPokemonBase(slug, dexNumber) {
   const POKEAPI_BASE = "https://pokeapi.co/api/v2"
   const apiName = POKEAPI_NAME_MAP[slug] || slug
 
@@ -674,39 +926,12 @@ async function fetchNewPokemonBase(slug) {
     return entry?.name ?? speciesData.name
   }
 
-  function getFlavorText(lang) {
-    const entries = speciesData.flavor_text_entries.filter(
-      (e) => e.language.name === lang
-    )
-    if (entries.length === 0) return ""
-    return entries[entries.length - 1].flavor_text.replace(/\n|\f/g, " ")
-  }
-
   const types = pokemonData.types
     .sort((a, b) => a.slot - b.slot)
     .map((t) => t.type.name)
 
-  const statKeyMap = {
-    hp: "hp",
-    attack: "attack",
-    defense: "defense",
-    "special-attack": "spAtk",
-    "special-defense": "spDef",
-    speed: "speed",
-  }
-  const stats = { hp: 0, attack: 0, defense: 0, spAtk: 0, spDef: 0, speed: 0 }
-  for (const s of pokemonData.stats) {
-    const key = statKeyMap[s.stat.name]
-    if (key) stats[key] = s.base_stat
-  }
+  const imageUrl = `${process.env.R2_PUBLIC_URL || "https://assets.pokopiaguide.com"}/pokemon/${slug}.png`
 
-  const abilities = pokemonData.abilities
-    .sort((a, b) => a.slot - b.slot)
-    .map((a) => a.ability.name)
-
-  const PUBLIC_URL = process.env.R2_PUBLIC_URL || "https://assets.pokopiaguide.com"
-
-  const langMap = { en: "en", zh: "zh-hant", ja: "ja" }
   const result = {}
 
   for (const locale of LOCALES) {
@@ -717,24 +942,12 @@ async function fetchNewPokemonBase(slug) {
           ? getName("zh-hant") || getName("zh-hans")
           : getName("ja")
 
-    const description =
-      locale === "zh"
-        ? getFlavorText("zh-hant") || getFlavorText("zh-hans") || getFlavorText("en")
-        : getFlavorText(langMap[locale]) || getFlavorText("en")
-
-    const pokopiaId = getPokopiaId(slug)
-    if (!pokopiaId) {
-      throw new Error(`${slug} is not in the Pokopia dex`)
-    }
     result[locale] = {
-      id: pokopiaId,
+      id: dexNumber,
       slug,
       name,
       types,
-      stats,
-      abilities,
-      description,
-      image: `${PUBLIC_URL}/pokemon/${slug}.png`,
+      image: imageUrl,
     }
   }
 
@@ -776,22 +989,25 @@ async function run() {
   const syncState = await loadSyncState()
   const habitatMappings = await loadHabitatMappings()
 
-  // Step 1: Scrape Serebii list
-  let serebiiList
-  try {
-    serebiiList = await scrapeSerebiiList()
-  } catch (err) {
-    console.error(`Failed to scrape Serebii list: ${err.message}`)
-    serebiiList = []
-  }
+  // Step 1: Build ja name → slug mapping for GameWith
+  const jaNameToSlug = await buildJaNameToSlugMap()
+  console.log(`Loaded ${jaNameToSlug.size} Japanese name mappings`)
 
-  // Step 2: Scrape Game8 (in parallel with later steps)
-  let game8Data = new Map()
-  try {
-    game8Data = await scrapeGame8()
-  } catch (err) {
-    console.error(`Failed to scrape Game8: ${err.message}`)
-  }
+  // Step 2: Scrape all three sources in parallel
+  const [serebiiList, game8Data, gameWithData] = await Promise.all([
+    scrapeSerebiiList().catch((err) => {
+      console.error(`Failed to scrape Serebii list: ${err.message}`)
+      return []
+    }),
+    scrapeGame8().catch((err) => {
+      console.error(`Failed to scrape Game8: ${err.message}`)
+      return new Map()
+    }),
+    scrapeGameWith(jaNameToSlug).catch((err) => {
+      console.error(`Failed to scrape GameWith: ${err.message}`)
+      return new Map()
+    }),
+  ])
 
   // Step 3: Load all existing Pokemon JSON files
   const existingPokemon = new Map()
@@ -817,6 +1033,45 @@ async function run() {
 
   console.log(`Loaded ${existingPokemon.size} existing Pokémon`)
 
+  // Step 4: Build unified slug list from all three sources (union)
+  const allSlugs = new Map() // slug → { dexNumber, detailUrl, source }
+
+  // Serebii first (has dexNumber + detailUrl)
+  for (const entry of serebiiList) {
+    allSlugs.set(entry.slug, {
+      dexNumber: entry.dexNumber,
+      detailUrl: entry.detailUrl,
+      name: entry.name,
+      source: "serebii",
+    })
+  }
+
+  // GameWith: add entries Serebii doesn't have
+  for (const [slug, gw] of gameWithData) {
+    if (!allSlugs.has(slug)) {
+      allSlugs.set(slug, {
+        dexNumber: gw.dexNumber,
+        detailUrl: null,
+        name: gw.name,
+        source: "gamewith",
+      })
+    }
+  }
+
+  // Game8: add entries neither has
+  for (const [slug, g8] of game8Data) {
+    if (!allSlugs.has(slug)) {
+      allSlugs.set(slug, {
+        dexNumber: null,
+        detailUrl: null,
+        name: g8.name,
+        source: "game8",
+      })
+    }
+  }
+
+  console.log(`\nUnified list: ${allSlugs.size} Pokémon (Serebii: ${serebiiList.length}, GameWith: ${gameWithData.size}, Game8: ${game8Data.size})`)
+
   // Build lookup from serebii list
   const serebiiBySlug = new Map()
   for (const entry of serebiiList) {
@@ -830,9 +1085,9 @@ async function run() {
   let errors = 0
   const newHabitats = []
 
-  // Step 4: Process each Pokemon from the Serebii list
-  for (const entry of serebiiList) {
-    const { slug, dexNumber, name } = entry
+  // Step 5: Process each Pokemon from the unified list
+  for (const [slug, meta] of allSlugs) {
+    const { dexNumber, name } = meta
 
     // Check if we have existing data
     const existingLocales = existingPokemon.get(slug)
@@ -844,28 +1099,35 @@ async function run() {
       continue
     }
 
-    console.log(`\nProcessing: ${name} (#${dexNumber}) [${slug}]`)
+    console.log(`\nProcessing: ${name} (#${dexNumber || "?"}) [${slug}] (source: ${meta.source})`)
 
-    // Scrape Serebii detail page
+    // Scrape Serebii detail page (only if we have a URL)
     let serebiiDetail = null
-    if (entry.detailUrl) {
+    const serebiiEntry = serebiiBySlug.get(slug)
+    if (serebiiEntry?.detailUrl) {
       try {
-        serebiiDetail = await scrapeSerebiiDetail(entry.detailUrl)
+        serebiiDetail = await scrapeSerebiiDetail(serebiiEntry.detailUrl)
         await sleep(300) // Rate limit
       } catch (err) {
-        console.error(`  Failed to scrape detail for ${name}: ${err.message}`)
+        console.error(`  Failed to scrape Serebii detail for ${name}: ${err.message}`)
         errors++
       }
     }
 
-    // Get Game8 data for this Pokemon
+    // Get Game8 and GameWith data for this Pokemon
     const g8 = game8Data.get(slug) || null
+    const gw = gameWithData.get(slug) || null
 
     // If this is a new Pokemon we don't have at all, fetch base data
     if (!existingEn) {
+      if (!dexNumber) {
+        console.log(`  Skipping new Pokémon without dex number: ${name}`)
+        errors++
+        continue
+      }
       console.log(`  New Pokémon! Fetching base data from PokeAPI...`)
       try {
-        const baseData = await fetchNewPokemonBase(slug)
+        const baseData = await fetchNewPokemonBase(slug, dexNumber)
         for (const locale of LOCALES) {
           const dir = path.join(CONTENT_DIR, locale, "pokemon")
           await fs.mkdir(dir, { recursive: true })
@@ -909,9 +1171,9 @@ async function run() {
       }
     }
 
-    // Merge pokopia data
+    // Merge pokopia data from all sources
     const existingPokopia = existingEn?.pokopia || null
-    const merged = mergePokopiaData(existingPokopia, serebiiDetail, g8, entry)
+    const merged = mergePokopiaData(existingPokopia, serebiiDetail, g8, serebiiEntry || null, gw)
 
     // Override evolution data if we got it
     if (evolutionData.evolvesFrom !== null || merged.evolvesFrom === null) {
@@ -983,7 +1245,10 @@ async function run() {
     ],
     errors: [],
     stats: {
-      total: serebiiList.length,
+      total: allSlugs.size,
+      serebiiCount: serebiiList.length,
+      gameWithCount: gameWithData.size,
+      game8Count: game8Data.size,
       updated,
       skipped,
       newPokemon,
@@ -995,7 +1260,7 @@ async function run() {
   }
 
   console.log("\n--- Summary ---")
-  console.log(`Total in Serebii: ${serebiiList.length}`)
+  console.log(`Unified total: ${allSlugs.size} (Serebii: ${serebiiList.length}, GameWith: ${gameWithData.size}, Game8: ${game8Data.size})`)
   console.log(`Updated: ${updated}`)
   console.log(`Skipped (already complete): ${skipped}`)
   console.log(`New Pokémon added: ${newPokemon}`)

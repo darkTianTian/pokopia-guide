@@ -5,20 +5,6 @@
   "types": [
     "ground"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 50,
-    "defense": 95,
-    "spAtk": 40,
-    "spDef": 50,
-    "speed": 35
-  },
-  "abilities": [
-    "いしあたま",
-    "ひらいしん",
-    "カブトアーマー"
-  ],
-  "description": "死んだ　母親の　骨を　被る。 夢を　見て　泣くことも　あるけど 涙を　流すたびに　強くなる。",
   "image": "https://assets.pokopiaguide.com/pokemon/cubone.png",
   "pokopia": {
     "specialties": [],

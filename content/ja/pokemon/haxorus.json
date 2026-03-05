@@ -5,20 +5,6 @@
   "types": [
     "dragon"
   ],
-  "stats": {
-    "hp": 76,
-    "attack": 147,
-    "defense": 90,
-    "spAtk": 60,
-    "spDef": 70,
-    "speed": 97
-  },
-  "abilities": [
-    "とうそうしん",
-    "かたやぶり",
-    "きんちょうかん"
-  ],
-  "description": "温厚な　性質だが　怒ると 怖い。　鉄骨をも　切り裂く 自慢の　キバを　おみまい　するぞ。",
   "image": "https://assets.pokopiaguide.com/pokemon/haxorus.png",
   "pokopia": {
     "specialties": [],

@@ -6,19 +6,6 @@
     "fire",
     "flying"
   ],
-  "stats": {
-    "hp": 78,
-    "attack": 84,
-    "defense": 78,
-    "spAtk": 109,
-    "spDef": 85,
-    "speed": 100
-  },
-  "abilities": [
-    "猛火",
-    "太陽之力"
-  ],
-  "description": "能用翅膀飛到距離地面 １４００公尺的高度。 會吐出高溫的火焰。",
   "image": "https://assets.pokopiaguide.com/pokemon/charizard.png",
   "pokopia": {
     "specialties": [],

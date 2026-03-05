@@ -5,20 +5,6 @@
   "types": [
     "poison"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 50,
-    "defense": 62,
-    "spAtk": 40,
-    "spDef": 62,
-    "speed": 65
-  },
-  "abilities": [
-    "stench",
-    "sticky-hold",
-    "aftermath"
-  ],
-  "description": "ゴミの　詰まった　ゴミ袋から 生まれた。　吐き出す　毒ガスは ガラルの　マタドガスの　好物。",
   "image": "https://assets.pokopiaguide.com/pokemon/trubbish.png",
   "pokopia": {
     "specialties": [

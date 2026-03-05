@@ -5,18 +5,6 @@
   "types": [
     "ghost"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 60,
-    "defense": 60,
-    "spAtk": 85,
-    "spDef": 85,
-    "speed": 85
-  },
-  "abilities": [
-    "levitate"
-  ],
-  "description": "會藉由模仿人哭叫的聲音 嚇唬大家來取樂。 不擅長應付膽大的對手。",
   "image": "https://assets.pokopiaguide.com/pokemon/misdreavus.png",
   "pokopia": {
     "specialties": [

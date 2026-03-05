@@ -6,19 +6,6 @@
     "rock",
     "dragon"
   ],
-  "stats": {
-    "hp": 82,
-    "attack": 121,
-    "defense": 119,
-    "spAtk": 69,
-    "spDef": 59,
-    "speed": 71
-  },
-  "abilities": [
-    "strong-jaw",
-    "rock-head"
-  ],
-  "description": "大顎は　ひと噛みするだけで 自動車も　粉々に　する。 古代の　世界の　王者。",
   "image": "https://assets.pokopiaguide.com/pokemon/tyrantrum.png",
   "pokopia": {
     "specialties": [

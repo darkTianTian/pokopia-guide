@@ -5,19 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 48,
-    "attack": 48,
-    "defense": 48,
-    "spAtk": 48,
-    "spDef": 48,
-    "speed": 48
-  },
-  "abilities": [
-    "limber",
-    "imposter"
-  ],
-  "description": "When it encounters another Ditto, it will move faster than normal to duplicate that opponent exactly.",
   "image": "https://assets.pokopiaguide.com/pokemon/ditto.png",
   "pokopia": {
     "specialties": [

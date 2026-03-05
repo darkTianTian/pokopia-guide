@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 35,
-    "attack": 35,
-    "defense": 35,
-    "spAtk": 35,
-    "spDef": 35,
-    "speed": 35
-  },
-  "abilities": [
-    "毅力",
-    "不屈之心",
-    "幹勁"
-  ],
-  "description": "體型雖小卻不可輕視， 因為牠只要發現合適的對手， 就會馬上撲上去大打出手。",
   "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png",
   "pokopia": {
     "specialties": [],

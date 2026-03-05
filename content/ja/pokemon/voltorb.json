@@ -5,20 +5,6 @@
   "types": [
     "electric"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 30,
-    "defense": 50,
-    "spAtk": 55,
-    "spDef": 55,
-    "speed": 100
-  },
-  "abilities": [
-    "soundproof",
-    "static",
-    "aftermath"
-  ],
-  "description": "モンスターボールに　似ているのは 保護色の　ためだと　言われるが 意外と　簡単に　自爆する。",
   "image": "https://assets.pokopiaguide.com/pokemon/voltorb.png",
   "pokopia": {
     "specialties": [

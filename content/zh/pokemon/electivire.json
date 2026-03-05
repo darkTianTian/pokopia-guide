@@ -5,19 +5,6 @@
   "types": [
     "electric"
   ],
-  "stats": {
-    "hp": 75,
-    "attack": 123,
-    "defense": 67,
-    "spAtk": 95,
-    "spDef": 85,
-    "speed": 95
-  },
-  "abilities": [
-    "motor-drive",
-    "vital-spirit"
-  ],
-  "description": "發電量在電氣寶可夢中是 屬於最頂級的。會從尾巴的 前端放出高壓電流。",
   "image": "https://assets.pokopiaguide.com/pokemon/electivire.png",
   "pokopia": {
     "specialties": [

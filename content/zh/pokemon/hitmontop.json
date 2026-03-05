@@ -5,20 +5,6 @@
   "types": [
     "fighting"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 95,
-    "defense": 95,
-    "spAtk": 35,
-    "spDef": 110,
-    "speed": 70
-  },
-  "abilities": [
-    "intimidate",
-    "technician",
-    "steadfast"
-  ],
-  "description": "會透過倒立來擾亂 對方的節奏，然後 趁隙施展華麗的踢擊。",
   "image": "https://assets.pokopiaguide.com/pokemon/hitmontop.png",
   "pokopia": {
     "specialties": [],

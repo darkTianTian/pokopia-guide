@@ -5,20 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 103,
-    "attack": 60,
-    "defense": 86,
-    "spAtk": 60,
-    "spDef": 86,
-    "speed": 50
-  },
-  "abilities": [
-    "healer",
-    "regenerator",
-    "klutz"
-  ],
-  "description": "心地善良的寶可夢。透過 用觸角觸碰，就能了解 對方的情緒和身體狀況。",
   "image": "https://assets.pokopiaguide.com/pokemon/audino.png",
   "pokopia": {
     "specialties": [],

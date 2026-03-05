@@ -6,20 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 83,
-    "attack": 80,
-    "defense": 75,
-    "spAtk": 70,
-    "spDef": 70,
-    "speed": 101
-  },
-  "abilities": [
-    "銳利目光",
-    "蹣跚",
-    "健壯胸肌"
-  ],
-  "description": "會以２馬赫的速度飛行 來尋找食物。巨大的爪子 是很可怕的武器。",
   "image": "https://assets.pokopiaguide.com/pokemon/pidgeot.png",
   "pokopia": {
     "specialties": [],

@@ -6,20 +6,6 @@
     "water",
     "flying"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 30,
-    "defense": 30,
-    "spAtk": 55,
-    "spDef": 30,
-    "speed": 85
-  },
-  "abilities": [
-    "銳利目光",
-    "濕潤之軀",
-    "雨盤"
-  ],
-  "description": "利用氣流， 不拍打翅膀就能飛上天空。 會在海邊的岩壁上築巢。",
   "image": "https://assets.pokopiaguide.com/pokemon/wingull.png",
   "pokopia": {
     "specialties": [

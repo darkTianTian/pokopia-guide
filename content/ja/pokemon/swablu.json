@@ -6,19 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 40,
-    "defense": 60,
-    "spAtk": 40,
-    "spDef": 75,
-    "speed": 50
-  },
-  "abilities": [
-    "natural-cure",
-    "cloud-nine"
-  ],
-  "description": "綿雲に　見えるため　敵から 見つかりにくい。　世代を　重ねるうち 翼が　白くなったという。",
   "image": "https://assets.pokopiaguide.com/pokemon/swablu.png",
   "pokopia": {
     "specialties": [

@@ -6,19 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 40,
-    "defense": 60,
-    "spAtk": 40,
-    "spDef": 75,
-    "speed": 50
-  },
-  "abilities": [
-    "natural-cure",
-    "cloud-nine"
-  ],
-  "description": "Since Swablu looks like a cumulus cloud, foes can have a hard time finding it. Apparently its wings turned white over many generations.",
   "image": "https://assets.pokopiaguide.com/pokemon/swablu.png",
   "pokopia": {
     "specialties": [

@@ -5,19 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 48,
-    "attack": 48,
-    "defense": 48,
-    "spAtk": 48,
-    "spDef": 48,
-    "speed": 48
-  },
-  "abilities": [
-    "limber",
-    "imposter"
-  ],
-  "description": "當兩隻百變怪相遇的時候， 為了能變成和對方相同的樣子， 牠們動起來會比平常更加劇烈。",
   "image": "https://assets.pokopiaguide.com/pokemon/ditto.png",
   "pokopia": {
     "specialties": [

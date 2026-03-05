@@ -6,20 +6,6 @@
     "bug",
     "grass"
   ],
-  "stats": {
-    "hp": 35,
-    "attack": 70,
-    "defense": 55,
-    "spAtk": 45,
-    "spDef": 55,
-    "speed": 25
-  },
-  "abilities": [
-    "孢子",
-    "乾燥皮膚",
-    "濕氣"
-  ],
-  "description": "會挖掘洞穴，從樹木的根部 獲取營養，但幾乎所有的營養 都會被背上的蘑菇奪走。",
   "image": "https://assets.pokopiaguide.com/pokemon/paras.png",
   "pokopia": {
     "specialties": [],

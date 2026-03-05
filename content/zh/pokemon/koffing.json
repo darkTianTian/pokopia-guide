@@ -5,20 +5,6 @@
   "types": [
     "poison"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 65,
-    "defense": 95,
-    "spAtk": 60,
-    "spDef": 45,
-    "speed": 35
-  },
-  "abilities": [
-    "levitate",
-    "neutralizing-gas",
-    "stench"
-  ],
-  "description": "污濁的空氣是牠的美味大餐。 據說在昔日的伽勒爾地區 曾經存在著更多的瓦斯彈。",
   "image": "https://assets.pokopiaguide.com/pokemon/koffing.png",
   "pokopia": {
     "specialties": [],

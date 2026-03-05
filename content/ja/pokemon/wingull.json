@@ -6,20 +6,6 @@
     "water",
     "flying"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 30,
-    "defense": 30,
-    "spAtk": 55,
-    "spDef": 30,
-    "speed": 85
-  },
-  "abilities": [
-    "するどいめ",
-    "うるおいボディ",
-    "あめうけざら"
-  ],
-  "description": "空気の　流れを　利用して 羽ばたかずに　空へ　舞い上がる。 海辺の　崖に　巣を　つくる。",
   "image": "https://assets.pokopiaguide.com/pokemon/wingull.png",
   "pokopia": {
     "specialties": [

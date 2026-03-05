@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 75,
-    "attack": 95,
-    "defense": 67,
-    "spAtk": 125,
-    "spDef": 95,
-    "speed": 83
-  },
-  "abilities": [
-    "flame-body",
-    "vital-spirit"
-  ],
-  "description": "長久棲息在火山口，使得 牠的身體變得像是一座火山， 甚至擁有類似岩漿庫的器官。",
   "image": "https://assets.pokopiaguide.com/pokemon/magmortar.png",
   "pokopia": {
     "specialties": [],

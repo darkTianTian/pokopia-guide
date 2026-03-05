@@ -5,20 +5,6 @@
   "types": [
     "flying"
   ],
-  "stats": {
-    "hp": 38,
-    "attack": 47,
-    "defense": 35,
-    "spAtk": 33,
-    "spDef": 35,
-    "speed": 57
-  },
-  "abilities": [
-    "Keen Eye",
-    "Unnerve",
-    "Big Pecks"
-  ],
-  "description": "Jumping nimbly about, this small-bodied Pokémon takes advantage of even the slightest opportunity to disorient larger opponents.",
   "image": "https://assets.pokopiaguide.com/pokemon/rookidee.png",
   "pokopia": {
     "specialties": [

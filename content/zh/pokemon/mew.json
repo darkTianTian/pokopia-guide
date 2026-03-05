@@ -5,18 +5,6 @@
   "types": [
     "psychic"
   ],
-  "stats": {
-    "hp": 100,
-    "attack": 100,
-    "defense": 100,
-    "spAtk": 100,
-    "spDef": 100,
-    "speed": 100
-  },
-  "abilities": [
-    "synchronize"
-  ],
-  "description": "用顯微鏡觀察就會發現， 牠的身上長著又細又短， 十分細緻的體毛。",
   "image": "https://assets.pokopiaguide.com/pokemon/mew.png",
   "pokopia": {
     "specialties": [],

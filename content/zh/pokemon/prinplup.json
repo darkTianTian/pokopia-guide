@@ -5,19 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 64,
-    "attack": 66,
-    "defense": 68,
-    "spAtk": 81,
-    "spDef": 76,
-    "speed": 50
-  },
-  "abilities": [
-    "torrent",
-    "competitive"
-  ],
-  "description": "It swims gracefully through the frigid sea and sings with a voice like the roaring tide. It has powerful, sturdy wings and dignity to match.",
   "image": "https://assets.pokopiaguide.com/pokemon/prinplup.png",
   "pokopia": {
     "specialties": [

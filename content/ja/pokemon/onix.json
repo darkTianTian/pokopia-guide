@@ -6,20 +6,6 @@
     "rock",
     "ground"
   ],
-  "stats": {
-    "hp": 35,
-    "attack": 45,
-    "defense": 160,
-    "spAtk": 30,
-    "spDef": 45,
-    "speed": 70
-  },
-  "abilities": [
-    "rock-head",
-    "sturdy",
-    "weak-armor"
-  ],
-  "description": "大きく　丈夫な　体を くねらせ　よじらせ　時速８０キロで 地面を　勢いよく　掘り進む。",
   "image": "https://assets.pokopiaguide.com/pokemon/onix.png",
   "pokopia": {
     "specialties": [

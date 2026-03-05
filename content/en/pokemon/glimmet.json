@@ -6,19 +6,6 @@
     "rock",
     "poison"
   ],
-  "stats": {
-    "hp": 48,
-    "attack": 35,
-    "defense": 42,
-    "spAtk": 105,
-    "spDef": 60,
-    "speed": 60
-  },
-  "abilities": [
-    "toxic-debris",
-    "corrosion"
-  ],
-  "description": "Glimmet’s toxic mineral crystals look just like flower petals. This Pokémon scatters poisonous powder like pollen to protect itself.",
   "image": "https://assets.pokopiaguide.com/pokemon/glimmet.png",
   "pokopia": {
     "specialties": [

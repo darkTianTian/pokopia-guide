@@ -6,20 +6,6 @@
     "dragon",
     "ghost"
   ],
-  "stats": {
-    "hp": 28,
-    "attack": 60,
-    "defense": 30,
-    "spAtk": 40,
-    "spDef": 30,
-    "speed": 82
-  },
-  "abilities": [
-    "clear-body",
-    "infiltrator",
-    "cursed-body"
-  ],
-  "description": "雖然單獨１隻弱得甚至敵不過小孩， 但會和夥伴合作一起鍛鍊， 透過進化而變得更強。",
   "image": "https://assets.pokopiaguide.com/pokemon/dreepy.png",
   "pokopia": {
     "specialties": [

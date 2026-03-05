@@ -6,19 +6,6 @@
     "rock",
     "ice"
   ],
-  "stats": {
-    "hp": 77,
-    "attack": 59,
-    "defense": 50,
-    "spAtk": 67,
-    "spDef": 63,
-    "speed": 46
-  },
-  "abilities": [
-    "refrigerate",
-    "snow-warning"
-  ],
-  "description": "Amaura is an ancient Pokémon that has gone extinct. Specimens of this species can sometimes be found frozen in ice.",
   "image": "https://assets.pokopiaguide.com/pokemon/amaura.png",
   "pokopia": {
     "specialties": [],

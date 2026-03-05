@@ -5,20 +5,6 @@
   "types": [
     "water"
   ],
-  "stats": {
-    "hp": 76,
-    "attack": 48,
-    "defense": 48,
-    "spAtk": 57,
-    "spDef": 62,
-    "speed": 34
-  },
-  "abilities": [
-    "黏著",
-    "引水",
-    "沙之力"
-  ],
-  "description": "如果用力按住牠， 牠就會分泌出神秘的紫色液體。 雖然液體無害，不過黏糊糊的。",
   "image": "https://assets.pokopiaguide.com/pokemon/shellos.png",
   "pokopia": {
     "specialties": [

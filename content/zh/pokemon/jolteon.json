@@ -5,19 +5,6 @@
   "types": [
     "electric"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 65,
-    "defense": 60,
-    "spAtk": 110,
-    "spDef": 95,
-    "speed": 130
-  },
-  "abilities": [
-    "volt-absorb",
-    "quick-feet"
-  ],
-  "description": "有時會吸入空氣中 的負離子，吐出大約 １００００伏特的高壓電。",
   "image": "https://assets.pokopiaguide.com/pokemon/jolteon.png",
   "pokopia": {
     "specialties": [

@@ -5,19 +5,6 @@
   "types": [
     "electric"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 63,
-    "defense": 37,
-    "spAtk": 65,
-    "spDef": 55,
-    "speed": 95
-  },
-  "abilities": [
-    "static",
-    "vital-spirit"
-  ],
-  "description": "還不擅長儲存電力。 為了吸食電力，會偷偷 潛入民宅尋找插座。",
   "image": "https://assets.pokopiaguide.com/pokemon/elekid.png",
   "pokopia": {
     "specialties": [],

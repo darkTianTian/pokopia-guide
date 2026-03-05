@@ -5,20 +5,6 @@
   "types": [
     "normal"
   ],
-  "stats": {
-    "hp": 135,
-    "attack": 85,
-    "defense": 40,
-    "spAtk": 40,
-    "spDef": 85,
-    "speed": 5
-  },
-  "abilities": [
-    "pickup",
-    "thick-fat",
-    "gluttony"
-  ],
-  "description": "在體毛下儲存食物。 如果是自己信賴的對象， 也會把食物分給對方一口。",
   "image": "https://assets.pokopiaguide.com/pokemon/munchlax.png",
   "pokopia": {
     "specialties": [],

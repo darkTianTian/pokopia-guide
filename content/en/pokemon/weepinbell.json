@@ -6,19 +6,6 @@
     "grass",
     "poison"
   ],
-  "stats": {
-    "hp": 65,
-    "attack": 90,
-    "defense": 50,
-    "spAtk": 85,
-    "spDef": 45,
-    "speed": 55
-  },
-  "abilities": [
-    "chlorophyll",
-    "gluttony"
-  ],
-  "description": "When hungry, it swallows anything that moves. Its hapless prey is dissolved by strong acids.",
   "image": "https://assets.pokopiaguide.com/pokemon/weepinbell.png",
   "pokopia": {
     "specialties": [

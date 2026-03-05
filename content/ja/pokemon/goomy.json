@@ -5,20 +5,6 @@
   "types": [
     "dragon"
   ],
-  "stats": {
-    "hp": 45,
-    "attack": 50,
-    "defense": 35,
-    "spAtk": 55,
-    "spDef": 75,
-    "speed": 40
-  },
-  "abilities": [
-    "そうしょく",
-    "うるおいボディ",
-    "ぬめぬめ"
-  ],
-  "description": "ツノは　優れた　感覚器官。 敵の　気配を　感じ取り　すぐに 隠れる　ことで　生き残ってきた。",
   "image": "https://assets.pokopiaguide.com/pokemon/goomy.png",
   "pokopia": {
     "specialties": [

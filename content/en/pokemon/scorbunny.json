@@ -5,19 +5,6 @@
   "types": [
     "fire"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 71,
-    "defense": 40,
-    "spAtk": 40,
-    "spDef": 40,
-    "speed": 69
-  },
-  "abilities": [
-    "blaze",
-    "libero"
-  ],
-  "description": "It has special pads on the backs of its feet, and one on its nose. Once it’s raring to fight, these pads radiate tremendous heat.",
   "image": "https://assets.pokopiaguide.com/pokemon/scorbunny.png",
   "pokopia": {
     "specialties": [

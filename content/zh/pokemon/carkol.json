@@ -6,20 +6,6 @@
     "rock",
     "fire"
   ],
-  "stats": {
-    "hp": 80,
-    "attack": 60,
-    "defense": 90,
-    "spAtk": 60,
-    "spDef": 70,
-    "speed": 50
-  },
-  "abilities": [
-    "steam-engine",
-    "flame-body",
-    "flash-fire"
-  ],
-  "description": "能透過高速旋轉自己的腳， 以３０公里的時速奔跑。 能噴出攝氏１０００度的火焰。",
   "image": "https://assets.pokopiaguide.com/pokemon/carkol.png",
   "pokopia": {
     "specialties": [

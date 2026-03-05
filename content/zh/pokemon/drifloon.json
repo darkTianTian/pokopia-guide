@@ -6,24 +6,10 @@
     "ghost",
     "flying"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 50,
-    "defense": 34,
-    "spAtk": 60,
-    "spDef": 44,
-    "speed": 70
-  },
-  "abilities": [
-    "引爆",
-    "輕裝",
-    "受熱激升"
-  ],
-  "description": "因魂魄聚集在一起而誕生。 到了濕氣重的季節 就有可能大量出現。",
   "image": "https://assets.pokopiaguide.com/pokemon/drifloon.png",
   "pokopia": {
     "specialties": [
-      "dream island"
+      "fly"
     ],
     "timeOfDay": [
       "dawn",

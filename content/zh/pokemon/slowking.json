@@ -6,20 +6,6 @@
     "water",
     "psychic"
   ],
-  "stats": {
-    "hp": 95,
-    "attack": 75,
-    "defense": 80,
-    "spAtk": 100,
-    "spDef": 110,
-    "speed": 30
-  },
-  "abilities": [
-    "oblivious",
-    "own-tempo",
-    "regenerator"
-  ],
-  "description": "只要開口提問，任何難題 牠都會幫忙解開，但是無人 能夠理解呆呆王的語言。",
   "image": "https://assets.pokopiaguide.com/pokemon/slowking.png",
   "pokopia": {
     "specialties": [],

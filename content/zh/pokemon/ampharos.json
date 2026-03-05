@@ -5,19 +5,6 @@
   "types": [
     "electric"
   ],
-  "stats": {
-    "hp": 90,
-    "attack": 75,
-    "defense": 85,
-    "spAtk": 115,
-    "spDef": 90,
-    "speed": 55
-  },
-  "abilities": [
-    "static",
-    "plus"
-  ],
-  "description": "尾巴發出的耀眼光芒 被船員們當成引路的路標， 從過去就一直深受重視。",
   "image": "https://assets.pokopiaguide.com/pokemon/ampharos.png",
   "pokopia": {
     "specialties": [],

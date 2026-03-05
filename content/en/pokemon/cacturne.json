@@ -6,19 +6,6 @@
     "grass",
     "dark"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 115,
-    "defense": 60,
-    "spAtk": 115,
-    "spDef": 60,
-    "speed": 55
-  },
-  "abilities": [
-    "sand-veil",
-    "water-absorb"
-  ],
-  "description": "If a traveler is going through a desert in the thick of night, Cacturne will follow in a ragtag group. The Pokémon are biding their time, waiting for the traveler to tire and become incapable of moving.",
   "image": "https://assets.pokopiaguide.com/pokemon/cacturne.png",
   "pokopia": {
     "specialties": [

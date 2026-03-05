@@ -6,19 +6,6 @@
     "bug",
     "fire"
   ],
-  "stats": {
-    "hp": 55,
-    "attack": 85,
-    "defense": 55,
-    "spAtk": 50,
-    "spDef": 55,
-    "speed": 60
-  },
-  "abilities": [
-    "flame-body",
-    "swarm"
-  ],
-  "description": "Larvesta’s body is warm all over. It spouts fire from the tips of its horns to intimidate predators and scare prey.",
   "image": "https://assets.pokopiaguide.com/pokemon/larvesta.png",
   "pokopia": {
     "specialties": [],

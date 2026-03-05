@@ -5,19 +5,6 @@
   "types": [
     "rock"
   ],
-  "stats": {
-    "hp": 67,
-    "attack": 125,
-    "defense": 40,
-    "spAtk": 30,
-    "spDef": 30,
-    "speed": 58
-  },
-  "abilities": [
-    "mold-breaker",
-    "sheer-force"
-  ],
-  "description": "An incredibly rare sight. They duel each other by ramming their heads together, and the resulting sound echoes throughout the area like the pealing of a bell.",
   "image": "https://assets.pokopiaguide.com/pokemon/cranidos.png",
   "pokopia": {
     "specialties": [],

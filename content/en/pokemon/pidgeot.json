@@ -6,20 +6,6 @@
     "normal",
     "flying"
   ],
-  "stats": {
-    "hp": 83,
-    "attack": 80,
-    "defense": 75,
-    "spAtk": 70,
-    "spDef": 70,
-    "speed": 101
-  },
-  "abilities": [
-    "Keen Eye",
-    "Tangled Feet",
-    "Big Pecks"
-  ],
-  "description": "This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons.",
   "image": "https://assets.pokopiaguide.com/pokemon/pidgeot.png",
   "pokopia": {
     "specialties": [],

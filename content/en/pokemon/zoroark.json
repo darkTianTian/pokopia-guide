@@ -5,18 +5,6 @@
   "types": [
     "dark"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 105,
-    "defense": 60,
-    "spAtk": 120,
-    "spDef": 60,
-    "speed": 105
-  },
-  "abilities": [
-    "illusion"
-  ],
-  "description": "With its disheveled white fur, it looks like an embodiment of death. Heedless of its own safety, Zoroark attacks its nemeses with a bitter energy so intense, it lacerates Zoroark's own body.",
   "image": "https://assets.pokopiaguide.com/pokemon/zoroark.png",
   "pokopia": {
     "specialties": [

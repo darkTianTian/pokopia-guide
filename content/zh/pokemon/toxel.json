@@ -6,20 +6,6 @@
     "electric",
     "poison"
   ],
-  "stats": {
-    "hp": 40,
-    "attack": 38,
-    "defense": 35,
-    "spAtk": 54,
-    "spDef": 35,
-    "speed": 40
-  },
-  "abilities": [
-    "rattled",
-    "static",
-    "klutz"
-  ],
-  "description": "透過讓自身的毒素產生 化學反應來發電。電力 雖然弱，卻能造成麻痺。",
   "image": "https://assets.pokopiaguide.com/pokemon/toxel.png",
   "pokopia": {
     "specialties": [],

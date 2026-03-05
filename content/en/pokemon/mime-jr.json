@@ -6,20 +6,6 @@
     "psychic",
     "fairy"
   ],
-  "stats": {
-    "hp": 20,
-    "attack": 25,
-    "defense": 45,
-    "spAtk": 70,
-    "spDef": 90,
-    "speed": 60
-  },
-  "abilities": [
-    "Soundproof",
-    "Filter",
-    "Technician"
-  ],
-  "description": "Known to turn up in bustling marketplaces now and again. It mimics people much as a child would, then watches how they react, eyes sparkling.",
   "image": "https://assets.pokopiaguide.com/pokemon/mime-jr.png",
   "pokopia": {
     "specialties": [],

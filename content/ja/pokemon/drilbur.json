@@ -5,20 +5,6 @@
   "types": [
     "ground"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 85,
-    "defense": 40,
-    "spAtk": 30,
-    "spDef": 45,
-    "speed": 68
-  },
-  "abilities": [
-    "すなかき",
-    "すなのちから",
-    "かたやぶり"
-  ],
-  "description": "ツメで　地中を　掘り進むので 育てた　野菜が　傷むと 農業関係者は　嫌う。",
   "image": "https://assets.pokopiaguide.com/pokemon/drilbur.png",
   "pokopia": {
     "specialties": [

@@ -5,19 +5,6 @@
   "types": [
     "bug"
   ],
-  "stats": {
-    "hp": 77,
-    "attack": 85,
-    "defense": 51,
-    "spAtk": 55,
-    "spDef": 51,
-    "speed": 65
-  },
-  "abilities": [
-    "swarm",
-    "technician"
-  ],
-  "description": "It uses its cutlass-like arms to produce sound, the melody of which varies from individual to individual. It is a worthwhile endeavor to seek out one's favorite tunes.",
   "image": "https://assets.pokopiaguide.com/pokemon/kricketune.png",
   "pokopia": {
     "specialties": [

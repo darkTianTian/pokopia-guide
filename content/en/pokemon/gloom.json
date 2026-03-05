@@ -6,19 +6,6 @@
     "grass",
     "poison"
   ],
-  "stats": {
-    "hp": 60,
-    "attack": 65,
-    "defense": 70,
-    "spAtk": 85,
-    "spDef": 75,
-    "speed": 40
-  },
-  "abilities": [
-    "chlorophyll",
-    "stench"
-  ],
-  "description": "What appears to be drool is actually sweet honey. It is very sticky and clings stubbornly if touched.",
   "image": "https://assets.pokopiaguide.com/pokemon/gloom.png",
   "pokopia": {
     "specialties": [

@@ -6,20 +6,6 @@
     "ghost",
     "fire"
   ],
-  "stats": {
-    "hp": 50,
-    "attack": 30,
-    "defense": 55,
-    "spAtk": 65,
-    "spDef": 55,
-    "speed": 20
-  },
-  "abilities": [
-    "Flash Fire",
-    "Flame Body",
-    "Infiltrator"
-  ],
-  "description": "The younger the life this Pokémon absorbs, the brighter and eerier the flame on its head burns.",
   "image": "https://assets.pokopiaguide.com/pokemon/litwick.png",
   "pokopia": {
     "specialties": [],

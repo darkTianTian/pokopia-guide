@@ -6,20 +6,6 @@
     "electric",
     "steel"
   ],
-  "stats": {
-    "hp": 70,
-    "attack": 70,
-    "defense": 115,
-    "spAtk": 130,
-    "spDef": 90,
-    "speed": 60
-  },
-  "abilities": [
-    "magnet-pull",
-    "sturdy",
-    "analytic"
-  ],
-  "description": "特殊な　磁場の　影響で 体の　分子構造が　変化し 進化したと　考えられている。",
   "image": "https://assets.pokopiaguide.com/pokemon/magnezone.png",
   "pokopia": {
     "specialties": [],
