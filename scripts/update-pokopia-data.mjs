@@ -192,6 +192,19 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
+async function pMap(items, fn, concurrency = 5) {
+  const results = []
+  let index = 0
+  async function worker() {
+    while (index < items.length) {
+      const i = index++
+      results[i] = await fn(items[i], i)
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, () => worker()))
+  return results
+}
+
 async function fetchHtml(url) {
   const res = await fetch(url, {
     headers: {
@@ -230,6 +243,7 @@ async function saveSyncState(state) {
 
 function normalizeSpecialty(raw) {
   const lower = raw.toLowerCase().trim()
+  if (!lower || lower === "???" || lower === "tbd") return null
   const mapped = SPECIALTY_NORMALIZE_MAP[lower]
   if (mapped) return mapped
   if (VALID_SPECIALTIES.has(lower)) return lower
@@ -303,7 +317,10 @@ async function scrapeSerebiiList() {
       .find("a u")
       .each((_j, el) => {
         const raw = $(el).text().trim().toLowerCase()
-        if (raw) specialties.push(normalizeSpecialty(raw))
+        if (raw) {
+          const normalized = normalizeSpecialty(raw)
+          if (normalized) specialties.push(normalized)
+        }
       })
 
     results.push({
@@ -339,7 +356,10 @@ async function scrapeSerebiiDetail(url) {
       const specialtyCell = row.find("td.cen").first()
       specialtyCell.find("a u").each((_j, link) => {
         const raw = $(link).text().trim().toLowerCase()
-        if (raw) result.specialties.push(normalizeSpecialty(raw))
+        if (raw) {
+          const normalized = normalizeSpecialty(raw)
+          if (normalized) result.specialties.push(normalized)
+        }
       })
     }
   })
@@ -484,6 +504,7 @@ async function scrapeGame8() {
   const $ = cheerio.load(html)
 
   const results = new Map()
+  const habitatImageMap = new Map() // normalized habitat name → image URL
 
   // Game8 table: each row has 4 cells (td.center):
   // [0] Pokemon name + type icons, [1] Habitat image + name, [2] Time/Weather icons, [3] Specialty
@@ -511,16 +532,20 @@ async function scrapeGame8() {
     if (!pokemonName) return
     const slug = serebiiNameToSlug(pokemonName)
 
-    // Cell 1: Habitat - get habitat image names (90x90 images)
+    // Cell 1: Habitat - get habitat image names and image URLs (90x90 images)
     const habitatCell = $(cells[1])
     const habitatNames = []
     habitatCell.find("img[width='90']").each((_j, img) => {
       const alt = $(img).attr("alt") || ""
       if (alt && alt.toLowerCase() !== "tbd") {
         // Capitalize first letter of each word
-        habitatNames.push(
-          alt.replace(/\b\w/g, (c) => c.toUpperCase())
-        )
+        const name = alt.replace(/\b\w/g, (c) => c.toUpperCase())
+        habitatNames.push(name)
+        // Collect habitat image URL for later download
+        const imgUrl = $(img).attr("data-src") || $(img).attr("src") || ""
+        if (imgUrl && !habitatImageMap.has(alt.toLowerCase().trim())) {
+          habitatImageMap.set(alt.toLowerCase().trim(), imgUrl)
+        }
       }
     })
 
@@ -573,8 +598,8 @@ async function scrapeGame8() {
     }
   })
 
-  console.log(`  Found ${results.size} Pokémon on Game8`)
-  return results
+  console.log(`  Found ${results.size} Pokémon on Game8, ${habitatImageMap.size} habitat images`)
+  return { pokemonData: results, habitatImageMap }
 }
 
 // --- Japanese Name → Slug Mapping ---
@@ -839,7 +864,7 @@ function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiList
 
   // Specialties: prefer existing > GameWith > serebii list > serebii detail > game8
   // Always normalize to fix legacy invalid values
-  let specialties = existing.specialties?.map(normalizeSpecialty)
+  let specialties = existing.specialties?.map(normalizeSpecialty).filter(Boolean)
   if (!specialties || specialties.length === 0) {
     if (gameWithData?.specialties?.length > 0) {
       specialties = gameWithData.specialties
@@ -954,6 +979,82 @@ async function fetchNewPokemonBase(slug, dexNumber) {
   return result
 }
 
+// --- Habitat Image Downloader ---
+
+const HABITATS_DIR = path.join(process.cwd(), "public", "images", "habitats")
+
+async function downloadMissingHabitatImages(habitatIdToImageUrl) {
+  console.log("\n--- Downloading Missing Habitat Images ---")
+  console.log(`  Habitat ID → image URL mappings: ${habitatIdToImageUrl.size}`)
+
+  // Check which mapped images are missing locally
+  const missing = []
+  for (const [id, url] of habitatIdToImageUrl) {
+    const filePath = path.join(HABITATS_DIR, `habitat_${id}.png`)
+    try {
+      await fs.access(filePath)
+    } catch {
+      missing.push({ id, url })
+    }
+  }
+
+  if (missing.length === 0) {
+    console.log("  No missing habitat images to download.")
+    return
+  }
+
+  console.log(`  Missing habitat images with Game8 match: ${missing.length}`)
+
+  if (DRY_RUN) {
+    for (const { id, url } of missing) {
+      console.log(`  [DRY RUN] habitat_${id}.png → ${url.substring(0, 80)}...`)
+    }
+    return
+  }
+
+  await fs.mkdir(HABITATS_DIR, { recursive: true })
+
+  let downloaded = 0
+  let failed = 0
+  let tooSmall = 0
+
+  for (const { id, url } of missing) {
+    try {
+      const res = await fetch(url, {
+        headers: {
+          "User-Agent": "Mozilla/5.0 (compatible; PokopiaGuideBot/1.0)",
+        },
+      })
+      if (!res.ok) {
+        console.log(`  Failed to download habitat_${id}.png: HTTP ${res.status}`)
+        failed++
+        continue
+      }
+
+      const buffer = Buffer.from(await res.arrayBuffer())
+
+      // Skip placeholder images (< 1KB)
+      if (buffer.length < 1024) {
+        console.log(`  Skipped habitat_${id}.png: too small (${buffer.length} bytes, likely placeholder)`)
+        tooSmall++
+        continue
+      }
+
+      const filePath = path.join(HABITATS_DIR, `habitat_${id}.png`)
+      await fs.writeFile(filePath, buffer)
+      console.log(`  Downloaded habitat_${id}.png (${buffer.length} bytes)`)
+      downloaded++
+
+      await sleep(200) // Rate limit
+    } catch (err) {
+      console.log(`  Error downloading habitat_${id}.png: ${err.message}`)
+      failed++
+    }
+  }
+
+  console.log(`\n  Habitat images: ${downloaded} downloaded, ${failed} failed, ${tooSmall} too small`)
+}
+
 // --- Main ---
 
 async function uploadAllMissingImages() {
@@ -994,20 +1095,23 @@ async function run() {
   console.log(`Loaded ${jaNameToSlug.size} Japanese name mappings`)
 
   // Step 2: Scrape all three sources in parallel
-  const [serebiiList, game8Data, gameWithData] = await Promise.all([
+  const [serebiiList, game8Result, gameWithData] = await Promise.all([
     scrapeSerebiiList().catch((err) => {
       console.error(`Failed to scrape Serebii list: ${err.message}`)
       return []
     }),
     scrapeGame8().catch((err) => {
       console.error(`Failed to scrape Game8: ${err.message}`)
-      return new Map()
+      return { pokemonData: new Map(), habitatImageMap: new Map() }
     }),
     scrapeGameWith(jaNameToSlug).catch((err) => {
       console.error(`Failed to scrape GameWith: ${err.message}`)
       return new Map()
     }),
   ])
+
+  const game8Data = game8Result.pokemonData
+  const habitatImageMap = game8Result.habitatImageMap
 
   // Step 3: Load all existing Pokemon JSON files
   const existingPokemon = new Map()
@@ -1084,102 +1188,165 @@ async function run() {
   let newPokemon = 0
   let errors = 0
   const newHabitats = []
+  const habitatIdToImageUrl = new Map() // habitat ID → Game8 image URL
 
-  // Step 5: Process each Pokemon from the unified list
+  // Step 5: Filter to Pokemon that need processing
+  const toProcess = []
   for (const [slug, meta] of allSlugs) {
-    const { dexNumber, name } = meta
-
-    // Check if we have existing data
     const existingLocales = existingPokemon.get(slug)
     const existingEn = existingLocales?.en
-
-    // Skip if data is complete (unless --force)
     if (!FORCE && existingEn && isPokopiaDataComplete(existingEn)) {
       skipped++
       continue
     }
+    toProcess.push({ slug, meta, serebiiEntry: serebiiBySlug.get(slug) || null })
+  }
 
-    console.log(`\nProcessing: ${name} (#${dexNumber || "?"}) [${slug}] (source: ${meta.source})`)
+  console.log(`\nProcessing ${toProcess.length} Pokémon (skipped ${skipped} already complete)`)
 
-    // Scrape Serebii detail page (only if we have a URL)
-    let serebiiDetail = null
-    const serebiiEntry = serebiiBySlug.get(slug)
-    if (serebiiEntry?.detailUrl) {
+  // Phase 1: Concurrent fetching — Serebii details, new Pokemon base data, evolution data, image uploads
+  const SEREBII_CONCURRENCY = 5
+  const POKEAPI_CONCURRENCY = 10
+
+  // 1a. Fetch all Serebii detail pages concurrently
+  const serebiiDetailMap = new Map()
+  const serebiiToFetch = toProcess.filter((p) => p.serebiiEntry?.detailUrl)
+  console.log(`Fetching ${serebiiToFetch.length} Serebii detail pages (concurrency: ${SEREBII_CONCURRENCY})...`)
+  await pMap(
+    serebiiToFetch,
+    async ({ slug, meta, serebiiEntry }) => {
       try {
-        serebiiDetail = await scrapeSerebiiDetail(serebiiEntry.detailUrl)
-        await sleep(300) // Rate limit
+        const detail = await scrapeSerebiiDetail(serebiiEntry.detailUrl)
+        serebiiDetailMap.set(slug, detail)
       } catch (err) {
-        console.error(`  Failed to scrape Serebii detail for ${name}: ${err.message}`)
+        console.error(`  Failed Serebii detail for ${meta.name}: ${err.message}`)
         errors++
       }
-    }
+    },
+    SEREBII_CONCURRENCY
+  )
 
-    // Get Game8 and GameWith data for this Pokemon
-    const g8 = game8Data.get(slug) || null
-    const gw = gameWithData.get(slug) || null
-
-    // If this is a new Pokemon we don't have at all, fetch base data
-    if (!existingEn) {
-      if (!dexNumber) {
-        console.log(`  Skipping new Pokémon without dex number: ${name}`)
-        errors++
-        continue
-      }
-      console.log(`  New Pokémon! Fetching base data from PokeAPI...`)
-      try {
-        const baseData = await fetchNewPokemonBase(slug, dexNumber)
-        for (const locale of LOCALES) {
-          const dir = path.join(CONTENT_DIR, locale, "pokemon")
-          await fs.mkdir(dir, { recursive: true })
+  // 1b. Fetch new Pokemon base data + evolution data concurrently
+  const newPokemonToFetch = toProcess.filter((p) => !existingPokemon.get(p.slug)?.en)
+  if (newPokemonToFetch.length > 0) {
+    console.log(`Fetching ${newPokemonToFetch.length} new Pokémon from PokeAPI...`)
+    await pMap(
+      newPokemonToFetch,
+      async ({ slug, meta }) => {
+        const { dexNumber, name } = meta
+        if (!dexNumber) {
+          console.log(`  Skipping new Pokémon without dex number: ${name}`)
+          errors++
+          return
+        }
+        try {
+          const baseData = await fetchNewPokemonBase(slug, dexNumber)
+          for (const locale of LOCALES) {
+            const dir = path.join(CONTENT_DIR, locale, "pokemon")
+            await fs.mkdir(dir, { recursive: true })
+          }
           existingPokemon.set(slug, {
             ...existingPokemon.get(slug),
-            [locale]: baseData[locale],
+            ...Object.fromEntries(LOCALES.map((l) => [l, baseData[l]])),
           })
+          newPokemon++
+        } catch (err) {
+          console.error(`  Failed base data for ${name}: ${err.message}`)
+          errors++
         }
-        // Upload image to R2
-        if (!DRY_RUN) {
-          await uploadPokemonImage(slug)
+      },
+      POKEAPI_CONCURRENCY
+    )
+  }
+
+  // 1c. Fetch evolution data concurrently (all in --force mode, otherwise only missing)
+  const needEvolution = toProcess.filter((p) => {
+    if (FORCE) return true
+    const en = existingPokemon.get(p.slug)?.en
+    return !en?.pokopia?.evolvesFrom && !en?.pokopia?.evolvesTo
+  })
+  const evolutionMap = new Map()
+  if (needEvolution.length > 0) {
+    console.log(`Fetching evolution data for ${needEvolution.length} Pokémon...`)
+    await pMap(
+      needEvolution,
+      async ({ slug }) => {
+        try {
+          const evo = await getEvolutionData(slug)
+          evolutionMap.set(slug, evo)
+        } catch {
+          // Ignore evolution errors
         }
-        newPokemon++
-        await sleep(200) // Rate limit PokeAPI
-      } catch (err) {
-        console.error(`  Failed to fetch base data for ${name}: ${err.message}`)
-        errors++
-        continue
-      }
-    } else {
-      // Ensure image exists for existing Pokemon too
-      if (!DRY_RUN) {
+      },
+      POKEAPI_CONCURRENCY
+    )
+  }
+
+  // 1d. Upload images concurrently
+  if (!DRY_RUN) {
+    console.log(`Uploading missing images for ${toProcess.length} Pokémon...`)
+    await pMap(
+      toProcess,
+      async ({ slug }) => {
         await uploadPokemonImage(slug)
-      }
+      },
+      POKEAPI_CONCURRENCY
+    )
+  }
+
+  // Phase 2: Merge and write (synchronous, fast)
+  console.log(`\nMerging and writing data...`)
+  for (const { slug, meta, serebiiEntry } of toProcess) {
+    const { dexNumber, name } = meta
+    const existingEn = existingPokemon.get(slug)?.en
+    if (!existingEn) {
+      // New Pokemon that failed to fetch — skip
+      if (!existingPokemon.get(slug)?.en) continue
     }
 
-    // Get evolution data from PokeAPI
-    let evolutionData = {
-      evolvesFrom: existingEn?.pokopia?.evolvesFrom ?? null,
-      evolvesTo: existingEn?.pokopia?.evolvesTo ?? null,
-    }
-    if (
-      evolutionData.evolvesFrom === null &&
-      evolutionData.evolvesTo === null
-    ) {
-      try {
-        evolutionData = await getEvolutionData(slug)
-        await sleep(100)
-      } catch {
-        // Ignore evolution errors
-      }
-    }
+    const serebiiDetail = serebiiDetailMap.get(slug) || null
+    const g8 = game8Data.get(slug) || null
+    const gw = gameWithData.get(slug) || null
 
     // Merge pokopia data from all sources
     const existingPokopia = existingEn?.pokopia || null
     const merged = mergePokopiaData(existingPokopia, serebiiDetail, g8, serebiiEntry || null, gw)
 
-    // Override evolution data if we got it
-    if (evolutionData.evolvesFrom !== null || merged.evolvesFrom === null) {
+    // Correlate Game8 habitat names with merged habitat IDs to build image URL mapping
+    if (g8 && g8.habitats.length > 0 && merged.habitats.length > 0) {
+      for (const mergedH of merged.habitats) {
+        if (habitatIdToImageUrl.has(mergedH.id)) continue
+        const mergedNameLower = mergedH.name.toLowerCase().trim()
+        for (const g8Name of g8.habitats) {
+          const g8NameLower = g8Name.toLowerCase().trim()
+          if (g8NameLower === mergedNameLower) {
+            const url = habitatImageMap.get(g8NameLower)
+            if (url) habitatIdToImageUrl.set(mergedH.id, url)
+            break
+          }
+        }
+      }
+      if (g8.habitats.length === merged.habitats.length) {
+        for (let i = 0; i < merged.habitats.length; i++) {
+          const hId = merged.habitats[i].id
+          if (habitatIdToImageUrl.has(hId)) continue
+          const g8NameLower = g8.habitats[i].toLowerCase().trim()
+          const url = habitatImageMap.get(g8NameLower)
+          if (url) habitatIdToImageUrl.set(hId, url)
+        }
+      }
+    }
+
+    // Override evolution data (PokeAPI is authoritative when available)
+    const evoFromApi = evolutionMap.get(slug)
+    const evolutionData = evoFromApi || {
+      evolvesFrom: existingEn?.pokopia?.evolvesFrom ?? null,
+      evolvesTo: existingEn?.pokopia?.evolvesTo ?? null,
+    }
+    if (evoFromApi || merged.evolvesFrom === null) {
       merged.evolvesFrom = evolutionData.evolvesFrom
     }
-    if (evolutionData.evolvesTo !== null || merged.evolvesTo === null) {
+    if (evoFromApi || merged.evolvesTo === null) {
       merged.evolvesTo = evolutionData.evolvesTo
     }
 
@@ -1207,7 +1374,6 @@ async function run() {
         const pokemonData = existingPokemon.get(slug)?.[locale]
         if (!pokemonData) continue
 
-        // Localize habitat names
         const localizedHabitats = merged.habitats.map((h) => ({
           ...h,
           name: getLocalizedHabitatName(h, locale, habitatMappings),
@@ -1228,12 +1394,15 @@ async function run() {
 
     updated++
     console.log(
-      `  Updated: ${merged.specialties.join(", ") || "no specialty"} | ` +
+      `  ${name}: ${merged.specialties.join(", ") || "no specialty"} | ` +
         `${merged.habitats.length} habitat(s) | ` +
         `time: ${merged.timeOfDay?.join(", ") || "null"} | ` +
         `weather: ${merged.weather?.join(", ") || "null"}`
     )
   }
+
+  // Download missing habitat images from Game8
+  await downloadMissingHabitatImages(habitatIdToImageUrl)
 
   // Save sync state
   const newState = {

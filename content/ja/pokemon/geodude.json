@@ -23,8 +23,10 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "totodile",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "graveler"
+    ],
     "habitats": [
       {
         "id": 1,

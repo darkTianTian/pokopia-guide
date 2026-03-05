@@ -14,8 +14,10 @@
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
-    "evolvesFrom": "pidgey",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "parasect"
+    ],
     "habitats": [
       {
         "id": 12,

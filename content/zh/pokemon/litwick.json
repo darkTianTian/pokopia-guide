@@ -14,8 +14,10 @@
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
-    "evolvesFrom": "machoke",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "lampent"
+    ],
     "habitats": [
       {
         "id": 32,

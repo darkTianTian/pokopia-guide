@@ -13,8 +13,12 @@
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
-    "evolvesFrom": "nidorino",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "hitmonlee",
+      "hitmonchan",
+      "hitmontop"
+    ],
     "habitats": [
       {
         "id": 18,

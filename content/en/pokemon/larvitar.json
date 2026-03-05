@@ -24,8 +24,10 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "golbat",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "pupitar"
+    ],
     "habitats": [
       {
         "id": 110,

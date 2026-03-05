@@ -19,8 +19,10 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "dragonair",
-    "evolvesTo": null,
+    "evolvesFrom": "cleffa",
+    "evolvesTo": [
+      "clefable"
+    ],
     "habitats": [
       {
         "id": 131,

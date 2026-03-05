@@ -24,8 +24,11 @@
       "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "ekans",
-    "evolvesTo": null,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "slowbro",
+      "slowking"
+    ],
     "habitats": [
       {
         "id": 5,
