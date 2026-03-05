@@ -33,9 +33,6 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
       <PokemonGrid
         pokemon={pokemon}
         locale={locale}
-        prevLabel={t(translations, "pokedex.prev")}
-        nextLabel={t(translations, "pokedex.next")}
-        pageLabel={t(translations, "pokedex.page")}
       />
     </div>
   )
