@@ -1,10 +1,12 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
 import { GuideCard } from "@/components/guides/guide-card"
+import { SafeImage } from "@/components/ui/safe-image"
 import { getAllPokemon } from "@/lib/pokemon"
 import { getAllGuides } from "@/lib/guides"
+import { getAllHabitatsWithPokemon } from "@/lib/habitat"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 
 interface HomePageProps {
@@ -12,14 +14,16 @@ interface HomePageProps {
 }
 
 export async function HomePage({ locale }: HomePageProps) {
-  const [pokemon, guides, translations] = await Promise.all([
+  const [pokemon, guides, habitats, translations] = await Promise.all([
     getAllPokemon(locale),
     getAllGuides(locale),
+    getAllHabitatsWithPokemon(locale),
     getTranslations(locale),
   ])
 
   const featuredPokemon = pokemon.slice(0, 3)
   const latestGuides = guides.slice(0, 3)
+  const featuredHabitats = habitats.slice(0, 6)
 
   const features = [
     {
@@ -122,6 +126,76 @@ export async function HomePage({ locale }: HomePageProps) {
                 <PokemonCard key={p.slug} pokemon={p} locale={locale} />
               ))}
             </div>
+          </div>
+        </section>
+      )}
+
+      {featuredHabitats.length > 0 && (
+        <section className="mx-auto max-w-6xl px-4 py-16">
+          <div className="mb-8 flex items-center justify-between">
+            <h2 className="text-2xl font-bold">
+              {t(translations, "home.pokopiaHabitats")}
+            </h2>
+            <Button asChild variant="ghost">
+              <Link href={getLocalePath(locale, "/habitat/list")}>
+                {t(translations, "home.viewAll")} &rarr;
+              </Link>
+            </Button>
+          </div>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredHabitats.map((habitat) => (
+              <Link
+                key={habitat.id}
+                href={getLocalePath(locale, `/habitat/list/${habitat.id}`)}
+              >
+                <Card className="h-full transition-shadow hover:shadow-lg">
+                  <CardHeader className="pb-2">
+                    <div className="flex justify-center py-2">
+                      <SafeImage
+                        src={habitat.image}
+                        alt={habitat.name}
+                        width={120}
+                        height={120}
+                        className="rounded-lg object-contain"
+                      />
+                    </div>
+                    <CardTitle className="text-center text-lg">
+                      {habitat.name}
+                    </CardTitle>
+                    {habitat.materials && (
+                      <p className="text-center text-xs text-muted-foreground">
+                        {habitat.materials}
+                      </p>
+                    )}
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex items-center justify-center gap-2">
+                      <div className="flex -space-x-2">
+                        {habitat.pokemon.slice(0, 5).map(({ pokemon: p }) => (
+                          <SafeImage
+                            key={p.id}
+                            src={p.image}
+                            alt={p.name}
+                            width={32}
+                            height={32}
+                            className="rounded-full border-2 border-background bg-muted"
+                          />
+                        ))}
+                      </div>
+                      {habitat.pokemon.length > 5 && (
+                        <span className="text-sm text-muted-foreground">
+                          +{habitat.pokemon.length - 5}
+                        </span>
+                      )}
+                    </div>
+                    <p className="mt-2 text-center text-sm text-muted-foreground">
+                      {habitat.pokemon.length}{" "}
+                      {t(translations, "habitat.pokemonCount")}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
           </div>
         </section>
       )}
