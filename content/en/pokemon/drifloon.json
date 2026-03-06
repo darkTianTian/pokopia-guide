@@ -38,6 +38,11 @@
         "id": 30,
         "name": "Stuffed-Animal Sleepover",
         "rarity": "common"
+      },
+      {
+        "id": 181,
+        "name": "Plush central",
+        "rarity": "common"
       }
     ]
   }
