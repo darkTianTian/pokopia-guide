@@ -8,12 +8,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/golem.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "crush",
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "graveler",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 111,
+        "name": "コケまみれの岩",
+        "rarity": "rare"
+      }
+    ]
   }
 }

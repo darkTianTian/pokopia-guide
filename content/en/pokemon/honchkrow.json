@@ -8,12 +8,33 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/honchkrow.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "fly",
+      "trade"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "murkrow",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 102,
+        "name": "Elevated red tall grass",
+        "rarity": "rare"
+      },
+      {
+        "id": 125,
+        "name": "Chirping recital",
+        "rarity": "rare"
+      }
+    ]
   }
 }

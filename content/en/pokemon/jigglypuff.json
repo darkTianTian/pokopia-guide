@@ -33,6 +33,11 @@
         "id": 107,
         "name": "Flower Bed Stump Stage",
         "rarity": "common"
+      },
+      {
+        "id": 126,
+        "name": "Recital stage",
+        "rarity": "common"
       }
     ]
   }

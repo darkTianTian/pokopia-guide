@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T17:43:54.225Z",
+  "lastSync": "2026-03-06T19:42:24.507Z",
   "newHabitats": [
     {
       "id": 28,
@@ -499,7 +499,7 @@
     },
     {
       "id": 148,
-      "name": "Simple bathroom",
+      "name": "シンプルバスルーム",
       "missingIn": [
         "ja",
         "zh"
@@ -595,7 +595,7 @@
     },
     {
       "id": 126,
-      "name": "Recital stage",
+      "name": "リサイタルステージ",
       "missingIn": [
         "ja",
         "zh"
@@ -632,17 +632,41 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 35,
+      "name": "明かりと香りのユウワク",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 96,
+      "name": "リゾートへようこそ",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 170,
+      "name": "研究者のデスク",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "total": 292,
+    "total": 304,
     "serebiiCount": 292,
-    "gameWithCount": 224,
-    "game8Count": 0,
+    "gameWithCount": 229,
+    "game8Count": 284,
     "updated": 292,
     "skipped": 0,
     "newPokemon": 0,
-    "errors": 0
+    "errors": 12
   }
 }
