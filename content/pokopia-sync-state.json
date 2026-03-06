@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T10:49:00.651Z",
+  "lastSync": "2026-03-06T11:37:50.094Z",
   "newHabitats": [
     {
       "id": 28,
@@ -171,7 +171,7 @@
     },
     {
       "id": 147,
-      "name": "Birdsong garden",
+      "name": "さえずりガーデン",
       "missingIn": [
         "ja",
         "zh"
@@ -528,13 +528,45 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 34,
+      "name": "ラッキー休けい所",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 122,
+      "name": "ミニキッチン",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 121,
+      "name": "パクパクパン工房",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 163,
+      "name": "プチ図書館",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
     "total": 292,
     "serebiiCount": 292,
-    "gameWithCount": 201,
+    "gameWithCount": 206,
     "game8Count": 0,
     "updated": 292,
     "skipped": 0,

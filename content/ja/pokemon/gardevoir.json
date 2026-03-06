@@ -12,11 +12,27 @@
       "teleport",
       "trade"
     ],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "kirlia",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 163,
+        "name": "プチ図書館",
+        "rarity": "rare"
+      }
+    ]
   }
 }

@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "swablu",
@@ -29,7 +30,7 @@
     "habitats": [
       {
         "id": 147,
-        "name": "Birdsong garden",
+        "name": "さえずりガーデン",
         "rarity": "common"
       }
     ]

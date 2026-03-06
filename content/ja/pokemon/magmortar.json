@@ -7,12 +7,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/magmortar.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "burn",
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "magmar",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 122,
+        "name": "ミニキッチン",
+        "rarity": "rare"
+      }
+    ]
   }
 }
