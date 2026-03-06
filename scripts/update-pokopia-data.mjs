@@ -699,35 +699,92 @@ function parseGameWithJsObject(html, varName) {
   const match = html.match(pattern)
   if (!match) return null
 
+  // Find matching closing bracket, respecting strings
   const startIdx = html.indexOf("[", match.index + match[0].length - 1)
   let depth = 0
   let endIdx = startIdx
+  let inString = false
+  let stringChar = null
   for (let i = startIdx; i < html.length; i++) {
-    if (html[i] === "[") depth++
-    else if (html[i] === "]") {
+    const ch = html[i]
+    if (inString) {
+      if (ch === "\\" ) { i++; continue } // skip escaped char
+      if (ch === stringChar) inString = false
+      continue
+    }
+    if (ch === "'" || ch === '"') { inString = true; stringChar = ch; continue }
+    if (ch === "[") depth++
+    else if (ch === "]") {
       depth--
-      if (depth === 0) {
-        endIdx = i + 1
-        break
-      }
+      if (depth === 0) { endIdx = i + 1; break }
     }
   }
 
   const rawJs = html.slice(startIdx, endIdx)
 
-  // Convert JS object literal to valid JSON:
-  // - Single quotes → double quotes (but handle escaped quotes)
-  // - Unquoted keys → quoted keys
-  // - Remove trailing commas
-  const jsonStr = rawJs
-    .replace(/'/g, '"')
-    .replace(/([{,]\s*)(\w+)\s*:/g, '$1"$2":')
-    .replace(/,\s*([}\]])/g, "$1")
+  // Convert JS object literal to valid JSON using a character-level parser
+  // that correctly handles strings containing quotes and special chars
+  const result = []
+  inString = false
+  stringChar = null
+  for (let i = 0; i < rawJs.length; i++) {
+    const ch = rawJs[i]
+
+    if (inString) {
+      if (ch === "\\" ) {
+        // Keep escaped characters
+        result.push(ch, rawJs[i + 1] || "")
+        i++
+        continue
+      }
+      if (ch === stringChar) {
+        // End of JS string — emit closing double quote
+        result.push('"')
+        inString = false
+        continue
+      }
+      // Inside string: escape any double quotes in content
+      if (ch === '"') {
+        result.push('\\"')
+      } else {
+        result.push(ch)
+      }
+      continue
+    }
+
+    // Outside string
+    if (ch === "'") {
+      // Start of JS string — emit opening double quote
+      inString = true
+      stringChar = "'"
+      result.push('"')
+      continue
+    }
+    if (ch === '"') {
+      inString = true
+      stringChar = '"'
+      result.push('"')
+      continue
+    }
+    result.push(ch)
+  }
+
+  let jsonStr = result.join("")
+  // Quote unquoted keys: {key: or ,key:
+  jsonStr = jsonStr.replace(/([{,]\s*)(\w+)\s*:/g, '$1"$2":')
+  // Remove trailing commas
+  jsonStr = jsonStr.replace(/,\s*([}\]])/g, "$1")
 
   try {
     return JSON.parse(jsonStr)
   } catch (err) {
     console.error(`  Failed to parse GameWith ${varName}: ${err.message}`)
+    // Log context around the error position for debugging
+    const posMatch = err.message.match(/position (\d+)/)
+    if (posMatch) {
+      const pos = parseInt(posMatch[1])
+      console.error(`  Context: ...${jsonStr.slice(Math.max(0, pos - 50), pos + 50)}...`)
+    }
     return null
   }
 }
