@@ -504,103 +504,103 @@ const POKEMON_TYPES = new Set([
 
 async function scrapeGame8() {
   console.log("Fetching Game8 page...")
+
+  // Step 1: Fetch the HTML to get the toolStructuralMappingId
   const html = await fetchHtml(GAME8_URL)
-  const $ = cheerio.load(html)
+  const propsMatch = html.match(/data-react-props='([^']*)'/)
+  if (!propsMatch) {
+    console.error("  Could not find React props on Game8 page")
+    return { pokemonData: new Map(), habitatImageMap: new Map() }
+  }
+
+  let tsmId
+  try {
+    const props = JSON.parse(propsMatch[1].replace(/&quot;/g, '"').replace(/&amp;/g, '&'))
+    tsmId = props.toolStructuralMappingId
+  } catch {
+    console.error("  Could not parse React props")
+    return { pokemonData: new Map(), habitatImageMap: new Map() }
+  }
+
+  if (!tsmId) {
+    console.error("  No toolStructuralMappingId found")
+    return { pokemonData: new Map(), habitatImageMap: new Map() }
+  }
+
+  // Step 2: Fetch the API data using the mapping ID
+  console.log(`  Fetching Game8 API (toolStructuralMapping ${tsmId})...`)
+  const apiUrl = `https://game8.co/api/tool_structural_mappings/${tsmId}`
+  const apiResp = await fetch(apiUrl, {
+    headers: {
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+      Accept: "application/json",
+      Referer: GAME8_URL,
+      "X-Requested-With": "XMLHttpRequest",
+    },
+  })
+  if (!apiResp.ok) {
+    console.error(`  Game8 API returned ${apiResp.status}`)
+    return { pokemonData: new Map(), habitatImageMap: new Map() }
+  }
+
+  const apiData = await apiResp.json()
+  const items = apiData?.collectionArraySchema?.collectionItems || []
 
   const results = new Map()
-  const habitatImageMap = new Map() // normalized habitat name → image URL
+  const habitatImageMap = new Map()
 
-  // Game8 table: each row has 4 cells (td.center):
-  // [0] Pokemon name + type icons, [1] Habitat image + name, [2] Time/Weather icons, [3] Specialty
-  // But some rows are just grid rows of pokemon images (width="25%")
-  // The actual data table rows have exactly 4 td.center children
-
-  $("table.a-table tr").each((_i, row) => {
-    const cells = $(row).find("> td.center")
-    if (cells.length !== 4) return
-
-    // Cell 0: Pokemon name - get the 150x150 image alt (the pokemon image)
-    const pokemonCell = $(cells[0])
-    const pokemonImg = pokemonCell.find("img[width='150']")
-    if (pokemonImg.length === 0) return
-
-    // Extract Pokemon name from text, filtering out type names
-    const cellText = pokemonCell.text().trim()
-    const textParts = cellText.split(/\s+/)
-    // Pokemon name is the text that isn't a type name
-    const pokemonName = textParts
-      .filter((p) => !POKEMON_TYPES.has(p.toLowerCase()) && p.length > 0)
-      .join(" ")
-      .trim()
-
-    if (!pokemonName) return
+  for (const item of items) {
+    const pokemonName = (item.name || "").trim()
+    if (!pokemonName) continue
     const slug = serebiiNameToSlug(pokemonName)
+    if (!slug) continue
 
-    // Cell 1: Habitat - get habitat image names and image URLs (90x90 images)
-    const habitatCell = $(cells[1])
+    // Parse specialties (colon-separated)
+    const specialties = []
+    if (item.specialties) {
+      for (const s of item.specialties.split(":")) {
+        const normalized = normalizeSpecialty(s.trim().toLowerCase())
+        if (normalized && VALID_SPECIALTIES.has(normalized)) specialties.push(normalized)
+      }
+    }
+
+    // Parse habitat details
     const habitatNames = []
-    habitatCell.find("img[width='90']").each((_j, img) => {
-      const alt = $(img).attr("alt") || ""
-      if (alt && alt.toLowerCase() !== "tbd") {
-        // Capitalize first letter of each word
-        const name = alt.replace(/\b\w/g, (c) => c.toUpperCase())
-        habitatNames.push(name)
-        // Collect habitat image URL for later download
-        const imgUrl = $(img).attr("data-src") || $(img).attr("src") || ""
-        if (imgUrl && !habitatImageMap.has(alt.toLowerCase().trim())) {
-          habitatImageMap.set(alt.toLowerCase().trim(), imgUrl)
+    const details = item.detailsArraySchema?.details || []
+    // Use first habitat's time/weather as the pokemon's default
+    let times = null
+    let weathers = null
+
+    for (const det of details) {
+      const hName = (det.name || "").trim()
+      if (hName) habitatNames.push(hName)
+
+      // Collect habitat image
+      if (det.image && hName) {
+        const key = hName.toLowerCase().trim()
+        if (!habitatImageMap.has(key)) {
+          habitatImageMap.set(key, det.image)
         }
       }
-    })
 
-    // Cell 2: Time and Weather icons (30x30 images)
-    const twCell = $(cells[2])
-    const times = []
-    const weathers = []
-    twCell.find("img[width='30']").each((_j, img) => {
-      const alt = ($(img).attr("alt") || "").toLowerCase().trim()
-      if (GAME8_TIME_MAP[alt]) {
-        times.push(GAME8_TIME_MAP[alt])
-      } else if (GAME8_WEATHER_MAP[alt]) {
-        weathers.push(GAME8_WEATHER_MAP[alt])
+      // Parse time/weather from first habitat with data
+      if (!times && det.time) {
+        times = det.time.split(":").map((t) => t.trim().toLowerCase()).filter(Boolean)
       }
-    })
-
-    // Cell 3: Specialty - get specialty icon (30x30) alt text or text content
-    const specCell = $(cells[3])
-    const specialties = []
-    specCell.find("img[width='30']").each((_j, img) => {
-      const alt = ($(img).attr("alt") || "").trim().toLowerCase()
-      if (alt && alt !== "tbd") {
-        const normalized = normalizeSpecialty(alt)
-        if (VALID_SPECIALTIES.has(normalized)) specialties.push(normalized)
-      }
-    })
-    // Fallback: parse text if no icons
-    if (specialties.length === 0) {
-      const specText = specCell.text().trim().toLowerCase()
-      if (specText && specText !== "tbd") {
-        specText.split(/[,\n]/).forEach((s) => {
-          const trimmed = s.trim()
-          if (trimmed) {
-            const normalized = normalizeSpecialty(trimmed)
-            if (VALID_SPECIALTIES.has(normalized)) specialties.push(normalized)
-          }
-        })
+      if (!weathers && det.weather) {
+        weathers = det.weather.split(":").map((w) => w.trim().toLowerCase()).filter(Boolean)
       }
     }
 
-    if (slug) {
-      results.set(slug, {
-        name: pokemonName,
-        slug,
-        habitats: habitatNames,
-        timeOfDay: times.length > 0 ? times : null,
-        weather: weathers.length > 0 ? weathers : null,
-        specialties,
-      })
-    }
-  })
+    results.set(slug, {
+      name: pokemonName,
+      slug,
+      habitats: habitatNames,
+      timeOfDay: times && times.length > 0 ? times : null,
+      weather: weathers && weathers.length > 0 ? weathers : null,
+      specialties,
+    })
+  }
 
   console.log(`  Found ${results.size} Pokémon on Game8, ${habitatImageMap.size} habitat images`)
   return { pokemonData: results, habitatImageMap }
