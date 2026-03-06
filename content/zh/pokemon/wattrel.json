@@ -8,7 +8,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/wattrel.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "generate"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -16,6 +18,12 @@
     "evolvesTo": [
       "kilowattrel"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 140,
+        "name": "高台のピンクの草むら",
+        "rarity": "common"
+      }
+    ]
   }
 }

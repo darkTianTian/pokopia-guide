@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/frogadier.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "water"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -15,6 +17,12 @@
     "evolvesTo": [
       "greninja"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 139,
+        "name": "Hydrated pink tall grass",
+        "rarity": "rare"
+      }
+    ]
   }
 }

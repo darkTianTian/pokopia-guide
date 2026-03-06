@@ -8,7 +8,10 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/drakloak.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "gather",
+      "search"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -27,9 +30,9 @@
     ],
     "habitats": [
       {
-        "id": 138,
-        "name": "Tree-shaded pink tall grass",
-        "rarity": "rare"
+        "id": 167,
+        "name": "オフィスのバックヤード",
+        "rarity": "common"
       }
     ]
   }

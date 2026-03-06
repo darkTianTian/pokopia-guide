@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/quilava.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "burn"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -15,6 +17,12 @@
     "evolvesTo": [
       "typhlosion"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 141,
+        "name": "Concrete pipe secret base",
+        "rarity": "rare"
+      }
+    ]
   }
 }
