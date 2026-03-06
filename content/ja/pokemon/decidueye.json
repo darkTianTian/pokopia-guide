@@ -8,12 +8,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/decidueye.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "grow",
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "dartrix",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 100,
+        "name": "三角木かげに岩と草むら",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }

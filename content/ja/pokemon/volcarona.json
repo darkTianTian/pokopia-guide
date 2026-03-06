@@ -29,6 +29,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 105,
+        "name": "木かげのゆうがな花畑",
+        "rarity": "very-rare"
+      },
+      {
         "id": 115,
         "name": "マグマでアツアツ",
         "rarity": "rare"

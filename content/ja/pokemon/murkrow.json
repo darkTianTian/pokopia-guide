@@ -18,7 +18,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -29,6 +30,11 @@
       {
         "id": 102,
         "name": "高台の赤い草むら",
+        "rarity": "common"
+      },
+      {
+        "id": 105,
+        "name": "木かげのゆうがな花畑",
         "rarity": "common"
       }
     ]

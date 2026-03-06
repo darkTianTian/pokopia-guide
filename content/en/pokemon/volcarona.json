@@ -29,6 +29,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 105,
+        "name": "Tree-shaded graceful flower bed",
+        "rarity": "very-rare"
+      },
+      {
         "id": 115,
         "name": "Piping-hot lava",
         "rarity": "rare"

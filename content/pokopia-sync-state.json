@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T13:15:54.725Z",
+  "lastSync": "2026-03-06T14:47:02.304Z",
   "newHabitats": [
     {
       "id": 28,
@@ -155,7 +155,7 @@
     },
     {
       "id": 143,
-      "name": "Tree-shaded fluffy flower bed",
+      "name": "木かげのフワフワな花畑",
       "missingIn": [
         "ja",
         "zh"
@@ -568,15 +568,23 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 113,
+      "name": "露天風呂",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "total": 292,
-    "serebiiCount": 292,
+    "total": 211,
+    "serebiiCount": 0,
     "gameWithCount": 211,
     "game8Count": 0,
-    "updated": 292,
+    "updated": 211,
     "skipped": 0,
     "newPokemon": 0,
     "errors": 0

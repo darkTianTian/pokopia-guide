@@ -10,13 +10,29 @@
     "specialties": [
       "illuminate"
     ],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "pichu",
     "evolvesTo": [
       "raichu"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 20,
+        "name": "野餐餐桌",
+        "rarity": "common"
+      }
+    ]
   }
 }
