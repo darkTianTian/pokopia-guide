@@ -37,42 +37,44 @@ export async function Header({ locale }: HeaderProps) {
   ]
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="mx-auto flex h-14 max-w-6xl items-center px-4">
+    <header className="sticky top-4 z-50 mx-auto w-full max-w-6xl px-4 transition-all duration-300">
+      <div className="flex h-16 items-center justify-between rounded-full border border-border/40 bg-background/40 px-6 shadow-md ring-1 ring-border/50 backdrop-blur-xl">
         <Link
           href={getLocalePath(locale, "/")}
-          className="mr-8 flex items-center gap-2 font-bold"
+          className="mr-8 flex items-center gap-2 font-extrabold tracking-tight transition-transform hover:scale-105"
         >
-          <span className="text-xl">🎮</span>
-          <span className="hidden sm:inline">{t(translations, "site.name")}</span>
+          <span className="text-2xl drop-shadow-sm">🎮</span>
+          <span className="hidden sm:inline bg-gradient-to-br from-foreground to-muted-foreground bg-clip-text text-transparent">
+            {t(translations, "site.name")}
+          </span>
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden flex-1 items-center gap-6 text-sm md:flex">
+        <nav className="hidden flex-1 items-center gap-2 text-sm font-semibold md:flex">
           {navItems.slice(0, 3).map((item) => (
             <Link
               key={item.path}
               href={getLocalePath(locale, item.path)}
-              className="text-muted-foreground transition-colors hover:text-foreground"
+              className="rounded-full px-4 py-2 text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary"
             >
               {item.label}
             </Link>
           ))}
           <div className="group relative">
-            <button className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground">
+            <button className="flex items-center gap-1 rounded-full px-4 py-2 text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary outline-none">
               {t(translations, "nav.habitat")}
-              <ChevronDown className="h-3 w-3" />
+              <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
             </button>
-            <div className="invisible absolute left-0 top-full pt-2 opacity-0 transition-all group-hover:visible group-hover:opacity-100">
-              <div className="min-w-[200px] rounded-md border bg-background p-1 shadow-lg">
+            <div className="invisible absolute left-0 top-full pt-4 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
+              <div className="min-w-[220px] overflow-hidden rounded-3xl border border-border/40 bg-background/95 p-2 shadow-xl backdrop-blur-3xl">
                 {habitatSubItems.map((item) =>
                   item.comingSoon ? (
                     <span
                       key={item.path}
-                      className="flex items-center gap-2 whitespace-nowrap rounded-sm px-3 py-2 text-sm text-muted-foreground/50"
+                      className="flex items-center gap-2 whitespace-nowrap rounded-2xl px-4 py-3 text-sm font-semibold text-muted-foreground/50"
                     >
                       {item.label}
-                      <span className="rounded bg-muted px-1 py-0.5 text-[10px]">
+                      <span className="rounded-full bg-muted/50 px-2 py-0.5 text-[10px] uppercase tracking-wider text-muted-foreground">
                         {t(translations, "nav.comingSoon")}
                       </span>
                     </span>
@@ -80,7 +82,7 @@ export async function Header({ locale }: HeaderProps) {
                     <Link
                       key={item.path}
                       href={getLocalePath(locale, item.path)}
-                      className="block rounded-sm px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+                      className="block rounded-2xl px-4 py-3 text-sm font-semibold text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary"
                     >
                       {item.label}
                     </Link>
@@ -93,7 +95,7 @@ export async function Header({ locale }: HeaderProps) {
             <Link
               key={item.path}
               href={getLocalePath(locale, item.path)}
-              className="text-muted-foreground transition-colors hover:text-foreground"
+              className="rounded-full px-4 py-2 text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary"
             >
               {item.label}
             </Link>
@@ -103,7 +105,7 @@ export async function Header({ locale }: HeaderProps) {
         <div className="flex-1 md:hidden" />
 
         {/* Desktop language switcher */}
-        <div className="hidden md:block">
+        <div className="hidden md:ml-4 md:block">
           <LanguageSwitcher locale={locale} />
         </div>
 

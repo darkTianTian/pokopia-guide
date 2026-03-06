@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Nunito, Nunito_Sans } from "next/font/google"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { GoogleAnalytics } from "@/components/google-analytics"
@@ -13,13 +13,14 @@ import {
 } from "@/i18n/config"
 import { notFound } from "next/navigation"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const nunitoSans = Nunito_Sans({
+  variable: "--font-nunito-sans",
   subsets: ["latin"],
 })
 
@@ -68,8 +69,15 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   return (
     <html lang={LOCALE_LANG[validLocale]}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${nunito.variable} ${nunitoSans.variable} font-sans antialiased`}
       >
+        {/* Soft Ditto-like Global Background Blobs */}
+        <div className="pointer-events-none fixed inset-0 -z-50 overflow-hidden">
+          <div className="absolute -left-[10%] -top-[10%] h-[50vw] w-[50vw] rounded-full bg-primary/15 blur-[120px]" />
+          <div className="absolute -bottom-[10%] -right-[5%] h-[60vw] w-[60vw] rounded-full bg-accent/15 blur-[160px]" />
+          <div className="absolute top-[30%] left-[20%] h-[30vw] w-[30vw] rounded-full bg-secondary/10 blur-[100px]" />
+        </div>
+
         <div className="flex min-h-screen flex-col">
           <Header locale={validLocale} />
           <main className="flex-1">{children}</main>
