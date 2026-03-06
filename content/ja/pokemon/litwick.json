@@ -33,6 +33,11 @@
         "id": 32,
         "name": "お墓にお供えもの",
         "rarity": "common"
+      },
+      {
+        "id": 33,
+        "name": "ブキミなお墓にお供えもの",
+        "rarity": "common"
       }
     ]
   }

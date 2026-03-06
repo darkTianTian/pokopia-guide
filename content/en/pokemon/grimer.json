@@ -7,14 +7,32 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/grimer.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "litter"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "muk"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 186,
+        "name": "沼釣り",
+        "rarity": "common"
+      }
+    ]
   }
 }
