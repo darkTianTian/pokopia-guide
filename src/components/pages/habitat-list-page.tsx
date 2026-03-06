@@ -53,6 +53,11 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
                   />
                 </div>
                 <CardTitle className="text-center text-lg">{habitat.name}</CardTitle>
+                {habitat.materials && (
+                  <p className="text-center text-xs text-muted-foreground">
+                    {habitat.materials}
+                  </p>
+                )}
               </CardHeader>
               <CardContent>
                 <div className="flex items-center justify-center gap-2">

@@ -104,7 +104,8 @@
     "listMetaDescription": "Complete list of all Pokémon Pokopia habitats with available Pokémon encounters.",
     "pokemonCount": "Pokémon",
     "detailDescription": "Pokémon that can be found in this habitat.",
-    "breadcrumbList": "Habitat List"
+    "breadcrumbList": "Habitat List",
+    "materials": "Required Materials"
   },
   "quests": {
     "title": "Quest Guide",

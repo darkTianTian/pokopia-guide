@@ -26,6 +26,7 @@ export interface HabitatEntry {
   name: string
   rarity: "common" | "rare" | "very-rare"
   area?: string
+  materials?: string
 }
 
 export interface PokopiaData {

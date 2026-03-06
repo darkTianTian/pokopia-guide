@@ -10,6 +10,7 @@ import {
 import { TypeBadge } from "./type-badge"
 import type { Pokemon } from "@/lib/types"
 import { getLocalePath, type Locale } from "@/i18n/config"
+import { HabitatLink } from "@/components/habitat/habitat-link"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
 import jaTranslations from "@/i18n/ja.json"
@@ -152,7 +153,11 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
                         ? "border-blue-500"
                         : "border-green-500"
                   return (
-                    <span key={h.id} className="inline-flex shrink-0 flex-col items-center gap-0.5">
+                    <HabitatLink
+                      key={h.id}
+                      href={getLocalePath(locale, `/habitat/list/${h.id}`)}
+                      className="inline-flex shrink-0 flex-col items-center gap-0.5 transition-opacity hover:opacity-80"
+                    >
                       <SafeImage
                         src={`/images/habitats/habitat_${h.id}.png`}
                         alt={h.name}
@@ -163,7 +168,7 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
                       <span className="max-w-[68px] truncate text-[10px] text-muted-foreground">
                         {h.name}
                       </span>
-                    </span>
+                    </HabitatLink>
                   )
                 })}
               </div>

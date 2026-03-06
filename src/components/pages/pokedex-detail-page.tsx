@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { TypeBadge } from "@/components/pokemon/type-badge"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
+import Link from "next/link"
 import { getAllPokemon, getPokemonBySlug } from "@/lib/pokemon"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 
@@ -168,7 +169,11 @@ export async function PokedexDetailPage({
                             ? "border-blue-500"
                             : "border-green-500"
                       return (
-                        <div key={h.id} className="flex flex-col items-center gap-1">
+                        <Link
+                          key={h.id}
+                          href={getLocalePath(locale, `/habitat/list/${h.id}`)}
+                          className="flex flex-col items-center gap-1 transition-opacity hover:opacity-80"
+                        >
                           <SafeImage
                             src={`/images/habitats/habitat_${h.id}.png`}
                             alt={h.name}
@@ -180,7 +185,7 @@ export async function PokedexDetailPage({
                           <Badge variant="secondary" className="text-[10px]">
                             {t(translations, `rarity.${h.rarity}`)}
                           </Badge>
-                        </div>
+                        </Link>
                       )
                     })}
                   </div>
