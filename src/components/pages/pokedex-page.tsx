@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/layout/breadcrumb"
+import { BrowseBySection } from "@/components/pokemon/browse-by-section"
 import { PokemonGrid } from "@/components/pokemon/pokemon-grid"
 import { getAllPokemon } from "@/lib/pokemon"
 import { getTranslations, t, type Locale } from "@/i18n/config"
@@ -30,6 +31,7 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
           {t(translations, "pokedex.totalCount").replace("{{count}}", String(pokemon.length))}
         </p>
       </div>
+      <BrowseBySection locale={locale} />
       <PokemonGrid
         pokemon={pokemon}
         locale={locale}

@@ -1,6 +1,6 @@
 import fs from "fs/promises"
 import path from "path"
-import type { Pokemon } from "./types"
+import type { Pokemon, PokemonType } from "./types"
 import { DEFAULT_LOCALE, type Locale } from "@/i18n/config"
 import _habitatMaterialsJa from "@/../content/habitat-materials.json"
 import _habitatMaterialsEn from "@/../content/habitat-materials-en.json"
@@ -49,6 +49,34 @@ export async function getAllPokemon(
   )
 
   return pokemon.sort((a, b) => a.id - b.id)
+}
+
+export async function getPokemonByType(
+  type: PokemonType,
+  locale: Locale = DEFAULT_LOCALE
+): Promise<Pokemon[]> {
+  const all = await getAllPokemon(locale)
+  return all.filter((p) => p.types.includes(type))
+}
+
+export async function getPokemonBySpecialty(
+  specialty: string,
+  locale: Locale = DEFAULT_LOCALE
+): Promise<Pokemon[]> {
+  const all = await getAllPokemon(locale)
+  return all.filter((p) => p.pokopia?.specialties?.includes(specialty))
+}
+
+export function getAllSpecialties(pokemon: Pokemon[]): string[] {
+  const set = new Set<string>()
+  for (const p of pokemon) {
+    if (p.pokopia?.specialties) {
+      for (const s of p.pokopia.specialties) {
+        set.add(s)
+      }
+    }
+  }
+  return Array.from(set).sort()
 }
 
 export async function getPokemonBySlug(
