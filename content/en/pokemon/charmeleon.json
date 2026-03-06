@@ -18,8 +18,7 @@
     ],
     "weather": [
       "sunny",
-      "cloudy",
-      "rainy"
+      "cloudy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "charmander",
