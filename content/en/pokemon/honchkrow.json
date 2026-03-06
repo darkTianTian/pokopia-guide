@@ -18,11 +18,23 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "murkrow",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 102,
+        "name": "Elevated red tall grass",
+        "rarity": "rare"
+      },
+      {
+        "id": 125,
+        "name": "Chirping recital",
+        "rarity": "rare"
+      }
+    ]
   }
 }

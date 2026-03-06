@@ -32,6 +32,11 @@
         "id": 144,
         "name": "Hydrated fluffy flower bed",
         "rarity": "common"
+      },
+      {
+        "id": 148,
+        "name": "Simple bathroom",
+        "rarity": "common"
       }
     ]
   }

@@ -33,6 +33,11 @@
         "id": 107,
         "name": "花田樹樁舞台",
         "rarity": "common"
+      },
+      {
+        "id": 126,
+        "name": "リサイタルステージ",
+        "rarity": "common"
       }
     ]
   }
