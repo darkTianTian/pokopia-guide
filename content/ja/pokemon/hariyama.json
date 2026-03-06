@@ -20,15 +20,16 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "makuhita",
     "evolvesTo": null,
     "habitats": [
       {
-        "id": 52,
-        "name": "高台の黄色の草むら",
+        "id": 51,
+        "name": "木かげの黄色の草むら",
         "rarity": "rare"
       }
     ]

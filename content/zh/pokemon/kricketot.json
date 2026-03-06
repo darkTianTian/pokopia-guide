@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -34,7 +35,7 @@
       },
       {
         "id": 128,
-        "name": "Habitat 128",
+        "name": "音楽と読書",
         "rarity": "common"
       }
     ]

@@ -8,12 +8,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/armarouge.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "burn",
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "charcadet",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 192,
+        "name": "忠誠の騎士の祭壇",
+        "rarity": "common"
+      }
+    ]
   }
 }

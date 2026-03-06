@@ -20,12 +20,18 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "wingull",
     "evolvesTo": null,
     "habitats": [
+      {
+        "id": 52,
+        "name": "高台黃色草叢",
+        "rarity": "rare"
+      },
       {
         "id": 58,
         "name": "風之花田",

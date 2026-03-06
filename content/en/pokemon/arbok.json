@@ -7,12 +7,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/arbok.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "ekans",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 106,
+        "name": "Hydrated Graceful Flower Bed",
+        "rarity": "rare"
+      }
+    ]
   }
 }

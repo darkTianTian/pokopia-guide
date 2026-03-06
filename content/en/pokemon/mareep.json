@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -28,6 +29,11 @@
       "flaaffy"
     ],
     "habitats": [
+      {
+        "id": 55,
+        "name": "Overgrowth vending machie",
+        "rarity": "rare"
+      },
       {
         "id": 77,
         "name": "Knitting station",

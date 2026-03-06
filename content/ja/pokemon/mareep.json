@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -28,6 +29,11 @@
       "flaaffy"
     ],
     "habitats": [
+      {
+        "id": 55,
+        "name": "草むらの自販機",
+        "rarity": "rare"
+      },
       {
         "id": 77,
         "name": "毛糸で編み物",

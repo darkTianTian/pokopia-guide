@@ -12,13 +12,13 @@
       "grow"
     ],
     "timeOfDay": [
-      "dusk",
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "dreepy",
@@ -29,6 +30,11 @@
       "dragapult"
     ],
     "habitats": [
+      {
+        "id": 138,
+        "name": "木かげのピンクの草むら",
+        "rarity": "rare"
+      },
       {
         "id": 167,
         "name": "オフィスのバックヤード",

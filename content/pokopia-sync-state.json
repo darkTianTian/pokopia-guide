@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T02:45:08.466Z",
+  "lastSync": "2026-03-06T04:49:22.089Z",
   "newHabitats": [
     {
       "id": 28,
@@ -43,7 +43,7 @@
     },
     {
       "id": 55,
-      "name": "Overgrowth vending machie",
+      "name": "草むらの自販機",
       "missingIn": [
         "ja",
         "zh"
@@ -83,7 +83,7 @@
     },
     {
       "id": 101,
-      "name": "Hydrated red tall grass",
+      "name": "うるおう赤い草むら",
       "missingIn": [
         "ja",
         "zh"
@@ -179,7 +179,7 @@
     },
     {
       "id": 165,
-      "name": "プレイランド",
+      "name": "Playland",
       "missingIn": [
         "ja",
         "zh"
@@ -251,7 +251,7 @@
     },
     {
       "id": 54,
-      "name": "Marshy tall grass",
+      "name": "沼地の草むら",
       "missingIn": [
         "ja",
         "zh"
@@ -323,7 +323,7 @@
     },
     {
       "id": 196,
-      "name": "Armor Fossil display",
+      "name": "たてのカセキ展示台",
       "missingIn": [
         "ja",
         "zh"
@@ -339,7 +339,7 @@
     },
     {
       "id": 200,
-      "name": "Sail Fossil display",
+      "name": "ヒレのカセキ展示台",
       "missingIn": [
         "ja",
         "zh"
@@ -347,7 +347,7 @@
     },
     {
       "id": 201,
-      "name": "Tundra fossil dispolay",
+      "name": "ツンドラのカセキ展示台",
       "missingIn": [
         "ja",
         "zh"
@@ -355,7 +355,7 @@
     },
     {
       "id": 38,
-      "name": "Factory Storage",
+      "name": "工場の物置",
       "missingIn": [
         "ja",
         "zh"
@@ -387,7 +387,7 @@
     },
     {
       "id": 151,
-      "name": "みなぎるサイコパワー",
+      "name": "Surging psychic power",
       "missingIn": [
         "ja",
         "zh"
@@ -440,13 +440,37 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 192,
+      "name": "忠誠の騎士の祭壇",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 191,
+      "name": "怨念の騎士の祭壇",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 193,
+      "name": "ツバサのカセキ展示台",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
     "total": 290,
     "serebiiCount": 287,
-    "gameWithCount": 176,
+    "gameWithCount": 186,
     "game8Count": 170,
     "updated": 287,
     "skipped": 0,

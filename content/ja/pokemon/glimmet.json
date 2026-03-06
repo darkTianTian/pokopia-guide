@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -31,6 +32,11 @@
       {
         "id": 118,
         "name": "ブキミな白い岩",
+        "rarity": "common"
+      },
+      {
+        "id": 119,
+        "name": "Habitat 119",
         "rarity": "common"
       }
     ]
