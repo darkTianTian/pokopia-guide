@@ -29,6 +29,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 108,
+        "name": "畑しごとはたいへん",
+        "rarity": "rare"
+      },
+      {
         "id": 110,
         "name": "苔蘚遍布",
         "rarity": "very-rare"

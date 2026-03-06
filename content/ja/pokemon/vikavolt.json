@@ -8,12 +8,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/vikavolt.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "generate",
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "charjabug",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 9,
+        "name": "木かげの花畑",
+        "rarity": "rare"
+      }
+    ]
   }
 }

@@ -8,7 +8,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/articuno.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "fly"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
