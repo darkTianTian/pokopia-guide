@@ -8,9 +8,18 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/honchkrow.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "fly",
+      "trade"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "murkrow",
     "evolvesTo": null,
