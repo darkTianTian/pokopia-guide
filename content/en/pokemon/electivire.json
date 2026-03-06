@@ -25,6 +25,17 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "electabuzz",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 72,
+        "name": "Light-up stage",
+        "rarity": "rare"
+      },
+      {
+        "id": 84,
+        "name": "Vending machine set",
+        "rarity": "rare"
+      }
+    ]
   }
 }

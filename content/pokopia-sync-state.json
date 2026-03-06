@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T21:38:23.082Z",
+  "lastSync": "2026-03-06T22:38:27.281Z",
   "newHabitats": [
     {
       "id": 28,
@@ -684,6 +684,14 @@
     {
       "id": 198,
       "name": "アゴのカセキ展示台",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Light-up stage",
       "missingIn": [
         "ja",
         "zh"
