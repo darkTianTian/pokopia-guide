@@ -20,11 +20,18 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "trubbish",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 63,
+        "name": "垃圾集中處",
+        "rarity": "rare"
+      }
+    ]
   }
 }

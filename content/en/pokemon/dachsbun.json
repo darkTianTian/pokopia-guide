@@ -19,15 +19,16 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "fidough",
     "evolvesTo": null,
     "habitats": [
       {
-        "id": 104,
-        "name": "Graceful flower bed",
+        "id": 121,
+        "name": "パクパクパン工房",
         "rarity": "rare"
       }
     ]

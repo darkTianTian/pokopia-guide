@@ -34,6 +34,11 @@
         "id": 67,
         "name": "飢腸轆轆餐廳",
         "rarity": "common"
+      },
+      {
+        "id": 70,
+        "name": "カフェスペース",
+        "rarity": "common"
       }
     ]
   }

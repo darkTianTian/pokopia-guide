@@ -19,15 +19,16 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "fidough",
     "evolvesTo": null,
     "habitats": [
       {
-        "id": 104,
-        "name": "ゆうがな花畑",
+        "id": 121,
+        "name": "パクパクパン工房",
         "rarity": "rare"
       }
     ]

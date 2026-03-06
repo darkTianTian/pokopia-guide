@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T11:37:50.094Z",
+  "lastSync": "2026-03-06T13:15:54.725Z",
   "newHabitats": [
     {
       "id": 28,
@@ -363,7 +363,7 @@
     },
     {
       "id": 117,
-      "name": "Clink-clang iron construction",
+      "name": "ガタゴト鉄骨工事",
       "missingIn": [
         "ja",
         "zh"
@@ -560,13 +560,21 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 70,
+      "name": "カフェスペース",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
     "total": 292,
     "serebiiCount": 292,
-    "gameWithCount": 206,
+    "gameWithCount": 211,
     "game8Count": 0,
     "updated": 292,
     "skipped": 0,

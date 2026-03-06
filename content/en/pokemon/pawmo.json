@@ -34,6 +34,11 @@
         "id": 67,
         "name": "Tantalizing restaurant",
         "rarity": "common"
+      },
+      {
+        "id": 70,
+        "name": "カフェスペース",
+        "rarity": "common"
       }
     ]
   }
