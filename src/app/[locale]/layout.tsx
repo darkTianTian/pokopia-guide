@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { GoogleAnalytics } from "@/components/google-analytics"
 import { ScrollToTop } from "@/components/layout/scroll-to-top"
+import { ThemeProvider } from "@/components/theme-provider"
 import {
   LOCALE_LANG,
   getTranslations,
@@ -67,24 +68,31 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   const validLocale: Locale = locale
 
   return (
-    <html lang={LOCALE_LANG[validLocale]}>
+    <html lang={LOCALE_LANG[validLocale]} suppressHydrationWarning>
       <body
         className={`${nunito.variable} ${nunitoSans.variable} font-sans antialiased`}
       >
-        {/* Soft Ditto-like Global Background Blobs */}
-        <div className="pointer-events-none fixed inset-0 -z-50 overflow-hidden">
-          <div className="absolute -left-[10%] -top-[10%] h-[50vw] w-[50vw] rounded-full bg-primary/15 blur-[120px]" />
-          <div className="absolute -bottom-[10%] -right-[5%] h-[60vw] w-[60vw] rounded-full bg-accent/15 blur-[160px]" />
-          <div className="absolute top-[30%] left-[20%] h-[30vw] w-[30vw] rounded-full bg-secondary/10 blur-[100px]" />
-        </div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {/* Soft Ditto-like Global Background Blobs */}
+          <div className="pointer-events-none fixed inset-0 -z-50 overflow-hidden">
+            <div className="absolute -left-[10%] -top-[10%] h-[50vw] w-[50vw] rounded-full bg-primary/15 blur-[120px]" />
+            <div className="absolute -bottom-[10%] -right-[5%] h-[60vw] w-[60vw] rounded-full bg-accent/15 blur-[160px]" />
+            <div className="absolute top-[30%] left-[20%] h-[30vw] w-[30vw] rounded-full bg-secondary/10 blur-[100px]" />
+          </div>
 
-        <div className="flex min-h-screen flex-col">
-          <Header locale={validLocale} />
-          <main className="flex-1">{children}</main>
-          <Footer locale={validLocale} />
-        </div>
-        <ScrollToTop />
-        <GoogleAnalytics />
+          <div className="flex min-h-screen flex-col">
+            <Header locale={validLocale} />
+            <main className="flex-1">{children}</main>
+            <Footer locale={validLocale} />
+          </div>
+          <ScrollToTop />
+          <GoogleAnalytics />
+        </ThemeProvider>
       </body>
     </html>
   )
