@@ -8,14 +8,29 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/murkrow.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "trade",
+      "fly"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "honchkrow"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 102,
+        "name": "Elevated red tall grass",
+        "rarity": "common"
+      }
+    ]
   }
 }

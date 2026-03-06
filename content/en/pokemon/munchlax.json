@@ -7,14 +7,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/munchlax.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "bulldoze"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "snorlax"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 47,
+        "name": "木かげでぐっすりカビゴン",
+        "rarity": "common"
+      }
+    ]
   }
 }

@@ -1,15 +1,13 @@
 {
-  "id": 292,
-  "slug": "suicune",
-  "name": "スイクン",
+  "id": 291,
+  "slug": "entei",
+  "name": "Entei",
   "types": [
-    "water"
+    "fire"
   ],
-  "image": "https://assets.pokopiaguide.com/pokemon/suicune.png",
+  "image": "https://assets.pokopiaguide.com/pokemon/entei.png",
   "pokopia": {
-    "specialties": [
-      "water"
-    ],
+    "specialties": [],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

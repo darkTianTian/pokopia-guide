@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T07:04:29.625Z",
+  "lastSync": "2026-03-06T08:51:38.909Z",
   "newHabitats": [
     {
       "id": 28,
@@ -291,7 +291,7 @@
     },
     {
       "id": 133,
-      "name": "Chef's kitchen",
+      "name": "シェフの調理場",
       "missingIn": [
         "ja",
         "zh"
@@ -480,17 +480,49 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 181,
+      "name": "Plush central",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "木かげでぐっすりカビゴン",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 148,
+      "name": "Simple bathroom",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 174,
+      "name": "Picturesque photo cutoutboard",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "total": 290,
-    "serebiiCount": 287,
-    "gameWithCount": 187,
-    "game8Count": 172,
-    "updated": 287,
+    "total": 292,
+    "serebiiCount": 292,
+    "gameWithCount": 193,
+    "game8Count": 0,
+    "updated": 292,
     "skipped": 0,
-    "newPokemon": 0,
-    "errors": 3
+    "newPokemon": 5,
+    "errors": 0
   }
 }

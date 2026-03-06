@@ -1,15 +1,14 @@
 {
-  "id": 292,
-  "slug": "suicune",
-  "name": "スイクン",
+  "id": 295,
+  "slug": "zapdos",
+  "name": "閃電鳥",
   "types": [
-    "water"
+    "electric",
+    "flying"
   ],
-  "image": "https://assets.pokopiaguide.com/pokemon/suicune.png",
+  "image": "https://assets.pokopiaguide.com/pokemon/zapdos.png",
   "pokopia": {
-    "specialties": [
-      "water"
-    ],
+    "specialties": [],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
