@@ -12,10 +12,10 @@ jobs:
   update-data:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout develop branch
+      - name: Checkout main branch
         uses: actions/checkout@v4
         with:
-          ref: develop
+          ref: main
           fetch-depth: 0
 
       - name: Setup pnpm
@@ -51,11 +51,13 @@ jobs:
       - name: Commit and deploy
         if: steps.changes.outputs.has_changes == 'true'
         run: |
+          BRANCH="auto-update/pokopia-data-$(date +%Y%m%d-%H%M%S)"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
           git add content/ public/images/habitats/
           git commit -m "chore: auto-update pokopia data"
-          git push origin develop
           git checkout main
-          git merge develop
+          git merge "$BRANCH" --no-ff -m "chore: auto-update pokopia data"
           git push origin main
+          git branch -d "$BRANCH"
