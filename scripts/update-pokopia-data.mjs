@@ -94,6 +94,9 @@ const GAMEWITH_TIME_MAP = { "朝": "dawn", "昼": "day", "夕": "dusk", "夜": "
 
 const GAMEWITH_WEATHER_MAP = { "晴": "sunny", "曇": "cloudy", "雨": "rainy", "雪": "snowy" }
 
+const ALL_TIMES = ["dawn", "day", "dusk", "night"]
+const ALL_WEATHERS = ["sunny", "cloudy", "rainy", "snowy"]
+
 const GAMEWITH_RARITY_MAP = { 0: "common", 1: "common", 2: "rare", 3: "very-rare" }
 
 // Known valid specialties in the game
@@ -737,27 +740,34 @@ async function scrapeGameWith(jaNameToSlug) {
 
       habitats.push({ id: hId, name: hName, rarity })
 
-      // Extract time of day from condition
+      // Extract time of day from condition (no time field = all times)
       if (cond.time) {
-        const times = String(cond.time).split("/")
+        const times = String(cond.time).split(",")
         for (const t of times) {
           const mapped = GAMEWITH_TIME_MAP[t.trim()]
           if (mapped) timeOfDaySet.add(mapped)
         }
+      } else {
+        for (const t of ALL_TIMES) timeOfDaySet.add(t)
       }
 
-      // Extract weather from condition
+      // Extract weather from condition (no wx field = all weathers)
       if (cond.wx) {
-        const weathers = String(cond.wx).split("/")
+        const weathers = String(cond.wx).split(",")
         for (const w of weathers) {
           const mapped = GAMEWITH_WEATHER_MAP[w.trim()]
           if (mapped) weatherSet.add(mapped)
         }
+      } else {
+        for (const w of ALL_WEATHERS) weatherSet.add(w)
       }
     }
 
     // Parse dex number from 'no' field (e.g., "001" → 1)
     const dexNumber = poke.no ? parseInt(poke.no, 10) : null
+
+    // Only set time/weather if pokemon has habitats (non-habitat pokemon have no conditions)
+    const hasConditions = (poke.conditions || []).length > 0
 
     results.set(slug, {
       name: jaName,
@@ -766,8 +776,8 @@ async function scrapeGameWith(jaNameToSlug) {
       types,
       specialties,
       habitats,
-      timeOfDay: timeOfDaySet.size > 0 ? [...timeOfDaySet] : null,
-      weather: weatherSet.size > 0 ? [...weatherSet] : null,
+      timeOfDay: hasConditions ? [...timeOfDaySet] : null,
+      weather: hasConditions ? [...weatherSet] : null,
     })
   }
 
@@ -892,28 +902,28 @@ function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiList
     habitats = mergeHabitats(habitats, serebiiDetail.habitats)
   }
 
-  // Time of day: prefer existing > GameWith > serebii detail > game8
-  let timeOfDay = existing.timeOfDay !== undefined ? existing.timeOfDay : null
-  if (timeOfDay === null || timeOfDay === undefined) {
-    if (gameWithData?.timeOfDay) {
-      timeOfDay = gameWithData.timeOfDay
-    } else if (serebiiDetail?.timeOfDay) {
-      timeOfDay = serebiiDetail.timeOfDay
-    } else if (game8Data?.timeOfDay) {
-      timeOfDay = game8Data.timeOfDay
-    }
+  // Time of day: GameWith is authoritative; fall back to Serebii > Game8
+  let timeOfDay = null
+  if (gameWithData?.timeOfDay) {
+    timeOfDay = gameWithData.timeOfDay
+  } else if (serebiiDetail?.timeOfDay) {
+    timeOfDay = serebiiDetail.timeOfDay
+  } else if (game8Data?.timeOfDay) {
+    timeOfDay = game8Data.timeOfDay
+  } else if (existing.timeOfDay) {
+    timeOfDay = existing.timeOfDay
   }
 
-  // Weather: prefer existing > GameWith > serebii detail > game8
-  let weather = existing.weather !== undefined ? existing.weather : null
-  if (weather === null || weather === undefined) {
-    if (gameWithData?.weather) {
-      weather = gameWithData.weather
-    } else if (serebiiDetail?.weather) {
-      weather = serebiiDetail.weather
-    } else if (game8Data?.weather) {
-      weather = game8Data.weather
-    }
+  // Weather: GameWith is authoritative; fall back to Serebii > Game8
+  let weather = null
+  if (gameWithData?.weather) {
+    weather = gameWithData.weather
+  } else if (serebiiDetail?.weather) {
+    weather = serebiiDetail.weather
+  } else if (game8Data?.weather) {
+    weather = game8Data.weather
+  } else if (existing.weather) {
+    weather = existing.weather
   }
 
   // obtainMethod and evolution: keep existing if present
