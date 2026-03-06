@@ -7,12 +7,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/bellossom.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "grow",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "gloom",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 34,
+        "name": "ラッキー休けい所",
+        "rarity": "rare"
+      }
+    ]
   }
 }
