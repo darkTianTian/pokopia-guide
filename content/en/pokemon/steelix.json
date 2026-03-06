@@ -8,7 +8,10 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/steelix.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

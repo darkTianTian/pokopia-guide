@@ -1,15 +1,14 @@
 {
-  "id": 70,
-  "slug": "chandelure",
-  "name": "Chandelure",
+  "id": 235,
+  "slug": "plusle",
+  "name": "プラスル",
   "types": [
-    "ghost",
-    "fire"
+    "electric"
   ],
-  "image": "https://assets.pokopiaguide.com/pokemon/chandelure.png",
+  "image": "https://assets.pokopiaguide.com/pokemon/plusle.png",
   "pokopia": {
     "specialties": [
-      "burn"
+      "generate"
     ],
     "timeOfDay": [
       "dawn",
@@ -20,16 +19,15 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
-    "evolvesFrom": "lampent",
+    "evolvesFrom": null,
     "evolvesTo": null,
     "habitats": [
       {
-        "id": 33,
-        "name": "ブキミなお墓にお供えもの",
+        "id": 174,
+        "name": "Picturesque photo cutoutboard",
         "rarity": "rare"
       }
     ]

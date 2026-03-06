@@ -19,16 +19,17 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "munchlax",
     "evolvesTo": null,
     "habitats": [
       {
-        "id": 93,
-        "name": "Gourmet's altar",
-        "rarity": "common"
+        "id": 47,
+        "name": "木かげでぐっすりカビゴン",
+        "rarity": "rare"
       }
     ]
   }

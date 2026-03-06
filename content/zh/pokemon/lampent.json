@@ -8,14 +8,32 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/lampent.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "litwick",
     "evolvesTo": [
       "chandelure"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 33,
+        "name": "ブキミなお墓にお供えもの",
+        "rarity": "common"
+      }
+    ]
   }
 }

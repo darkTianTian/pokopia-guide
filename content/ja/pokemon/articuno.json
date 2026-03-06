@@ -1,15 +1,14 @@
 {
-  "id": 292,
-  "slug": "suicune",
-  "name": "スイクン",
+  "id": 294,
+  "slug": "articuno",
+  "name": "フリーザー",
   "types": [
-    "water"
+    "ice",
+    "flying"
   ],
-  "image": "https://assets.pokopiaguide.com/pokemon/suicune.png",
+  "image": "https://assets.pokopiaguide.com/pokemon/articuno.png",
   "pokopia": {
-    "specialties": [
-      "water"
-    ],
+    "specialties": [],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

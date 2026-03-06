@@ -1,12 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
 import { SafeImage } from "@/components/ui/safe-image"
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 import { TypeBadge } from "./type-badge"
 import type { Pokemon } from "@/lib/types"
 import { getLocalePath, type Locale } from "@/i18n/config"
@@ -19,6 +13,27 @@ const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
   en: enTranslations,
   zh: zhTranslations,
   ja: jaTranslations,
+}
+
+const TYPE_GRADIENTS: Record<string, string> = {
+  normal: "from-gray-400 to-gray-200",
+  fire: "from-orange-500 to-red-400",
+  water: "from-blue-500 to-cyan-300",
+  electric: "from-yellow-400 to-amber-300",
+  grass: "from-green-500 to-emerald-300",
+  ice: "from-cyan-300 to-blue-200",
+  fighting: "from-red-600 to-orange-500",
+  poison: "from-purple-500 to-fuchsia-400",
+  ground: "from-amber-600 to-yellow-500",
+  flying: "from-indigo-400 to-blue-300",
+  psychic: "from-pink-500 to-rose-400",
+  bug: "from-lime-500 to-green-400",
+  rock: "from-stone-500 to-amber-700",
+  ghost: "from-violet-600 to-purple-500",
+  dragon: "from-indigo-600 to-blue-500",
+  dark: "from-slate-700 to-neutral-600",
+  steel: "from-slate-400 to-zinc-400",
+  fairy: "from-pink-400 to-rose-300",
 }
 
 interface PokemonCardProps {
@@ -36,150 +51,180 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
   const hasWeather = pokopia?.weather && pokopia.weather.length > 0
   const hasHabitats = pokopia?.habitats && pokopia.habitats.length > 0
 
+  const primaryType = pokemon.types[0] || "normal"
+  const gradientClass = TYPE_GRADIENTS[primaryType] || TYPE_GRADIENTS.normal
+
   return (
-    <Link href={getLocalePath(locale, `/pokedex/${pokemon.slug}`)}>
-      <Card className="flex h-full flex-col transition-shadow hover:shadow-lg">
-        <CardHeader className="flex-1 pb-2">
-          <div className="flex items-center justify-between">
-            <CardTitle className="text-lg">{pokemon.name}</CardTitle>
-            <span className="rounded-full bg-muted px-2 py-0.5 text-xs font-medium tabular-nums text-muted-foreground">
-              No.{String(pokemon.id).padStart(3, "0")}
+    <Link href={getLocalePath(locale, `/pokedex/${pokemon.slug}`)} className="group block h-full outline-none">
+      <article className="relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:border-border/80 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5">
+
+        {/* Glowing Background Blob */}
+        <div className="absolute left-1/2 top-28 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40 blur-[50px] transition-all duration-500 group-hover:scale-125 group-hover:opacity-70 dark:opacity-30 dark:group-hover:opacity-50">
+          <div className={`h-full w-full bg-gradient-to-br ${gradientClass}`} />
+        </div>
+
+        <div className="flex flex-1 flex-col p-5">
+          {/* Header: Name and ID */}
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className="text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+              {pokemon.name}
+            </h2>
+            <span className="flex h-7 items-center justify-center rounded-full bg-muted/50 px-3 font-mono text-xs font-semibold tracking-wider text-muted-foreground backdrop-blur-md">
+              #{String(pokemon.id).padStart(3, "0")}
             </span>
           </div>
-          <div className="flex h-[120px] items-center justify-center">
-            <SafeImage
-              src={pokemon.image}
-              alt={pokemon.name}
-              width={120}
-              height={120}
-              className="object-contain"
-            />
+
+          {/* Image */}
+          <div className="relative mb-6 flex h-[140px] items-center justify-center">
+            <div className="relative z-10 flex h-full w-full items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110">
+              <SafeImage
+                src={pokemon.image}
+                alt={pokemon.name}
+                width={140}
+                height={140}
+                className="object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_10px_10px_rgba(0,0,0,0.4)]"
+              />
+            </div>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-1.5">
-            {pokemon.types.map((type) => (
-              <TypeBadge key={type} type={type} locale={locale} />
-            ))}
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-1.5">
-            {hasSpecialties ? (
-              pokopia.specialties.map((s) => (
-                <span
-                  key={s}
-                  className="inline-flex items-center gap-1 rounded-full border bg-muted/50 px-2 py-1 text-sm"
-                >
-                  <SafeImage
-                    src={`/images/specialties/${s.replace(/ /g, "-")}.png`}
-                    alt={(tr.specialties as Record<string, string>)[s] ?? s}
-                    width={18}
-                    height={18}
-                    className="shrink-0"
+
+          {/* Types & Specialties */}
+          <div className="mb-5 flex flex-col items-center gap-3">
+            <div className="flex flex-wrap items-center justify-center gap-1.5">
+              {pokemon.types.map((type) => (
+                <TypeBadge key={type} type={type} locale={locale} />
+              ))}
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-1.5">
+              {hasSpecialties ? (
+                pokopia.specialties.map((s) => (
+                  <span
+                    key={s}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-border/50 bg-background/50 px-2.5 py-1 text-xs font-medium shadow-sm backdrop-blur-md transition-colors group-hover:border-border/80"
+                  >
+                    <SafeImage
+                      src={`/images/specialties/${s.replace(/ /g, "-")}.png`}
+                      alt={(tr.specialties as Record<string, string>)[s] ?? s}
+                      width={16}
+                      height={16}
+                      className="shrink-0 drop-shadow-sm"
+                    />
+                    {(tr.specialties as Record<string, string>)[s] ?? s}
+                  </span>
+                ))
+              ) : (
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-border/50 bg-background/50 px-2.5 py-1 text-xs font-medium text-muted-foreground shadow-sm backdrop-blur-md">
+                  <Image
+                    src="/images/unknown.svg"
+                    alt="?"
+                    width={16}
+                    height={16}
+                    className="shrink-0 opacity-60"
                   />
-                  {(tr.specialties as Record<string, string>)[s] ?? s}
+                  {tr.pokedex.specialty}
                 </span>
-              ))
-            ) : (
-              <span className="inline-flex items-center gap-1 rounded-full border bg-muted/50 px-2 py-1 text-sm text-muted-foreground">
-                <Image
-                  src="/images/unknown.svg"
-                  alt="?"
-                  width={18}
-                  height={18}
-                  className="shrink-0"
-                />
-                {tr.pokedex.specialty}
-              </span>
-            )}
-          </div>
-        </CardHeader>
-        {!compact && <CardContent className="pt-0">
-          {/* Time of Day */}
-          <div className="mb-1.5 flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5">
-            <span className="w-[72px] shrink-0 text-[11px] font-semibold text-muted-foreground">
-              {tr.pokedex.timeOfDay}
-            </span>
-            <div className="flex gap-1">
-              {hasTime ? (
-                pokopia.timeOfDay!.map((tod) => (
-                  <SafeImage
-                    key={tod}
-                    src={`/images/time/${tod}.svg`}
-                    alt={(tr.timeOfDay as Record<string, string>)[tod] ?? tod}
-                    title={(tr.timeOfDay as Record<string, string>)[tod] ?? tod}
-                    width={20}
-                    height={20}
-                  />
-                ))
-              ) : (
-                <Image src="/images/unknown.svg" alt="?" width={20} height={20} className="rounded-full" />
               )}
             </div>
           </div>
 
-          {/* Weather */}
-          <div className="mb-2 flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5">
-            <span className="w-[72px] shrink-0 text-[11px] font-semibold text-muted-foreground">
-              {tr.pokedex.weatherLabel}
-            </span>
-            <div className="flex gap-1">
-              {hasWeather ? (
-                pokopia.weather!.map((w) => (
-                  <SafeImage
-                    key={w}
-                    src={`/images/weather/${w}.svg`}
-                    alt={(tr.weather as Record<string, string>)[w] ?? w}
-                    title={(tr.weather as Record<string, string>)[w] ?? w}
-                    width={20}
-                    height={20}
-                  />
-                ))
-              ) : (
-                <Image src="/images/unknown.svg" alt="?" width={20} height={20} className="rounded-full" />
-              )}
-            </div>
-          </div>
-
-          {/* Habitats */}
-          <div className="flex min-h-[92px] items-center gap-2.5 rounded-lg border p-2">
-            <p className="w-[72px] shrink-0 text-[11px] font-semibold leading-tight text-muted-foreground">
-              {tr.pokedex.habitatLabel}
-            </p>
-            {hasHabitats ? (
-              <div className="flex gap-2 overflow-x-auto">
-                {pokopia.habitats!.map((h) => {
-                  const borderColor =
-                    h.rarity === "very-rare"
-                      ? "border-purple-500"
-                      : h.rarity === "rare"
-                        ? "border-blue-500"
-                        : "border-green-500"
-                  return (
-                    <HabitatLink
-                      key={h.id}
-                      href={getLocalePath(locale, `/habitat/list/${h.id}`)}
-                      className="inline-flex shrink-0 flex-col items-center gap-0.5 transition-opacity hover:opacity-80"
-                    >
+          {!compact && (
+            <div className="mt-auto flex flex-col gap-2 rounded-2xl bg-muted/30 p-3 ring-1 ring-inset ring-border/50 transition-colors group-hover:bg-muted/50">
+              {/* Time of Day */}
+              <div className="flex items-center justify-between gap-3">
+                <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground/80">
+                  {tr.pokedex.timeOfDay}
+                </span>
+                <div className="flex gap-1 rounded-full bg-background/50 p-1 shadow-sm ring-1 ring-border/50">
+                  {hasTime ? (
+                    pokopia.timeOfDay!.map((tod) => (
                       <SafeImage
-                        src={`/images/habitats/habitat_${h.id}.png`}
-                        alt={h.name}
-                        width={64}
-                        height={64}
-                        className={`rounded-md border-2 ${borderColor}`}
+                        key={tod}
+                        src={`/images/time/${tod}.svg`}
+                        alt={(tr.timeOfDay as Record<string, string>)[tod] ?? tod}
+                        title={(tr.timeOfDay as Record<string, string>)[tod] ?? tod}
+                        width={18}
+                        height={18}
+                        className="transition-transform hover:scale-110"
                       />
-                      <span className="max-w-[68px] truncate text-[10px] text-muted-foreground">
-                        {h.name}
-                      </span>
-                    </HabitatLink>
-                  )
-                })}
+                    ))
+                  ) : (
+                    <Image src="/images/unknown.svg" alt="?" width={18} height={18} className="opacity-40" />
+                  )}
+                </div>
               </div>
-            ) : (
-              <div className="flex gap-2">
-                <Image src="/images/unknown-habitat.svg" alt="?" width={64} height={64} className="rounded-md" />
+
+              {/* Weather */}
+              <div className="flex items-center justify-between gap-3">
+                <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground/80">
+                  {tr.pokedex.weatherLabel}
+                </span>
+                <div className="flex gap-1 rounded-full bg-background/50 p-1 shadow-sm ring-1 ring-border/50">
+                  {hasWeather ? (
+                    pokopia.weather!.map((w) => (
+                      <SafeImage
+                        key={w}
+                        src={`/images/weather/${w}.svg`}
+                        alt={(tr.weather as Record<string, string>)[w] ?? w}
+                        title={(tr.weather as Record<string, string>)[w] ?? w}
+                        width={18}
+                        height={18}
+                        className="transition-transform hover:scale-110"
+                      />
+                    ))
+                  ) : (
+                    <Image src="/images/unknown.svg" alt="?" width={18} height={18} className="opacity-40" />
+                  )}
+                </div>
               </div>
-            )}
-          </div>
-        </CardContent>}
-      </Card>
+
+              {/* Habitats */}
+              <div className="mt-1 flex flex-col gap-2 border-t border-border/50 pt-3">
+                <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground/80">
+                  {tr.pokedex.habitatLabel}
+                </span>
+                <div className="flex gap-2 overflow-x-auto pb-1">
+                  {hasHabitats ? (
+                    pokopia.habitats!.map((h) => {
+                      const ringColor =
+                        h.rarity === "very-rare"
+                          ? "ring-purple-500/50"
+                          : h.rarity === "rare"
+                            ? "ring-blue-500/50"
+                            : "ring-emerald-500/50"
+                      return (
+                        <HabitatLink
+                          key={h.id}
+                          href={getLocalePath(locale, `/habitat/list/${h.id}`)}
+                          className="group/habitat relative flex shrink-0 flex-col items-center gap-1.5 rounded-xl bg-background/60 p-1.5 shadow-sm ring-1 ring-inset ring-border/50 transition-all hover:bg-background hover:ring-2 hover:ring-primary/50"
+                        >
+                          <div className={`overflow-hidden rounded-lg ring-2 ${ringColor}`}>
+                            <SafeImage
+                              src={`/images/habitats/habitat_${h.id}.png`}
+                              alt={h.name}
+                              width={48}
+                              height={48}
+                              className="transition-transform duration-300 group-hover/habitat:scale-110"
+                            />
+                          </div>
+                          <span className="max-w-[56px] truncate text-center text-[9px] font-medium text-muted-foreground group-hover/habitat:text-foreground">
+                            {h.name}
+                          </span>
+                        </HabitatLink>
+                      )
+                    })
+                  ) : (
+                    <div className="flex gap-2">
+                      <div className="rounded-xl bg-background/60 p-1.5 ring-1 ring-border/50">
+                        <Image src="/images/unknown-habitat.svg" alt="?" width={48} height={48} className="rounded-lg opacity-40" />
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </article>
     </Link>
   )
 }

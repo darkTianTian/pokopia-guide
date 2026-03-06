@@ -8,12 +8,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/chandelure.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "burn"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "lampent",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 33,
+        "name": "ブキミなお墓にお供えもの",
+        "rarity": "rare"
+      }
+    ]
   }
 }
