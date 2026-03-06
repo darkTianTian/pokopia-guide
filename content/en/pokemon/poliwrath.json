@@ -12,11 +12,26 @@
       "water",
       "build"
     ],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "poliwhirl",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 156,
+        "name": "Sewer hole inspection",
+        "rarity": "common"
+      }
+    ]
   }
 }

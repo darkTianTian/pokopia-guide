@@ -7,12 +7,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/weezing.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "recycle"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "koffing",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 63,
+        "name": "垃圾集中處",
+        "rarity": "rare"
+      }
+    ]
   }
 }
