@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T22:38:27.281Z",
+  "lastSync": "2026-03-06T23:36:02.747Z",
   "newHabitats": [
     {
       "id": 28,
@@ -696,17 +696,25 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 94,
+      "name": "Pikachu space",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "total": 304,
-    "serebiiCount": 292,
+    "total": 305,
+    "serebiiCount": 293,
     "gameWithCount": 234,
     "game8Count": 284,
-    "updated": 292,
+    "updated": 293,
     "skipped": 0,
-    "newPokemon": 0,
+    "newPokemon": 1,
     "errors": 12
   }
 }

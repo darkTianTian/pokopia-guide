@@ -1,0 +1,36 @@
+{
+  "id": 141,
+  "slug": "mimikyu",
+  "name": "Mimikyu",
+  "types": [
+    "ghost",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/mimikyu.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 94,
+        "name": "Pikachu space",
+        "rarity": "common"
+      }
+    ]
+  }
+}
