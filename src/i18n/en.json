@@ -68,7 +68,13 @@
     "timeOfDay": "Time of Day",
     "weatherLabel": "Weather",
     "obtainMethod": "How to Obtain",
-    "evolution": "Evolution"
+    "evolution": "Evolution",
+    "browseByType": "Browse by Type",
+    "browseBySpecialty": "Browse by Specialty",
+    "typePageTitle": "{{type}} Type Pokémon",
+    "typePageDesc": "All {{type}} type Pokémon in Pokopia. View their habitats, specialties, and spawn conditions.",
+    "specPageTitle": "{{spec}} Specialty Pokémon",
+    "specPageDesc": "All Pokémon with {{spec}} specialty in Pokopia. View their habitats, types, and spawn conditions."
   },
   "guides": {
     "title": "Guide Articles",

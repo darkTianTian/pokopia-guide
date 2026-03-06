@@ -68,7 +68,13 @@
     "timeOfDay": "出現時間",
     "weatherLabel": "天気",
     "obtainMethod": "入手方法",
-    "evolution": "進化"
+    "evolution": "進化",
+    "browseByType": "タイプで探す",
+    "browseBySpecialty": "とくいわざで探す",
+    "typePageTitle": "{{type}}タイプのポケモン",
+    "typePageDesc": "Pokopia の{{type}}タイプのポケモン一覧。生息地、とくぎ、出現条件を確認。",
+    "specPageTitle": "{{spec}}のとくぎを持つポケモン",
+    "specPageDesc": "Pokopia で{{spec}}のとくぎを持つポケモン一覧。生息地、タイプ、出現条件を確認。"
   },
   "guides": {
     "title": "攻略記事",
