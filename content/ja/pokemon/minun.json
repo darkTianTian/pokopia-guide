@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -27,7 +28,7 @@
     "habitats": [
       {
         "id": 174,
-        "name": "Picturesque photo cutoutboard",
+        "name": "絶景の顔だしパネル",
         "rarity": "rare"
       }
     ]
