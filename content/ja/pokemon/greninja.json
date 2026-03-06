@@ -8,12 +8,21 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/greninja.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "water",
+      "chop"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "frogadier",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 139,
+        "name": "うるおうピンクの草むら",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }

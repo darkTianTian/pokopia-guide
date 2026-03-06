@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/corvisquire.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "chop"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -15,6 +17,12 @@
     "evolvesTo": [
       "corviknight"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 140,
+        "name": "高台のピンクの草むら",
+        "rarity": "common"
+      }
+    ]
   }
 }

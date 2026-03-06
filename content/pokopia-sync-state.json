@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-05T23:11:36.129Z",
+  "lastSync": "2026-03-06T02:45:08.466Z",
   "newHabitats": [
     {
       "id": 28,
@@ -115,7 +115,7 @@
     },
     {
       "id": 152,
-      "name": "Fortune-teller's table",
+      "name": "水晶占い",
       "missingIn": [
         "ja",
         "zh"
@@ -179,7 +179,7 @@
     },
     {
       "id": 165,
-      "name": "Playland",
+      "name": "プレイランド",
       "missingIn": [
         "ja",
         "zh"
@@ -371,7 +371,7 @@
     },
     {
       "id": 87,
-      "name": "Furnace Spot",
+      "name": "火力はつでん所",
       "missingIn": [
         "ja",
         "zh"
@@ -379,7 +379,7 @@
     },
     {
       "id": 114,
-      "name": "Harminous hot spring",
+      "name": "ととのう温泉",
       "missingIn": [
         "ja",
         "zh"
@@ -387,7 +387,7 @@
     },
     {
       "id": 151,
-      "name": "Surging psychic power",
+      "name": "みなぎるサイコパワー",
       "missingIn": [
         "ja",
         "zh"
@@ -416,13 +416,37 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 65,
+      "name": "ゴミ捨て場",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 167,
+      "name": "オフィスのバックヤード",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 140,
+      "name": "高台のピンクの草むら",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
     "total": 290,
     "serebiiCount": 287,
-    "gameWithCount": 159,
+    "gameWithCount": 176,
     "game8Count": 170,
     "updated": 287,
     "skipped": 0,

@@ -28,6 +28,11 @@
         "id": 142,
         "name": "フワフワな花畑",
         "rarity": "common"
+      },
+      {
+        "id": 167,
+        "name": "オフィスのバックヤード",
+        "rarity": "common"
       }
     ]
   }

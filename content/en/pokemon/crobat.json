@@ -23,6 +23,12 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "golbat",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 65,
+        "name": "Trash Disposal Site",
+        "rarity": "rare"
+      }
+    ]
   }
 }

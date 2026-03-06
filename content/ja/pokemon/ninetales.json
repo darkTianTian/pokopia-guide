@@ -7,12 +7,20 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/ninetales.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "burn"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
     "evolvesFrom": "vulpix",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 142,
+        "name": "フワフワな花畑",
+        "rarity": "rare"
+      }
+    ]
   }
 }

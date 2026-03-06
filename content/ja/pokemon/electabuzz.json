@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/electabuzz.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "generate"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
@@ -15,6 +17,12 @@
     "evolvesTo": [
       "electivire"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 64,
+        "name": "ゴミ箱がいっぱい",
+        "rarity": "rare"
+      }
+    ]
   }
 }
