@@ -10,13 +10,29 @@
     "specialties": [
       "recycle"
     ],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "porygon2"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 170,
+        "name": "研究者のデスク",
+        "rarity": "common"
+      }
+    ]
   }
 }

@@ -7,12 +7,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/absol.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "chop"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 96,
+        "name": "リゾートへようこそ",
+        "rarity": "common"
+      }
+    ]
   }
 }
