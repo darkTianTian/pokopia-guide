@@ -20,12 +20,18 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "poliwhirl",
     "evolvesTo": null,
     "habitats": [
+      {
+        "id": 107,
+        "name": "花畑の切り株ステージ",
+        "rarity": "rare"
+      },
       {
         "id": 114,
         "name": "ととのう温泉",

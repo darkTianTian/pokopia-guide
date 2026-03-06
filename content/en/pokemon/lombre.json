@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "lotad",
@@ -28,6 +29,11 @@
       "ludicolo"
     ],
     "habitats": [
+      {
+        "id": 101,
+        "name": "Hydrated red tall grass",
+        "rarity": "rare"
+      },
       {
         "id": 187,
         "name": "Hot Spring Fishing",

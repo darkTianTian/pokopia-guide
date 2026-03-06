@@ -12,15 +12,13 @@
       "search"
     ],
     "timeOfDay": [
-      "dawn",
-      "day",
-      "dusk",
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

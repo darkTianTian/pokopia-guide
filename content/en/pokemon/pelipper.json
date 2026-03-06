@@ -20,12 +20,18 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "wingull",
     "evolvesTo": null,
     "habitats": [
+      {
+        "id": 52,
+        "name": "Elevated Yellow Tall Grass",
+        "rarity": "rare"
+      },
       {
         "id": 58,
         "name": "Windy Flower Bed",
