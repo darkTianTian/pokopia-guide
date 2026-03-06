@@ -30,6 +30,11 @@
     ],
     "habitats": [
       {
+        "id": 74,
+        "name": "夜のお祭り会場",
+        "rarity": "common"
+      },
+      {
         "id": 77,
         "name": "毛線編織",
         "rarity": "rare"

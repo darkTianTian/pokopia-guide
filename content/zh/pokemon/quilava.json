@@ -13,7 +13,8 @@
     "timeOfDay": [
       "dawn",
       "day",
-      "dusk"
+      "dusk",
+      "night"
     ],
     "weather": [
       "sunny",
@@ -31,6 +32,11 @@
         "id": 141,
         "name": "土管の秘密基地",
         "rarity": "rare"
+      },
+      {
+        "id": 150,
+        "name": "暖炉でうたた寝",
+        "rarity": "common"
       }
     ]
   }
