@@ -1147,12 +1147,17 @@ const GAMEWITH_HABITAT_IMG_BASE = "https://img.gamewith.jp/article_tools/pocoapo
 async function downloadMissingHabitatImages(allHabitatIds, habitatIdToImageUrl) {
   console.log("\n--- Downloading Missing Habitat Images ---")
 
-  // Check which images are missing locally
+  // Check which images are missing or are placeholder images
+  const PLACEHOLDER_SIZE = 4701973 // known "COMING SOON" placeholder file size
   const missing = []
   for (const id of allHabitatIds) {
     const filePath = path.join(HABITATS_DIR, `habitat_${id}.png`)
     try {
-      await fs.access(filePath)
+      const stat = await fs.stat(filePath)
+      // Treat placeholder images as missing
+      if (stat.size === PLACEHOLDER_SIZE) {
+        missing.push(id)
+      }
     } catch {
       missing.push(id)
     }
