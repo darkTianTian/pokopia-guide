@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -29,7 +30,7 @@
       {
         "id": 128,
         "name": "Music and magazines",
-        "rarity": "rare"
+        "rarity": "common"
       }
     ]
   }
