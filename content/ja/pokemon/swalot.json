@@ -7,12 +7,29 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/swalot.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "storage"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "gulpin",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 120,
+        "name": "Dinner table surprise",
+        "rarity": "rare"
+      }
+    ]
   }
 }

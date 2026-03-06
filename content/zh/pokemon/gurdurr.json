@@ -32,6 +32,11 @@
         "id": 3,
         "name": "岩蔭草叢",
         "rarity": "rare"
+      },
+      {
+        "id": 28,
+        "name": "大きな荷物をのせて",
+        "rarity": "common"
       }
     ]
   }

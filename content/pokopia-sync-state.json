@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T15:49:04.045Z",
+  "lastSync": "2026-03-06T17:43:54.225Z",
   "newHabitats": [
     {
       "id": 28,
@@ -67,7 +67,7 @@
     },
     {
       "id": 123,
-      "name": "House party",
+      "name": "みんなでパーティ",
       "missingIn": [
         "ja",
         "zh"
@@ -131,7 +131,7 @@
     },
     {
       "id": 144,
-      "name": "Hydrated fluffy flower bed",
+      "name": "うるおうフワフワな花畑",
       "missingIn": [
         "ja",
         "zh"
@@ -155,7 +155,7 @@
     },
     {
       "id": 143,
-      "name": "木かげのフワフワな花畑",
+      "name": "Tree-shaded fluffy flower bed",
       "missingIn": [
         "ja",
         "zh"
@@ -291,7 +291,7 @@
     },
     {
       "id": 133,
-      "name": "シェフの調理場",
+      "name": "Chef's kitchen",
       "missingIn": [
         "ja",
         "zh"
@@ -315,7 +315,7 @@
     },
     {
       "id": 194,
-      "name": "Skull Fossil display",
+      "name": "ずがいのカセキ展示台",
       "missingIn": [
         "ja",
         "zh"
@@ -411,7 +411,7 @@
     },
     {
       "id": 130,
-      "name": "さわやかロッカールーム",
+      "name": "Refreshing locker room",
       "missingIn": [
         "ja",
         "zh"
@@ -435,7 +435,7 @@
     },
     {
       "id": 140,
-      "name": "高台のピンクの草むら",
+      "name": "Elevated pink tall grass",
       "missingIn": [
         "ja",
         "zh"
@@ -475,7 +475,7 @@
     },
     {
       "id": 186,
-      "name": "沼釣り",
+      "name": "Marsh fishing spot",
       "missingIn": [
         "ja",
         "zh"
@@ -584,15 +584,63 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 120,
+      "name": "Dinner table surprise",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 126,
+      "name": "Recital stage",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 189,
+      "name": "Amped rock stage",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 149,
+      "name": "Cycling rest stop",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 155,
+      "name": "相棒と取り調べ",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 195,
+      "name": "ずつきのカセキ展示台",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "total": 215,
-    "serebiiCount": 0,
-    "gameWithCount": 215,
+    "total": 292,
+    "serebiiCount": 292,
+    "gameWithCount": 224,
     "game8Count": 0,
-    "updated": 215,
+    "updated": 292,
     "skipped": 0,
     "newPokemon": 0,
     "errors": 0

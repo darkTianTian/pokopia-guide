@@ -9,11 +9,26 @@
   "image": "https://assets.pokopiaguide.com/pokemon/farigiraf.png",
   "pokopia": {
     "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "girafarig",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 143,
+        "name": "Tree-shaded fluffy flower bed",
+        "rarity": "rare"
+      }
+    ]
   }
 }

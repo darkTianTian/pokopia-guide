@@ -32,6 +32,11 @@
         "id": 3,
         "name": "Boulder-shaded Tall Grass",
         "rarity": "rare"
+      },
+      {
+        "id": 28,
+        "name": "Large luggage carrier",
+        "rarity": "common"
       }
     ]
   }
