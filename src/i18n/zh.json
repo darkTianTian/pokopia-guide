@@ -108,12 +108,14 @@
     "metaDescription": "Pokémon Pokopia 家園建設攻略：棲息地創造、招式改造環境、家具製作配方一網打盡。",
     "description": "棲息地創造、招式改造環境、家具製作配方等內容正在緊鑼密鼓地準備中。",
     "listTitle": "棲息地列表",
+    "listMetaTitle": "Pokopia 全棲息地列表 — 寶可夢與建造材料",
     "listDescription": "瀏覽所有棲息地，了解每個棲息地中可以遇到的寶可夢。",
-    "listMetaDescription": "Pokémon Pokopia 完整棲息地列表，查看各棲息地可遇寶可夢。",
+    "listMetaDescription": "瀏覽 Pokémon Pokopia 所有棲息地。查看每個棲息地出現的寶可夢、稀有度、出沒時間、天氣條件，以及建造所需的材料清單。",
     "pokemonCount": "隻寶可夢",
     "detailDescription": "在這個棲息地中可以遇到的寶可夢。",
     "breadcrumbList": "棲息地列表",
-    "materials": "所需材料"
+    "materials": "所需材料",
+    "totalCount": "共 {{count}} 個棲息地"
   },
   "quests": {
     "title": "任務攻略",

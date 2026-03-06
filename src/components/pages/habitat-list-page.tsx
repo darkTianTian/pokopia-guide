@@ -31,9 +31,12 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
         <h1 className="text-3xl font-bold">
           {t(translations, "habitat.listTitle")}
         </h1>
-        <h2 className="mt-2 text-lg font-normal text-muted-foreground">
+        <p className="mt-2 text-lg text-muted-foreground">
           {t(translations, "habitat.listDescription")}
-        </h2>
+        </p>
+        <p className="mt-1 text-sm text-muted-foreground">
+          {t(translations, "habitat.totalCount").replace("{{count}}", String(habitats.length))}
+        </p>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {habitats.map((habitat) => (

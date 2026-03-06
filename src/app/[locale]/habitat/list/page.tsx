@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!isValidLocale(locale)) return {}
   const translations = await getTranslations(locale)
   return {
-    title: t(translations, "habitat.listTitle"),
+    title: t(translations, "habitat.listMetaTitle"),
     description: t(translations, "habitat.listMetaDescription"),
     alternates: getPageAlternates(locale, "/habitat/list"),
   }

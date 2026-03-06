@@ -107,12 +107,14 @@
     "metaDescription": "Pokémon Pokopia ホーム建設攻略：生息地作成、技による環境改造、家具制作レシピ。",
     "description": "生息地作成、技による環境改造、家具制作レシピなどのコンテンツを準備中です。",
     "listTitle": "生息地一覧",
+    "listMetaTitle": "Pokopia 生息地一覧 — ポケモンと必要素材",
     "listDescription": "すべての生息地を閲覧し、各生息地で出会えるポケモンを確認できます。",
-    "listMetaDescription": "Pokémon Pokopia 全生息地一覧。各生息地で出現するポケモンを確認。",
+    "listMetaDescription": "Pokémon Pokopia の全生息地を一覧で確認。各生息地に出現するポケモン、レア度、出現時間帯、天候条件、建設に必要な素材をまとめています。",
     "pokemonCount": "匹のポケモン",
     "detailDescription": "この生息地で出会えるポケモン。",
     "breadcrumbList": "生息地一覧",
-    "materials": "必要な素材"
+    "materials": "必要な素材",
+    "totalCount": "全 {{count}} 件の生息地"
   },
   "quests": {
     "title": "クエスト攻略",

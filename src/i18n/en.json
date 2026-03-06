@@ -107,12 +107,14 @@
     "metaDescription": "Pokémon Pokopia habitat building guide: habitat creation, move-based environment modification, and furniture crafting recipes.",
     "description": "Habitat creation, move-based environment modification, furniture crafting recipes and more are being prepared.",
     "listTitle": "Habitat List",
+    "listMetaTitle": "All Pokopia Habitats with Pokémon & Materials",
     "listDescription": "Browse all habitats and discover which Pokémon can be found in each one.",
-    "listMetaDescription": "Complete list of all Pokémon Pokopia habitats with available Pokémon encounters.",
+    "listMetaDescription": "Browse every habitat in Pokémon Pokopia. See which Pokémon appear in each habitat, their rarity, spawn times, weather conditions, and the materials needed to build each one.",
     "pokemonCount": "Pokémon",
     "detailDescription": "Pokémon that can be found in this habitat.",
     "breadcrumbList": "Habitat List",
-    "materials": "Required Materials"
+    "materials": "Required Materials",
+    "totalCount": "{{count}} habitats in total"
   },
   "quests": {
     "title": "Quest Guide",
