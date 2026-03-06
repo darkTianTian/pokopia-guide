@@ -8,12 +8,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/pawmot.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "generate",
+      "crush"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "pawmo",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 70,
+        "name": "カフェスペース",
+        "rarity": "common"
+      }
+    ]
   }
 }
