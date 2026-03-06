@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T14:47:02.304Z",
+  "lastSync": "2026-03-06T15:49:04.045Z",
   "newHabitats": [
     {
       "id": 28,
@@ -576,15 +576,23 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 108,
+      "name": "畑しごとはたいへん",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "total": 211,
+    "total": 215,
     "serebiiCount": 0,
-    "gameWithCount": 211,
+    "gameWithCount": 215,
     "game8Count": 0,
-    "updated": 211,
+    "updated": 215,
     "skipped": 0,
     "newPokemon": 0,
     "errors": 0

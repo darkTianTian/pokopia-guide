@@ -8,12 +8,36 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/blaziken.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "burn",
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "combusken",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 69,
+        "name": "ピヨピヨごはん",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 87,
+        "name": "火力はつでん所",
+        "rarity": "rare"
+      }
+    ]
   }
 }

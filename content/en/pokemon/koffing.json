@@ -7,14 +7,32 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/koffing.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "recycle"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "weezing"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 63,
+        "name": "Trash collection site",
+        "rarity": "common"
+      }
+    ]
   }
 }
