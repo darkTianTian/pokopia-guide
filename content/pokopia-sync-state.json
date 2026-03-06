@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T18:58:58.292Z",
+  "lastSync": "2026-03-06T19:42:24.507Z",
   "newHabitats": [
     {
       "id": 28,
@@ -499,7 +499,7 @@
     },
     {
       "id": 148,
-      "name": "Simple bathroom",
+      "name": "シンプルバスルーム",
       "missingIn": [
         "ja",
         "zh"
@@ -595,7 +595,7 @@
     },
     {
       "id": 126,
-      "name": "Recital stage",
+      "name": "リサイタルステージ",
       "missingIn": [
         "ja",
         "zh"
@@ -662,7 +662,7 @@
   "stats": {
     "total": 304,
     "serebiiCount": 292,
-    "gameWithCount": 227,
+    "gameWithCount": 229,
     "game8Count": 284,
     "updated": 292,
     "skipped": 0,

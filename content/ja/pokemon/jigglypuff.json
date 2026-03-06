@@ -33,6 +33,11 @@
         "id": 107,
         "name": "花畑の切り株ステージ",
         "rarity": "common"
+      },
+      {
+        "id": 126,
+        "name": "リサイタルステージ",
+        "rarity": "common"
       }
     ]
   }

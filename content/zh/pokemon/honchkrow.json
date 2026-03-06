@@ -18,11 +18,23 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "murkrow",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 102,
+        "name": "高台紅色草叢",
+        "rarity": "rare"
+      },
+      {
+        "id": 125,
+        "name": "さえずりのリサイタル",
+        "rarity": "rare"
+      }
+    ]
   }
 }
