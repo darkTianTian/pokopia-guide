@@ -8,14 +8,32 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/tinkatuff.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "tinkatink",
     "evolvesTo": [
       "tinkaton"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 28,
+        "name": "大きな荷物をのせて",
+        "rarity": "rare"
+      }
+    ]
   }
 }

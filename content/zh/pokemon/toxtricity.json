@@ -8,12 +8,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/toxtricity.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "generate",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "toxel",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 189,
+        "name": "Amped rock stage",
+        "rarity": "common"
+      }
+    ]
   }
 }

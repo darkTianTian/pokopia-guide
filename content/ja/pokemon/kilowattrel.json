@@ -9,11 +9,26 @@
   "image": "https://assets.pokopiaguide.com/pokemon/kilowattrel.png",
   "pokopia": {
     "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "wattrel",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 140,
+        "name": "Elevated pink tall grass",
+        "rarity": "rare"
+      }
+    ]
   }
 }

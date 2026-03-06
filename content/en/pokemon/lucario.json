@@ -8,12 +8,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/lucario.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "build"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "riolu",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 127,
+        "name": "Box to the rhythm",
+        "rarity": "common"
+      }
+    ]
   }
 }

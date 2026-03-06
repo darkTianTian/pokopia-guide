@@ -19,8 +19,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "skwovet",
@@ -28,7 +27,7 @@
     "habitats": [
       {
         "id": 133,
-        "name": "シェフの調理場",
+        "name": "Chef's kitchen",
         "rarity": "common"
       }
     ]

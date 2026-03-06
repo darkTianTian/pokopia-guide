@@ -30,6 +30,11 @@
         "id": 99,
         "name": "樹蔭紅色草叢",
         "rarity": "rare"
+      },
+      {
+        "id": 123,
+        "name": "みんなでパーティ",
+        "rarity": "common"
       }
     ]
   }
