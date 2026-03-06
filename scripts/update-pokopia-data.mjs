@@ -718,11 +718,6 @@ async function scrapeGameWith(jaNameToSlug) {
       continue
     }
 
-    // Debug: log pokemon with empty conditions that should have data
-    if ((poke.conditions || []).length === 0 && poke.no) {
-      console.log(`  GameWith DEBUG: No.${poke.no} ${jaName} has empty conditions`)
-    }
-
     // Map types
     const types = (poke.t || [])
       .map((t) => GAMEWITH_TYPE_MAP[t])
@@ -1373,11 +1368,6 @@ async function run() {
     const serebiiDetail = serebiiDetailMap.get(slug) || null
     const g8 = game8Data.get(slug) || null
     const gw = gameWithData.get(slug) || null
-
-    // Debug: log source info for pokemon with existing habitats but no time
-    if (gw && slug === "venusaur") {
-      console.log(`  DEBUG venusaur GW: habitats=${gw.habitats?.length}, timeOfDay=${JSON.stringify(gw.timeOfDay)}, weather=${JSON.stringify(gw.weather)}`)
-    }
 
     // Merge pokopia data from all sources
     const existingPokopia = existingEn?.pokopia || null
