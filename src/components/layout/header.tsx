@@ -8,6 +8,7 @@ import {
 } from "@/i18n/config"
 import { LanguageSwitcher } from "./language-switcher"
 import { MobileNav } from "./mobile-nav"
+import { ThemeToggle } from "./theme-toggle"
 
 interface HeaderProps {
   locale: Locale
@@ -104,8 +105,9 @@ export async function Header({ locale }: HeaderProps) {
 
         <div className="flex-1 md:hidden" />
 
-        {/* Desktop language switcher */}
-        <div className="hidden md:ml-4 md:block">
+        {/* Desktop actions */}
+        <div className="hidden items-center gap-2 md:ml-4 md:flex">
+          <ThemeToggle />
           <LanguageSwitcher locale={locale} />
         </div>
 

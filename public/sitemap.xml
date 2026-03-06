@@ -1975,6 +1975,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://pokopiaguide.com/pokedex/specialty/chop</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pokopiaguide.com/pokedex/specialty/fly</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -2006,12 +2012,6 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/pokedex/specialty/burn</loc>
-    <lastmod>2026-03-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pokopiaguide.com/pokedex/specialty/chop</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2623,6 +2623,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://pokopiaguide.com/habitat/list/113</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pokopiaguide.com/habitat/list/114</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -2660,6 +2666,12 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/habitat/list/120</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pokopiaguide.com/habitat/list/121</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2828,6 +2840,12 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/habitat/list/165</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pokopiaguide.com/habitat/list/167</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -4969,6 +4987,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://pokopiaguide.com/zh/pokedex/specialty/chop</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pokopiaguide.com/zh/pokedex/specialty/fly</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -5000,12 +5024,6 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/zh/pokedex/specialty/burn</loc>
-    <lastmod>2026-03-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pokopiaguide.com/zh/pokedex/specialty/chop</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -5617,6 +5635,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://pokopiaguide.com/zh/habitat/list/113</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pokopiaguide.com/zh/habitat/list/114</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -5654,6 +5678,12 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/zh/habitat/list/120</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pokopiaguide.com/zh/habitat/list/121</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -5822,6 +5852,12 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/zh/habitat/list/165</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pokopiaguide.com/zh/habitat/list/167</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -7963,6 +7999,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://pokopiaguide.com/ja/pokedex/specialty/chop</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pokopiaguide.com/ja/pokedex/specialty/fly</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -7994,12 +8036,6 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/ja/pokedex/specialty/burn</loc>
-    <lastmod>2026-03-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://pokopiaguide.com/ja/pokedex/specialty/chop</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -8611,6 +8647,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://pokopiaguide.com/ja/habitat/list/113</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pokopiaguide.com/ja/habitat/list/114</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -8648,6 +8690,12 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/ja/habitat/list/120</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pokopiaguide.com/ja/habitat/list/121</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -8816,6 +8864,12 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/ja/habitat/list/165</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pokopiaguide.com/ja/habitat/list/167</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

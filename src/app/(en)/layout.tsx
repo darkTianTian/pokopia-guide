@@ -1,18 +1,20 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Nunito, Nunito_Sans } from "next/font/google"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { GoogleAnalytics } from "@/components/google-analytics"
 import { ScrollToTop } from "@/components/layout/scroll-to-top"
+import { ThemeProvider } from "@/components/theme-provider"
 import "@/app/globals.css"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const nunitoSans = Nunito_Sans({
+  variable: "--font-nunito-sans",
   subsets: ["latin"],
 })
 
@@ -36,17 +38,24 @@ export default function EnLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${nunito.variable} ${nunitoSans.variable} font-sans antialiased`}
       >
-        <div className="flex min-h-screen flex-col">
-          <Header locale="en" />
-          <main className="flex-1">{children}</main>
-          <Footer locale="en" />
-        </div>
-        <ScrollToTop />
-        <GoogleAnalytics />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex min-h-screen flex-col">
+            <Header locale="en" />
+            <main className="flex-1">{children}</main>
+            <Footer locale="en" />
+          </div>
+          <ScrollToTop />
+          <GoogleAnalytics />
+        </ThemeProvider>
       </body>
     </html>
   )

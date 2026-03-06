@@ -195,18 +195,18 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
                         <HabitatLink
                           key={h.id}
                           href={getLocalePath(locale, `/habitat/list/${h.id}`)}
-                          className="group/habitat relative flex shrink-0 flex-col items-center gap-1.5 rounded-xl bg-background/60 p-1.5 shadow-sm ring-1 ring-inset ring-border/50 transition-all hover:bg-background hover:ring-2 hover:ring-primary/50"
+                          className="group/habitat relative flex shrink-0 w-[4.5rem] flex-col items-center gap-1 rounded-2xl bg-background/60 p-1.5 shadow-sm ring-1 ring-inset ring-border/50 transition-all hover:bg-background hover:ring-2 hover:ring-primary/50"
                         >
-                          <div className={`overflow-hidden rounded-lg ring-2 ${ringColor}`}>
+                          <div className={`overflow-hidden rounded-xl ring-2 ${ringColor}`}>
                             <SafeImage
                               src={`/images/habitats/habitat_${h.id}.png`}
                               alt={h.name}
                               width={48}
                               height={48}
-                              className="transition-transform duration-300 group-hover/habitat:scale-110"
+                              className="w-full h-auto transition-transform duration-300 group-hover/habitat:scale-110"
                             />
                           </div>
-                          <span className="max-w-[56px] truncate text-center text-[9px] font-medium text-muted-foreground group-hover/habitat:text-foreground">
+                          <span className="w-full text-center text-xs leading-tight font-medium text-muted-foreground group-hover/habitat:text-foreground line-clamp-2">
                             {h.name}
                           </span>
                         </HabitatLink>
