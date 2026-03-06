@@ -744,7 +744,7 @@ async function scrapeGameWith(jaNameToSlug) {
 
   if (!pokemonDatas) {
     console.error("  Failed to extract pokemonDatas from GameWith")
-    return new Map()
+    return { pokemonData: new Map(), habitatItemsMap: new Map() }
   }
 
   // Build item ID → Japanese name map
