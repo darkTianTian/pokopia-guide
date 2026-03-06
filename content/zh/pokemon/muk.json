@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/muk.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "litter"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

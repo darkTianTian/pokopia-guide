@@ -7,14 +7,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/kadabra.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "teleport"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "abra",
     "evolvesTo": [
       "alakazam"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 152,
+        "name": "Fortune-teller's table",
+        "rarity": "rare"
+      }
+    ]
   }
 }

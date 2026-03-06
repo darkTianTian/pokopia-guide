@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-06T20:41:59.740Z",
+  "lastSync": "2026-03-06T21:38:23.082Z",
   "newHabitats": [
     {
       "id": 28,
@@ -115,7 +115,7 @@
     },
     {
       "id": 152,
-      "name": "水晶占い",
+      "name": "Fortune-teller's table",
       "missingIn": [
         "ja",
         "zh"
@@ -227,7 +227,7 @@
     },
     {
       "id": 78,
-      "name": "温泉の洗い場",
+      "name": "Hot-spring shower",
       "missingIn": [
         "ja",
         "zh"
@@ -656,13 +656,45 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 89,
+      "name": "Spooky study",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 156,
+      "name": "Sewer hole inspection",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 153,
+      "name": "Trash site TV",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 198,
+      "name": "アゴのカセキ展示台",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
     "total": 304,
     "serebiiCount": 292,
-    "gameWithCount": 231,
+    "gameWithCount": 234,
     "game8Count": 284,
     "updated": 292,
     "skipped": 0,

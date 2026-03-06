@@ -21,11 +21,17 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "weepinbell",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 21,
+        "name": "はなやかな机",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }
