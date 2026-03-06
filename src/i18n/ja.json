@@ -104,7 +104,8 @@
     "listMetaDescription": "Pokémon Pokopia 全生息地一覧。各生息地で出現するポケモンを確認。",
     "pokemonCount": "匹のポケモン",
     "detailDescription": "この生息地で出会えるポケモン。",
-    "breadcrumbList": "生息地一覧"
+    "breadcrumbList": "生息地一覧",
+    "materials": "必要な素材"
   },
   "quests": {
     "title": "クエスト攻略",

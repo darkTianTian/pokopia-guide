@@ -25,6 +25,7 @@ const PUBLIC_URL = process.env.R2_PUBLIC_URL || "https://assets.pokopiaguide.com
 const SEREBII_BASE = "https://serebii.net"
 const SEREBII_LIST_URL = `${SEREBII_BASE}/pokemonpokopia/availablepokemon.shtml`
 const GAME8_URL = "https://game8.co/games/Pokemon-Pokopia/archives/578286"
+const GAME8_HABITAT_LIST_URL = "https://game8.co/games/Pokemon-Pokopia/archives/582463"
 const GAMEWITH_URL = "https://gamewith.jp/pocoapokemon/530830"
 const CONTENT_DIR = path.join(process.cwd(), "content")
 const SYNC_STATE_PATH = path.join(CONTENT_DIR, "pokopia-sync-state.json")
@@ -605,6 +606,61 @@ async function scrapeGame8() {
   return { pokemonData: results, habitatImageMap }
 }
 
+// --- Game8 Habitat Conditions Scraper ---
+
+async function scrapeGame8HabitatConditions() {
+  console.log("Fetching Game8 habitat list page for conditions...")
+  try {
+    const html = await fetchHtml(GAME8_HABITAT_LIST_URL)
+    const $ = cheerio.load(html)
+
+    const conditions = new Map() // lowercase EN habitat name → conditions text
+
+    // Game8 habitat list page has tables with habitat info
+    // Each row: habitat image+name, conditions text
+    $("table.a-table tr").each((_i, row) => {
+      const cells = $(row).find("> td")
+      if (cells.length < 2) return
+
+      // Look for habitat name in first cell (from link text or image alt)
+      const firstCell = $(cells[0])
+      let habitatName = firstCell.find("a").first().text().trim()
+      if (!habitatName) {
+        habitatName = firstCell.text().trim()
+      }
+      if (!habitatName) return
+
+      // Look for conditions text in second cell
+      const secondCell = $(cells[1])
+      const condText = secondCell.text().trim()
+      if (!condText) return
+
+      conditions.set(habitatName.toLowerCase().trim(), condText)
+    })
+
+    // Also try parsing from h3 + ul/table patterns
+    $("h3, h4").each((_i, heading) => {
+      const headingText = $(heading).text().trim()
+      if (!headingText) return
+
+      // Check if next sibling contains conditions info
+      const next = $(heading).next()
+      if (!next.length) return
+
+      const text = next.text().trim()
+      if (text && (text.includes("x") || text.includes("×") || text.includes("Conditions"))) {
+        conditions.set(headingText.toLowerCase().trim(), text)
+      }
+    })
+
+    console.log(`  Found ${conditions.size} habitat conditions on Game8`)
+    return conditions
+  } catch (err) {
+    console.error(`  Failed to scrape Game8 habitat conditions: ${err.message}`)
+    return new Map()
+  }
+}
+
 // --- Japanese Name → Slug Mapping ---
 
 async function buildJaNameToSlugMap() {
@@ -683,11 +739,44 @@ async function scrapeGameWith(jaNameToSlug) {
   const pokemonDatas = parseGameWithJsObject(html, "pokemonDatas")
   const skillDatas = parseGameWithJsObject(html, "skillDatas")
   const habitatDatas = parseGameWithJsObject(html, "habitatDatas")
+  const setItemDatas = parseGameWithJsObject(html, "setItemDatas")
+  const itemAnyDatas = parseGameWithJsObject(html, "itemAnyDatas")
 
   if (!pokemonDatas) {
     console.error("  Failed to extract pokemonDatas from GameWith")
     return new Map()
   }
+
+  // Build item ID → Japanese name map
+  const itemMap = new Map()
+  if (setItemDatas) {
+    for (const item of setItemDatas) {
+      itemMap.set(String(item.id), item.n || `Item ${item.id}`)
+    }
+  }
+  if (itemAnyDatas) {
+    for (const item of itemAnyDatas) {
+      itemMap.set(`a${item.id}`, item.n || `Any Item ${item.id}`)
+    }
+  }
+  console.log(`  Parsed ${itemMap.size} items (${setItemDatas?.length || 0} set + ${itemAnyDatas?.length || 0} any)`)
+
+  // Build habitat ID → materials list from habitatDatas.items
+  const habitatItemsMap = new Map() // habitat ID string → [{id, name, count}]
+  if (habitatDatas) {
+    for (const h of habitatDatas) {
+      if (h.items && Array.isArray(h.items)) {
+        const items = h.items.map((item) => {
+          const itemId = String(item.id)
+          // Check if it's an "any" item (id might reference itemAnyDatas)
+          const name = itemMap.get(itemId) || itemMap.get(`a${item.id}`) || `Item ${item.id}`
+          return { id: itemId, name, count: item.c || 1 }
+        })
+        habitatItemsMap.set(String(h.id), items)
+      }
+    }
+  }
+  console.log(`  Built materials for ${habitatItemsMap.size} habitats`)
 
   // Build skill ID → english name map
   const skillIdToEn = new Map()
@@ -782,7 +871,7 @@ async function scrapeGameWith(jaNameToSlug) {
   }
 
   console.log(`  Found ${results.size} Pokémon on GameWith (${pokemonDatas.length} total, ${pokemonDatas.length - results.size} unmapped)`)
-  return results
+  return { pokemonData: results, habitatItemsMap }
 }
 
 // --- Habitat Name Localization ---
@@ -1112,7 +1201,7 @@ async function run() {
   console.log(`Loaded ${jaNameToSlug.size} Japanese name mappings`)
 
   // Step 2: Scrape all three sources in parallel
-  const [serebiiList, game8Result, gameWithData] = await Promise.all([
+  const [serebiiList, game8Result, gameWithResult, g8HabitatConditions] = await Promise.all([
     scrapeSerebiiList().catch((err) => {
       console.error(`Failed to scrape Serebii list: ${err.message}`)
       return []
@@ -1123,11 +1212,17 @@ async function run() {
     }),
     scrapeGameWith(jaNameToSlug).catch((err) => {
       console.error(`Failed to scrape GameWith: ${err.message}`)
+      return { pokemonData: new Map(), habitatItemsMap: new Map() }
+    }),
+    scrapeGame8HabitatConditions().catch((err) => {
+      console.error(`Failed to scrape Game8 habitat conditions: ${err.message}`)
       return new Map()
     }),
   ])
 
   const game8Data = game8Result.pokemonData
+  const gameWithData = gameWithResult.pokemonData
+  const gameWithHabitatItems = gameWithResult.habitatItemsMap
   const habitatImageMap = game8Result.habitatImageMap
 
   // Step 3: Load all existing Pokemon JSON files
@@ -1497,6 +1592,47 @@ async function run() {
     }
   }
   await downloadMissingHabitatImages(allHabitatIds, habitatIdToImageUrl)
+
+  // Generate habitat materials files
+  if (!DRY_RUN) {
+    console.log("\n--- Generating Habitat Materials ---")
+
+    // Build JA materials: habitat ID → "item1 x count1, item2 x count2"
+    const materialsJa = {}
+    for (const [hId, items] of gameWithHabitatItems) {
+      const parts = items.map((item) => `${item.name} x${item.count}`)
+      materialsJa[hId] = parts.join(", ")
+    }
+
+    // Build EN materials: match via habitat-mapping-en.json → Game8 conditions
+    const materialsEn = {}
+    // Build reverse map: lowercase EN name → habitat ID
+    const enNameToId = new Map()
+    for (const [id, name] of Object.entries(habitatMappings.en)) {
+      enNameToId.set(name.toLowerCase().trim(), id)
+    }
+
+    // Match Game8 conditions to habitat IDs
+    for (const [g8Name, condText] of g8HabitatConditions) {
+      const hId = enNameToId.get(g8Name)
+      if (hId) {
+        // Extract only the conditions part (between "Conditions:" and "Pokemon Available:")
+        const condMatch = condText.match(/Conditions:\s*([\s\S]*?)(?:\s*Pokemon Available:|$)/i)
+        const cleaned = condMatch ? condMatch[1].replace(/\s+/g, " ").trim() : condText.replace(/\s+/g, " ").trim()
+        if (cleaned) {
+          materialsEn[hId] = cleaned
+        }
+      }
+    }
+
+    // Fallback: for habitats with JA materials but no EN match, leave empty (JA fallback in frontend)
+    console.log(`  JA materials: ${Object.keys(materialsJa).length} habitats`)
+    console.log(`  EN materials: ${Object.keys(materialsEn).length} habitats (from Game8 conditions)`)
+
+    await writeJson(path.join(CONTENT_DIR, "habitat-materials.json"), materialsJa)
+    await writeJson(path.join(CONTENT_DIR, "habitat-materials-en.json"), materialsEn)
+    await writeJson(path.join(CONTENT_DIR, "habitat-materials-zh.json"), {})
+  }
 
   // Save sync state
   const newState = {

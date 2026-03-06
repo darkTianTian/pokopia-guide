@@ -47,14 +47,16 @@ export async function HabitatDetailPage({
         />
         <div>
           <h1 className="text-3xl font-bold">{habitat.name}</h1>
-          <p className="mt-2 text-muted-foreground">
-            {t(translations, "habitat.detailDescription")}
-          </p>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {habitat.pokemon.length}{" "}
-            {t(translations, "habitat.pokemonCount")}
-          </p>
+          {habitat.materials && (
+            <p className="mt-3 text-base">
+              <span className="font-semibold">{t(translations, "habitat.materials")}:</span>{" "}
+              <span className="font-medium">{habitat.materials}</span>
+            </p>
+          )}
         </div>
+      </div>
+      <div className="mb-4 text-sm text-muted-foreground">
+        {t(translations, "habitat.detailDescription")} ({habitat.pokemon.length} {t(translations, "habitat.pokemonCount")})
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {habitat.pokemon.map(({ pokemon, rarity }) => {

@@ -105,7 +105,8 @@
     "listMetaDescription": "Pokémon Pokopia 完整棲息地列表，查看各棲息地可遇寶可夢。",
     "pokemonCount": "隻寶可夢",
     "detailDescription": "在這個棲息地中可以遇到的寶可夢。",
-    "breadcrumbList": "棲息地列表"
+    "breadcrumbList": "棲息地列表",
+    "materials": "所需材料"
   },
   "quests": {
     "title": "任務攻略",
