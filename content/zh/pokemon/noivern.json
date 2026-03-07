@@ -1,0 +1,19 @@
+{
+  "id": 256,
+  "slug": "noivern",
+  "name": "音波龍",
+  "types": [
+    "flying",
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/noivern.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": "noibat",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

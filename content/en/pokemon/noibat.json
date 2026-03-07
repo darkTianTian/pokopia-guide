@@ -1,0 +1,23 @@
+{
+  "id": 255,
+  "slug": "noibat",
+  "name": "Noibat",
+  "types": [
+    "flying",
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/noibat.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "noivern"
+    ],
+    "habitats": []
+  }
+}
