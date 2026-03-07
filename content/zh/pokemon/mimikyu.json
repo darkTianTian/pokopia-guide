@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -28,7 +29,7 @@
     "habitats": [
       {
         "id": 94,
-        "name": "Pikachu space",
+        "name": "ピカチュウスペース",
         "rarity": "common"
       }
     ]
