@@ -8,13 +8,28 @@
   "image": "https://assets.pokopiaguide.com/pokemon/floragato.png",
   "pokopia": {
     "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "sprigatito",
     "evolvesTo": [
       "meowscarada"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 155,
+        "name": "Interrogation desk",
+        "rarity": "common"
+      }
+    ]
   }
 }
