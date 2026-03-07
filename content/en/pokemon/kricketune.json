@@ -27,6 +27,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 98,
+        "name": "Red tall grass",
+        "rarity": "rare"
+      },
+      {
         "id": 128,
         "name": "Music and magazines",
         "rarity": "common"

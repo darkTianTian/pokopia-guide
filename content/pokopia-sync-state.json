@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-07T13:05:20.923Z",
+  "lastSync": "2026-03-07T14:33:30.236Z",
   "newHabitats": [
     {
       "id": 28,
@@ -59,7 +59,7 @@
     },
     {
       "id": 119,
-      "name": "Habitat 119",
+      "name": "荷物置き場でつまみ食い",
       "missingIn": [
         "ja",
         "zh"
@@ -411,7 +411,7 @@
     },
     {
       "id": 130,
-      "name": "Refreshing locker room",
+      "name": "さわやかロッカールーム",
       "missingIn": [
         "ja",
         "zh"
@@ -587,7 +587,7 @@
     },
     {
       "id": 120,
-      "name": "Dinner table surprise",
+      "name": "ワクワクな食卓",
       "missingIn": [
         "ja",
         "zh"
@@ -659,7 +659,7 @@
     },
     {
       "id": 89,
-      "name": "Spooky study",
+      "name": "あやしい書さい",
       "missingIn": [
         "ja",
         "zh"
@@ -782,7 +782,7 @@
   "stats": {
     "total": 313,
     "serebiiCount": 301,
-    "gameWithCount": 255,
+    "gameWithCount": 259,
     "game8Count": 284,
     "updated": 300,
     "skipped": 0,
