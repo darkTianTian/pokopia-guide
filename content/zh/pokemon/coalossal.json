@@ -12,11 +12,27 @@
       "burn",
       "gather"
     ],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "carkol",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 132,
+        "name": "平交道",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }

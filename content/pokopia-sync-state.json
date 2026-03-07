@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-07T18:46:47.546Z",
+  "lastSync": "2026-03-07T19:29:38.080Z",
   "newHabitats": [
     {
       "id": 28,
@@ -781,7 +781,7 @@
   "stats": {
     "total": 321,
     "serebiiCount": 303,
-    "gameWithCount": 265,
+    "gameWithCount": 266,
     "game8Count": 290,
     "updated": 299,
     "skipped": 0,
