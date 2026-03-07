@@ -67,7 +67,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
                 </div>
 
                 <div className="flex flex-1 flex-col">
-                  {/* Habitat Image - No background/borders, floating sticker effect */}
+                  {/* Habitat Image - No background/borders, floating sticker effect with rounded corners */}
                   <div className="relative mb-6 mt-2 flex h-[160px] items-center justify-center">
                     <div className="relative z-10 flex h-full w-full items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110">
                       <SafeImage
@@ -75,7 +75,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
                         alt={habitat.name}
                         width={160}
                         height={160}
-                        className="object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_10px_10px_rgba(0,0,0,0.4)]"
+                        className="rounded-2xl object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_10px_10px_rgba(0,0,0,0.4)]"
                       />
                     </div>
                   </div>
