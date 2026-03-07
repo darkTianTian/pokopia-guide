@@ -32,6 +32,11 @@
         "id": 64,
         "name": "垃圾桶滿了",
         "rarity": "rare"
+      },
+      {
+        "id": 72,
+        "name": "Light-up stage",
+        "rarity": "common"
       }
     ]
   }

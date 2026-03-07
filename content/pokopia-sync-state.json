@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-07T21:30:01.653Z",
+  "lastSync": "2026-03-07T22:32:48.001Z",
   "newHabitats": [
     {
       "id": 28,
@@ -775,17 +775,24 @@
       "missingIn": [
         "zh"
       ]
+    },
+    {
+      "id": 39,
+      "name": "ぜいたくピヨピヨごはん",
+      "missingIn": [
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "total": 321,
-    "serebiiCount": 303,
-    "gameWithCount": 267,
+    "total": 308,
+    "serebiiCount": 0,
+    "gameWithCount": 273,
     "game8Count": 290,
-    "updated": 299,
+    "updated": 290,
     "skipped": 0,
     "newPokemon": 0,
-    "errors": 22
+    "errors": 18
   }
 }

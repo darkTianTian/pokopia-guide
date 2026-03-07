@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "electabuzz",
@@ -28,12 +29,7 @@
     "habitats": [
       {
         "id": 72,
-        "name": "Light-up stage",
-        "rarity": "rare"
-      },
-      {
-        "id": 84,
-        "name": "自販機セット",
+        "name": "ライトアップステージ",
         "rarity": "rare"
       }
     ]

@@ -32,6 +32,11 @@
         "id": 64,
         "name": "Trash can central",
         "rarity": "rare"
+      },
+      {
+        "id": 72,
+        "name": "Light-up stage",
+        "rarity": "common"
       }
     ]
   }
