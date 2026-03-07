@@ -32,6 +32,11 @@
         "id": 64,
         "name": "ゴミ箱がいっぱい",
         "rarity": "rare"
+      },
+      {
+        "id": 72,
+        "name": "ライトアップステージ",
+        "rarity": "common"
       }
     ]
   }

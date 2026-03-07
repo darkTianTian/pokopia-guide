@@ -12,11 +12,27 @@
       "search",
       "fly"
     ],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "noibat",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 160,
+        "name": "Rhythmic Living room",
+        "rarity": "rare"
+      }
+    ]
   }
 }
