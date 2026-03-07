@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-07T06:54:52.254Z",
+  "lastSync": "2026-03-07T07:36:35.531Z",
   "newHabitats": [
     {
       "id": 28,
@@ -131,7 +131,7 @@
     },
     {
       "id": 144,
-      "name": "うるおうフワフワな花畑",
+      "name": "Hydrated fluffy flower bed",
       "missingIn": [
         "ja",
         "zh"
@@ -499,7 +499,7 @@
     },
     {
       "id": 148,
-      "name": "シンプルバスルーム",
+      "name": "Simple bathroom",
       "missingIn": [
         "ja",
         "zh"
@@ -744,17 +744,33 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 71,
+      "name": "ビーチセット",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 160,
+      "name": "Rhythmic Living room",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
     "total": 312,
     "serebiiCount": 300,
-    "gameWithCount": 238,
+    "gameWithCount": 240,
     "game8Count": 284,
     "updated": 300,
     "skipped": 0,
-    "newPokemon": 7,
+    "newPokemon": 0,
     "errors": 12
   }
 }
