@@ -57,7 +57,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
               <article className="relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:border-border/80 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5">
 
                 {/* Floating ID Tag */}
-                <span className="absolute top-5 right-5 z-20 flex h-7 items-center justify-center rounded-full bg-muted/50 px-3 font-mono text-xs font-semibold tracking-wider text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
+                <span className="absolute top-6 right-6 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
                   #{String(habitat.id).padStart(3, "0")}
                 </span>
 

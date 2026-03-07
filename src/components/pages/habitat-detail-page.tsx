@@ -53,9 +53,11 @@ export async function HabitatDetailPage({
               />
             </div>
           </div>
-          <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
+          <div className="flex flex-col items-center text-center sm:items-start sm:text-left gap-3">
+            <span className="flex w-fit items-center justify-center rounded-full bg-muted/60 px-4 py-1 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
+              #{String(habitat.id).padStart(3, "0")}
+            </span>
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-foreground">
-              <span className="text-2xl font-semibold text-muted-foreground/60 sm:text-3xl">#{habitat.id}</span>{" "}
               {habitat.name}
             </h1>
 
