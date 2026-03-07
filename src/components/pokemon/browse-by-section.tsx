@@ -4,6 +4,7 @@ import { SafeImage } from "@/components/ui/safe-image"
 import { POKEMON_TYPES, type PokemonType } from "@/lib/types"
 import { getLocalePath, getTranslations, t, type Locale } from "@/i18n/config"
 import { getAllPokemon, getAllSpecialties } from "@/lib/pokemon"
+import { BrowseByCollapsible } from "./browse-by-collapsible"
 
 const TYPE_BG: Record<PokemonType, string> = {
   normal: "bg-gray-400",
@@ -44,13 +45,10 @@ export async function BrowseBySection({
   const specialties = getAllSpecialties(allPokemon)
 
   return (
-    <div className="mb-8 flex flex-col gap-5">
+    <div className="mb-8 flex flex-col gap-2">
       {/* Browse by Type */}
-      <div>
-        <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-          {t(translations, "pokedex.browseByType")}
-        </h3>
-        <div className="flex flex-wrap gap-2">
+      <BrowseByCollapsible title={t(translations, "pokedex.browseByType")}>
+        <div className="flex flex-wrap gap-2 pb-4">
           {POKEMON_TYPES.map((type) => {
             const isActive = activeType === type
             const typeName = t(translations, `types.${type}`)
@@ -58,11 +56,10 @@ export async function BrowseBySection({
               <Link
                 key={type}
                 href={getLocalePath(locale, `/pokedex/type/${type}`)}
-                className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-all hover:scale-105 hover:shadow-md ${
-                  isActive
+                className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-all hover:scale-105 hover:shadow-md ${isActive
                     ? `${TYPE_BG[type]} text-white shadow-lg ring-2 ring-white/50`
                     : "border border-border/50 bg-background/50 text-foreground hover:bg-background/80"
-                }`}
+                  }`}
               >
                 <Image
                   src={`/images/types/${type}.svg`}
@@ -76,14 +73,11 @@ export async function BrowseBySection({
             )
           })}
         </div>
-      </div>
+      </BrowseByCollapsible>
 
       {/* Browse by Specialty */}
-      <div>
-        <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-          {t(translations, "pokedex.browseBySpecialty")}
-        </h3>
-        <div className="flex flex-wrap gap-2">
+      <BrowseByCollapsible title={t(translations, "pokedex.browseBySpecialty")}>
+        <div className="flex flex-wrap gap-2 pb-4">
           {specialties.map((spec) => {
             const isActive = activeSpecialty === spec
             const specName = t(translations, `specialties.${spec}`)
@@ -91,11 +85,10 @@ export async function BrowseBySection({
               <Link
                 key={spec}
                 href={getLocalePath(locale, `/pokedex/specialty/${spec}`)}
-                className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-all hover:scale-105 hover:shadow-md ${
-                  isActive
+                className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-all hover:scale-105 hover:shadow-md ${isActive
                     ? "bg-primary text-primary-foreground shadow-lg ring-2 ring-primary/50"
                     : "border border-border/50 bg-background/50 text-foreground hover:bg-background/80"
-                }`}
+                  }`}
               >
                 <SafeImage
                   src={`/images/specialties/${spec.replace(/ /g, "-")}.png`}
@@ -109,7 +102,7 @@ export async function BrowseBySection({
             )
           })}
         </div>
-      </div>
+      </BrowseByCollapsible>
     </div>
   )
 }
