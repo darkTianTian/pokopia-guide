@@ -62,9 +62,13 @@ export async function HabitatDetailPage({
             </h1>
 
             {habitat.materials && (
-              <div className="mt-4 inline-flex items-center rounded-full bg-muted/50 px-4 py-1.5 text-sm font-medium text-muted-foreground ring-1 ring-inset ring-border/50">
-                <span className="font-semibold text-foreground mr-2">{t(translations, "habitat.materials")}:</span>
-                {habitat.materials}
+              <div className="mt-4 flex flex-col sm:flex-row sm:items-center gap-3 rounded-2xl bg-amber-500/10 px-6 py-4 ring-1 ring-inset ring-amber-500/20 dark:bg-amber-500/5 dark:ring-amber-500/10">
+                <span className="shrink-0 rounded-full bg-amber-500/20 px-3 py-1 font-bold text-amber-700 dark:text-amber-400 text-sm tracking-wide">
+                  {t(translations, "habitat.materials")}
+                </span>
+                <span className="text-base sm:text-lg font-bold text-foreground">
+                  {habitat.materials}
+                </span>
               </div>
             )}
 
