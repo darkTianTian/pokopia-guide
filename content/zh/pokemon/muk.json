@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "grimer",
@@ -27,7 +28,7 @@
     "habitats": [
       {
         "id": 186,
-        "name": "Marsh fishing spot",
+        "name": "沼釣り",
         "rarity": "rare"
       }
     ]
