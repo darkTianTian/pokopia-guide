@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "dratini",
@@ -28,13 +29,8 @@
     ],
     "habitats": [
       {
-        "id": 144,
-        "name": "Hydrated fluffy flower bed",
-        "rarity": "very-rare"
-      },
-      {
         "id": 148,
-        "name": "Simple bathroom",
+        "name": "シンプルバスルーム",
         "rarity": "rare"
       }
     ]

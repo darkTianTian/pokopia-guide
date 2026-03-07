@@ -7,12 +7,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/typhlosion.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "burn",
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "quilava",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 150,
+        "name": "暖炉でうたた寝",
+        "rarity": "rare"
+      }
+    ]
   }
 }
