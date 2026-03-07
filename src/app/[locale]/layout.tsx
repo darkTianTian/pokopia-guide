@@ -53,7 +53,20 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       locale: LOCALE_LANG[locale].replace("-", "_"),
+      url: `https://pokopiaguide.com/${locale}`,
       siteName: t(translations, "site.name"),
+      images: [
+        {
+          url: "https://pokopiaguide.com/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: t(translations, "site.name"),
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      images: ["https://pokopiaguide.com/og-image.jpg"],
     },
   }
 }
