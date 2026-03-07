@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "charcadet",
@@ -30,7 +29,7 @@
     "habitats": [
       {
         "id": 192,
-        "name": "忠誠の騎士の祭壇",
+        "name": "Auspicious knight's shrine",
         "rarity": "common"
       }
     ]

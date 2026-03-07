@@ -19,8 +19,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -30,12 +29,12 @@
     "habitats": [
       {
         "id": 144,
-        "name": "うるおうフワフワな花畑",
+        "name": "Hydrated fluffy flower bed",
         "rarity": "common"
       },
       {
         "id": 148,
-        "name": "シンプルバスルーム",
+        "name": "Simple bathroom",
         "rarity": "common"
       }
     ]

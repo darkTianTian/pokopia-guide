@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "glimmet",
@@ -31,6 +30,11 @@
         "id": 119,
         "name": "Container snacking",
         "rarity": "common"
+      },
+      {
+        "id": 118,
+        "name": "Creepy white rocks",
+        "rarity": "rare"
       }
     ]
   }

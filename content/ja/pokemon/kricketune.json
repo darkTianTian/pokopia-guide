@@ -19,8 +19,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "kricketot",
@@ -28,7 +27,7 @@
     "habitats": [
       {
         "id": 128,
-        "name": "音楽と読書",
+        "name": "Music and magazines",
         "rarity": "common"
       }
     ]

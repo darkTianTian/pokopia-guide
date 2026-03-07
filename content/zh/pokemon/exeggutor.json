@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "exeggcute",
@@ -32,6 +31,11 @@
         "id": 57,
         "name": "南國風情",
         "rarity": "very-rare"
+      },
+      {
+        "id": 59,
+        "name": "海灘樹蔭",
+        "rarity": "rare"
       }
     ]
   }

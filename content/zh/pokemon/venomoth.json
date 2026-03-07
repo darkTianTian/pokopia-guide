@@ -17,8 +17,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "venonat",
@@ -27,6 +26,11 @@
       {
         "id": 7,
         "name": "被照亮的草叢",
+        "rarity": "rare"
+      },
+      {
+        "id": 23,
+        "name": "被照亮的長椅",
         "rarity": "rare"
       }
     ]

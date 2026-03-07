@@ -19,8 +19,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "froakie",
@@ -30,7 +29,7 @@
     "habitats": [
       {
         "id": 139,
-        "name": "うるおうピンクの草むら",
+        "name": "Hydrated pink tall grass",
         "rarity": "rare"
       }
     ]

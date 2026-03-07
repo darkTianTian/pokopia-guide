@@ -19,8 +19,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "fidough",
@@ -28,7 +27,12 @@
     "habitats": [
       {
         "id": 121,
-        "name": "パクパクパン工房",
+        "name": "Best bread bakery",
+        "rarity": "rare"
+      },
+      {
+        "id": 104,
+        "name": "優雅花田",
         "rarity": "rare"
       }
     ]

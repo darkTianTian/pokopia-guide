@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -37,6 +36,11 @@
       {
         "id": 14,
         "name": "花園",
+        "rarity": "common"
+      },
+      {
+        "id": 13,
+        "name": "花環墓地",
         "rarity": "common"
       }
     ]

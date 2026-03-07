@@ -17,8 +17,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "venonat",
@@ -27,6 +26,11 @@
       {
         "id": 7,
         "name": "Illuminated tall grass",
+        "rarity": "rare"
+      },
+      {
+        "id": 23,
+        "name": "Illuminated bench",
         "rarity": "rare"
       }
     ]

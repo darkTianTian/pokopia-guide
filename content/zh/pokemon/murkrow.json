@@ -18,8 +18,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -34,7 +33,7 @@
       },
       {
         "id": 105,
-        "name": "木かげのゆうがな花畑",
+        "name": "Tree-shaded graceful flower bed",
         "rarity": "common"
       }
     ]

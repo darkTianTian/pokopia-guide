@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -31,7 +30,7 @@
     "habitats": [
       {
         "id": 137,
-        "name": "ピンクの草むら",
+        "name": "Pink tall grass",
         "rarity": "common"
       }
     ]

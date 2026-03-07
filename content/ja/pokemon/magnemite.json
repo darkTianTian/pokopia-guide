@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -31,7 +30,7 @@
     "habitats": [
       {
         "id": 38,
-        "name": "工場の物置",
+        "name": "Factory Storage",
         "rarity": "common"
       }
     ]

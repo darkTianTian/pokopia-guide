@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -31,7 +30,7 @@
     "habitats": [
       {
         "id": 200,
-        "name": "ヒレのカセキ展示台",
+        "name": "Sail Fossil display",
         "rarity": "common"
       }
     ]
