@@ -32,12 +32,12 @@
     "habitats": [
       {
         "id": 138,
-        "name": "木かげのピンクの草むら",
+        "name": "Tree-shaded pink tall grass",
         "rarity": "rare"
       },
       {
         "id": 167,
-        "name": "オフィスのバックヤード",
+        "name": "Office storeroom",
         "rarity": "common"
       }
     ]

@@ -32,6 +32,11 @@
         "id": 75,
         "name": "換裝空間",
         "rarity": "common"
+      },
+      {
+        "id": 76,
+        "name": "Private makeup stand",
+        "rarity": "common"
       }
     ]
   }

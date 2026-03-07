@@ -31,12 +31,12 @@
     "habitats": [
       {
         "id": 101,
-        "name": "うるおう赤い草むら",
+        "name": "Hydrated red tall grass",
         "rarity": "rare"
       },
       {
         "id": 187,
-        "name": "温泉釣り",
+        "name": "Hot-spring Fishing Spot",
         "rarity": "common"
       }
     ]
