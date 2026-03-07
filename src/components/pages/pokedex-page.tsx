@@ -20,16 +20,18 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
         items={[{ label: t(translations, "pokedex.breadcrumb") }]}
         locale={locale}
       />
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold">
+      <div className="mb-12 mt-6">
+        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-5xl text-foreground">
           {t(translations, "pokedex.title")}
         </h1>
-        <h2 className="mt-2 text-lg font-normal text-muted-foreground">
+        <h2 className="mt-4 text-lg sm:text-xl text-muted-foreground">
           {t(translations, "pokedex.subtitle")}
         </h2>
-        <p className="mt-1 text-sm text-muted-foreground">
-          {t(translations, "pokedex.totalCount").replace("{{count}}", String(pokemon.length))}
-        </p>
+        <div className="mt-6 inline-flex items-center rounded-full bg-primary/10 px-5 py-2 ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10">
+          <span className="text-sm sm:text-base font-bold uppercase tracking-wider text-primary">
+            {t(translations, "pokedex.totalCount").replace("{{count}}", String(pokemon.length))}
+          </span>
+        </div>
       </div>
       <BrowseBySection locale={locale} />
       <PokemonGrid
