@@ -19,10 +19,10 @@ export function BrowseByCollapsible({ title, children }: BrowseByCollapsibleProp
     }, [])
 
     return (
-        <div className="mb-6">
+        <div className="mb-2">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-2 mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors -ml-2 p-2 rounded-lg hover:bg-muted/50 active:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                className="flex items-center gap-2 mb-1 text-sm font-semibold uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors -ml-2 p-2 rounded-lg hover:bg-muted/50 active:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
                 aria-expanded={isOpen}
             >
                 <span>{title}</span>

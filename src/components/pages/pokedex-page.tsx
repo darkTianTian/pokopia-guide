@@ -20,7 +20,7 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
         items={[{ label: t(translations, "pokedex.breadcrumb") }]}
         locale={locale}
       />
-      <div className="mb-12 mt-6">
+      <div className="mb-8 mt-6">
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-5xl text-foreground">
           {t(translations, "pokedex.title")}
         </h1>

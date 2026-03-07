@@ -45,10 +45,10 @@ export async function BrowseBySection({
   const specialties = getAllSpecialties(allPokemon)
 
   return (
-    <div className="mb-8 flex flex-col gap-2">
+    <div className="mb-4 flex flex-col gap-0">
       {/* Browse by Type */}
       <BrowseByCollapsible title={t(translations, "pokedex.browseByType")}>
-        <div className="flex flex-wrap gap-2 pb-4">
+        <div className="flex flex-wrap gap-2 pb-0">
           {POKEMON_TYPES.map((type) => {
             const isActive = activeType === type
             const typeName = t(translations, `types.${type}`)
@@ -57,8 +57,8 @@ export async function BrowseBySection({
                 key={type}
                 href={getLocalePath(locale, `/pokedex/type/${type}`)}
                 className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-all hover:scale-105 hover:shadow-md ${isActive
-                    ? `${TYPE_BG[type]} text-white shadow-lg ring-2 ring-white/50`
-                    : "border border-border/50 bg-background/50 text-foreground hover:bg-background/80"
+                  ? `${TYPE_BG[type]} text-white shadow-lg ring-2 ring-white/50`
+                  : "border border-border/50 bg-background/50 text-foreground hover:bg-background/80"
                   }`}
               >
                 <Image
@@ -77,7 +77,7 @@ export async function BrowseBySection({
 
       {/* Browse by Specialty */}
       <BrowseByCollapsible title={t(translations, "pokedex.browseBySpecialty")}>
-        <div className="flex flex-wrap gap-2 pb-4">
+        <div className="flex flex-wrap gap-2 pb-0">
           {specialties.map((spec) => {
             const isActive = activeSpecialty === spec
             const specName = t(translations, `specialties.${spec}`)
@@ -86,8 +86,8 @@ export async function BrowseBySection({
                 key={spec}
                 href={getLocalePath(locale, `/pokedex/specialty/${spec}`)}
                 className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-all hover:scale-105 hover:shadow-md ${isActive
-                    ? "bg-primary text-primary-foreground shadow-lg ring-2 ring-primary/50"
-                    : "border border-border/50 bg-background/50 text-foreground hover:bg-background/80"
+                  ? "bg-primary text-primary-foreground shadow-lg ring-2 ring-primary/50"
+                  : "border border-border/50 bg-background/50 text-foreground hover:bg-background/80"
                   }`}
               >
                 <SafeImage
