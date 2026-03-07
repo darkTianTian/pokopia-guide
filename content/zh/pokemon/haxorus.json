@@ -25,6 +25,17 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "fraxure",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 29,
+        "name": "伐木工人作業場",
+        "rarity": "rare"
+      },
+      {
+        "id": 44,
+        "name": "圓木溫暖",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }

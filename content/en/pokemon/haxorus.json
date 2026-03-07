@@ -25,6 +25,17 @@
     "obtainMethod": "habitat",
     "evolvesFrom": "fraxure",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 29,
+        "name": "Lumberjack's workplace",
+        "rarity": "rare"
+      },
+      {
+        "id": 44,
+        "name": "Crazy log handicrafts",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }
