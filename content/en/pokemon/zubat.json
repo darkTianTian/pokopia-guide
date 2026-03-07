@@ -17,8 +17,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -29,6 +28,11 @@
       {
         "id": 51,
         "name": "Tree-shaded Yellow tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 66,
+        "name": "Park bench",
         "rarity": "common"
       }
     ]

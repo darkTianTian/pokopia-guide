@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "girafarig",
@@ -30,7 +29,7 @@
     "habitats": [
       {
         "id": 143,
-        "name": "木かげのフワフワな花畑",
+        "name": "Tree-shaded fluffy flower bed",
         "rarity": "rare"
       }
     ]

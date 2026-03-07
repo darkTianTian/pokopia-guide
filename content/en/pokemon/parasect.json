@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "paras",
@@ -34,6 +33,11 @@
       },
       {
         "id": 14,
+        "name": "Flower garden",
+        "rarity": "rare"
+      },
+      {
+        "id": 13,
         "name": "Flower garden",
         "rarity": "rare"
       }

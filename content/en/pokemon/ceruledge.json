@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "charcadet",
@@ -31,6 +30,11 @@
       {
         "id": 191,
         "name": "怨念の騎士の祭壇",
+        "rarity": "common"
+      },
+      {
+        "id": 193,
+        "name": "Malicious knight's shrine",
         "rarity": "common"
       }
     ]

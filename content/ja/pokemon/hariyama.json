@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "makuhita",
@@ -30,6 +29,11 @@
       {
         "id": 51,
         "name": "木かげの黄色の草むら",
+        "rarity": "rare"
+      },
+      {
+        "id": 80,
+        "name": "荷づくりできたよ",
         "rarity": "rare"
       }
     ]

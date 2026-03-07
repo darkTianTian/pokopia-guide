@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "diglett",
@@ -31,6 +30,11 @@
         "id": 99,
         "name": "Tree-shaded red tall grass",
         "rarity": "rare"
+      },
+      {
+        "id": 123,
+        "name": "House party",
+        "rarity": "common"
       }
     ]
   }

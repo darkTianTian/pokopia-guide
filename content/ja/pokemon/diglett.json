@@ -19,8 +19,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -35,7 +34,7 @@
       },
       {
         "id": 119,
-        "name": "Habitat 119",
+        "name": "Container snacking",
         "rarity": "common"
       }
     ]

@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -31,12 +30,12 @@
     "habitats": [
       {
         "id": 118,
-        "name": "ブキミな白い岩",
+        "name": "Creepy white rocks",
         "rarity": "common"
       },
       {
         "id": 119,
-        "name": "Habitat 119",
+        "name": "Container snacking",
         "rarity": "common"
       }
     ]

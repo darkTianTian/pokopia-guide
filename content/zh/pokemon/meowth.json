@@ -19,8 +19,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -36,7 +35,7 @@
       },
       {
         "id": 91,
-        "name": "レジでお会計",
+        "name": "Working the register",
         "rarity": "common"
       }
     ]

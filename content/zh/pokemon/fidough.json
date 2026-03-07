@@ -11,15 +11,12 @@
       "search"
     ],
     "timeOfDay": [
-      "dawn",
-      "day",
-      "dusk"
+      "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -34,7 +31,7 @@
       },
       {
         "id": 121,
-        "name": "パクパクパン工房",
+        "name": "Best bread bakery",
         "rarity": "common"
       }
     ]

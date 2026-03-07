@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "slowpoke",
@@ -35,7 +34,12 @@
       },
       {
         "id": 184,
-        "name": "釣り堀",
+        "name": "Fishing pond",
+        "rarity": "rare"
+      },
+      {
+        "id": 30,
+        "name": "玩偶與晚安",
         "rarity": "rare"
       }
     ]

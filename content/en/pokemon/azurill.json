@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -33,6 +32,11 @@
       {
         "id": 53,
         "name": "Hydrated yellow tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 62,
+        "name": "Perpetual mess",
         "rarity": "common"
       }
     ]

@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "torchic",
@@ -32,8 +31,13 @@
     "habitats": [
       {
         "id": 87,
-        "name": "火力はつでん所",
+        "name": "Furnace Spot",
         "rarity": "common"
+      },
+      {
+        "id": 79,
+        "name": "度假村備餐",
+        "rarity": "rare"
       }
     ]
   }

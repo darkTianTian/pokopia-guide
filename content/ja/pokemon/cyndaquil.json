@@ -19,8 +19,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -30,7 +29,7 @@
     "habitats": [
       {
         "id": 141,
-        "name": "土管の秘密基地",
+        "name": "Concrete pipe secret base",
         "rarity": "common"
       }
     ]

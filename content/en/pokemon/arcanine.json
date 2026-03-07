@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "growlithe",
@@ -31,6 +30,11 @@
         "id": 129,
         "name": "Mini museum",
         "rarity": "rare"
+      },
+      {
+        "id": 188,
+        "name": "Magma fishing spot",
+        "rarity": "common"
       }
     ]
   }

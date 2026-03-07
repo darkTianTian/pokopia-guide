@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "onix",
@@ -30,7 +29,7 @@
     "habitats": [
       {
         "id": 117,
-        "name": "ガタゴト鉄骨工事",
+        "name": "Clink-clang iron construction",
         "rarity": "common"
       }
     ]

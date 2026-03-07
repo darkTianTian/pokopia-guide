@@ -21,7 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "weepinbell",

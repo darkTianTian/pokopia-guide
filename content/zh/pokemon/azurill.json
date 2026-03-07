@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -33,6 +32,11 @@
       {
         "id": 53,
         "name": "濕潤黃色草叢",
+        "rarity": "common"
+      },
+      {
+        "id": 62,
+        "name": "來整理吧",
         "rarity": "common"
       }
     ]

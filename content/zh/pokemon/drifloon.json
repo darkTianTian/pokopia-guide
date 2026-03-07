@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -41,7 +40,7 @@
       },
       {
         "id": 181,
-        "name": "ぬいぐるみに囲まれて",
+        "name": "Plush central",
         "rarity": "common"
       }
     ]

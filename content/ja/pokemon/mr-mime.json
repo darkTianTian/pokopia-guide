@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "mime-jr",
@@ -32,7 +31,7 @@
     "habitats": [
       {
         "id": 157,
-        "name": "ピカピカ洗面所",
+        "name": "Spotless Washing station",
         "rarity": "common"
       }
     ]

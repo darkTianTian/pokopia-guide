@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "poliwhirl",
@@ -34,8 +33,13 @@
       },
       {
         "id": 114,
-        "name": "ととのう温泉",
+        "name": "Harminous hot spring",
         "rarity": "common"
+      },
+      {
+        "id": 106,
+        "name": "Hydrated graceful flower bed",
+        "rarity": "rare"
       }
     ]
   }

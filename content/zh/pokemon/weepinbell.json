@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "bellsprout",
@@ -32,7 +31,7 @@
     "habitats": [
       {
         "id": 21,
-        "name": "はなやかな机",
+        "name": "Flowery Table",
         "rarity": "rare"
       },
       {

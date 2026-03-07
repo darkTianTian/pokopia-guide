@@ -19,8 +19,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -30,12 +29,12 @@
     "habitats": [
       {
         "id": 82,
-        "name": "目覚ましベッドスペース",
+        "name": "Alarm clock sleep zone",
         "rarity": "common"
       },
       {
         "id": 91,
-        "name": "レジでお会計",
+        "name": "Working the register",
         "rarity": "common"
       }
     ]

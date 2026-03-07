@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "kirlia",
@@ -31,6 +30,11 @@
       {
         "id": 163,
         "name": "プチ図書館",
+        "rarity": "rare"
+      },
+      {
+        "id": 162,
+        "name": "Moisturizing makeup stand",
         "rarity": "rare"
       }
     ]

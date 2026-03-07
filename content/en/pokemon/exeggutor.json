@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "exeggcute",
@@ -32,6 +31,11 @@
         "id": 57,
         "name": "Tropical vibes",
         "rarity": "very-rare"
+      },
+      {
+        "id": 59,
+        "name": "Shaded beach",
+        "rarity": "rare"
       }
     ]
   }

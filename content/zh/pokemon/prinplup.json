@@ -20,8 +20,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "piplup",
@@ -36,7 +35,7 @@
       },
       {
         "id": 86,
-        "name": "水力はつでん所",
+        "name": "Waterwheel Spot",
         "rarity": "rare"
       }
     ]

@@ -21,8 +21,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "amaura",
@@ -30,7 +29,7 @@
     "habitats": [
       {
         "id": 201,
-        "name": "ツンドラのカセキ展示台",
+        "name": "Tundra fossil dispolay",
         "rarity": "common"
       }
     ]
