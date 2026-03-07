@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -29,7 +30,7 @@
     "habitats": [
       {
         "id": 152,
-        "name": "Fortune-teller's table",
+        "name": "水晶占い",
         "rarity": "common"
       }
     ]

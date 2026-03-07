@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "dartrix",
@@ -31,11 +32,6 @@
         "id": 100,
         "name": "Pointy tree-shaded rocky tall grass",
         "rarity": "very-rare"
-      },
-      {
-        "id": 136,
-        "name": "Modern living",
-        "rarity": "rare"
       }
     ]
   }

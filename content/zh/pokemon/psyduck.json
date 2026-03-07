@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -29,7 +30,7 @@
     "habitats": [
       {
         "id": 78,
-        "name": "Hot-spring shower",
+        "name": "温泉の洗い場",
         "rarity": "common"
       }
     ]

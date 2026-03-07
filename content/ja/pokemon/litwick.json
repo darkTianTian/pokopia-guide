@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -35,7 +36,7 @@
       },
       {
         "id": 33,
-        "name": "Creepy grave offering",
+        "name": "ブキミなお墓にお供えもの",
         "rarity": "common"
       }
     ]

@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "shieldon",
@@ -29,7 +30,7 @@
     "habitats": [
       {
         "id": 197,
-        "name": "Shield Fossil display",
+        "name": "シールドのカセキ展示台",
         "rarity": "common"
       }
     ]

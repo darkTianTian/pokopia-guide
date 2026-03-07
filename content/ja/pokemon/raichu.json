@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "pikachu",
@@ -28,7 +29,7 @@
     "habitats": [
       {
         "id": 176,
-        "name": "Nature's market",
+        "name": "自然の中のマーケット",
         "rarity": "common"
       }
     ]

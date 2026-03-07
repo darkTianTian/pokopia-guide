@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -38,11 +39,6 @@
         "id": 59,
         "name": "ビーチの木かげ",
         "rarity": "common"
-      },
-      {
-        "id": 98,
-        "name": "赤い草むら",
-        "rarity": "rare"
       }
     ]
   }

@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "larvesta",
@@ -29,7 +30,7 @@
     "habitats": [
       {
         "id": 105,
-        "name": "Tree-shaded graceful flower bed",
+        "name": "木かげのゆうがな花畑",
         "rarity": "very-rare"
       },
       {

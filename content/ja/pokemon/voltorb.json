@@ -12,15 +12,13 @@
       "explode"
     ],
     "timeOfDay": [
-      "dawn",
-      "day",
-      "dusk",
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -30,7 +28,7 @@
     "habitats": [
       {
         "id": 66,
-        "name": "Park bench",
+        "name": "公園のベンチ",
         "rarity": "common"
       }
     ]

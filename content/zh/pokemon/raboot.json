@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "scorbunny",
@@ -29,12 +30,12 @@
     "habitats": [
       {
         "id": 113,
-        "name": "Refreshing locker room",
+        "name": "露天風呂",
         "rarity": "common"
       },
       {
         "id": 130,
-        "name": "Refreshing locker room",
+        "name": "さわやかロッカールーム",
         "rarity": "common"
       }
     ]

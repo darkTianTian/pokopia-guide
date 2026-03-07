@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "dreepy",
@@ -31,12 +32,12 @@
     "habitats": [
       {
         "id": 138,
-        "name": "Tree-shaded pink tall grass",
+        "name": "木かげのピンクの草むら",
         "rarity": "rare"
       },
       {
         "id": 167,
-        "name": "Office storeroom",
+        "name": "オフィスのバックヤード",
         "rarity": "common"
       }
     ]

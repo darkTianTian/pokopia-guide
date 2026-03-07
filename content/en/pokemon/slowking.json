@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "slowpoke",
@@ -35,11 +36,6 @@
       {
         "id": 184,
         "name": "Fishing pond",
-        "rarity": "rare"
-      },
-      {
-        "id": 30,
-        "name": "Bed with a plush",
         "rarity": "rare"
       }
     ]

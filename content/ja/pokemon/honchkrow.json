@@ -18,7 +18,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "murkrow",
@@ -31,7 +32,7 @@
       },
       {
         "id": 125,
-        "name": "Chirping recital",
+        "name": "さえずりのリサイタル",
         "rarity": "rare"
       }
     ]

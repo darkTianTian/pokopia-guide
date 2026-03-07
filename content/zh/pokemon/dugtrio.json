@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "diglett",
@@ -30,11 +31,6 @@
         "id": 99,
         "name": "樹蔭紅色草叢",
         "rarity": "rare"
-      },
-      {
-        "id": 123,
-        "name": "House party",
-        "rarity": "common"
       }
     ]
   }

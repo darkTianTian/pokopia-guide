@@ -1,9 +1,9 @@
 {
-  "lastSync": "2026-03-07T04:37:50.095Z",
+  "lastSync": "2026-03-07T05:44:04.783Z",
   "newHabitats": [
     {
       "id": 28,
-      "name": "Large luggage carrier",
+      "name": "大きな荷物をのせて",
       "missingIn": [
         "ja",
         "zh"
@@ -11,7 +11,7 @@
     },
     {
       "id": 177,
-      "name": "Construction-site generator",
+      "name": "工事現場のはつでん所",
       "missingIn": [
         "ja",
         "zh"
@@ -19,7 +19,7 @@
     },
     {
       "id": 176,
-      "name": "Nature's market",
+      "name": "自然の中のマーケット",
       "missingIn": [
         "ja",
         "zh"
@@ -27,7 +27,7 @@
     },
     {
       "id": 91,
-      "name": "Working the register",
+      "name": "レジでお会計",
       "missingIn": [
         "ja",
         "zh"
@@ -35,7 +35,7 @@
     },
     {
       "id": 82,
-      "name": "Alarm clock sleep zone",
+      "name": "目覚ましベッドスペース",
       "missingIn": [
         "ja",
         "zh"
@@ -43,7 +43,7 @@
     },
     {
       "id": 55,
-      "name": "Overgrowth vending machie",
+      "name": "草むらの自販機",
       "missingIn": [
         "ja",
         "zh"
@@ -51,7 +51,7 @@
     },
     {
       "id": 86,
-      "name": "Waterwheel Spot",
+      "name": "水力はつでん所",
       "missingIn": [
         "ja",
         "zh"
@@ -59,7 +59,7 @@
     },
     {
       "id": 119,
-      "name": "Container snacking",
+      "name": "Habitat 119",
       "missingIn": [
         "ja",
         "zh"
@@ -67,7 +67,7 @@
     },
     {
       "id": 123,
-      "name": "House party",
+      "name": "みんなでパーティ",
       "missingIn": [
         "ja",
         "zh"
@@ -75,7 +75,7 @@
     },
     {
       "id": 138,
-      "name": "Tree-shaded pink tall grass",
+      "name": "木かげのピンクの草むら",
       "missingIn": [
         "ja",
         "zh"
@@ -83,7 +83,7 @@
     },
     {
       "id": 101,
-      "name": "Hydrated red tall grass",
+      "name": "うるおう赤い草むら",
       "missingIn": [
         "ja",
         "zh"
@@ -91,7 +91,7 @@
     },
     {
       "id": 128,
-      "name": "Music and magazines",
+      "name": "音楽と読書",
       "missingIn": [
         "ja",
         "zh"
@@ -99,7 +99,7 @@
     },
     {
       "id": 118,
-      "name": "Creepy white rocks",
+      "name": "ブキミな白い岩",
       "missingIn": [
         "ja",
         "zh"
@@ -107,7 +107,7 @@
     },
     {
       "id": 142,
-      "name": "Fluffy flower bed",
+      "name": "フワフワな花畑",
       "missingIn": [
         "ja",
         "zh"
@@ -123,7 +123,7 @@
     },
     {
       "id": 157,
-      "name": "Spotless Washing station",
+      "name": "ピカピカ洗面所",
       "missingIn": [
         "ja",
         "zh"
@@ -131,7 +131,7 @@
     },
     {
       "id": 144,
-      "name": "Hydrated fluffy flower bed",
+      "name": "うるおうフワフワな花畑",
       "missingIn": [
         "ja",
         "zh"
@@ -139,7 +139,7 @@
     },
     {
       "id": 145,
-      "name": "Waterside dinghy",
+      "name": "水辺の小舟",
       "missingIn": [
         "ja",
         "zh"
@@ -147,7 +147,7 @@
     },
     {
       "id": 141,
-      "name": "Concrete pipe secret base",
+      "name": "土管の秘密基地",
       "missingIn": [
         "ja",
         "zh"
@@ -155,7 +155,7 @@
     },
     {
       "id": 143,
-      "name": "Tree-shaded fluffy flower bed",
+      "name": "木かげのフワフワな花畑",
       "missingIn": [
         "ja",
         "zh"
@@ -163,7 +163,7 @@
     },
     {
       "id": 137,
-      "name": "Pink tall grass",
+      "name": "ピンクの草むら",
       "missingIn": [
         "ja",
         "zh"
@@ -171,7 +171,7 @@
     },
     {
       "id": 147,
-      "name": "Birdsong garden",
+      "name": "さえずりガーデン",
       "missingIn": [
         "ja",
         "zh"
@@ -179,7 +179,7 @@
     },
     {
       "id": 165,
-      "name": "Playland",
+      "name": "プレイランド",
       "missingIn": [
         "ja",
         "zh"
@@ -187,7 +187,7 @@
     },
     {
       "id": 139,
-      "name": "Hydrated pink tall grass",
+      "name": "うるおうピンクの草むら",
       "missingIn": [
         "ja",
         "zh"
@@ -195,7 +195,7 @@
     },
     {
       "id": 21,
-      "name": "Flowery Table",
+      "name": "はなやかな机",
       "missingIn": [
         "ja",
         "zh"
@@ -203,7 +203,7 @@
     },
     {
       "id": 184,
-      "name": "Fishing pond",
+      "name": "釣り堀",
       "missingIn": [
         "ja",
         "zh"
@@ -211,7 +211,7 @@
     },
     {
       "id": 26,
-      "name": "Gym First-Aid Station",
+      "name": "ジムの救急所",
       "missingIn": [
         "ja",
         "zh"
@@ -219,7 +219,7 @@
     },
     {
       "id": 179,
-      "name": "Evil Team Hideout",
+      "name": "悪の組織のアジト",
       "missingIn": [
         "ja",
         "zh"
@@ -235,7 +235,7 @@
     },
     {
       "id": 66,
-      "name": "Park bench",
+      "name": "公園のベンチ",
       "missingIn": [
         "ja",
         "zh"
@@ -251,7 +251,7 @@
     },
     {
       "id": 54,
-      "name": "Marshy tall grass",
+      "name": "沼地の草むら",
       "missingIn": [
         "ja",
         "zh"
@@ -259,7 +259,7 @@
     },
     {
       "id": 106,
-      "name": "Hydrated graceful flower bed",
+      "name": "うるおうゆうがな花畑",
       "missingIn": [
         "ja",
         "zh"
@@ -267,7 +267,7 @@
     },
     {
       "id": 187,
-      "name": "Hot-spring Fishing Spot",
+      "name": "温泉釣り",
       "missingIn": [
         "ja",
         "zh"
@@ -275,7 +275,7 @@
     },
     {
       "id": 125,
-      "name": "Chirping recital",
+      "name": "さえずりのリサイタル",
       "missingIn": [
         "ja",
         "zh"
@@ -283,7 +283,7 @@
     },
     {
       "id": 105,
-      "name": "Tree-shaded graceful flower bed",
+      "name": "木かげのゆうがな花畑",
       "missingIn": [
         "ja",
         "zh"
@@ -307,7 +307,7 @@
     },
     {
       "id": 169,
-      "name": "Professor's apprentice program",
+      "name": "はかせを目指して研究中",
       "missingIn": [
         "ja",
         "zh"
@@ -315,7 +315,7 @@
     },
     {
       "id": 194,
-      "name": "Skull Fossil display",
+      "name": "ずがいのカセキ展示台",
       "missingIn": [
         "ja",
         "zh"
@@ -323,7 +323,7 @@
     },
     {
       "id": 196,
-      "name": "Armor Fossil display",
+      "name": "たてのカセキ展示台",
       "missingIn": [
         "ja",
         "zh"
@@ -331,7 +331,7 @@
     },
     {
       "id": 197,
-      "name": "Shield Fossil display",
+      "name": "シールドのカセキ展示台",
       "missingIn": [
         "ja",
         "zh"
@@ -339,7 +339,7 @@
     },
     {
       "id": 200,
-      "name": "Sail Fossil display",
+      "name": "ヒレのカセキ展示台",
       "missingIn": [
         "ja",
         "zh"
@@ -347,7 +347,7 @@
     },
     {
       "id": 201,
-      "name": "Tundra fossil dispolay",
+      "name": "ツンドラのカセキ展示台",
       "missingIn": [
         "ja",
         "zh"
@@ -355,7 +355,7 @@
     },
     {
       "id": 38,
-      "name": "Factory Storage",
+      "name": "工場の物置",
       "missingIn": [
         "ja",
         "zh"
@@ -363,7 +363,7 @@
     },
     {
       "id": 117,
-      "name": "Clink-clang iron construction",
+      "name": "ガタゴト鉄骨工事",
       "missingIn": [
         "ja",
         "zh"
@@ -371,7 +371,7 @@
     },
     {
       "id": 87,
-      "name": "Furnace Spot",
+      "name": "火力はつでん所",
       "missingIn": [
         "ja",
         "zh"
@@ -379,7 +379,7 @@
     },
     {
       "id": 114,
-      "name": "Harminous hot spring",
+      "name": "ととのう温泉",
       "missingIn": [
         "ja",
         "zh"
@@ -387,7 +387,7 @@
     },
     {
       "id": 151,
-      "name": "Surging psychic power",
+      "name": "みなぎるサイコパワー",
       "missingIn": [
         "ja",
         "zh"
@@ -419,7 +419,7 @@
     },
     {
       "id": 65,
-      "name": "Trash disposal site",
+      "name": "ゴミ捨て場",
       "missingIn": [
         "ja",
         "zh"
@@ -427,7 +427,7 @@
     },
     {
       "id": 167,
-      "name": "Office storeroom",
+      "name": "オフィスのバックヤード",
       "missingIn": [
         "ja",
         "zh"
@@ -443,7 +443,7 @@
     },
     {
       "id": 192,
-      "name": "Auspicious knight's shrine",
+      "name": "忠誠の騎士の祭壇",
       "missingIn": [
         "ja",
         "zh"
@@ -459,7 +459,7 @@
     },
     {
       "id": 193,
-      "name": "Malicious knight's shrine",
+      "name": "ツバサのカセキ展示台",
       "missingIn": [
         "ja",
         "zh"
@@ -467,7 +467,7 @@
     },
     {
       "id": 33,
-      "name": "Creepy grave offering",
+      "name": "ブキミなお墓にお供えもの",
       "missingIn": [
         "ja",
         "zh"
@@ -491,7 +491,7 @@
     },
     {
       "id": 47,
-      "name": "Tree-shaded snoozing Snorlax",
+      "name": "木かげでぐっすりカビゴン",
       "missingIn": [
         "ja",
         "zh"
@@ -499,7 +499,7 @@
     },
     {
       "id": 148,
-      "name": "Simple bathroom",
+      "name": "シンプルバスルーム",
       "missingIn": [
         "ja",
         "zh"
@@ -507,7 +507,7 @@
     },
     {
       "id": 174,
-      "name": "Picturesque photo cutoutboard",
+      "name": "絶景の顔だしパネル",
       "missingIn": [
         "ja",
         "zh"
@@ -547,7 +547,7 @@
     },
     {
       "id": 121,
-      "name": "Best bread bakery",
+      "name": "パクパクパン工房",
       "missingIn": [
         "ja",
         "zh"
@@ -571,7 +571,7 @@
     },
     {
       "id": 113,
-      "name": "Refreshing locker room",
+      "name": "露天風呂",
       "missingIn": [
         "ja",
         "zh"
@@ -595,7 +595,7 @@
     },
     {
       "id": 126,
-      "name": "Recital stage",
+      "name": "リサイタルステージ",
       "missingIn": [
         "ja",
         "zh"
@@ -699,7 +699,7 @@
     },
     {
       "id": 94,
-      "name": "Pikachu space",
+      "name": "ピカチュウスペース",
       "missingIn": [
         "ja",
         "zh"
@@ -750,7 +750,7 @@
   "stats": {
     "total": 305,
     "serebiiCount": 293,
-    "gameWithCount": 0,
+    "gameWithCount": 238,
     "game8Count": 284,
     "updated": 293,
     "skipped": 0,

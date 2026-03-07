@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "fidough",
@@ -28,11 +29,6 @@
       {
         "id": 121,
         "name": "Best bread bakery",
-        "rarity": "rare"
-      },
-      {
-        "id": 104,
-        "name": "Graceful flower bed",
         "rarity": "rare"
       }
     ]

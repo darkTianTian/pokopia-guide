@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "bonsly",
@@ -32,7 +33,7 @@
       },
       {
         "id": 123,
-        "name": "House party",
+        "name": "みんなでパーティ",
         "rarity": "common"
       }
     ]

@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "rookidee",
@@ -29,7 +30,7 @@
     "habitats": [
       {
         "id": 140,
-        "name": "Elevated pink tall grass",
+        "name": "高台のピンクの草むら",
         "rarity": "common"
       }
     ]

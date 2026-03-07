@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -28,7 +29,7 @@
     "habitats": [
       {
         "id": 128,
-        "name": "Music and magazines",
+        "name": "音楽と読書",
         "rarity": "common"
       }
     ]

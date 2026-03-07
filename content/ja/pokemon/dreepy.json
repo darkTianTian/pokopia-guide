@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -31,7 +32,7 @@
     "habitats": [
       {
         "id": 138,
-        "name": "Tree-shaded pink tall grass",
+        "name": "木かげのピンクの草むら",
         "rarity": "common"
       }
     ]
