@@ -78,14 +78,21 @@ export async function HabitatDetailPage({
       </div>
 
       {/* Pokemon Grid */}
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
         {habitat.pokemon.map(({ pokemon, rarity }) => {
           const badgeStyles =
             rarity === "very-rare"
-              ? "bg-purple-500/10 text-purple-500 ring-purple-500/30"
+              ? "bg-purple-500/20 text-purple-600 dark:text-purple-300 ring-purple-500/40 border-purple-500/20"
               : rarity === "rare"
-                ? "bg-blue-500/10 text-blue-500 ring-blue-500/30"
-                : "bg-emerald-500/10 text-emerald-500 ring-emerald-500/30"
+                ? "bg-blue-500/20 text-blue-600 dark:text-blue-300 ring-blue-500/40 border-blue-500/20"
+                : "bg-emerald-500/20 text-emerald-600 dark:text-emerald-300 ring-emerald-500/40 border-emerald-500/20"
+
+          const cardStyles =
+            rarity === "very-rare"
+              ? "border-2 border-purple-400/50 dark:border-purple-500/30 hover:border-purple-400 dark:hover:border-purple-500"
+              : rarity === "rare"
+                ? "border-2 border-blue-400/50 dark:border-blue-500/30 hover:border-blue-400 dark:hover:border-blue-500"
+                : "border-2 border-emerald-400/50 dark:border-emerald-500/30 hover:border-emerald-400 dark:hover:border-emerald-500"
 
           const rarityLabel =
             rarity === "very-rare"
@@ -95,15 +102,15 @@ export async function HabitatDetailPage({
                 : "Common"
 
           return (
-            <div key={pokemon.id} className="relative group/habitat-poke">
-              {/* Rarity Badge overlay */}
-              <div className="absolute right-3 top-3 z-20 transition-transform duration-300 group-hover/habitat-poke:-translate-y-1">
-                <span className={`inline-flex items-center rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider ring-1 ring-inset backdrop-blur-md shadow-sm ${badgeStyles}`}>
+            <div key={pokemon.id} className="relative group/habitat-poke mt-2">
+              {/* Rarity Badge overlay - Center-Top Floating Pill */}
+              <div className="absolute left-1/2 -top-3.5 z-20 -translate-x-1/2 transition-transform duration-300 group-hover/habitat-poke:-translate-y-1">
+                <span className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest ring-1 ring-inset border backdrop-blur-xl shadow-sm ${badgeStyles}`}>
                   {rarityLabel}
                 </span>
               </div>
 
-              <PokemonCard pokemon={pokemon} locale={locale} />
+              <PokemonCard pokemon={pokemon} locale={locale} className={cardStyles} />
             </div>
           )
         })}
