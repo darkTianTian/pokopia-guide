@@ -24,13 +24,15 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-5xl text-foreground">
           {t(translations, "pokedex.title")}
         </h1>
-        <h2 className="mt-4 text-lg sm:text-xl text-muted-foreground">
-          {t(translations, "pokedex.subtitle")}
-        </h2>
-        <div className="mt-6 inline-flex items-center rounded-full bg-primary/10 px-5 py-2 ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10">
-          <span className="text-sm sm:text-base font-bold uppercase tracking-wider text-primary">
-            {t(translations, "pokedex.totalCount").replace("{{count}}", String(pokemon.length))}
-          </span>
+        <div className="mt-4 flex flex-wrap items-center gap-4">
+          <h2 className="text-lg sm:text-xl text-muted-foreground">
+            {t(translations, "pokedex.subtitle")}
+          </h2>
+          <div className="inline-flex items-center rounded-full bg-primary/10 px-5 py-2 ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10">
+            <span className="text-sm sm:text-base font-bold uppercase tracking-wider text-primary">
+              {t(translations, "pokedex.totalCount").replace("{{count}}", String(pokemon.length))}
+            </span>
+          </div>
         </div>
       </div>
       <BrowseBySection locale={locale} />
