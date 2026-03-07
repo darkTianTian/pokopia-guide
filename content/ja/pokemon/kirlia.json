@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "ralts",
@@ -32,7 +33,7 @@
     "habitats": [
       {
         "id": 159,
-        "name": "Study Area",
+        "name": "勉強スペース",
         "rarity": "rare"
       }
     ]

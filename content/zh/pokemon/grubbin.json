@@ -32,6 +32,11 @@
         "id": 50,
         "name": "黃色草叢",
         "rarity": "common"
+      },
+      {
+        "id": 83,
+        "name": "自販機ヨコで一息",
+        "rarity": "common"
       }
     ]
   }

@@ -32,6 +32,11 @@
         "id": 50,
         "name": "Yellow tall grass",
         "rarity": "common"
+      },
+      {
+        "id": 83,
+        "name": "Vending machine break area",
+        "rarity": "common"
       }
     ]
   }
