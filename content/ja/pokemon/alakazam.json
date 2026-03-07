@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "kadabra",
@@ -28,13 +29,8 @@
     "habitats": [
       {
         "id": 151,
-        "name": "Surging psychic power",
+        "name": "みなぎるサイコパワー",
         "rarity": "rare"
-      },
-      {
-        "id": 168,
-        "name": "Experiment Space",
-        "rarity": "common"
       }
     ]
   }

@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "makuhita",
@@ -29,11 +30,6 @@
       {
         "id": 51,
         "name": "Tree-shaded Yellow tall grass",
-        "rarity": "rare"
-      },
-      {
-        "id": 80,
-        "name": "All packed up",
         "rarity": "rare"
       }
     ]

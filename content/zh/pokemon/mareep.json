@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -30,7 +31,7 @@
     "habitats": [
       {
         "id": 55,
-        "name": "Overgrowth vending machie",
+        "name": "草むらの自販機",
         "rarity": "rare"
       },
       {

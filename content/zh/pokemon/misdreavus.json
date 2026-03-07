@@ -16,7 +16,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -26,12 +27,12 @@
     "habitats": [
       {
         "id": 142,
-        "name": "Fluffy flower bed",
+        "name": "フワフワな花畑",
         "rarity": "common"
       },
       {
         "id": 167,
-        "name": "Office storeroom",
+        "name": "オフィスのバックヤード",
         "rarity": "common"
       }
     ]

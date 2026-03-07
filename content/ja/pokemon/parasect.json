@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "paras",
@@ -34,11 +35,6 @@
       {
         "id": 14,
         "name": "フラワーガーデン",
-        "rarity": "rare"
-      },
-      {
-        "id": 13,
-        "name": "花に囲まれたお墓",
         "rarity": "rare"
       }
     ]

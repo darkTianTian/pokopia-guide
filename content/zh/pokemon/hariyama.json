@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "makuhita",
@@ -29,11 +30,6 @@
       {
         "id": 51,
         "name": "樹蔭黃色草叢",
-        "rarity": "rare"
-      },
-      {
-        "id": 80,
-        "name": "行李打包好了",
         "rarity": "rare"
       }
     ]

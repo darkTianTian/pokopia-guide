@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "wooper",
@@ -30,11 +31,6 @@
       {
         "id": 54,
         "name": "Marshy tall grass",
-        "rarity": "rare"
-      },
-      {
-        "id": 186,
-        "name": "Marsh fishing spot",
         "rarity": "rare"
       }
     ]

@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -38,11 +39,6 @@
         "id": 59,
         "name": "海灘樹蔭",
         "rarity": "common"
-      },
-      {
-        "id": 98,
-        "name": "紅色草叢",
-        "rarity": "rare"
       }
     ]
   }

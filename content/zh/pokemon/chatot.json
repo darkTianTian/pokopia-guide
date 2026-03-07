@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -33,7 +34,7 @@
       },
       {
         "id": 125,
-        "name": "Chirping recital",
+        "name": "さえずりのリサイタル",
         "rarity": "common"
       }
     ]

@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "jigglypuff",
@@ -29,7 +30,7 @@
     "habitats": [
       {
         "id": 126,
-        "name": "Recital stage",
+        "name": "リサイタルステージ",
         "rarity": "rare"
       }
     ]

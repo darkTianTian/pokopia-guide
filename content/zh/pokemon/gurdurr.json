@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "timburr",
@@ -34,7 +35,7 @@
       },
       {
         "id": 28,
-        "name": "Large luggage carrier",
+        "name": "大きな荷物をのせて",
         "rarity": "common"
       }
     ]

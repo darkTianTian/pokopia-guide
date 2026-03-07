@@ -19,7 +19,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

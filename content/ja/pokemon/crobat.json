@@ -18,7 +18,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "golbat",
@@ -26,7 +27,7 @@
     "habitats": [
       {
         "id": 65,
-        "name": "Trash disposal site",
+        "name": "ゴミ捨て場",
         "rarity": "rare"
       }
     ]

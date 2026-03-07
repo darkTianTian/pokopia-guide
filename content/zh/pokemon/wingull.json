@@ -15,12 +15,14 @@
     "timeOfDay": [
       "dawn",
       "day",
-      "dusk"
+      "dusk",
+      "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

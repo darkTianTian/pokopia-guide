@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "gurdurr",
@@ -28,7 +29,7 @@
     "habitats": [
       {
         "id": 177,
-        "name": "Construction-site generator",
+        "name": "工事現場のはつでん所",
         "rarity": "common"
       }
     ]

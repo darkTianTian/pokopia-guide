@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -29,7 +30,7 @@
     "habitats": [
       {
         "id": 106,
-        "name": "Hydrated graceful flower bed",
+        "name": "うるおうゆうがな花畑",
         "rarity": "common"
       }
     ]

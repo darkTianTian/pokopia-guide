@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "munchlax",
@@ -29,11 +30,6 @@
         "id": 47,
         "name": "Tree-shaded snoozing Snorlax",
         "rarity": "rare"
-      },
-      {
-        "id": 93,
-        "name": "Gourmet's altar",
-        "rarity": "common"
       }
     ]
   }
