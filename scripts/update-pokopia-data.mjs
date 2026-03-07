@@ -1148,14 +1148,17 @@ async function downloadMissingHabitatImages(allHabitatIds, habitatIdToImageUrl) 
   console.log("\n--- Downloading Missing Habitat Images ---")
 
   // Check which images are missing or are placeholder images
-  const PLACEHOLDER_SIZE = 4701973 // known "COMING SOON" placeholder file size
+  const PLACEHOLDER_SIZES = new Set([
+    4701973, // known "COMING SOON" placeholder file size
+    1769, // auto-generated "?" placeholder
+  ])
   const missing = []
   for (const id of allHabitatIds) {
     const filePath = path.join(HABITATS_DIR, `habitat_${id}.png`)
     try {
       const stat = await fs.stat(filePath)
       // Treat placeholder images as missing
-      if (stat.size === PLACEHOLDER_SIZE) {
+      if (PLACEHOLDER_SIZES.has(stat.size)) {
         missing.push(id)
       }
     } catch {
@@ -1193,31 +1196,39 @@ async function downloadMissingHabitatImages(allHabitatIds, habitatIdToImageUrl) 
       ].filter(Boolean)
 
       for (const url of urls) {
-        try {
-          const res = await fetch(url, {
-            headers: { "User-Agent": "Mozilla/5.0 (compatible; PokopiaGuideBot/1.0)" },
-          })
-          if (!res.ok) continue
+        // Retry up to 3 times with delay for transient 403s
+        for (let attempt = 0; attempt < 3; attempt++) {
+          try {
+            if (attempt > 0) await new Promise((r) => setTimeout(r, 2000 * attempt))
+            const res = await fetch(url, {
+              headers: {
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Accept": "image/png,image/*,*/*",
+              },
+            })
+            if (res.status === 403 && attempt < 2) continue // retry on 403
+            if (!res.ok) break // skip to next URL on other errors
 
-          const buffer = Buffer.from(await res.arrayBuffer())
-          if (buffer.length < 1024) {
-            tooSmall++
-            continue
+            const buffer = Buffer.from(await res.arrayBuffer())
+            if (buffer.length < 1024) {
+              tooSmall++
+              break
+            }
+
+            const filePath = path.join(HABITATS_DIR, `habitat_${id}.png`)
+            await fs.writeFile(filePath, buffer)
+            console.log(`  Downloaded habitat_${id}.png (${buffer.length} bytes)`)
+            downloaded++
+            return
+          } catch {
+            if (attempt === 2) break
           }
-
-          const filePath = path.join(HABITATS_DIR, `habitat_${id}.png`)
-          await fs.writeFile(filePath, buffer)
-          console.log(`  Downloaded habitat_${id}.png (${buffer.length} bytes)`)
-          downloaded++
-          return
-        } catch {
-          continue
         }
       }
       console.log(`  Failed habitat_${id}.png`)
       failed++
     },
-    5
+    3
   )
 
   console.log(`\n  Habitat images: ${downloaded} downloaded, ${failed} failed, ${tooSmall} too small`)
