@@ -40,9 +40,10 @@ interface PokemonCardProps {
   pokemon: Pokemon
   locale: Locale
   compact?: boolean
+  className?: string
 }
 
-export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
+export function PokemonCard({ pokemon, locale, compact, className }: PokemonCardProps) {
   const tr = TRANSLATIONS_BY_LOCALE[locale]
   const pokopia = pokemon.pokopia
 
@@ -54,9 +55,15 @@ export function PokemonCard({ pokemon, locale, compact }: PokemonCardProps) {
   const primaryType = pokemon.types[0] || "normal"
   const gradientClass = TYPE_GRADIENTS[primaryType] || TYPE_GRADIENTS.normal
 
+  // If no className is provided, use the default border styles
+  const computedClassName = className
+    ? className
+    : "border border-border/40 hover:border-border/80"
+
   return (
     <Link href={getLocalePath(locale, `/pokedex/${pokemon.slug}`)} className="group block h-full outline-none">
-      <article className="relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:border-border/80 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5">
+      <article className={`relative flex h-full flex-col overflow-hidden rounded-[2rem] bg-background/40 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5 ${computedClassName}`}>
+
 
         {/* Glowing Background Blob */}
         <div className="absolute left-1/2 top-28 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40 blur-[50px] transition-all duration-500 group-hover:scale-125 group-hover:opacity-70 dark:opacity-30 dark:group-hover:opacity-50">
