@@ -21,10 +21,6 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
 
       <Breadcrumb
         items={[
-          {
-            label: t(translations, "nav.habitat"),
-            href: getLocalePath(locale, "/habitat"),
-          },
           { label: t(translations, "habitat.breadcrumbList") },
         ]}
         locale={locale}
