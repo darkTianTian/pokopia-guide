@@ -7,7 +7,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "water"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
