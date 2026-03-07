@@ -33,9 +33,9 @@ export async function HomePage({ locale }: HomePageProps) {
       icon: "📖",
     },
     {
-      href: getLocalePath(locale, "/habitat"),
-      title: t(translations, "features.habitatTitle"),
-      description: t(translations, "features.habitatDesc"),
+      href: getLocalePath(locale, "/habitat/list"),
+      title: t(translations, "nav.habitatList"),
+      description: t(translations, "habitat.listDescription"),
       icon: "🏡",
     },
     {
@@ -55,12 +55,14 @@ export async function HomePage({ locale }: HomePageProps) {
       title: t(translations, "features.exploreTitle"),
       description: t(translations, "features.exploreDesc"),
       icon: "🗺️",
+      comingSoon: true,
     },
     {
       href: getLocalePath(locale, "/multiplayer"),
       title: t(translations, "features.multiplayerTitle"),
       description: t(translations, "features.multiplayerDesc"),
       icon: "🤝",
+      comingSoon: true,
     },
   ]
 
@@ -93,14 +95,18 @@ export async function HomePage({ locale }: HomePageProps) {
         <h2 className="mb-8 text-center text-2xl font-bold">
           {t(translations, "home.featureNav")}
         </h2>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-border/50">
           {features.map((feature) => (
-            <Link key={feature.title} href={feature.href}>
-              <Card className="h-full transition-shadow hover:shadow-lg">
+            <Link
+              key={feature.title}
+              href={feature.href}
+              className="flex-none"
+            >
+              <Card className={`h-full w-[220px] transition-shadow hover:shadow-lg ${feature.comingSoon ? "opacity-60" : ""}`}>
                 <CardHeader>
                   <div className="mb-2 text-3xl">{feature.icon}</div>
                   <CardTitle className="text-lg">{feature.title}</CardTitle>
-                  <CardDescription>{feature.description}</CardDescription>
+                  <CardDescription className="text-sm">{feature.description}</CardDescription>
                 </CardHeader>
               </Card>
             </Link>

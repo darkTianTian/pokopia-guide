@@ -29,10 +29,6 @@ export async function MaterialDetailPage({
       <Breadcrumb
         items={[
           {
-            label: t(translations, "nav.habitat"),
-            href: getLocalePath(locale, "/habitat"),
-          },
-          {
             label: t(translations, "habitat.breadcrumbMaterials"),
             href: getLocalePath(locale, "/habitat/materials"),
           },
