@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-07T10:33:45.027Z",
+  "lastSync": "2026-03-07T11:28:57.116Z",
   "newHabitats": [
     {
       "id": 28,
@@ -475,7 +475,7 @@
     },
     {
       "id": 186,
-      "name": "Marsh fishing spot",
+      "name": "沼釣り",
       "missingIn": [
         "ja",
         "zh"
@@ -768,13 +768,21 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 43,
+      "name": "Professor's treasure trove",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
     "total": 312,
     "serebiiCount": 300,
-    "gameWithCount": 252,
+    "gameWithCount": 255,
     "game8Count": 284,
     "updated": 300,
     "skipped": 0,

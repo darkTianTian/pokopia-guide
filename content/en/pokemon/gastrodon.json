@@ -9,11 +9,26 @@
   "image": "https://assets.pokopiaguide.com/pokemon/gastrodon.png",
   "pokopia": {
     "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "shellos",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 185,
+        "name": "Ocean fishing spot",
+        "rarity": "rare"
+      }
+    ]
   }
 }

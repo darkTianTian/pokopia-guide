@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "corvisquire",
@@ -29,13 +30,8 @@
     "habitats": [
       {
         "id": 140,
-        "name": "Elevated pink tall grass",
+        "name": "高台のピンクの草むら",
         "rarity": "very-rare"
-      },
-      {
-        "id": 156,
-        "name": "Sewer hole inspection",
-        "rarity": "common"
       }
     ]
   }
