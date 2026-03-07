@@ -31,6 +31,10 @@ export async function Header({ locale }: HeaderProps) {
       label: t(translations, "nav.habitatList"),
     },
     {
+      path: "/habitat/materials",
+      label: t(translations, "nav.habitatMaterials"),
+    },
+    {
       path: "/habitat/crafting",
       label: t(translations, "nav.habitatCrafting"),
       comingSoon: true,

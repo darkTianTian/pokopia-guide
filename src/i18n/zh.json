@@ -13,6 +13,7 @@
     "habitatList": "棲息地列表",
     "habitatOverview": "總覽",
     "habitatCrafting": "家具製作配方",
+    "habitatMaterials": "建造材料",
     "comingSoon": "即將推出",
     "explore": "探索地圖",
     "multiplayer": "連線指南"
@@ -115,7 +116,18 @@
     "detailDescription": "在這個棲息地中可以遇到的寶可夢。",
     "breadcrumbList": "棲息地列表",
     "materials": "所需材料",
-    "totalCount": "共 {{count}} 個棲息地"
+    "totalCount": "共 {{count}} 個棲息地",
+    "materialsTitle": "建造材料一覽",
+    "materialsMetaTitle": "Pokopia 全棲息地建造材料",
+    "materialsDescription": "瀏覽 Pokopia 棲息地建造所需的所有材料，了解每種材料被哪些棲息地使用。",
+    "materialsMetaDescription": "Pokémon Pokopia 完整建造材料清單。查看每種材料所需的棲息地、數量，規劃你的家園建設。",
+    "materialsTotalCount": "共 {{count}} 種材料",
+    "materialDetailDesc": "{{name}} 是 Pokopia 多個棲息地建造所需的材料。",
+    "materialDetailMetaDesc": "{{name}} 被 {{count}} 個 Pokopia 棲息地使用。查看哪些棲息地需要此材料及所需數量。",
+    "materialUsedIn": "被 {{count}} 個棲息地使用",
+    "materialUsedInLabel": "個棲息地",
+    "materialQuantity": "需要 x{{count}}",
+    "breadcrumbMaterials": "建造材料"
   },
   "quests": {
     "title": "任務攻略",
@@ -146,6 +158,7 @@
     "events": "限時活動",
     "habitat": "家園建設",
     "habitatList": "棲息地列表",
+    "habitatMaterials": "建造材料",
     "explore": "探索地圖",
     "multiplayer": "連線指南"
   },
