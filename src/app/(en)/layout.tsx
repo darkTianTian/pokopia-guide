@@ -28,7 +28,20 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
+    url: "https://pokopiaguide.com",
     siteName: "Pokopia Guide",
+    images: [
+      {
+        url: "https://pokopiaguide.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Pokopia Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://pokopiaguide.com/og-image.jpg"],
   },
 }
 
