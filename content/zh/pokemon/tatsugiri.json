@@ -1,0 +1,19 @@
+{
+  "id": 145,
+  "slug": "tatsugiri",
+  "name": "米立龍",
+  "types": [
+    "dragon",
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tatsugiri.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

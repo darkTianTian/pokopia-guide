@@ -1,0 +1,19 @@
+{
+  "id": 175,
+  "slug": "mawile",
+  "name": "大嘴娃",
+  "types": [
+    "steel",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/mawile.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

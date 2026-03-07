@@ -1,0 +1,20 @@
+{
+  "id": 40,
+  "slug": "tangela",
+  "name": "蔓藤怪",
+  "types": [
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tangela.png",
+  "pokopia": {
+    "specialties": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "tangrowth"
+    ],
+    "habitats": []
+  }
+}
