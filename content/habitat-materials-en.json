@@ -1,5 +1,6 @@
 {
   "1": "Tall grass x4",
+  "2": "Tall grass x4, Large Tree (any) x1",
   "3": "Tall grass x4, Large boulder x1",
   "4": "Tall grass x4, Water x2",
   "5": "Tall grass x4, Ocean Water x2",
@@ -25,6 +26,7 @@
   "26": "First aid kit x1, Punching bag x1, Table (any) x1",
   "27": "Arrow sign x1, Wooden path x3",
   "28": "Cart x1, Wooden crate x2",
+  "29": "Log chair x1, Cart x1, Log table x1, Tree stump (any) x1",
   "30": "Bed (any) x1, Doll (any) x1",
   "31": "Slender candle x1, Bed (any) x1, Table (any) x1",
   "36": "Inflatable boat x1, Beach Parasol x1, Water x2",
@@ -78,6 +80,7 @@
   "111": "Moss x4, Mossy boulder x1",
   "112": "Moss x4, Hot-spring water x2",
   "113": "Hot-spring spout x1, Hot-spring water x2",
+  "114": "Hot-spring spout x1, Water basin x1, Hot-spring water x2",
   "115": "Molten rock x1, Lava x2",
   "116": "Wheelbarrow x1, Excavation tools x1, Smelting furnace x1",
   "117": "Iron beam or column x3, Wheelbarrow x1, Excavation tools x1, Sandbags x1",

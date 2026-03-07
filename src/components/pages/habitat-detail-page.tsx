@@ -24,7 +24,7 @@ export async function HabitatDetailPage({
   return (
     <div className="relative mx-auto max-w-6xl px-4 py-8">
       {/* Subtle Page Top Glow */}
-      <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[500px] w-full -translate-x-1/2 bg-gradient-to-b from-primary/10 via-primary/5 to-transparent blur-3xl" />
+      <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[500px] w-full -translate-x-1/2 bg-gradient-to-b from-primary/10 via-primary/5 to-transparent blur-3xl"></div>
 
       <Breadcrumb
         items={[
@@ -39,7 +39,7 @@ export async function HabitatDetailPage({
 
       {/* Hero Section */}
       <div className="mb-12 mt-6 relative overflow-hidden rounded-[2.5rem] border border-border/40 bg-background/40 p-8 sm:p-12 shadow-sm backdrop-blur-xl">
-        <div className="absolute -right-20 -top-20 -z-10 h-64 w-64 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 blur-[60px]" />
+        <div className="absolute -right-20 -top-20 -z-10 h-64 w-64 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 blur-[60px]"></div>
 
         <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-center">
           <div className="relative flex h-[200px] w-[200px] sm:h-[240px] sm:w-[240px] shrink-0 items-center justify-center overflow-hidden rounded-[2rem] bg-muted/20 ring-4 ring-primary/20 shadow-inner">
@@ -53,6 +53,7 @@ export async function HabitatDetailPage({
           </div>
           <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-foreground">
+              <span className="text-2xl font-semibold text-muted-foreground/60 sm:text-3xl">#{habitat.id}</span>{" "}
               {habitat.name}
             </h1>
 

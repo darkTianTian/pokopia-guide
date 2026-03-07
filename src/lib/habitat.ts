@@ -53,10 +53,10 @@ export async function getAllHabitatsWithPokemon(
         const materialsMap = HABITAT_MATERIALS_BY_LOCALE[locale]
         const idStr = String(habitat.id)
         // For materials: use locale-specific, fallback to JA
-        const materials = materialsMap[idStr] || habitatMaterialsJa[idStr] || ""
+        const materials = materialsMap[idStr] || habitatMaterialsEn[idStr] || habitatMaterialsJa[idStr] || ""
         habitatMap.set(habitat.id, {
           id: habitat.id,
-          name: habitatNames[idStr] ?? habitat.name,
+          name: habitatNames[idStr] ?? (habitatMappingEn as Record<string, string>)[idStr] ?? habitat.name,
           image: `/images/habitats/habitat_${habitat.id}.png`,
           materials,
           pokemon: [{ pokemon, rarity: habitat.rarity }],

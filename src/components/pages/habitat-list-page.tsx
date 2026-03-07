@@ -15,9 +15,9 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
   ])
 
   return (
-    <div className="relative mx-auto max-w-6xl px-4 py-8">
+    <div className="relative mx-auto max-w-6xl px-4 py-8" suppressHydrationWarning>
       {/* Subtle Page Top Glow */}
-      <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-72 w-full -translate-x-1/2 bg-gradient-to-b from-primary/10 to-transparent blur-3xl" />
+      <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-72 w-full -translate-x-1/2 bg-gradient-to-b from-primary/10 to-transparent blur-3xl" aria-hidden="true"></div>
 
       <Breadcrumb
         items={[
@@ -78,6 +78,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
                   {/* Habitat Info */}
                   <div className="mb-4 text-center">
                     <h2 className="text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+                      <span className="text-base font-semibold text-muted-foreground/60">#{habitat.id}</span>{" "}
                       {habitat.name}
                     </h2>
                     {habitat.materials && (
