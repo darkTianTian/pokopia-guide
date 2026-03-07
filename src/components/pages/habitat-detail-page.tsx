@@ -74,15 +74,16 @@ export async function HabitatDetailPage({
               </div>
             )}
 
-            <p className="mt-4 max-w-2xl text-base text-muted-foreground leading-relaxed">
-              {t(translations, "habitat.detailDescription")}
-            </p>
-
-            <div className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-primary/5 px-3 py-1.5 ring-1 ring-inset ring-primary/20">
-              <span className="text-sm font-bold text-primary">{habitat.pokemon.length}</span>
-              <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                {t(translations, "habitat.pokemonCount")}
-              </span>
+            <div className="mt-4 flex flex-wrap items-center gap-3">
+              <p className="max-w-2xl text-base text-muted-foreground leading-relaxed">
+                {t(translations, "habitat.detailDescription")}
+              </p>
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/5 px-3 py-1.5 ring-1 ring-inset ring-primary/20">
+                <span className="text-sm font-bold text-primary">{habitat.pokemon.length}</span>
+                <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  {t(translations, "habitat.pokemonCount")}
+                </span>
+              </div>
             </div>
           </div>
         </div>
