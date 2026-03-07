@@ -18,7 +18,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -28,7 +29,7 @@
     "habitats": [
       {
         "id": 89,
-        "name": "Spooky study",
+        "name": "あやしい書さい",
         "rarity": "common"
       }
     ]

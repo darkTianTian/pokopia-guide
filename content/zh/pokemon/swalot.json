@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "gulpin",
@@ -27,7 +28,7 @@
     "habitats": [
       {
         "id": 120,
-        "name": "Dinner table surprise",
+        "name": "ワクワクな食卓",
         "rarity": "rare"
       }
     ]

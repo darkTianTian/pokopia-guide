@@ -27,6 +27,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 98,
+        "name": "赤い草むら",
+        "rarity": "rare"
+      },
+      {
         "id": 128,
         "name": "音楽と読書",
         "rarity": "common"
