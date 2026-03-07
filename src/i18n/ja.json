@@ -13,6 +13,7 @@
     "habitatList": "生息地一覧",
     "habitatOverview": "概要",
     "habitatCrafting": "家具クラフトレシピ",
+    "habitatMaterials": "建設素材",
     "comingSoon": "近日公開",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイ"
@@ -114,7 +115,18 @@
     "detailDescription": "この生息地で出会えるポケモン。",
     "breadcrumbList": "生息地一覧",
     "materials": "必要な素材",
-    "totalCount": "全 {{count}} 件の生息地"
+    "totalCount": "全 {{count}} 件の生息地",
+    "materialsTitle": "建設素材一覧",
+    "materialsMetaTitle": "Pokopia 全生息地の建設素材",
+    "materialsDescription": "Pokopia の生息地建設に必要な全素材を一覧で確認。各素材がどの生息地で使われるかを調べましょう。",
+    "materialsMetaDescription": "Pokémon Pokopia の建設素材完全リスト。各素材が必要な生息地、数量を確認して建設計画を立てましょう。",
+    "materialsTotalCount": "全 {{count}} 種の素材",
+    "materialDetailDesc": "{{name}} は複数の Pokopia 生息地で使われる建設素材です。",
+    "materialDetailMetaDesc": "{{name}} は {{count}} の Pokopia 生息地で使用されています。必要な生息地と数量を確認。",
+    "materialUsedIn": "{{count}} の生息地で使用",
+    "materialUsedInLabel": "の生息地",
+    "materialQuantity": "x{{count}} 必要",
+    "breadcrumbMaterials": "建設素材"
   },
   "quests": {
     "title": "クエスト攻略",
@@ -145,6 +157,7 @@
     "events": "イベント",
     "habitat": "ホーム建設",
     "habitatList": "生息地一覧",
+    "habitatMaterials": "建設素材",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイガイド"
   },

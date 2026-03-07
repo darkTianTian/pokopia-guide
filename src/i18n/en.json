@@ -13,6 +13,7 @@
     "habitatList": "Habitat List",
     "habitatOverview": "Overview",
     "habitatCrafting": "Crafting Recipes",
+    "habitatMaterials": "Materials",
     "comingSoon": "Soon",
     "explore": "Explore",
     "multiplayer": "Multiplayer"
@@ -114,7 +115,18 @@
     "detailDescription": "Pokémon that can be found in this habitat.",
     "breadcrumbList": "Habitat List",
     "materials": "Required Materials",
-    "totalCount": "{{count}} habitats in total"
+    "totalCount": "{{count}} habitats in total",
+    "materialsTitle": "Habitat Materials",
+    "materialsMetaTitle": "All Habitat Building Materials",
+    "materialsDescription": "Browse all crafting materials used across Pokopia habitats. Find out which habitats require each material.",
+    "materialsMetaDescription": "Complete list of all building materials in Pokémon Pokopia. See which habitats need each material, quantities required, and plan your habitat building strategy.",
+    "materialsTotalCount": "{{count}} materials in total",
+    "materialDetailDesc": "{{name}} is a building material used across multiple Pokopia habitats.",
+    "materialDetailMetaDesc": "{{name}} is used in {{count}} Pokopia habitats. See which habitats need this material and the quantities required.",
+    "materialUsedIn": "Used in {{count}} habitats",
+    "materialUsedInLabel": "Habitats",
+    "materialQuantity": "x{{count}} needed",
+    "breadcrumbMaterials": "Materials"
   },
   "quests": {
     "title": "Quest Guide",
@@ -145,6 +157,7 @@
     "events": "Events",
     "habitat": "Habitat Building",
     "habitatList": "Habitat List",
+    "habitatMaterials": "Habitat Materials",
     "explore": "Exploration Map",
     "multiplayer": "Multiplayer Guide"
   },
