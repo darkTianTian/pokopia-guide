@@ -1,5 +1,6 @@
 {
   "1": "Tall grass x4",
+  "2": "Tall grass x4, Large Tree (any) x1",
   "3": "Tall grass x4, Large boulder x1",
   "4": "Tall grass x4, Water x2",
   "5": "Tall grass x4, Ocean Water x2",
@@ -79,6 +80,7 @@
   "111": "Moss x4, Mossy boulder x1",
   "112": "Moss x4, Hot-spring water x2",
   "113": "Hot-spring spout x1, Hot-spring water x2",
+  "114": "Hot-spring spout x1, Water basin x1, Hot-spring water x2",
   "115": "Molten rock x1, Lava x2",
   "116": "Wheelbarrow x1, Excavation tools x1, Smelting furnace x1",
   "117": "Iron beam or column x3, Wheelbarrow x1, Excavation tools x1, Sandbags x1",

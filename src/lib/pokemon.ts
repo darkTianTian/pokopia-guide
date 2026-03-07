@@ -25,7 +25,7 @@ function enrichMaterials(pokemon: Pokemon, locale: Locale): Pokemon {
   const materialsMap = MATERIALS_BY_LOCALE[locale]
   const enrichedHabitats = pokemon.pokopia.habitats.map((h) => {
     const idStr = String(h.id)
-    const materials = materialsMap[idStr] || habitatMaterialsJa[idStr] || ""
+    const materials = materialsMap[idStr] || habitatMaterialsEn[idStr] || habitatMaterialsJa[idStr] || ""
     return materials ? { ...h, materials } : h
   })
   return {

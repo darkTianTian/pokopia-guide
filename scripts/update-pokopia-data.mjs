@@ -635,7 +635,7 @@ async function scrapeGame8HabitatConditions() {
       const condText = secondCell.text().trim()
       if (!condText) return
 
-      conditions.set(habitatName.toLowerCase().trim(), condText)
+      conditions.set(habitatName.toLowerCase().replace(/\s+/g, " ").trim(), condText)
     })
 
     // Also try parsing from h3 + ul/table patterns
@@ -649,7 +649,7 @@ async function scrapeGame8HabitatConditions() {
 
       const text = next.text().trim()
       if (text && (text.includes("x") || text.includes("×") || text.includes("Conditions"))) {
-        conditions.set(headingText.toLowerCase().trim(), text)
+        conditions.set(headingText.toLowerCase().replace(/\s+/g, " ").trim(), text)
       }
     })
 
@@ -928,7 +928,7 @@ async function scrapeGameWith(jaNameToSlug) {
   }
 
   console.log(`  Found ${results.size} Pokémon on GameWith (${pokemonDatas.length} total, ${pokemonDatas.length - results.size} unmapped)`)
-  return { pokemonData: results, habitatItemsMap }
+  return { pokemonData: results, habitatItemsMap, habitatNameMapJa: habitatIdToName }
 }
 
 // --- Habitat Name Localization ---
@@ -942,6 +942,8 @@ async function loadHabitatMappings() {
 
 async function saveHabitatMappings(mappings) {
   await writeJson(path.join(CONTENT_DIR, "habitat-mapping-en.json"), mappings.en)
+  await writeJson(path.join(CONTENT_DIR, "habitat-mapping.json"), mappings.ja)
+  await writeJson(path.join(CONTENT_DIR, "habitat-mapping-zh.json"), mappings.zh)
 }
 
 function getLocalizedHabitatName(habitat, locale, mappings) {
@@ -1285,7 +1287,7 @@ async function run() {
     }),
     scrapeGameWith(jaNameToSlug).catch((err) => {
       console.error(`Failed to scrape GameWith: ${err.message}`)
-      return { pokemonData: new Map(), habitatItemsMap: new Map() }
+      return { pokemonData: new Map(), habitatItemsMap: new Map(), habitatNameMapJa: new Map() }
     }),
     scrapeGame8HabitatConditions().catch((err) => {
       console.error(`Failed to scrape Game8 habitat conditions: ${err.message}`)
@@ -1297,6 +1299,15 @@ async function run() {
   const gameWithData = gameWithResult.pokemonData
   const gameWithHabitatItems = gameWithResult.habitatItemsMap
   const habitatImageMap = game8Result.habitatImageMap
+
+  // Fill JA habitat mapping from GameWith habitatDatas
+  const gameWithJaNames = gameWithResult.habitatNameMapJa
+  for (const [idStr, jaName] of gameWithJaNames) {
+    if (!habitatMappings.ja[idStr]) {
+      habitatMappings.ja[idStr] = jaName
+    }
+  }
+  console.log(`JA habitat mapping: ${Object.keys(habitatMappings.ja).length} entries (after GameWith fill)`)
 
   // Step 3: Load all existing Pokemon JSON files
   const existingPokemon = new Map()
@@ -1409,6 +1420,14 @@ async function run() {
     if (bestName) habitatMappings.en[idStr] = bestName
   }
   console.log(`Built EN habitat mapping: ${Object.keys(habitatMappings.en).length} entries (from voting across ${habitatIdToEnVotes.size} habitats)`)
+
+  // Fill ZH mapping with EN names as fallback
+  for (const [idStr, enName] of Object.entries(habitatMappings.en)) {
+    if (!habitatMappings.zh[idStr]) {
+      habitatMappings.zh[idStr] = enName
+    }
+  }
+  console.log(`ZH habitat mapping: ${Object.keys(habitatMappings.zh).length} entries (after EN fallback fill)`)
 
   // Stats tracking
   let updated = 0
@@ -1679,32 +1698,36 @@ async function run() {
 
     // Build EN materials: match via habitat-mapping-en.json → Game8 conditions
     const materialsEn = {}
-    // Build reverse map: lowercase EN name → habitat ID
+    // Build reverse map: lowercase EN name → habitat ID (with alias support)
     const enNameToId = new Map()
     for (const [id, name] of Object.entries(habitatMappings.en)) {
-      enNameToId.set(name.toLowerCase().trim(), id)
+      enNameToId.set(name.toLowerCase().replace(/\s+/g, " ").trim(), id)
+    }
+    // Aliases: Game8 uses different names for some habitats
+    const GAME8_NAME_ALIASES = {
+      "lumberjack's workplace": "29",
+      "evil organiztion hq": "179",
+    }
+    for (const [alias, id] of Object.entries(GAME8_NAME_ALIASES)) {
+      enNameToId.set(alias.toLowerCase().replace(/\s+/g, " ").trim(), id)
     }
 
     // Match Game8 conditions to habitat IDs
     for (const [g8Name, condText] of g8HabitatConditions) {
-      const hId = enNameToId.get(g8Name)
+      const hId = enNameToId.get(g8Name.toLowerCase().replace(/\s+/g, " ").trim())
       if (hId) {
-        // Extract only the conditions part (between "Conditions:" and "Pokemon Available:")
         const condMatch = condText.match(/Conditions:\s*([\s\S]*?)(?:\s*Pokemon Available:|$)/i)
         const cleaned = condMatch ? condMatch[1].replace(/\s+/g, " ").trim() : condText.replace(/\s+/g, " ").trim()
-        if (cleaned) {
-          materialsEn[hId] = cleaned
-        }
+        if (cleaned) materialsEn[hId] = cleaned
       }
     }
 
-    // Fallback: for habitats with JA materials but no EN match, leave empty (JA fallback in frontend)
     console.log(`  JA materials: ${Object.keys(materialsJa).length} habitats`)
     console.log(`  EN materials: ${Object.keys(materialsEn).length} habitats (from Game8 conditions)`)
 
     await writeJson(path.join(CONTENT_DIR, "habitat-materials.json"), materialsJa)
     await writeJson(path.join(CONTENT_DIR, "habitat-materials-en.json"), materialsEn)
-    await writeJson(path.join(CONTENT_DIR, "habitat-materials-zh.json"), {})
+    await writeJson(path.join(CONTENT_DIR, "habitat-materials-zh.json"), materialsEn)
   }
 
   // Save sync state
@@ -1730,7 +1753,7 @@ async function run() {
   if (!DRY_RUN) {
     await saveSyncState(newState)
     await saveHabitatMappings(habitatMappings)
-    console.log(`Saved EN habitat mapping: ${Object.keys(habitatMappings.en).length} entries`)
+    console.log(`Saved habitat mappings: EN=${Object.keys(habitatMappings.en).length}, JA=${Object.keys(habitatMappings.ja).length}, ZH=${Object.keys(habitatMappings.zh).length}`)
   }
 
   console.log("\n--- Summary ---")
