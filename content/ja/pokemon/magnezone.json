@@ -8,12 +8,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/magnezone.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "generate",
+      "recycle"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "magneton",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 85,
+        "name": "ミニゲームコーナー",
+        "rarity": "rare"
+      }
+    ]
   }
 }
