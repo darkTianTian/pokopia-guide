@@ -42,14 +42,16 @@ export async function HabitatDetailPage({
         <div className="absolute -right-20 -top-20 -z-10 h-64 w-64 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 blur-[60px]"></div>
 
         <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-center">
-          <div className="relative flex h-[200px] w-[200px] sm:h-[240px] sm:w-[240px] shrink-0 items-center justify-center overflow-hidden rounded-[2rem] bg-muted/20 ring-4 ring-primary/20 shadow-inner">
-            <SafeImage
-              src={habitat.image}
-              alt={habitat.name}
-              width={220}
-              height={220}
-              className="object-contain"
-            />
+          <div className="relative flex h-[200px] w-[200px] sm:h-[240px] sm:w-[240px] shrink-0 items-center justify-center">
+            <div className="relative z-10 flex h-full w-full items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:scale-105">
+              <SafeImage
+                src={habitat.image}
+                alt={habitat.name}
+                width={220}
+                height={220}
+                className="rounded-[2rem] object-contain drop-shadow-[0_15px_15px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_15px_15px_rgba(0,0,0,0.4)]"
+              />
+            </div>
           </div>
           <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-foreground">
