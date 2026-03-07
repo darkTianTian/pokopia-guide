@@ -32,6 +32,11 @@
         "id": 75,
         "name": "Changing area",
         "rarity": "common"
+      },
+      {
+        "id": 76,
+        "name": "Private makeup stand",
+        "rarity": "common"
       }
     ]
   }

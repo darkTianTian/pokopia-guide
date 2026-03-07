@@ -32,6 +32,11 @@
         "id": 75,
         "name": "お着がえスペース",
         "rarity": "common"
+      },
+      {
+        "id": 76,
+        "name": "おめかし中は見ないで",
+        "rarity": "common"
       }
     ]
   }

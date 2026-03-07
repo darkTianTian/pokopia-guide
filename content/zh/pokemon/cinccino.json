@@ -7,12 +7,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/cinccino.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "gather",
+      "recycle"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "minccino",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 76,
+        "name": "Private makeup stand",
+        "rarity": "rare"
+      }
+    ]
   }
 }

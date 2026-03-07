@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-07T14:33:30.236Z",
+  "lastSync": "2026-03-07T15:32:58.258Z",
   "newHabitats": [
     {
       "id": 28,
@@ -517,7 +517,6 @@
       "id": 74,
       "name": "夜のお祭り会場",
       "missingIn": [
-        "ja",
         "zh"
       ]
     },
@@ -525,7 +524,6 @@
       "id": 150,
       "name": "暖炉でうたた寝",
       "missingIn": [
-        "ja",
         "zh"
       ]
     },
@@ -565,7 +563,6 @@
       "id": 70,
       "name": "カフェスペース",
       "missingIn": [
-        "ja",
         "zh"
       ]
     },
@@ -637,7 +634,6 @@
       "id": 35,
       "name": "明かりと香りのユウワク",
       "missingIn": [
-        "ja",
         "zh"
       ]
     },
@@ -645,7 +641,6 @@
       "id": 96,
       "name": "リゾートへようこそ",
       "missingIn": [
-        "ja",
         "zh"
       ]
     },
@@ -653,7 +648,6 @@
       "id": 170,
       "name": "研究者のデスク",
       "missingIn": [
-        "ja",
         "zh"
       ]
     },
@@ -749,7 +743,6 @@
       "id": 71,
       "name": "ビーチセット",
       "missingIn": [
-        "ja",
         "zh"
       ]
     },
@@ -765,7 +758,6 @@
       "id": 73,
       "name": "しかけにご注意",
       "missingIn": [
-        "ja",
         "zh"
       ]
     },
@@ -782,7 +774,7 @@
   "stats": {
     "total": 313,
     "serebiiCount": 301,
-    "gameWithCount": 259,
+    "gameWithCount": 260,
     "game8Count": 284,
     "updated": 300,
     "skipped": 0,
