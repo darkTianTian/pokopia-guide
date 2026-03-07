@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "poliwag",
@@ -30,7 +31,7 @@
     "habitats": [
       {
         "id": 144,
-        "name": "Hydrated fluffy flower bed",
+        "name": "うるおうフワフワな花畑",
         "rarity": "rare"
       }
     ]
