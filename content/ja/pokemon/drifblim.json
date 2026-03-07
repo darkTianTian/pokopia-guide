@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "drifloon",
@@ -29,7 +30,7 @@
     "habitats": [
       {
         "id": 181,
-        "name": "Plush central",
+        "name": "ぬいぐるみに囲まれて",
         "rarity": "common"
       }
     ]

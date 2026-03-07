@@ -31,6 +31,11 @@
         "id": 56,
         "name": "Breezy flower bed",
         "rarity": "rare"
+      },
+      {
+        "id": 73,
+        "name": "しかけにご注意",
+        "rarity": "common"
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-07T07:36:35.531Z",
+  "lastSync": "2026-03-07T08:41:42.255Z",
   "newHabitats": [
     {
       "id": 28,
@@ -483,7 +483,7 @@
     },
     {
       "id": 181,
-      "name": "Plush central",
+      "name": "ぬいぐるみに囲まれて",
       "missingIn": [
         "ja",
         "zh"
@@ -760,13 +760,21 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 73,
+      "name": "しかけにご注意",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
     "total": 312,
     "serebiiCount": 300,
-    "gameWithCount": 240,
+    "gameWithCount": 245,
     "game8Count": 284,
     "updated": 300,
     "skipped": 0,
