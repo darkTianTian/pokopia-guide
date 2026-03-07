@@ -8,12 +8,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/tatsugiri.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "trade"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 71,
+        "name": "ビーチセット",
+        "rarity": "rare"
+      }
+    ]
   }
 }

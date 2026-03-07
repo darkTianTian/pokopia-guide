@@ -8,13 +8,33 @@
   "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png",
   "pokopia": {
     "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "dratini",
     "evolvesTo": [
       "dragonite"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 144,
+        "name": "Hydrated fluffy flower bed",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 148,
+        "name": "Simple bathroom",
+        "rarity": "rare"
+      }
+    ]
   }
 }
