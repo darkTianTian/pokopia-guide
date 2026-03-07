@@ -33,6 +33,11 @@
         "id": 64,
         "name": "Trash can central",
         "rarity": "rare"
+      },
+      {
+        "id": 85,
+        "name": "Mini Game Corner",
+        "rarity": "common"
       }
     ]
   }

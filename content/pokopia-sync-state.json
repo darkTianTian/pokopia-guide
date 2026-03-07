@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-07T15:32:58.258Z",
+  "lastSync": "2026-03-07T16:38:43.097Z",
   "newHabitats": [
     {
       "id": 28,
@@ -768,17 +768,24 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 68,
+      "name": "お料理をお届け",
+      "missingIn": [
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "total": 313,
-    "serebiiCount": 301,
-    "gameWithCount": 260,
-    "game8Count": 284,
+    "total": 320,
+    "serebiiCount": 302,
+    "gameWithCount": 265,
+    "game8Count": 290,
     "updated": 300,
     "skipped": 0,
     "newPokemon": 0,
-    "errors": 13
+    "errors": 20
   }
 }

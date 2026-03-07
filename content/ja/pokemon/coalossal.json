@@ -8,7 +8,10 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/coalossal.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "burn",
+      "gather"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

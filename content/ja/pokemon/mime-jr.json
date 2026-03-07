@@ -8,7 +8,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/mime-jr.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "gather"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

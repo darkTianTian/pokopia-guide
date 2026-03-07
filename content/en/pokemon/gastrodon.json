@@ -8,7 +8,10 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/gastrodon.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "water",
+      "trade"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
