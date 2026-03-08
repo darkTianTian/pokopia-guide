@@ -11,13 +11,25 @@
       "gather"
     ],
     "favorites": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "duskull",
     "evolvesTo": [
       "dusknoir"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 153,
+        "name": "Trash site TV",
+        "rarity": "rare"
+      }
+    ]
   }
 }

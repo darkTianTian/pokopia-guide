@@ -8,13 +8,28 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/gengar.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "gather",
+      "trade"
+    ],
     "favorites": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "haunter",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 73,
+        "name": "しかけにご注意",
+        "rarity": "rare"
+      }
+    ]
   }
 }

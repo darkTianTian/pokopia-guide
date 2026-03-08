@@ -7,13 +7,30 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/porygon-z.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "rarify"
+    ],
     "favorites": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "porygon2",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 164,
+        "name": "Game Corner battle zone",
+        "rarity": "rare"
+      }
+    ]
   }
 }
