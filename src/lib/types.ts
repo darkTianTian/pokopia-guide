@@ -35,7 +35,7 @@ export interface PokopiaData {
   habitats: HabitatEntry[]
   timeOfDay: string[] | null
   weather: string[] | null
-  obtainMethod: "habitat" | "trade" | "evolution" | "event" | "unknown"
+  obtainMethod: "habitat" | "story" | "dream-island" | "craft" | "quest" | "trade" | "event" | "unknown"
   evolvesFrom: string | null
   evolvesTo: string[] | null
 }

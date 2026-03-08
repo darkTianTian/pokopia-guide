@@ -194,8 +194,11 @@
   },
   "obtainMethods": {
     "habitat": "棲息地出現",
+    "story": "主線劇情",
+    "dream-island": "夢之島",
+    "craft": "建造建築",
+    "quest": "特殊任務",
     "trade": "交易獲取",
-    "evolution": "進化",
     "event": "限時活動",
     "unknown": "未知"
   },

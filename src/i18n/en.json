@@ -193,8 +193,11 @@
   },
   "obtainMethods": {
     "habitat": "Found in Habitat",
+    "story": "Story Progression",
+    "dream-island": "Dream Island",
+    "craft": "Build Structure",
+    "quest": "Special Quest",
     "trade": "Trade",
-    "evolution": "Evolution",
     "event": "Limited-Time Event",
     "unknown": "Unknown"
   },

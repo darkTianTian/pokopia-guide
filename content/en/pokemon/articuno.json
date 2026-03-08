@@ -14,7 +14,7 @@
     "favorites": [],
     "timeOfDay": null,
     "weather": null,
-    "obtainMethod": "habitat",
+    "obtainMethod": "craft",
     "evolvesFrom": null,
     "evolvesTo": null,
     "habitats": []

@@ -12,7 +12,7 @@
     "favorites": [],
     "timeOfDay": null,
     "weather": null,
-    "obtainMethod": "habitat",
+    "obtainMethod": "quest",
     "evolvesFrom": null,
     "evolvesTo": null,
     "habitats": []

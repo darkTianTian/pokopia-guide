@@ -193,8 +193,11 @@
   },
   "obtainMethods": {
     "habitat": "生息地で出現",
+    "story": "ストーリー進行",
+    "dream-island": "ゆめのしま",
+    "craft": "建築物を建造",
+    "quest": "特別なクエスト",
     "trade": "交換",
-    "evolution": "進化",
     "event": "期間限定イベント",
     "unknown": "不明"
   },
