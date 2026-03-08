@@ -100,66 +100,66 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
 
             return (
               <article key={habitat.id} className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl">
-                  <span className="absolute top-6 right-6 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
-                    #{String(habitat.id).padStart(3, "0")}
-                  </span>
+                <span className="absolute top-6 right-6 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
+                  #{String(habitat.id).padStart(3, "0")}
+                </span>
 
-                  <div className="absolute left-1/2 top-28 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-30 blur-[40px] transition-all duration-500 group-hover:scale-150 group-hover:opacity-60 dark:opacity-20 dark:group-hover:opacity-50">
-                    <div className="h-full w-full bg-gradient-to-br from-primary to-accent" />
+                <div className="absolute left-1/2 top-28 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-30 blur-[40px] transition-all duration-500 group-hover:scale-150 group-hover:opacity-60 dark:opacity-20 dark:group-hover:opacity-50">
+                  <div className="h-full w-full bg-gradient-to-br from-primary to-accent" />
+                </div>
+
+                <div className="flex flex-1 flex-col">
+                  <div className="relative mb-6 mt-2 flex h-[160px] items-center justify-center">
+                    <div className="relative z-10 flex h-full w-full items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110">
+                      <SafeImage
+                        src={habitat.image}
+                        alt={habitat.name}
+                        width={160}
+                        height={160}
+                        className="rounded-2xl object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_10px_10px_rgba(0,0,0,0.4)]"
+                      />
+                    </div>
                   </div>
 
-                  <div className="flex flex-1 flex-col">
-                    <div className="relative mb-6 mt-2 flex h-[160px] items-center justify-center">
-                      <div className="relative z-10 flex h-full w-full items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110">
-                        <SafeImage
-                          src={habitat.image}
-                          alt={habitat.name}
-                          width={160}
-                          height={160}
-                          className="rounded-2xl object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_10px_10px_rgba(0,0,0,0.4)]"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="mb-4 text-center z-10">
-                      <h3 className="text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
-                        {habitat.name}
-                      </h3>
-                      {habitat.materials && (
-                        <div className="mt-2 flex flex-wrap items-center justify-center gap-1.5">
-                          {parseMaterials(habitat.materials).map((mat, i) => (
-                            <span
-                              key={i}
-                              className="inline-flex items-center gap-1 rounded-full bg-muted/50 px-2 py-0.5 text-xs font-medium text-muted-foreground ring-1 ring-border/30"
-                            >
-                              {mat.name}
-                              <QuantityDots count={mat.quantity} className="ml-0.5" />
-                            </span>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-
-                    <div className="mt-auto flex flex-col items-center gap-3 rounded-2xl bg-muted/30 p-4 ring-1 ring-inset ring-border/50 transition-colors group-hover:bg-muted/50 z-10">
-                      <div className="flex flex-wrap items-center justify-center gap-1.5">
-                        {habitat.pokemon.map(({ pokemon }) => (
-                          <Link
-                            key={pokemon.id}
-                            href={getLocalePath(locale, `/pokedex/${pokemon.slug}`)}
-                            className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-background drop-shadow-sm transition-transform hover:scale-125 hover:z-20 border border-border/20"
-                            title={pokemon.name}
+                  <div className="mb-4 text-center z-10">
+                    <h3 className="text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+                      {habitat.name}
+                    </h3>
+                    {habitat.materials && (
+                      <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+                        {parseMaterials(habitat.materials).map((mat, i) => (
+                          <span
+                            key={i}
+                            className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10"
                           >
-                            <SafeImage
-                              src={pokemon.image}
-                              alt={pokemon.name}
-                              fill
-                              className="bg-background object-contain p-1"
-                            />
-                          </Link>
+                            {mat.name}
+                            <QuantityDots count={mat.quantity} className="ml-1" />
+                          </span>
                         ))}
                       </div>
+                    )}
+                  </div>
+
+                  <div className="mt-auto flex flex-col items-center gap-3 rounded-2xl bg-muted/30 p-4 ring-1 ring-inset ring-border/50 transition-colors group-hover:bg-muted/50 z-10">
+                    <div className="flex flex-wrap items-center justify-center gap-1.5">
+                      {habitat.pokemon.map(({ pokemon }) => (
+                        <Link
+                          key={pokemon.id}
+                          href={getLocalePath(locale, `/pokedex/${pokemon.slug}`)}
+                          className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-background drop-shadow-sm transition-transform hover:scale-125 hover:z-20 border border-border/20"
+                          title={pokemon.name}
+                        >
+                          <SafeImage
+                            src={pokemon.image}
+                            alt={pokemon.name}
+                            fill
+                            className="bg-background object-contain p-1"
+                          />
+                        </Link>
+                      ))}
                     </div>
                   </div>
+                </div>
               </article>
             )
           })}
