@@ -253,7 +253,7 @@ export async function PokedexDetailPage({
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {relatedPokemon.map((p) => (
-              <PokemonCard key={p.slug} pokemon={p} locale={locale} compact />
+              <PokemonCard key={p.slug} pokemon={p} locale={locale} compact headingLevel="h3" />
             ))}
           </div>
         </section>

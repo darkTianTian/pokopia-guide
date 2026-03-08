@@ -25,9 +25,9 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
           {t(translations, "pokedex.title")}
         </h1>
         <div className="mt-4 flex flex-wrap items-center gap-4">
-          <h2 className="text-lg sm:text-xl text-muted-foreground">
+          <p className="text-lg sm:text-xl text-muted-foreground">
             {t(translations, "pokedex.subtitle")}
-          </h2>
+          </p>
           <div className="inline-flex items-center rounded-full bg-primary/10 px-5 py-2 ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10">
             <span className="text-sm sm:text-base font-bold uppercase tracking-wider text-primary">
               {t(translations, "pokedex.totalCount").replace("{{count}}", String(pokemon.length))}
@@ -39,6 +39,7 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
       <PokemonGrid
         pokemon={pokemon}
         locale={locale}
+        headingLevel="h3"
       />
     </div>
   )

@@ -42,9 +42,10 @@ interface PokemonCardProps {
   locale: Locale
   compact?: boolean
   className?: string
+  headingLevel?: "h2" | "h3"
 }
 
-export function PokemonCard({ pokemon, locale, compact, className }: PokemonCardProps) {
+export function PokemonCard({ pokemon, locale, compact, className, headingLevel = "h2" }: PokemonCardProps) {
   const tr = TRANSLATIONS_BY_LOCALE[locale]
   const pokopia = pokemon.pokopia
 
@@ -74,9 +75,15 @@ export function PokemonCard({ pokemon, locale, compact, className }: PokemonCard
         <div className="flex flex-1 flex-col p-5">
           {/* Header: Name and ID */}
           <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
-              {pokemon.name}
-            </h2>
+            {headingLevel === "h3" ? (
+              <h3 className="text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+                {pokemon.name}
+              </h3>
+            ) : (
+              <h2 className="text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+                {pokemon.name}
+              </h2>
+            )}
             <span className="flex h-7 items-center justify-center rounded-full bg-muted/50 px-3 font-mono text-xs font-semibold tracking-wider text-muted-foreground backdrop-blur-md">
               #{String(pokemon.id).padStart(3, "0")}
             </span>
