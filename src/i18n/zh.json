@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Pokopia 攻略站",
-    "description": "Pokémon Pokopia 新手攻略站。圖鑑查詢、棲息地創造指南、家具製作配方，幫助新手訓練家快速上手。",
+    "description": "Pokémon Pokopia 完整攻略 — 宝可梦图鉴（属性/特长）、栖息地建造、家具制作配方、料理系统与增益效果、材料获取指南，新手训练家快速上手必备。",
     "title": "Pokémon Pokopia 攻略 | 寶可夢圖鑑 | PokopiaGuide.com",
     "titleTemplate": "%s | Pokopia 攻略站"
   },
