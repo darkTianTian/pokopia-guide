@@ -10,6 +10,14 @@
     "specialties": [
       "generate"
     ],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "cute stuff",
+      "glass stuff",
+      "group activities",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

@@ -11,6 +11,14 @@
     "specialties": [
       "crush"
     ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "metal stuff",
+      "luxury",
+      "round stuff",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -20,8 +28,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

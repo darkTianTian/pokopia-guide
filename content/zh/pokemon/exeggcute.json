@@ -12,6 +12,14 @@
       "grow",
       "teleport"
     ],
+    "favorites": [
+      "lots of nature",
+      "strange stuff",
+      "gatherings",
+      "watching stuff",
+      "group activities",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

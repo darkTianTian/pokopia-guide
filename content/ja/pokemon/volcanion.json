@@ -11,6 +11,14 @@
     "specialties": [
       "burn"
     ],
+    "favorites": [
+      "lots of fire",
+      "lots of water",
+      "stone stuff",
+      "containers",
+      "symbols",
+      "spicy flavors"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

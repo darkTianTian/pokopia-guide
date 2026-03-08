@@ -12,6 +12,7 @@
       "burn",
       "gather"
     ],
+    "favorites": [],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +22,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "carkol",
@@ -32,6 +32,11 @@
         "id": 132,
         "name": "ふみきり",
         "rarity": "very-rare"
+      },
+      {
+        "id": 135,
+        "name": "ずっしりアイアン",
+        "rarity": "rare"
       }
     ]
   }

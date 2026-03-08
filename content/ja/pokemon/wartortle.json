@@ -10,6 +10,14 @@
     "specialties": [
       "water"
     ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "healing",
+      "exercise",
+      "hard stuff",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "squirtle",

@@ -12,6 +12,14 @@
       "burn",
       "litter"
     ],
+    "favorites": [
+      "lots of nature",
+      "lots of fire",
+      "sharp stuff",
+      "wooden stuff",
+      "symbols",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

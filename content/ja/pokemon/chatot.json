@@ -12,6 +12,14 @@
       "hype",
       "fly"
     ],
+    "favorites": [
+      "nice breezes",
+      "fabric",
+      "slender objects",
+      "play spaces",
+      "noisy stuff",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -20,8 +28,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

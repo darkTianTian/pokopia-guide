@@ -11,14 +11,21 @@
     "specialties": [
       "search"
     ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "watching stuff",
+      "complicated stuff",
+      "letters and words",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

@@ -12,6 +12,14 @@
       "water",
       "fly"
     ],
+    "favorites": [
+      "lots of water",
+      "nice breezes",
+      "cleanliness",
+      "ocean vibes",
+      "watching stuff",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -20,8 +28,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "wingull",

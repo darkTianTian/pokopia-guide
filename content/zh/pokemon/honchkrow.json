@@ -12,14 +12,21 @@
       "fly",
       "trade"
     ],
+    "favorites": [
+      "shiny stuff",
+      "nice breezes",
+      "spooky stuff",
+      "letters and words",
+      "glass stuff",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "murkrow",

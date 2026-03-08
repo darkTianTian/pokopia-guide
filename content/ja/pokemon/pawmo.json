@@ -12,6 +12,13 @@
       "generate",
       "crush"
     ],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "exercise",
+      "glass stuff",
+      "group activities"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +28,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "pawmi",

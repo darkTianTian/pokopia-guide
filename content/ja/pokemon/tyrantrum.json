@@ -12,6 +12,7 @@
       "crush",
       "litter"
     ],
+    "favorites": [],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +22,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "tyrunt",

@@ -8,6 +8,7 @@
   "image": "https://assets.pokopiaguide.com/pokemon/floragato.png",
   "pokopia": {
     "specialties": [],
+    "favorites": [],
     "timeOfDay": [
       "dawn",
       "day",

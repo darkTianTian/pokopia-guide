@@ -12,14 +12,21 @@
       "trade",
       "fly"
     ],
+    "favorites": [
+      "shiny stuff",
+      "nice breezes",
+      "group activities",
+      "luxury",
+      "fabric",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

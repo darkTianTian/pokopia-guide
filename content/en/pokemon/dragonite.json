@@ -12,6 +12,14 @@
       "water",
       "fly"
     ],
+    "favorites": [
+      "lots of fire",
+      "nice breezes",
+      "cleanliness",
+      "symbols",
+      "pretty flowers",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "dragonair",

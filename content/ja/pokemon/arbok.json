@@ -10,6 +10,14 @@
     "specialties": [
       "search"
     ],
+    "favorites": [
+      "garbage",
+      "watching stuff",
+      "lots of nature",
+      "slender objects",
+      "spinning stuff",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "ekans",

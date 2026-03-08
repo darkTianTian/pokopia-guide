@@ -10,6 +10,14 @@
     "specialties": [
       "build"
     ],
+    "favorites": [
+      "exercise",
+      "group activities",
+      "fabric",
+      "stone stuff",
+      "round stuff",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "tyrogue",

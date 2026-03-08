@@ -9,6 +9,7 @@
   "image": "https://assets.pokopiaguide.com/pokemon/gholdengo.png",
   "pokopia": {
     "specialties": [],
+    "favorites": [],
     "timeOfDay": [
       "dawn",
       "day",

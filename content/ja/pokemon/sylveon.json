@@ -10,6 +10,14 @@
     "specialties": [
       "hype"
     ],
+    "favorites": [
+      "cute stuff",
+      "lots of nature",
+      "fabric",
+      "noisy stuff",
+      "round stuff",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "eevee",

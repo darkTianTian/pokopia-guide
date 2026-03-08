@@ -12,6 +12,14 @@
       "grow",
       "litter"
     ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "lots of dirt",
+      "lots of water",
+      "pretty flowers",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

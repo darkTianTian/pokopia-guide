@@ -12,6 +12,14 @@
       "water",
       "hype"
     ],
+    "favorites": [
+      "lots of water",
+      "lots of nature",
+      "play spaces",
+      "containers",
+      "noisy stuff",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "lombre",

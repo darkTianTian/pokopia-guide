@@ -12,6 +12,14 @@
       "litter",
       "fly"
     ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "cute stuff",
+      "watching stuff",
+      "noisy stuff",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "swablu",

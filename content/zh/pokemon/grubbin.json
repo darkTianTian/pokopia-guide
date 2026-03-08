@@ -10,6 +10,14 @@
     "specialties": [
       "chop"
     ],
+    "favorites": [
+      "lots of nature",
+      "electronics",
+      "watching stuff",
+      "lots of dirt",
+      "containers",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

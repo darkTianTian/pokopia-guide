@@ -10,6 +10,14 @@
     "specialties": [
       "grow"
     ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "lots of water",
+      "wobbly stuff",
+      "shiny stuff",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

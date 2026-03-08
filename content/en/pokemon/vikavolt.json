@@ -12,6 +12,14 @@
       "generate",
       "chop"
     ],
+    "favorites": [
+      "lots of nature",
+      "electronics",
+      "exercise",
+      "glass stuff",
+      "nice breezes",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "charjabug",

@@ -10,6 +10,14 @@
     "specialties": [
       "chop"
     ],
+    "favorites": [
+      "lots of fire",
+      "luxury",
+      "lots of dirt",
+      "hard stuff",
+      "sharp stuff",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -28,6 +35,11 @@
       "fraxure"
     ],
     "habitats": [
+      {
+        "id": 29,
+        "name": "伐木工人作業場",
+        "rarity": "common"
+      },
       {
         "id": 44,
         "name": "圓木溫暖",

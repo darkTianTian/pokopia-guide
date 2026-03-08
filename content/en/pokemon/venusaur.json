@@ -12,6 +12,14 @@
       "grow",
       "litter"
     ],
+    "favorites": [
+      "lots of nature",
+      "soft stuff",
+      "cute stuff",
+      "pretty flowers",
+      "luxury",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "ivysaur",

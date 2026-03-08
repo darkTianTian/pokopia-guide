@@ -11,6 +11,14 @@
       "search",
       "trade"
     ],
+    "favorites": [
+      "cute stuff",
+      "watching stuff",
+      "group activities",
+      "lots of fire",
+      "looks like food",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "fidough",

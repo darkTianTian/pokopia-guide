@@ -12,6 +12,14 @@
       "chop",
       "grow"
     ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "lots of dirt",
+      "colorful stuff",
+      "pretty flowers",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -20,8 +28,7 @@
     ],
     "weather": [
       "sunny",
-      "cloudy",
-      "snowy"
+      "cloudy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "weepinbell",

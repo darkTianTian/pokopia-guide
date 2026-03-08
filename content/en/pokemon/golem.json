@@ -12,6 +12,14 @@
       "crush",
       "trade"
     ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "spinning stuff",
+      "round stuff",
+      "exercise",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "graveler",

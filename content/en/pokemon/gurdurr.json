@@ -10,6 +10,14 @@
     "specialties": [
       "build"
     ],
+    "favorites": [
+      "exercise",
+      "construction",
+      "metal stuff",
+      "slender objects",
+      "group activities",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "timburr",

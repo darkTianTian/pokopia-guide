@@ -10,6 +10,14 @@
     "specialties": [
       "trade"
     ],
+    "favorites": [
+      "containers",
+      "group activities",
+      "shiny stuff",
+      "glass stuff",
+      "luxury",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

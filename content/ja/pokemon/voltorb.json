@@ -11,14 +11,21 @@
       "generate",
       "explode"
     ],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "round stuff",
+      "colorful stuff",
+      "spinning stuff",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

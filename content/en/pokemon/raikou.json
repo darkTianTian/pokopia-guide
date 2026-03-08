@@ -10,6 +10,14 @@
     "specialties": [
       "generate"
     ],
+    "favorites": [
+      "electronics",
+      "nice breezes",
+      "shiny stuff",
+      "glass stuff",
+      "luxury",
+      "dry flavors"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",
