@@ -129,7 +129,7 @@ export async function HomePage({ locale }: HomePageProps) {
             </div>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {featuredPokemon.map((p) => (
-                <PokemonCard key={p.slug} pokemon={p} locale={locale} />
+                <PokemonCard key={p.slug} pokemon={p} locale={locale} headingLevel="h3" />
               ))}
             </div>
           </div>

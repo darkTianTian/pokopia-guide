@@ -18,11 +18,13 @@ const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
 interface PokemonGridProps {
   pokemon: Pokemon[]
   locale: Locale
+  headingLevel?: "h2" | "h3"
 }
 
 export function PokemonGrid({
   pokemon,
   locale,
+  headingLevel,
 }: PokemonGridProps) {
   const tr = TRANSLATIONS_BY_LOCALE[locale]
   const [query, setQuery] = useState("")
@@ -70,7 +72,7 @@ export function PokemonGrid({
       {filtered.length > 0 ? (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((p) => (
-            <PokemonCard key={p.slug} pokemon={p} locale={locale} />
+            <PokemonCard key={p.slug} pokemon={p} locale={locale} headingLevel={headingLevel} />
           ))}
         </div>
       ) : (

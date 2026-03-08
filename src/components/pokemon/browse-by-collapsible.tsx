@@ -25,7 +25,7 @@ export function BrowseByCollapsible({ title, children }: BrowseByCollapsibleProp
                 className="flex items-center gap-2 mb-1 text-sm font-semibold uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors -ml-2 p-2 rounded-lg hover:bg-muted/50 active:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
                 aria-expanded={isOpen}
             >
-                <span>{title}</span>
+                <h2 className="text-sm font-semibold uppercase tracking-wider">{title}</h2>
                 <svg
                     className={`w-4 h-4 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
                     fill="none"
