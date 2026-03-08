@@ -27,7 +27,7 @@ export async function Header({ locale }: HeaderProps) {
 
   const habitatSubItems = [
     {
-      path: "/habitat/list",
+      path: "/habitat",
       label: t(translations, "nav.habitatList"),
     },
     {

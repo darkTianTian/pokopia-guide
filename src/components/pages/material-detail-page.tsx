@@ -2,6 +2,7 @@ import Link from "next/link"
 import { SafeImage } from "@/components/ui/safe-image"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { getMaterialBySlug } from "@/lib/materials"
+import { toHabitatSlug } from "@/lib/habitat"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 import { notFound } from "next/navigation"
 
@@ -67,7 +68,7 @@ export async function MaterialDetailPage({
         {material.habitats.map((usage) => (
           <Link
             key={usage.habitatId}
-            href={getLocalePath(locale, `/habitat/list/${usage.habitatId}`)}
+            href={getLocalePath(locale, `/habitat/${toHabitatSlug(usage.habitatId)}`)}
             className="group flex h-full flex-col outline-none"
           >
             <article className="relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:border-border/80 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5">

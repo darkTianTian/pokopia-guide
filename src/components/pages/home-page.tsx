@@ -33,7 +33,7 @@ export async function HomePage({ locale }: HomePageProps) {
       icon: "📖",
     },
     {
-      href: getLocalePath(locale, "/habitat/list"),
+      href: getLocalePath(locale, "/habitat"),
       title: t(translations, "nav.habitatList"),
       description: t(translations, "habitat.listDescription"),
       icon: "🏡",
@@ -143,7 +143,7 @@ export async function HomePage({ locale }: HomePageProps) {
               {t(translations, "home.pokopiaHabitats")}
             </h2>
             <Button asChild variant="ghost">
-              <Link href={getLocalePath(locale, "/habitat/list")}>
+              <Link href={getLocalePath(locale, "/habitat")}>
                 {t(translations, "home.viewAll")} &rarr;
               </Link>
             </Button>
@@ -152,7 +152,7 @@ export async function HomePage({ locale }: HomePageProps) {
             {featuredHabitats.map((habitat) => (
               <Link
                 key={habitat.id}
-                href={getLocalePath(locale, `/habitat/list/${habitat.id}`)}
+                href={getLocalePath(locale, `/habitat/${habitat.slug}`)}
               >
                 <Card className="h-full transition-shadow hover:shadow-lg">
                   <CardHeader className="pb-2">
