@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react"
 import { Search, X } from "lucide-react"
 import { SafeImage } from "@/components/ui/safe-image"
+import { QuantityDots } from "@/components/ui/quantity-dots"
 import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
@@ -29,6 +30,16 @@ interface HabitatItem {
 interface HabitatGridProps {
   habitats: HabitatItem[]
   locale: Locale
+}
+
+function parseMaterials(materials: string): { name: string; quantity: number }[] {
+  return materials.split(/,\s*/).filter(Boolean).map((part) => {
+    const match = part.match(/^(.+?)\s+x(\d+)$/)
+    if (match) {
+      return { name: match[1], quantity: parseInt(match[2], 10) }
+    }
+    return { name: part, quantity: 1 }
+  })
 }
 
 export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
@@ -113,9 +124,17 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                         {habitat.name}
                       </h2>
                       {habitat.materials && (
-                        <p className="mt-1 text-sm font-medium text-muted-foreground/80">
-                          {habitat.materials}
-                        </p>
+                        <div className="mt-2 flex flex-wrap items-center justify-center gap-1.5">
+                          {parseMaterials(habitat.materials).map((mat, i) => (
+                            <span
+                              key={i}
+                              className="inline-flex items-center gap-1 rounded-full bg-muted/50 px-2 py-0.5 text-xs font-medium text-muted-foreground ring-1 ring-border/30"
+                            >
+                              {mat.name}
+                              <QuantityDots count={mat.quantity} className="ml-0.5" />
+                            </span>
+                          ))}
+                        </div>
                       )}
                     </div>
 
