@@ -82,9 +82,9 @@
     "specPageDesc": "Pokopia 中所有擁有{{spec}}特長的寶可夢。查看牠們的棲息地、屬性和出現條件。"
   },
   "guides": {
-    "title": "攻略文章",
-    "description": "Pokémon Pokopia 最全面的攻略合集，包含新手入門、進階技巧、通關攻略等內容。",
-    "subtitle": "從新手入門到進階技巧，助你成為最強訓練家",
+    "title": "Pokopia 攻略大全 — 料理、搬家、材料获取",
+    "description": "宝可梦 Pokopia 实用攻略：料理系统与增益效果、搬家方法、木材获取、湿度提升等新手必看指南。",
+    "subtitle": "料理、搬家、材料获取，新手必看的实用攻略合集",
     "breadcrumb": "攻略",
     "notFound": "未找到",
     "author": "作者"

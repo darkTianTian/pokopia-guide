@@ -81,9 +81,9 @@
     "specPageDesc": "Pokopia で{{spec}}のとくぎを持つポケモン一覧。生息地、タイプ、出現条件を確認。"
   },
   "guides": {
-    "title": "攻略記事",
-    "description": "Pokémon Pokopia の攻略記事コレクション。初心者向けから上級テクニック、攻略ガイドまで。",
-    "subtitle": "初心者から上級者まで、最強トレーナーを目指そう",
+    "title": "Pokopia 攻略まとめ — 料理・引っ越し・素材入手",
+    "description": "ポケモン Pokopia の攻略ガイド：料理レシピとバフ効果、引っ越し方法、木材の入手、湿度の上げ方など初心者向け攻略。",
+    "subtitle": "料理・引っ越し・素材集め、初心者向けの実用ガイド",
     "breadcrumb": "攻略",
     "notFound": "見つかりません",
     "author": "著者"

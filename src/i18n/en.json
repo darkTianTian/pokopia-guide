@@ -81,9 +81,9 @@
     "specPageDesc": "All Pokémon with {{spec}} specialty in Pokopia. View their habitats, types, and spawn conditions."
   },
   "guides": {
-    "title": "Guide Articles",
-    "description": "The most comprehensive guide collection for Pokémon Pokopia, including beginner tips, advanced techniques, and walkthroughs.",
-    "subtitle": "From beginner tips to advanced techniques, become the ultimate trainer",
+    "title": "Pokopia Tips & Guides — Cooking, Housing & More",
+    "description": "Guides for Pokémon Pokopia: cooking recipes & buffs, how to move your house, get lumber, raise humidity, and more beginner tips.",
+    "subtitle": "Cooking, housing, materials, and everything you need to get started",
     "breadcrumb": "Guides",
     "notFound": "Not Found",
     "author": "Author"

@@ -3,9 +3,9 @@ import { GuidesPage } from "@/components/pages/guides-page"
 import { getPageAlternates } from "@/i18n/config"
 
 export const metadata: Metadata = {
-  title: "Guide Articles",
+  title: "Pokopia Tips & Guides — Cooking, Housing & More",
   description:
-    "The most comprehensive guide collection for Pokopia, including beginner tips, advanced techniques, and walkthroughs.",
+    "Guides for Pokémon Pokopia: cooking recipes & buffs, how to move your house, get lumber, raise humidity, and more beginner tips.",
   alternates: getPageAlternates("en", "/guides"),
 }
 
