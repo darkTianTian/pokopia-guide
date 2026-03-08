@@ -183,8 +183,7 @@
   "weather": {
     "sunny": "晴天",
     "cloudy": "陰天",
-    "rainy": "雨天",
-    "snowy": "雪天"
+    "rainy": "雨天"
   },
   "rarity": {
     "common": "普通",

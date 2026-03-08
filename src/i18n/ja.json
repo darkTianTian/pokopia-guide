@@ -182,8 +182,7 @@
   "weather": {
     "sunny": "晴れ",
     "cloudy": "曇り",
-    "rainy": "雨",
-    "snowy": "雪"
+    "rainy": "雨"
   },
   "rarity": {
     "common": "ふつう",
