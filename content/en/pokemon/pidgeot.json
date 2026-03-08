@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "pidgeotto",
@@ -28,7 +29,7 @@
     "habitats": [
       {
         "id": 39,
-        "name": "ぜいたくピヨピヨごはん",
+        "name": "Luxury chirp-chirp meal",
         "rarity": "common"
       }
     ]

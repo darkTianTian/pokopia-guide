@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "bellsprout",
@@ -36,7 +37,7 @@
       },
       {
         "id": 35,
-        "name": "明かりと香りのユウワク",
+        "name": "Irresistible scent and glow",
         "rarity": "common"
       }
     ]

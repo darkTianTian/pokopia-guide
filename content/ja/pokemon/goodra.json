@@ -10,11 +10,24 @@
     "specialties": [
       "water"
     ],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "sliggoo",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 45,
+        "name": "Very-berry space",
+        "rarity": "rare"
+      }
+    ]
   }
 }
