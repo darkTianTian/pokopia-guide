@@ -129,7 +129,13 @@
     "materialUsedIn": "被 {{count}} 個棲息地使用",
     "materialUsedInLabel": "個棲息地",
     "materialQuantity": "需要 x{{count}}",
-    "breadcrumbMaterials": "建造材料"
+    "breadcrumbMaterials": "建造材料",
+    "searchHabitat": "搜尋名稱或編號...",
+    "searchMaterial": "搜尋材料...",
+    "noHabitatResults": "沒有符合的棲息地。",
+    "noMaterialResults": "沒有符合的材料。",
+    "showingHabitats": "顯示 {{count}} 個棲息地",
+    "showingMaterials": "顯示 {{count}} 種材料"
   },
   "quests": {
     "title": "任務攻略",

@@ -1,6 +1,5 @@
-import Link from "next/link"
-import { SafeImage } from "@/components/ui/safe-image"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
+import { HabitatGrid } from "@/components/habitat/habitat-grid"
 import { getAllHabitatsWithPokemon } from "@/lib/habitat"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 
@@ -13,6 +12,19 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
     getAllHabitatsWithPokemon(locale),
     getTranslations(locale),
   ])
+
+  const habitatItems = habitats.map((habitat) => ({
+    id: habitat.id,
+    slug: habitat.slug,
+    name: habitat.name,
+    image: habitat.image,
+    materials: habitat.materials,
+    pokemon: habitat.pokemon.map((p) => ({
+      rarity: p.rarity,
+      pokemon: { id: p.pokemon.id, name: p.pokemon.name, image: p.pokemon.image },
+    })),
+    localePath: getLocalePath(locale, `/habitat/${habitat.slug}`),
+  }))
 
   return (
     <div className="relative mx-auto max-w-6xl px-4 py-8" suppressHydrationWarning>
@@ -37,92 +49,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {habitats.map((habitat) => {
-          // Find the most common rarity among pokemon in this habitat (or just pick first)
-          const sampleRarity = habitat.pokemon[0]?.rarity || "common"
-          const ringColor =
-            sampleRarity === "very-rare"
-              ? "ring-purple-500/50 group-hover:ring-purple-500"
-              : sampleRarity === "rare"
-                ? "ring-blue-500/50 group-hover:ring-blue-500"
-                : "ring-emerald-500/50 group-hover:ring-emerald-500"
-
-          return (
-            <Link
-              key={habitat.id}
-              href={getLocalePath(locale, `/habitat/${habitat.slug}`)}
-              className="group flex h-full flex-col outline-none"
-            >
-              <article className="relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:border-border/80 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5">
-
-                {/* Floating ID Tag */}
-                <span className="absolute top-6 right-6 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
-                  #{String(habitat.id).padStart(3, "0")}
-                </span>
-
-                {/* Glowing Background Blob within card */}
-                <div className="absolute left-1/2 top-28 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-30 blur-[40px] transition-all duration-500 group-hover:scale-150 group-hover:opacity-60 dark:opacity-20 dark:group-hover:opacity-50">
-                  <div className="h-full w-full bg-gradient-to-br from-primary to-accent" />
-                </div>
-
-                <div className="flex flex-1 flex-col">
-                  {/* Habitat Image - No background/borders, floating sticker effect with rounded corners */}
-                  <div className="relative mb-6 mt-2 flex h-[160px] items-center justify-center">
-                    <div className="relative z-10 flex h-full w-full items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110">
-                      <SafeImage
-                        src={habitat.image}
-                        alt={habitat.name}
-                        width={160}
-                        height={160}
-                        className="rounded-2xl object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_10px_10px_rgba(0,0,0,0.4)]"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Habitat Info */}
-                  <div className="mb-4 text-center z-10">
-                    <h2 className="text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
-                      {habitat.name}
-                    </h2>
-                    {habitat.materials && (
-                      <p className="mt-1 text-sm font-medium text-muted-foreground/80">
-                        {habitat.materials}
-                      </p>
-                    )}
-                  </div>
-
-                  {/* Pokemon Avatars */}
-                  <div className="mt-auto flex flex-col items-center gap-3 rounded-2xl bg-muted/30 p-4 ring-1 ring-inset ring-border/50 transition-colors group-hover:bg-muted/50 z-10">
-                    <div className="flex items-center justify-center gap-3">
-                      <div className="flex -space-x-3">
-                        {habitat.pokemon.slice(0, 5).map(({ pokemon }) => (
-                          <div key={pokemon.id} className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-background drop-shadow-sm transition-transform hover:scale-110 hover:z-20 border border-border/20">
-                            <SafeImage
-                              src={pokemon.image}
-                              alt={pokemon.name}
-                              fill
-                              className="bg-background object-contain p-1"
-                            />
-                          </div>
-                        ))}
-                      </div>
-                      {habitat.pokemon.length > 5 && (
-                        <span className="flex h-10 items-center justify-center rounded-full bg-background px-3 text-xs font-semibold text-muted-foreground ring-2 ring-border/50">
-                          +{habitat.pokemon.length - 5}
-                        </span>
-                      )}
-                    </div>
-                    <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                      {t(translations, "habitat.pokemonCount").replace("{{count}}", String(habitat.pokemon.length))}
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </Link>
-          )
-        })}
-      </div>
+      <HabitatGrid habitats={habitatItems} locale={locale} />
     </div>
   )
 }

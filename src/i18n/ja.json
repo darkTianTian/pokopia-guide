@@ -128,7 +128,13 @@
     "materialUsedIn": "{{count}} の生息地で使用",
     "materialUsedInLabel": "の生息地",
     "materialQuantity": "x{{count}} 必要",
-    "breadcrumbMaterials": "建設素材"
+    "breadcrumbMaterials": "建設素材",
+    "searchHabitat": "名前または番号で検索...",
+    "searchMaterial": "素材を検索...",
+    "noHabitatResults": "生息地が見つかりません。",
+    "noMaterialResults": "素材が見つかりません。",
+    "showingHabitats": "{{count}} 件の生息地を表示",
+    "showingMaterials": "{{count}} 種の素材を表示"
   },
   "quests": {
     "title": "クエスト攻略",

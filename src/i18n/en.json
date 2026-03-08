@@ -128,7 +128,13 @@
     "materialUsedIn": "Used in {{count}} habitats",
     "materialUsedInLabel": "Habitats",
     "materialQuantity": "x{{count}} needed",
-    "breadcrumbMaterials": "Materials"
+    "breadcrumbMaterials": "Materials",
+    "searchHabitat": "Search by name or number...",
+    "searchMaterial": "Search materials...",
+    "noHabitatResults": "No habitats found.",
+    "noMaterialResults": "No materials found.",
+    "showingHabitats": "Showing {{count}} habitats",
+    "showingMaterials": "Showing {{count}} materials"
   },
   "quests": {
     "title": "Quest Guide",
