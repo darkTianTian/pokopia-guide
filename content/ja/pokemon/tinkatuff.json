@@ -33,6 +33,11 @@
         "id": 28,
         "name": "大きな荷物をのせて",
         "rarity": "rare"
+      },
+      {
+        "id": 156,
+        "name": "マンホール点検中",
+        "rarity": "common"
       }
     ]
   }

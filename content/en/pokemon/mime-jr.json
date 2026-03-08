@@ -11,13 +11,34 @@
     "specialties": [
       "gather"
     ],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "mr-mime"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 157,
+        "name": "Spotless Washing station",
+        "rarity": "common"
+      },
+      {
+        "id": 171,
+        "name": "Public reading material",
+        "rarity": "common"
+      }
+    ]
   }
 }

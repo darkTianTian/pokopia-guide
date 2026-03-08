@@ -7,14 +7,32 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/poliwag.png",
   "pokopia": {
-    "specialties": [],
-    "timeOfDay": null,
-    "weather": null,
+    "specialties": [
+      "water"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy",
+      "snowy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "poliwhirl"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 161,
+        "name": "キュキュッとお掃除",
+        "rarity": "common"
+      }
+    ]
   }
 }

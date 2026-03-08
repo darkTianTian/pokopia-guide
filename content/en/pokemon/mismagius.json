@@ -28,6 +28,11 @@
         "id": 142,
         "name": "Fluffy flower bed",
         "rarity": "very-rare"
+      },
+      {
+        "id": 158,
+        "name": "ホームシアター",
+        "rarity": "rare"
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-07T23:31:33.993Z",
+  "lastSync": "2026-03-08T02:36:12.150Z",
   "newHabitats": [
     {
       "id": 28,
@@ -790,14 +790,50 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 48,
+      "name": "古きよきアンティーク",
+      "missingIn": [
+        "zh"
+      ]
+    },
+    {
+      "id": 161,
+      "name": "キュキュッとお掃除",
+      "missingIn": [
+        "zh"
+      ]
+    },
+    {
+      "id": 171,
+      "name": "Habitat 171",
+      "missingIn": [
+        "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 183,
+      "name": "ポップオブポップ",
+      "missingIn": [
+        "zh"
+      ]
+    },
+    {
+      "id": 158,
+      "name": "ホームシアター",
+      "missingIn": [
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
     "total": 321,
     "serebiiCount": 303,
-    "gameWithCount": 273,
-    "game8Count": 290,
+    "gameWithCount": 277,
+    "game8Count": 293,
     "updated": 299,
     "skipped": 0,
     "newPokemon": 0,

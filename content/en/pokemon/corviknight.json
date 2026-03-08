@@ -32,6 +32,11 @@
         "id": 140,
         "name": "Elevated pink tall grass",
         "rarity": "very-rare"
+      },
+      {
+        "id": 156,
+        "name": "Sewer hole inspection",
+        "rarity": "rare"
       }
     ]
   }

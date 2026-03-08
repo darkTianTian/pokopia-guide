@@ -32,6 +32,11 @@
         "id": 140,
         "name": "高台のピンクの草むら",
         "rarity": "very-rare"
+      },
+      {
+        "id": 156,
+        "name": "マンホール点検中",
+        "rarity": "rare"
       }
     ]
   }

@@ -31,6 +31,11 @@
         "id": 151,
         "name": "Surging psychic power",
         "rarity": "rare"
+      },
+      {
+        "id": 168,
+        "name": "Experiment Space",
+        "rarity": "common"
       }
     ]
   }

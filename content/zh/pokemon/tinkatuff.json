@@ -33,6 +33,11 @@
         "id": 28,
         "name": "Large luggage carrier",
         "rarity": "rare"
+      },
+      {
+        "id": 156,
+        "name": "Sewer hole inspection",
+        "rarity": "common"
       }
     ]
   }

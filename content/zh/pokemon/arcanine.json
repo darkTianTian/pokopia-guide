@@ -31,6 +31,11 @@
         "id": 129,
         "name": "小博物館",
         "rarity": "rare"
+      },
+      {
+        "id": 188,
+        "name": "Magma fishing spot",
+        "rarity": "common"
       }
     ]
   }

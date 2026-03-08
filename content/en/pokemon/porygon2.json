@@ -19,13 +19,20 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "porygon",
     "evolvesTo": [
       "porygon-z"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 166,
+        "name": "Work desk",
+        "rarity": "rare"
+      }
+    ]
   }
 }
