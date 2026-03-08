@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Pokopia 攻略サイト",
-    "description": "Pokémon Pokopia 初心者ガイド。図鑑、生息地作成ガイド、家具クラフトレシピで新米トレーナーをサポート。",
+    "description": "Pokémon Pokopia 完全攻略 — ポケモン図鑑（タイプ・特技）、生息地作成、家具クラフトレシピ、料理バフ効果、素材入手ガイドで初心者トレーナーを徹底サポート。",
     "title": "Pokémon Pokopia 攻略 | ポケモン図鑑 | PokopiaGuide.com",
     "titleTemplate": "%s | Pokopia 攻略サイト"
   },

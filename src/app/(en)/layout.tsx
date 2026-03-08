@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Pokopia Guide",
   },
   description:
-    "Beginner's guide to Pokémon Pokopia. Pokédex, habitat creation, and furniture crafting recipes to help new trainers get started.",
+    "Your complete Pokémon Pokopia guide — Pokédex with types & specialties, habitat building, crafting recipes, cooking buffs, and materials list. Everything new trainers need.",
   openGraph: {
     type: "website",
     locale: "en_US",
