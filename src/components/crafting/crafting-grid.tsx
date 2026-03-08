@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react"
 import { Search, X } from "lucide-react"
+import { QuantityDots } from "@/components/ui/quantity-dots"
 import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
@@ -43,6 +44,8 @@ interface CraftingGridProps {
   locale: Locale
 }
 
+const OBTAIN_METHOD_ORDER = ["story", "shop", "map", "quest"]
+
 export function CraftingGrid({ recipes, locale }: CraftingGridProps) {
   const tr = TRANSLATIONS_BY_LOCALE[locale]
   const [query, setQuery] = useState("")
@@ -71,6 +74,25 @@ export function CraftingGrid({ recipes, locale }: CraftingGridProps) {
     }
     return result
   }, [recipes, query, activeCategory])
+
+  const groupedByObtain = useMemo(() => {
+    const groups = new Map<string, RecipeItem[]>()
+    for (const r of filtered) {
+      const existing = groups.get(r.obtainMethod)
+      if (existing) {
+        existing.push(r)
+      } else {
+        groups.set(r.obtainMethod, [r])
+      }
+    }
+    return Array.from(groups.entries()).sort((a, b) => {
+      const ai = OBTAIN_METHOD_ORDER.indexOf(a[0])
+      const bi = OBTAIN_METHOD_ORDER.indexOf(b[0])
+      return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi)
+    })
+  }, [filtered])
+
+  const hasMultipleGroups = groupedByObtain.length > 1
 
   return (
     <>
@@ -137,55 +159,63 @@ export function CraftingGrid({ recipes, locale }: CraftingGridProps) {
       </div>
 
       {filtered.length > 0 ? (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((recipe) => {
-            const colorClass =
-              CATEGORY_COLORS[recipe.category] ?? CATEGORY_COLORS.furniture
-            const categoryLabel =
-              (tr.craftingCategories as Record<string, string>)[
-                recipe.category
-              ] ?? recipe.category
+        <div className="space-y-10">
+          {groupedByObtain.map(([method, groupRecipes]) => {
             const obtainLabel =
-              (tr.craftingObtain as Record<string, string>)[
-                recipe.obtainMethod
-              ] ?? recipe.obtainMethod
+              (tr.craftingObtain as Record<string, string>)[method] ?? method
 
             return (
-              <article
-                key={recipe.id}
-                className="relative flex flex-col overflow-hidden rounded-2xl border border-border/40 bg-background/40 p-5 shadow-sm backdrop-blur-xl"
-              >
-                <div className="flex items-start justify-between gap-2">
-                  <h2 className="text-lg font-bold tracking-tight text-foreground">
-                    {recipe.name}
-                  </h2>
-                  <span
-                    className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider ring-1 ring-inset ${colorClass}`}
-                  >
-                    {categoryLabel}
-                  </span>
-                </div>
-
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  {recipe.materials.map((m) => (
-                    <span
-                      key={m.name}
-                      className="inline-flex items-center rounded-full bg-primary/5 px-2.5 py-1 text-xs font-medium text-foreground ring-1 ring-inset ring-primary/20"
-                    >
-                      {m.name}
-                      <span className="ml-1 font-bold text-primary">
-                        x{m.quantity}
-                      </span>
-                    </span>
-                  ))}
-                </div>
-
-                <div className="mt-3">
-                  <span className="text-[11px] font-medium text-muted-foreground/70">
+              <section key={method}>
+                {hasMultipleGroups && (
+                  <h3 className="mb-4 text-lg font-bold text-foreground">
                     {obtainLabel}
-                  </span>
+                    <span className="ml-2 text-sm font-normal text-muted-foreground">
+                      ({groupRecipes.length})
+                    </span>
+                  </h3>
+                )}
+
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {groupRecipes.map((recipe) => {
+                    const colorClass =
+                      CATEGORY_COLORS[recipe.category] ?? CATEGORY_COLORS.furniture
+                    const categoryLabel =
+                      (tr.craftingCategories as Record<string, string>)[
+                        recipe.category
+                      ] ?? recipe.category
+
+                    return (
+                      <article
+                        key={recipe.id}
+                        className="relative flex flex-col overflow-hidden rounded-2xl border border-border/40 bg-background/40 p-5 shadow-sm backdrop-blur-xl"
+                      >
+                        <div className="flex items-start justify-between gap-2">
+                          <h2 className="text-lg font-bold tracking-tight text-foreground">
+                            {recipe.name}
+                          </h2>
+                          <span
+                            className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider ring-1 ring-inset ${colorClass}`}
+                          >
+                            {categoryLabel}
+                          </span>
+                        </div>
+
+                        <div className="mt-3 flex flex-wrap gap-1.5">
+                          {recipe.materials.map((m) => (
+                            <span
+                              key={m.name}
+                              className="inline-flex items-center rounded-full bg-primary/5 px-2.5 py-1 text-xs font-medium text-foreground ring-1 ring-inset ring-primary/20"
+                            >
+                              {m.name}
+                              <QuantityDots count={m.quantity} className="ml-0.5" />
+                            </span>
+                          ))}
+                        </div>
+                      </article>
+                    )
+                  })}
                 </div>
-              </article>
+              </section>
             )
           })}
         </div>

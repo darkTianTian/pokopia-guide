@@ -159,7 +159,7 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                         )}
                       </div>
                       <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                        {tr.habitat.pokemonCount.replace("{{count}}", String(habitat.pokemon.length))}
+                        {habitat.pokemon.length}
                       </p>
                     </div>
                   </div>
