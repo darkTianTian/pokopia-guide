@@ -110,18 +110,6 @@ export async function PokedexDetailPage({
           </h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
 
-            {/* Obtain Method */}
-            <div className="flex flex-col gap-3 rounded-3xl border border-border/40 bg-muted/20 p-6 shadow-sm backdrop-blur-md">
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground/80">
-                {t(translations, "pokedex.obtainMethod")}
-              </h3>
-              <div className="mt-auto">
-                <Badge variant="secondary" className="px-3 py-1.5 text-sm ring-1 ring-border/50">
-                  {t(translations, `obtainMethods.${pokemon.pokopia.obtainMethod}`)}
-                </Badge>
-              </div>
-            </div>
-
             {/* Specialty */}
             {pokemon.pokopia.specialties.length > 0 && (
               <div className="flex flex-col gap-3 rounded-3xl border border-border/40 bg-muted/20 p-6 shadow-sm backdrop-blur-md">
@@ -196,6 +184,34 @@ export async function PokedexDetailPage({
                 </div>
               </div>
             )}
+
+            {/* Favorites */}
+            {pokemon.pokopia.favorites && pokemon.pokopia.favorites.length > 0 && (
+              <div className="flex flex-col gap-3 rounded-3xl border border-border/40 bg-muted/20 p-6 shadow-sm backdrop-blur-md">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground/80">
+                  {t(translations, "pokedex.favoritesLabel")}
+                </h3>
+                <div className="mt-auto flex flex-wrap gap-2">
+                  {pokemon.pokopia.favorites.map((fav) => (
+                    <Badge key={fav} variant="secondary" className="px-3 py-1.5 text-sm ring-1 ring-border/50">
+                      {t(translations, `favorites.${fav}`)}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Obtain Method */}
+            <div className="flex flex-col gap-3 rounded-3xl border border-border/40 bg-muted/20 p-6 shadow-sm backdrop-blur-md">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground/80">
+                {t(translations, "pokedex.obtainMethod")}
+              </h3>
+              <div className="mt-auto">
+                <Badge variant="secondary" className="px-3 py-1.5 text-sm ring-1 ring-border/50">
+                  {t(translations, `obtainMethods.${pokemon.pokopia.obtainMethod}`)}
+                </Badge>
+              </div>
+            </div>
 
             {/* Habitats (Spans full width if large) */}
             {pokemon.pokopia.habitats && pokemon.pokopia.habitats.length > 0 && (
