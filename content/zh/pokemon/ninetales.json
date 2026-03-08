@@ -30,6 +30,11 @@
         "id": 142,
         "name": "Fluffy flower bed",
         "rarity": "rare"
+      },
+      {
+        "id": 180,
+        "name": "Nine flames",
+        "rarity": "common"
       }
     ]
   }
