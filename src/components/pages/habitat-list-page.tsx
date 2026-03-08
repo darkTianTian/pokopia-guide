@@ -51,7 +51,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
           return (
             <Link
               key={habitat.id}
-              href={getLocalePath(locale, `/habitat/list/${habitat.id}`)}
+              href={getLocalePath(locale, `/habitat/${habitat.slug}`)}
               className="group flex h-full flex-col outline-none"
             >
               <article className="relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:border-border/80 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5">

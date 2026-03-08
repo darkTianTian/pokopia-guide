@@ -32,11 +32,19 @@ async function main() {
     }
   }
 
-  // Collect all habitat IDs
+  // Collect all habitat IDs and generate slugs
   const habitatMapping = JSON.parse(
     await fs.readFile(path.join(process.cwd(), "content/habitat-mapping-en.json"), "utf-8")
   )
   const habitatIds = Object.keys(habitatMapping)
+
+  function toHabitatSlug(id) {
+    const enName = habitatMapping[id]
+    if (enName) {
+      return enName.toLowerCase().replace(/[()]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+    }
+    return id
+  }
 
   // Collect all material slugs from English materials
   const habitatMaterials = JSON.parse(
@@ -75,7 +83,6 @@ async function main() {
       { url: `${locale.prefix}/guides`, priority: "0.9", changefreq: "weekly" },
       { url: `${locale.prefix}/events`, priority: "0.8", changefreq: "weekly" },
       { url: `${locale.prefix}/habitat`, priority: "0.8", changefreq: "weekly" },
-      { url: `${locale.prefix}/habitat/list`, priority: "0.8", changefreq: "weekly" },
       { url: `${locale.prefix}/habitat/materials`, priority: "0.8", changefreq: "weekly" },
       { url: `${locale.prefix}/explore`, priority: "0.5", changefreq: "monthly" },
       { url: `${locale.prefix}/multiplayer`, priority: "0.5", changefreq: "monthly" },
@@ -119,7 +126,7 @@ async function main() {
 
     // Habitat detail pages
     const habitatPages = habitatIds.map((id) => ({
-      url: `${locale.prefix}/habitat/list/${id}`,
+      url: `${locale.prefix}/habitat/${toHabitatSlug(id)}`,
       priority: "0.6",
       changefreq: "weekly",
     }))

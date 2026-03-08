@@ -14,6 +14,7 @@ const habitatMaterialsZh = _habitatMaterialsZh as Record<string, string>
 
 export interface HabitatWithPokemon {
   id: number
+  slug: string
   name: string
   image: string
   materials: string
@@ -22,6 +23,9 @@ export interface HabitatWithPokemon {
     rarity: "common" | "rare" | "very-rare"
   }[]
 }
+
+export { toHabitatSlug } from "./habitat-slug"
+import { toHabitatSlug } from "./habitat-slug"
 
 const HABITAT_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
   ja: habitatMappingJa,
@@ -56,6 +60,7 @@ export async function getAllHabitatsWithPokemon(
         const materials = materialsMap[idStr] || habitatMaterialsEn[idStr] || habitatMaterialsJa[idStr] || ""
         habitatMap.set(habitat.id, {
           id: habitat.id,
+          slug: toHabitatSlug(habitat.id),
           name: habitatNames[idStr] ?? (habitatMappingEn as Record<string, string>)[idStr] ?? habitat.name,
           image: `/images/habitats/habitat_${habitat.id}.png`,
           materials,
@@ -74,6 +79,32 @@ export async function getHabitatWithPokemon(
 ): Promise<HabitatWithPokemon | undefined> {
   const habitats = await getAllHabitatsWithPokemon(locale)
   return habitats.find((h) => h.id === id)
+}
+
+export async function getHabitatBySlug(
+  slug: string,
+  locale: Locale
+): Promise<HabitatWithPokemon | undefined> {
+  const habitats = await getAllHabitatsWithPokemon(locale)
+  // Try slug match first, then numeric ID fallback
+  const bySlug = habitats.find((h) => h.slug === slug)
+  if (bySlug) return bySlug
+  const asNum = Number(slug)
+  if (!Number.isNaN(asNum)) return habitats.find((h) => h.id === asNum)
+  return undefined
+}
+
+export function getAllHabitatSlugs(): string[] {
+  const allIds = new Set<string>()
+  for (const mapping of Object.values(HABITAT_NAMES_BY_LOCALE)) {
+    for (const id of Object.keys(mapping)) {
+      allIds.add(id)
+    }
+  }
+  return Array.from(allIds)
+    .map(Number)
+    .sort((a, b) => a - b)
+    .map((id) => toHabitatSlug(id))
 }
 
 export function getAllHabitatIds(): number[] {

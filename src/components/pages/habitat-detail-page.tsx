@@ -1,21 +1,21 @@
 import { SafeImage } from "@/components/ui/safe-image"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
-import { getHabitatWithPokemon } from "@/lib/habitat"
+import { getHabitatBySlug } from "@/lib/habitat"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 import { notFound } from "next/navigation"
 
 interface HabitatDetailPageProps {
-  id: number
+  slug: string
   locale: Locale
 }
 
 export async function HabitatDetailPage({
-  id,
+  slug,
   locale,
 }: HabitatDetailPageProps) {
   const [habitat, translations] = await Promise.all([
-    getHabitatWithPokemon(id, locale),
+    getHabitatBySlug(slug, locale),
     getTranslations(locale),
   ])
 
@@ -30,7 +30,7 @@ export async function HabitatDetailPage({
         items={[
           {
             label: t(translations, "habitat.breadcrumbList"),
-            href: getLocalePath(locale, "/habitat/list"),
+            href: getLocalePath(locale, "/habitat"),
           },
           { label: habitat.name },
         ]}
