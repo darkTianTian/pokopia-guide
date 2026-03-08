@@ -37,9 +37,9 @@ export async function CraftingListPage({ locale }: CraftingListPageProps) {
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
           {t(translations, "crafting.title")}
         </h1>
-        <p className="mt-4 text-lg text-muted-foreground">
+        <h2 className="mt-4 text-lg font-normal text-muted-foreground">
           {t(translations, "crafting.description")}
-        </p>
+        </h2>
         <p className="mt-2 text-sm font-medium uppercase tracking-wider text-muted-foreground/60">
           {t(translations, "crafting.totalCount").replace(
             "{{count}}",

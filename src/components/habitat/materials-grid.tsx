@@ -93,9 +93,9 @@ export function MaterialsGrid({ materials, locale }: MaterialsGridProps) {
                   </div>
 
                   <div className="flex flex-1 flex-col items-center text-center">
-                    <h2 className="mt-2 text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary z-10">
+                    <h3 className="mt-2 text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary z-10">
                       {material.name}
-                    </h2>
+                    </h3>
 
                     <div className="mt-auto flex w-full flex-col items-center gap-4 rounded-[1.5rem] bg-muted/40 p-4 ring-1 ring-inset ring-border/50 transition-colors group-hover:bg-muted/60 mt-6 z-10">
                       <div className="flex flex-col items-center gap-1">
