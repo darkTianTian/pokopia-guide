@@ -33,19 +33,23 @@ export async function CraftingListPage({ locale }: CraftingListPageProps) {
         locale={locale}
       />
 
-      <div className="mb-12 mt-6">
+      <div className="mb-8 mt-6">
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
           {t(translations, "crafting.title")}
         </h1>
-        <h2 className="mt-4 text-lg font-normal text-muted-foreground">
-          {t(translations, "crafting.description")}
-        </h2>
-        <p className="mt-2 text-sm font-medium uppercase tracking-wider text-muted-foreground/60">
-          {t(translations, "crafting.totalCount").replace(
-            "{{count}}",
-            String(recipes.length)
-          )}
-        </p>
+        <div className="mt-4 flex flex-wrap items-center gap-4">
+          <p className="max-w-2xl text-balance text-lg font-normal text-muted-foreground">
+            {t(translations, "crafting.description")}
+          </p>
+          <div className="inline-flex items-center rounded-full bg-primary/10 px-5 py-2 ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10">
+            <span className="text-sm sm:text-base font-bold uppercase tracking-wider text-primary">
+              {t(translations, "crafting.totalCount").replace(
+                "{{count}}",
+                String(recipes.length)
+              )}
+            </span>
+          </div>
+        </div>
       </div>
 
       <CraftingGrid recipes={recipeItems} locale={locale} />
