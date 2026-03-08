@@ -166,6 +166,7 @@
     "habitat": "ホーム建設",
     "habitatList": "生息地一覧",
     "habitatMaterials": "建設素材",
+    "crafting": "クラフトレシピ",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイガイド"
   },
@@ -284,6 +285,40 @@
     "watching stuff": "見て楽しむ",
     "wobbly stuff": "ゆれる",
     "wooden stuff": "木製"
+  },
+  "crafting": {
+    "title": "クラフトレシピ",
+    "metaTitle": "Pokopia 全クラフトレシピ | 家具＆アイテム",
+    "description": "Pokémon Pokopia の全クラフトレシピを一覧で確認。家具、調理器具、照明、装飾品に必要な素材を調べましょう。",
+    "metaDescription": "Pokémon Pokopia の完全クラフトレシピリスト。家具、道具、装飾品の素材、カテゴリ、解放条件を確認。",
+    "totalCount": "全 {{count}} 件のレシピ",
+    "searchRecipe": "レシピを検索...",
+    "noResults": "レシピが見つかりません。",
+    "showingCount": "{{count}} 件のレシピを表示",
+    "breadcrumb": "クラフト",
+    "materials": "必要素材",
+    "obtainMethod": "入手方法",
+    "category": "カテゴリ",
+    "allCategories": "すべて",
+    "detailDesc": "Pokémon Pokopia で {{name}} を作る方法。",
+    "detailMetaDesc": "Pokopia で {{name}} をクラフトする方法。必要素材：{{materials}}。"
+  },
+  "craftingCategories": {
+    "furniture": "家具",
+    "decor": "装飾品",
+    "outdoor": "屋外",
+    "cooking-tool": "調理器具",
+    "building": "建築パーツ",
+    "blocks": "床＆タイル",
+    "lighting": "照明",
+    "transport": "乗り物",
+    "special": "特別"
+  },
+  "craftingObtain": {
+    "story": "ストーリー解放",
+    "shop": "ショップ購入",
+    "map": "マップで発見",
+    "quest": "クエスト報酬"
   },
   "types": {
     "normal": "ノーマル",

@@ -166,6 +166,7 @@
     "habitat": "Habitat Building",
     "habitatList": "Habitat List",
     "habitatMaterials": "Habitat Materials",
+    "crafting": "Crafting Recipes",
     "explore": "Exploration Map",
     "multiplayer": "Multiplayer Guide"
   },
@@ -284,6 +285,40 @@
     "watching stuff": "Watching Stuff",
     "wobbly stuff": "Wobbly Stuff",
     "wooden stuff": "Wooden Stuff"
+  },
+  "crafting": {
+    "title": "Crafting Recipes",
+    "metaTitle": "All Pokopia Crafting Recipes | Furniture & Items",
+    "description": "Browse all crafting recipes in Pokémon Pokopia. Find materials needed for furniture, cooking tools, lighting, and decorations.",
+    "metaDescription": "Complete list of crafting recipes in Pokémon Pokopia. Materials, categories, and unlock methods for all furniture, tools, and decorations.",
+    "totalCount": "{{count}} recipes in total",
+    "searchRecipe": "Search recipes...",
+    "noResults": "No recipes found.",
+    "showingCount": "Showing {{count}} recipes",
+    "breadcrumb": "Crafting",
+    "materials": "Materials",
+    "obtainMethod": "How to Get",
+    "category": "Category",
+    "allCategories": "All",
+    "detailDesc": "How to craft {{name}} in Pokémon Pokopia.",
+    "detailMetaDesc": "How to craft {{name}} in Pokopia. Materials: {{materials}}."
+  },
+  "craftingCategories": {
+    "furniture": "Furniture",
+    "decor": "Decorations",
+    "outdoor": "Outdoor",
+    "cooking-tool": "Cooking Tools",
+    "building": "Building Parts",
+    "blocks": "Floors & Tiles",
+    "lighting": "Lighting",
+    "transport": "Transport",
+    "special": "Special"
+  },
+  "craftingObtain": {
+    "story": "Story Unlock",
+    "shop": "Shop Purchase",
+    "map": "Found on Map",
+    "quest": "Quest Reward"
   },
   "types": {
     "normal": "Normal",

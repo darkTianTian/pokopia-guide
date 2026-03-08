@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react"
 import { Search, X } from "lucide-react"
-import Link from "next/link"
 import { SafeImage } from "@/components/ui/safe-image"
 import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
@@ -25,7 +24,6 @@ interface HabitatItem {
     rarity: string
     pokemon: { id: number; name: string; image: string }
   }[]
-  localePath: string
 }
 
 interface HabitatGridProps {
@@ -88,12 +86,7 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                   : "ring-emerald-500/50 group-hover:ring-emerald-500"
 
             return (
-              <Link
-                key={habitat.id}
-                href={habitat.localePath}
-                className="group flex h-full flex-col outline-none"
-              >
-                <article className={`relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:border-border/80 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5`}>
+              <article key={habitat.id} className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl">
                   <span className="absolute top-6 right-6 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
                     #{String(habitat.id).padStart(3, "0")}
                   </span>
@@ -151,8 +144,7 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                       </p>
                     </div>
                   </div>
-                </article>
-              </Link>
+              </article>
             )
           })}
         </div>

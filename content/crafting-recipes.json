@@ -1,0 +1,692 @@
+[
+  {
+    "id": "storage-box",
+    "nameJa": "しゅうのうボックス",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "big-storage-box",
+    "nameJa": "ビッグしゅうのうボックス",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "ポケメタル", "quantity": 3 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "straw-table",
+    "nameJa": "ほしくさのテーブル",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "いし", "quantity": 1 },
+      { "nameJa": "はっぱ", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "log-table",
+    "nameJa": "まるたのテーブル",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "ちいさなまるた", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "display-stand",
+    "nameJa": "てんじだい",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "いし", "quantity": 1 },
+      { "nameJa": "ざいもく", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "log-chair",
+    "nameJa": "まるたのイス",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "ちいさなまるた", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "straw-stool",
+    "nameJa": "ほしくさのこしかけ",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "はっぱ", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "iron-table",
+    "nameJa": "てつのテーブル",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "てつののべぼう", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "iron-stand",
+    "nameJa": "てつのだい",
+    "category": "decor",
+    "materials": [
+      { "nameJa": "てつののべぼう", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "iron-chair",
+    "nameJa": "てつのイス",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "てつののべぼう", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "wooden-bench",
+    "nameJa": "木のながイス",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "straw-bed",
+    "nameJa": "ほしくさのベッド",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "はっぱ", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "wooden-bed",
+    "nameJa": "木のベッド",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "はっぱ", "quantity": 2 },
+      { "nameJa": "ざいもく", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "industrial-bed",
+    "nameJa": "インダストリアルなベッド",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 2 },
+      { "nameJa": "てつののべぼう", "quantity": 2 },
+      { "nameJa": "わた", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "flower-vase",
+    "nameJa": "いちりんざし",
+    "category": "decor",
+    "materials": [
+      { "nameJa": "ぐにゃぐにゃねんど", "quantity": 1 },
+      { "nameJa": "はらっぱのはな", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "mug",
+    "nameJa": "マグカップ",
+    "category": "decor",
+    "materials": [
+      { "nameJa": "ぐにゃぐにゃねんど", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "basket",
+    "nameJa": "バスケット",
+    "category": "decor",
+    "materials": [
+      { "nameJa": "じょうぶなえだ", "quantity": 1 },
+      { "nameJa": "つたひも", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "party-platter",
+    "nameJa": "パーティープレート",
+    "category": "decor",
+    "materials": [
+      { "nameJa": "てつののべぼう", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "wooden-plate",
+    "nameJa": "木のおさら",
+    "category": "decor",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "first-aid-kit",
+    "nameJa": "きゅうきゅうばこ",
+    "category": "decor",
+    "materials": [
+      { "nameJa": "ポケメタル", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "party-wall-decoration",
+    "nameJa": "パーティーのカベかざり",
+    "category": "decor",
+    "materials": [
+      { "nameJa": "いとくず", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "vine-wall-decoration",
+    "nameJa": "くさのカベかざり",
+    "category": "decor",
+    "materials": [
+      { "nameJa": "はっぱ", "quantity": 1 },
+      { "nameJa": "つたひも", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "campfire",
+    "nameJa": "たきび",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "じょうぶなえだ", "quantity": 1 },
+      { "nameJa": "いし", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "lucky-topiary",
+    "nameJa": "ラッキーのうえ木",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "じょうぶなえだ", "quantity": 3 },
+      { "nameJa": "はっぱ", "quantity": 3 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "water-barrel",
+    "nameJa": "みずおけ",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "つたひも", "quantity": 2 },
+      { "nameJa": "ざいもく", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "firework-launcher",
+    "nameJa": "うちあげづつ",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "つたひも", "quantity": 1 },
+      { "nameJa": "ざいもく", "quantity": 1 },
+      { "nameJa": "てつののべぼう", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "gravestone",
+    "nameJa": "はかいし",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "いし", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "wooden-birdhouse",
+    "nameJa": "木のすばこ",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "はっぱ", "quantity": 1 },
+      { "nameJa": "ざいもく", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "perch",
+    "nameJa": "とまり木",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "はっぱ", "quantity": 1 },
+      { "nameJa": "ちいさなまるた", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "sign",
+    "nameJa": "かんばん",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "information-board",
+    "nameJa": "あんないけいじばん",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 1 },
+      { "nameJa": "ポケメタル", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "fire-hydrant",
+    "nameJa": "しょうかせん",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "てつののべぼう", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "ditto-flag",
+    "nameJa": "メタモンのはた",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "ヒメリのみ", "quantity": 1 },
+      { "nameJa": "じょうぶなえだ", "quantity": 1 },
+      { "nameJa": "いとくず", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "workbench",
+    "nameJa": "クラフトだい",
+    "category": "cooking-tool",
+    "materials": [
+      { "nameJa": "いし", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "cooking-pot",
+    "nameJa": "なべ",
+    "category": "cooking-tool",
+    "materials": [
+      { "nameJa": "どうののべぼう", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "frying-pan",
+    "nameJa": "フライパン",
+    "category": "cooking-tool",
+    "materials": [
+      { "nameJa": "どうののべぼう", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "cutting-board",
+    "nameJa": "まないた",
+    "category": "cooking-tool",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "picture-frame",
+    "nameJa": "がくぶち",
+    "category": "decor",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "shared-box",
+    "nameJa": "みんなのボックス",
+    "category": "furniture",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "bread-oven",
+    "nameJa": "パンがま",
+    "category": "cooking-tool",
+    "materials": [
+      { "nameJa": "かざんばい", "quantity": 4 },
+      { "nameJa": "いし", "quantity": 2 },
+      { "nameJa": "ちいさなまるた", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "furnace",
+    "nameJa": "ようこうろ",
+    "category": "cooking-tool",
+    "materials": [
+      { "nameJa": "いし", "quantity": 4 },
+      { "nameJa": "てつ", "quantity": 4 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "rail-track",
+    "nameJa": "せんろ",
+    "category": "transport",
+    "materials": [
+      { "nameJa": "いし", "quantity": 1 },
+      { "nameJa": "てつののべぼう", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "crossing-gate",
+    "nameJa": "しゃだんき",
+    "category": "transport",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 1 },
+      { "nameJa": "てつののべぼう", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "mine-cart",
+    "nameJa": "トロッコ",
+    "category": "transport",
+    "materials": [
+      { "nameJa": "どうののべぼう", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "stone-stairs",
+    "nameJa": "いしのかいだん",
+    "category": "building",
+    "materials": [
+      { "nameJa": "いし", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "wooden-stairs",
+    "nameJa": "木のかいだん",
+    "category": "building",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "mushroom-lamp",
+    "nameJa": "キノコのランプ",
+    "category": "lighting",
+    "materials": [
+      { "nameJa": "じょうぶなえだ", "quantity": 1 },
+      { "nameJa": "ひかるキノコ", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "mushroom-streetlight",
+    "nameJa": "キノコのがいとう",
+    "category": "lighting",
+    "materials": [
+      { "nameJa": "ひかるキノコ", "quantity": 1 },
+      { "nameJa": "ざいもく", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "sprinkler",
+    "nameJa": "スプリンクラー",
+    "category": "outdoor",
+    "materials": [
+      { "nameJa": "てつ", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "wire",
+    "nameJa": "ワイヤー",
+    "category": "building",
+    "materials": [
+      { "nameJa": "てつののべぼう", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "pulley",
+    "nameJa": "かつしゃ",
+    "category": "building",
+    "materials": [
+      { "nameJa": "てつののべぼう", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "wooden-cross-door",
+    "nameJa": "木のクロスドア",
+    "category": "building",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "smooth-awning",
+    "nameJa": "ツルツルのひよけ",
+    "category": "building",
+    "materials": [
+      { "nameJa": "いとくず", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "wooden-partition-straight",
+    "nameJa": "木のしきり・まっすぐ",
+    "category": "building",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "wooden-partition-corner",
+    "nameJa": "木のしきり・かど",
+    "category": "building",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "dock-board",
+    "nameJa": "さんばしのいた",
+    "category": "building",
+    "materials": [
+      { "nameJa": "ざいもく", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "horizontal-log",
+    "nameJa": "ヨコまるた",
+    "category": "building",
+    "materials": [
+      { "nameJa": "ちいさなまるた", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "vertical-log",
+    "nameJa": "タテまるた",
+    "category": "building",
+    "materials": [
+      { "nameJa": "ちいさなまるた", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "house-partition",
+    "nameJa": "いえのしきり",
+    "category": "building",
+    "materials": [
+      { "nameJa": "いとくず", "quantity": 5 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "grass-flooring",
+    "nameJa": "しばふのゆか",
+    "category": "blocks",
+    "materials": [
+      { "nameJa": "はっぱ", "quantity": 1 },
+      { "nameJa": "いとくず", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "puffy-tree-pillar",
+    "nameJa": "木のフカフカはしら",
+    "category": "blocks",
+    "materials": [
+      { "nameJa": "はっぱ", "quantity": 1 },
+      { "nameJa": "いとくず", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "stone-pillar-middle",
+    "nameJa": "いしのはしら・まんなか",
+    "category": "blocks",
+    "materials": [
+      { "nameJa": "いし", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "stone-pillar-top",
+    "nameJa": "いしのはしら・うえ",
+    "category": "blocks",
+    "materials": [
+      { "nameJa": "いし", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "marble-floor",
+    "nameJa": "だいりせき",
+    "category": "blocks",
+    "materials": [
+      { "nameJa": "せっかいせき", "quantity": 4 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "stone-line-floor",
+    "nameJa": "いしラインのゆか",
+    "category": "blocks",
+    "materials": [
+      { "nameJa": "いし", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "simple-square-tile",
+    "nameJa": "シンプルしかくタイル",
+    "category": "blocks",
+    "materials": [
+      { "nameJa": "いし", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "stone-tiling",
+    "nameJa": "いしのタイル",
+    "category": "blocks",
+    "materials": [
+      { "nameJa": "いし", "quantity": 2 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "firework-white",
+    "nameJa": "はなびだま・しろ",
+    "category": "special",
+    "materials": [
+      { "nameJa": "ヒカリいし", "quantity": 1 },
+      { "nameJa": "じょうぶなえだ", "quantity": 1 },
+      { "nameJa": "ポケメタル", "quantity": 1 },
+      { "nameJa": "えのぐ・しろ", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "firework-blue",
+    "nameJa": "はなびだま・あお",
+    "category": "special",
+    "materials": [
+      { "nameJa": "ヒカリいし", "quantity": 1 },
+      { "nameJa": "じょうぶなえだ", "quantity": 1 },
+      { "nameJa": "ポケメタル", "quantity": 1 },
+      { "nameJa": "えのぐ・あお", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "firework-yellow",
+    "nameJa": "はなびだま・きいろ",
+    "category": "special",
+    "materials": [
+      { "nameJa": "ヒカリいし", "quantity": 1 },
+      { "nameJa": "じょうぶなえだ", "quantity": 1 },
+      { "nameJa": "ポケメタル", "quantity": 1 },
+      { "nameJa": "えのぐ・きいろ", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "firework-green",
+    "nameJa": "はなびだま・みどり",
+    "category": "special",
+    "materials": [
+      { "nameJa": "ヒカリいし", "quantity": 1 },
+      { "nameJa": "じょうぶなえだ", "quantity": 1 },
+      { "nameJa": "ポケメタル", "quantity": 1 },
+      { "nameJa": "えのぐ・みどり", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  },
+  {
+    "id": "firework-red",
+    "nameJa": "はなびだま・あか",
+    "category": "special",
+    "materials": [
+      { "nameJa": "ヒカリいし", "quantity": 1 },
+      { "nameJa": "じょうぶなえだ", "quantity": 1 },
+      { "nameJa": "ポケメタル", "quantity": 1 },
+      { "nameJa": "えのぐ・あか", "quantity": 1 }
+    ],
+    "obtainMethod": "story"
+  }
+]

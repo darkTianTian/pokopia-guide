@@ -1,7 +1,7 @@
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { HabitatGrid } from "@/components/habitat/habitat-grid"
 import { getAllHabitatsWithPokemon } from "@/lib/habitat"
-import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
+import { getTranslations, t, type Locale } from "@/i18n/config"
 
 interface HabitatListPageProps {
   locale: Locale
@@ -23,7 +23,6 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
       rarity: p.rarity,
       pokemon: { id: p.pokemon.id, name: p.pokemon.name, image: p.pokemon.image },
     })),
-    localePath: getLocalePath(locale, `/habitat/${habitat.slug}`),
   }))
 
   return (

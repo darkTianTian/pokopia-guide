@@ -9,6 +9,7 @@ The site is available in English, Traditional Chinese (zh-TW), and Japanese. All
 - [Pokédex](https://pokopiaguide.com/pokedex): Complete list of 300+ Pokémon with types, specialties, habitats, spawn times, weather conditions, and favorites
 - [Habitat List](https://pokopiaguide.com/habitat): All Pokopia habitats with Pokémon spawn lists, rarity tiers, and building material requirements
 - [Habitat Materials](https://pokopiaguide.com/habitat/materials): Complete list of crafting materials and which habitats need them
+- [Crafting Recipes](https://pokopiaguide.com/crafting): All 70+ crafting recipes for furniture, cooking tools, lighting, building parts, and decorations with required materials
 - [Events](https://pokopiaguide.com/events): Limited-time events, exclusive Pokémon, and special rewards
 - [Guides](https://pokopiaguide.com/guides): Beginner tips, quest walkthroughs, and advanced techniques
 
@@ -28,6 +29,13 @@ Each Pokémon entry includes:
 - Each habitat has common and rare Pokémon
 - 190+ habitats with specific material requirements
 - Materials include wood, stone, glass, metal, fabric, and specialty items
+
+## Crafting System
+
+- 70+ crafting recipes for furniture, cooking tools, building parts, and decorations
+- Recipes organized by category: furniture, decorations, outdoor, cooking tools, building parts, floors/tiles, lighting, transport, special
+- Each recipe shows required materials and quantities
+- Cooking system: 4 cooking tools (cutting board, pot, frying pan, bread oven) + 4 dishes
 
 ## Browse by Type
 

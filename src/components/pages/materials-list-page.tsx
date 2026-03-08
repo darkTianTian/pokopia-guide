@@ -22,7 +22,6 @@ export async function MaterialsListPage({ locale }: MaterialsListPageProps) {
       habitatName: h.habitatName,
       habitatImage: h.habitatImage,
     })),
-    localePath: getLocalePath(locale, `/habitat/materials/${material.slug}`),
   }))
 
   return (

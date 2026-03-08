@@ -167,6 +167,7 @@
     "habitat": "家園建設",
     "habitatList": "棲息地列表",
     "habitatMaterials": "建造材料",
+    "crafting": "製作配方",
     "explore": "探索地圖",
     "multiplayer": "連線指南"
   },
@@ -285,6 +286,40 @@
     "watching stuff": "觀賞用",
     "wobbly stuff": "搖晃的東西",
     "wooden stuff": "木製品"
+  },
+  "crafting": {
+    "title": "製作配方",
+    "metaTitle": "Pokopia 全製作配方 | 家具與道具",
+    "description": "瀏覽 Pokémon Pokopia 所有製作配方。查詢家具、烹飪工具、照明和裝飾品所需的材料。",
+    "metaDescription": "Pokémon Pokopia 完整製作配方清單。查看所有家具、工具和裝飾品的材料、類別和解鎖方式。",
+    "totalCount": "共 {{count}} 個配方",
+    "searchRecipe": "搜尋配方...",
+    "noResults": "沒有符合的配方。",
+    "showingCount": "顯示 {{count}} 個配方",
+    "breadcrumb": "製作配方",
+    "materials": "所需材料",
+    "obtainMethod": "獲取方式",
+    "category": "類別",
+    "allCategories": "全部",
+    "detailDesc": "如何在 Pokémon Pokopia 中製作 {{name}}。",
+    "detailMetaDesc": "如何在 Pokopia 中製作 {{name}}。所需材料：{{materials}}。"
+  },
+  "craftingCategories": {
+    "furniture": "家具",
+    "decor": "裝飾品",
+    "outdoor": "戶外",
+    "cooking-tool": "烹飪工具",
+    "building": "建築部件",
+    "blocks": "地板與磚塊",
+    "lighting": "照明",
+    "transport": "運輸",
+    "special": "特殊"
+  },
+  "craftingObtain": {
+    "story": "劇情解鎖",
+    "shop": "商店購買",
+    "map": "地圖拾取",
+    "quest": "任務獎勵"
   },
   "types": {
     "normal": "一般",

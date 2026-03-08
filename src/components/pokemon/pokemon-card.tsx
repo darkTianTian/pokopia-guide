@@ -4,7 +4,6 @@ import { SafeImage } from "@/components/ui/safe-image"
 import { TypeBadge } from "./type-badge"
 import type { Pokemon } from "@/lib/types"
 import { getLocalePath, type Locale } from "@/i18n/config"
-import { toHabitatSlug } from "@/lib/habitat-slug"
 import { HabitatLink } from "@/components/habitat/habitat-link"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
@@ -209,7 +208,7 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
                       return (
                         <HabitatLink
                           key={h.id}
-                          href={getLocalePath(locale, `/habitat/${toHabitatSlug(h.id)}`)}
+                          href={getLocalePath(locale, "/habitat")}
                           className="group/habitat relative flex shrink-0 w-[4.5rem] flex-col items-center gap-1 rounded-2xl bg-background/60 p-1.5 shadow-sm ring-1 ring-inset ring-border/50 transition-all hover:bg-background hover:ring-2 hover:ring-primary/50"
                         >
                           <div className={`overflow-hidden rounded-xl ring-2 ${ringColor}`}>

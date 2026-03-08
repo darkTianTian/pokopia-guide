@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react"
 import { Search, X } from "lucide-react"
-import Link from "next/link"
 import { SafeImage } from "@/components/ui/safe-image"
 import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
@@ -35,7 +34,6 @@ interface MaterialItem {
   name: string
   totalUsage: number
   habitats: MaterialHabitat[]
-  localePath: string
 }
 
 interface MaterialsGridProps {
@@ -89,12 +87,7 @@ export function MaterialsGrid({ materials, locale }: MaterialsGridProps) {
             const extraCount = material.habitats.length - 5
 
             return (
-              <Link
-                key={material.slug}
-                href={material.localePath}
-                className="group flex h-full flex-col outline-none"
-              >
-                <article className="relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:border-border/80 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5">
+              <article key={material.slug} className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl">
                   <div className="absolute left-1/2 top-0 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-30 blur-[40px] transition-all duration-500 group-hover:scale-150 group-hover:opacity-60 dark:opacity-20 dark:group-hover:opacity-40">
                     <div className={`h-full w-full bg-gradient-to-br ${gradientClass}`} />
                   </div>
@@ -146,8 +139,7 @@ export function MaterialsGrid({ materials, locale }: MaterialsGridProps) {
                       )}
                     </div>
                   </div>
-                </article>
-              </Link>
+              </article>
             )
           })}
         </div>

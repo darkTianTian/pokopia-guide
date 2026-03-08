@@ -33,34 +33,6 @@ async function main() {
   }
 
   // Collect all habitat IDs and generate slugs
-  const habitatMapping = JSON.parse(
-    await fs.readFile(path.join(process.cwd(), "content/habitat-mapping-en.json"), "utf-8")
-  )
-  const habitatIds = Object.keys(habitatMapping)
-
-  function toHabitatSlug(id) {
-    const enName = habitatMapping[id]
-    if (enName) {
-      return enName.toLowerCase().replace(/[()]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
-    }
-    return id
-  }
-
-  // Collect all material slugs from English materials
-  const habitatMaterials = JSON.parse(
-    await fs.readFile(path.join(process.cwd(), "content/habitat-materials-en.json"), "utf-8")
-  )
-  const materialSlugs = new Set()
-  for (const materialStr of Object.values(habitatMaterials)) {
-    const items = materialStr.split(",").map((s) => s.trim()).filter(Boolean)
-    for (const item of items) {
-      const match = item.match(/^(.+?)\s+x\d+$/)
-      const name = match ? match[1].trim() : item.trim()
-      const slug = name.toLowerCase().replace(/[()]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
-      materialSlugs.add(slug)
-    }
-  }
-
   for (const locale of LOCALES) {
     const pokemonDir = path.join(process.cwd(), `content/${locale.code}/pokemon`)
     const guidesDir = path.join(process.cwd(), `content/${locale.code}/guides`)
@@ -84,6 +56,7 @@ async function main() {
       { url: `${locale.prefix}/events`, priority: "0.8", changefreq: "weekly" },
       { url: `${locale.prefix}/habitat`, priority: "0.8", changefreq: "weekly" },
       { url: `${locale.prefix}/habitat/materials`, priority: "0.8", changefreq: "weekly" },
+      { url: `${locale.prefix}/crafting`, priority: "0.8", changefreq: "weekly" },
       { url: `${locale.prefix}/explore`, priority: "0.5", changefreq: "monthly" },
       { url: `${locale.prefix}/multiplayer`, priority: "0.5", changefreq: "monthly" },
       { url: `${locale.prefix}/quests`, priority: "0.5", changefreq: "monthly" },
@@ -124,29 +97,13 @@ async function main() {
       changefreq: "weekly",
     }))
 
-    // Habitat detail pages
-    const habitatPages = habitatIds.map((id) => ({
-      url: `${locale.prefix}/habitat/${toHabitatSlug(id)}`,
-      priority: "0.6",
-      changefreq: "weekly",
-    }))
-
-    // Material detail pages
-    const materialPages = [...materialSlugs].map((slug) => ({
-      url: `${locale.prefix}/habitat/materials/${slug}`,
-      priority: "0.6",
-      changefreq: "weekly",
-    }))
-
     allPages.push(
       ...staticPages,
       ...pokemonPages,
       ...guidePages,
       ...eventPages,
       ...typePages,
-      ...specialtyPages,
-      ...habitatPages,
-      ...materialPages
+      ...specialtyPages
     )
   }
 

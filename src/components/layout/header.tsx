@@ -35,9 +35,8 @@ export async function Header({ locale }: HeaderProps) {
       label: t(translations, "nav.habitatMaterials"),
     },
     {
-      path: "/habitat/crafting",
+      path: "/crafting",
       label: t(translations, "nav.habitatCrafting"),
-      comingSoon: true,
     },
   ]
 
@@ -72,18 +71,7 @@ export async function Header({ locale }: HeaderProps) {
             </button>
             <div className="invisible absolute left-0 top-full pt-4 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
               <div className="min-w-[220px] overflow-hidden rounded-3xl border border-border/40 bg-background/95 p-2 shadow-xl backdrop-blur-3xl">
-                {habitatSubItems.map((item) =>
-                  item.comingSoon ? (
-                    <span
-                      key={item.path}
-                      className="flex items-center gap-2 whitespace-nowrap rounded-2xl px-4 py-3 text-sm font-semibold text-muted-foreground/50"
-                    >
-                      {item.label}
-                      <span className="rounded-full bg-muted/50 px-2 py-0.5 text-[10px] uppercase tracking-wider text-muted-foreground">
-                        {t(translations, "nav.comingSoon")}
-                      </span>
-                    </span>
-                  ) : (
+                {habitatSubItems.map((item) => (
                     <Link
                       key={item.path}
                       href={getLocalePath(locale, item.path)}
@@ -91,8 +79,7 @@ export async function Header({ locale }: HeaderProps) {
                     >
                       {item.label}
                     </Link>
-                  )
-                )}
+                ))}
               </div>
             </div>
           </div>

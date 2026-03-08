@@ -67,22 +67,13 @@ export function MobileNav({
               <ul className="pt-2">
                 {habitatSubItems.map((item) => (
                   <li key={item.path}>
-                    {item.comingSoon ? (
-                      <span className="flex items-center gap-2 rounded-2xl px-3 py-3 text-[15px] font-semibold text-muted-foreground/50">
-                        {item.label}
-                        <span className="rounded-full bg-muted/50 px-2 py-0.5 text-[10px] uppercase tracking-wider text-muted-foreground">
-                          {comingSoonLabel}
-                        </span>
-                      </span>
-                    ) : (
-                      <Link
-                        href={getPath(item.path)}
-                        onClick={() => setOpen(false)}
-                        className="block rounded-2xl px-3 py-3 text-[15px] font-semibold text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary"
-                      >
-                        {item.label}
-                      </Link>
-                    )}
+                    <Link
+                      href={getPath(item.path)}
+                      onClick={() => setOpen(false)}
+                      className="block rounded-2xl px-3 py-3 text-[15px] font-semibold text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary"
+                    >
+                      {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
