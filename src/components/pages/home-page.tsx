@@ -102,7 +102,7 @@ export async function HomePage({ locale }: HomePageProps) {
               href={feature.href}
               className="flex-none"
             >
-              <Card className={`h-full w-[220px] transition-shadow hover:shadow-lg ${feature.comingSoon ? "opacity-60" : ""}`}>
+              <Card className={`h-full w-[220px] rounded-2xl border-border/40 bg-background/40 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-border/80 hover:bg-background/60 hover:shadow-xl ${feature.comingSoon ? "opacity-60" : ""}`}>
                 <CardHeader>
                   <div className="mb-2 text-3xl">{feature.icon}</div>
                   <CardTitle className="text-lg">{feature.title}</CardTitle>
@@ -154,7 +154,7 @@ export async function HomePage({ locale }: HomePageProps) {
                 key={habitat.id}
                 href={getLocalePath(locale, `/habitat/${habitat.slug}`)}
               >
-                <Card className="h-full transition-shadow hover:shadow-lg">
+                <Card className="flex h-full flex-col overflow-hidden rounded-[2rem] border-border/40 bg-background/40 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-border/80 hover:bg-background/60 hover:shadow-xl">
                   <CardHeader className="pb-2">
                     <div className="flex justify-center py-2">
                       <SafeImage
