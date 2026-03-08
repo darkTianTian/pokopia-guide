@@ -30,6 +30,11 @@
         "id": 142,
         "name": "フワフワな花畑",
         "rarity": "rare"
+      },
+      {
+        "id": 180,
+        "name": "九つのほむら",
+        "rarity": "common"
       }
     ]
   }

@@ -28,6 +28,11 @@
     ],
     "habitats": [
       {
+        "id": 73,
+        "name": "しかけにご注意",
+        "rarity": "common"
+      },
+      {
         "id": 89,
         "name": "あやしい書さい",
         "rarity": "rare"

@@ -7,13 +7,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/blissey.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "trade",
+      "litter"
+    ],
     "favorites": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "chansey",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 95,
+        "name": "ベリーキュートな空間",
+        "rarity": "rare"
+      }
+    ]
   }
 }

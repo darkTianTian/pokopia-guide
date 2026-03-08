@@ -39,6 +39,11 @@
         "id": 156,
         "name": "Sewer hole inspection",
         "rarity": "rare"
+      },
+      {
+        "id": 178,
+        "name": "Dojo training",
+        "rarity": "common"
       }
     ]
   }
