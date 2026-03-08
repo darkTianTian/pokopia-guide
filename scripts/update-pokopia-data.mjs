@@ -1676,6 +1676,87 @@ async function run() {
     }
   }
 
+  // Phase 3b: Refresh GameWith data for previously-complete Pokemon that were skipped
+  if (!DRY_RUN) {
+    const mergedSlugs = new Set(mergedResults.map((r) => r.slug))
+    let refreshed = 0
+
+    for (const [slug, locales] of existingPokemon) {
+      if (mergedSlugs.has(slug)) continue // already updated in Phase 3
+      const gw = gameWithData.get(slug)
+      if (!gw) continue
+
+      const en = locales.en
+      if (!en?.pokopia) continue
+
+      const existing = en.pokopia
+
+      // Compare habitats/timeOfDay/weather with GameWith authoritative data
+      const newHabitats = gw.habitats?.length > 0 ? gw.habitats : null
+      const newTimeOfDay = gw.timeOfDay || null
+      const newWeather = gw.weather || null
+
+      const habitatsChanged =
+        newHabitats !== null &&
+        JSON.stringify(existing.habitats?.map((h) => h.id).sort()) !==
+          JSON.stringify(newHabitats.map((h) => h.id).sort())
+      const timeChanged =
+        newTimeOfDay !== null &&
+        JSON.stringify(existing.timeOfDay) !== JSON.stringify(newTimeOfDay)
+      const weatherChanged =
+        newWeather !== null &&
+        JSON.stringify(existing.weather) !== JSON.stringify(newWeather)
+
+      if (!habitatsChanged && !timeChanged && !weatherChanged) continue
+
+      // Build updated pokopia data
+      const updatedPokopia = {
+        ...existing,
+        ...(habitatsChanged ? { habitats: newHabitats } : {}),
+        ...(timeChanged ? { timeOfDay: newTimeOfDay } : {}),
+        ...(weatherChanged ? { weather: newWeather } : {}),
+      }
+
+      // Write to all locale files
+      for (const locale of LOCALES) {
+        const pokemonData = locales[locale]
+        if (!pokemonData) continue
+
+        const localizedHabitats = updatedPokopia.habitats.map((h) => ({
+          ...h,
+          name: getLocalizedHabitatName(h, locale, habitatMappings),
+        }))
+
+        const updatedData = {
+          ...pokemonData,
+          pokopia: {
+            ...updatedPokopia,
+            habitats: localizedHabitats,
+          },
+        }
+
+        const filePath = path.join(CONTENT_DIR, locale, "pokemon", `${slug}.json`)
+        await writeJson(filePath, updatedData)
+      }
+
+      refreshed++
+      const changes = [
+        habitatsChanged ? "habitats" : "",
+        timeChanged ? "timeOfDay" : "",
+        weatherChanged ? "weather" : "",
+      ]
+        .filter(Boolean)
+        .join(", ")
+      console.log(`  Refreshed ${slug}: ${changes}`)
+    }
+
+    if (refreshed > 0) {
+      console.log(`\nGameWith refresh: updated ${refreshed} previously-complete Pokémon`)
+    } else {
+      console.log(`\nGameWith refresh: all previously-complete Pokémon are up to date`)
+    }
+  }
+
   // Collect all unique habitat IDs and download missing images
   const allHabitatIds = new Set()
   for (const { merged } of mergedResults) {
