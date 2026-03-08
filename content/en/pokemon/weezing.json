@@ -27,6 +27,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 48,
+        "name": "古きよきアンティーク",
+        "rarity": "common"
+      },
+      {
         "id": 63,
         "name": "Trash collection site",
         "rarity": "rare"

@@ -21,7 +21,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "poliwhirl",
@@ -30,7 +31,7 @@
       {
         "id": 156,
         "name": "Sewer hole inspection",
-        "rarity": "common"
+        "rarity": "rare"
       }
     ]
   }

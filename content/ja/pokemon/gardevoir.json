@@ -29,6 +29,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 162,
+        "name": "しっとり化粧台",
+        "rarity": "rare"
+      },
+      {
         "id": 163,
         "name": "プチ図書館",
         "rarity": "rare"
