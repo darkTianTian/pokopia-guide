@@ -116,33 +116,38 @@ export function CraftingGrid({ recipes, locale }: CraftingGridProps) {
 
             return (
               <section key={category}>
-                <h3 className="mb-5 text-xl font-bold text-foreground">
+                <h3 className="mb-6 text-3xl font-extrabold tracking-tight text-foreground">
                   {categoryLabel}
-                  <span className="ml-2 text-sm font-normal text-muted-foreground">
-                    ({categoryRecipes.length})
+                  <span className="ml-3 inline-flex items-center justify-center rounded-full bg-muted px-3 py-1 text-sm font-semibold tracking-wide text-muted-foreground ring-1 ring-inset ring-border/50">
+                    {categoryRecipes.length}
                   </span>
                 </h3>
 
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {categoryRecipes.map((recipe) => (
                     <article
                       key={recipe.id}
-                      className="relative flex flex-col overflow-hidden rounded-2xl border border-border/40 bg-background/40 p-5 shadow-sm backdrop-blur-xl"
+                      className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-border/80 hover:bg-background/60 hover:shadow-xl"
                     >
-                      <h4 className="text-lg font-bold tracking-tight text-foreground">
-                        {recipe.name}
-                      </h4>
+                      {/* Decorative Background Blob */}
+                      <div className="absolute -right-10 -top-10 -z-10 h-32 w-32 rounded-full bg-primary/10 blur-2xl transition-all duration-500 group-hover:bg-primary/20 dark:bg-primary/5 dark:group-hover:bg-primary/10" />
 
-                      <div className="mt-3 flex flex-wrap gap-1.5">
-                        {recipe.materials.map((m) => (
-                          <span
-                            key={m.name}
-                            className="inline-flex items-center rounded-full bg-primary/5 px-2.5 py-1 text-xs font-medium text-foreground ring-1 ring-inset ring-primary/20"
-                          >
-                            {m.name}
-                            <QuantityDots count={m.quantity} className="ml-0.5" />
-                          </span>
-                        ))}
+                      <div className="flex flex-1 flex-col z-10">
+                        <h4 className="text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+                          {recipe.name}
+                        </h4>
+
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          {recipe.materials.map((m) => (
+                            <span
+                              key={m.name}
+                              className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10 transition-colors group-hover:bg-primary/15"
+                            >
+                              {m.name}
+                              <QuantityDots count={m.quantity} className="ml-1" />
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </article>
                   ))}
