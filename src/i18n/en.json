@@ -45,7 +45,8 @@
   },
   "pokedex": {
     "title": "Pokédex - All Pokémon in Pokopia with Stats & Habitats",
-    "description": "Complete Pokémon Pokopia Pokédex. Browse all available Pokémon with types, specialties, habitat locations, spawn times, weather conditions, and evolution chains.",
+    "metaTitle": "Pokopia Pokédex | Specialties & Favorites",
+    "description": "Complete Pokémon Pokopia Pokédex. Browse all available Pokémon with types, specialties, habitat locations, spawn times, weather conditions, and favorites.",
     "subtitle": "Browse all Pokémon in the Pokémon Pokopia world",
     "totalCount": "{{count}} Pokémon in total",
     "breadcrumb": "Pokédex",

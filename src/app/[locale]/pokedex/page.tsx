@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!isValidLocale(locale)) return {}
   const translations = await getTranslations(locale)
   return {
-    title: t(translations, "pokedex.title"),
+    title: t(translations, "pokedex.metaTitle"),
     description: t(translations, "pokedex.description"),
     alternates: getPageAlternates(locale, "/pokedex"),
   }
