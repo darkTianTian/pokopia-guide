@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-08T10:35:13.076Z",
+  "lastSync": "2026-03-08T11:29:52.526Z",
   "newHabitats": [
     {
       "id": 28,
@@ -845,6 +845,13 @@
     {
       "id": 182,
       "name": "バツグンのゲーム環境",
+      "missingIn": [
+        "zh"
+      ]
+    },
+    {
+      "id": 164,
+      "name": "Game Corner battle zone",
       "missingIn": [
         "zh"
       ]
