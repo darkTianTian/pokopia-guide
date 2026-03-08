@@ -19,7 +19,8 @@
     ],
     "weather": [
       "sunny",
-      "cloudy"
+      "cloudy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "magmar",

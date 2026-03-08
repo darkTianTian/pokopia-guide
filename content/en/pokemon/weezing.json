@@ -19,7 +19,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "koffing",
@@ -27,7 +28,7 @@
     "habitats": [
       {
         "id": 48,
-        "name": "古きよきアンティーク",
+        "name": "Good old-fashioned antiques",
         "rarity": "common"
       },
       {

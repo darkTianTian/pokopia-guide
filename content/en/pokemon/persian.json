@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "meowth",
@@ -28,7 +29,7 @@
     "habitats": [
       {
         "id": 179,
-        "name": "Evil Team Hideout",
+        "name": "Evil organization HQ",
         "rarity": "common"
       }
     ]
