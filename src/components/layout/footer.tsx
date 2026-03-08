@@ -24,17 +24,17 @@ export async function Footer({ locale }: FooterProps) {
       <div className="mx-auto max-w-6xl px-4 py-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           <div>
-            <h3 className="mb-3 font-semibold">
+            <p className="mb-3 font-semibold">
               {t(translations, "site.name")}
-            </h3>
+            </p>
             <p className="text-sm text-muted-foreground">
               {t(translations, "site.description")}
             </p>
           </div>
           <div>
-            <h3 className="mb-3 font-semibold">
+            <p className="mb-3 font-semibold">
               {t(translations, "footer.navigation")}
-            </h3>
+            </p>
             <ul className="space-y-2 text-sm">
               {footerLinks.map((link) => (
                 <li key={link.path}>
@@ -49,9 +49,9 @@ export async function Footer({ locale }: FooterProps) {
             </ul>
           </div>
           <div>
-            <h3 className="mb-3 font-semibold">
+            <p className="mb-3 font-semibold">
               {t(translations, "footer.about")}
-            </h3>
+            </p>
             <p className="text-sm text-muted-foreground">
               {t(translations, "footer.aboutText")}
             </p>
