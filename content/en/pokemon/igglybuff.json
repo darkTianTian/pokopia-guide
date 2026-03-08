@@ -11,7 +11,14 @@
     "specialties": [
       "hype"
     ],
-    "favorites": [],
+    "favorites": [
+      "soft stuff",
+      "cute stuff",
+      "play spaces",
+      "healing",
+      "noisy stuff",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
