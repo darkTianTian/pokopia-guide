@@ -11,7 +11,14 @@
       "generate",
       "trade"
     ],
-    "favorites": [],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "glass stuff",
+      "cute stuff",
+      "pretty flowers",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

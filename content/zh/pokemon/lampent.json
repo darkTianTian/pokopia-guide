@@ -11,7 +11,14 @@
     "specialties": [
       "burn"
     ],
-    "favorites": [],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "lots of fire",
+      "wobbly stuff",
+      "containers",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

@@ -10,7 +10,14 @@
     "specialties": [
       "trade"
     ],
-    "favorites": [],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "lots of nature",
+      "wooden stuff",
+      "watching stuff",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
