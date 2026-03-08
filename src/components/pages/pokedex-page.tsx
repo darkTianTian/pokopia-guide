@@ -1,7 +1,7 @@
 import { Breadcrumb } from "@/components/layout/breadcrumb"
-import { BrowseBySection } from "@/components/pokemon/browse-by-section"
 import { PokemonGrid } from "@/components/pokemon/pokemon-grid"
-import { getAllPokemon } from "@/lib/pokemon"
+import { getAllPokemon, getAllSpecialties } from "@/lib/pokemon"
+import { POKEMON_TYPES } from "@/lib/types"
 import { getTranslations, t, type Locale } from "@/i18n/config"
 
 interface PokedexPageProps {
@@ -13,6 +13,8 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
     getAllPokemon(locale),
     getTranslations(locale),
   ])
+
+  const specialties = getAllSpecialties(pokemon)
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
@@ -35,11 +37,12 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
           </div>
         </div>
       </div>
-      <BrowseBySection locale={locale} />
       <PokemonGrid
         pokemon={pokemon}
         locale={locale}
         headingLevel="h3"
+        types={POKEMON_TYPES}
+        specialties={specialties}
       />
     </div>
   )
