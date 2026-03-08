@@ -1,13 +1,24 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
 import { GuideCard } from "@/components/guides/guide-card"
 import { SafeImage } from "@/components/ui/safe-image"
+import { QuantityDots } from "@/components/ui/quantity-dots"
 import { getAllPokemon } from "@/lib/pokemon"
 import { getAllGuides } from "@/lib/guides"
 import { getAllHabitatsWithPokemon } from "@/lib/habitat"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
+
+function parseMaterials(materials: string): { name: string; quantity: number }[] {
+  return materials.split(/,\s*/).filter(Boolean).map((part) => {
+    const match = part.match(/^(.+?)\s+x(\d+)$/)
+    if (match) {
+      return { name: match[1], quantity: parseInt(match[2], 10) }
+    }
+    return { name: part, quantity: 1 }
+  })
+}
 
 interface HomePageProps {
   locale: Locale
@@ -148,59 +159,70 @@ export async function HomePage({ locale }: HomePageProps) {
               </Link>
             </Button>
           </div>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {featuredHabitats.map((habitat) => (
-              <Link
-                key={habitat.id}
-                href={getLocalePath(locale, `/habitat/${habitat.slug}`)}
-              >
-                <Card className="flex h-full flex-col overflow-hidden rounded-[2rem] border-border/40 bg-background/40 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-border/80 hover:bg-background/60 hover:shadow-xl">
-                  <CardHeader className="pb-2">
-                    <div className="flex justify-center py-2">
+              <article key={habitat.id} className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl">
+                <span className="absolute top-6 right-6 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
+                  #{String(habitat.id).padStart(3, "0")}
+                </span>
+
+                <div className="absolute left-1/2 top-28 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-30 blur-[40px] transition-all duration-500 group-hover:scale-150 group-hover:opacity-60 dark:opacity-20 dark:group-hover:opacity-50">
+                  <div className="h-full w-full bg-gradient-to-br from-primary to-accent" />
+                </div>
+
+                <div className="flex flex-1 flex-col">
+                  <div className="relative mb-6 mt-2 flex h-[160px] items-center justify-center">
+                    <div className="relative z-10 flex h-full w-full items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110">
                       <SafeImage
                         src={habitat.image}
                         alt={habitat.name}
-                        width={120}
-                        height={120}
-                        className="rounded-lg object-contain"
+                        width={160}
+                        height={160}
+                        className="rounded-2xl object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_10px_10px_rgba(0,0,0,0.4)]"
                       />
                     </div>
-                    <CardTitle className="text-center text-lg">
+                  </div>
+
+                  <div className="mb-4 text-center z-10">
+                    <h3 className="text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
                       {habitat.name}
-                    </CardTitle>
+                    </h3>
                     {habitat.materials && (
-                      <p className="text-center text-xs text-muted-foreground">
-                        {habitat.materials}
-                      </p>
-                    )}
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex items-center justify-center gap-2">
-                      <div className="flex -space-x-2">
-                        {habitat.pokemon.slice(0, 5).map(({ pokemon: p }) => (
-                          <SafeImage
-                            key={p.id}
-                            src={p.image}
-                            alt={p.name}
-                            width={32}
-                            height={32}
-                            className="rounded-full border-2 border-background bg-muted"
-                          />
+                      <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+                        {parseMaterials(habitat.materials).map((mat, i) => (
+                          <span
+                            key={i}
+                            className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10"
+                          >
+                            {mat.name}
+                            <QuantityDots count={mat.quantity} className="ml-1" />
+                          </span>
                         ))}
                       </div>
-                      {habitat.pokemon.length > 5 && (
-                        <span className="text-sm text-muted-foreground">
-                          +{habitat.pokemon.length - 5}
-                        </span>
-                      )}
+                    )}
+                  </div>
+
+                  <div className="mt-auto flex flex-col items-center gap-3 rounded-2xl bg-muted/30 p-4 ring-1 ring-inset ring-border/50 transition-colors group-hover:bg-muted/50 z-10">
+                    <div className="flex flex-wrap items-center justify-center gap-1.5">
+                      {habitat.pokemon.map(({ pokemon: p }) => (
+                        <Link
+                          key={p.id}
+                          href={getLocalePath(locale, `/pokedex/${p.slug}`)}
+                          className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-background drop-shadow-sm transition-transform hover:scale-125 hover:z-20 border border-border/20"
+                          title={p.name}
+                        >
+                          <SafeImage
+                            src={p.image}
+                            alt={p.name}
+                            fill
+                            className="bg-background object-contain p-1"
+                          />
+                        </Link>
+                      ))}
                     </div>
-                    <p className="mt-2 text-center text-sm text-muted-foreground">
-                      {habitat.pokemon.length}{" "}
-                      {t(translations, "habitat.pokemonCount")}
-                    </p>
-                  </CardContent>
-                </Card>
-              </Link>
+                  </div>
+                </div>
+              </article>
             ))}
           </div>
         </section>
