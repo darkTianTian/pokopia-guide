@@ -8,7 +8,9 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/gholdengo.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "appraise"
+    ],
     "favorites": [],
     "timeOfDay": [
       "dawn",
@@ -28,6 +30,11 @@
       {
         "id": 129,
         "name": "小博物館",
+        "rarity": "rare"
+      },
+      {
+        "id": 134,
+        "name": "Absolute luxury",
         "rarity": "rare"
       }
     ]

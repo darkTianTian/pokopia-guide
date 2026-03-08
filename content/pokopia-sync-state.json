@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-08T17:31:33.233Z",
+  "lastSync": "2026-03-08T18:48:31.185Z",
   "newHabitats": [
     {
       "id": 28,
@@ -868,6 +868,14 @@
       "id": 95,
       "name": "ベリーキュートな空間",
       "missingIn": [
+        "zh"
+      ]
+    },
+    {
+      "id": 134,
+      "name": "Absolute luxury",
+      "missingIn": [
+        "ja",
         "zh"
       ]
     }
