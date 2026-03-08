@@ -10,6 +10,14 @@
     "specialties": [
       "recycle"
     ],
+    "favorites": [
+      "soft stuff",
+      "strange stuff",
+      "round stuff",
+      "construction",
+      "colorful stuff",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "porygon",

@@ -12,14 +12,21 @@
       "fly",
       "trade"
     ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "letters and words",
+      "containers",
+      "watching stuff",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "hoothoot",

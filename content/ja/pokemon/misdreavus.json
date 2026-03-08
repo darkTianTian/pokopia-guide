@@ -10,14 +10,21 @@
     "specialties": [
       "trade"
     ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "shiny stuff",
+      "colorful stuff",
+      "watching stuff",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

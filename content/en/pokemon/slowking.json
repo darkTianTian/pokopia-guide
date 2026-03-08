@@ -12,6 +12,14 @@
       "water",
       "teleport"
     ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "strange stuff",
+      "group activities",
+      "healing",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "slowpoke",

@@ -11,6 +11,14 @@
     "specialties": [
       "search"
     ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "watching stuff",
+      "lots of dirt",
+      "looks like food",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -20,8 +28,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

@@ -10,6 +10,14 @@
     "specialties": [
       "burn"
     ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "play spaces",
+      "group activities",
+      "containers",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "scorbunny",

@@ -11,6 +11,14 @@
       "burn",
       "hype"
     ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "play spaces",
+      "group activities",
+      "round stuff",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -20,7 +28,6 @@
     "weather": [
       "sunny",
       "cloudy",
-      "snowy",
       "rainy"
     ],
     "obtainMethod": "habitat",

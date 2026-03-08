@@ -12,6 +12,14 @@
       "teleport",
       "trade"
     ],
+    "favorites": [
+      "strange stuff",
+      "luxury",
+      "healing",
+      "watching stuff",
+      "symbols",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "kirlia",

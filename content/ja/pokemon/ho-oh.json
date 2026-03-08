@@ -9,6 +9,7 @@
   "image": "https://assets.pokopiaguide.com/pokemon/ho-oh.png",
   "pokopia": {
     "specialties": [],
+    "favorites": [],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

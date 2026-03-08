@@ -10,6 +10,14 @@
     "specialties": [
       "teleport"
     ],
+    "favorites": [
+      "strange stuff",
+      "watching stuff",
+      "letters and words",
+      "complicated stuff",
+      "stone stuff",
+      "dry flavors"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

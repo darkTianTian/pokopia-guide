@@ -11,6 +11,14 @@
     "specialties": [
       "water"
     ],
+    "favorites": [
+      "lots of water",
+      "lots of nature",
+      "cleanliness",
+      "containers",
+      "noisy stuff",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -20,8 +28,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "lotad",

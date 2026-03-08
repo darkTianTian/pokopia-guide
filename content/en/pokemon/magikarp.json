@@ -8,6 +8,14 @@
   "image": "https://assets.pokopiaguide.com/pokemon/magikarp.png",
   "pokopia": {
     "specialties": [],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "group activities",
+      "rides",
+      "wobbly stuff",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -17,8 +25,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

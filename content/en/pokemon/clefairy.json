@@ -10,14 +10,14 @@
     "specialties": [
       "hype"
     ],
+    "favorites": [],
     "timeOfDay": [
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "cleffa",

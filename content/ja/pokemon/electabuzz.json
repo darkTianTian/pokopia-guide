@@ -10,6 +10,14 @@
     "specialties": [
       "generate"
     ],
+    "favorites": [
+      "electronics",
+      "glass stuff",
+      "lots of fire",
+      "sharp stuff",
+      "exercise",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "elekid",

@@ -12,6 +12,14 @@
       "crush",
       "litter"
     ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "shiny stuff",
+      "noisy stuff",
+      "symbols",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "amaura",

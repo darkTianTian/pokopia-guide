@@ -10,6 +10,7 @@
     "specialties": [
       "teleport"
     ],
+    "favorites": [],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

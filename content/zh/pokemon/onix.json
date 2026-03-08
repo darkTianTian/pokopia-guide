@@ -12,6 +12,14 @@
       "crush",
       "bulldoze"
     ],
+    "favorites": [
+      "stone stuff",
+      "lots of dirt",
+      "blocky stuff",
+      "slender objects",
+      "exercise",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

@@ -10,6 +10,14 @@
     "specialties": [
       "illuminate"
     ],
+    "favorites": [
+      "electronics",
+      "glass stuff",
+      "group activities",
+      "round stuff",
+      "rides",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "pichu",

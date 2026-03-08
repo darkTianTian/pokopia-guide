@@ -10,6 +10,14 @@
     "specialties": [
       "bulldoze"
     ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "lots of nature",
+      "wooden stuff",
+      "round stuff",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

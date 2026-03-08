@@ -8,6 +8,14 @@
   "image": "https://assets.pokopiaguide.com/pokemon/kyogre.png",
   "pokopia": {
     "specialties": [],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "luxury",
+      "shiny stuff",
+      "glass stuff",
+      "dry flavors"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "habitat",

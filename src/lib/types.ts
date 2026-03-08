@@ -31,6 +31,7 @@ export interface HabitatEntry {
 
 export interface PokopiaData {
   specialties: string[]
+  favorites: string[]
   habitats: HabitatEntry[]
   timeOfDay: string[] | null
   weather: string[] | null

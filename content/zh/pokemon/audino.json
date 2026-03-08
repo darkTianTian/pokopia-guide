@@ -10,6 +10,14 @@
     "specialties": [
       "trade"
     ],
+    "favorites": [
+      "soft stuff",
+      "fabric",
+      "healing",
+      "cute stuff",
+      "round stuff",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

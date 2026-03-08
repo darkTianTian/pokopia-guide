@@ -11,14 +11,14 @@
     "specialties": [
       "search"
     ],
+    "favorites": [],
     "timeOfDay": [
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

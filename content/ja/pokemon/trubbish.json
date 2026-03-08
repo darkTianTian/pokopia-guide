@@ -10,6 +10,14 @@
     "specialties": [
       "recycle"
     ],
+    "favorites": [
+      "garbage",
+      "containers",
+      "complicated stuff",
+      "shiny stuff",
+      "gatherings",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

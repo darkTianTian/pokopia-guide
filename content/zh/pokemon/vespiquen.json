@@ -12,6 +12,14 @@
       "gather",
       "search"
     ],
+    "favorites": [
+      "lots of nature",
+      "nice breezes",
+      "wooden stuff",
+      "gatherings",
+      "complicated stuff",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -21,8 +29,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "combee",

@@ -10,6 +10,14 @@
     "specialties": [
       "hype"
     ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "shiny stuff",
+      "cute stuff",
+      "group activities",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -19,8 +27,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

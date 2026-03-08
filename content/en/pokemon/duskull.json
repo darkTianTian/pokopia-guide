@@ -10,14 +10,21 @@
     "specialties": [
       "gather"
     ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "rides",
+      "glass stuff",
+      "fabric",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "night"
     ],
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

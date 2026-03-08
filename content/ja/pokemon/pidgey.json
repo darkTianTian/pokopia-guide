@@ -12,6 +12,14 @@
       "search",
       "fly"
     ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "watching stuff",
+      "lots of nature",
+      "play spaces",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -20,8 +28,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,

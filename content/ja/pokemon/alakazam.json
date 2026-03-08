@@ -11,6 +11,14 @@
       "teleport",
       "trade"
     ],
+    "favorites": [
+      "strange stuff",
+      "wobbly stuff",
+      "metal stuff",
+      "letters and words",
+      "watching stuff",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
@@ -20,8 +28,7 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy",
-      "snowy"
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "kadabra",

@@ -44,7 +44,6 @@ const WEATHER_MAP = {
   sun: "sunny",
   cloud: "cloudy",
   rain: "rainy",
-  snow: "snowy",
 }
 
 // Map Serebii rarity to our internal values
@@ -93,10 +92,10 @@ const GAMEWITH_TYPE_MAP = {
 
 const GAMEWITH_TIME_MAP = { "朝": "dawn", "昼": "day", "夕": "dusk", "夜": "night" }
 
-const GAMEWITH_WEATHER_MAP = { "晴": "sunny", "曇": "cloudy", "雨": "rainy", "雪": "snowy" }
+const GAMEWITH_WEATHER_MAP = { "晴": "sunny", "曇": "cloudy", "雨": "rainy" }
 
 const ALL_TIMES = ["dawn", "day", "dusk", "night"]
-const ALL_WEATHERS = ["sunny", "cloudy", "rainy", "snowy"]
+const ALL_WEATHERS = ["sunny", "cloudy", "rainy"]
 
 const GAMEWITH_RARITY_MAP = { 0: "common", 1: "common", 2: "rare", 3: "very-rare" }
 
@@ -118,6 +117,29 @@ const SPECIALTY_NORMALIZE_MAP = {
   "dj": "hype",
   "engineer": "build",
   "buil": "build",
+}
+
+// Normalize Game8 favorites typos/variations to canonical keys
+const FAVORITES_NORMALIZE_MAP = {
+  "cleanlines": "cleanliness",
+  "dry  flavors": "dry flavors",
+  "dryflavors": "dry flavors",
+  "group activiies": "group activities",
+  "group activites": "group activities",
+  "group activities: sweet flavors": "group activities",
+  "looks like good": "looks like food",
+  "prety flowers": "pretty flowers",
+  "soft stuff": "soft stuff",
+  "stone stuff": "stone stuff",
+  "strange sutff": "strange stuff",
+  "sweeet flavors": "sweet flavors",
+  "sweet falvors": "sweet flavors",
+}
+
+function normalizeFavorite(raw) {
+  const lower = raw.trim().toLowerCase()
+  if (lower === "none" || lower === "tbd" || !lower) return null
+  return FAVORITES_NORMALIZE_MAP[lower] || lower
 }
 
 // --- CLI args ---
@@ -492,7 +514,6 @@ const GAME8_WEATHER_MAP = {
   sunny: "sunny",
   cloudy: "cloudy",
   rainy: "rainy",
-  snowy: "snowy",
 }
 
 // Known Pokemon types to filter out from text parsing
@@ -592,6 +613,15 @@ async function scrapeGame8() {
       }
     }
 
+    // Parse favorites (comma-separated, with typo normalization)
+    const favorites = []
+    if (item.favorites) {
+      for (const f of item.favorites.split(",")) {
+        const normalized = normalizeFavorite(f)
+        if (normalized) favorites.push(normalized)
+      }
+    }
+
     results.set(slug, {
       name: pokemonName,
       slug,
@@ -599,6 +629,7 @@ async function scrapeGame8() {
       timeOfDay: times && times.length > 0 ? times : null,
       weather: weathers && weathers.length > 0 ? weathers : null,
       specialties,
+      favorites,
     })
   }
 
@@ -1074,6 +1105,12 @@ function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiList
     weather = existing.weather
   }
 
+  // Favorites: Game8 is the only source
+  let favorites = existing.favorites || []
+  if (game8Data?.favorites?.length > 0) {
+    favorites = game8Data.favorites
+  }
+
   // obtainMethod and evolution: keep existing if present
   const obtainMethod = existing.obtainMethod || "habitat"
   const evolvesFrom = existing.evolvesFrom !== undefined ? existing.evolvesFrom : null
@@ -1081,6 +1118,7 @@ function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiList
 
   return {
     specialties,
+    favorites,
     timeOfDay: timeOfDay || null,
     weather: weather || null,
     obtainMethod,
@@ -1645,7 +1683,8 @@ async function run() {
       `  ${name}: ${merged.specialties.join(", ") || "no specialty"} | ` +
         `${merged.habitats.length} habitat(s) | ` +
         `time: ${merged.timeOfDay?.join(", ") || "null"} | ` +
-        `weather: ${merged.weather?.join(", ") || "null"}`
+        `weather: ${merged.weather?.join(", ") || "null"} | ` +
+        `favs: ${merged.favorites?.length || 0}`
     )
   }
 
@@ -1696,6 +1735,10 @@ async function run() {
       const newTimeOfDay = gw.timeOfDay || null
       const newWeather = gw.weather || null
 
+      // Compare favorites with Game8 data
+      const g8 = game8Data.get(slug)
+      const newFavorites = g8?.favorites?.length > 0 ? g8.favorites : null
+
       const habitatsChanged =
         newHabitats !== null &&
         JSON.stringify(existing.habitats?.map((h) => h.id).sort()) !==
@@ -1706,8 +1749,11 @@ async function run() {
       const weatherChanged =
         newWeather !== null &&
         JSON.stringify(existing.weather) !== JSON.stringify(newWeather)
+      const favoritesChanged =
+        newFavorites !== null &&
+        JSON.stringify(existing.favorites || []) !== JSON.stringify(newFavorites)
 
-      if (!habitatsChanged && !timeChanged && !weatherChanged) continue
+      if (!habitatsChanged && !timeChanged && !weatherChanged && !favoritesChanged) continue
 
       // Build updated pokopia data
       const updatedPokopia = {
@@ -1715,6 +1761,7 @@ async function run() {
         ...(habitatsChanged ? { habitats: newHabitats } : {}),
         ...(timeChanged ? { timeOfDay: newTimeOfDay } : {}),
         ...(weatherChanged ? { weather: newWeather } : {}),
+        ...(favoritesChanged ? { favorites: newFavorites } : {}),
       }
 
       // Write to all locale files
@@ -1744,6 +1791,7 @@ async function run() {
         habitatsChanged ? "habitats" : "",
         timeChanged ? "timeOfDay" : "",
         weatherChanged ? "weather" : "",
+        favoritesChanged ? "favorites" : "",
       ]
         .filter(Boolean)
         .join(", ")
