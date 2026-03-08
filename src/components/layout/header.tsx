@@ -9,6 +9,7 @@ import {
 import { LanguageSwitcher } from "./language-switcher"
 import { MobileNav } from "./mobile-nav"
 import { ThemeToggle } from "./theme-toggle"
+import { SiteLogo } from "./logo"
 
 interface HeaderProps {
   locale: Locale
@@ -45,12 +46,9 @@ export async function Header({ locale }: HeaderProps) {
       <div className="flex h-16 items-center justify-between rounded-full border border-border/40 bg-background/40 px-6 shadow-md ring-1 ring-border/50 backdrop-blur-xl">
         <Link
           href={getLocalePath(locale, "/")}
-          className="mr-8 flex items-center gap-2 font-extrabold tracking-tight transition-transform hover:scale-105"
+          className="mr-8 flex items-center outline-none"
         >
-          <span className="text-2xl drop-shadow-sm">🎮</span>
-          <span className="hidden sm:inline bg-gradient-to-br from-foreground to-muted-foreground bg-clip-text text-transparent">
-            {t(translations, "site.name")}
-          </span>
+          <SiteLogo text={t(translations, "site.name")} />
         </Link>
 
         {/* Desktop nav */}
@@ -72,13 +70,13 @@ export async function Header({ locale }: HeaderProps) {
             <div className="invisible absolute left-0 top-full pt-4 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
               <div className="min-w-[220px] overflow-hidden rounded-3xl border border-border/40 bg-background/95 p-2 shadow-xl backdrop-blur-3xl">
                 {habitatSubItems.map((item) => (
-                    <Link
-                      key={item.path}
-                      href={getLocalePath(locale, item.path)}
-                      className="block rounded-2xl px-4 py-3 text-sm font-semibold text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary"
-                    >
-                      {item.label}
-                    </Link>
+                  <Link
+                    key={item.path}
+                    href={getLocalePath(locale, item.path)}
+                    className="block rounded-2xl px-4 py-3 text-sm font-semibold text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary"
+                  >
+                    {item.label}
+                  </Link>
                 ))}
               </div>
             </div>
