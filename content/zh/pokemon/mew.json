@@ -10,7 +10,14 @@
     "specialties": [
       "teleport"
     ],
-    "favorites": [],
+    "favorites": [
+      "strange stuff",
+      "watching stuff",
+      "luxury",
+      "complicated stuff",
+      "play spaces",
+      "sweet flavors"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "quest",
