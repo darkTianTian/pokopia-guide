@@ -1,0 +1,40 @@
+# Pokopia Guide
+
+> Pokopia Guide is an unofficial community-driven guide site for Pokémon Pokopia (releasing March 5, 2026). It provides a complete Pokédex, habitat building guides, crafting material lists, and event tracking for new and experienced trainers.
+
+The site is available in English, Traditional Chinese (zh-TW), and Japanese. All Pokémon data is sourced from Serebii, Game8, and GameWith, and updated automatically.
+
+## Core Pages
+
+- [Pokédex](https://pokopiaguide.com/pokedex): Complete list of 300+ Pokémon with types, specialties, habitats, spawn times, weather conditions, and favorites
+- [Habitat List](https://pokopiaguide.com/habitat): All Pokopia habitats with Pokémon spawn lists, rarity tiers, and building material requirements
+- [Habitat Materials](https://pokopiaguide.com/habitat/materials): Complete list of crafting materials and which habitats need them
+- [Events](https://pokopiaguide.com/events): Limited-time events, exclusive Pokémon, and special rewards
+- [Guides](https://pokopiaguide.com/guides): Beginner tips, quest walkthroughs, and advanced techniques
+
+## Pokédex Features
+
+Each Pokémon entry includes:
+- Types, specialties (skills like Grow, Burn, Water, Build, Chop, etc.)
+- Habitat locations where the Pokémon can be found
+- Spawn conditions: time of day (dawn, day, dusk, night) and weather (sunny, cloudy, rainy)
+- Favorites: decoration preferences that affect comfort level (48 categories)
+- Obtain method: habitat discovery, story progression, dream island, craft structure, or special quest
+- Evolution connections (note: Pokopia has no evolution mechanic — evolved forms are found directly)
+
+## Habitat System
+
+- Pokémon are obtained by building habitats using gathered materials
+- Each habitat has common and rare Pokémon
+- 190+ habitats with specific material requirements
+- Materials include wood, stone, glass, metal, fabric, and specialty items
+
+## Browse by Type
+
+- [Normal](https://pokopiaguide.com/pokedex/type/normal), [Fire](https://pokopiaguide.com/pokedex/type/fire), [Water](https://pokopiaguide.com/pokedex/type/water), [Electric](https://pokopiaguide.com/pokedex/type/electric), [Grass](https://pokopiaguide.com/pokedex/type/grass), [Ice](https://pokopiaguide.com/pokedex/type/ice), [Fighting](https://pokopiaguide.com/pokedex/type/fighting), [Poison](https://pokopiaguide.com/pokedex/type/poison), [Ground](https://pokopiaguide.com/pokedex/type/ground), [Flying](https://pokopiaguide.com/pokedex/type/flying), [Psychic](https://pokopiaguide.com/pokedex/type/psychic), [Bug](https://pokopiaguide.com/pokedex/type/bug), [Rock](https://pokopiaguide.com/pokedex/type/rock), [Ghost](https://pokopiaguide.com/pokedex/type/ghost), [Dragon](https://pokopiaguide.com/pokedex/type/dragon), [Dark](https://pokopiaguide.com/pokedex/type/dark), [Steel](https://pokopiaguide.com/pokedex/type/steel), [Fairy](https://pokopiaguide.com/pokedex/type/fairy)
+
+## Optional
+
+- [Sitemap](https://pokopiaguide.com/sitemap.xml): Full XML sitemap with all pages
+- [Chinese Version](https://pokopiaguide.com/zh): Traditional Chinese interface
+- [Japanese Version](https://pokopiaguide.com/ja): Japanese interface
