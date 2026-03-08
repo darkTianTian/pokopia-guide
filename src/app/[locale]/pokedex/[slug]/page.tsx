@@ -40,6 +40,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${pokemon.name} — ${t(translations, "pokedex.title")}`,
     description,
     alternates: getPageAlternates(locale, `/pokedex/${slug}`),
+    robots: { index: false, follow: true },
   }
 }
 

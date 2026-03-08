@@ -34,11 +34,9 @@ async function main() {
 
   // Collect all habitat IDs and generate slugs
   for (const locale of LOCALES) {
-    const pokemonDir = path.join(process.cwd(), `content/${locale.code}/pokemon`)
     const guidesDir = path.join(process.cwd(), `content/${locale.code}/guides`)
     const eventsDir = path.join(process.cwd(), `content/${locale.code}/events`)
 
-    const pokemonFiles = (await fs.readdir(pokemonDir)).filter((f) => f.endsWith(".json"))
     const guideFiles = (await fs.readdir(guidesDir)).filter((f) => f.endsWith(".mdx"))
 
     let eventFiles = []
@@ -62,12 +60,7 @@ async function main() {
       { url: `${locale.prefix}/quests`, priority: "0.5", changefreq: "monthly" },
     ]
 
-    // Pokemon detail pages
-    const pokemonPages = pokemonFiles.map((f) => ({
-      url: `${locale.prefix}/pokedex/${f.replace(".json", "")}`,
-      priority: "0.7",
-      changefreq: "weekly",
-    }))
+    // Pokemon detail pages are noindex, excluded from sitemap
 
     // Guide pages
     const guidePages = guideFiles.map((f) => ({
@@ -99,7 +92,6 @@ async function main() {
 
     allPages.push(
       ...staticPages,
-      ...pokemonPages,
       ...guidePages,
       ...eventPages,
       ...typePages,
