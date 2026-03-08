@@ -29,6 +29,11 @@
     ],
     "habitats": [
       {
+        "id": 29,
+        "name": "木こりの作業場",
+        "rarity": "common"
+      },
+      {
         "id": 44,
         "name": "丸太の温もり",
         "rarity": "common"

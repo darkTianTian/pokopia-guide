@@ -20,7 +20,8 @@
     "weather": [
       "sunny",
       "cloudy",
-      "rainy"
+      "rainy",
+      "snowy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "fraxure",
@@ -30,11 +31,6 @@
         "id": 29,
         "name": "Lumberjack's workplace",
         "rarity": "rare"
-      },
-      {
-        "id": 44,
-        "name": "Crazy log handicrafts",
-        "rarity": "very-rare"
       }
     ]
   }

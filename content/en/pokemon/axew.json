@@ -29,6 +29,11 @@
     ],
     "habitats": [
       {
+        "id": 29,
+        "name": "Lumberjack's workplace",
+        "rarity": "common"
+      },
+      {
         "id": 44,
         "name": "Crazy log handicrafts",
         "rarity": "common"

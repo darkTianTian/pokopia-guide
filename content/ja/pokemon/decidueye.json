@@ -32,6 +32,11 @@
         "id": 100,
         "name": "三角木かげに岩と草むら",
         "rarity": "very-rare"
+      },
+      {
+        "id": 136,
+        "name": "モダンライフ",
+        "rarity": "rare"
       }
     ]
   }
