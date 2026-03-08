@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-08T13:07:08.126Z",
+  "lastSync": "2026-03-08T14:33:45.515Z",
   "newHabitats": [
     {
       "id": 28,
@@ -669,7 +669,7 @@
     },
     {
       "id": 153,
-      "name": "Trash site TV",
+      "name": "Habitat 153",
       "missingIn": [
         "ja",
         "zh"
@@ -863,13 +863,20 @@
         "ja",
         "zh"
       ]
+    },
+    {
+      "id": 95,
+      "name": "ベリーキュートな空間",
+      "missingIn": [
+        "zh"
+      ]
     }
   ],
   "errors": [],
   "stats": {
     "total": 324,
     "serebiiCount": 305,
-    "gameWithCount": 280,
+    "gameWithCount": 287,
     "game8Count": 293,
     "updated": 299,
     "skipped": 0,

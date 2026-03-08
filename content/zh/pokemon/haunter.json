@@ -28,6 +28,11 @@
     ],
     "habitats": [
       {
+        "id": 73,
+        "name": "Surprise in store",
+        "rarity": "common"
+      },
+      {
         "id": 89,
         "name": "Spooky study",
         "rarity": "rare"
