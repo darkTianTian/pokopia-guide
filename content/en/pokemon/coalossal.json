@@ -32,6 +32,11 @@
         "id": 132,
         "name": "Railroad crossing",
         "rarity": "very-rare"
+      },
+      {
+        "id": 135,
+        "name": "ずっしりアイアン",
+        "rarity": "rare"
       }
     ]
   }

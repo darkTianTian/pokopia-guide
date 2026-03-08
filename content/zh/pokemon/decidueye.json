@@ -32,6 +32,11 @@
         "id": 100,
         "name": "三角樹蔭與岩石草叢",
         "rarity": "very-rare"
+      },
+      {
+        "id": 136,
+        "name": "Modern living",
+        "rarity": "rare"
       }
     ]
   }
