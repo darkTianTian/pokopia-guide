@@ -1,9 +1,11 @@
 "use client"
 
 import { useMemo, useState } from "react"
+import Link from "next/link"
 import { Search, X } from "lucide-react"
 import { SafeImage } from "@/components/ui/safe-image"
 import { QuantityDots } from "@/components/ui/quantity-dots"
+import { getLocalePath } from "@/i18n/config"
 import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
@@ -23,7 +25,7 @@ interface HabitatItem {
   materials: string | null
   pokemon: {
     rarity: string
-    pokemon: { id: number; name: string; image: string }
+    pokemon: { id: number; slug: string; name: string; image: string }
   }[]
 }
 
@@ -120,9 +122,9 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                     </div>
 
                     <div className="mb-4 text-center z-10">
-                      <h2 className="text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+                      <h3 className="text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
                         {habitat.name}
-                      </h2>
+                      </h3>
                       {habitat.materials && (
                         <div className="mt-2 flex flex-wrap items-center justify-center gap-1.5">
                           {parseMaterials(habitat.materials).map((mat, i) => (
@@ -139,28 +141,23 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                     </div>
 
                     <div className="mt-auto flex flex-col items-center gap-3 rounded-2xl bg-muted/30 p-4 ring-1 ring-inset ring-border/50 transition-colors group-hover:bg-muted/50 z-10">
-                      <div className="flex items-center justify-center gap-3">
-                        <div className="flex -space-x-3">
-                          {habitat.pokemon.slice(0, 5).map(({ pokemon }) => (
-                            <div key={pokemon.id} className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-background drop-shadow-sm transition-transform hover:scale-110 hover:z-20 border border-border/20">
-                              <SafeImage
-                                src={pokemon.image}
-                                alt={pokemon.name}
-                                fill
-                                className="bg-background object-contain p-1"
-                              />
-                            </div>
-                          ))}
-                        </div>
-                        {habitat.pokemon.length > 5 && (
-                          <span className="flex h-10 items-center justify-center rounded-full bg-background px-3 text-xs font-semibold text-muted-foreground ring-2 ring-border/50">
-                            +{habitat.pokemon.length - 5}
-                          </span>
-                        )}
+                      <div className="flex flex-wrap items-center justify-center gap-1.5">
+                        {habitat.pokemon.map(({ pokemon }) => (
+                          <Link
+                            key={pokemon.id}
+                            href={getLocalePath(locale, `/pokedex/${pokemon.slug}`)}
+                            className="relative h-10 w-10 overflow-hidden rounded-full ring-2 ring-background drop-shadow-sm transition-transform hover:scale-125 hover:z-20 border border-border/20"
+                            title={pokemon.name}
+                          >
+                            <SafeImage
+                              src={pokemon.image}
+                              alt={pokemon.name}
+                              fill
+                              className="bg-background object-contain p-1"
+                            />
+                          </Link>
+                        ))}
                       </div>
-                      <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                        {habitat.pokemon.length}
-                      </p>
                     </div>
                   </div>
               </article>

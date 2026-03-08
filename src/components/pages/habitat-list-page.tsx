@@ -21,7 +21,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
     materials: habitat.materials,
     pokemon: habitat.pokemon.map((p) => ({
       rarity: p.rarity,
-      pokemon: { id: p.pokemon.id, name: p.pokemon.name, image: p.pokemon.image },
+      pokemon: { id: p.pokemon.id, slug: p.pokemon.slug, name: p.pokemon.name, image: p.pokemon.image },
     })),
   }))
 
@@ -40,9 +40,9 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
           {t(translations, "habitat.listTitle")}
         </h1>
-        <p className="mt-4 text-lg text-muted-foreground">
+        <h2 className="mt-4 text-lg font-normal text-muted-foreground">
           {t(translations, "habitat.listDescription")}
-        </p>
+        </h2>
         <p className="mt-2 text-sm font-medium uppercase tracking-wider text-muted-foreground/60">
           {t(translations, "habitat.totalCount").replace("{{count}}", String(habitats.length))}
         </p>

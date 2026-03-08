@@ -44,9 +44,9 @@ export async function MaterialsListPage({ locale }: MaterialsListPageProps) {
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
           {t(translations, "habitat.materialsTitle")}
         </h1>
-        <p className="mt-4 text-lg text-muted-foreground">
+        <h2 className="mt-4 text-lg font-normal text-muted-foreground">
           {t(translations, "habitat.materialsDescription")}
-        </p>
+        </h2>
         <p className="mt-2 text-sm font-medium uppercase tracking-wider text-muted-foreground/60">
           {t(translations, "habitat.materialsTotalCount").replace(
             "{{count}}",
