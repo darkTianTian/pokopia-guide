@@ -9,30 +9,10 @@ const LOCALES = [
   { code: "ja", prefix: "/ja" },
 ]
 
-const POKEMON_TYPES = [
-  "normal", "fire", "water", "electric", "grass", "ice",
-  "fighting", "poison", "ground", "flying", "psychic", "bug",
-  "rock", "ghost", "dragon", "dark", "steel", "fairy",
-]
-
 async function main() {
   const today = new Date().toISOString().split("T")[0]
   const allPages = []
 
-  // Collect all specialties from pokemon data
-  const allSpecialties = new Set()
-  const enPokemonDir = path.join(process.cwd(), "content/en/pokemon")
-  const enPokemonFiles = (await fs.readdir(enPokemonDir)).filter((f) => f.endsWith(".json"))
-  for (const f of enPokemonFiles) {
-    const data = JSON.parse(await fs.readFile(path.join(enPokemonDir, f), "utf-8"))
-    if (data.pokopia?.specialties) {
-      for (const s of data.pokopia.specialties) {
-        allSpecialties.add(s)
-      }
-    }
-  }
-
-  // Collect all habitat IDs and generate slugs
   for (const locale of LOCALES) {
     const guidesDir = path.join(process.cwd(), `content/${locale.code}/guides`)
     const eventsDir = path.join(process.cwd(), `content/${locale.code}/events`)
@@ -76,26 +56,10 @@ async function main() {
       changefreq: "weekly",
     }))
 
-    // Type browse pages
-    const typePages = POKEMON_TYPES.map((type) => ({
-      url: `${locale.prefix}/pokedex/type/${type}`,
-      priority: "0.6",
-      changefreq: "weekly",
-    }))
-
-    // Specialty browse pages
-    const specialtyPages = [...allSpecialties].map((spec) => ({
-      url: `${locale.prefix}/pokedex/specialty/${spec}`,
-      priority: "0.6",
-      changefreq: "weekly",
-    }))
-
     allPages.push(
       ...staticPages,
       ...guidePages,
-      ...eventPages,
-      ...typePages,
-      ...specialtyPages
+      ...eventPages
     )
   }
 
