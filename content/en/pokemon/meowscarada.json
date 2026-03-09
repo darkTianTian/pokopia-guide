@@ -8,13 +8,31 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/meowscarada.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "grow",
+      "hype"
+    ],
     "favorites": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "floragato",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 172,
+        "name": "ドコドコびっくり箱",
+        "rarity": "rare"
+      }
+    ]
   }
 }

@@ -28,11 +28,6 @@
     "evolvesTo": null,
     "habitats": [
       {
-        "id": 129,
-        "name": "Mini museum",
-        "rarity": "rare"
-      },
-      {
         "id": 134,
         "name": "Absolute luxury",
         "rarity": "rare"
