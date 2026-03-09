@@ -81,7 +81,7 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
 
         <div className="flex flex-1 flex-col p-5 pt-12">
           {/* Header: Name */}
-          <div className="mb-4">
+          <div className="mb-4 text-center">
             {headingLevel === "h3" ? (
               <h3 className="truncate text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
                 {pokemon.name}
