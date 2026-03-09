@@ -2,6 +2,7 @@ import { drawSwitchIcon, drawColoredLogo } from "./share-card-logo"
 
 export interface ShareCardConfig {
   orientation: "portrait" | "landscape"
+  layoutStyle: "grid" | "class-photo"
   nickname: string
   slogan: string
   caughtSlugs: string[]
@@ -254,6 +255,44 @@ function drawPokemonClassPhoto(
   }
 }
 
+function drawPokemonGrid(
+  ctx: CanvasRenderingContext2D,
+  config: ShareCardConfig,
+  startX: number,
+  startY: number,
+  gridWidth: number,
+  gridHeight: number
+) {
+  const { caughtSlugs, spriteSheet, spriteMap } = config
+  const cellSize = 72
+  const cols = Math.floor(gridWidth / cellSize)
+  const maxRows = Math.floor(gridHeight / cellSize)
+  const maxVisible = cols * maxRows
+
+  const slugsToShow = caughtSlugs.slice(0, maxVisible)
+  const totalPadX = (gridWidth - cols * cellSize) / 2
+  const totalPadY = (gridHeight - Math.min(Math.ceil(slugsToShow.length / cols), maxRows) * cellSize) / 2
+
+  for (let i = 0; i < slugsToShow.length; i++) {
+    const slug = slugsToShow[i]
+    const pos = spriteMap[slug]
+    if (!pos) continue
+
+    const col = i % cols
+    const row = Math.floor(i / cols)
+    if (row >= maxRows) break
+
+    const dx = startX + totalPadX + col * cellSize + (cellSize - 64) / 2
+    const dy = startY + totalPadY + row * cellSize + (cellSize - 64) / 2
+
+    ctx.drawImage(
+      spriteSheet,
+      pos.x, pos.y, SPRITE_SIZE, SPRITE_SIZE,
+      dx, dy, 64, 64
+    )
+  }
+}
+
 export async function renderShareCard(config: ShareCardConfig): Promise<Blob> {
   const isPortrait = config.orientation === "portrait"
   const W = isPortrait ? 1080 : 2400
@@ -347,7 +386,11 @@ function drawPortrait(
   const gridBoxH = H - gridBoxY - margin - 80 // Leave space for footer
   drawRoundedRect(ctx, margin, gridBoxY, W - margin * 2, gridBoxH, boxRadius, boxFill, boxStroke)
 
-  drawPokemonClassPhoto(ctx, config, margin + 20, gridBoxY + 20, W - margin * 2 - 40, gridBoxH - 40)
+  if (config.layoutStyle === "grid") {
+    drawPokemonGrid(ctx, config, margin + 20, gridBoxY + 20, W - margin * 2 - 40, gridBoxH - 40)
+  } else {
+    drawPokemonClassPhoto(ctx, config, margin + 20, gridBoxY + 20, W - margin * 2 - 40, gridBoxH - 40)
+  }
 
   // ── 4. Footer: Date + URL ──
   const footerY = H - margin - 15
@@ -428,7 +471,11 @@ function drawLandscape(
   const gridBoxH = H - margin * 2 - 80
   drawRoundedRect(ctx, rightX, margin, rightW, gridBoxH, boxRadius, boxFill, boxStroke)
 
-  drawPokemonClassPhoto(ctx, config, rightX + 20, margin + 20, rightW - 40, gridBoxH - 40)
+  if (config.layoutStyle === "grid") {
+    drawPokemonGrid(ctx, config, rightX + 20, margin + 20, rightW - 40, gridBoxH - 40)
+  } else {
+    drawPokemonClassPhoto(ctx, config, rightX + 20, margin + 20, rightW - 40, gridBoxH - 40)
+  }
 
   // ── 4. Footer: Date + URL ──
   const footerY = H - margin - 15

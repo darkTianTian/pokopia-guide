@@ -5,6 +5,7 @@ import { renderShareCard, renderShareCardToPreview, type ShareCardConfig } from 
 
 interface ShareCardCanvasProps {
   orientation: "portrait" | "landscape"
+  layoutStyle: "grid" | "class-photo"
   nickname: string
   slogan: string
   caughtSlugs: string[]
@@ -14,6 +15,7 @@ interface ShareCardCanvasProps {
 
 export function ShareCardCanvas({
   orientation,
+  layoutStyle,
   nickname,
   slogan,
   caughtSlugs,
@@ -38,6 +40,7 @@ export function ShareCardCanvas({
 
       const config: ShareCardConfig = {
         orientation,
+        layoutStyle,
         nickname,
         slogan,
         caughtSlugs,
@@ -62,7 +65,7 @@ export function ShareCardCanvas({
     } finally {
       setLoading(false)
     }
-  }, [orientation, nickname, slogan, caughtSlugs, totalCount, onReady])
+  }, [orientation, layoutStyle, nickname, slogan, caughtSlugs, totalCount, onReady])
 
   useEffect(() => {
     // Load Fredoka font before drawing

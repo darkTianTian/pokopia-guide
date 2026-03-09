@@ -1,7 +1,7 @@
 "use client"
 
 import { useCallback, useRef, useState } from "react"
-import { Download, Smartphone, Monitor, Share2 } from "lucide-react"
+import { Download, Smartphone, Monitor, Share2, Grid, Users } from "lucide-react"
 import {
   Dialog,
   DialogContent,
@@ -31,6 +31,7 @@ export function ShareCardModal({
 }: ShareCardModalProps) {
   const [nickname, setNickname] = useState("")
   const [orientation, setOrientation] = useState<"portrait" | "landscape">("portrait")
+  const [layoutStyle, setLayoutStyle] = useState<"grid" | "class-photo">("class-photo")
   const [generating, setGenerating] = useState(false)
   const getBlobRef = useRef<(() => Promise<Blob>) | null>(null)
 
@@ -109,31 +110,55 @@ export function ShareCardModal({
             />
           </div>
 
-          {/* Orientation toggle */}
-          <div className="flex gap-2">
-            <Button
-              variant={orientation === "portrait" ? "default" : "outline"}
-              size="sm"
-              onClick={() => setOrientation("portrait")}
-              className="flex-1 rounded-full shadow-sm transition-all"
-            >
-              <Smartphone className="h-4 w-4 mr-1.5" />
-              {t("collection.shareCard.portrait")}
-            </Button>
-            <Button
-              variant={orientation === "landscape" ? "default" : "outline"}
-              size="sm"
-              onClick={() => setOrientation("landscape")}
-              className="flex-1 rounded-full shadow-sm transition-all"
-            >
-              <Monitor className="h-4 w-4 mr-1.5" />
-              {t("collection.shareCard.landscape")}
-            </Button>
+          {/* Orientation and Layout toggles */}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="flex gap-2">
+              <Button
+                variant={orientation === "portrait" ? "default" : "outline"}
+                size="sm"
+                onClick={() => setOrientation("portrait")}
+                className="flex-1 rounded-full shadow-sm transition-all"
+              >
+                <Smartphone className="h-4 w-4 mr-1.5" />
+                {t("collection.shareCard.portrait")}
+              </Button>
+              <Button
+                variant={orientation === "landscape" ? "default" : "outline"}
+                size="sm"
+                onClick={() => setOrientation("landscape")}
+                className="flex-1 rounded-full shadow-sm transition-all"
+              >
+                <Monitor className="h-4 w-4 mr-1.5" />
+                {t("collection.shareCard.landscape")}
+              </Button>
+            </div>
+
+            <div className="flex gap-2">
+              <Button
+                variant={layoutStyle === "class-photo" ? "default" : "outline"}
+                size="sm"
+                onClick={() => setLayoutStyle("class-photo")}
+                className="flex-1 rounded-full shadow-sm transition-all"
+              >
+                <Users className="h-4 w-4 mr-1.5" />
+                Photo
+              </Button>
+              <Button
+                variant={layoutStyle === "grid" ? "default" : "outline"}
+                size="sm"
+                onClick={() => setLayoutStyle("grid")}
+                className="flex-1 rounded-full shadow-sm transition-all"
+              >
+                <Grid className="h-4 w-4 mr-1.5" />
+                Grid
+              </Button>
+            </div>
           </div>
 
           {/* Canvas preview */}
           <ShareCardCanvas
             orientation={orientation}
+            layoutStyle={layoutStyle}
             nickname={nickname}
             slogan={t(getSloganKey(totalCount > 0 ? Math.round((caughtSlugs.length / totalCount) * 100) : 0))}
             caughtSlugs={caughtSlugs}
