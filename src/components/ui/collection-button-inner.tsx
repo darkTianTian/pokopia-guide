@@ -81,7 +81,7 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
 
     // Find closest Pokemon image for Stage 1 interaction
     const container = buttonRef.current.closest('article, .rounded-\\[3rem\\]')
-    const imgEl = container?.querySelector('img') as HTMLElement | null
+    const imgEl = (container?.querySelector('img.pokemon-sprite-target') || container?.querySelector('img')) as HTMLElement | null
 
     // Force reflow
     void flyingClone.offsetWidth

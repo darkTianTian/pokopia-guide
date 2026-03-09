@@ -102,7 +102,7 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
                 alt={pokemon.name}
                 width={140}
                 height={140}
-                className="object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_10px_10px_rgba(0,0,0,0.4)]"
+                className="pokemon-sprite-target object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)] dark:drop-shadow-[0_10px_10px_rgba(0,0,0,0.4)]"
               />
             </div>
           </div>

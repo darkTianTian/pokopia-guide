@@ -101,7 +101,7 @@ export async function PokedexDetailPage({
               alt={pokemon.name}
               width={400}
               height={400}
-              className="object-contain drop-shadow-[0_20px_20px_rgba(0,0,0,0.25)] dark:drop-shadow-[0_20px_20px_rgba(0,0,0,0.5)]"
+              className="pokemon-sprite-target object-contain drop-shadow-[0_20px_20px_rgba(0,0,0,0.25)] dark:drop-shadow-[0_20px_20px_rgba(0,0,0,0.5)]"
               priority
             />
           </div>
