@@ -105,15 +105,14 @@ export function CraftingTabs({ recipes, locale }: CraftingTabsProps) {
             aria-selected={activeTab === tab.key}
             aria-controls={`${tab.key}-panel`}
             onClick={() => setActiveTab(tab.key)}
-            className={`relative rounded-full px-5 py-2 text-sm font-semibold transition-all ${
-              activeTab === tab.key
+            className={`relative rounded-full px-5 py-2 text-sm font-semibold transition-all ${activeTab === tab.key
                 ? "bg-primary text-primary-foreground shadow-sm"
                 : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
-            }`}
+              }`}
           >
             {tab.label}
             {tab.key === "calculator" && selected.size > 0 && (
-              <span className="absolute -right-1.5 -top-1.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-destructive px-1 text-[10px] font-bold text-destructive-foreground">
+              <span className="absolute -right-2 -top-2 flex h-5 min-w-[20px] items-center justify-center rounded-full bg-destructive px-1.5 text-xs font-bold text-destructive-foreground shadow-sm ring-2 ring-background">
                 {selected.size}
               </span>
             )}
