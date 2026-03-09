@@ -1,6 +1,7 @@
 import { SafeImage } from "@/components/ui/safe-image"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
+import { WishlistButton } from "@/components/ui/wishlist-button"
 import { getHabitatBySlug } from "@/lib/habitat"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 import { notFound } from "next/navigation"
@@ -40,9 +41,13 @@ export async function HabitatDetailPage({
       <div className="mb-10 mt-6 relative overflow-hidden rounded-[2.5rem] border border-border/40 bg-background/40 p-6 sm:px-10 sm:py-8 shadow-sm backdrop-blur-xl">
         <div className="absolute -right-20 -top-20 -z-10 h-64 w-64 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 blur-[60px]" />
 
-        <span className="absolute top-6 right-6 z-20 flex px-4 py-1.5 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
+        <span className="absolute top-6 left-1/2 -translate-x-1/2 z-20 flex px-4 py-1.5 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
           #{String(habitat.id).padStart(3, "0")}
         </span>
+        <WishlistButton
+          itemId={`habitat:${habitat.id}`}
+          className="absolute top-6 right-6 z-20"
+        />
 
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center">
           <div className="relative flex h-[200px] w-[200px] sm:h-[220px] sm:w-[220px] shrink-0 items-center justify-center">

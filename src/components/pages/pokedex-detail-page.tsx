@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { TypeBadge } from "@/components/pokemon/type-badge"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
+import { WishlistButton } from "@/components/ui/wishlist-button"
 import Link from "next/link"
 import { getAllPokemon, getPokemonBySlug } from "@/lib/pokemon"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
@@ -74,6 +75,11 @@ export async function PokedexDetailPage({
         <div className="absolute left-1/2 top-1/2 -z-10 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-30 blur-[80px] dark:opacity-20 animate-pulse duration-3000">
           <div className={`h-full w-full bg-gradient-to-br ${gradientClass}`} />
         </div>
+
+        <WishlistButton
+          itemId={`pokemon:${pokemon.slug}`}
+          className="absolute right-6 top-6 z-20"
+        />
 
         <div className="flex flex-col items-center gap-4 text-center">
           <span className="flex h-8 items-center justify-center rounded-full bg-muted/50 px-4 font-mono text-sm font-semibold tracking-wider text-muted-foreground shadow-sm backdrop-blur-md">
