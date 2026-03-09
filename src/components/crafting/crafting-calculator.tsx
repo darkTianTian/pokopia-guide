@@ -145,7 +145,7 @@ export function CraftingCalculator({
               >
                 <span className="text-sm font-medium text-foreground/80">{name}</span>
                 <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[13px] font-bold tabular-nums text-primary/90 ring-1 ring-inset ring-primary/20">
-                  ×{total}
+                  {tr.crafting.totalQuantity.replace("{{count}}", String(total))}
                 </span>
               </div>
             ))}
