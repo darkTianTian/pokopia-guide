@@ -67,11 +67,14 @@ export function CraftingTabs({ recipes, locale }: CraftingTabsProps) {
     }
   }, [selected, mounted])
 
-  const addRecipe = useCallback((id: string) => {
+  const toggleRecipe = useCallback((id: string) => {
     setSelected((prev) => {
-      if (prev.has(id)) return prev
       const next = new Map(prev)
-      next.set(id, 1)
+      if (next.has(id)) {
+        next.delete(id)
+      } else {
+        next.set(id, 1)
+      }
       return next
     })
   }, [])
@@ -135,7 +138,7 @@ export function CraftingTabs({ recipes, locale }: CraftingTabsProps) {
             recipes={recipes}
             locale={locale}
             selectedIds={selected}
-            onAddRecipe={addRecipe}
+            onToggleRecipe={toggleRecipe}
           />
         ) : (
           <CraftingCalculator

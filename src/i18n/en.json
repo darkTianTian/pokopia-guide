@@ -308,6 +308,7 @@
     "recipeList": "Recipe List",
     "craftingList": "Crafting List",
     "addRecipe": "Add",
+    "removeRecipe": "Remove",
     "clearAll": "Clear All",
     "materialSummary": "Materials Needed",
     "materialTypes": "{{count}} types",

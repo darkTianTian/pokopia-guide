@@ -69,7 +69,6 @@
     "pokopiaInfo": "Pokopia 資訊",
     "specialty": "特長",
     "habitatLabel": "棲息地",
-
     "timeOfDay": "出現時間",
     "weatherLabel": "天氣",
     "obtainMethod": "獲取方式",
@@ -308,7 +307,8 @@
     "calculator": "計算器",
     "recipeList": "配方列表",
     "craftingList": "製作清單",
-    "addRecipe": "加入",
+    "addRecipe": "添加",
+    "removeRecipe": "移除",
     "clearAll": "清空全部",
     "materialSummary": "所需材料",
     "materialTypes": "{{count}} 種材料",

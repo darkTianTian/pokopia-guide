@@ -308,6 +308,7 @@
     "recipeList": "レシピ一覧",
     "craftingList": "クラフトリスト",
     "addRecipe": "追加",
+    "removeRecipe": "削除",
     "clearAll": "すべてクリア",
     "materialSummary": "必要素材まとめ",
     "materialTypes": "{{count}} 種類",
