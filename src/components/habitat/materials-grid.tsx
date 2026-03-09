@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react"
 import { Search, X } from "lucide-react"
 import { SafeImage } from "@/components/ui/safe-image"
+import { WishlistButton } from "@/components/ui/wishlist-button"
 import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
@@ -88,6 +89,10 @@ export function MaterialsGrid({ materials, locale }: MaterialsGridProps) {
 
             return (
               <article key={material.slug} className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl">
+                  <WishlistButton
+                    itemId={`material:${material.slug}`}
+                    className="absolute right-4 top-4 z-20"
+                  />
                   <div className="absolute left-1/2 top-0 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-30 blur-[40px] transition-all duration-500 group-hover:scale-150 group-hover:opacity-60 dark:opacity-20 dark:group-hover:opacity-40">
                     <div className={`h-full w-full bg-gradient-to-br ${gradientClass}`} />
                   </div>

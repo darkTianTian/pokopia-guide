@@ -170,7 +170,8 @@
     "crafting": "製作配方",
     "explore": "探索地圖",
     "multiplayer": "連線指南",
-    "mysteryGift": "神秘禮物"
+    "mysteryGift": "神秘禮物",
+    "wishlist": "願望清單"
   },
   "breadcrumb": {
     "home": "首頁",
@@ -236,7 +237,8 @@
     "yawn": "哈欠",
     "eat": "進食",
     "hype": "鼓舞",
-    "transform": "變身"
+    "transform": "變身",
+    "rarify": "稀有化"
   },
   "favorites": {
     "bitter flavors": "苦味",
@@ -351,6 +353,19 @@
     "dark": "惡",
     "steel": "鋼",
     "fairy": "妖精"
+  },
+  "wishlist": {
+    "title": "願望清單",
+    "metaTitle": "願望清單",
+    "description": "你收藏的寶可夢、配方、棲息地和材料。",
+    "breadcrumb": "願望清單",
+    "empty": "願望清單是空的。瀏覽並點擊愛心圖標來收藏項目。",
+    "pokemon": "寶可夢",
+    "recipes": "配方",
+    "habitats": "棲息地",
+    "materials": "材料",
+    "itemCount": "{{count}} 個項目",
+    "clearAll": "清空全部"
   },
   "mysteryGift": {
     "title": "神秘禮物兌換碼",

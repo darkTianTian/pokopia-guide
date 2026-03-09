@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
+import { Heart, Menu, X } from "lucide-react"
 import { getLocalePath, type Locale } from "@/i18n/config"
 import { LanguageSwitcher } from "./language-switcher"
 import { ThemeToggle } from "./theme-toggle"
@@ -77,6 +77,17 @@ export function MobileNav({
                   </li>
                 ))}
               </ul>
+            </li>
+
+            <li>
+              <Link
+                href={getPath("/wishlist")}
+                onClick={() => setOpen(false)}
+                className="flex items-center gap-2 rounded-2xl px-4 py-3 text-[15px] font-semibold text-pink-500 transition-all duration-300 hover:bg-pink-50 dark:hover:bg-pink-950/30"
+              >
+                <Heart className="h-4 w-4" />
+                Wishlist
+              </Link>
             </li>
           </ul>
 

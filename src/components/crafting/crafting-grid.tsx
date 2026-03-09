@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react"
 import { Check, Plus, Search, X } from "lucide-react"
 import { QuantityDots } from "@/components/ui/quantity-dots"
+import { WishlistButton } from "@/components/ui/wishlist-button"
 import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
@@ -139,6 +140,11 @@ export function CraftingGrid({
                     >
                       {/* Decorative Background Blob */}
                       <div className="absolute -right-10 -top-10 -z-10 h-32 w-32 rounded-full bg-primary/10 blur-2xl transition-all duration-500 group-hover:bg-primary/20 dark:bg-primary/5 dark:group-hover:bg-primary/10" />
+
+                      <WishlistButton
+                        itemId={`recipe:${recipe.id}`}
+                        className={`absolute ${onToggleRecipe ? "left-4" : "right-4"} top-4 z-20`}
+                      />
 
                       {onToggleRecipe && (
                         <button

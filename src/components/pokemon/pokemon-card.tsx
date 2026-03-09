@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { SafeImage } from "@/components/ui/safe-image"
+import { WishlistButton } from "@/components/ui/wishlist-button"
 import { TypeBadge } from "./type-badge"
 import type { Pokemon } from "@/lib/types"
 import { getLocalePath, type Locale } from "@/i18n/config"
@@ -65,7 +66,6 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
     <Link href={getLocalePath(locale, `/pokedex/${pokemon.slug}`)} className="group block h-full outline-none">
       <article className={`relative flex h-full flex-col overflow-hidden rounded-[2rem] bg-background/40 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5 ${computedClassName}`}>
 
-
         {/* Glowing Background Blob */}
         <div className="absolute left-1/2 top-28 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40 blur-[50px] transition-all duration-500 group-hover:scale-125 group-hover:opacity-70 dark:opacity-30 dark:group-hover:opacity-50">
           <div className={`h-full w-full bg-gradient-to-br ${gradientClass}`} />
@@ -73,19 +73,22 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
 
         <div className="flex flex-1 flex-col p-5">
           {/* Header: Name and ID */}
-          <div className="mb-4 flex items-center justify-between">
+          <div className="mb-4 flex items-center justify-between gap-2">
             {headingLevel === "h3" ? (
-              <h3 className="text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+              <h3 className="min-w-0 flex-1 truncate text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
                 {pokemon.name}
               </h3>
             ) : (
-              <h2 className="text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+              <h2 className="min-w-0 flex-1 truncate text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
                 {pokemon.name}
               </h2>
             )}
-            <span className="flex h-7 items-center justify-center rounded-full bg-muted/50 px-3 font-mono text-xs font-semibold tracking-wider text-muted-foreground backdrop-blur-md">
-              #{String(pokemon.id).padStart(3, "0")}
-            </span>
+            <div className="flex shrink-0 items-center gap-1.5">
+              <WishlistButton itemId={`pokemon:${pokemon.slug}`} />
+              <span className="flex h-7 items-center justify-center rounded-full bg-muted/50 px-3 font-mono text-xs font-semibold tracking-wider text-muted-foreground backdrop-blur-md">
+                #{String(pokemon.id).padStart(3, "0")}
+              </span>
+            </div>
           </div>
 
           {/* Image */}

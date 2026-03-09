@@ -170,7 +170,8 @@
     "crafting": "クラフトレシピ",
     "mysteryGift": "ふしぎなおくりもの",
     "explore": "探索マップ",
-    "multiplayer": "マルチプレイガイド"
+    "multiplayer": "マルチプレイガイド",
+    "wishlist": "ウィッシュリスト"
   },
   "breadcrumb": {
     "home": "ホーム",
@@ -236,7 +237,8 @@
     "yawn": "あくび",
     "eat": "たべる",
     "hype": "もりあげ",
-    "transform": "へんしん"
+    "transform": "へんしん",
+    "rarify": "レアにする"
   },
   "favorites": {
     "bitter flavors": "にがい",
@@ -351,6 +353,19 @@
     "dark": "あく",
     "steel": "はがね",
     "fairy": "フェアリー"
+  },
+  "wishlist": {
+    "title": "ウィッシュリスト",
+    "metaTitle": "ウィッシュリスト",
+    "description": "保存したポケモン、レシピ、生息地、素材。",
+    "breadcrumb": "ウィッシュリスト",
+    "empty": "ウィッシュリストは空です。ハートアイコンをタップしてアイテムを保存しましょう。",
+    "pokemon": "ポケモン",
+    "recipes": "レシピ",
+    "habitats": "生息地",
+    "materials": "素材",
+    "itemCount": "{{count}} 件",
+    "clearAll": "すべてクリア"
   },
   "mysteryGift": {
     "title": "ふしぎなおくりもの コード",

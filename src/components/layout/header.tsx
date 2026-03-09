@@ -9,6 +9,7 @@ import {
 import { LanguageSwitcher } from "./language-switcher"
 import { MobileNav } from "./mobile-nav"
 import { ThemeToggle } from "./theme-toggle"
+import { WishlistIcon } from "@/components/ui/wishlist-icon"
 import { SiteLogo } from "./logo"
 
 interface HeaderProps {
@@ -84,8 +85,14 @@ export async function Header({ locale }: HeaderProps) {
 
         <div className="flex-1 md:hidden" />
 
+        {/* Mobile wishlist icon */}
+        <div className="md:hidden">
+          <WishlistIcon locale={locale} />
+        </div>
+
         {/* Desktop actions */}
         <div className="hidden items-center gap-2 md:ml-4 md:flex">
+          <WishlistIcon locale={locale} />
           <ThemeToggle />
           <LanguageSwitcher locale={locale} />
         </div>

@@ -18,6 +18,7 @@ export async function Footer({ locale }: FooterProps) {
     { path: "/crafting", label: t(translations, "footer.crafting") },
 { path: "/explore", label: t(translations, "footer.explore") },
     { path: "/multiplayer", label: t(translations, "footer.multiplayer") },
+    { path: "/wishlist", label: t(translations, "footer.wishlist") },
   ]
 
   return (

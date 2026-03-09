@@ -170,7 +170,8 @@
     "crafting": "Crafting Recipes",
     "explore": "Exploration Map",
     "multiplayer": "Multiplayer Guide",
-    "mysteryGift": "Mystery Gift"
+    "mysteryGift": "Mystery Gift",
+    "wishlist": "Wishlist"
   },
   "breadcrumb": {
     "home": "Home",
@@ -236,7 +237,8 @@
     "yawn": "Yawn",
     "eat": "Eat",
     "hype": "Hype",
-    "transform": "Transform"
+    "transform": "Transform",
+    "rarify": "Rarify"
   },
   "favorites": {
     "bitter flavors": "Bitter Flavors",
@@ -351,6 +353,19 @@
     "dark": "Dark",
     "steel": "Steel",
     "fairy": "Fairy"
+  },
+  "wishlist": {
+    "title": "Wishlist",
+    "metaTitle": "Wishlist",
+    "description": "Your saved Pokémon, recipes, habitats, and materials.",
+    "breadcrumb": "Wishlist",
+    "empty": "Your wishlist is empty. Browse and tap the heart icon to save items.",
+    "pokemon": "Pokémon",
+    "recipes": "Recipes",
+    "habitats": "Habitats",
+    "materials": "Materials",
+    "itemCount": "{{count}} items",
+    "clearAll": "Clear All"
   },
   "mysteryGift": {
     "title": "Mystery Gift Codes",

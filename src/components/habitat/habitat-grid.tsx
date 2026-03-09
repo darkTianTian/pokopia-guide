@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Search, X } from "lucide-react"
 import { SafeImage } from "@/components/ui/safe-image"
 import { QuantityDots } from "@/components/ui/quantity-dots"
+import { WishlistButton } from "@/components/ui/wishlist-button"
 import { getLocalePath } from "@/i18n/config"
 import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
@@ -100,6 +101,10 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
 
             return (
               <article key={habitat.id} className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl">
+                <WishlistButton
+                  itemId={`habitat:${habitat.id}`}
+                  className="absolute left-4 top-4 z-20"
+                />
                 <span className="absolute top-6 right-6 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
                   #{String(habitat.id).padStart(3, "0")}
                 </span>
