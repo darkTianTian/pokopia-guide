@@ -291,8 +291,8 @@
   "crafting": {
     "title": "クラフトレシピ",
     "metaTitle": "Pokopia 全クラフトレシピ | 家具＆アイテム",
-    "description": "Pokémon Pokopia の全クラフトレシピを一覧で確認。家具、調理器具、照明、装飾品に必要な素材を調べましょう。",
-    "metaDescription": "Pokémon Pokopia の完全クラフトレシピリスト。家具、道具、装飾品の素材、カテゴリ、解放条件を確認。",
+    "description": "Pokémon Pokopia の全クラフトレシピを一覧で確認。家具、調理器具、照明、装飾品に必要な素材を調べましょう。計算機で建設計画を立て、素材を自動合計できます。",
+    "metaDescription": "Pokémon Pokopia の完全クラフトレシピリスト。家具、道具、装飾品の素材、カテゴリ、解放条件を確認。計算機で建設計画も立てられます。",
     "totalCount": "全 {{count}} 件のレシピ",
     "searchRecipe": "レシピを検索...",
     "noResults": "レシピが見つかりません。",
@@ -303,7 +303,16 @@
     "category": "カテゴリ",
     "allCategories": "すべて",
     "detailDesc": "Pokémon Pokopia で {{name}} を作る方法。",
-    "detailMetaDesc": "Pokopia で {{name}} をクラフトする方法。必要素材：{{materials}}。"
+    "detailMetaDesc": "Pokopia で {{name}} をクラフトする方法。必要素材：{{materials}}。",
+    "calculator": "計算機",
+    "recipeList": "レシピ一覧",
+    "craftingList": "クラフトリスト",
+    "addRecipe": "追加",
+    "clearAll": "すべてクリア",
+    "materialSummary": "必要素材まとめ",
+    "materialTypes": "{{count}} 種類",
+    "emptyCalculator": "レシピを検索して追加すると、必要な素材の合計を計算します。",
+    "totalQuantity": "×{{count}}"
   },
   "craftingCategories": {
     "furniture": "家具",

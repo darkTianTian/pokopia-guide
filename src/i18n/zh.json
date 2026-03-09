@@ -292,8 +292,8 @@
   "crafting": {
     "title": "製作配方",
     "metaTitle": "Pokopia 全製作配方 | 家具與道具",
-    "description": "瀏覽 Pokémon Pokopia 所有製作配方。查詢家具、烹飪工具、照明和裝飾品所需的材料。",
-    "metaDescription": "Pokémon Pokopia 完整製作配方清單。查看所有家具、工具和裝飾品的材料、類別和解鎖方式。",
+    "description": "瀏覽 Pokémon Pokopia 所有製作配方。查詢家具、烹飪工具、照明和裝飾品所需的材料。使用計算器規劃建造，自動匯總所需材料。",
+    "metaDescription": "Pokémon Pokopia 完整製作配方清單。查看所有家具、工具和裝飾品的材料、類別和解鎖方式。支援計算器規劃建造所需材料。",
     "totalCount": "共 {{count}} 個配方",
     "searchRecipe": "搜尋配方...",
     "noResults": "沒有符合的配方。",
@@ -304,7 +304,16 @@
     "category": "類別",
     "allCategories": "全部",
     "detailDesc": "如何在 Pokémon Pokopia 中製作 {{name}}。",
-    "detailMetaDesc": "如何在 Pokopia 中製作 {{name}}。所需材料：{{materials}}。"
+    "detailMetaDesc": "如何在 Pokopia 中製作 {{name}}。所需材料：{{materials}}。",
+    "calculator": "計算器",
+    "recipeList": "配方列表",
+    "craftingList": "製作清單",
+    "addRecipe": "加入",
+    "clearAll": "清空全部",
+    "materialSummary": "所需材料",
+    "materialTypes": "{{count}} 種材料",
+    "emptyCalculator": "搜尋並加入配方，計算所需材料總量。",
+    "totalQuantity": "×{{count}}"
   },
   "craftingCategories": {
     "furniture": "家具",

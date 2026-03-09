@@ -291,8 +291,8 @@
   "crafting": {
     "title": "Crafting Recipes",
     "metaTitle": "All Pokopia Crafting Recipes | Furniture & Items",
-    "description": "Browse all crafting recipes in Pokémon Pokopia. Find materials needed for furniture, cooking tools, lighting, and decorations.",
-    "metaDescription": "Complete list of crafting recipes in Pokémon Pokopia. Materials, categories, and unlock methods for all furniture, tools, and decorations.",
+    "description": "Browse all crafting recipes in Pokémon Pokopia. Find materials needed for furniture, cooking tools, lighting, and decorations. Use the calculator to plan builds and total up materials.",
+    "metaDescription": "All crafting recipes in Pokémon Pokopia with materials and unlock methods. Use the crafting calculator to plan builds and total up materials.",
     "totalCount": "{{count}} recipes in total",
     "searchRecipe": "Search recipes...",
     "noResults": "No recipes found.",
@@ -303,7 +303,16 @@
     "category": "Category",
     "allCategories": "All",
     "detailDesc": "How to craft {{name}} in Pokémon Pokopia.",
-    "detailMetaDesc": "How to craft {{name}} in Pokopia. Materials: {{materials}}."
+    "detailMetaDesc": "How to craft {{name}} in Pokopia. Materials: {{materials}}.",
+    "calculator": "Calculator",
+    "recipeList": "Recipe List",
+    "craftingList": "Crafting List",
+    "addRecipe": "Add",
+    "clearAll": "Clear All",
+    "materialSummary": "Materials Needed",
+    "materialTypes": "{{count}} types",
+    "emptyCalculator": "Search and add recipes to calculate total materials needed.",
+    "totalQuantity": "×{{count}}"
   },
   "craftingCategories": {
     "furniture": "Furniture",

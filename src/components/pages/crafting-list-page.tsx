@@ -1,5 +1,5 @@
 import { Breadcrumb } from "@/components/layout/breadcrumb"
-import { CraftingGrid } from "@/components/crafting/crafting-grid"
+import { CraftingTabs } from "@/components/crafting/crafting-tabs"
 import { getAllRecipes } from "@/lib/crafting"
 import { getTranslations, t, type Locale } from "@/i18n/config"
 
@@ -37,7 +37,7 @@ export async function CraftingListPage({ locale }: CraftingListPageProps) {
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
           {t(translations, "crafting.title")}
         </h1>
-        <div className="mt-4 flex flex-wrap items-center gap-4">
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
           <p className="max-w-2xl text-balance text-lg font-normal text-muted-foreground">
             {t(translations, "crafting.description")}
           </p>
@@ -52,7 +52,7 @@ export async function CraftingListPage({ locale }: CraftingListPageProps) {
         </div>
       </div>
 
-      <CraftingGrid recipes={recipeItems} locale={locale} />
+      <CraftingTabs recipes={recipeItems} locale={locale} />
     </div>
   )
 }

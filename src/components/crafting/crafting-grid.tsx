@@ -1,7 +1,7 @@
 "use client"
 
 import { useMemo, useState } from "react"
-import { Search, X } from "lucide-react"
+import { Check, Plus, Search, X } from "lucide-react"
 import { QuantityDots } from "@/components/ui/quantity-dots"
 import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
@@ -26,12 +26,12 @@ const CATEGORY_ORDER = [
   "special",
 ]
 
-interface RecipeMaterial {
+export interface RecipeMaterial {
   name: string
   quantity: number
 }
 
-interface RecipeItem {
+export interface RecipeItem {
   id: string
   name: string
   category: string
@@ -42,9 +42,16 @@ interface RecipeItem {
 interface CraftingGridProps {
   recipes: RecipeItem[]
   locale: Locale
+  selectedIds?: Map<string, number>
+  onAddRecipe?: (id: string) => void
 }
 
-export function CraftingGrid({ recipes, locale }: CraftingGridProps) {
+export function CraftingGrid({
+  recipes,
+  locale,
+  selectedIds,
+  onAddRecipe,
+}: CraftingGridProps) {
   const tr = TRANSLATIONS_BY_LOCALE[locale]
   const [query, setQuery] = useState("")
 
@@ -132,8 +139,23 @@ export function CraftingGrid({ recipes, locale }: CraftingGridProps) {
                       {/* Decorative Background Blob */}
                       <div className="absolute -right-10 -top-10 -z-10 h-32 w-32 rounded-full bg-primary/10 blur-2xl transition-all duration-500 group-hover:bg-primary/20 dark:bg-primary/5 dark:group-hover:bg-primary/10" />
 
+                      {onAddRecipe && (
+                        <button
+                          onClick={() => onAddRecipe(recipe.id)}
+                          disabled={selectedIds?.has(recipe.id)}
+                          className="absolute right-4 top-4 z-20 flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary ring-1 ring-inset ring-primary/20 transition-all hover:bg-primary hover:text-primary-foreground hover:ring-primary disabled:bg-emerald-500/15 disabled:text-emerald-600 disabled:ring-emerald-500/30 disabled:hover:bg-emerald-500/15 disabled:hover:text-emerald-600 dark:disabled:text-emerald-400"
+                          aria-label={tr.crafting.addRecipe}
+                        >
+                          {selectedIds?.has(recipe.id) ? (
+                            <Check className="h-4 w-4" />
+                          ) : (
+                            <Plus className="h-4 w-4" />
+                          )}
+                        </button>
+                      )}
+
                       <div className="flex flex-1 flex-col z-10">
-                        <h4 className="text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+                        <h4 className="pr-10 text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
                           {recipe.name}
                         </h4>
 
