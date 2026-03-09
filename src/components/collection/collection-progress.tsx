@@ -17,7 +17,8 @@ export function CollectionProgress({ total, pokemonSlugs, translations }: Collec
 
   if (!mounted || count === 0) return null
 
-  const percentage = total > 0 ? Math.round((count / total) * 100) : 0
+  const rawPercentage = total > 0 ? (count / total) * 100 : 0
+  const percentage = count === total ? 100 : Math.min(Math.round(rawPercentage), 99)
   const radius = 44
   const stroke = 5
   const normalizedRadius = radius - stroke / 2

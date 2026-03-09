@@ -2,9 +2,10 @@
 
 import { useMemo, useState, useEffect, useRef, useCallback } from "react"
 import Image from "next/image"
-import { Search, X } from "lucide-react"
+import { Check, Search, X } from "lucide-react"
 import { SafeImage } from "@/components/ui/safe-image"
 import { PokemonCard } from "./pokemon-card"
+import { useCollection } from "@/hooks/use-collection"
 import type { Pokemon, PokemonType } from "@/lib/types"
 import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
@@ -95,9 +96,11 @@ export function PokemonGrid({
   specialties,
 }: PokemonGridProps) {
   const tr = TRANSLATIONS_BY_LOCALE[locale]
+  const { items: collectionItems, mounted: collectionMounted } = useCollection()
   const [query, setQuery] = useState("")
   const [selectedTypes, setSelectedTypes] = useState<Set<PokemonType>>(new Set())
   const [selectedSpecs, setSelectedSpecs] = useState<Set<string>>(new Set())
+  const [collectionFilter, setCollectionFilter] = useState<"all" | "caught" | "uncaught">("all")
 
   const filtered = useMemo(() => {
     return pokemon.filter((p) => {
@@ -113,9 +116,11 @@ export function PokemonGrid({
       if (selectedSpecs.size > 0) {
         if (!p.pokopia?.specialties?.some((s) => selectedSpecs.has(s))) return false
       }
+      if (collectionFilter === "caught" && !collectionItems.has(p.slug)) return false
+      if (collectionFilter === "uncaught" && collectionItems.has(p.slug)) return false
       return true
     })
-  }, [pokemon, query, selectedTypes, selectedSpecs])
+  }, [pokemon, query, selectedTypes, selectedSpecs, collectionFilter, collectionItems])
 
   function toggleType(type: PokemonType) {
     setSelectedTypes((prev) => {
@@ -135,7 +140,7 @@ export function PokemonGrid({
     })
   }
 
-  const hasFilters = query || selectedTypes.size > 0 || selectedSpecs.size > 0
+  const hasFilters = query || selectedTypes.size > 0 || selectedSpecs.size > 0 || collectionFilter !== "all"
 
   const BATCH_SIZE = 24
   const [visibleCount, setVisibleCount] = useState(BATCH_SIZE)
@@ -144,7 +149,7 @@ export function PokemonGrid({
   // Reset visible count when filters change
   useEffect(() => {
     setVisibleCount(BATCH_SIZE)
-  }, [query, selectedTypes, selectedSpecs])
+  }, [query, selectedTypes, selectedSpecs, collectionFilter])
 
   const visiblePokemon = useMemo(
     () => filtered.slice(0, visibleCount),
@@ -175,6 +180,7 @@ export function PokemonGrid({
     setQuery("")
     setSelectedTypes(new Set())
     setSelectedSpecs(new Set())
+    setCollectionFilter("all")
   }
 
   return (
@@ -241,6 +247,34 @@ export function PokemonGrid({
               </div>
             </CollapsibleSection>
           )}
+        </div>
+      )}
+
+      {/* Collection filter */}
+      {collectionMounted && collectionItems.size > 0 && (
+        <div className="mb-4 flex flex-wrap gap-2">
+          {(["all", "caught", "uncaught"] as const).map((value) => {
+            const isActive = collectionFilter === value
+            const label = value === "all"
+              ? tr.crafting.allCategories
+              : value === "caught"
+                ? tr.collection.caught
+                : tr.collection.uncaught
+            return (
+              <button
+                key={value}
+                onClick={() => setCollectionFilter(value)}
+                className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-all hover:scale-105 hover:shadow-md ${
+                  isActive
+                    ? "bg-emerald-500 text-white shadow-lg ring-2 ring-emerald-500/50"
+                    : `border border-border/50 bg-background/50 text-foreground hover:bg-background/80 ${collectionFilter !== "all" ? "opacity-40" : ""}`
+                }`}
+              >
+                {value !== "all" && <Check className="h-3.5 w-3.5" />}
+                {label}
+              </button>
+            )
+          })}
         </div>
       )}
 
