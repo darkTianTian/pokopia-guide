@@ -1,5 +1,23 @@
 import { drawSwitchIcon, drawColoredLogo } from "./share-card-logo"
 
+// --- Randomness Helpers for Class Photo ---
+// Simple 32-bit integer hash for strings
+function hashString(str: string): number {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = ((hash << 5) - hash) + str.charCodeAt(i);
+    hash |= 0;
+  }
+  return hash;
+}
+
+// Stable pseudo-random number generator (0.0 to 1.0)
+function getStableRandom(index: number, seed: number = 0) {
+  const x = Math.sin(index * 13.9898 + seed * 78.233) * 43758.5453;
+  return x - Math.floor(x);
+}
+// ------------------------------------------
+
 export interface ShareCardConfig {
   orientation: "portrait" | "landscape"
   layoutStyle: "grid" | "class-photo"
@@ -158,8 +176,12 @@ function drawPokemonClassPhoto(
 
   // Limit how many we actually try to draw so it doesn't get completely absurd
   const maxToDraw = Math.min(caughtSlugs.length, 300)
-  const slugsToShow = caughtSlugs.slice(0, maxToDraw)
-  const count = slugsToShow.length
+  const count = maxToDraw
+
+  // Stable shuffle so the photo looks like a mixed crowd, but doesn't flicker on re-renders
+  const slugsToShow = [...caughtSlugs.slice(0, maxToDraw)].sort((a, b) => {
+    return getStableRandom(hashString(a), count) - getStableRandom(hashString(b), count);
+  });
 
   // Dynamically calculate the maximum renderSize that fits the entire bounding box perfectly
   // using a binary search approach
@@ -235,22 +257,37 @@ function drawPokemonClassPhoto(
 
     for (let col = 0; col < itemsInThisRow; col++) {
       const slug = slugsToShow[i];
-      i++;
-
       const pos = spriteMap[slug];
-      if (!pos) continue;
 
-      // Subtle organic wave
-      const waveOffset = Math.sin(col * 0.8) * (renderSize * 0.05);
+      if (!pos) {
+        i++;
+        continue;
+      }
 
-      const dx = offsetX + col * overlapX;
-      const dy = offsetY + row * overlapY + waveOffset;
+      // Calculate stable randomness for this specific slot
+      const randX = (getStableRandom(i, 1) - 0.5) * (overlapX * 0.4);
+      const randY = (getStableRandom(i, 2) - 0.5) * (overlapY * 0.4);
+      const sizeMod = 0.85 + getStableRandom(i, 3) * 0.3; // 85% to 115% size
+      const angleDeg = (getStableRandom(i, 4) - 0.5) * 16; // +/- 8 degrees
+
+      const dx = offsetX + col * overlapX + randX;
+      const dy = offsetY + row * overlapY + randY;
+      const finalSize = renderSize * sizeMod;
+
+      ctx.save();
+      // Translate to the exact actual center of where the sprite should be drawn
+      ctx.translate(dx + renderSize / 2, dy + renderSize / 2);
+      ctx.rotate((angleDeg * Math.PI) / 180);
 
       ctx.drawImage(
         spriteSheet,
         pos.x, pos.y, SPRITE_SIZE, SPRITE_SIZE,
-        dx, dy, renderSize, renderSize
+        -finalSize / 2, -finalSize / 2, finalSize, finalSize
       );
+
+      ctx.restore();
+
+      i++;
     }
   }
 }
