@@ -33,6 +33,11 @@
         "id": 158,
         "name": "Home theater",
         "rarity": "rare"
+      },
+      {
+        "id": 167,
+        "name": "Office storeroom",
+        "rarity": "rare"
       }
     ]
   }

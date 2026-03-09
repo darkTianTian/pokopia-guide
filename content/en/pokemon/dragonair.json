@@ -29,6 +29,11 @@
     ],
     "habitats": [
       {
+        "id": 144,
+        "name": "Hydrated fluffy flower bed",
+        "rarity": "very-rare"
+      },
+      {
         "id": 148,
         "name": "Simple bathroom",
         "rarity": "rare"

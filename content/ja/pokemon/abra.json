@@ -29,6 +29,11 @@
     ],
     "habitats": [
       {
+        "id": 151,
+        "name": "みなぎるサイコパワー",
+        "rarity": "common"
+      },
+      {
         "id": 152,
         "name": "水晶占い",
         "rarity": "common"

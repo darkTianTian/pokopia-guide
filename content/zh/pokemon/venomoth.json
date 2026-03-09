@@ -35,6 +35,11 @@
         "id": 7,
         "name": "被照亮的草叢",
         "rarity": "rare"
+      },
+      {
+        "id": 23,
+        "name": "被照亮的長椅",
+        "rarity": "rare"
       }
     ]
   }

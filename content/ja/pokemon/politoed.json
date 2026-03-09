@@ -35,6 +35,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 106,
+        "name": "うるおうゆうがな花畑",
+        "rarity": "rare"
+      },
+      {
         "id": 107,
         "name": "花畑の切り株ステージ",
         "rarity": "rare"

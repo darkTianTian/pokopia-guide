@@ -35,6 +35,11 @@
         "id": 7,
         "name": "Illuminated tall grass",
         "rarity": "rare"
+      },
+      {
+        "id": 23,
+        "name": "Illuminated bench",
+        "rarity": "rare"
       }
     ]
   }

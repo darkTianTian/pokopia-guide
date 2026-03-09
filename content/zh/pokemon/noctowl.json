@@ -33,6 +33,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 6,
+        "name": "高台草叢",
+        "rarity": "rare"
+      },
+      {
         "id": 31,
         "name": "溫柔燈光晚安",
         "rarity": "common"

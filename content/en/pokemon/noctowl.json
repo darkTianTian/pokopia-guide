@@ -33,6 +33,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 6,
+        "name": "Elevated tall grass",
+        "rarity": "rare"
+      },
+      {
         "id": 31,
         "name": "Gently lit bed",
         "rarity": "common"

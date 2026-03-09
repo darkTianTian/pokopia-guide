@@ -28,6 +28,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 118,
+        "name": "ブキミな白い岩",
+        "rarity": "rare"
+      },
+      {
         "id": 119,
         "name": "荷物置き場でつまみ食い",
         "rarity": "common"

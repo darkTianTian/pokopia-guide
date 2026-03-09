@@ -35,6 +35,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 106,
+        "name": "Hydrated graceful flower bed",
+        "rarity": "rare"
+      },
+      {
         "id": 107,
         "name": "Flower garden stump stage",
         "rarity": "rare"

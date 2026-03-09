@@ -28,7 +28,8 @@
     ],
     "weather": [
       "sunny",
-      "cloudy"
+      "cloudy",
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": "weepinbell",
@@ -38,6 +39,11 @@
         "id": 21,
         "name": "Flowery Table",
         "rarity": "very-rare"
+      },
+      {
+        "id": 35,
+        "name": "Irresistible scent and glow",
+        "rarity": "rare"
       }
     ]
   }

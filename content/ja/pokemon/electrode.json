@@ -28,6 +28,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 66,
+        "name": "公園のベンチ",
+        "rarity": "very-rare"
+      },
+      {
         "id": 90,
         "name": "ふなのりごっこ",
         "rarity": "common"

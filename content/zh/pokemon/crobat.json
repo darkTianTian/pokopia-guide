@@ -26,6 +26,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 52,
+        "name": "高台黃色草叢",
+        "rarity": "very-rare"
+      },
+      {
         "id": 65,
         "name": "Trash disposal site",
         "rarity": "rare"

@@ -30,6 +30,11 @@
         "id": 51,
         "name": "木かげの黄色の草むら",
         "rarity": "common"
+      },
+      {
+        "id": 66,
+        "name": "公園のベンチ",
+        "rarity": "common"
       }
     ]
   }

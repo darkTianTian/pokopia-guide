@@ -20,6 +20,9 @@
       "bitter flavors"
     ],
     "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
       "night"
     ],
     "weather": [
