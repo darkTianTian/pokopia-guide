@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-09T15:01:25.549Z",
+  "lastSync": "2026-03-09T17:03:52.763Z",
   "newHabitats": [
     {
       "id": 28,
@@ -898,6 +898,14 @@
       "id": 172,
       "name": "ドコドコびっくり箱",
       "missingIn": [
+        "zh"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Tiny Atelier",
+      "missingIn": [
+        "ja",
         "zh"
       ]
     }
