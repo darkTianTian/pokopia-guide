@@ -49,14 +49,23 @@ type Tab = "list" | "calculator"
 
 export function CraftingTabs({ recipes, locale }: CraftingTabsProps) {
   const [activeTab, setActiveTab] = useState<Tab>("list")
-  const [selected, setSelected] = useState<Map<string, number>>(() =>
-    loadFromStorage()
-  )
+  const [selected, setSelected] = useState<Map<string, number>>(new Map())
+  const [mounted, setMounted] = useState(false)
   const tr = TRANSLATIONS_BY_LOCALE[locale]
 
   useEffect(() => {
-    saveToStorage(selected)
-  }, [selected])
+    setMounted(true)
+    const stored = loadFromStorage()
+    if (stored.size > 0) {
+      setSelected(stored)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (mounted) {
+      saveToStorage(selected)
+    }
+  }, [selected, mounted])
 
   const addRecipe = useCallback((id: string) => {
     setSelected((prev) => {
@@ -106,13 +115,13 @@ export function CraftingTabs({ recipes, locale }: CraftingTabsProps) {
             aria-controls={`${tab.key}-panel`}
             onClick={() => setActiveTab(tab.key)}
             className={`relative rounded-full px-5 py-2 text-sm font-semibold transition-all ${activeTab === tab.key
-                ? "bg-primary text-primary-foreground shadow-sm"
-                : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
+              ? "bg-primary text-primary-foreground shadow-sm"
+              : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
               }`}
           >
             {tab.label}
-            {tab.key === "calculator" && selected.size > 0 && (
-              <span className="absolute -right-2 -top-2 flex h-5 min-w-[20px] items-center justify-center rounded-full bg-destructive px-1.5 text-xs font-bold text-destructive-foreground shadow-sm ring-2 ring-background">
+            {tab.key === "calculator" && mounted && selected.size > 0 && (
+              <span className="absolute -right-2 -top-2 flex h-5 min-w-[20px] items-center justify-center rounded-full bg-amber-400 px-1.5 text-xs font-bold text-amber-950 shadow-sm ring-2 ring-background">
                 {selected.size}
               </span>
             )}
