@@ -67,7 +67,7 @@ function renderMarkdown(content: string): string {
     } else if (trimmed.startsWith("## ")) {
       result.push(`<h2 class="mt-8 mb-4 text-xl font-bold">${inlineFormat(trimmed.slice(3))}</h2>`)
     } else if (trimmed.startsWith("# ")) {
-      result.push(`<h1 class="mt-8 mb-4 text-2xl font-bold">${inlineFormat(trimmed.slice(2))}</h1>`)
+      // Skip H1 in content — the page header already renders the title as H1
     } else if (trimmed.startsWith("> ")) {
       result.push(`<blockquote class="border-l-4 border-primary/30 pl-4 italic text-muted-foreground my-4">${inlineFormat(trimmed.slice(2))}</blockquote>`)
     } else if (/^\d+\. /.test(trimmed)) {
