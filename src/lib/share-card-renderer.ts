@@ -334,8 +334,8 @@ function drawPokemonGrid(
 
 export async function renderShareCard(config: ShareCardConfig): Promise<Blob> {
   const isPortrait = config.orientation === "portrait"
-  const W = isPortrait ? 1080 : 2400
-  const H = isPortrait ? 1920 : 1260
+  const W = isPortrait ? 1080 : 1920
+  const H = isPortrait ? 1920 : 1080
 
   const canvas = document.createElement("canvas")
   canvas.width = W
@@ -539,8 +539,8 @@ export async function renderShareCardToPreview(
   maxWidth: number
 ) {
   const isPortrait = config.orientation === "portrait"
-  const W = isPortrait ? 1080 : 2400
-  const H = isPortrait ? 1920 : 1260
+  const W = isPortrait ? 1080 : 1920
+  const H = isPortrait ? 1920 : 1080
 
   const scale = Math.min(maxWidth / W, 1)
   previewCanvas.width = W * scale
