@@ -190,7 +190,7 @@ export function CraftingGrid({
                         </button>
                       )}
 
-                      <div className="flex flex-1 flex-col z-10">
+                      <div className="relative flex flex-1 flex-col z-10">
                         <h4 className="pr-10 text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
                           {recipe.name}
                         </h4>
