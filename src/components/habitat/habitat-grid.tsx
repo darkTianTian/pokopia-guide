@@ -101,13 +101,13 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
 
             return (
               <article key={habitat.id} className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl">
-                <WishlistButton
-                  itemId={`habitat:${habitat.id}`}
-                  className="absolute left-4 top-4 z-20"
-                />
-                <span className="absolute top-6 right-6 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
+                <span className="absolute top-4 left-1/2 -translate-x-1/2 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
                   #{String(habitat.id).padStart(3, "0")}
                 </span>
+                <WishlistButton
+                  itemId={`habitat:${habitat.id}`}
+                  className="absolute right-4 top-4 z-20"
+                />
 
                 <div className="absolute left-1/2 top-28 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-30 blur-[40px] transition-all duration-500 group-hover:scale-150 group-hover:opacity-60 dark:opacity-20 dark:group-hover:opacity-50">
                   <div className="h-full w-full bg-gradient-to-br from-primary to-accent" />

@@ -143,7 +143,7 @@ export function CraftingGrid({
 
                       <WishlistButton
                         itemId={`recipe:${recipe.id}`}
-                        className={`absolute ${onToggleRecipe ? "left-4" : "right-4"} top-4 z-20`}
+                        className="absolute right-4 top-4 z-20"
                       />
 
                       {onToggleRecipe && (
@@ -157,11 +157,11 @@ export function CraftingGrid({
                               setJustClickedId(null)
                             }
                           }}
-                          className={`group/btn absolute right-4 top-4 z-20 flex h-8 w-8 items-center justify-center rounded-full ring-1 ring-inset transition-all ${selectedIds?.has(recipe.id)
-                              ? justClickedId === recipe.id
-                                ? "bg-primary text-primary-foreground ring-primary" // keep primary state if finger/mouse hasn't left
-                                : "bg-primary text-primary-foreground ring-primary hover:bg-destructive hover:text-destructive-foreground hover:ring-destructive"
-                              : "bg-primary/10 text-primary ring-primary/20 hover:bg-primary hover:text-primary-foreground hover:ring-primary"
+                          className={`group/btn absolute right-5 bottom-5 z-20 flex h-10 w-10 items-center justify-center rounded-full ring-1 ring-inset shadow-lg transition-all ${selectedIds?.has(recipe.id)
+                            ? justClickedId === recipe.id
+                              ? "bg-primary text-primary-foreground ring-primary" // keep primary state if finger/mouse hasn't left
+                              : "bg-primary text-primary-foreground ring-primary hover:bg-destructive hover:text-destructive-foreground hover:ring-destructive"
+                            : "bg-primary/10 text-primary ring-primary/20 hover:bg-primary hover:text-primary-foreground hover:ring-primary"
                             }`}
                           aria-label={
                             selectedIds?.has(recipe.id)
@@ -172,20 +172,20 @@ export function CraftingGrid({
                           {selectedIds?.has(recipe.id) ? (
                             <>
                               <Check
-                                className={`h-4 w-4 transition-transform ${justClickedId === recipe.id
-                                    ? "" // keep showing check if just clicked
-                                    : "group-hover/btn:hidden"
+                                className={`h-5 w-5 transition-transform ${justClickedId === recipe.id
+                                  ? "" // keep showing check if just clicked
+                                  : "group-hover/btn:hidden"
                                   }`}
                               />
                               <X
-                                className={`h-4 w-4 transition-transform ${justClickedId === recipe.id
-                                    ? "hidden" // keep hiding X if just clicked
-                                    : "hidden group-hover/btn:block group-hover/btn:scale-110"
+                                className={`h-5 w-5 transition-transform ${justClickedId === recipe.id
+                                  ? "hidden" // keep hiding X if just clicked
+                                  : "hidden group-hover/btn:block group-hover/btn:scale-110"
                                   }`}
                               />
                             </>
                           ) : (
-                            <Plus className="h-4 w-4 transition-transform group-hover/btn:rotate-90" />
+                            <Plus className="h-5 w-5 transition-transform group-hover/btn:rotate-90" />
                           )}
                         </button>
                       )}

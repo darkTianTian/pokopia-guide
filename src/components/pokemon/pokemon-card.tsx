@@ -65,6 +65,13 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
   return (
     <Link href={getLocalePath(locale, `/pokedex/${pokemon.slug}`)} className="group block h-full outline-none">
       <article className={`relative flex h-full flex-col overflow-hidden rounded-[2rem] bg-background/40 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5 ${computedClassName}`}>
+        <span className="absolute top-4 left-1/2 -translate-x-1/2 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
+          #{String(pokemon.id).padStart(3, "0")}
+        </span>
+        <WishlistButton
+          itemId={`pokemon:${pokemon.slug}`}
+          className="absolute right-4 top-4 z-20"
+        />
 
         {/* Glowing Background Blob */}
         <div className="absolute left-1/2 top-28 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40 blur-[50px] transition-all duration-500 group-hover:scale-125 group-hover:opacity-70 dark:opacity-30 dark:group-hover:opacity-50">
@@ -72,7 +79,7 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
         </div>
 
         <div className="flex flex-1 flex-col p-5">
-          {/* Header: Name and ID */}
+          {/* Header: Name */}
           <div className="mb-4 flex items-center justify-between gap-2">
             {headingLevel === "h3" ? (
               <h3 className="min-w-0 flex-1 truncate text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
@@ -83,11 +90,8 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
                 {pokemon.name}
               </h2>
             )}
-            <div className="flex shrink-0 items-center gap-1.5">
-              <WishlistButton itemId={`pokemon:${pokemon.slug}`} />
-              <span className="flex h-7 items-center justify-center rounded-full bg-muted/50 px-3 font-mono text-xs font-semibold tracking-wider text-muted-foreground backdrop-blur-md">
-                #{String(pokemon.id).padStart(3, "0")}
-              </span>
+            <div className="flex shrink-0 items-center gap-1.5 min-h-[28px]">
+              {/* Empty placeholder to keep flex spacing if needed, or can be removed if heading takes full width. Left for semantic balance. */}
             </div>
           </div>
 
