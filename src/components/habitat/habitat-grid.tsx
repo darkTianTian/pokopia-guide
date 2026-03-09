@@ -114,7 +114,7 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                 </div>
 
                 <div className="flex flex-1 flex-col">
-                  <div className="relative mb-6 mt-2 flex h-[160px] items-center justify-center">
+                  <div className="relative mb-6 mt-6 flex h-[160px] items-center justify-center">
                     <div className="relative z-10 flex h-full w-full items-center justify-center transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-110">
                       <SafeImage
                         src={habitat.image}
