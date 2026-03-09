@@ -37,6 +37,11 @@
     ],
     "habitats": [
       {
+        "id": 32,
+        "name": "墓前供品",
+        "rarity": "rare"
+      },
+      {
         "id": 33,
         "name": "Creepy grave offering",
         "rarity": "common"

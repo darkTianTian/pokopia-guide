@@ -19,7 +19,8 @@
     ],
     "weather": [
       "sunny",
-      "cloudy"
+      "cloudy",
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -27,6 +28,11 @@
       "snorlax"
     ],
     "habitats": [
+      {
+        "id": 30,
+        "name": "ぬいるぐみとおやすみ",
+        "rarity": "common"
+      },
       {
         "id": 47,
         "name": "木かげでぐっすりカビゴン",

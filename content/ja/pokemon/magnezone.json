@@ -29,6 +29,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 64,
+        "name": "ゴミ箱がいっぱい",
+        "rarity": "common"
+      },
+      {
         "id": 85,
         "name": "ミニゲームコーナー",
         "rarity": "rare"

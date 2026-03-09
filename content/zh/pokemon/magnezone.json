@@ -29,6 +29,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 64,
+        "name": "垃圾桶滿了",
+        "rarity": "common"
+      },
+      {
         "id": 85,
         "name": "Mini Game Corner",
         "rarity": "rare"
