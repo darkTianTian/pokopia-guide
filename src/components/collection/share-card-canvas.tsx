@@ -109,7 +109,7 @@ export function ShareCardCanvas({
       <canvas
         ref={canvasRef}
         className={`rounded-lg ${orientation === "portrait" ? "mx-auto max-h-[50vh]" : "w-full"}`}
-        style={{ aspectRatio: orientation === "portrait" ? "1080/1920" : "2400/1260" }}
+        style={{ aspectRatio: orientation === "portrait" ? "1080/1920" : "1920/1080" }}
       />
     </div>
   )

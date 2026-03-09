@@ -141,7 +141,7 @@ export function ShareCardModal({
                 className="flex-1 rounded-full shadow-sm transition-all"
               >
                 <Users className="h-4 w-4 mr-1.5" />
-                Photo
+                {t("collection.shareCard.layoutPhoto")}
               </Button>
               <Button
                 variant={layoutStyle === "grid" ? "default" : "outline"}
@@ -150,7 +150,7 @@ export function ShareCardModal({
                 className="flex-1 rounded-full shadow-sm transition-all"
               >
                 <Grid className="h-4 w-4 mr-1.5" />
-                Grid
+                {t("collection.shareCard.layoutGrid")}
               </Button>
             </div>
           </div>
