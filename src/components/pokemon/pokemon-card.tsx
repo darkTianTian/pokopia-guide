@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { SafeImage } from "@/components/ui/safe-image"
 import { WishlistButton } from "@/components/ui/wishlist-button"
+import { CollectionButton } from "@/components/ui/collection-button"
 import { TypeBadge } from "./type-badge"
 import type { Pokemon } from "@/lib/types"
 import { getLocalePath, type Locale } from "@/i18n/config"
@@ -69,6 +70,10 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
         <span className="absolute top-4 left-1/2 -translate-x-1/2 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
           #{String(pokemon.id).padStart(3, "0")}
         </span>
+        <CollectionButton
+          itemId={pokemon.slug}
+          className="absolute left-4 top-4 z-20"
+        />
         <WishlistButton
           itemId={`pokemon:${pokemon.slug}`}
           className="absolute right-4 top-4 z-20"

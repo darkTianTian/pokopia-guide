@@ -171,7 +171,8 @@
     "explore": "Exploration Map",
     "multiplayer": "Multiplayer Guide",
     "mysteryGift": "Mystery Gift",
-    "wishlist": "Wishlist"
+    "wishlist": "Wishlist",
+    "collection": "Collection"
   },
   "breadcrumb": {
     "home": "Home",
@@ -366,6 +367,19 @@
     "materials": "Materials",
     "itemCount": "{{count}} items",
     "clearAll": "Clear All"
+  },
+  "collection": {
+    "title": "Collection Progress",
+    "metaTitle": "Collection Progress",
+    "description": "Track your Pokémon collection progress. See stats by type and specialty.",
+    "breadcrumb": "Collection",
+    "empty": "No Pokémon caught yet. Use the check button on Pokédex cards to mark Pokémon as caught.",
+    "progress": "Progress",
+    "caught": "Caught",
+    "uncaught": "Uncaught",
+    "byType": "By Type",
+    "bySpecialty": "By Specialty",
+    "complete": "Complete"
   },
   "mysteryGift": {
     "title": "Mystery Gift Codes",

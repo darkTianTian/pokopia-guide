@@ -171,7 +171,8 @@
     "explore": "探索地圖",
     "multiplayer": "連線指南",
     "mysteryGift": "神秘禮物",
-    "wishlist": "願望清單"
+    "wishlist": "願望清單",
+    "collection": "收集進度"
   },
   "breadcrumb": {
     "home": "首頁",
@@ -366,6 +367,19 @@
     "materials": "材料",
     "itemCount": "{{count}} 個項目",
     "clearAll": "清空全部"
+  },
+  "collection": {
+    "title": "收集進度",
+    "metaTitle": "收集進度",
+    "description": "追蹤你的寶可夢收集進度。按屬性和特長查看統計。",
+    "breadcrumb": "收集進度",
+    "empty": "尚未捕獲任何寶可夢。在圖鑑卡片上使用勾選按鈕來標記已捕獲的寶可夢。",
+    "progress": "進度",
+    "caught": "已捕獲",
+    "uncaught": "未捕獲",
+    "byType": "按屬性統計",
+    "bySpecialty": "按特長統計",
+    "complete": "完成"
   },
   "mysteryGift": {
     "title": "神秘禮物兌換碼",

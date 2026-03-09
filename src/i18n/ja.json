@@ -171,7 +171,8 @@
     "mysteryGift": "ふしぎなおくりもの",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイガイド",
-    "wishlist": "ウィッシュリスト"
+    "wishlist": "ウィッシュリスト",
+    "collection": "コレクション"
   },
   "breadcrumb": {
     "home": "ホーム",
@@ -366,6 +367,19 @@
     "materials": "素材",
     "itemCount": "{{count}} 件",
     "clearAll": "すべてクリア"
+  },
+  "collection": {
+    "title": "コレクション進捗",
+    "metaTitle": "コレクション進捗",
+    "description": "ポケモンの収集進捗を確認。タイプととくぎ別の統計を表示。",
+    "breadcrumb": "コレクション",
+    "empty": "まだポケモンを捕まえていません。図鑑カードのチェックボタンで捕まえたポケモンをマークしましょう。",
+    "progress": "進捗",
+    "caught": "捕獲済み",
+    "uncaught": "未捕獲",
+    "byType": "タイプ別",
+    "bySpecialty": "とくぎ別",
+    "complete": "コンプリート"
   },
   "mysteryGift": {
     "title": "ふしぎなおくりもの コード",

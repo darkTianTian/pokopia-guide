@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/layout/breadcrumb"
+import { CollectionProgress } from "@/components/collection/collection-progress"
 import { PokemonGrid } from "@/components/pokemon/pokemon-grid"
 import { getAllPokemon, getAllSpecialties } from "@/lib/pokemon"
 import { POKEMON_TYPES } from "@/lib/types"
@@ -27,14 +28,17 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
           {t(translations, "pokedex.title")}
         </h1>
         <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
-          <p className="text-lg sm:text-xl text-muted-foreground">
-            {t(translations, "pokedex.subtitle")}
-          </p>
-          <div className="inline-flex items-center rounded-full bg-primary/10 px-5 py-2 ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10">
-            <span className="text-sm sm:text-base font-bold uppercase tracking-wider text-primary">
-              {t(translations, "pokedex.totalCount").replace("{{count}}", String(pokemon.length))}
-            </span>
+          <div className="flex flex-col gap-4">
+            <p className="text-lg sm:text-xl text-muted-foreground">
+              {t(translations, "pokedex.subtitle")}
+            </p>
+            <div className="inline-flex items-center self-start rounded-full bg-primary/10 px-5 py-2 ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10">
+              <span className="text-sm sm:text-base font-bold uppercase tracking-wider text-primary">
+                {t(translations, "pokedex.totalCount").replace("{{count}}", String(pokemon.length))}
+              </span>
+            </div>
           </div>
+          <CollectionProgress total={pokemon.length} />
         </div>
       </div>
       <PokemonGrid

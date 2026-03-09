@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { TypeBadge } from "@/components/pokemon/type-badge"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
 import { WishlistButton } from "@/components/ui/wishlist-button"
+import { CollectionButton } from "@/components/ui/collection-button"
 import Link from "next/link"
 import { getAllPokemon, getPokemonBySlug } from "@/lib/pokemon"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
@@ -76,6 +77,10 @@ export async function PokedexDetailPage({
           <div className={`h-full w-full bg-gradient-to-br ${gradientClass}`} />
         </div>
 
+        <CollectionButton
+          itemId={pokemon.slug}
+          className="absolute left-6 top-6 z-20"
+        />
         <WishlistButton
           itemId={`pokemon:${pokemon.slug}`}
           className="absolute right-6 top-6 z-20"
