@@ -160,73 +160,96 @@ function drawPokemonClassPhoto(
   const slugsToShow = caughtSlugs.slice(0, maxToDraw)
   const count = slugsToShow.length
 
-  // Dynamically scale sizing based on how many Pokemon are caught
-  // Fewer Pokemon = Larger sprites, tighter grouping
-  let renderSize = 64
-  let maxColsPerRow = 100 // essentially unlimited by default (fills boxWidth)
+  // Dynamically calculate the maximum renderSize that fits the entire bounding box perfectly
+  // using a binary search approach
+  let low = 10;
+  let high = Math.min(boxWidth, boxHeight) * 2;
+  let bestSize = low;
 
-  if (count <= 15) {
-    renderSize = 140
-    maxColsPerRow = 5 // Force multiple rows even for few pokemon
-  } else if (count <= 30) {
-    renderSize = 110
-    maxColsPerRow = 7
-  } else if (count <= 60) {
-    renderSize = 85
-    maxColsPerRow = 10
+  for (let iter = 0; iter < 40; iter++) {
+    const mid = (low + high) / 2;
+    const overlapX = mid * 0.65;
+    const overlapY = mid * 0.6;
+
+    let maxCols = Math.floor((boxWidth - mid) / overlapX) + 1;
+    if (maxCols < 1) maxCols = 1;
+
+    let totalItems = 0;
+    let tempNumRows = 0;
+    while (totalItems < count) {
+      // Alternate row counts for automatic interlacing (e.g. 14, 13, 14, 13)
+      // This allows rows to be perfectly centered independently while interlocking visually
+      let rowCols = (tempNumRows % 2 === 0) ? maxCols : Math.max(1, maxCols - 1);
+      if (count - totalItems < rowCols) {
+        rowCols = count - totalItems;
+      }
+      totalItems += rowCols;
+      tempNumRows++;
+    }
+
+    const totalHeight = mid + (tempNumRows - 1) * overlapY;
+
+    if (totalHeight <= boxHeight) {
+      bestSize = mid;
+      low = mid;
+    } else {
+      high = mid;
+    }
   }
 
-  // Calculate spacing relative to the dynamic render size
-  const overlapX = renderSize * 0.65
-  const overlapY = renderSize * 0.6
+  // Cap size so 1-5 pokemon don't get comically gigantic 
+  const renderSize = Math.min(260, Math.floor(bestSize));
+  const overlapX = renderSize * 0.65;
+  const overlapY = renderSize * 0.6;
 
-  // Calculate how many rows we need, constraining to maxColsPerRow OR box width
-  const maxPossibleColsByWidth = Math.floor((boxWidth - renderSize) / overlapX)
-  const colsPerRow = Math.max(1, Math.min(maxColsPerRow, maxPossibleColsByWidth))
+  // Re-run the layout math with the finalized size to get row arrays
+  let maxCols = Math.floor((boxWidth - renderSize) / overlapX) + 1;
+  if (maxCols < 1) maxCols = 1;
 
-  const numRows = Math.ceil(count / colsPerRow)
+  const rowLayouts: number[] = [];
+  let totalItemsLayout = 0;
+  while (totalItemsLayout < count) {
+    let rowCols = (rowLayouts.length % 2 === 0) ? maxCols : Math.max(1, maxCols - 1);
+    if (count - totalItemsLayout < rowCols) {
+      rowCols = count - totalItemsLayout;
+    }
+    rowLayouts.push(rowCols);
+    totalItemsLayout += rowCols;
+  }
 
-  // Calculate the total actual width/height the group will consume
-  const totalGroupHeight = renderSize + (numRows - 1) * overlapY
+  const numRows = rowLayouts.length;
+  const totalGroupHeight = renderSize + (numRows - 1) * overlapY;
 
   // Vertical centering offset
-  const offsetY = startY + Math.max(0, (boxHeight - totalGroupHeight) / 2)
+  const offsetY = startY + Math.max(0, (boxHeight - totalGroupHeight) / 2);
 
-  // State to track index
-  let i = 0
-
-  // Draw from back to front (top row down to bottom row)
+  let i = 0;
   for (let row = 0; row < numRows; row++) {
-    const staggerOffset = row % 2 === 0 ? 0 : overlapX / 2
+    const itemsInThisRow = rowLayouts[row];
 
-    // Determine bounds for this specific row
-    const startColIndex = i
-    const endColIndex = Math.min(i + colsPerRow, count)
-    const itemsInThisRow = endColIndex - startColIndex
+    // Calculate total width of JUST this row to center it horizontally perfectly.
+    // Because we alternate maxCols and maxCols-1, the centers perfectly interlace without manual staggering!
+    const rowWidth = renderSize + (itemsInThisRow - 1) * overlapX;
+    const offsetX = startX + Math.max(0, (boxWidth - rowWidth) / 2);
 
-    // Perfect horizontal centering for this specific row length
-    const rowWidth = renderSize + (itemsInThisRow - 1) * overlapX
-    const offsetX = startX + staggerOffset + Math.max(0, (boxWidth - rowWidth) / 2)
-
-    // Draw all sprites for this row
     for (let col = 0; col < itemsInThisRow; col++) {
-      const slug = slugsToShow[i]
-      i++
+      const slug = slugsToShow[i];
+      i++;
 
-      const pos = spriteMap[slug]
-      if (!pos) continue
+      const pos = spriteMap[slug];
+      if (!pos) continue;
 
       // Subtle organic wave
-      const waveOffset = Math.sin(col * 0.8) * (renderSize * 0.05)
+      const waveOffset = Math.sin(col * 0.8) * (renderSize * 0.05);
 
-      const dx = offsetX + col * overlapX
-      const dy = offsetY + row * overlapY + waveOffset
+      const dx = offsetX + col * overlapX;
+      const dy = offsetY + row * overlapY + waveOffset;
 
       ctx.drawImage(
         spriteSheet,
         pos.x, pos.y, SPRITE_SIZE, SPRITE_SIZE,
         dx, dy, renderSize, renderSize
-      )
+      );
     }
   }
 }
