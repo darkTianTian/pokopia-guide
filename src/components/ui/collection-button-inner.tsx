@@ -49,7 +49,7 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
     let targetY = 0
 
     const progressRing = document.getElementById("collection-progress-ring")
-    const headerWishlist = document.getElementById("header-wishlist-icon")
+    const headerNav = document.querySelector("header > div")
 
     // Determine target based on what's visible in the viewport
     let hasTarget = false
@@ -62,12 +62,13 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
       }
     }
 
-    // If progress ring is not visible, check for header wishlist icon as fallback
-    if (!hasTarget && headerWishlist) {
-      const wishRect = headerWishlist.getBoundingClientRect()
-      if (wishRect.top > -50 && wishRect.bottom < window.innerHeight + 50) {
-        targetX = wishRect.left + wishRect.width / 2
-        targetY = wishRect.top + wishRect.height / 2
+    // If progress ring is not visible, check for the main navigation pill as fallback
+    if (!hasTarget && headerNav) {
+      const headerRect = headerNav.getBoundingClientRect()
+      if (headerRect.top > -50 && headerRect.bottom < window.innerHeight + 50) {
+        // Fly to the right side of the header pill (near language switcher)
+        targetX = headerRect.right - 60
+        targetY = headerRect.top + headerRect.height / 2
         hasTarget = true
       }
     }
