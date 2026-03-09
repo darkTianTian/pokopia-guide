@@ -137,15 +137,14 @@ export function CraftingCalculator({
             </span>
           </div>
 
-          <div className="overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 backdrop-blur-xl">
-            {materialTotals.map(([name, total], i) => (
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+            {materialTotals.map(([name, total]) => (
               <div
                 key={name}
-                className={`flex items-center justify-between px-6 py-4 transition-colors hover:bg-muted/10 ${i > 0 ? "border-t border-border/30" : ""
-                  }`}
+                className="flex items-center justify-between rounded-2xl border border-border/40 bg-background/40 px-4 py-3 backdrop-blur-xl"
               >
-                <span className="text-[15px] font-medium text-foreground/80">{name}</span>
-                <span className="text-[15px] font-bold tabular-nums text-primary/80">
+                <span className="text-sm font-medium text-foreground/80">{name}</span>
+                <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[13px] font-bold tabular-nums text-primary/90 ring-1 ring-inset ring-primary/20">
                   ×{total}
                 </span>
               </div>
