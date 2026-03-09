@@ -37,6 +37,11 @@
     ],
     "habitats": [
       {
+        "id": 32,
+        "name": "お墓にお供えもの",
+        "rarity": "rare"
+      },
+      {
         "id": 33,
         "name": "ブキミなお墓にお供えもの",
         "rarity": "common"
