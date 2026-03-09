@@ -12,6 +12,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ShareCardCanvas } from "./share-card-canvas"
+import { getSloganKey } from "@/lib/share-card-renderer"
 
 interface ShareCardModalProps {
   open: boolean
@@ -133,6 +134,7 @@ export function ShareCardModal({
           <ShareCardCanvas
             orientation={orientation}
             nickname={nickname}
+            slogan={t(getSloganKey(totalCount > 0 ? Math.round((caughtSlugs.length / totalCount) * 100) : 0))}
             caughtSlugs={caughtSlugs}
             totalCount={totalCount}
             onReady={handleReady}

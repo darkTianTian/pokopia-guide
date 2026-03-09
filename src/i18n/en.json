@@ -388,7 +388,14 @@
       "landscape": "Landscape",
       "share": "Share",
       "download": "Download",
-      "generating": "Generating..."
+      "generating": "Generating...",
+      "slogan0": "Just getting started... let's go!",
+      "slogan10": "A few friends already!",
+      "slogan25": "Building up the squad 💪",
+      "slogan50": "Halfway there, no turning back!",
+      "slogan75": "Almost a Pokémon Master!",
+      "slogan90": "So close... can you smell it?",
+      "slogan100": "Gotta catch 'em all — DONE! 🎉"
     }
   },
   "mysteryGift": {

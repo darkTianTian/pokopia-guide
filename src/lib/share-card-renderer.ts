@@ -3,11 +3,22 @@ import { drawSwitchIcon, drawColoredLogo } from "./share-card-logo"
 export interface ShareCardConfig {
   orientation: "portrait" | "landscape"
   nickname: string
+  slogan: string
   caughtSlugs: string[]
   totalCount: number
   spriteSheet: HTMLImageElement
   spriteMap: Record<string, { x: number; y: number }>
   dateString: string
+}
+
+export function getSloganKey(percentage: number): string {
+  if (percentage >= 100) return "collection.shareCard.slogan100"
+  if (percentage >= 90) return "collection.shareCard.slogan90"
+  if (percentage >= 75) return "collection.shareCard.slogan75"
+  if (percentage >= 50) return "collection.shareCard.slogan50"
+  if (percentage >= 25) return "collection.shareCard.slogan25"
+  if (percentage >= 10) return "collection.shareCard.slogan10"
+  return "collection.shareCard.slogan0"
 }
 
 const SPRITE_SIZE = 96
@@ -153,11 +164,22 @@ function drawPortrait(
   drawSwitchIcon(ctx, W / 2 - 180, logoY - 24, 48)
   drawColoredLogo(ctx, "Pokopia Guide", W / 2 - 125, logoY, 40)
 
+  let subtitleY = logoY + 60
+
   if (config.nickname) {
     ctx.fillStyle = TEXT_SECONDARY
     ctx.font = `600 32px Fredoka, sans-serif`
     ctx.textAlign = "center"
-    ctx.fillText(config.nickname, W / 2, logoY + 70)
+    ctx.fillText(config.nickname, W / 2, subtitleY)
+    subtitleY += 45
+  }
+
+  if (config.slogan) {
+    const sloganY = Math.max(subtitleY, logoY + 105)
+    ctx.fillStyle = "rgba(255, 255, 255, 0.5)"
+    ctx.font = `500 26px Fredoka, sans-serif`
+    ctx.textAlign = "center"
+    ctx.fillText(config.slogan, W / 2, sloganY)
     ctx.textAlign = "start"
   }
 
@@ -218,12 +240,23 @@ function drawLandscape(
   drawSwitchIcon(ctx, colCX - 180, logoY - 24, 48)
   drawColoredLogo(ctx, "Pokopia Guide", colCX - 125, logoY, 40)
 
-  // Nickname
+  // Nickname + Slogan
+  let lSubtitleY = logoY + 70
+
   if (config.nickname) {
     ctx.fillStyle = TEXT_SECONDARY
     ctx.font = `600 32px Fredoka, sans-serif`
     ctx.textAlign = "center"
-    ctx.fillText(config.nickname, colCX, logoY + 80)
+    ctx.fillText(config.nickname, colCX, lSubtitleY)
+    lSubtitleY += 45
+  }
+
+  if (config.slogan) {
+    const sloganY = Math.max(lSubtitleY, logoY + 115)
+    ctx.fillStyle = "rgba(255, 255, 255, 0.5)"
+    ctx.font = `500 24px Fredoka, sans-serif`
+    ctx.textAlign = "center"
+    ctx.fillText(config.slogan, colCX, sloganY)
     ctx.textAlign = "start"
   }
 

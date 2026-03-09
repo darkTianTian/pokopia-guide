@@ -6,6 +6,7 @@ import { renderShareCard, renderShareCardToPreview, type ShareCardConfig } from 
 interface ShareCardCanvasProps {
   orientation: "portrait" | "landscape"
   nickname: string
+  slogan: string
   caughtSlugs: string[]
   totalCount: number
   onReady?: (getBlob: () => Promise<Blob>) => void
@@ -14,6 +15,7 @@ interface ShareCardCanvasProps {
 export function ShareCardCanvas({
   orientation,
   nickname,
+  slogan,
   caughtSlugs,
   totalCount,
   onReady,
@@ -37,6 +39,7 @@ export function ShareCardCanvas({
       const config: ShareCardConfig = {
         orientation,
         nickname,
+        slogan,
         caughtSlugs,
         totalCount,
         spriteSheet,
@@ -59,7 +62,7 @@ export function ShareCardCanvas({
     } finally {
       setLoading(false)
     }
-  }, [orientation, nickname, caughtSlugs, totalCount, onReady])
+  }, [orientation, nickname, slogan, caughtSlugs, totalCount, onReady])
 
   useEffect(() => {
     // Load Fredoka font before drawing
