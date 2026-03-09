@@ -44,32 +44,38 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
     `
     document.body.appendChild(flyingClone)
 
-    // Calculate Final Target coordinates
+    // Calculate Final Target coordinates (relative to viewport)
     let targetX = 0
     let targetY = 0
 
     const progressRing = document.getElementById("collection-progress-ring")
     const headerWishlist = document.getElementById("header-wishlist-icon")
 
+    // Determine target based on what's visible in the viewport
+    let hasTarget = false
     if (progressRing) {
       const ringRect = progressRing.getBoundingClientRect()
-      // Default to top-right viewport corner if scrolled way down
       if (ringRect.top > -50 && ringRect.bottom < window.innerHeight + 50) {
-        // Fly to the progress circle part of the pill (roughly 30px from left)
         targetX = ringRect.left + 30
         targetY = ringRect.top + ringRect.height / 2
-      } else {
-        targetX = window.innerWidth - 60
-        targetY = 20
+        hasTarget = true
       }
-    } else if (headerWishlist) {
+    }
+
+    // If progress ring is not visible, check for header wishlist icon as fallback
+    if (!hasTarget && headerWishlist) {
       const wishRect = headerWishlist.getBoundingClientRect()
-      targetX = wishRect.left + wishRect.width / 2
-      targetY = wishRect.top + wishRect.height / 2
-    } else {
-      // Ultimate fallback: top right corner
-      targetX = window.innerWidth - 60
-      targetY = 20
+      if (wishRect.top > -50 && wishRect.bottom < window.innerHeight + 50) {
+        targetX = wishRect.left + wishRect.width / 2
+        targetY = wishRect.top + wishRect.height / 2
+        hasTarget = true
+      }
+    }
+
+    // Ultimate fallback: Fixed top right corner of the VIEWPORT
+    if (!hasTarget) {
+      targetX = window.innerWidth - 60 // 60px from the right edge
+      targetY = 20                     // 20px from the top edge
     }
 
     // Find closest Pokemon image for Stage 1 interaction
@@ -94,36 +100,47 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
         const originalTransition = imgEl.style.transition
         const originalFilter = imgEl.style.filter
         const originalTransform = imgEl.style.transform
+        const originalOpacity = imgEl.style.opacity
 
+        // Flash Red
         imgEl.style.transition = "all 0.15s ease-out"
         imgEl.style.filter = "brightness(1.5) drop-shadow(0 0 20px rgba(239,68,68,0.8))"
         imgEl.style.transform = "scale(0.95)"
 
-        // Pokeball Wobble
+        // Pokeball Wobble (Left)
         flyingClone.style.transition = "transform 0.1s ease-in-out"
         flyingClone.style.transform = `translate(${midX - btnRect.left - 16}px, ${midY - btnRect.top - 16}px) scale(1.5) rotate(-15deg)`
 
         setTimeout(() => {
+          // Vanish the Pokemon (sucked into the ball)
+          imgEl.style.opacity = "0"
+          imgEl.style.transform = "scale(0.5)"
+          imgEl.style.filter = "brightness(2) drop-shadow(0 0 30px rgba(239,68,68,1))"
+
+          // Pokeball Wobble (Right)
           flyingClone.style.transform = `translate(${midX - btnRect.left - 16}px, ${midY - btnRect.top - 16}px) scale(1.5) rotate(15deg)`
 
           setTimeout(() => {
-            // Restore Image
-            imgEl.style.filter = originalFilter
-            imgEl.style.transform = originalTransform
-            setTimeout(() => { imgEl.style.transition = originalTransition }, 150)
-
             // Stage 2: Fly to Progress Ring
             flyingClone.style.transition = "all 0.6s cubic-bezier(0.5, 0, 0.2, 1)"
             flyingClone.style.transform = `translate(${targetX - btnRect.left - 16}px, ${targetY - btnRect.top - 16}px) scale(0.5)`
             flyingClone.style.opacity = "0"
 
             setTimeout(() => {
+              // Restore Image after the ball flies away
+              imgEl.style.transition = "opacity 0.4s ease-in-out, transform 0.4s ease-out, filter 0.4s ease-out"
+              imgEl.style.opacity = originalOpacity || "1"
+              imgEl.style.filter = originalFilter
+              imgEl.style.transform = originalTransform
+
+              setTimeout(() => { imgEl.style.transition = originalTransition }, 400)
+
               if (document.body.contains(flyingClone)) {
                 document.body.removeChild(flyingClone)
               }
             }, 600)
-          }, 100)
-        }, 100)
+          }, 150)
+        }, 150)
       }, 400)
     } else {
       // Fallback if no image found: direct flight to Target
