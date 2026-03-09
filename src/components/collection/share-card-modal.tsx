@@ -160,7 +160,15 @@ export function ShareCardModal({
             orientation={orientation}
             layoutStyle={layoutStyle}
             nickname={nickname}
-            slogan={t(getSloganKey(totalCount > 0 ? Math.round((caughtSlugs.length / totalCount) * 100) : 0))}
+            slogan={t(
+              getSloganKey(
+                totalCount > 0
+                  ? caughtSlugs.length === totalCount
+                    ? 100
+                    : Math.min(Math.round((caughtSlugs.length / totalCount) * 100), 99)
+                  : 0
+              )
+            )}
             caughtSlugs={caughtSlugs}
             totalCount={totalCount}
             onReady={handleReady}
