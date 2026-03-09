@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState, useEffect } from "react"
+import { useMemo, useState, useEffect, useRef, useCallback } from "react"
 import Image from "next/image"
 import { Search, X } from "lucide-react"
 import { SafeImage } from "@/components/ui/safe-image"
@@ -137,6 +137,40 @@ export function PokemonGrid({
 
   const hasFilters = query || selectedTypes.size > 0 || selectedSpecs.size > 0
 
+  const BATCH_SIZE = 24
+  const [visibleCount, setVisibleCount] = useState(BATCH_SIZE)
+  const loaderRef = useRef<HTMLDivElement>(null)
+
+  // Reset visible count when filters change
+  useEffect(() => {
+    setVisibleCount(BATCH_SIZE)
+  }, [query, selectedTypes, selectedSpecs])
+
+  const visiblePokemon = useMemo(
+    () => filtered.slice(0, visibleCount),
+    [filtered, visibleCount]
+  )
+
+  const hasMore = visibleCount < filtered.length
+
+  const loadMore = useCallback(() => {
+    setVisibleCount((prev) => Math.min(prev + BATCH_SIZE, filtered.length))
+  }, [filtered.length])
+
+  // IntersectionObserver for infinite scroll
+  useEffect(() => {
+    const el = loaderRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) loadMore()
+      },
+      { rootMargin: "200px" }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [loadMore])
+
   function clearFilters() {
     setQuery("")
     setSelectedTypes(new Set())
@@ -247,12 +281,15 @@ export function PokemonGrid({
       </div>
 
       {/* Results */}
-      {filtered.length > 0 ? (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((p) => (
-            <PokemonCard key={p.slug} pokemon={p} locale={locale} headingLevel={headingLevel} />
-          ))}
-        </div>
+      {visiblePokemon.length > 0 ? (
+        <>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {visiblePokemon.map((p) => (
+              <PokemonCard key={p.slug} pokemon={p} locale={locale} headingLevel={headingLevel} />
+            ))}
+          </div>
+          {hasMore && <div ref={loaderRef} className="h-10" />}
+        </>
       ) : (
         <p className="py-12 text-center text-muted-foreground">
           {tr.pokedex.noResults}
