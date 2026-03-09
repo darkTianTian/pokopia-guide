@@ -100,7 +100,20 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                   : "ring-emerald-500/50 group-hover:ring-emerald-500"
 
             return (
-              <article key={habitat.id} className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl">
+              <article
+                key={habitat.id}
+                role="link"
+                tabIndex={0}
+                onClick={() => {
+                  window.location.href = getLocalePath(locale, `/habitat/${habitat.slug}`)
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    window.location.href = getLocalePath(locale, `/habitat/${habitat.slug}`)
+                  }
+                }}
+                className="group relative flex cursor-pointer flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-border/80 hover:bg-background/60 hover:shadow-xl"
+              >
                 <span className="absolute top-4 left-1/2 -translate-x-1/2 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
                   #{String(habitat.id).padStart(3, "0")}
                 </span>
