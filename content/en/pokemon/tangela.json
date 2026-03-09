@@ -7,15 +7,33 @@
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/tangela.png",
   "pokopia": {
-    "specialties": [],
+    "specialties": [
+      "grow",
+      "litter"
+    ],
     "favorites": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
     "evolvesTo": [
       "tangrowth"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 49,
+        "name": "Habitat 49",
+        "rarity": "common"
+      }
+    ]
   }
 }
