@@ -22,27 +22,66 @@ export function getSloganKey(percentage: number): string {
 }
 
 const SPRITE_SIZE = 96
-const TEXT_PRIMARY = "#ffffff"
-const TEXT_SECONDARY = "rgba(255, 255, 255, 0.7)"
-const EMERALD = "#34d399" // emerald-400
-const EMERALD_BG = "rgba(52, 211, 153, 0.2)"
+const TEXT_PRIMARY = "#0f172a"
+const TEXT_SECONDARY = "#475569"
 
 function drawGradientBg(ctx: CanvasRenderingContext2D, w: number, h: number) {
-  // Dark base
-  ctx.fillStyle = "#0f172a"
+  // Light creamy base
+  ctx.fillStyle = "#f8fafc"
   ctx.fillRect(0, 0, w, h)
 
-  // Logo six colors as soft diagonal gradient overlay
+  // Soft pastel gradients overlay
   const grad = ctx.createLinearGradient(0, 0, w, h)
-  grad.addColorStop(0, "rgba(56, 189, 248, 0.25)")    // blue
-  grad.addColorStop(0.2, "rgba(74, 222, 128, 0.2)")   // green
-  grad.addColorStop(0.4, "rgba(251, 191, 36, 0.18)")  // yellow
-  grad.addColorStop(0.6, "rgba(251, 146, 60, 0.2)")   // orange
-  grad.addColorStop(0.8, "rgba(244, 114, 182, 0.22)") // pink
-  grad.addColorStop(1, "rgba(192, 132, 252, 0.25)")   // purple
+  grad.addColorStop(0, "rgba(167, 243, 208, 0.4)")    // emerald-200
+  grad.addColorStop(0.3, "rgba(186, 230, 253, 0.4)")  // sky-200
+  grad.addColorStop(0.7, "rgba(254, 215, 170, 0.3)")  // orange-200
+  grad.addColorStop(1, "rgba(252, 165, 165, 0.3)")    // red-300
 
   ctx.fillStyle = grad
   ctx.fillRect(0, 0, w, h)
+
+  // Decorative blobs
+  ctx.filter = "blur(80px)"
+  ctx.fillStyle = "rgba(134, 239, 172, 0.4)" // green-300
+  ctx.beginPath()
+  ctx.arc(w * 0.2, h * 0.2, Math.max(w, h) * 0.2, 0, Math.PI * 2)
+  ctx.fill()
+
+  ctx.fillStyle = "rgba(147, 197, 253, 0.4)" // blue-300
+  ctx.beginPath()
+  ctx.arc(w * 0.8, h * 0.8, Math.max(w, h) * 0.2, 0, Math.PI * 2)
+  ctx.fill()
+  ctx.filter = "none"
+}
+
+function drawRoundedRect(
+  ctx: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  w: number,
+  h: number,
+  r: number,
+  fillColor: string,
+  strokeColor: string
+) {
+  ctx.beginPath()
+  ctx.moveTo(x + r, y)
+  ctx.lineTo(x + w - r, y)
+  ctx.arcTo(x + w, y, x + w, y + r, r)
+  ctx.lineTo(x + w, y + h - r)
+  ctx.arcTo(x + w, y + h, x + w - r, y + h, r)
+  ctx.lineTo(x + r, y + h)
+  ctx.arcTo(x, y + h, x, y + h - r, r)
+  ctx.lineTo(x, y + r)
+  ctx.arcTo(x, y, x + r, y, r)
+  ctx.closePath()
+
+  ctx.fillStyle = fillColor
+  ctx.fill()
+
+  ctx.lineWidth = 4
+  ctx.strokeStyle = strokeColor
+  ctx.stroke()
 }
 
 function drawProgressRing(
@@ -56,7 +95,7 @@ function drawProgressRing(
   // Background ring
   ctx.beginPath()
   ctx.arc(cx, cy, radius, 0, Math.PI * 2)
-  ctx.strokeStyle = EMERALD_BG
+  ctx.strokeStyle = "rgba(0, 0, 0, 0.05)"
   ctx.lineWidth = strokeWidth
   ctx.stroke()
 
@@ -64,19 +103,42 @@ function drawProgressRing(
   const startAngle = -Math.PI / 2
   const endAngle = startAngle + (percentage / 100) * Math.PI * 2
 
+  // Gradient based on milestone
+  let fromColor = "#f59e0b" // amber-500
+  let toColor = "#ea580c"   // orange-600
+  let textColor = "#d97706" // amber-600
+
+  if (percentage === 100) {
+    fromColor = "#10b981"
+    toColor = "#f59e0b"
+    textColor = "#059669" // emerald-600
+  } else if (percentage >= 67) {
+    fromColor = "#c026d3"
+    toColor = "#8b5cf6"
+    textColor = "#c026d3" // fuchsia-600
+  } else if (percentage >= 34) {
+    fromColor = "#06b6d4"
+    toColor = "#3b82f6"
+    textColor = "#0284c7" // light blue-600
+  }
+
+  const grad = ctx.createLinearGradient(cx - radius, cy - radius, cx + radius, cy + radius)
+  grad.addColorStop(0, fromColor)
+  grad.addColorStop(1, toColor)
+
   ctx.beginPath()
   ctx.arc(cx, cy, radius, startAngle, endAngle)
-  ctx.strokeStyle = EMERALD
+  ctx.strokeStyle = grad
   ctx.lineWidth = strokeWidth
   ctx.lineCap = "round"
   ctx.stroke()
 
   // Percentage text
-  ctx.fillStyle = EMERALD
-  ctx.font = `700 ${radius * 0.7}px Fredoka, sans-serif`
+  ctx.fillStyle = textColor
+  ctx.font = `800 ${radius * 0.7}px Fredoka, sans-serif`
   ctx.textAlign = "center"
   ctx.textBaseline = "middle"
-  ctx.fillText(`${percentage}%`, cx, cy - radius * 0.1)
+  ctx.fillText(`${percentage}%`, cx, cy - radius * 0.02)
 
   // Reset text align
   ctx.textAlign = "start"
@@ -159,58 +221,73 @@ function drawPortrait(
   percentage: number,
   countText: string
 ) {
-  // ── Top: Logo + Nickname (~200px) ──
-  const logoY = 80
+  const margin = 40
+  const boxFill = "rgba(255, 255, 255, 0.6)" // Frosted glass look
+  const boxStroke = "rgba(255, 255, 255, 0.8)"
+  const boxRadius = 48
+
+  // ── 1. Top: Logo + Nickname Box ──
+  const headerY = margin
+  const headerH = 280
+  drawRoundedRect(ctx, margin, headerY, W - margin * 2, headerH, boxRadius, boxFill, boxStroke)
+
+  const logoY = headerY + 80
   drawSwitchIcon(ctx, W / 2 - 180, logoY - 24, 48)
   drawColoredLogo(ctx, "Pokopia Guide", W / 2 - 125, logoY, 40)
 
-  let subtitleY = logoY + 60
+  let subtitleY = logoY + 65
 
   if (config.nickname) {
-    ctx.fillStyle = TEXT_SECONDARY
-    ctx.font = `600 32px Fredoka, sans-serif`
+    ctx.fillStyle = TEXT_PRIMARY
+    ctx.font = `700 36px Fredoka, sans-serif`
     ctx.textAlign = "center"
     ctx.fillText(config.nickname, W / 2, subtitleY)
-    subtitleY += 45
+    subtitleY += 50
   }
 
   if (config.slogan) {
-    const sloganY = Math.max(subtitleY, logoY + 105)
-    ctx.fillStyle = "rgba(255, 255, 255, 0.5)"
-    ctx.font = `500 26px Fredoka, sans-serif`
+    const sloganY = Math.max(subtitleY, logoY + 110)
+    ctx.fillStyle = TEXT_SECONDARY
+    ctx.font = `600 28px Fredoka, sans-serif`
     ctx.textAlign = "center"
     ctx.fillText(config.slogan, W / 2, sloganY)
     ctx.textAlign = "start"
   }
 
-  // ── Progress Ring (~250px) ──
-  const ringCY = 340
-  const ringRadius = 80
-  drawProgressRing(ctx, W / 2, ringCY, ringRadius, percentage, 12)
+  // ── 2. Progress Ring Box ──
+  const ringBoxY = headerY + headerH + margin
+  const ringBoxH = 340
+  drawRoundedRect(ctx, margin, ringBoxY, W - margin * 2, ringBoxH, boxRadius, boxFill, boxStroke)
+
+  const ringCY = ringBoxY + 150
+  const ringRadius = 100
+  drawProgressRing(ctx, W / 2, ringCY, ringRadius, percentage, 24)
 
   // Count text below ring
   ctx.fillStyle = TEXT_SECONDARY
-  ctx.font = `600 28px Fredoka, sans-serif`
+  ctx.font = `700 32px Fredoka, sans-serif`
   ctx.textAlign = "center"
-  ctx.fillText(countText, W / 2, ringCY + ringRadius + 40)
+  ctx.fillText(countText, W / 2, ringCY + ringRadius + 50)
   ctx.textAlign = "start"
 
-  // ── Pokemon Grid ──
-  const gridY = 480
-  const gridH = H - gridY - 140
-  drawPokemonGrid(ctx, config, 40, gridY, W - 80, gridH)
+  // ── 3. Pokemon Grid Box ──
+  const gridBoxY = ringBoxY + ringBoxH + margin
+  const gridBoxH = H - gridBoxY - margin - 80 // Leave space for footer
+  drawRoundedRect(ctx, margin, gridBoxY, W - margin * 2, gridBoxH, boxRadius, boxFill, boxStroke)
 
-  // ── Bottom: Date + URL ──
-  const bottomY = H - 100
+  drawPokemonGrid(ctx, config, margin + 20, gridBoxY + 20, W - margin * 2 - 40, gridBoxH - 40)
+
+  // ── 4. Footer: Date + URL ──
+  const footerY = H - margin - 15
 
   ctx.fillStyle = TEXT_SECONDARY
-  ctx.font = `500 24px Fredoka, sans-serif`
-  ctx.textAlign = "center"
-  ctx.fillText(config.dateString, W / 2, bottomY)
+  ctx.font = `600 26px Fredoka, sans-serif`
+  ctx.fillText(config.dateString, margin + 20, footerY)
 
+  ctx.textAlign = "right"
   ctx.fillStyle = TEXT_PRIMARY
-  ctx.font = `600 28px Fredoka, sans-serif`
-  ctx.fillText("pokopiaguide.com", W / 2, bottomY + 40)
+  ctx.font = `700 30px Fredoka, sans-serif`
+  ctx.fillText("pokopiaguide.com", W - margin - 20, footerY)
   ctx.textAlign = "start"
 }
 
@@ -222,73 +299,78 @@ function drawLandscape(
   percentage: number,
   countText: string
 ) {
-  const LEFT_W = 600
+  const margin = 40
+  const boxFill = "rgba(255, 255, 255, 0.6)"
+  const boxStroke = "rgba(255, 255, 255, 0.8)"
+  const boxRadius = 48
+  const leftW = 680
 
-  // Subtle separator line
-  ctx.strokeStyle = "rgba(255, 255, 255, 0.08)"
-  ctx.lineWidth = 2
-  ctx.beginPath()
-  ctx.moveTo(LEFT_W, 40)
-  ctx.lineTo(LEFT_W, H - 40)
-  ctx.stroke()
+  // ── 1. Left Column: Header Box ──
+  const headerY = margin
+  const headerH = 300
+  drawRoundedRect(ctx, margin, headerY, leftW, headerH, boxRadius, boxFill, boxStroke)
 
-  // ── Left Column ──
-  const colCX = LEFT_W / 2
-
-  // Logo
-  const logoY = 120
+  const colCX = margin + leftW / 2
+  const logoY = headerY + 100
   drawSwitchIcon(ctx, colCX - 180, logoY - 24, 48)
   drawColoredLogo(ctx, "Pokopia Guide", colCX - 125, logoY, 40)
 
-  // Nickname + Slogan
   let lSubtitleY = logoY + 70
 
   if (config.nickname) {
-    ctx.fillStyle = TEXT_SECONDARY
-    ctx.font = `600 32px Fredoka, sans-serif`
+    ctx.fillStyle = TEXT_PRIMARY
+    ctx.font = `700 36px Fredoka, sans-serif`
     ctx.textAlign = "center"
     ctx.fillText(config.nickname, colCX, lSubtitleY)
-    lSubtitleY += 45
+    lSubtitleY += 50
   }
 
   if (config.slogan) {
-    const sloganY = Math.max(lSubtitleY, logoY + 115)
-    ctx.fillStyle = "rgba(255, 255, 255, 0.5)"
-    ctx.font = `500 24px Fredoka, sans-serif`
+    const sloganY = Math.max(lSubtitleY, logoY + 120)
+    ctx.fillStyle = TEXT_SECONDARY
+    ctx.font = `600 28px Fredoka, sans-serif`
     ctx.textAlign = "center"
     ctx.fillText(config.slogan, colCX, sloganY)
     ctx.textAlign = "start"
   }
 
-  // Progress ring
-  const ringCY = 420
-  const ringRadius = 100
-  drawProgressRing(ctx, colCX, ringCY, ringRadius, percentage, 14)
+  // ── 2. Left Column: Progress Ring Box ──
+  const ringBoxY = headerY + headerH + margin
+  const ringBoxH = H - ringBoxY - margin - 80 // Leave space for footer
+  drawRoundedRect(ctx, margin, ringBoxY, leftW, ringBoxH, boxRadius, boxFill, boxStroke)
+
+  const ringCY = ringBoxY + (ringBoxH / 2) - 30
+  const ringRadius = 120
+  drawProgressRing(ctx, colCX, ringCY, ringRadius, percentage, 28)
 
   // Count text
   ctx.fillStyle = TEXT_SECONDARY
-  ctx.font = `600 30px Fredoka, sans-serif`
+  ctx.font = `700 36px Fredoka, sans-serif`
   ctx.textAlign = "center"
-  ctx.fillText(countText, colCX, ringCY + ringRadius + 50)
+  ctx.fillText(countText, colCX, ringCY + ringRadius + 60)
   ctx.textAlign = "start"
 
-  // Date + URL at bottom of left column
-  const bottomY = H - 120
+  // ── 3. Right Column: Pokemon Grid Box ──
+  const rightX = margin + leftW + margin
+  const rightW = W - rightX - margin
+  const gridBoxH = H - margin * 2 - 80
+  drawRoundedRect(ctx, rightX, margin, rightW, gridBoxH, boxRadius, boxFill, boxStroke)
+
+  drawPokemonGrid(ctx, config, rightX + 20, margin + 20, rightW - 40, gridBoxH - 40)
+
+  // ── 4. Footer: Date + URL ──
+  const footerY = H - margin - 15
 
   ctx.fillStyle = TEXT_SECONDARY
-  ctx.font = `500 22px Fredoka, sans-serif`
-  ctx.textAlign = "center"
-  ctx.fillText(config.dateString, colCX, bottomY)
-
-  ctx.fillStyle = TEXT_PRIMARY
   ctx.font = `600 26px Fredoka, sans-serif`
-  ctx.fillText("pokopiaguide.com", colCX, bottomY + 40)
-  ctx.textAlign = "start"
+  ctx.textAlign = "left"
+  ctx.fillText(config.dateString, margin + 20, footerY)
 
-  // ── Right Column: Pokemon Grid ──
-  const rightX = LEFT_W + 20
-  const rightW = W - LEFT_W - 40
-  drawPokemonGrid(ctx, config, rightX, 30, rightW, H - 80)
+  ctx.textAlign = "right"
+  ctx.fillStyle = TEXT_PRIMARY
+  ctx.font = `700 30px Fredoka, sans-serif`
+  ctx.fillText("pokopiaguide.com", W - margin - 20, footerY)
+  ctx.textAlign = "start"
 }
 
 export async function renderShareCardToPreview(

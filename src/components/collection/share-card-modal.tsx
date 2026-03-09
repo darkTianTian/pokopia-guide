@@ -83,7 +83,7 @@ export function ShareCardModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className={`max-h-[90vh] overflow-y-auto ${orientation === "landscape" ? "sm:max-w-5xl" : "sm:max-w-xl"}`}>
+      <DialogContent className={`max-h-[90vh] overflow-y-auto border-border/40 bg-background/80 backdrop-blur-xl shadow-2xl ${orientation === "landscape" ? "sm:max-w-5xl" : "sm:max-w-xl"}`}>
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
             <Share2 className="h-5 w-5" />
@@ -105,6 +105,7 @@ export function ShareCardModal({
               onChange={(e) => setNickname(e.target.value)}
               placeholder={t("collection.shareCard.nicknamePlaceholder")}
               maxLength={20}
+              className="rounded-xl border-border/50 bg-background/50 backdrop-blur-sm font-medium"
             />
           </div>
 
@@ -114,7 +115,7 @@ export function ShareCardModal({
               variant={orientation === "portrait" ? "default" : "outline"}
               size="sm"
               onClick={() => setOrientation("portrait")}
-              className="flex-1"
+              className="flex-1 rounded-full shadow-sm transition-all"
             >
               <Smartphone className="h-4 w-4 mr-1.5" />
               {t("collection.shareCard.portrait")}
@@ -123,7 +124,7 @@ export function ShareCardModal({
               variant={orientation === "landscape" ? "default" : "outline"}
               size="sm"
               onClick={() => setOrientation("landscape")}
-              className="flex-1"
+              className="flex-1 rounded-full shadow-sm transition-all"
             >
               <Monitor className="h-4 w-4 mr-1.5" />
               {t("collection.shareCard.landscape")}
@@ -141,11 +142,11 @@ export function ShareCardModal({
           />
 
           {/* Action buttons */}
-          <div className="flex gap-2">
+          <div className="flex gap-2 pt-2">
             <Button
               onClick={handleShare}
               disabled={generating}
-              className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white"
+              className="flex-1 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-md text-white transition-all duration-300"
             >
               <Share2 className="h-4 w-4 mr-1.5" />
               {generating ? t("collection.shareCard.generating") : t("collection.shareCard.share")}
@@ -154,7 +155,7 @@ export function ShareCardModal({
               variant="outline"
               onClick={handleDownload}
               disabled={generating}
-              className="flex-1"
+              className="flex-1 rounded-full shadow-sm hover:bg-black/5 dark:hover:bg-white/10 transition-all duration-300 border-border/50 bg-background/50 backdrop-blur-sm"
             >
               <Download className="h-4 w-4 mr-1.5" />
               {t("collection.shareCard.download")}
