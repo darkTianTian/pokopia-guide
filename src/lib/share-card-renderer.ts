@@ -144,41 +144,75 @@ function drawProgressRing(
   ctx.textAlign = "start"
 }
 
-function drawPokemonGrid(
+function drawPokemonClassPhoto(
   ctx: CanvasRenderingContext2D,
   config: ShareCardConfig,
   startX: number,
   startY: number,
-  gridWidth: number,
-  gridHeight: number
+  boxWidth: number,
+  boxHeight: number
 ) {
   const { caughtSlugs, spriteSheet, spriteMap } = config
-  const cellSize = 72
-  const cols = Math.floor(gridWidth / cellSize)
-  const maxRows = Math.floor(gridHeight / cellSize)
-  const maxVisible = cols * maxRows
+  if (caughtSlugs.length === 0) return
 
-  const slugsToShow = caughtSlugs.slice(0, maxVisible)
-  const totalPadX = (gridWidth - cols * cellSize) / 2
-  const totalPadY = (gridHeight - Math.min(Math.ceil(slugsToShow.length / cols), maxRows) * cellSize) / 2
+  // Limit how many we actually try to draw so it doesn't get completely absurd 
+  // (though the overlapping allows for hundreds easily)
+  const maxToDraw = Math.min(caughtSlugs.length, 300)
+  const slugsToShow = caughtSlugs.slice(0, maxToDraw)
 
-  for (let i = 0; i < slugsToShow.length; i++) {
-    const slug = slugsToShow[i]
-    const pos = spriteMap[slug]
-    if (!pos) continue
+  // Sizing definitions for the "Class Photo" overlap effect
+  const renderSize = 64
+  const overlapX = 42 // Horizontal spacing (tight, shoulder to shoulder)
+  const overlapY = 38 // Vertical spacing (highly overlapped back-to-front)
 
-    const col = i % cols
-    const row = Math.floor(i / cols)
-    if (row >= maxRows) break
+  // Calculate how many rows we need to fit the group into the given box width
+  // Each row is offset, so we calculate roughly how many fit per row
+  const colsPerRow = Math.max(1, Math.floor((boxWidth - renderSize) / overlapX))
+  const numRows = Math.ceil(slugsToShow.length / colsPerRow)
 
-    const dx = startX + totalPadX + col * cellSize + (cellSize - 64) / 2
-    const dy = startY + totalPadY + row * cellSize + (cellSize - 64) / 2
+  // Calculate the total actual width/height the group will consume
+  const totalGroupHeight = renderSize + (numRows - 1) * overlapY
 
-    ctx.drawImage(
-      spriteSheet,
-      pos.x, pos.y, SPRITE_SIZE, SPRITE_SIZE,
-      dx, dy, 64, 64
-    )
+  // Vertical centering offset
+  const offsetY = startY + Math.max(0, (boxHeight - totalGroupHeight) / 2)
+
+  // State to track index
+  let i = 0
+
+  // Draw from back to front (top row down to bottom row)
+  for (let row = 0; row < numRows; row++) {
+    // Add an alternating stagger so the heads peak between the shoulders of the row behind
+    const staggerOffset = row % 2 === 0 ? 0 : overlapX / 2
+
+    // Determine bounds for this specific row
+    const startColIndex = i
+    const endColIndex = Math.min(i + colsPerRow, slugsToShow.length)
+    const itemsInThisRow = endColIndex - startColIndex
+
+    // Calculate total width of JUST this row to center it horizontally perfectly
+    const rowWidth = renderSize + (itemsInThisRow - 1) * overlapX
+    const offsetX = startX + staggerOffset + Math.max(0, (boxWidth - rowWidth) / 2)
+
+    // Draw all sprites for this row
+    for (let col = 0; col < itemsInThisRow; col++) {
+      const slug = slugsToShow[i]
+      i++
+
+      const pos = spriteMap[slug]
+      if (!pos) continue
+
+      // Calculate final x,y for this specific sprite including a subtle organic "wave"
+      const waveOffset = Math.sin(col * 0.5) * 2 // slight bounce
+
+      const dx = offsetX + col * overlapX
+      const dy = offsetY + row * overlapY + waveOffset
+
+      ctx.drawImage(
+        spriteSheet,
+        pos.x, pos.y, SPRITE_SIZE, SPRITE_SIZE,
+        dx, dy, renderSize, renderSize
+      )
+    }
   }
 }
 
@@ -275,7 +309,7 @@ function drawPortrait(
   const gridBoxH = H - gridBoxY - margin - 80 // Leave space for footer
   drawRoundedRect(ctx, margin, gridBoxY, W - margin * 2, gridBoxH, boxRadius, boxFill, boxStroke)
 
-  drawPokemonGrid(ctx, config, margin + 20, gridBoxY + 20, W - margin * 2 - 40, gridBoxH - 40)
+  drawPokemonClassPhoto(ctx, config, margin + 20, gridBoxY + 20, W - margin * 2 - 40, gridBoxH - 40)
 
   // ── 4. Footer: Date + URL ──
   const footerY = H - margin - 15
@@ -356,7 +390,7 @@ function drawLandscape(
   const gridBoxH = H - margin * 2 - 80
   drawRoundedRect(ctx, rightX, margin, rightW, gridBoxH, boxRadius, boxFill, boxStroke)
 
-  drawPokemonGrid(ctx, config, rightX + 20, margin + 20, rightW - 40, gridBoxH - 40)
+  drawPokemonClassPhoto(ctx, config, rightX + 20, margin + 20, rightW - 40, gridBoxH - 40)
 
   // ── 4. Footer: Date + URL ──
   const footerY = H - margin - 15
