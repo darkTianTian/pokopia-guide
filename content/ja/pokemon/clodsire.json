@@ -39,6 +39,11 @@
         "id": 54,
         "name": "沼地の草むら",
         "rarity": "rare"
+      },
+      {
+        "id": 186,
+        "name": "沼釣り",
+        "rarity": "rare"
       }
     ]
   }

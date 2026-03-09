@@ -29,6 +29,11 @@
     ],
     "habitats": [
       {
+        "id": 151,
+        "name": "Surging psychic power",
+        "rarity": "common"
+      },
+      {
         "id": 152,
         "name": "Fortune-teller's table",
         "rarity": "common"

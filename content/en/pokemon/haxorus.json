@@ -38,6 +38,11 @@
         "id": 29,
         "name": "Lumberjack's workplace",
         "rarity": "rare"
+      },
+      {
+        "id": 44,
+        "name": "Crazy log handicrafts",
+        "rarity": "very-rare"
       }
     ]
   }

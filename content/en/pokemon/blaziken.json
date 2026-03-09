@@ -41,6 +41,11 @@
         "rarity": "very-rare"
       },
       {
+        "id": 79,
+        "name": "Resort meal prep",
+        "rarity": "rare"
+      },
+      {
         "id": 87,
         "name": "Furnace Spot",
         "rarity": "rare"

@@ -28,6 +28,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 66,
+        "name": "Park bench",
+        "rarity": "very-rare"
+      },
+      {
         "id": 90,
         "name": "Playing pirate",
         "rarity": "common"

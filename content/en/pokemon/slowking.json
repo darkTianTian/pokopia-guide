@@ -41,6 +41,11 @@
         "rarity": "very-rare"
       },
       {
+        "id": 30,
+        "name": "Bed with a plush",
+        "rarity": "rare"
+      },
+      {
         "id": 184,
         "name": "Fishing pond",
         "rarity": "rare"
