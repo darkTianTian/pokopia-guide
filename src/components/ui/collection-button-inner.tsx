@@ -25,7 +25,7 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
 
     // Create a clone of the Pokeball SVG to fly
     const flyingClone = document.createElement("div")
-    flyingClone.className = "fixed z-[100] pointer-events-none transition-all duration-[700ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] flex items-center justify-center rounded-full bg-white shadow-lg ring-1 ring-border/50"
+    flyingClone.className = "fixed z-[100] pointer-events-none flex items-center justify-center rounded-full bg-white shadow-lg ring-1 ring-border/50"
     flyingClone.style.width = "32px"
     flyingClone.style.height = "32px"
     flyingClone.style.left = `${btnRect.left}px`
@@ -44,7 +44,7 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
     `
     document.body.appendChild(flyingClone)
 
-    // Calculate Target coordinates
+    // Calculate Final Target coordinates
     let targetX = 0
     let targetY = 0
 
@@ -72,17 +72,72 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
       targetY = 20
     }
 
+    // Find closest Pokemon image for Stage 1 interaction
+    const container = buttonRef.current.closest('article, .rounded-\\[3rem\\]')
+    const imgEl = container?.querySelector('img') as HTMLElement | null
+
     // Force reflow
     void flyingClone.offsetWidth
 
-    // Trigger CSS transition
-    flyingClone.style.transform = `translate(${targetX - btnRect.left - 16}px, ${targetY - btnRect.top - 16}px) scale(0.5)`
-    flyingClone.style.opacity = "0"
-    flyingClone.style.boxShadow = "0 0 20px 10px rgba(239, 68, 68, 0.5)" // Red glow during flight
+    if (imgEl) {
+      const imgRect = imgEl.getBoundingClientRect()
+      const midX = imgRect.left + imgRect.width / 2
+      const midY = imgRect.top + imgRect.height / 2
 
-    setTimeout(() => {
-      document.body.removeChild(flyingClone)
-    }, 700)
+      // Stage 1: Fly to Image
+      flyingClone.style.transition = "all 0.4s cubic-bezier(0.34,1.56,0.64,1)"
+      flyingClone.style.transform = `translate(${midX - btnRect.left - 16}px, ${midY - btnRect.top - 16}px) scale(1.5)`
+      flyingClone.style.boxShadow = "0 0 20px 10px rgba(239, 68, 68, 0.5)" // Red glow
+
+      setTimeout(() => {
+        // The Impact/Catch Effect
+        const originalTransition = imgEl.style.transition
+        const originalFilter = imgEl.style.filter
+        const originalTransform = imgEl.style.transform
+
+        imgEl.style.transition = "all 0.15s ease-out"
+        imgEl.style.filter = "brightness(1.5) drop-shadow(0 0 20px rgba(239,68,68,0.8))"
+        imgEl.style.transform = "scale(0.95)"
+
+        // Pokeball Wobble
+        flyingClone.style.transition = "transform 0.1s ease-in-out"
+        flyingClone.style.transform = `translate(${midX - btnRect.left - 16}px, ${midY - btnRect.top - 16}px) scale(1.5) rotate(-15deg)`
+
+        setTimeout(() => {
+          flyingClone.style.transform = `translate(${midX - btnRect.left - 16}px, ${midY - btnRect.top - 16}px) scale(1.5) rotate(15deg)`
+
+          setTimeout(() => {
+            // Restore Image
+            imgEl.style.filter = originalFilter
+            imgEl.style.transform = originalTransform
+            setTimeout(() => { imgEl.style.transition = originalTransition }, 150)
+
+            // Stage 2: Fly to Progress Ring
+            flyingClone.style.transition = "all 0.6s cubic-bezier(0.5, 0, 0.2, 1)"
+            flyingClone.style.transform = `translate(${targetX - btnRect.left - 16}px, ${targetY - btnRect.top - 16}px) scale(0.5)`
+            flyingClone.style.opacity = "0"
+
+            setTimeout(() => {
+              if (document.body.contains(flyingClone)) {
+                document.body.removeChild(flyingClone)
+              }
+            }, 600)
+          }, 100)
+        }, 100)
+      }, 400)
+    } else {
+      // Fallback if no image found: direct flight to Target
+      flyingClone.style.transition = "all 0.7s cubic-bezier(0.34,1.56,0.64,1)"
+      flyingClone.style.transform = `translate(${targetX - btnRect.left - 16}px, ${targetY - btnRect.top - 16}px) scale(0.5)`
+      flyingClone.style.opacity = "0"
+      flyingClone.style.boxShadow = "0 0 20px 10px rgba(239, 68, 68, 0.5)"
+
+      setTimeout(() => {
+        if (document.body.contains(flyingClone)) {
+          document.body.removeChild(flyingClone)
+        }
+      }, 700)
+    }
   }
 
   return (
@@ -95,8 +150,8 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
         toggle(itemId)
       }}
       className={`flex h-8 w-8 items-center justify-center rounded-full transition-all ${active
-          ? "bg-red-50 text-red-500 ring-1 ring-inset ring-red-500/50 hover:bg-red-100 shadow-[0_0_15px_rgba(239,68,68,0.2)]"
-          : "bg-background/80 text-muted-foreground ring-1 ring-inset ring-border/50 hover:bg-red-50 hover:text-red-500 hover:ring-red-300 dark:hover:bg-red-950/30"
+        ? "bg-red-50 text-red-500 ring-1 ring-inset ring-red-500/50 hover:bg-red-100 shadow-[0_0_15px_rgba(239,68,68,0.2)]"
+        : "bg-background/80 text-muted-foreground ring-1 ring-inset ring-border/50 hover:bg-red-50 hover:text-red-500 hover:ring-red-300 dark:hover:bg-red-950/30"
         } ${className}`}
       aria-label={active ? "Mark as uncaught" : "Mark as caught"}
     >
