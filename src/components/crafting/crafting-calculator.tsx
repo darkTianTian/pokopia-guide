@@ -61,10 +61,10 @@ export function CraftingCalculator({
       {/* Crafting List */}
       <section>
         <div className="mb-4 flex items-center justify-between">
-          <h3 className="text-lg font-bold tracking-tight">
+          <h3 className="flex items-center text-lg font-bold tracking-tight">
             {tr.crafting.craftingList}
             {selectedEntries.length > 0 && (
-              <span className="ml-2 inline-flex items-center justify-center rounded-full bg-muted px-2.5 py-0.5 text-sm font-semibold text-muted-foreground">
+              <span className="ml-3 flex h-6 min-w-[24px] items-center justify-center rounded-full bg-muted/50 px-2 text-[13px] font-bold text-muted-foreground">
                 {selectedEntries.length}
               </span>
             )}
@@ -72,7 +72,7 @@ export function CraftingCalculator({
           {selectedEntries.length > 0 && (
             <button
               onClick={onClearAll}
-              className="rounded-full px-3 py-1 text-xs font-semibold text-destructive transition-colors hover:bg-destructive/10"
+              className="text-xs font-semibold text-destructive transition-colors hover:text-destructive/80"
             >
               {tr.crafting.clearAll}
             </button>
@@ -84,33 +84,34 @@ export function CraftingCalculator({
             {tr.crafting.emptyCalculator}
           </p>
         ) : (
-          <div className="space-y-2">
-            {selectedEntries.map(({ recipe, quantity }) => (
+          <div className="overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 backdrop-blur-xl">
+            {selectedEntries.map(({ recipe, quantity }, i) => (
               <div
                 key={recipe.id}
-                className="flex items-center justify-between rounded-xl border border-border/40 bg-background/40 px-4 py-3 backdrop-blur-xl"
+                className={`flex items-center justify-between px-6 py-3.5 transition-colors hover:bg-muted/20 ${i > 0 ? "border-t border-border/30" : ""
+                  }`}
               >
                 <span className="text-sm font-semibold">{recipe.name}</span>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1.5">
                   <button
                     onClick={() => onUpdateQuantity(recipe.id, -1)}
                     disabled={quantity === 1}
-                    className="flex h-7 w-7 items-center justify-center rounded-full bg-muted text-muted-foreground transition-colors hover:bg-muted/80 hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40"
+                    className="flex h-8 w-8 items-center justify-center rounded-full bg-muted/40 text-muted-foreground transition-colors hover:bg-muted/80 hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40"
                   >
                     <Minus className="h-3.5 w-3.5" />
                   </button>
-                  <span className="w-8 text-center text-sm font-bold tabular-nums">
+                  <span className="w-8 text-center text-[15px] font-bold tabular-nums">
                     {quantity}
                   </span>
                   <button
                     onClick={() => onUpdateQuantity(recipe.id, 1)}
-                    className="flex h-7 w-7 items-center justify-center rounded-full bg-muted text-muted-foreground transition-colors hover:bg-muted/80 hover:text-foreground"
+                    className="flex h-8 w-8 items-center justify-center rounded-full bg-muted/40 text-muted-foreground transition-colors hover:bg-muted/80 hover:text-foreground"
                   >
                     <Plus className="h-3.5 w-3.5" />
                   </button>
                   <button
                     onClick={() => onRemove(recipe.id)}
-                    className="ml-2 flex h-7 w-7 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
+                    className="ml-2 flex h-8 w-8 items-center justify-center rounded-full bg-background/50 text-muted-foreground ring-1 ring-inset ring-border/50 transition-colors hover:bg-destructive/10 hover:text-destructive hover:ring-destructive/20"
                   >
                     <Trash2 className="h-3.5 w-3.5" />
                   </button>
@@ -136,20 +137,16 @@ export function CraftingCalculator({
             </span>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-border/40 bg-background/40 backdrop-blur-xl">
+          <div className="overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 backdrop-blur-xl">
             {materialTotals.map(([name, total], i) => (
               <div
                 key={name}
-                className={`flex items-center justify-between px-4 py-3 ${
-                  i > 0 ? "border-t border-border/30" : ""
-                }`}
+                className={`flex items-center justify-between px-6 py-4 transition-colors hover:bg-muted/10 ${i > 0 ? "border-t border-border/30" : ""
+                  }`}
               >
-                <span className="text-sm font-medium">{name}</span>
-                <span className="text-sm font-bold tabular-nums text-primary">
-                  {tr.crafting.totalQuantity.replace(
-                    "{{count}}",
-                    String(total)
-                  )}
+                <span className="text-[15px] font-medium text-foreground/80">{name}</span>
+                <span className="text-[15px] font-bold tabular-nums text-primary/80">
+                  ×{total}
                 </span>
               </div>
             ))}
