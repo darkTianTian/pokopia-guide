@@ -72,10 +72,6 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
         </span>
         <CollectionButton
           itemId={pokemon.slug}
-          className="absolute left-4 top-4 z-20"
-        />
-        <WishlistButton
-          itemId={`pokemon:${pokemon.slug}`}
           className="absolute right-4 top-4 z-20"
         />
 

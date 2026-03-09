@@ -79,10 +79,6 @@ export async function PokedexDetailPage({
 
         <CollectionButton
           itemId={pokemon.slug}
-          className="absolute left-6 top-6 z-20"
-        />
-        <WishlistButton
-          itemId={`pokemon:${pokemon.slug}`}
           className="absolute right-6 top-6 z-20"
         />
 

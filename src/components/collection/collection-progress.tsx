@@ -66,7 +66,7 @@ export function CollectionProgress({ total, pokemonSlugs, translations }: Collec
 
   return (
     <>
-      <div className="relative flex items-center gap-3 rounded-full border border-border/40 bg-background/40 p-2 pr-4 shadow-sm backdrop-blur-xl">
+      <div id="collection-progress-ring" className="relative flex items-center gap-3 rounded-full border border-border/40 bg-background/40 p-2 pr-4 shadow-sm backdrop-blur-xl">
         {/* Glowing Backdrop Blob */}
         <div className={`absolute left-3 top-1/2 h-14 w-14 -translate-y-1/2 rounded-full blur-[20px] transition-colors duration-700 ${milestone.glow}`} />
 

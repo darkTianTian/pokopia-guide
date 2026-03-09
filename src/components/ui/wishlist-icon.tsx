@@ -14,6 +14,7 @@ export function WishlistIcon({ locale }: WishlistIconProps) {
 
   return (
     <Link
+      id="header-wishlist-icon"
       href={getLocalePath(locale, "/wishlist")}
       className="relative rounded-full p-2 text-muted-foreground transition-all duration-300 hover:bg-pink-50 hover:text-pink-500 dark:hover:bg-pink-950/30"
       aria-label="Wishlist"
