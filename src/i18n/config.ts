@@ -20,7 +20,8 @@ export function getLocalePath(locale: Locale, path: string): string {
   if (locale === DEFAULT_LOCALE) {
     return normalizedPath
   }
-  return `/${locale}${normalizedPath}`
+  const result = `/${locale}${normalizedPath}`
+  return result.endsWith("/") && result.length > 1 ? result.slice(0, -1) : result
 }
 
 const SITE_URL = "https://pokopiaguide.com"

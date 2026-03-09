@@ -28,7 +28,7 @@ async function main() {
 
     // Static pages
     const staticPages = [
-      { url: `${locale.prefix}/`, priority: "1.0", changefreq: "daily" },
+      { url: locale.prefix || "/", priority: "1.0", changefreq: "daily" },
       { url: `${locale.prefix}/pokedex`, priority: "0.9", changefreq: "weekly" },
       { url: `${locale.prefix}/guides`, priority: "0.9", changefreq: "weekly" },
       { url: `${locale.prefix}/events`, priority: "0.8", changefreq: "weekly" },
