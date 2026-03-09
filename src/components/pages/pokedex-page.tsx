@@ -26,7 +26,7 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-5xl text-foreground">
           {t(translations, "pokedex.title")}
         </h1>
-        <div className="mt-4 flex flex-wrap items-center gap-4">
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
           <p className="text-lg sm:text-xl text-muted-foreground">
             {t(translations, "pokedex.subtitle")}
           </p>

@@ -44,15 +44,19 @@ export async function MaterialsListPage({ locale }: MaterialsListPageProps) {
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
           {t(translations, "habitat.materialsTitle")}
         </h1>
-        <h2 className="mt-4 text-lg font-normal text-muted-foreground">
-          {t(translations, "habitat.materialsDescription")}
-        </h2>
-        <p className="mt-2 text-sm font-medium uppercase tracking-wider text-muted-foreground/60">
-          {t(translations, "habitat.materialsTotalCount").replace(
-            "{{count}}",
-            String(materials.length)
-          )}
-        </p>
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
+          <p className="max-w-2xl text-balance text-lg font-normal text-muted-foreground">
+            {t(translations, "habitat.materialsDescription")}
+          </p>
+          <div className="inline-flex items-center rounded-full bg-primary/10 px-5 py-2 ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10">
+            <span className="text-sm sm:text-base font-bold uppercase tracking-wider text-primary">
+              {t(translations, "habitat.materialsTotalCount").replace(
+                "{{count}}",
+                String(materials.length)
+              )}
+            </span>
+          </div>
+        </div>
       </div>
 
       <MaterialsGrid materials={materialItems} locale={locale} />
