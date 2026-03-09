@@ -41,9 +41,11 @@ export function getSloganKey(percentage: number): string {
 }
 
 const SPRITE_SIZE = 96
-const TEXT_PRIMARY = "#0f172a"
-const TEXT_SECONDARY = "#475569"
+const TEXT_PRIMARY = "#27272a" // zinc-800
+const TEXT_SECONDARY = "#52525b" // zinc-600
+const PROGRESS_BG = "rgba(0,0,0,0.05)"
 
+const FONT_STACK = `-apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif`
 function drawGradientBg(ctx: CanvasRenderingContext2D, w: number, h: number) {
   // Light creamy base
   ctx.fillStyle = "#f8fafc"
@@ -114,7 +116,7 @@ function drawProgressRing(
   // Background ring
   ctx.beginPath()
   ctx.arc(cx, cy, radius, 0, Math.PI * 2)
-  ctx.strokeStyle = "rgba(0, 0, 0, 0.05)"
+  ctx.strokeStyle = PROGRESS_BG
   ctx.lineWidth = strokeWidth
   ctx.stroke()
 
@@ -154,7 +156,7 @@ function drawProgressRing(
 
   // Percentage text
   ctx.fillStyle = textColor
-  ctx.font = `800 ${radius * 0.7}px Fredoka, sans-serif`
+  ctx.font = `800 ${radius * 0.7}px Fredoka, ${FONT_STACK}`
   ctx.textAlign = "center"
   ctx.textBaseline = "middle"
   ctx.fillText(`${percentage}%`, cx, cy - radius * 0.02)
@@ -389,7 +391,7 @@ function drawPortrait(
 
   if (config.nickname) {
     ctx.fillStyle = TEXT_PRIMARY
-    ctx.font = `700 36px Fredoka, sans-serif`
+    ctx.font = `700 36px Fredoka, ${FONT_STACK}`
     ctx.textAlign = "center"
     ctx.fillText(config.nickname, W / 2, subtitleY)
     subtitleY += 50
@@ -398,7 +400,7 @@ function drawPortrait(
   if (config.slogan) {
     const sloganY = Math.max(subtitleY, logoY + 110)
     ctx.fillStyle = TEXT_SECONDARY
-    ctx.font = `600 28px Fredoka, sans-serif`
+    ctx.font = `600 28px Fredoka, ${FONT_STACK}`
     ctx.textAlign = "center"
     ctx.fillText(config.slogan, W / 2, sloganY)
     ctx.textAlign = "start"
@@ -415,7 +417,7 @@ function drawPortrait(
 
   // Count text below ring
   ctx.fillStyle = TEXT_SECONDARY
-  ctx.font = `700 32px Fredoka, sans-serif`
+  ctx.font = `700 32px Fredoka, ${FONT_STACK}`
   ctx.textAlign = "center"
   ctx.fillText(countText, W / 2, ringCY + ringRadius + 50)
   ctx.textAlign = "start"
@@ -435,12 +437,12 @@ function drawPortrait(
   const footerY = H - margin - 15
 
   ctx.fillStyle = TEXT_SECONDARY
-  ctx.font = `600 26px Fredoka, sans-serif`
+  ctx.font = `600 26px Fredoka, ${FONT_STACK}`
   ctx.fillText(config.dateString, margin + 20, footerY)
 
   ctx.textAlign = "right"
   ctx.fillStyle = TEXT_PRIMARY
-  ctx.font = `700 30px Fredoka, sans-serif`
+  ctx.font = `700 30px Fredoka, ${FONT_STACK}`
   ctx.fillText("pokopiaguide.com", W - margin - 20, footerY)
   ctx.textAlign = "start"
 }
@@ -473,7 +475,7 @@ function drawLandscape(
 
   if (config.nickname) {
     ctx.fillStyle = TEXT_PRIMARY
-    ctx.font = `700 36px Fredoka, sans-serif`
+    ctx.font = `700 36px Fredoka, ${FONT_STACK}`
     ctx.textAlign = "center"
     ctx.fillText(config.nickname, colCX, lSubtitleY)
     lSubtitleY += 50
@@ -482,7 +484,7 @@ function drawLandscape(
   if (config.slogan) {
     const sloganY = Math.max(lSubtitleY, logoY + 120)
     ctx.fillStyle = TEXT_SECONDARY
-    ctx.font = `600 28px Fredoka, sans-serif`
+    ctx.font = `600 28px Fredoka, ${FONT_STACK}`
     ctx.textAlign = "center"
     ctx.fillText(config.slogan, colCX, sloganY)
     ctx.textAlign = "start"
@@ -499,7 +501,7 @@ function drawLandscape(
 
   // Count text
   ctx.fillStyle = TEXT_SECONDARY
-  ctx.font = `700 36px Fredoka, sans-serif`
+  ctx.font = `700 36px Fredoka, ${FONT_STACK}`
   ctx.textAlign = "center"
   ctx.fillText(countText, colCX, ringCY + ringRadius + 60)
   ctx.textAlign = "start"
@@ -520,13 +522,13 @@ function drawLandscape(
   const footerY = H - margin - 15
 
   ctx.fillStyle = TEXT_SECONDARY
-  ctx.font = `600 26px Fredoka, sans-serif`
+  ctx.font = `600 26px Fredoka, ${FONT_STACK}`
   ctx.textAlign = "left"
   ctx.fillText(config.dateString, margin + 20, footerY)
 
   ctx.textAlign = "right"
   ctx.fillStyle = TEXT_PRIMARY
-  ctx.font = `700 30px Fredoka, sans-serif`
+  ctx.font = `700 30px Fredoka, ${FONT_STACK}`
   ctx.fillText("pokopiaguide.com", W - margin - 20, footerY)
   ctx.textAlign = "start"
 }
