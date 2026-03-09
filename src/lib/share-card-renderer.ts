@@ -550,7 +550,9 @@ export async function renderShareCardToPreview(
   drawGradientBg(ctx, W, H)
 
   const percentage = config.totalCount > 0
-    ? Math.round((config.caughtSlugs.length / config.totalCount) * 100)
+    ? config.caughtSlugs.length === config.totalCount
+      ? 100
+      : Math.min(Math.round((config.caughtSlugs.length / config.totalCount) * 100), 99)
     : 0
   const countText = `${config.caughtSlugs.length}/${config.totalCount}`
 
