@@ -79,7 +79,7 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
           <div className={`h-full w-full bg-gradient-to-br ${gradientClass}`} />
         </div>
 
-        <div className="flex flex-1 flex-col p-5">
+        <div className="flex flex-1 flex-col p-5 pt-12">
           {/* Header: Name */}
           <div className="mb-4">
             {headingLevel === "h3" ? (
