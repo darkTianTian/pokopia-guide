@@ -12,15 +12,17 @@ interface CollectionButtonInnerProps {
 export function CollectionButtonInner({ itemId, className = "" }: CollectionButtonInnerProps) {
   const { has, toggle, mounted } = useCollection()
   const buttonRef = useRef<HTMLButtonElement>(null)
+  const isAnimatingRef = useRef(false)
 
   if (!mounted) return null
 
   const active = has(itemId)
 
   const triggerAnimation = (e: React.MouseEvent) => {
-    // Only animate when ADDING to collection
-    if (active || !buttonRef.current) return
+    // Only animate when ADDING to collection, and prevent spamming
+    if (active || !buttonRef.current || isAnimatingRef.current) return
 
+    isAnimatingRef.current = true
     const btnRect = buttonRef.current.getBoundingClientRect()
 
     // Create a clone of the Pokeball SVG to fly
@@ -139,6 +141,7 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
               if (document.body.contains(flyingClone)) {
                 document.body.removeChild(flyingClone)
               }
+              isAnimatingRef.current = false
             }, 600)
           }, 150)
         }, 150)
@@ -154,6 +157,7 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
         if (document.body.contains(flyingClone)) {
           document.body.removeChild(flyingClone)
         }
+        isAnimatingRef.current = false
       }, 700)
     }
   }
@@ -164,6 +168,7 @@ export function CollectionButtonInner({ itemId, className = "" }: CollectionButt
       onClick={(e) => {
         e.preventDefault()
         e.stopPropagation()
+        if (isAnimatingRef.current) return
         triggerAnimation(e)
         toggle(itemId)
       }}
