@@ -379,7 +379,17 @@
     "uncaught": "未捕獲",
     "byType": "タイプ別",
     "bySpecialty": "とくぎ別",
-    "complete": "コンプリート"
+    "complete": "コンプリート",
+    "shareCard": {
+      "title": "コレクションを共有",
+      "nickname": "ニックネーム",
+      "nicknamePlaceholder": "トレーナー名...",
+      "portrait": "縦向き",
+      "landscape": "横向き",
+      "share": "共有",
+      "download": "ダウンロード",
+      "generating": "生成中..."
+    }
   },
   "mysteryGift": {
     "title": "ふしぎなおくりもの コード",

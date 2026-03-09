@@ -16,6 +16,21 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
   ])
 
   const specialties = getAllSpecialties(pokemon)
+  const pokemonSlugs = pokemon.map((p) => p.slug)
+
+  // Flatten translations for client component
+  const flatTranslations: Record<string, string> = {}
+  function flatten(obj: Record<string, unknown>, prefix = "") {
+    for (const [key, value] of Object.entries(obj)) {
+      const fullKey = prefix ? `${prefix}.${key}` : key
+      if (typeof value === "string") {
+        flatTranslations[fullKey] = value
+      } else if (typeof value === "object" && value !== null) {
+        flatten(value as Record<string, unknown>, fullKey)
+      }
+    }
+  }
+  flatten(translations as unknown as Record<string, unknown>)
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
@@ -38,7 +53,11 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
               </span>
             </div>
           </div>
-          <CollectionProgress total={pokemon.length} />
+          <CollectionProgress
+            total={pokemon.length}
+            pokemonSlugs={pokemonSlugs}
+            translations={flatTranslations}
+          />
         </div>
       </div>
       <PokemonGrid

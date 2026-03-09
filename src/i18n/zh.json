@@ -379,7 +379,17 @@
     "uncaught": "未捕獲",
     "byType": "按屬性統計",
     "bySpecialty": "按特長統計",
-    "complete": "完成"
+    "complete": "完成",
+    "shareCard": {
+      "title": "分享收集卡片",
+      "nickname": "暱稱",
+      "nicknamePlaceholder": "你的訓練家名稱...",
+      "portrait": "直版",
+      "landscape": "橫版",
+      "share": "分享",
+      "download": "下載",
+      "generating": "生成中..."
+    }
   },
   "mysteryGift": {
     "title": "神秘禮物兌換碼",

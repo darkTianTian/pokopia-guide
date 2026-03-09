@@ -379,7 +379,17 @@
     "uncaught": "Uncaught",
     "byType": "By Type",
     "bySpecialty": "By Specialty",
-    "complete": "Complete"
+    "complete": "Complete",
+    "shareCard": {
+      "title": "Share Collection",
+      "nickname": "Nickname",
+      "nicknamePlaceholder": "Your trainer name...",
+      "portrait": "Portrait",
+      "landscape": "Landscape",
+      "share": "Share",
+      "download": "Download",
+      "generating": "Generating..."
+    }
   },
   "mysteryGift": {
     "title": "Mystery Gift Codes",
