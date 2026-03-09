@@ -3,6 +3,9 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 import { renderShareCard, renderShareCardToPreview, type ShareCardConfig } from "@/lib/share-card-renderer"
 
+let cachedSpriteSheet: HTMLImageElement | null = null
+let cachedSpriteMap: Record<string, { x: number; y: number }> | null = null
+
 interface ShareCardCanvasProps {
   orientation: "portrait" | "landscape"
   layoutStyle: "grid" | "class-photo"
@@ -25,18 +28,31 @@ export function ShareCardCanvas({
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [loading, setLoading] = useState(true)
   const configRef = useRef<ShareCardConfig | null>(null)
+  const drawIdRef = useRef(0)
 
   const draw = useCallback(async () => {
     const canvas = canvasRef.current
     if (!canvas) return
 
-    setLoading(true)
+    const currentDrawId = ++drawIdRef.current
+
+    // Only show full loading spinner if assets aren't cached yet
+    if (!cachedSpriteSheet || !cachedSpriteMap) {
+      setLoading(true)
+    }
 
     try {
-      const [spriteSheet, spriteMapData] = await Promise.all([
-        loadImage("/images/pokemon-sprites.png"),
-        fetch("/images/pokemon-sprites.json").then((r) => r.json()),
-      ])
+      if (!cachedSpriteSheet || !cachedSpriteMap) {
+        const [sheet, mapData] = await Promise.all([
+          loadImage("/images/pokemon-sprites.png"),
+          fetch("/images/pokemon-sprites.json").then((r) => r.json()),
+        ])
+        cachedSpriteSheet = sheet
+        cachedSpriteMap = mapData
+      }
+
+      // If a newer render was requested while we were fetching/processing, abort this one
+      if (currentDrawId !== drawIdRef.current) return
 
       const config: ShareCardConfig = {
         orientation,
@@ -45,8 +61,8 @@ export function ShareCardCanvas({
         slogan,
         caughtSlugs,
         totalCount,
-        spriteSheet,
-        spriteMap: spriteMapData,
+        spriteSheet: cachedSpriteSheet!,
+        spriteMap: cachedSpriteMap!,
         dateString: new Date().toLocaleDateString("en-US", {
           year: "numeric",
           month: "short",
@@ -63,7 +79,9 @@ export function ShareCardCanvas({
     } catch (err) {
       console.error("Failed to render share card:", err)
     } finally {
-      setLoading(false)
+      if (currentDrawId === drawIdRef.current) {
+        setLoading(false)
+      }
     }
   }, [orientation, layoutStyle, nickname, slogan, caughtSlugs, totalCount, onReady])
 
