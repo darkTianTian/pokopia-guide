@@ -15,6 +15,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: t(translations, "quests.metaTitle"),
     description: t(translations, "quests.metaDescription"),
     alternates: getPageAlternates(locale, "/quests"),
+    robots: { index: false, follow: true },
   }
 }
 

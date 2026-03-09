@@ -15,6 +15,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: t(translations, "multiplayer.metaTitle"),
     description: t(translations, "multiplayer.metaDescription"),
     alternates: getPageAlternates(locale, "/multiplayer"),
+    robots: { index: false, follow: true },
   }
 }
 

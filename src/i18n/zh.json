@@ -16,7 +16,8 @@
     "habitatMaterials": "建造材料",
     "comingSoon": "即將推出",
     "explore": "探索地圖",
-    "multiplayer": "連線指南"
+    "multiplayer": "連線指南",
+    "mysteryGift": "神秘禮物"
   },
   "home": {
     "heroTitle": "歡迎來到 Pokémon Pokopia 攻略站",
@@ -169,7 +170,8 @@
     "habitatMaterials": "建造材料",
     "crafting": "製作配方",
     "explore": "探索地圖",
-    "multiplayer": "連線指南"
+    "multiplayer": "連線指南",
+    "mysteryGift": "神秘禮物"
   },
   "breadcrumb": {
     "home": "首頁",
@@ -340,5 +342,26 @@
     "dark": "惡",
     "steel": "鋼",
     "fairy": "妖精"
+  },
+  "mysteryGift": {
+    "title": "神秘禮物兌換碼",
+    "metaTitle": "神秘禮物兌換碼",
+    "description": "輸入序號或透過網路領取免費道具、家具和限定獎勵。",
+    "metaDescription": "Pokémon Pokopia 所有有效的神秘禮物兌換碼和網路配信。輸入序號即可獲得免費家具、道具和限定獎勵。",
+    "breadcrumb": "神秘禮物",
+    "active": "有效",
+    "expired": "已過期",
+    "serialCode": "序號",
+    "internet": "網路配信",
+    "code": "兌換碼",
+    "rewards": "獎勵內容",
+    "activeGifts": "有效禮物",
+    "expiredGifts": "已過期禮物",
+    "howToRedeem": "兌換方式",
+    "step1": "與寶可夢中心的 PC 終端互動。",
+    "step2": "選擇底部的「領取道具」。",
+    "step3": "從列表中選擇「神秘禮物」。",
+    "step4": "選擇「透過網路接收」或「輸入序號/密碼」。",
+    "step5": "輸入兌換碼或連接網路即可領取獎勵。"
   }
 }

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Pokopia multiplayer guide: friend habitat visits, 4-player online/local multiplayer, and game sharing features.",
   alternates: getPageAlternates("en", "/multiplayer"),
+  robots: { index: false, follow: true },
 }
 
 export default function Page() {

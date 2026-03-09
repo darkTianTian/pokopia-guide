@@ -16,7 +16,8 @@
     "habitatMaterials": "Materials",
     "comingSoon": "Soon",
     "explore": "Explore",
-    "multiplayer": "Multiplayer"
+    "multiplayer": "Multiplayer",
+    "mysteryGift": "Mystery Gift"
   },
   "home": {
     "heroTitle": "Welcome to Pokémon Pokopia Guide",
@@ -168,7 +169,8 @@
     "habitatMaterials": "Habitat Materials",
     "crafting": "Crafting Recipes",
     "explore": "Exploration Map",
-    "multiplayer": "Multiplayer Guide"
+    "multiplayer": "Multiplayer Guide",
+    "mysteryGift": "Mystery Gift"
   },
   "breadcrumb": {
     "home": "Home",
@@ -339,5 +341,26 @@
     "dark": "Dark",
     "steel": "Steel",
     "fairy": "Fairy"
+  },
+  "mysteryGift": {
+    "title": "Mystery Gift Codes",
+    "metaTitle": "Mystery Gift Codes",
+    "description": "Redeem serial codes and internet distributions for free items, furniture, and exclusive rewards in Pokémon Pokopia.",
+    "metaDescription": "All active Pokémon Pokopia mystery gift codes and internet distributions. Redeem serial codes for free furniture, items, and exclusive rewards.",
+    "breadcrumb": "Mystery Gift",
+    "active": "Active",
+    "expired": "Expired",
+    "serialCode": "Serial Code",
+    "internet": "Internet",
+    "code": "Code",
+    "rewards": "Rewards",
+    "activeGifts": "Active Gifts",
+    "expiredGifts": "Expired Gifts",
+    "howToRedeem": "How to Redeem",
+    "step1": "Interact with the PC terminal at the Pokémon Center.",
+    "step2": "Select \"Get Items\" from the bottom row.",
+    "step3": "Choose \"Mystery Gifts\" from the list.",
+    "step4": "Select \"Get via Internet\" or \"Get with Code/Password\".",
+    "step5": "Enter the code or connect to the internet to claim your reward."
   }
 }

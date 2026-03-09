@@ -16,7 +16,8 @@
     "habitatMaterials": "建設素材",
     "comingSoon": "近日公開",
     "explore": "探索マップ",
-    "multiplayer": "マルチプレイ"
+    "multiplayer": "マルチプレイ",
+    "mysteryGift": "ふしぎなおくりもの"
   },
   "home": {
     "heroTitle": "Pokémon Pokopia 攻略サイトへようこそ",
@@ -167,6 +168,7 @@
     "habitatList": "生息地一覧",
     "habitatMaterials": "建設素材",
     "crafting": "クラフトレシピ",
+    "mysteryGift": "ふしぎなおくりもの",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイガイド"
   },
@@ -339,5 +341,26 @@
     "dark": "あく",
     "steel": "はがね",
     "fairy": "フェアリー"
+  },
+  "mysteryGift": {
+    "title": "ふしぎなおくりもの コード",
+    "metaTitle": "ふしぎなおくりもの コード",
+    "description": "シリアルコードの入力やインターネット受け取りで、無料の道具・家具・限定報酬をゲットしよう。",
+    "metaDescription": "Pokémon Pokopia の有効なふしぎなおくりものコード一覧。シリアルコードで無料の家具・道具・限定報酬を受け取ろう。",
+    "breadcrumb": "ふしぎなおくりもの",
+    "active": "有効",
+    "expired": "期限切れ",
+    "serialCode": "シリアルコード",
+    "internet": "インターネット",
+    "code": "コード",
+    "rewards": "報酬内容",
+    "activeGifts": "有効なおくりもの",
+    "expiredGifts": "期限切れのおくりもの",
+    "howToRedeem": "受け取り方法",
+    "step1": "ポケモンセンターのPC端末にアクセス。",
+    "step2": "下段の「どうぐを受け取る」を選択。",
+    "step3": "一覧から「ふしぎなおくりもの」を選択。",
+    "step4": "「インターネットで受け取る」または「シリアルコード/あいことばで受け取る」を選択。",
+    "step5": "コードを入力するか、インターネットに接続して報酬を受け取る。"
   }
 }

@@ -35,9 +35,7 @@ async function main() {
       { url: `${locale.prefix}/habitat`, priority: "0.8", changefreq: "weekly" },
       { url: `${locale.prefix}/habitat/materials`, priority: "0.8", changefreq: "weekly" },
       { url: `${locale.prefix}/crafting`, priority: "0.8", changefreq: "weekly" },
-      { url: `${locale.prefix}/explore`, priority: "0.5", changefreq: "monthly" },
-      { url: `${locale.prefix}/multiplayer`, priority: "0.5", changefreq: "monthly" },
-      { url: `${locale.prefix}/quests`, priority: "0.5", changefreq: "monthly" },
+      // explore, multiplayer, quests are coming-soon pages with noindex — excluded from sitemap
     ]
 
     // Pokemon detail pages are noindex, excluded from sitemap

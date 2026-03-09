@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Pokopia exploration map: area guides, Pokémon encounters, and transformation travel methods.",
   alternates: getPageAlternates("en", "/explore"),
+  robots: { index: false, follow: true },
 }
 
 export default function Page() {

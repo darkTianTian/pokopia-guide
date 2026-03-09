@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Pokopia quest guide: main story walkthrough, Pokémon wishes, and crafting recipe unlock conditions.",
   alternates: getPageAlternates("en", "/quests"),
+  robots: { index: false, follow: true },
 }
 
 export default function Page() {

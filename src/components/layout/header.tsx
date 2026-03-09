@@ -22,8 +22,6 @@ export async function Header({ locale }: HeaderProps) {
     { path: "/pokedex", label: t(translations, "nav.pokedex") },
     { path: "/guides", label: t(translations, "nav.guides") },
     { path: "/events", label: t(translations, "nav.events") },
-    { path: "/explore", label: t(translations, "nav.explore") },
-    { path: "/multiplayer", label: t(translations, "nav.multiplayer") },
   ]
 
   const habitatSubItems = [
@@ -53,7 +51,7 @@ export async function Header({ locale }: HeaderProps) {
 
         {/* Desktop nav */}
         <nav className="hidden flex-1 items-center gap-2 text-sm font-semibold md:flex">
-          {navItems.slice(0, 3).map((item) => (
+          {navItems.map((item) => (
             <Link
               key={item.path}
               href={getLocalePath(locale, item.path)}
@@ -62,6 +60,7 @@ export async function Header({ locale }: HeaderProps) {
               {item.label}
             </Link>
           ))}
+          {/* Habitat dropdown */}
           <div className="group relative">
             <button className="flex items-center gap-1 rounded-full px-4 py-2 text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary outline-none">
               {t(translations, "nav.habitat")}
@@ -81,15 +80,6 @@ export async function Header({ locale }: HeaderProps) {
               </div>
             </div>
           </div>
-          {navItems.slice(3).map((item) => (
-            <Link
-              key={item.path}
-              href={getLocalePath(locale, item.path)}
-              className="rounded-full px-4 py-2 text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary"
-            >
-              {item.label}
-            </Link>
-          ))}
         </nav>
 
         <div className="flex-1 md:hidden" />
