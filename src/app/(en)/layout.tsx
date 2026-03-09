@@ -61,6 +61,13 @@ export default function EnLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {/* Soft Ditto-like Global Background Blobs */}
+          <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+            <div className="absolute -top-[10%] left-[10%] h-[50vw] w-[50vw] rounded-full bg-primary/20 blur-[120px] mix-blend-multiply opacity-70 animate-blob dark:mix-blend-screen dark:opacity-20" />
+            <div className="absolute top-[20%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-emerald-400/20 blur-[100px] mix-blend-multiply opacity-60 animate-blob animation-delay-2000 dark:mix-blend-screen dark:opacity-20" />
+            <div className="absolute -bottom-[20%] left-[30%] h-[60vw] w-[60vw] rounded-full bg-primary/20 blur-[130px] mix-blend-multiply opacity-50 animate-blob animation-delay-4000 dark:mix-blend-screen dark:opacity-20" />
+          </div>
+
           <div className="flex min-h-screen flex-col">
             <Header locale="en" />
             <main className="flex-1">{children}</main>
