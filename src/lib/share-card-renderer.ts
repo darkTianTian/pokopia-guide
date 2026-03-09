@@ -155,20 +155,36 @@ function drawPokemonClassPhoto(
   const { caughtSlugs, spriteSheet, spriteMap } = config
   if (caughtSlugs.length === 0) return
 
-  // Limit how many we actually try to draw so it doesn't get completely absurd 
-  // (though the overlapping allows for hundreds easily)
+  // Limit how many we actually try to draw so it doesn't get completely absurd
   const maxToDraw = Math.min(caughtSlugs.length, 300)
   const slugsToShow = caughtSlugs.slice(0, maxToDraw)
+  const count = slugsToShow.length
 
-  // Sizing definitions for the "Class Photo" overlap effect
-  const renderSize = 64
-  const overlapX = 42 // Horizontal spacing (tight, shoulder to shoulder)
-  const overlapY = 38 // Vertical spacing (highly overlapped back-to-front)
+  // Dynamically scale sizing based on how many Pokemon are caught
+  // Fewer Pokemon = Larger sprites, tighter grouping
+  let renderSize = 64
+  let maxColsPerRow = 100 // essentially unlimited by default (fills boxWidth)
 
-  // Calculate how many rows we need to fit the group into the given box width
-  // Each row is offset, so we calculate roughly how many fit per row
-  const colsPerRow = Math.max(1, Math.floor((boxWidth - renderSize) / overlapX))
-  const numRows = Math.ceil(slugsToShow.length / colsPerRow)
+  if (count <= 15) {
+    renderSize = 140
+    maxColsPerRow = 5 // Force multiple rows even for few pokemon
+  } else if (count <= 30) {
+    renderSize = 110
+    maxColsPerRow = 7
+  } else if (count <= 60) {
+    renderSize = 85
+    maxColsPerRow = 10
+  }
+
+  // Calculate spacing relative to the dynamic render size
+  const overlapX = renderSize * 0.65
+  const overlapY = renderSize * 0.6
+
+  // Calculate how many rows we need, constraining to maxColsPerRow OR box width
+  const maxPossibleColsByWidth = Math.floor((boxWidth - renderSize) / overlapX)
+  const colsPerRow = Math.max(1, Math.min(maxColsPerRow, maxPossibleColsByWidth))
+
+  const numRows = Math.ceil(count / colsPerRow)
 
   // Calculate the total actual width/height the group will consume
   const totalGroupHeight = renderSize + (numRows - 1) * overlapY
@@ -181,15 +197,14 @@ function drawPokemonClassPhoto(
 
   // Draw from back to front (top row down to bottom row)
   for (let row = 0; row < numRows; row++) {
-    // Add an alternating stagger so the heads peak between the shoulders of the row behind
     const staggerOffset = row % 2 === 0 ? 0 : overlapX / 2
 
     // Determine bounds for this specific row
     const startColIndex = i
-    const endColIndex = Math.min(i + colsPerRow, slugsToShow.length)
+    const endColIndex = Math.min(i + colsPerRow, count)
     const itemsInThisRow = endColIndex - startColIndex
 
-    // Calculate total width of JUST this row to center it horizontally perfectly
+    // Perfect horizontal centering for this specific row length
     const rowWidth = renderSize + (itemsInThisRow - 1) * overlapX
     const offsetX = startX + staggerOffset + Math.max(0, (boxWidth - rowWidth) / 2)
 
@@ -201,8 +216,8 @@ function drawPokemonClassPhoto(
       const pos = spriteMap[slug]
       if (!pos) continue
 
-      // Calculate final x,y for this specific sprite including a subtle organic "wave"
-      const waveOffset = Math.sin(col * 0.5) * 2 // slight bounce
+      // Subtle organic wave
+      const waveOffset = Math.sin(col * 0.8) * (renderSize * 0.05)
 
       const dx = offsetX + col * overlapX
       const dy = offsetY + row * overlapY + waveOffset
