@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-09T23:37:07.025Z",
+  "lastSync": "2026-03-10T02:44:24.349Z",
   "newHabitats": [
     {
       "id": 28,
@@ -906,6 +906,13 @@
       "name": "Tiny Atelier",
       "missingIn": [
         "ja",
+        "zh"
+      ]
+    },
+    {
+      "id": 154,
+      "name": "粗大ゴミ置き場",
+      "missingIn": [
         "zh"
       ]
     }

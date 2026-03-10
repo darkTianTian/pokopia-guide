@@ -27,7 +27,8 @@
     ],
     "weather": [
       "sunny",
-      "cloudy"
+      "cloudy",
+      "rainy"
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
@@ -38,6 +39,11 @@
       {
         "id": 28,
         "name": "Large luggage carrier",
+        "rarity": "common"
+      },
+      {
+        "id": 154,
+        "name": "粗大ゴミ置き場",
         "rarity": "common"
       }
     ]
