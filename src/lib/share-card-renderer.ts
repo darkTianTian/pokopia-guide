@@ -1,4 +1,6 @@
+import QRCode from "qrcode"
 import { drawSwitchIcon, drawColoredLogo } from "./share-card-logo"
+import { encodeCollection, buildSyncUrl } from "./collection-sync"
 
 // --- Randomness Helpers for Class Photo ---
 // Simple 32-bit integer hash for strings
@@ -18,16 +20,22 @@ function getStableRandom(index: number, seed: number = 0) {
 }
 // ------------------------------------------
 
+export const PROTAGONIST_COUNT = 8
+
 export interface ShareCardConfig {
   orientation: "portrait" | "landscape"
   layoutStyle: "grid" | "class-photo"
   nickname: string
   slogan: string
   caughtSlugs: string[]
+  orderedSlugs: string[]
   totalCount: number
   spriteSheet: HTMLImageElement
   spriteMap: Record<string, { x: number; y: number }>
+  protagonistImages: HTMLImageElement[]
   dateString: string
+  shuffleSeed: number
+  syncQrImage?: HTMLImageElement
 }
 
 export function getSloganKey(percentage: number): string {
@@ -165,6 +173,99 @@ function drawProgressRing(
   ctx.textAlign = "start"
 }
 
+function drawProtagonist(
+  ctx: CanvasRenderingContext2D,
+  image: HTMLImageElement,
+  cx: number,
+  bottomY: number,
+  height: number
+) {
+  const aspect = image.naturalWidth / image.naturalHeight
+  const drawH = height
+  const drawW = drawH * aspect
+  ctx.drawImage(image, cx - drawW / 2, bottomY - drawH, drawW, drawH)
+}
+
+export async function generateSyncQrImage(
+  caughtSlugs: string[],
+  orderedSlugs: string[]
+): Promise<HTMLImageElement | undefined> {
+  if (caughtSlugs.length === 0) return undefined
+  try {
+    const encoded = encodeCollection(new Set(caughtSlugs), orderedSlugs)
+    const url = buildSyncUrl(encoded)
+    const dataUrl = await QRCode.toDataURL(url, {
+      width: 200,
+      margin: 1,
+      color: { dark: "#000000", light: "#ffffff" },
+      errorCorrectionLevel: "L",
+    })
+    return new Promise<HTMLImageElement>((resolve, reject) => {
+      const img = new Image()
+      img.onload = () => resolve(img)
+      img.onerror = reject
+      img.src = dataUrl
+    })
+  } catch {
+    return undefined
+  }
+}
+
+function drawFooterWithQr(
+  ctx: CanvasRenderingContext2D,
+  config: ShareCardConfig,
+  W: number,
+  H: number,
+  margin: number
+) {
+  const qrSize = 100
+  const footerH = qrSize + 20
+  const footerY = H - margin - footerH
+
+  // Date text (left)
+  ctx.fillStyle = TEXT_SECONDARY
+  ctx.font = `600 26px Fredoka, ${FONT_STACK}`
+  ctx.textAlign = "left"
+  ctx.fillText(config.dateString, margin + 20, footerY + footerH / 2 + 8)
+
+  // QR code + URL (right)
+  if (config.syncQrImage) {
+    const qrX = W - margin - qrSize - 16
+    const qrY = footerY + (footerH - qrSize) / 2
+
+    // White background for QR
+    ctx.fillStyle = "#ffffff"
+    ctx.beginPath()
+    const r = 8
+    ctx.moveTo(qrX + r, qrY)
+    ctx.lineTo(qrX + qrSize - r, qrY)
+    ctx.arcTo(qrX + qrSize, qrY, qrX + qrSize, qrY + r, r)
+    ctx.lineTo(qrX + qrSize, qrY + qrSize - r)
+    ctx.arcTo(qrX + qrSize, qrY + qrSize, qrX + qrSize - r, qrY + qrSize, r)
+    ctx.lineTo(qrX + r, qrY + qrSize)
+    ctx.arcTo(qrX, qrY + qrSize, qrX, qrY + qrSize - r, r)
+    ctx.lineTo(qrX, qrY + r)
+    ctx.arcTo(qrX, qrY, qrX + r, qrY, r)
+    ctx.closePath()
+    ctx.fill()
+
+    ctx.drawImage(config.syncQrImage, qrX + 4, qrY + 4, qrSize - 8, qrSize - 8)
+
+    // URL text to the left of QR
+    ctx.fillStyle = TEXT_PRIMARY
+    ctx.font = `700 30px Fredoka, ${FONT_STACK}`
+    ctx.textAlign = "right"
+    ctx.fillText("pokopiaguide.com", qrX - 16, footerY + footerH / 2 + 8)
+    ctx.textAlign = "start"
+  } else {
+    ctx.textAlign = "right"
+    ctx.fillStyle = TEXT_PRIMARY
+    ctx.font = `700 30px Fredoka, ${FONT_STACK}`
+    ctx.fillText("pokopiaguide.com", W - margin - 20, footerY + footerH / 2 + 8)
+    ctx.textAlign = "start"
+  }
+}
+
 function drawPokemonClassPhoto(
   ctx: CanvasRenderingContext2D,
   config: ShareCardConfig,
@@ -174,15 +275,17 @@ function drawPokemonClassPhoto(
   boxHeight: number
 ) {
   const { caughtSlugs, spriteSheet, spriteMap } = config
-  if (caughtSlugs.length === 0) return
+  if (caughtSlugs.length === 0 && config.protagonistImages.length === 0) return
 
   // Limit how many we actually try to draw so it doesn't get completely absurd
   const maxToDraw = Math.min(caughtSlugs.length, 300)
   const count = maxToDraw
+  const seed = count + config.shuffleSeed
 
   // Stable shuffle so the photo looks like a mixed crowd, but doesn't flicker on re-renders
+  // Seed changes every minute so re-opening gives a fresh arrangement
   const slugsToShow = [...caughtSlugs.slice(0, maxToDraw)].sort((a, b) => {
-    return getStableRandom(hashString(a), count) - getStableRandom(hashString(b), count);
+    return getStableRandom(hashString(a), seed) - getStableRandom(hashString(b), seed);
   });
 
   // Dynamically calculate the maximum renderSize that fits the entire bounding box perfectly
@@ -291,6 +394,16 @@ function drawPokemonClassPhoto(
 
       i++;
     }
+  }
+
+  // Draw protagonist at front-center (on top of everything)
+  if (config.protagonistImages.length > 0) {
+    const protoIndex = Math.floor(getStableRandom(0, seed) * config.protagonistImages.length)
+    const protoImg = config.protagonistImages[protoIndex]
+    const protoH = renderSize * 2.2
+    const protoCX = startX + boxWidth / 2
+    const protoBottomY = startY + boxHeight + renderSize * 0.15
+    drawProtagonist(ctx, protoImg, protoCX, protoBottomY, protoH)
   }
 }
 
@@ -424,7 +537,8 @@ function drawPortrait(
 
   // ── 3. Pokemon Grid Box ──
   const gridBoxY = ringBoxY + ringBoxH + margin
-  const gridBoxH = H - gridBoxY - margin - 80 // Leave space for footer
+  const footerH = config.syncQrImage ? 120 : 80
+  const gridBoxH = H - gridBoxY - margin - footerH
   drawRoundedRect(ctx, margin, gridBoxY, W - margin * 2, gridBoxH, boxRadius, boxFill, boxStroke)
 
   if (config.layoutStyle === "grid") {
@@ -433,18 +547,8 @@ function drawPortrait(
     drawPokemonClassPhoto(ctx, config, margin + 20, gridBoxY + 20, W - margin * 2 - 40, gridBoxH - 40)
   }
 
-  // ── 4. Footer: Date + URL ──
-  const footerY = H - margin - 15
-
-  ctx.fillStyle = TEXT_SECONDARY
-  ctx.font = `600 26px Fredoka, ${FONT_STACK}`
-  ctx.fillText(config.dateString, margin + 20, footerY)
-
-  ctx.textAlign = "right"
-  ctx.fillStyle = TEXT_PRIMARY
-  ctx.font = `700 30px Fredoka, ${FONT_STACK}`
-  ctx.fillText("pokopiaguide.com", W - margin - 20, footerY)
-  ctx.textAlign = "start"
+  // ── 4. Footer: Date + URL + QR ──
+  drawFooterWithQr(ctx, config, W, H, margin)
 }
 
 function drawLandscape(
@@ -492,7 +596,8 @@ function drawLandscape(
 
   // ── 2. Left Column: Progress Ring Box ──
   const ringBoxY = headerY + headerH + margin
-  const ringBoxH = H - ringBoxY - margin - 80 // Leave space for footer
+  const lFooterH = config.syncQrImage ? 120 : 80
+  const ringBoxH = H - ringBoxY - margin - lFooterH
   drawRoundedRect(ctx, margin, ringBoxY, leftW, ringBoxH, boxRadius, boxFill, boxStroke)
 
   const ringCY = ringBoxY + (ringBoxH / 2) - 30
@@ -509,7 +614,7 @@ function drawLandscape(
   // ── 3. Right Column: Pokemon Grid Box ──
   const rightX = margin + leftW + margin
   const rightW = W - rightX - margin
-  const gridBoxH = H - margin * 2 - 80
+  const gridBoxH = H - margin * 2 - lFooterH
   drawRoundedRect(ctx, rightX, margin, rightW, gridBoxH, boxRadius, boxFill, boxStroke)
 
   if (config.layoutStyle === "grid") {
@@ -518,19 +623,8 @@ function drawLandscape(
     drawPokemonClassPhoto(ctx, config, rightX + 20, margin + 20, rightW - 40, gridBoxH - 40)
   }
 
-  // ── 4. Footer: Date + URL ──
-  const footerY = H - margin - 15
-
-  ctx.fillStyle = TEXT_SECONDARY
-  ctx.font = `600 26px Fredoka, ${FONT_STACK}`
-  ctx.textAlign = "left"
-  ctx.fillText(config.dateString, margin + 20, footerY)
-
-  ctx.textAlign = "right"
-  ctx.fillStyle = TEXT_PRIMARY
-  ctx.font = `700 30px Fredoka, ${FONT_STACK}`
-  ctx.fillText("pokopiaguide.com", W - margin - 20, footerY)
-  ctx.textAlign = "start"
+  // ── 4. Footer: Date + URL + QR ──
+  drawFooterWithQr(ctx, config, W, H, margin)
 }
 
 export async function renderShareCardToPreview(

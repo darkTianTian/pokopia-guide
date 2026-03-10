@@ -398,6 +398,16 @@
       "slogan75": "快成為寶可夢大師了！",
       "slogan90": "就差一點點……忍住！",
       "slogan100": "全部捕獲！你是真正的肝帝 🎉"
+    },
+    "sync": {
+      "title": "同步到手機 (Beta)",
+      "description": "用手機掃描此 QR 碼，即可匯入收集進度。",
+      "importCount": "匯入 {{count}} 隻寶可夢？",
+      "replace": "替換",
+      "merge": "合併",
+      "cancel": "取消",
+      "successReplace": "收集進度已替換！",
+      "successMerge": "收集進度已合併！"
     }
   },
   "mysteryGift": {

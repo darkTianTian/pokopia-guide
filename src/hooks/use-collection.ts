@@ -74,6 +74,22 @@ function toggle(id: string) {
   emitChange()
 }
 
+function replaceAll(slugs: string[]) {
+  currentItems = new Set(slugs)
+  saveToStorage(currentItems)
+  emitChange()
+}
+
+function mergeWith(slugs: string[]) {
+  const next = new Set(currentItems)
+  for (const slug of slugs) {
+    next.add(slug)
+  }
+  currentItems = next
+  saveToStorage(next)
+  emitChange()
+}
+
 // ── Hook ────────────────────────────────────────────────────────────
 export function useCollection() {
   const [mounted, setMounted] = useState(false)
@@ -93,5 +109,5 @@ export function useCollection() {
 
   const count = useMemo(() => items.size, [items])
 
-  return { items, toggle, has, count, mounted }
+  return { items, toggle, has, count, mounted, replaceAll, mergeWith }
 }

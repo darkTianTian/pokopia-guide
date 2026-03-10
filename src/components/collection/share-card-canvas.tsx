@@ -1,10 +1,11 @@
 "use client"
 
 import { useCallback, useEffect, useRef, useState } from "react"
-import { renderShareCard, renderShareCardToPreview, type ShareCardConfig } from "@/lib/share-card-renderer"
+import { renderShareCard, renderShareCardToPreview, generateSyncQrImage, PROTAGONIST_COUNT, type ShareCardConfig } from "@/lib/share-card-renderer"
 
 let cachedSpriteSheet: HTMLImageElement | null = null
 let cachedSpriteMap: Record<string, { x: number; y: number }> | null = null
+let cachedProtagonistImages: HTMLImageElement[] | null = null
 
 interface ShareCardCanvasProps {
   orientation: "portrait" | "landscape"
@@ -12,7 +13,9 @@ interface ShareCardCanvasProps {
   nickname: string
   slogan: string
   caughtSlugs: string[]
+  orderedSlugs: string[]
   totalCount: number
+  shuffleSeed?: number
   onReady?: (getBlob: () => Promise<Blob>) => void
 }
 
@@ -22,7 +25,9 @@ export function ShareCardCanvas({
   nickname,
   slogan,
   caughtSlugs,
+  orderedSlugs,
   totalCount,
+  shuffleSeed,
   onReady,
 }: ShareCardCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -43,15 +48,24 @@ export function ShareCardCanvas({
 
     try {
       if (!cachedSpriteSheet || !cachedSpriteMap) {
-        const [sheet, mapData] = await Promise.all([
+        const protoPromises = Array.from({ length: PROTAGONIST_COUNT }, (_, i) =>
+          loadImage(`/images/protagonist/${i + 1}.png`).catch(() => null)
+        )
+        const [sheet, mapData, ...protoResults] = await Promise.all([
           loadImage("/images/pokemon-sprites.png"),
           fetch("/images/pokemon-sprites.json").then((r) => r.json()),
+          ...protoPromises,
         ])
         cachedSpriteSheet = sheet
         cachedSpriteMap = mapData
+        cachedProtagonistImages = protoResults.filter((img): img is HTMLImageElement => img !== null)
       }
 
       // If a newer render was requested while we were fetching/processing, abort this one
+      if (currentDrawId !== drawIdRef.current) return
+
+      const syncQrImage = await generateSyncQrImage(caughtSlugs, orderedSlugs)
+
       if (currentDrawId !== drawIdRef.current) return
 
       const config: ShareCardConfig = {
@@ -60,14 +74,18 @@ export function ShareCardCanvas({
         nickname,
         slogan,
         caughtSlugs,
+        orderedSlugs,
         totalCount,
         spriteSheet: cachedSpriteSheet!,
         spriteMap: cachedSpriteMap!,
+        protagonistImages: cachedProtagonistImages ?? [],
         dateString: new Date().toLocaleDateString("en-US", {
           year: "numeric",
           month: "short",
           day: "numeric",
         }),
+        shuffleSeed: shuffleSeed ?? new Date().getMinutes(),
+        syncQrImage,
       }
 
       configRef.current = config
@@ -83,7 +101,7 @@ export function ShareCardCanvas({
         setLoading(false)
       }
     }
-  }, [orientation, layoutStyle, nickname, slogan, caughtSlugs, totalCount, onReady])
+  }, [orientation, layoutStyle, nickname, slogan, caughtSlugs, orderedSlugs, totalCount, shuffleSeed, onReady])
 
   useEffect(() => {
     // Load Fredoka font before drawing

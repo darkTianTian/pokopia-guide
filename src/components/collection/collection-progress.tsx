@@ -181,6 +181,7 @@ export function CollectionProgress({ total, pokemonSlugs, translations }: Collec
         open={showShare}
         onOpenChange={setShowShare}
         caughtSlugs={caughtSlugs}
+        orderedSlugs={pokemonSlugs}
         totalCount={total}
         translations={translations}
       />

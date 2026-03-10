@@ -1,6 +1,6 @@
 "use client"
 
-import { useCallback, useRef, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import { Download, Smartphone, Monitor, Share2, Grid, Users } from "lucide-react"
 import {
   Dialog,
@@ -12,12 +12,14 @@ import {
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ShareCardCanvas } from "./share-card-canvas"
+import { SyncQrSection } from "./sync-qr-section"
 import { getSloganKey } from "@/lib/share-card-renderer"
 
 interface ShareCardModalProps {
   open: boolean
   onOpenChange: (open: boolean) => void
   caughtSlugs: string[]
+  orderedSlugs: string[]
   totalCount: number
   translations: Record<string, string>
 }
@@ -26,6 +28,7 @@ export function ShareCardModal({
   open,
   onOpenChange,
   caughtSlugs,
+  orderedSlugs,
   totalCount,
   translations,
 }: ShareCardModalProps) {
@@ -33,7 +36,14 @@ export function ShareCardModal({
   const [orientation, setOrientation] = useState<"portrait" | "landscape">("portrait")
   const [layoutStyle, setLayoutStyle] = useState<"grid" | "class-photo">("class-photo")
   const [generating, setGenerating] = useState(false)
+  const [openedMinute, setOpenedMinute] = useState(() => new Date().getMinutes())
   const getBlobRef = useRef<(() => Promise<Blob>) | null>(null)
+
+  useEffect(() => {
+    if (open) {
+      setOpenedMinute(new Date().getMinutes())
+    }
+  }, [open])
 
   const t = (key: string) => translations[key] ?? key
 
@@ -170,7 +180,9 @@ export function ShareCardModal({
               )
             )}
             caughtSlugs={caughtSlugs}
+            orderedSlugs={orderedSlugs}
             totalCount={totalCount}
+            shuffleSeed={openedMinute}
             onReady={handleReady}
           />
 
@@ -194,6 +206,13 @@ export function ShareCardModal({
               {t("collection.shareCard.download")}
             </Button>
           </div>
+
+          {/* Sync QR Code */}
+          <SyncQrSection
+            caughtSlugs={new Set(caughtSlugs)}
+            orderedSlugs={orderedSlugs}
+            translations={translations}
+          />
         </div>
       </DialogContent>
     </Dialog>

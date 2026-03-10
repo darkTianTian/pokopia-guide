@@ -1,5 +1,6 @@
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { CollectionProgress } from "@/components/collection/collection-progress"
+import { SyncImportBanner } from "@/components/collection/sync-import-banner"
 import { PokemonGrid } from "@/components/pokemon/pokemon-grid"
 import { getAllPokemon, getAllSpecialties } from "@/lib/pokemon"
 import { POKEMON_TYPES } from "@/lib/types"
@@ -37,6 +38,10 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
       <Breadcrumb
         items={[{ label: t(translations, "pokedex.breadcrumb") }]}
         locale={locale}
+      />
+      <SyncImportBanner
+        orderedSlugs={pokemonSlugs}
+        translations={flatTranslations}
       />
       <div className="mb-8 mt-6">
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-5xl text-foreground">

@@ -398,6 +398,16 @@
       "slogan75": "Almost a Pokémon Master!",
       "slogan90": "So close... can you smell it?",
       "slogan100": "Gotta catch 'em all — DONE! 🎉"
+    },
+    "sync": {
+      "title": "Sync to Mobile (Beta)",
+      "description": "Scan this QR code with your phone to import your collection progress.",
+      "importCount": "Import {{count}} Pokémon?",
+      "replace": "Replace",
+      "merge": "Merge",
+      "cancel": "Cancel",
+      "successReplace": "Collection replaced successfully!",
+      "successMerge": "Collection merged successfully!"
     }
   },
   "mysteryGift": {
