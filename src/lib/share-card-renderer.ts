@@ -351,6 +351,14 @@ function drawPokemonClassPhoto(
   // Vertical centering offset
   const offsetY = startY + Math.max(0, (boxHeight - totalGroupHeight) / 2);
 
+  // Precompute protagonist repulsion zone
+  const hasProtagonist = config.protagonistImages.length > 0
+  const protoCX = startX + boxWidth / 2
+  const protoBottomY = startY + boxHeight + renderSize * 0.15
+  const protoH = renderSize * 2.2
+  const protoCY = protoBottomY - protoH * 0.4 // approximate visual center
+  const protoRadius = renderSize * 1.1 // repulsion radius
+
   let i = 0;
   for (let row = 0; row < numRows; row++) {
     const itemsInThisRow = rowLayouts[row];
@@ -375,9 +383,26 @@ function drawPokemonClassPhoto(
       const sizeMod = 0.85 + getStableRandom(i, 3) * 0.3; // 85% to 115% size
       const angleDeg = (getStableRandom(i, 4) - 0.5) * 16; // +/- 8 degrees
 
-      const dx = offsetX + col * overlapX + randX;
-      const dy = offsetY + row * overlapY + randY;
+      let dx = offsetX + col * overlapX + randX;
+      let dy = offsetY + row * overlapY + randY;
       const finalSize = renderSize * sizeMod;
+
+      // Push pokemon away from the protagonist center to reduce occlusion
+      if (hasProtagonist) {
+        const spriteCX = dx + renderSize / 2
+        const spriteCY = dy + renderSize / 2
+        const distX = spriteCX - protoCX
+        const distY = spriteCY - protoCY
+        const dist = Math.sqrt(distX * distX + distY * distY)
+        if (dist < protoRadius && dist > 0) {
+          const push = (protoRadius - dist) * 0.6
+          dx += (distX / dist) * push
+          dy += (distY / dist) * push
+          // Clamp to stay within the bounding box
+          dx = Math.max(startX, Math.min(dx, startX + boxWidth - renderSize))
+          dy = Math.max(startY, Math.min(dy, startY + boxHeight - renderSize))
+        }
+      }
 
       ctx.save();
       // Translate to the exact actual center of where the sprite should be drawn
