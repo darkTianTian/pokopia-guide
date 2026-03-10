@@ -49,9 +49,9 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
         </h1>
         <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
           <div className="flex flex-col gap-4">
-            <p className="text-lg sm:text-xl text-muted-foreground">
+            <h2 className="text-lg sm:text-xl font-normal text-muted-foreground">
               {t(translations, "pokedex.subtitle")}
-            </p>
+            </h2>
             <div className="inline-flex items-center self-start rounded-full bg-primary/10 px-5 py-2 ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10">
               <span className="text-sm sm:text-base font-bold uppercase tracking-wider text-primary">
                 {t(translations, "pokedex.totalCount").replace("{{count}}", String(pokemon.length))}
