@@ -12,11 +12,26 @@
       "build"
     ],
     "favorites": [],
-    "timeOfDay": null,
-    "weather": null,
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
     "obtainMethod": "habitat",
     "evolvesFrom": "tinkatuff",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 154,
+        "name": "Oversized dumping ground",
+        "rarity": "common"
+      }
+    ]
   }
 }
