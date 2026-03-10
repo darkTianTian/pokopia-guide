@@ -29,12 +29,12 @@
     "habitats": [
       {
         "id": 66,
-        "name": "Park bench",
+        "name": "公園長椅",
         "rarity": "very-rare"
       },
       {
         "id": 90,
-        "name": "Playing pirate",
+        "name": "航海遊戲",
         "rarity": "common"
       }
     ]

@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 151,
-        "name": "Surging psychic power",
+        "name": "滿溢超能力",
         "rarity": "common"
       },
       {
         "id": 152,
-        "name": "Fortune-teller's table",
+        "name": "水晶占卜",
         "rarity": "common"
       }
     ]

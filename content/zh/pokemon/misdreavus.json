@@ -34,12 +34,12 @@
     "habitats": [
       {
         "id": 142,
-        "name": "Fluffy flower bed",
+        "name": "蓬鬆花田",
         "rarity": "common"
       },
       {
         "id": 167,
-        "name": "Office storeroom",
+        "name": "辦公室後場",
         "rarity": "common"
       }
     ]

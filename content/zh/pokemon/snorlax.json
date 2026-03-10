@@ -28,12 +28,12 @@
     "habitats": [
       {
         "id": 47,
-        "name": "Tree-shaded snoozing Snorlax",
+        "name": "樹蔭下酣睡的卡比獸",
         "rarity": "rare"
       },
       {
         "id": 48,
-        "name": "Good old-fashioned antiques",
+        "name": "美好的古董",
         "rarity": "common"
       }
     ]

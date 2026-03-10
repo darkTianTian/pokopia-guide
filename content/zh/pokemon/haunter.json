@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 73,
-        "name": "Surprise in store",
+        "name": "小心機關",
         "rarity": "common"
       },
       {
         "id": 89,
-        "name": "Spooky study",
+        "name": "詭異書房",
         "rarity": "rare"
       }
     ]

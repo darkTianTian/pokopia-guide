@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 118,
-        "name": "Creepy white rocks",
+        "name": "詭異白色岩石",
         "rarity": "common"
       },
       {
         "id": 119,
-        "name": "Container snacking",
+        "name": "倉庫偷吃",
         "rarity": "common"
       }
     ]

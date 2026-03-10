@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 140,
-        "name": "Elevated pink tall grass",
+        "name": "高台粉紅色草叢",
         "rarity": "very-rare"
       },
       {
         "id": 156,
-        "name": "Sewer hole inspection",
+        "name": "人孔蓋檢查中",
         "rarity": "rare"
       }
     ]
