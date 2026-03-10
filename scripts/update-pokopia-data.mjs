@@ -2435,10 +2435,44 @@ async function run() {
     console.log(`  JA materials: ${Object.keys(materialsJa).length} habitats`)
     console.log(`  EN materials: ${Object.keys(materialsEn).length} habitats (from Game8 conditions)`)
 
+    // Post-process: fix known GameWith data errors before writing.
+    // GameWith uses placeholder IDs (Item a23, Item a29, etc.) for some items
+    // that we've manually identified. Replace them with correct names.
+    const JA_MATERIAL_FIXES = {
+      "Item a23": "はち植えの木(なんでも)",   // Potted plant (any) — confirmed via Game8/AppMedia
+      "Item a29": "だいざ・てんじだい",       // Pedestal/exhibition stand — confirmed via GameWith fossil pages
+    }
+    for (const [hId, mat] of Object.entries(materialsJa)) {
+      let fixed = mat
+      for (const [placeholder, correctName] of Object.entries(JA_MATERIAL_FIXES)) {
+        fixed = fixed.replaceAll(placeholder, correctName)
+      }
+      materialsJa[hId] = fixed
+    }
+
     await writeJson(path.join(CONTENT_DIR, "habitat-materials.json"), materialsJa)
+
+    // Post-process EN materials: fix known Game8 scraping errors
+    // #107: Game8 outputs period instead of comma as separator
+    if (materialsEn["107"]) {
+      materialsEn["107"] = materialsEn["107"].replaceAll(". ", ", ")
+    }
+    // Ensure manually-verified entries are not deleted by Game8 scraping gaps.
+    // These entries are confirmed correct but Game8 sometimes omits them.
+    const EN_MATERIAL_PRESERVES = {
+      "192": "Pedestal/exhibition stand x1, Auspicious Armor x1, Stepping stones x2, Firepit x2",
+      "194": "Pedestal/exhibition stand x1, Skull Fossil x1",
+      "195": "Pedestal/exhibition stand x1, Headbutt Fossil (head) x1, Headbutt Fossil (body) x1, Headbutt Fossil (tail) x1",
+      "200": "Pedestal/exhibition stand x2, Fin Fossil x1",
+      "201": "Pedestal/exhibition stand x1, Tundra Fossil (head) x1, Tundra Fossil (body) x1, Tundra Fossil (tail) x1",
+    }
+    for (const [hId, mat] of Object.entries(EN_MATERIAL_PRESERVES)) {
+      if (!materialsEn[hId]) materialsEn[hId] = mat
+    }
+
     await writeJson(path.join(CONTENT_DIR, "habitat-materials-en.json"), materialsEn)
     // Note: habitat-materials-zh.json is manually maintained with Traditional Chinese translations.
-    // Do NOT overwrite it with English data. See todo.md for translation status.
+    // Do NOT overwrite it with English data.
   }
 
   // Save sync state
