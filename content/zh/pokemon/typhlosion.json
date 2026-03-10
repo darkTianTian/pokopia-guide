@@ -29,12 +29,12 @@
     "habitats": [
       {
         "id": 150,
-        "name": "Fireplace nap spot",
+        "name": "壁爐旁小憩",
         "rarity": "rare"
       },
       {
         "id": 183,
-        "name": "Top pop",
+        "name": "流行之最",
         "rarity": "rare"
       }
     ]

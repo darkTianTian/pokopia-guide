@@ -30,12 +30,12 @@
     "habitats": [
       {
         "id": 141,
-        "name": "Concrete pipe secret base",
+        "name": "水管秘密基地",
         "rarity": "rare"
       },
       {
         "id": 150,
-        "name": "Fireplace nap spot",
+        "name": "壁爐旁小憩",
         "rarity": "common"
       }
     ]

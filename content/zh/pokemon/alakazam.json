@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 151,
-        "name": "Surging psychic power",
+        "name": "滿溢超能力",
         "rarity": "rare"
       },
       {
         "id": 168,
-        "name": "Experiment Space",
+        "name": "實驗空間",
         "rarity": "common"
       }
     ]

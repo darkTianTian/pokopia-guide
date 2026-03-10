@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 28,
-        "name": "Large luggage carrier",
+        "name": "大件行李搬運",
         "rarity": "common"
       },
       {
         "id": 154,
-        "name": "Oversized dumping ground",
+        "name": "大型垃圾場",
         "rarity": "common"
       }
     ]

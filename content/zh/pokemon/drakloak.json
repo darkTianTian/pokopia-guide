@@ -39,12 +39,12 @@
     "habitats": [
       {
         "id": 138,
-        "name": "Tree-shaded pink tall grass",
+        "name": "樹蔭粉紅色草叢",
         "rarity": "rare"
       },
       {
         "id": 167,
-        "name": "Office storeroom",
+        "name": "辦公室後場",
         "rarity": "common"
       }
     ]
