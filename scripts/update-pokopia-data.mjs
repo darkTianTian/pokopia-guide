@@ -1655,6 +1655,202 @@ async function downloadMissingCookingToolIcons() {
   console.log(`\n  Cooking tool icons: ${downloaded} downloaded, ${missing.length - downloaded} not yet available`)
 }
 
+// --- Habitat Material Item Icons ---
+
+const ITEMS_DIR = path.join(process.cwd(), "public", "images", "items")
+
+// Known slug -> serebii filename mappings (where they differ from simple hyphen removal)
+const ITEM_ICON_STATIC_MAP = {
+  "afternoon-tea-set": "afternoonteaset",
+  "alarm-clock": "alarmclock",
+  "arcanine-doll": "arcaninedoll",
+  "armor-fossil": "armorfossil",
+  "arrow-sign": "arrowsign",
+  "beach-chair": "beachchair",
+  "beach-parasol": "beachparasol",
+  "berry-basket": "berrybasket",
+  "big-drum": "bigdrum",
+  "boo-in-the-box": "boo-in-the-box",
+  "cardboard-boxes": "cardboardboxes",
+  "castform-weather-charm-rain": "castformweathercharm",
+  "castform-weather-charm-sun": "castformweathercharm",
+  "cd-player": "cdplayer",
+  "chansey-plant": "chanseyplant",
+  "chic-sofa": "chicsofa",
+  "chocolate-cookies": "chocolatecookies",
+  "concrete-pipe": "concretepipe",
+  "control-unit": "controlunit",
+  "cooking-stove": "cookingstove",
+  "crossing-gate": "crossinggate",
+  "crystal-ball": "crystalball",
+  "cutting-board": "cuttingboard",
+  "dragonite-doll": "dragonitedoll",
+  "eerie-candle": "eeriecandle",
+  "eevee-doll": "eeveedoll",
+  "excavation-tools": "excavationtools",
+  "first-aid-kit": "firstaidkit",
+  "fishing-rod": "fishingrod",
+  "food-counter": "foodcounter",
+  "fried-potatoes": "friedpotatoes",
+  "garbage-bags": "garbagebags",
+  "garbage-bin": "garbagebin",
+  "garden-chair": "gardenchair",
+  "hanging-scroll": "hangingscroll",
+  "hot-spring-spout": "hot-springspout",
+  "iron-pipes": "ironpipes",
+  "jumbled-cords": "jumbledcords",
+  "knitting-supplies": "knittingsupplies",
+  "log-chair": "logchair",
+  "log-table": "logtable",
+  "luxury-sofa": "luxurysofa",
+  "magazine-rack": "magazinerack",
+  "menu-board": "menuboard",
+  "metal-drum": "metaldrum",
+  "modern-sink": "modernsink",
+  "moonlight-dance-statue": "moonlightdancestatuekit",
+  "office-chair": "officechair",
+  "office-desk": "officedesk",
+  "office-locker": "officelocker",
+  "office-shelf": "officeshelf",
+  "paper-party-cups": "paperpartycups",
+  "pedestal-exhibition-stand": "exhibitionstand",
+  "pencil-holder": "pencilholder",
+  "picnic-basket": "picnicbasket",
+  "pikachu-doll": "pikachudoll",
+  "pikachu-sofa": "pikachusofa",
+  "plain-bed": "plainbed",
+  "plain-sofa": "plainsofa",
+  "plain-table": "plaintable",
+  "punching-bag": "punchingbag",
+  "punching-game": "punchinggame",
+  "railway-track": "railtrack",
+  "ribbon-cake": "ribboncake",
+  "science-experiment": "scienceexperiment",
+  "seat-wide": "woodenbench",
+  "shaved-ice": "shavedice",
+  "ship-s-wheel": "ship'swheel",
+  "slender-candle": "slendercandle",
+  "small-stage": "smallstage",
+  "small-vase": "smallvase",
+  "smooth-rock": "smoothrock",
+  "soda-float": "sodafloat",
+  "standing-mic": "standingmic",
+  "step-stool": "stepstool",
+  "stone-fireplace": "stonefireplace",
+  "straw-bed": "strawbed",
+  "straw-stool": "strawstool",
+  "straw-table": "strawtable",
+  "stylish-cooking-pot": "cookingstove",
+  "team-rocket-wall-hanging": "teamrocketwallhanging",
+  "tire-toy": "tiretoy",
+  "towel-rack": "towelrack",
+  "vending-machine": "vendingmachine",
+  "wall-mirror": "wallmirror",
+  "wooden-birdhouse": "woodenbirdhouse",
+  "wooden-crate": "woodencrate",
+}
+
+function toSlug(name) {
+  return name.toLowerCase().replace(/[()]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+}
+
+function parseMaterialString(str) {
+  return str.split(",").map((p) => p.trim()).filter(Boolean).map((p) => {
+    const m = p.match(/^(.+?)\s+x(\d+)$/)
+    return m ? m[1].trim() : p.trim()
+  })
+}
+
+async function downloadMissingItemIcons() {
+  console.log("\n--- Downloading Missing Item Icons ---")
+
+  const materialsPath = path.join(CONTENT_DIR, "habitat-materials-en.json")
+  let materialsData
+  try {
+    materialsData = JSON.parse(await fs.readFile(materialsPath, "utf-8"))
+  } catch {
+    console.log("  habitat-materials-en.json not found, skipping.")
+    return
+  }
+
+  // Collect all unique non-wildcard item slugs
+  const slugs = new Set()
+  for (const str of Object.values(materialsData)) {
+    for (const name of parseMaterialString(str)) {
+      const slug = toSlug(name)
+      if (!slug.endsWith("-any")) slugs.add(slug)
+    }
+  }
+
+  const missing = []
+  for (const slug of slugs) {
+    const filePath = path.join(ITEMS_DIR, `${slug}.png`)
+    try {
+      await fs.stat(filePath)
+    } catch {
+      missing.push(slug)
+    }
+  }
+
+  if (missing.length === 0) {
+    console.log(`  All ${slugs.size} item icons exist.`)
+    return
+  }
+
+  console.log(`  Missing: ${missing.length} / ${slugs.size}`)
+
+  if (DRY_RUN) {
+    for (const slug of missing) {
+      console.log(`  [DRY RUN] ${slug}.png`)
+    }
+    return
+  }
+
+  await fs.mkdir(ITEMS_DIR, { recursive: true })
+
+  let downloaded = 0
+  let failed = 0
+
+  await pMap(
+    missing,
+    async (slug) => {
+      const candidates = []
+      if (ITEM_ICON_STATIC_MAP[slug]) {
+        candidates.push(ITEM_ICON_STATIC_MAP[slug])
+      }
+      candidates.push(slug.replace(/-/g, ""))
+
+      for (const filename of candidates) {
+        const url = `${SEREBII_BASE}/pokemonpokopia/items/${filename}.png`
+        try {
+          const res = await fetch(url, {
+            headers: {
+              "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "Accept": "image/png,image/*,*/*",
+            },
+          })
+          if (!res.ok) continue
+
+          const buffer = Buffer.from(await res.arrayBuffer())
+          if (buffer.length === SEREBII_404_SIZE || buffer.length < 1024) continue
+
+          const filePath = path.join(ITEMS_DIR, `${slug}.png`)
+          await fs.writeFile(filePath, buffer)
+          console.log(`  Downloaded ${slug}.png (${buffer.length} bytes)`)
+          downloaded++
+          return
+        } catch {
+          // try next candidate
+        }
+      }
+      failed++
+    },
+    3
+  )
+
+  console.log(`\n  Item icons: ${downloaded} downloaded, ${failed} not yet available`)
+}
+
 // --- Main ---
 
 async function uploadAllMissingImages() {
@@ -2197,6 +2393,7 @@ async function run() {
   await downloadMissingCookingIcons()
   await downloadMissingCraftingIcons()
   await downloadMissingCookingToolIcons()
+  await downloadMissingItemIcons()
 
   // Generate habitat materials files
   if (!DRY_RUN) {
@@ -2240,7 +2437,8 @@ async function run() {
 
     await writeJson(path.join(CONTENT_DIR, "habitat-materials.json"), materialsJa)
     await writeJson(path.join(CONTENT_DIR, "habitat-materials-en.json"), materialsEn)
-    await writeJson(path.join(CONTENT_DIR, "habitat-materials-zh.json"), materialsEn)
+    // Note: habitat-materials-zh.json is manually maintained with Traditional Chinese translations.
+    // Do NOT overwrite it with English data. See todo.md for translation status.
   }
 
   // Save sync state
