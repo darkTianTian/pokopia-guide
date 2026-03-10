@@ -38,6 +38,11 @@
         "id": 99,
         "name": "木かげの赤い草むら",
         "rarity": "rare"
+      },
+      {
+        "id": 123,
+        "name": "みんなでパーティ",
+        "rarity": "common"
       }
     ]
   }

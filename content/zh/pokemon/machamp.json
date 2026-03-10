@@ -38,6 +38,11 @@
         "id": 103,
         "name": "草叢訓練場",
         "rarity": "rare"
+      },
+      {
+        "id": 117,
+        "name": "Clink-clang iron construction",
+        "rarity": "rare"
       }
     ]
   }

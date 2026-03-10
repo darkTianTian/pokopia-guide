@@ -33,6 +33,11 @@
     ],
     "habitats": [
       {
+        "id": 104,
+        "name": "ゆうがな花畑",
+        "rarity": "common"
+      },
+      {
         "id": 131,
         "name": "銅像の観光スポット",
         "rarity": "common"

@@ -33,6 +33,11 @@
         "id": 6,
         "name": "Elevated tall grass",
         "rarity": "rare"
+      },
+      {
+        "id": 8,
+        "name": "Pretty flower bed",
+        "rarity": "rare"
       }
     ]
   }

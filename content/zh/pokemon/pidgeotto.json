@@ -33,6 +33,11 @@
         "id": 6,
         "name": "高台草叢",
         "rarity": "rare"
+      },
+      {
+        "id": 8,
+        "name": "美麗花田",
+        "rarity": "rare"
       }
     ]
   }
