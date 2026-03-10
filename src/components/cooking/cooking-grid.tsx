@@ -286,14 +286,19 @@ export function CookingGrid({ recipes, locale }: CookingGridProps) {
                             />
                             <span className="text-foreground/90">{recipe.tool}</span>
                           </span>
-                          <span className="inline-flex items-center gap-2">
-                            {cookingTr.powersUp}
+                          <span className="inline-flex items-center gap-2" title={cookingTr.powersUp}>
+                            <Image
+                              src="/images/cooking/power-up.png"
+                              alt="Power Up"
+                              width={16}
+                              height={16}
+                            />
                             <SafeImage
                               src={`/images/cooking/moves/${recipe.powersUpId}.png`}
                               alt={recipe.powersUp}
-                              width={24}
-                              height={24}
-                              className="rounded bg-background/50 ring-1 ring-border/50 p-0.5"
+                              width={32}
+                              height={32}
+                              className="rounded-full shadow-sm"
                             />
                             <span className="text-foreground">{recipe.powersUp}</span>
                           </span>
