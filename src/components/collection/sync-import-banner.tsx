@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Check, Merge, X } from "lucide-react"
+import { Check, Merge, QrCode, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useCollection } from "@/hooks/use-collection"
 import { decodeCollection, parseSyncHash } from "@/lib/collection-sync"
@@ -72,37 +72,40 @@ export function SyncImportBanner({
   if (!incomingSlugs) return null
 
   return (
-    <div className="mb-4 flex flex-wrap items-center gap-3 rounded-xl border border-primary/30 bg-primary/5 px-4 py-3 shadow-sm">
-      <span className="text-sm font-medium text-foreground">
-        {t("collection.sync.importCount").replace("{{count}}", String(incomingSlugs.length))}
-      </span>
-      <div className="flex gap-2 ml-auto">
+    <div className="mb-4 rounded-xl border-2 border-amber-400/60 bg-amber-50 dark:bg-amber-950/40 px-5 py-4 shadow-lg animate-in slide-in-from-top-2 duration-300">
+      <div className="flex items-center gap-2 mb-3">
+        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-amber-400/20">
+          <QrCode className="h-4.5 w-4.5 text-amber-600 dark:text-amber-400" />
+        </div>
+        <span className="text-base font-bold text-foreground">
+          {t("collection.sync.importCount").replace("{{count}}", String(incomingSlugs.length))}
+        </span>
+      </div>
+      <div className="flex gap-2">
         <Button
           size="sm"
-          variant="default"
           onClick={handleReplace}
-          className="rounded-full text-xs"
+          className="flex-1 rounded-full bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold shadow-sm"
         >
-          <Check className="h-3.5 w-3.5 mr-1" />
+          <Check className="h-4 w-4 mr-1" />
           {t("collection.sync.replace")}
         </Button>
         <Button
           size="sm"
           variant="outline"
           onClick={handleMerge}
-          className="rounded-full text-xs"
+          className="flex-1 rounded-full text-sm font-semibold shadow-sm"
         >
-          <Merge className="h-3.5 w-3.5 mr-1" />
+          <Merge className="h-4 w-4 mr-1" />
           {t("collection.sync.merge")}
         </Button>
         <Button
           size="sm"
           variant="ghost"
           onClick={handleCancel}
-          className="rounded-full text-xs"
+          className="rounded-full text-sm"
         >
-          <X className="h-3.5 w-3.5 mr-1" />
-          {t("collection.sync.cancel")}
+          <X className="h-4 w-4" />
         </Button>
       </div>
     </div>
