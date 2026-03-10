@@ -32,6 +32,14 @@ const FLAVOR_COLORS: Record<string, string> = {
   dry: "bg-orange-100 text-orange-700 ring-orange-200 dark:bg-orange-950/30 dark:text-orange-300 dark:ring-orange-800/40",
 }
 
+const FLAVOR_GLOWS: Record<string, string> = {
+  sweet: "bg-pink-400/20 group-hover:bg-pink-400/30 dark:bg-pink-500/10 dark:group-hover:bg-pink-500/20",
+  sour: "bg-yellow-400/20 group-hover:bg-yellow-400/30 dark:bg-yellow-500/10 dark:group-hover:bg-yellow-500/20",
+  spicy: "bg-red-400/20 group-hover:bg-red-400/30 dark:bg-red-500/10 dark:group-hover:bg-red-500/20",
+  bitter: "bg-green-400/20 group-hover:bg-green-400/30 dark:bg-green-500/10 dark:group-hover:bg-green-500/20",
+  dry: "bg-orange-400/20 group-hover:bg-orange-400/30 dark:bg-orange-500/10 dark:group-hover:bg-orange-500/20",
+}
+
 export interface CookingIngredientItem {
   name: string
   slug: string
@@ -148,10 +156,10 @@ export function CookingGrid({ recipes, locale }: CookingGridProps) {
                   {categoryRecipes.map((recipe) => (
                     <article
                       key={recipe.id}
-                      className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-border/80 hover:bg-background/60 hover:shadow-xl"
+                      className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/50 p-6 shadow-sm backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-border/80 hover:shadow-xl"
                     >
-                      {/* Decorative Background Blob */}
-                      <div className="absolute -right-10 -top-10 -z-10 h-32 w-32 rounded-full bg-primary/10 blur-2xl transition-all duration-500 group-hover:bg-primary/20 dark:bg-primary/5 dark:group-hover:bg-primary/10" />
+                      {/* Decorative Background Blob mapped to flavor */}
+                      <div className={`absolute -right-10 -top-10 -z-10 h-40 w-40 rounded-full blur-3xl transition-all duration-500 ${recipe.flavor ? FLAVOR_GLOWS[recipe.flavor] || "bg-primary/20" : "bg-primary/10 group-hover:bg-primary/20 dark:bg-primary/5 dark:group-hover:bg-primary/10"}`} />
 
                       <WishlistButton
                         itemId={`cooking:${recipe.id}`}
@@ -160,127 +168,131 @@ export function CookingGrid({ recipes, locale }: CookingGridProps) {
 
                       <div className="relative flex flex-1 flex-col z-10">
                         {/* Header: Icon + Name + Price */}
-                        <div className="flex items-start gap-3">
-                          <SafeImage
-                            src={`/images/cooking/recipes/${recipe.id}.png`}
-                            alt={recipe.name}
-                            width={56}
-                            height={56}
-                            className="shrink-0 rounded-xl"
-                          />
-                          <div className="flex-1 min-w-0">
-                            <div className="flex items-start justify-between gap-2">
-                              <h4 className="text-lg font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+                        <div className="flex items-start gap-4 pr-10">
+                          <div className="relative shrink-0 transition-transform duration-500 group-hover:scale-105">
+                            <SafeImage
+                              src={`/images/cooking/recipes/${recipe.id}.png`}
+                              alt={recipe.name}
+                              width={72}
+                              height={72}
+                              className="rounded-xl drop-shadow-md"
+                            />
+                          </div>
+                          <div className="flex-1 min-w-0 pt-1">
+                            <div className="flex flex-col gap-1">
+                              <h4 className="text-xl font-extrabold tracking-tight text-foreground line-clamp-2">
                                 {recipe.name}
                               </h4>
-                              <span className="shrink-0 inline-flex items-center gap-1 text-base font-bold text-amber-600 dark:text-amber-400">
-                                <Image
-                                  src="/images/cooking/life-coin.png"
-                                  alt="Life Coin"
-                                  width={18}
-                                  height={18}
-                                  className="inline-block"
-                                />
-                                {recipe.price}
-                              </span>
+
+                              {/* Required specialty directly under name */}
+                              {recipe.requiredSpecialty && (
+                                <div className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground/80">
+                                  <Image
+                                    src={`/images/specialties/${recipe.requiredSpecialty}.png`}
+                                    alt={specialtyTr[recipe.requiredSpecialty] || recipe.requiredSpecialty}
+                                    width={16}
+                                    height={16}
+                                    className="rounded-sm opacity-80"
+                                  />
+                                  <span>{specialtyTr[recipe.requiredSpecialty] || recipe.requiredSpecialty}</span>
+                                </div>
+                              )}
                             </div>
 
                             {/* Badges row: flavor + enhanced */}
-                            <div className="mt-1.5 flex flex-wrap gap-1.5">
+                            <div className="mt-2.5 flex flex-wrap gap-1.5">
                               {recipe.flavorLabel && (
                                 <span
-                                  className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold ring-1 ring-inset ${FLAVOR_COLORS[recipe.flavor!] || "bg-muted text-muted-foreground ring-border"}`}
+                                  className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-bold ring-1 ring-inset shadow-sm ${FLAVOR_COLORS[recipe.flavor!] || "bg-muted text-muted-foreground ring-border"}`}
                                 >
                                   {recipe.flavorLabel}
                                 </span>
                               )}
                               {recipe.enhanced && (
-                                <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-700 ring-1 ring-inset ring-amber-200 dark:bg-amber-950/30 dark:text-amber-300 dark:ring-amber-800/40">
+                                <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-bold text-amber-700 ring-1 ring-inset ring-amber-200/50 shadow-sm dark:bg-amber-950/40 dark:text-amber-300 dark:ring-amber-800/40">
                                   {cookingTr.enhanced}
                                 </span>
                               )}
+                              <span className="inline-flex items-center gap-1 rounded-full bg-secondary/80 px-2.5 py-0.5 text-xs font-bold text-secondary-foreground shadow-sm ring-1 ring-inset ring-border/50 backdrop-blur-sm">
+                                <Image
+                                  src="/images/cooking/life-coin.png"
+                                  alt="Life Coin"
+                                  width={14}
+                                  height={14}
+                                  className="inline-block"
+                                />
+                                {recipe.price}
+                              </span>
                             </div>
                           </div>
                         </div>
 
-                        {/* Ingredients */}
-                        <div className="mt-4 flex flex-wrap gap-2">
+                        {/* Ingredients Bento Box Formula */}
+                        <div className="mt-6 rounded-[1.25rem] bg-black/5 dark:bg-white/5 p-3 flex flex-wrap items-center gap-2 ring-1 ring-inset ring-black/5 dark:ring-white/10 flex-1 content-start">
                           {/* Base ingredient */}
-                          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10">
+                          <div className="flex items-center gap-1.5 rounded-full bg-background/80 px-2.5 py-1 text-sm font-bold text-foreground shadow-sm ring-1 ring-inset ring-border/50 backdrop-blur-md">
                             <SafeImage
                               src={`/images/cooking/ingredients/${recipe.baseIngredientId}.png`}
                               alt={recipe.baseIngredient}
-                              width={18}
-                              height={18}
+                              width={20}
+                              height={20}
                               className="rounded-sm"
                             />
                             {recipe.baseIngredient}
-                          </span>
+                          </div>
+
+                          {/* Plus sign if there are special ingredients */}
+                          {recipe.specialIngredients.length > 0 && (
+                            <span className="text-muted-foreground/40 text-sm font-black mx-0.5">+</span>
+                          )}
+
                           {/* Special ingredients */}
-                          {recipe.specialIngredients.map((si) => (
-                            <span
-                              key={si.name}
-                              className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-semibold ring-1 ring-inset ${
-                                si.isWildcard
-                                  ? "bg-violet-100 text-violet-700 ring-violet-200 dark:bg-violet-950/30 dark:text-violet-300 dark:ring-violet-800/40"
-                                  : "bg-primary/10 text-primary ring-primary/20 dark:bg-primary/5 dark:ring-primary/10"
-                              }`}
-                            >
-                              {!si.isWildcard && (
-                                <SafeImage
-                                  src={`/images/cooking/ingredients/${si.slug}.png`}
-                                  alt={si.name}
-                                  width={18}
-                                  height={18}
-                                  className="rounded-sm"
-                                />
-                              )}
-                              {si.name}
-                            </span>
+                          {recipe.specialIngredients.map((si, idx) => (
+                            <div key={si.name} className="flex items-center gap-1">
+                              {idx > 0 && <span className="text-muted-foreground/40 text-sm font-black mx-0.5">+</span>}
+                              <div
+                                className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 text-sm font-bold shadow-sm ring-1 ring-inset backdrop-blur-md ${si.isWildcard
+                                    ? "bg-violet-100/80 text-violet-700 ring-violet-200/50 dark:bg-violet-950/40 dark:text-violet-300 dark:ring-violet-800/40"
+                                    : "bg-background/80 text-foreground ring-border/50"
+                                  }`}
+                              >
+                                {!si.isWildcard && (
+                                  <SafeImage
+                                    src={`/images/cooking/ingredients/${si.slug}.png`}
+                                    alt={si.name}
+                                    width={20}
+                                    height={20}
+                                    className="rounded-sm"
+                                  />
+                                )}
+                                {si.name}
+                              </div>
+                            </div>
                           ))}
                         </div>
 
-                        {/* Required specialty */}
-                        {recipe.requiredSpecialty && (
-                          <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
-                            <Image
-                              src={`/images/specialties/${recipe.requiredSpecialty}.png`}
-                              alt={specialtyTr[recipe.requiredSpecialty] || recipe.requiredSpecialty}
-                              width={24}
-                              height={24}
-                              className="rounded-md"
-                            />
-                            <span className="font-medium">
-                              {cookingTr.requiredSpecialty}:{" "}
-                              <span className="text-foreground">
-                                {specialtyTr[recipe.requiredSpecialty] || recipe.requiredSpecialty}
-                              </span>
-                            </span>
-                          </div>
-                        )}
-
-                        {/* Tool + Powers up */}
-                        <div className="mt-auto pt-4 flex items-center justify-between text-xs text-muted-foreground">
+                        {/* Structured Footer: Tool + Powers up */}
+                        <div className="-mx-6 -mb-6 mt-6 border-t border-border/40 bg-muted/30 px-6 py-4 flex items-center justify-between text-xs font-semibold text-muted-foreground backdrop-blur-sm transition-colors group-hover:bg-muted/50">
                           <span className="inline-flex items-center gap-1.5">
                             <SafeImage
                               src={`/images/cooking/tools/${recipe.toolId}.png`}
                               alt={recipe.tool}
-                              width={18}
-                              height={18}
-                              className="rounded-sm"
+                              width={20}
+                              height={20}
+                              className="rounded bg-background/50 ring-1 ring-border/50 p-0.5"
                             />
                             {recipe.tool}
                           </span>
                           <span className="inline-flex items-center gap-1.5">
-                            {cookingTr.powersUp}:
+                            {cookingTr.powersUp}
                             <SafeImage
                               src={`/images/cooking/moves/${recipe.powersUpId}.png`}
                               alt={recipe.powersUp}
-                              width={18}
-                              height={18}
-                              className="rounded-sm"
+                              width={20}
+                              height={20}
+                              className="rounded bg-background/50 ring-1 ring-border/50 p-0.5"
                             />
-                            {recipe.powersUp}
+                            <span className="text-foreground">{recipe.powersUp}</span>
                           </span>
                         </div>
                       </div>
