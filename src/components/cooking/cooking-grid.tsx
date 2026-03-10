@@ -252,8 +252,8 @@ export function CookingGrid({ recipes, locale }: CookingGridProps) {
                               {idx > 0 && <span className="text-muted-foreground/40 text-sm font-black mx-0.5">+</span>}
                               <div
                                 className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 text-sm font-bold shadow-sm ring-1 ring-inset backdrop-blur-md ${si.isWildcard
-                                    ? "bg-violet-100/80 text-violet-700 ring-violet-200/50 dark:bg-violet-950/40 dark:text-violet-300 dark:ring-violet-800/40"
-                                    : "bg-background/80 text-foreground ring-border/50"
+                                  ? "bg-violet-100/80 text-violet-700 ring-violet-200/50 dark:bg-violet-950/40 dark:text-violet-300 dark:ring-violet-800/40"
+                                  : "bg-background/80 text-foreground ring-border/50"
                                   }`}
                               >
                                 {!si.isWildcard && (
@@ -272,24 +272,24 @@ export function CookingGrid({ recipes, locale }: CookingGridProps) {
                         </div>
 
                         {/* Structured Footer: Tool + Powers up */}
-                        <div className="-mx-6 -mb-6 mt-6 border-t border-border/40 bg-muted/30 px-6 py-4 flex items-center justify-between text-xs font-semibold text-muted-foreground backdrop-blur-sm transition-colors group-hover:bg-muted/50">
-                          <span className="inline-flex items-center gap-1.5">
+                        <div className="-mx-6 -mb-6 mt-6 border-t border-border/40 bg-muted/30 px-6 py-4 flex items-center justify-between text-sm font-semibold text-muted-foreground backdrop-blur-sm transition-colors group-hover:bg-muted/50">
+                          <span className="inline-flex items-center gap-2">
                             <SafeImage
                               src={`/images/cooking/tools/${recipe.toolId}.png`}
                               alt={recipe.tool}
-                              width={20}
-                              height={20}
+                              width={24}
+                              height={24}
                               className="rounded bg-background/50 ring-1 ring-border/50 p-0.5"
                             />
-                            {recipe.tool}
+                            <span className="text-foreground/90">{recipe.tool}</span>
                           </span>
-                          <span className="inline-flex items-center gap-1.5">
+                          <span className="inline-flex items-center gap-2">
                             {cookingTr.powersUp}
                             <SafeImage
                               src={`/images/cooking/moves/${recipe.powersUpId}.png`}
                               alt={recipe.powersUp}
-                              width={20}
-                              height={20}
+                              width={24}
+                              height={24}
                               className="rounded bg-background/50 ring-1 ring-border/50 p-0.5"
                             />
                             <span className="text-foreground">{recipe.powersUp}</span>
