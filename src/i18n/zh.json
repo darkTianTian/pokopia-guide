@@ -17,7 +17,8 @@
     "comingSoon": "即將推出",
     "explore": "探索地圖",
     "multiplayer": "連線指南",
-    "mysteryGift": "神秘禮物"
+    "mysteryGift": "神秘禮物",
+    "cooking": "料理食譜"
   },
   "home": {
     "heroTitle": "歡迎來到 Pokémon Pokopia 攻略站",
@@ -171,6 +172,7 @@
     "explore": "探索地圖",
     "multiplayer": "連線指南",
     "mysteryGift": "神秘禮物",
+    "cooking": "料理食譜",
     "wishlist": "願望清單",
     "collection": "收集進度"
   },
@@ -318,6 +320,28 @@
     "emptyCalculator": "搜尋並加入配方，計算所需材料總量。",
     "totalQuantity": "×{{count}}"
   },
+  "cooking": {
+    "title": "料理食譜",
+    "metaTitle": "Pokopia 料理食譜 | 增益效果與食材",
+    "description": "瀏覽 Pokémon Pokopia 所有料理食譜。查詢食材、所需寶可夢特長和招式增益效果。",
+    "metaDescription": "Pokémon Pokopia 完整料理食譜清單。查看所有料理的食材、口味、所需寶可夢特長和招式強化效果。",
+    "totalCount": "共 {{count}} 道食譜",
+    "searchRecipe": "搜尋食譜...",
+    "noResults": "沒有符合的食譜。",
+    "showingCount": "顯示 {{count}} 道食譜",
+    "breadcrumb": "料理",
+    "requiredSpecialty": "需要特長",
+    "powersUp": "強化招式",
+    "enhanced": "大幅強化",
+    "baseIngredient": "基礎素材",
+    "fillRest": "剩餘格用任意食材填滿"
+  },
+  "cookingCategories": {
+    "salad": "沙拉",
+    "soup": "湯",
+    "bread": "麵包",
+    "hamburger-steak": "漢堡排"
+  },
   "craftingCategories": {
     "furniture": "家具",
     "decor": "裝飾品",
@@ -363,6 +387,7 @@
     "empty": "願望清單是空的。瀏覽並點擊愛心圖標來收藏項目。",
     "pokemon": "寶可夢",
     "recipes": "配方",
+    "cooking": "料理",
     "habitats": "棲息地",
     "materials": "材料",
     "itemCount": "{{count}} 個項目",

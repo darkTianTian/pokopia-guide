@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react"
 import { Check, Plus, Search, X } from "lucide-react"
+import { SafeImage } from "@/components/ui/safe-image"
 import { QuantityDots } from "@/components/ui/quantity-dots"
 import { WishlistButton } from "@/components/ui/wishlist-button"
 import type { Locale } from "@/i18n/config"
@@ -191,9 +192,18 @@ export function CraftingGrid({
                       )}
 
                       <div className="relative flex flex-1 flex-col z-10">
-                        <h4 className="pr-10 text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
-                          {recipe.name}
-                        </h4>
+                        <div className="flex items-start gap-3 pr-10">
+                          <SafeImage
+                            src={`/images/crafting/${recipe.id}.png`}
+                            alt={recipe.name}
+                            width={48}
+                            height={48}
+                            className="shrink-0 rounded-xl"
+                          />
+                          <h4 className="text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+                            {recipe.name}
+                          </h4>
+                        </div>
 
                         <div className="mt-4 flex flex-wrap gap-2">
                           {recipe.materials.map((m) => (

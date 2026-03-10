@@ -17,7 +17,8 @@
     "comingSoon": "近日公開",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイ",
-    "mysteryGift": "ふしぎなおくりもの"
+    "mysteryGift": "ふしぎなおくりもの",
+    "cooking": "料理レシピ"
   },
   "home": {
     "heroTitle": "Pokémon Pokopia 攻略サイトへようこそ",
@@ -171,6 +172,7 @@
     "mysteryGift": "ふしぎなおくりもの",
     "explore": "探索マップ",
     "multiplayer": "マルチプレイガイド",
+    "cooking": "料理レシピ",
     "wishlist": "ウィッシュリスト",
     "collection": "コレクション"
   },
@@ -318,6 +320,28 @@
     "emptyCalculator": "レシピを検索して追加すると、必要な素材の合計を計算します。",
     "totalQuantity": "×{{count}}"
   },
+  "cooking": {
+    "title": "料理レシピ",
+    "metaTitle": "Pokopia 料理レシピ | バフ効果＆食材",
+    "description": "Pokémon Pokopia の全料理レシピを一覧で確認。食材、必要なポケモン特技、技の強化効果を調べましょう。",
+    "metaDescription": "Pokémon Pokopia の完全料理レシピリスト。食材、味、必要なポケモン特技、技の強化効果を確認。",
+    "totalCount": "全 {{count}} 件のレシピ",
+    "searchRecipe": "レシピを検索...",
+    "noResults": "レシピが見つかりません。",
+    "showingCount": "{{count}} 件のレシピを表示",
+    "breadcrumb": "料理",
+    "requiredSpecialty": "必要な特技",
+    "powersUp": "強化する技",
+    "enhanced": "大幅強化",
+    "baseIngredient": "ベース素材",
+    "fillRest": "残りのスロットは好きな食材で埋める"
+  },
+  "cookingCategories": {
+    "salad": "サラダ",
+    "soup": "スープ",
+    "bread": "パン",
+    "hamburger-steak": "ハンバーグ"
+  },
   "craftingCategories": {
     "furniture": "家具",
     "decor": "装飾品",
@@ -363,6 +387,7 @@
     "empty": "ウィッシュリストは空です。ハートアイコンをタップしてアイテムを保存しましょう。",
     "pokemon": "ポケモン",
     "recipes": "レシピ",
+    "cooking": "料理",
     "habitats": "生息地",
     "materials": "素材",
     "itemCount": "{{count}} 件",

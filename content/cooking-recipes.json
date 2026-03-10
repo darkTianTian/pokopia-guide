@@ -1,0 +1,220 @@
+[
+  {
+    "id": "plain-salad",
+    "nameJa": "プレーンサラダ",
+    "category": "salad",
+    "flavor": null,
+    "specialIngredients": [],
+    "requiredSpecialty": null,
+    "price": 100
+  },
+  {
+    "id": "leppa-salad",
+    "nameJa": "リンゴサラダ",
+    "category": "salad",
+    "flavor": "sweet",
+    "specialIngredients": [{ "nameJa": "リンゴのみ" }],
+    "requiredSpecialty": null,
+    "price": 100
+  },
+  {
+    "id": "seaweed-salad",
+    "nameJa": "わかめサラダ",
+    "category": "salad",
+    "flavor": "bitter",
+    "specialIngredients": [{ "nameJa": "わかめ" }],
+    "requiredSpecialty": null,
+    "price": 200
+  },
+  {
+    "id": "shredded-salad",
+    "nameJa": "シャキシャキサラダ",
+    "category": "salad",
+    "flavor": "sour",
+    "specialIngredients": [],
+    "requiredSpecialty": "chop",
+    "price": 200
+  },
+  {
+    "id": "mashed-salad",
+    "nameJa": "ドンドンサラダ",
+    "category": "salad",
+    "flavor": "dry",
+    "specialIngredients": [{ "nameJa": "ゼロのみ" }],
+    "requiredSpecialty": "crush",
+    "price": 500
+  },
+  {
+    "id": "crouton-salad",
+    "nameJa": "クルトンサラダ",
+    "category": "salad",
+    "flavor": "spicy",
+    "specialIngredients": [{ "nameJa": "任意パン", "wildcard": "any-bread" }],
+    "requiredSpecialty": null,
+    "price": 500
+  },
+  {
+    "id": "plain-soup",
+    "nameJa": "プレーンスープ",
+    "category": "soup",
+    "flavor": null,
+    "specialIngredients": [],
+    "requiredSpecialty": null,
+    "price": 100
+  },
+  {
+    "id": "seaweed-soup",
+    "nameJa": "わかめスープ",
+    "category": "soup",
+    "flavor": "bitter",
+    "specialIngredients": [{ "nameJa": "わかめ" }],
+    "requiredSpecialty": null,
+    "price": 100
+  },
+  {
+    "id": "mushroom-soup",
+    "nameJa": "キノコスープ",
+    "category": "soup",
+    "flavor": "dry",
+    "specialIngredients": [{ "nameJa": "りっぱなキノコ" }],
+    "requiredSpecialty": null,
+    "price": 200
+  },
+  {
+    "id": "electric-soup",
+    "nameJa": "ビリビリスープ",
+    "category": "soup",
+    "flavor": "spicy",
+    "specialIngredients": [],
+    "requiredSpecialty": "generate",
+    "price": 200
+  },
+  {
+    "id": "herbal-soup",
+    "nameJa": "やくぜんスープ",
+    "category": "soup",
+    "flavor": "spicy",
+    "specialIngredients": [{ "nameJa": "まめ" }, { "nameJa": "はっぱ" }],
+    "requiredSpecialty": null,
+    "price": 500
+  },
+  {
+    "id": "mixed-soup",
+    "nameJa": "いろいろスープ",
+    "category": "soup",
+    "flavor": "sour",
+    "specialIngredients": [{ "nameJa": "リリのみ" }, { "nameJa": "任意ハンバーグ", "wildcard": "any-hamburger" }],
+    "requiredSpecialty": null,
+    "price": 500
+  },
+  {
+    "id": "plain-bread",
+    "nameJa": "プレーンパン",
+    "category": "bread",
+    "flavor": null,
+    "specialIngredients": [],
+    "requiredSpecialty": null,
+    "price": 100
+  },
+  {
+    "id": "leppa-bread",
+    "nameJa": "リンゴパン",
+    "category": "bread",
+    "flavor": "sour",
+    "specialIngredients": [{ "nameJa": "リンゴのみ" }],
+    "requiredSpecialty": null,
+    "price": 100
+  },
+  {
+    "id": "carrot-bread",
+    "nameJa": "にんじんパン",
+    "category": "bread",
+    "flavor": "spicy",
+    "specialIngredients": [{ "nameJa": "りっぱなニンジン" }],
+    "requiredSpecialty": null,
+    "price": 200
+  },
+  {
+    "id": "recycled-bread",
+    "nameJa": "リメイクパン",
+    "category": "bread",
+    "flavor": "bitter",
+    "specialIngredients": [{ "nameJa": "任意パン", "wildcard": "any-bread" }],
+    "requiredSpecialty": "recycle",
+    "price": 200
+  },
+  {
+    "id": "fluffy-bread",
+    "nameJa": "ふわふわパン",
+    "category": "bread",
+    "flavor": "sweet",
+    "specialIngredients": [{ "nameJa": "モモのみ" }],
+    "requiredSpecialty": "water",
+    "price": 500
+  },
+  {
+    "id": "stew-bread",
+    "nameJa": "あつあつシチューパン",
+    "category": "bread",
+    "flavor": "spicy",
+    "specialIngredients": [{ "nameJa": "任意スープ", "wildcard": "any-soup" }],
+    "requiredSpecialty": "burn",
+    "price": 500
+  },
+  {
+    "id": "plain-hamburger",
+    "nameJa": "プレーンハンバーグ",
+    "category": "hamburger-steak",
+    "flavor": null,
+    "specialIngredients": [],
+    "requiredSpecialty": null,
+    "price": 100
+  },
+  {
+    "id": "mushroom-hamburger",
+    "nameJa": "キノコハンバーグ",
+    "category": "hamburger-steak",
+    "flavor": "dry",
+    "specialIngredients": [{ "nameJa": "りっぱなキノコ" }],
+    "requiredSpecialty": null,
+    "price": 100
+  },
+  {
+    "id": "tomato-hamburger",
+    "nameJa": "トマトハンバーグ",
+    "category": "hamburger-steak",
+    "flavor": "sour",
+    "specialIngredients": [{ "nameJa": "トマト" }],
+    "requiredSpecialty": null,
+    "price": 200
+  },
+  {
+    "id": "potato-hamburger",
+    "nameJa": "ポテトハンバーグ",
+    "category": "hamburger-steak",
+    "flavor": "sweet",
+    "specialIngredients": [{ "nameJa": "ポテト" }],
+    "requiredSpecialty": null,
+    "price": 200,
+    "enhanced": true
+  },
+  {
+    "id": "mature-hamburger",
+    "nameJa": "じゅくせいハンバーグ",
+    "category": "hamburger-steak",
+    "flavor": "bitter",
+    "specialIngredients": [{ "nameJa": "メリのみ" }, { "nameJa": "キーのみ" }],
+    "requiredSpecialty": null,
+    "price": 500
+  },
+  {
+    "id": "colorful-hamburger",
+    "nameJa": "カラフルハンバーグ",
+    "category": "hamburger-steak",
+    "flavor": null,
+    "specialIngredients": [{ "nameJa": "ポテト" }, { "nameJa": "任意サラダ", "wildcard": "any-salad" }],
+    "requiredSpecialty": null,
+    "price": 500,
+    "enhanced": true
+  }
+]
