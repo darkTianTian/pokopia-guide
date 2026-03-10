@@ -45,9 +45,9 @@ export async function MaterialsListPage({ locale }: MaterialsListPageProps) {
           {t(translations, "habitat.materialsTitle")}
         </h1>
         <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
-          <p className="max-w-2xl text-balance text-lg font-normal text-muted-foreground">
+          <h2 className="max-w-2xl text-balance text-lg font-normal text-muted-foreground">
             {t(translations, "habitat.materialsDescription")}
-          </p>
+          </h2>
           <div className="inline-flex items-center rounded-full bg-primary/10 px-5 py-2 ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10">
             <span className="text-sm sm:text-base font-bold uppercase tracking-wider text-primary">
               {t(translations, "habitat.materialsTotalCount").replace(
