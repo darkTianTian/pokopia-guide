@@ -4,7 +4,27 @@ import { PokemonCard } from "@/components/pokemon/pokemon-card"
 import { WishlistButton } from "@/components/ui/wishlist-button"
 import { getHabitatBySlug } from "@/lib/habitat"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
+import { QuantityDots } from "@/components/ui/quantity-dots"
 import { notFound } from "next/navigation"
+
+function parseMaterials(materials: string): { name: string; quantity: number }[] {
+  return materials.split(/,\s*/).filter(Boolean).map((part) => {
+    const match = part.match(/^(.+?)\s*x(\d+)$/)
+    if (match) {
+      return { name: match[1].trimEnd(), quantity: parseInt(match[2], 10) }
+    }
+    return { name: part, quantity: 1 }
+  })
+}
+
+function toItemSlug(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
+}
+
+function getMaterialSlugs(materialsEn: string | null): string[] {
+  if (!materialsEn) return []
+  return parseMaterials(materialsEn).map((m) => toItemSlug(m.name))
+}
 
 interface HabitatDetailPageProps {
   slug: string
@@ -66,16 +86,37 @@ export async function HabitatDetailPage({
               {habitat.name}
             </h1>
 
-            {habitat.materials && (
-              <div className="mt-2 flex flex-col sm:flex-row sm:items-center gap-3 rounded-2xl bg-amber-500/10 px-5 py-3 ring-1 ring-inset ring-amber-500/20 dark:bg-amber-500/5 dark:ring-amber-500/10">
-                <span className="shrink-0 rounded-full bg-amber-500/20 px-3 py-1 font-bold text-amber-700 dark:text-amber-400 text-sm tracking-wide">
-                  {t(translations, "habitat.materials")}
-                </span>
-                <span className="text-base sm:text-lg font-bold text-foreground">
-                  {habitat.materials}
-                </span>
-              </div>
-            )}
+            {habitat.materials && (() => {
+              const mats = parseMaterials(habitat.materials)
+              const slugs = getMaterialSlugs(habitat.materialsEn)
+              return (
+                <div className="mt-2 flex flex-col sm:flex-row sm:items-start gap-3 rounded-2xl bg-amber-500/10 px-5 py-3 ring-1 ring-inset ring-amber-500/20 dark:bg-amber-500/5 dark:ring-amber-500/10">
+                  <span className="shrink-0 rounded-full bg-amber-500/20 px-3 py-1 font-bold text-amber-700 dark:text-amber-400 text-sm tracking-wide">
+                    {t(translations, "habitat.materials")}
+                  </span>
+                  <div className="flex flex-wrap gap-2">
+                    {mats.map((mat, i) => (
+                      <span
+                        key={i}
+                        className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10"
+                      >
+                        {slugs[i] && (
+                          <SafeImage
+                            src={`/images/items/${slugs[i]}.png`}
+                            alt={mat.name}
+                            width={20}
+                            height={20}
+                            className="inline-block shrink-0"
+                          />
+                        )}
+                        {mat.name}
+                        <QuantityDots count={mat.quantity} className="ml-1" />
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )
+            })()}
 
             <div className="mt-4 flex flex-wrap items-center gap-3">
               <p className="max-w-2xl text-base text-muted-foreground leading-relaxed">
