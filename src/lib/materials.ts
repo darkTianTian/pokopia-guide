@@ -47,7 +47,7 @@ function parseMaterialString(str: string): ParsedItem[] {
     .map((part) => part.trim())
     .filter(Boolean)
     .map((part) => {
-      const match = part.match(/^(.+?)\s+x(\d+)$/)
+      const match = part.match(/^(.+?)\s*x(\d+)$/)
       if (match) {
         return { name: match[1].trim(), quantity: Number(match[2]) }
       }

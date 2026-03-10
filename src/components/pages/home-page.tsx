@@ -12,9 +12,9 @@ import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 
 function parseMaterials(materials: string): { name: string; quantity: number }[] {
   return materials.split(/,\s*/).filter(Boolean).map((part) => {
-    const match = part.match(/^(.+?)\s+x(\d+)$/)
+    const match = part.match(/^(.+?)\s*x(\d+)$/)
     if (match) {
-      return { name: match[1], quantity: parseInt(match[2], 10) }
+      return { name: match[1].trimEnd(), quantity: parseInt(match[2], 10) }
     }
     return { name: part, quantity: 1 }
   })
