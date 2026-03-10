@@ -1274,6 +1274,387 @@ async function downloadMissingHabitatImages(allHabitatIds, habitatIdToImageUrl) 
   console.log(`\n  Habitat images: ${downloaded} downloaded, ${failed} failed, ${tooSmall} too small`)
 }
 
+// --- Cooking Recipe Icon Downloader ---
+
+const COOKING_RECIPES_DIR = path.join(process.cwd(), "public", "images", "cooking", "recipes")
+const SEREBII_COOKING_URL = `${SEREBII_BASE}/pokemonpokopia/cooking.shtml`
+
+// Map our recipe IDs to known Serebii filenames (static fallback)
+const COOKING_ICON_STATIC_MAP = {
+  "plain-salad": "simplesalad",
+  "leppa-salad": "leppasalad",
+  "seaweed-salad": "seaweedsalad",
+  "shredded-salad": "shreddedsalad",
+  "mashed-salad": "crushed-berrysalad",
+  "crouton-salad": "croutonsalad",
+  "plain-soup": "simplesoup",
+  "seaweed-soup": "seaweedsoup",
+  "mushroom-soup": "mushroomsoup",
+  "electric-soup": "electrifyingsoup",
+  "herbal-soup": "healthysoup",
+  "mixed-soup": "flavorfulsoup",
+  "plain-bread": "simplebread",
+  "leppa-bread": "leppabread",
+  "carrot-bread": "carrotbread",
+  "recycled-bread": "recycledbread",
+  "fluffy-bread": "fluffybread",
+  "stew-bread": "breadbowl",
+  "plain-hamburger": "simplehamburgersteak",
+  "mushroom-hamburger": "mushroomhamburgersteak",
+  "tomato-hamburger": "tomatohamburgersteak",
+  "potato-hamburger": "potatohamburgersteak",
+  "mature-hamburger": "maturehamburgersteak",
+  "colorful-hamburger": "colorfulhamburgersteak",
+}
+
+// Known Serebii 404 placeholder hash (md5) — skip files matching this
+const SEREBII_404_SIZE = 36068
+
+async function downloadMissingCookingIcons() {
+  console.log("\n--- Downloading Missing Cooking Recipe Icons ---")
+
+  const recipesPath = path.join(CONTENT_DIR, "cooking-recipes.json")
+  let recipes
+  try {
+    recipes = JSON.parse(await fs.readFile(recipesPath, "utf-8"))
+  } catch {
+    console.log("  cooking-recipes.json not found, skipping.")
+    return
+  }
+
+  // Find missing icons
+  const missing = []
+  for (const recipe of recipes) {
+    const filePath = path.join(COOKING_RECIPES_DIR, `${recipe.id}.png`)
+    try {
+      await fs.stat(filePath)
+    } catch {
+      missing.push(recipe.id)
+    }
+  }
+
+  if (missing.length === 0) {
+    console.log(`  All ${recipes.length} cooking recipe icons exist.`)
+    return
+  }
+
+  console.log(`  Missing: ${missing.length} / ${recipes.length} (${missing.join(", ")})`)
+
+  if (DRY_RUN) {
+    for (const id of missing) {
+      console.log(`  [DRY RUN] ${id}.png`)
+    }
+    return
+  }
+
+  // Also scrape the cooking page for any new filenames we don't know about
+  let scrapedMap = new Map()
+  try {
+    const html = await fetchHtml(SEREBII_COOKING_URL)
+    const $ = cheerio.load(html)
+    $("img[src*='items/']").each((_, el) => {
+      const src = $(el).attr("src")
+      if (src) {
+        // Extract filename without extension: "items/simplesalad.png" → "simplesalad"
+        const match = src.match(/items\/([^.]+)\.png/)
+        if (match) {
+          // Find the recipe name in the same row
+          const row = $(el).closest("tr")
+          const nameCell = row.find("td").eq(1).text().trim().toLowerCase()
+          scrapedMap.set(match[1], nameCell)
+        }
+      }
+    })
+    console.log(`  Scraped ${scrapedMap.size} recipe images from Serebii cooking page.`)
+  } catch (err) {
+    console.log(`  Could not scrape Serebii cooking page: ${err.message}`)
+  }
+
+  await fs.mkdir(COOKING_RECIPES_DIR, { recursive: true })
+
+  let downloaded = 0
+  let failed = 0
+
+  await pMap(
+    missing,
+    async (id) => {
+      // Try static map first, then guess common patterns
+      const candidates = []
+      if (COOKING_ICON_STATIC_MAP[id]) {
+        candidates.push(COOKING_ICON_STATIC_MAP[id])
+      }
+      // Also try the ID directly with no hyphens
+      candidates.push(id.replace(/-/g, ""))
+
+      for (const filename of candidates) {
+        const url = `${SEREBII_BASE}/pokemonpokopia/items/${filename}.png`
+        try {
+          const res = await fetch(url, {
+            headers: {
+              "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "Accept": "image/png,image/*,*/*",
+            },
+          })
+          if (!res.ok) continue
+
+          const buffer = Buffer.from(await res.arrayBuffer())
+          // Skip if it's the Serebii 404 placeholder (all same size)
+          if (buffer.length === SEREBII_404_SIZE || buffer.length < 1024) continue
+
+          const filePath = path.join(COOKING_RECIPES_DIR, `${id}.png`)
+          await fs.writeFile(filePath, buffer)
+          console.log(`  Downloaded ${id}.png (${buffer.length} bytes)`)
+          downloaded++
+          return
+        } catch {
+          // try next candidate
+        }
+      }
+      console.log(`  Not available yet: ${id}.png`)
+      failed++
+    },
+    3
+  )
+
+  console.log(`\n  Cooking icons: ${downloaded} downloaded, ${failed} not yet available`)
+}
+
+// --- Crafting Recipe Icons ---
+
+const CRAFTING_RECIPES_DIR = path.join(process.cwd(), "public", "images", "crafting")
+
+// Map our recipe IDs to known Serebii filenames (some differ from our IDs)
+const CRAFTING_ICON_STATIC_MAP = {
+  "storage-box": "storagebox",
+  "big-storage-box": "bigstoragebox",
+  "straw-table": "strawtable",
+  "log-table": "logtable",
+  "display-stand": "exhibitionstand",
+  "log-chair": "logchair",
+  "straw-stool": "strawstool",
+  "iron-table": "irontable",
+  "iron-stand": "ironstand",
+  "iron-chair": "ironchair",
+  "wooden-bench": "woodenbench",
+  "straw-bed": "strawbed",
+  "wooden-bed": "plainbed",
+  "industrial-bed": "industrialbed",
+  "flower-vase": "smallvase",
+  "mug": "mug",
+  "basket": "picnicbasket",
+  "party-platter": "partyplatter",
+  "wooden-plate": "woodenplate",
+  "first-aid-kit": "firstaidkit",
+  "party-wall-decoration": "partybunting",
+  "vine-wall-decoration": "flowergarland",
+  "campfire": "campfire",
+  "lucky-topiary": "chanseyplant",
+  "water-barrel": "barrel",
+  "firework-launcher": "cannon",
+  "gravestone": "gravestone",
+  "wooden-birdhouse": "woodenbirdhouse",
+  "perch": "perch",
+  "sign": "sign",
+  "information-board": "informationboard",
+  "fire-hydrant": "firehydrant",
+  "ditto-flag": "dittoflag",
+  "workbench": "workbench",
+  "cooking-pot": "cookingstove",
+  "frying-pan": "fryingpan",
+  "cutting-board": "cuttingboard",
+  "picture-frame": "blankcanvas",
+  "shared-box": "plainchest",
+  "bread-oven": "breadoven",
+  "furnace": "furnacekit",
+  "rail-track": "railtrack",
+  "crossing-gate": "crossinggate",
+  "mine-cart": "cart",
+  "stone-stairs": "stonestairs",
+  "wooden-stairs": "woodenstairs",
+  "mushroom-lamp": "seedotlamp",
+  "mushroom-streetlight": "mushroomstreetlight",
+  "sprinkler": "sprinkler",
+  "wire": "jumbledcords",
+  "pulley": "pulley",
+  "wooden-cross-door": "woodencrossdoor",
+  "smooth-awning": "smoothawning",
+  "wooden-partition-straight": "woodenpartitionstraight",
+  "wooden-partition-corner": "woodenpartitioncorner",
+  "dock-board": "dockboard",
+  "horizontal-log": "horizontallog",
+  "vertical-log": "verticallog",
+  "house-partition": "housepartition",
+  "grass-flooring": "grassflooring",
+  "puffy-tree-pillar": "puffytreepillar",
+  "stone-pillar-middle": "stonepillarmiddle",
+  "stone-pillar-top": "stonepillartop",
+  "marble-floor": "marblefloor",
+  "stone-line-floor": "stonelinefloor",
+  "simple-square-tile": "simplesquaretile",
+  "stone-tiling": "stonetiling",
+  "firework-white": "fireworkwhite",
+  "firework-blue": "fireworkblue",
+  "firework-yellow": "fireworkyellow",
+  "firework-green": "fireworkgreen",
+  "firework-red": "fireworkred",
+}
+
+async function downloadMissingCraftingIcons() {
+  console.log("\n--- Downloading Missing Crafting Recipe Icons ---")
+
+  const recipesPath = path.join(CONTENT_DIR, "crafting-recipes.json")
+  let recipes
+  try {
+    recipes = JSON.parse(await fs.readFile(recipesPath, "utf-8"))
+  } catch {
+    console.log("  crafting-recipes.json not found, skipping.")
+    return
+  }
+
+  const missing = []
+  for (const recipe of recipes) {
+    const filePath = path.join(CRAFTING_RECIPES_DIR, `${recipe.id}.png`)
+    try {
+      await fs.stat(filePath)
+    } catch {
+      missing.push(recipe.id)
+    }
+  }
+
+  if (missing.length === 0) {
+    console.log(`  All ${recipes.length} crafting recipe icons exist.`)
+    return
+  }
+
+  console.log(`  Missing: ${missing.length} / ${recipes.length} (${missing.join(", ")})`)
+
+  if (DRY_RUN) {
+    for (const id of missing) {
+      console.log(`  [DRY RUN] ${id}.png`)
+    }
+    return
+  }
+
+  await fs.mkdir(CRAFTING_RECIPES_DIR, { recursive: true })
+
+  let downloaded = 0
+  let failed = 0
+
+  await pMap(
+    missing,
+    async (id) => {
+      const candidates = []
+      if (CRAFTING_ICON_STATIC_MAP[id]) {
+        candidates.push(CRAFTING_ICON_STATIC_MAP[id])
+      }
+      candidates.push(id.replace(/-/g, ""))
+
+      for (const filename of candidates) {
+        const url = `${SEREBII_BASE}/pokemonpokopia/items/${filename}.png`
+        try {
+          const res = await fetch(url, {
+            headers: {
+              "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "Accept": "image/png,image/*,*/*",
+            },
+          })
+          if (!res.ok) continue
+
+          const buffer = Buffer.from(await res.arrayBuffer())
+          if (buffer.length === SEREBII_404_SIZE || buffer.length < 1024) continue
+
+          const filePath = path.join(CRAFTING_RECIPES_DIR, `${id}.png`)
+          await fs.writeFile(filePath, buffer)
+          console.log(`  Downloaded ${id}.png (${buffer.length} bytes)`)
+          downloaded++
+          return
+        } catch {
+          // try next candidate
+        }
+      }
+      console.log(`  Not available yet: ${id}.png`)
+      failed++
+    },
+    3
+  )
+
+  console.log(`\n  Crafting icons: ${downloaded} downloaded, ${failed} not yet available`)
+}
+
+// --- Cooking Tool Icons ---
+
+const COOKING_TOOLS_DIR = path.join(process.cwd(), "public", "images", "cooking", "tools")
+
+const COOKING_TOOL_ICON_MAP = {
+  "cooking-pot": "cookingstove",
+  "frying-pan": "fryingpan",
+  "cutting-board": "cuttingboard",
+  "bread-oven": "breadoven",
+}
+
+async function downloadMissingCookingToolIcons() {
+  console.log("\n--- Downloading Missing Cooking Tool Icons ---")
+
+  const missing = []
+  for (const toolId of Object.keys(COOKING_TOOL_ICON_MAP)) {
+    const filePath = path.join(COOKING_TOOLS_DIR, `${toolId}.png`)
+    try {
+      await fs.stat(filePath)
+    } catch {
+      missing.push(toolId)
+    }
+  }
+
+  if (missing.length === 0) {
+    console.log(`  All 4 cooking tool icons exist.`)
+    return
+  }
+
+  console.log(`  Missing: ${missing.length} / 4 (${missing.join(", ")})`)
+
+  if (DRY_RUN) {
+    for (const id of missing) {
+      console.log(`  [DRY RUN] ${id}.png`)
+    }
+    return
+  }
+
+  await fs.mkdir(COOKING_TOOLS_DIR, { recursive: true })
+
+  let downloaded = 0
+  for (const toolId of missing) {
+    const filename = COOKING_TOOL_ICON_MAP[toolId]
+    const url = `${SEREBII_BASE}/pokemonpokopia/items/${filename}.png`
+    try {
+      const res = await fetch(url, {
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+          "Accept": "image/png,image/*,*/*",
+        },
+      })
+      if (!res.ok) {
+        console.log(`  Not available yet: ${toolId}.png`)
+        continue
+      }
+
+      const buffer = Buffer.from(await res.arrayBuffer())
+      if (buffer.length === SEREBII_404_SIZE || buffer.length < 1024) {
+        console.log(`  Not available yet: ${toolId}.png`)
+        continue
+      }
+
+      const filePath = path.join(COOKING_TOOLS_DIR, `${toolId}.png`)
+      await fs.writeFile(filePath, buffer)
+      console.log(`  Downloaded ${toolId}.png (${buffer.length} bytes)`)
+      downloaded++
+    } catch {
+      console.log(`  Not available yet: ${toolId}.png`)
+    }
+  }
+
+  console.log(`\n  Cooking tool icons: ${downloaded} downloaded, ${missing.length - downloaded} not yet available`)
+}
+
 // --- Main ---
 
 async function uploadAllMissingImages() {
@@ -1813,6 +2194,9 @@ async function run() {
     }
   }
   await downloadMissingHabitatImages(allHabitatIds, habitatIdToImageUrl)
+  await downloadMissingCookingIcons()
+  await downloadMissingCraftingIcons()
+  await downloadMissingCookingToolIcons()
 
   // Generate habitat materials files
   if (!DRY_RUN) {

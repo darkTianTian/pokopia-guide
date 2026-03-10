@@ -141,10 +141,10 @@ export function CraftingCalculator({
             {materialTotals.map(([name, total]) => (
               <div
                 key={name}
-                className="flex items-center justify-between rounded-2xl border border-border/40 bg-background/40 px-4 py-3 backdrop-blur-xl"
+                className="flex items-center justify-between rounded-[1.25rem] border border-border/40 bg-background/50 px-5 py-4 shadow-sm backdrop-blur-xl transition-all hover:-translate-y-0.5 hover:shadow-md"
               >
-                <span className="text-sm font-medium text-foreground/80">{name}</span>
-                <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[13px] font-bold tabular-nums text-primary/90 ring-1 ring-inset ring-primary/20">
+                <span className="text-sm font-bold text-foreground/90">{name}</span>
+                <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[13px] font-bold tabular-nums text-primary/90 ring-1 ring-inset ring-primary/20 shadow-sm">
                   {tr.crafting.totalQuantity.replace("{{count}}", String(total))}
                 </span>
               </div>

@@ -17,7 +17,8 @@
     "comingSoon": "Soon",
     "explore": "Explore",
     "multiplayer": "Multiplayer",
-    "mysteryGift": "Mystery Gift"
+    "mysteryGift": "Mystery Gift",
+    "cooking": "Cooking Recipes"
   },
   "home": {
     "heroTitle": "Welcome to Pokémon Pokopia Guide",
@@ -171,6 +172,7 @@
     "explore": "Exploration Map",
     "multiplayer": "Multiplayer Guide",
     "mysteryGift": "Mystery Gift",
+    "cooking": "Cooking Recipes",
     "wishlist": "Wishlist",
     "collection": "Collection"
   },
@@ -318,6 +320,28 @@
     "emptyCalculator": "Search and add recipes to calculate total materials needed.",
     "totalQuantity": "×{{count}}"
   },
+  "cooking": {
+    "title": "Cooking Recipes",
+    "metaTitle": "All Pokopia Cooking Recipes | Buffs & Ingredients",
+    "description": "Browse all cooking recipes in Pokémon Pokopia. Find ingredients, required specialties, and move buffs for each dish.",
+    "metaDescription": "All cooking recipes in Pokémon Pokopia with ingredients, flavors, required Pokémon specialties, and move power-ups.",
+    "totalCount": "{{count}} recipes in total",
+    "searchRecipe": "Search recipes...",
+    "noResults": "No recipes found.",
+    "showingCount": "Showing {{count}} recipes",
+    "breadcrumb": "Cooking",
+    "requiredSpecialty": "Required Specialty",
+    "powersUp": "Powers Up",
+    "enhanced": "Major Boost",
+    "baseIngredient": "Base",
+    "fillRest": "Fill remaining slots with any ingredient"
+  },
+  "cookingCategories": {
+    "salad": "Salad",
+    "soup": "Soup",
+    "bread": "Bread",
+    "hamburger-steak": "Hamburger Steak"
+  },
   "craftingCategories": {
     "furniture": "Furniture",
     "decor": "Decorations",
@@ -363,6 +387,7 @@
     "empty": "Your wishlist is empty. Browse and tap the heart icon to save items.",
     "pokemon": "Pokémon",
     "recipes": "Recipes",
+    "cooking": "Cooking",
     "habitats": "Habitats",
     "materials": "Materials",
     "itemCount": "{{count}} items",

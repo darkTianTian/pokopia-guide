@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react"
 import { Check, Plus, Search, X } from "lucide-react"
+import { SafeImage } from "@/components/ui/safe-image"
 import { QuantityDots } from "@/components/ui/quantity-dots"
 import { WishlistButton } from "@/components/ui/wishlist-button"
 import type { Locale } from "@/i18n/config"
@@ -26,6 +27,18 @@ const CATEGORY_ORDER = [
   "transport",
   "special",
 ]
+
+const CATEGORY_GLOWS: Record<string, string> = {
+  furniture: "bg-orange-400/20 group-hover:bg-orange-400/30 dark:bg-orange-500/10 dark:group-hover:bg-orange-500/20",
+  decor: "bg-yellow-400/20 group-hover:bg-yellow-400/30 dark:bg-yellow-500/10 dark:group-hover:bg-yellow-500/20",
+  outdoor: "bg-green-400/20 group-hover:bg-green-400/30 dark:bg-green-500/10 dark:group-hover:bg-green-500/20",
+  "cooking-tool": "bg-red-400/20 group-hover:bg-red-400/30 dark:bg-red-500/10 dark:group-hover:bg-red-500/20",
+  building: "bg-blue-400/20 group-hover:bg-blue-400/30 dark:bg-blue-500/10 dark:group-hover:bg-blue-500/20",
+  blocks: "bg-stone-400/20 group-hover:bg-stone-400/30 dark:bg-stone-500/10 dark:group-hover:bg-stone-500/20",
+  lighting: "bg-amber-400/20 group-hover:bg-amber-400/30 dark:bg-amber-500/10 dark:group-hover:bg-amber-500/20",
+  transport: "bg-indigo-400/20 group-hover:bg-indigo-400/30 dark:bg-indigo-500/10 dark:group-hover:bg-indigo-500/20",
+  special: "bg-fuchsia-400/20 group-hover:bg-fuchsia-400/30 dark:bg-fuchsia-500/10 dark:group-hover:bg-fuchsia-500/20",
+}
 
 export interface RecipeMaterial {
   name: string
@@ -136,19 +149,22 @@ export function CraftingGrid({
                   {categoryRecipes.map((recipe) => (
                     <article
                       key={recipe.id}
-                      className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-border/80 hover:bg-background/60 hover:shadow-xl"
+                      className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/50 p-6 shadow-sm backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-border/80 hover:shadow-xl"
                     >
-                      {/* Decorative Background Blob */}
-                      <div className="absolute -right-10 -top-10 -z-10 h-32 w-32 rounded-full bg-primary/10 blur-2xl transition-all duration-500 group-hover:bg-primary/20 dark:bg-primary/5 dark:group-hover:bg-primary/10" />
+                      {/* Decorative Background Blob mapped to category */}
+                      <div className={`absolute -right-10 -top-10 -z-10 h-40 w-40 rounded-full blur-3xl transition-all duration-500 ${CATEGORY_GLOWS[recipe.category] || "bg-primary/20"}`} />
 
                       <WishlistButton
                         itemId={`recipe:${recipe.id}`}
                         className="absolute right-4 top-4 z-20"
                       />
 
+                      {/* Calculator Button repositioned below the Wishlist Button */}
                       {onToggleRecipe && (
                         <button
-                          onClick={() => {
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
                             onToggleRecipe(recipe.id)
                             setJustClickedId(recipe.id)
                           }}
@@ -157,11 +173,11 @@ export function CraftingGrid({
                               setJustClickedId(null)
                             }
                           }}
-                          className={`group/btn absolute right-5 bottom-5 z-20 flex h-10 w-10 items-center justify-center rounded-full ring-1 ring-inset shadow-lg transition-all ${selectedIds?.has(recipe.id)
+                          className={`group/btn absolute right-4 top-[3.75rem] z-20 flex h-8 w-8 items-center justify-center rounded-full ring-1 ring-inset shadow-md transition-all ${selectedIds?.has(recipe.id)
                             ? justClickedId === recipe.id
-                              ? "bg-primary text-primary-foreground ring-primary" // keep primary state if finger/mouse hasn't left
+                              ? "bg-primary text-primary-foreground ring-primary"
                               : "bg-primary text-primary-foreground ring-primary hover:bg-destructive hover:text-destructive-foreground hover:ring-destructive"
-                            : "bg-primary/10 text-primary ring-primary/20 hover:bg-primary hover:text-primary-foreground hover:ring-primary"
+                            : "bg-primary/10 text-primary ring-primary/20 hover:bg-primary hover:text-primary-foreground hover:ring-primary backdrop-blur-sm"
                             }`}
                           aria-label={
                             selectedIds?.has(recipe.id)
@@ -172,38 +188,44 @@ export function CraftingGrid({
                           {selectedIds?.has(recipe.id) ? (
                             <>
                               <Check
-                                className={`h-5 w-5 transition-transform ${justClickedId === recipe.id
-                                  ? "" // keep showing check if just clicked
-                                  : "group-hover/btn:hidden"
-                                  }`}
+                                className={`h-4 w-4 transition-transform ${justClickedId === recipe.id ? "" : "group-hover/btn:hidden"}`}
                               />
                               <X
-                                className={`h-5 w-5 transition-transform ${justClickedId === recipe.id
-                                  ? "hidden" // keep hiding X if just clicked
-                                  : "hidden group-hover/btn:block group-hover/btn:scale-110"
-                                  }`}
+                                className={`h-4 w-4 transition-transform ${justClickedId === recipe.id ? "hidden" : "hidden group-hover/btn:block group-hover/btn:scale-110"}`}
                               />
                             </>
                           ) : (
-                            <Plus className="h-5 w-5 transition-transform group-hover/btn:rotate-90" />
+                            <Plus className="h-4 w-4 transition-transform group-hover/btn:rotate-90" />
                           )}
                         </button>
                       )}
 
                       <div className="relative flex flex-1 flex-col z-10">
-                        <h4 className="pr-10 text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
-                          {recipe.name}
-                        </h4>
+                        <div className="flex items-start gap-4 pr-10">
+                          <div className="relative shrink-0 transition-transform duration-500 group-hover:scale-105">
+                            <SafeImage
+                              src={`/images/crafting/${recipe.id}.png`}
+                              alt={recipe.name}
+                              width={72}
+                              height={72}
+                              className="rounded-xl drop-shadow-md"
+                            />
+                          </div>
+                          <h4 className="text-xl font-extrabold tracking-tight text-foreground line-clamp-2 pt-1 transition-colors group-hover:text-primary">
+                            {recipe.name}
+                          </h4>
+                        </div>
 
-                        <div className="mt-4 flex flex-wrap gap-2">
-                          {recipe.materials.map((m) => (
-                            <span
-                              key={m.name}
-                              className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10 transition-colors group-hover:bg-primary/15"
-                            >
-                              {m.name}
-                              <QuantityDots count={m.quantity} className="ml-1" />
-                            </span>
+                        {/* Ingredients Bento Box Formula */}
+                        <div className="mt-6 rounded-[1.25rem] bg-black/5 dark:bg-white/5 p-4 flex flex-wrap items-center gap-2 ring-1 ring-inset ring-black/5 dark:ring-white/10 content-start">
+                          {recipe.materials.map((m, idx) => (
+                            <div key={m.name} className="flex items-center gap-1 z-10">
+                              {idx > 0 && <span className="text-muted-foreground/40 text-sm font-black mx-0.5">+</span>}
+                              <div className="flex items-center gap-1.5 rounded-full bg-background/80 px-2.5 py-1 text-sm font-bold shadow-sm ring-1 ring-inset ring-border/50 backdrop-blur-md text-foreground">
+                                {m.name}
+                                <QuantityDots count={m.quantity} className="ml-1" />
+                              </div>
+                            </div>
                           ))}
                         </div>
                       </div>

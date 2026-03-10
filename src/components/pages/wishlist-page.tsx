@@ -2,6 +2,7 @@ import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { WishlistContent } from "@/components/wishlist/wishlist-content"
 import { getAllPokemon } from "@/lib/pokemon"
 import { getAllRecipes } from "@/lib/crafting"
+import { getAllCookingRecipes } from "@/lib/cooking"
 import { getAllHabitatsWithPokemon } from "@/lib/habitat"
 import { getAllMaterials } from "@/lib/materials"
 import { getTranslations, t, type Locale } from "@/i18n/config"
@@ -11,10 +12,11 @@ interface WishlistPageProps {
 }
 
 export async function WishlistPage({ locale }: WishlistPageProps) {
-  const [pokemon, recipes, habitats, materials, translations] =
+  const [pokemon, recipes, cookingRecipes, habitats, materials, translations] =
     await Promise.all([
       getAllPokemon(locale),
       Promise.resolve(getAllRecipes(locale)),
+      Promise.resolve(getAllCookingRecipes(locale)),
       getAllHabitatsWithPokemon(locale),
       Promise.resolve(getAllMaterials(locale)),
       getTranslations(locale),
@@ -54,6 +56,29 @@ export async function WishlistPage({ locale }: WishlistPageProps) {
     })),
   }))
 
+  const cookingItems = cookingRecipes.map((r) => ({
+    id: r.id,
+    name: r.name,
+    category: r.category,
+    flavor: r.flavor,
+    flavorLabel: r.flavorLabel,
+    baseIngredient: r.baseIngredient,
+    baseIngredientId: r.baseIngredientId,
+    tool: r.tool,
+    toolId: r.toolId,
+    powersUp: r.powersUp,
+    powersUpId: r.powersUpId,
+    specialIngredients: r.specialIngredients.map((si) => ({
+      name: si.name,
+      slug: si.slug,
+      isWildcard: si.isWildcard,
+    })),
+    requiredSpecialty: r.requiredSpecialty,
+    requiredSpecialtyLabel: r.requiredSpecialtyLabel,
+    price: r.price,
+    enhanced: r.enhanced,
+  }))
+
   const materialItems = materials.map((m) => ({
     slug: m.slug,
     name: m.name,
@@ -86,6 +111,7 @@ export async function WishlistPage({ locale }: WishlistPageProps) {
       <WishlistContent
         pokemon={pokemonItems}
         recipes={recipeItems}
+        cookingRecipes={cookingItems}
         habitats={habitatItems}
         materials={materialItems}
         locale={locale}

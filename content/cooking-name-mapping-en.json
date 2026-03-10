@@ -1,0 +1,82 @@
+{
+  "recipes": {
+    "プレーンサラダ": "Simple Salad",
+    "リンゴサラダ": "Leppa Salad",
+    "わかめサラダ": "Seaweed Salad",
+    "シャキシャキサラダ": "Shredded Salad",
+    "ドンドンサラダ": "Crushed-Berry Salad",
+    "クルトンサラダ": "Crouton Salad",
+    "プレーンスープ": "Simple Soup",
+    "わかめスープ": "Seaweed Soup",
+    "キノコスープ": "Mushroom Soup",
+    "ビリビリスープ": "Electrifying Soup",
+    "やくぜんスープ": "Healthy Soup",
+    "いろいろスープ": "Flavorful Soup",
+    "プレーンパン": "Simple Bread",
+    "リンゴパン": "Leppa Bread",
+    "にんじんパン": "Carrot Bread",
+    "リメイクパン": "Recycled Bread",
+    "ふわふわパン": "Fluffy Bread",
+    "あつあつシチューパン": "Bread Bowl",
+    "プレーンハンバーグ": "Simple Hamburger Steak",
+    "キノコハンバーグ": "Mushroom Hamburger Steak",
+    "トマトハンバーグ": "Tomato Hamburger Steak",
+    "ポテトハンバーグ": "Potato Hamburger Steak",
+    "じゅくせいハンバーグ": "Mature Hamburger Steak",
+    "カラフルハンバーグ": "Colorful Hamburger Steak"
+  },
+  "ingredients": {
+    "はっぱ": "Leaf",
+    "おいしいみず": "Fresh Water",
+    "こむぎ": "Wheat",
+    "まめ": "Bean",
+    "リンゴのみ": "Leppa Berry",
+    "わかめ": "Seaweed",
+    "ゼロのみ": "Rowap Berry",
+    "りっぱなキノコ": "Big Mushroom",
+    "リリのみ": "Lum Berry",
+    "りっぱなニンジン": "Ripe Carrot",
+    "モモのみ": "Pecha Berry",
+    "トマト": "Tomato",
+    "ポテト": "Potato",
+    "メリのみ": "Rawst Berry",
+    "キーのみ": "Aspear Berry"
+  },
+  "wildcards": {
+    "any-bread": "Any Bread",
+    "any-soup": "Any Soup",
+    "any-salad": "Any Salad",
+    "any-hamburger": "Any Hamburger Steak"
+  },
+  "categories": {
+    "salad": "Salad",
+    "soup": "Soup",
+    "bread": "Bread",
+    "hamburger-steak": "Hamburger Steak"
+  },
+  "flavors": {
+    "sweet": "Sweet",
+    "sour": "Sour",
+    "spicy": "Spicy",
+    "bitter": "Bitter",
+    "dry": "Dry"
+  },
+  "tools": {
+    "cutting-board": "Cutting Board",
+    "cooking-pot": "Cooking Pot",
+    "bread-oven": "Bread Oven",
+    "frying-pan": "Frying Pan"
+  },
+  "moves": {
+    "leafage": "Leafage",
+    "water-gun": "Water Gun",
+    "cut": "Cut",
+    "rock-smash": "Rock Smash"
+  },
+  "baseIngredients": {
+    "leaf": "Leaf",
+    "fresh-water": "Fresh Water",
+    "wheat": "Wheat",
+    "bean": "Bean"
+  }
+}

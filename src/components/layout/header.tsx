@@ -38,6 +38,10 @@ export async function Header({ locale }: HeaderProps) {
       path: "/crafting",
       label: t(translations, "nav.habitatCrafting"),
     },
+    {
+      path: "/cooking",
+      label: t(translations, "nav.cooking"),
+    },
   ]
 
   return (

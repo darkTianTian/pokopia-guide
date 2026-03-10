@@ -5,6 +5,7 @@ import { Heart, Trash2 } from "lucide-react"
 import { useWishlist } from "@/hooks/use-wishlist"
 import { PokemonGrid } from "@/components/pokemon/pokemon-grid"
 import { CraftingGrid, type RecipeItem } from "@/components/crafting/crafting-grid"
+import { CookingGrid, type CookingRecipeItem } from "@/components/cooking/cooking-grid"
 import { HabitatGrid } from "@/components/habitat/habitat-grid"
 import { MaterialsGrid } from "@/components/habitat/materials-grid"
 import type { Pokemon } from "@/lib/types"
@@ -19,7 +20,7 @@ const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
   ja: jaTranslations,
 }
 
-type TabKey = "pokemon" | "recipes" | "habitats" | "materials"
+type TabKey = "pokemon" | "recipes" | "cooking" | "habitats" | "materials"
 
 interface HabitatItem {
   id: number
@@ -47,6 +48,7 @@ interface MaterialItem {
 interface WishlistContentProps {
   pokemon: Pokemon[]
   recipes: RecipeItem[]
+  cookingRecipes: CookingRecipeItem[]
   habitats: HabitatItem[]
   materials: MaterialItem[]
   locale: Locale
@@ -55,6 +57,7 @@ interface WishlistContentProps {
 export function WishlistContent({
   pokemon,
   recipes,
+  cookingRecipes,
   habitats,
   materials,
   locale,
@@ -72,6 +75,11 @@ export function WishlistContent({
     [recipes, items]
   )
 
+  const filteredCookingRecipes = useMemo(
+    () => cookingRecipes.filter((r) => items.has(`cooking:${r.id}`)),
+    [cookingRecipes, items]
+  )
+
   const filteredHabitats = useMemo(
     () => habitats.filter((h) => items.has(`habitat:${h.id}`)),
     [habitats, items]
@@ -86,11 +94,12 @@ export function WishlistContent({
     const all: { key: TabKey; label: string; count: number }[] = [
       { key: "pokemon", label: tr.wishlist.pokemon, count: filteredPokemon.length },
       { key: "recipes", label: tr.wishlist.recipes, count: filteredRecipes.length },
+      { key: "cooking", label: tr.wishlist.cooking, count: filteredCookingRecipes.length },
       { key: "habitats", label: tr.wishlist.habitats, count: filteredHabitats.length },
       { key: "materials", label: tr.wishlist.materials, count: filteredMaterials.length },
     ]
     return all.filter((t) => t.count > 0)
-  }, [tr, filteredPokemon.length, filteredRecipes.length, filteredHabitats.length, filteredMaterials.length])
+  }, [tr, filteredPokemon.length, filteredRecipes.length, filteredCookingRecipes.length, filteredHabitats.length, filteredMaterials.length])
 
   const [activeTab, setActiveTab] = useState<TabKey>("pokemon")
 
@@ -108,6 +117,7 @@ export function WishlistContent({
   const totalCount =
     filteredPokemon.length +
     filteredRecipes.length +
+    filteredCookingRecipes.length +
     filteredHabitats.length +
     filteredMaterials.length
 
@@ -179,6 +189,10 @@ export function WishlistContent({
 
         {resolvedTab === "recipes" && (
           <CraftingGrid recipes={filteredRecipes} locale={locale} />
+        )}
+
+        {resolvedTab === "cooking" && (
+          <CookingGrid recipes={filteredCookingRecipes} locale={locale} />
         )}
 
         {resolvedTab === "habitats" && (
