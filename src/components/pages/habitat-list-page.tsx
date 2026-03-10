@@ -19,6 +19,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
     name: habitat.name,
     image: habitat.image,
     materials: habitat.materials,
+    materialsEn: habitat.materialsEn,
     pokemon: habitat.pokemon.map((p) => ({
       rarity: p.rarity,
       pokemon: { id: p.pokemon.id, slug: p.pokemon.slug, name: p.pokemon.name, image: p.pokemon.image },

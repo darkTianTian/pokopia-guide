@@ -45,6 +45,7 @@ export async function WishlistPage({ locale }: WishlistPageProps) {
     name: h.name,
     image: h.image,
     materials: h.materials,
+    materialsEn: h.materialsEn,
     pokemon: h.pokemon.map((p) => ({
       rarity: p.rarity,
       pokemon: {
