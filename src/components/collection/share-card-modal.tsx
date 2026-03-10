@@ -121,7 +121,7 @@ export function ShareCardModal({
           </div>
 
           {/* Orientation and Layout toggles */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="flex flex-col sm:grid sm:grid-cols-2 gap-4">
             <div className="flex gap-2">
               <Button
                 variant={orientation === "portrait" ? "default" : "outline"}
