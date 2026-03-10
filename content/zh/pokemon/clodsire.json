@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 54,
-        "name": "Marshy tall grass",
+        "name": "沼澤草叢",
         "rarity": "rare"
       },
       {
         "id": 186,
-        "name": "Marsh fishing spot",
+        "name": "沼澤釣魚",
         "rarity": "rare"
       }
     ]

@@ -36,7 +36,7 @@
     "habitats": [
       {
         "id": 106,
-        "name": "Hydrated graceful flower bed",
+        "name": "濕潤優雅花田",
         "rarity": "rare"
       },
       {
@@ -46,7 +46,7 @@
       },
       {
         "id": 114,
-        "name": "Harmonious hot spring",
+        "name": "療癒溫泉",
         "rarity": "common"
       }
     ]

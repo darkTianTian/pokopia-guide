@@ -39,12 +39,12 @@
     "habitats": [
       {
         "id": 21,
-        "name": "Flowery Table",
+        "name": "華麗餐桌",
         "rarity": "rare"
       },
       {
         "id": 35,
-        "name": "Irresistible scent and glow",
+        "name": "光芒與香氣的誘惑",
         "rarity": "common"
       }
     ]

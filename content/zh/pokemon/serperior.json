@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 143,
-        "name": "Tree-shaded fluffy flower bed",
+        "name": "樹蔭蓬鬆花田",
         "rarity": "very-rare"
       },
       {
         "id": 171,
-        "name": "Puiblic reading material",
+        "name": "請自由閱讀",
         "rarity": "rare"
       }
     ]

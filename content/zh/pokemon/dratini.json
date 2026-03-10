@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 144,
-        "name": "Hydrated fluffy flower bed",
+        "name": "濕潤蓬鬆花田",
         "rarity": "common"
       },
       {
         "id": 148,
-        "name": "Simple bathroom",
+        "name": "簡約浴室",
         "rarity": "common"
       }
     ]
