@@ -10,7 +10,14 @@
     "specialties": [
       "litter"
     ],
-    "favorites": [],
+    "favorites": [
+      "garbage",
+      "spooky stuff",
+      "gatherings",
+      "shiny stuff",
+      "colorful stuff",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

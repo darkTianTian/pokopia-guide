@@ -11,7 +11,14 @@
       "litter",
       "recycle"
     ],
-    "favorites": [],
+    "favorites": [
+      "garbage",
+      "containers",
+      "complicated stuff",
+      "shiny stuff",
+      "gatherings",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

@@ -10,7 +10,14 @@
     "specialties": [
       "water"
     ],
-    "favorites": [],
+    "favorites": [
+      "lots of water",
+      "lots of fire",
+      "cleanliness",
+      "glass stuff",
+      "slender objects",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

@@ -10,7 +10,14 @@
     "specialties": [
       "gather"
     ],
-    "favorites": [],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "rides",
+      "soft stuff",
+      "containers",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "night"
     ],

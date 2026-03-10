@@ -12,7 +12,14 @@
       "teleport",
       "build"
     ],
-    "favorites": [],
+    "favorites": [
+      "strange stuff",
+      "exercise",
+      "healing",
+      "construction",
+      "fabric",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
