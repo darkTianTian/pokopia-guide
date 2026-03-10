@@ -176,18 +176,20 @@ export function CraftingGrid({
                         </div>
 
                         {/* Ingredients Bento Box Formula */}
-                        <div className="mt-6 rounded-[1.25rem] bg-black/5 dark:bg-white/5 p-3 flex flex-wrap items-center gap-2 ring-1 ring-inset ring-black/5 dark:ring-white/10 flex-1 content-start relative overflow-hidden">
-                          {recipe.materials.map((m, idx) => (
-                            <div key={m.name} className="flex items-center gap-1 z-10">
-                              {idx > 0 && <span className="text-muted-foreground/40 text-sm font-black mx-0.5">+</span>}
-                              <div className="flex items-center gap-1.5 rounded-full bg-background/80 px-2.5 py-1 text-sm font-bold shadow-sm ring-1 ring-inset ring-border/50 backdrop-blur-md text-foreground">
-                                {m.name}
-                                <QuantityDots count={m.quantity} className="ml-1" />
+                        <div className="mt-6 rounded-[1.25rem] bg-black/5 dark:bg-white/5 pl-4 pr-3 py-3 flex flex-wrap items-center gap-2 ring-1 ring-inset ring-black/5 dark:ring-white/10 flex-1 content-start">
+                          <div className="flex flex-wrap items-center gap-2 flex-1">
+                            {recipe.materials.map((m, idx) => (
+                              <div key={m.name} className="flex items-center gap-1 z-10">
+                                {idx > 0 && <span className="text-muted-foreground/40 text-sm font-black mx-0.5">+</span>}
+                                <div className="flex items-center gap-1.5 rounded-full bg-background/80 px-2.5 py-1 text-sm font-bold shadow-sm ring-1 ring-inset ring-border/50 backdrop-blur-md text-foreground">
+                                  {m.name}
+                                  <QuantityDots count={m.quantity} className="ml-1" />
+                                </div>
                               </div>
-                            </div>
-                          ))}
+                            ))}
+                          </div>
 
-                          {/* Calculator Button inside the card but positioned properly */}
+                          {/* Calculator Button repositioned inline to the right of the bento box */}
                           {onToggleRecipe && (
                             <button
                               onClick={(e) => {
@@ -201,7 +203,7 @@ export function CraftingGrid({
                                   setJustClickedId(null)
                                 }
                               }}
-                              className={`group/btn absolute right-3 bottom-4 z-20 flex h-8 w-8 items-center justify-center rounded-full ring-1 ring-inset shadow-md transition-all ${selectedIds?.has(recipe.id)
+                              className={`group/btn ml-auto shrink-0 flex h-8 w-8 items-center justify-center rounded-full ring-1 ring-inset shadow-md transition-all ${selectedIds?.has(recipe.id)
                                 ? justClickedId === recipe.id
                                   ? "bg-primary text-primary-foreground ring-primary"
                                   : "bg-primary text-primary-foreground ring-primary hover:bg-destructive hover:text-destructive-foreground hover:ring-destructive"
@@ -227,16 +229,6 @@ export function CraftingGrid({
                               )}
                             </button>
                           )}
-                        </div>
-
-                        {/* Structured Footer: Obtain Method */}
-                        <div className="-mx-6 -mb-6 mt-6 border-t border-border/40 bg-muted/30 px-6 py-4 flex items-center justify-between text-sm font-semibold text-muted-foreground backdrop-blur-sm transition-colors group-hover:bg-muted/50">
-                          <span className="inline-flex items-center gap-2">
-                            {(tr.crafting as any).obtainMethod || "Obtain"}
-                          </span>
-                          <span className="text-foreground/90 text-right truncate pl-4">
-                            {recipe.obtainMethod}
-                          </span>
                         </div>
                       </div>
                     </article>
