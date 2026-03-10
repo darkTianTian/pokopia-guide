@@ -57,11 +57,11 @@ function renderMarkdown(content: string): string {
     if (trimmed === "") {
       continue
     } else if (trimmed.startsWith("### ")) {
-      result.push(`<h3 class="mt-6 mb-3 text-lg font-semibold">${inlineFormat(trimmed.slice(4))}</h3>`)
+      result.push(`<h4 class="mt-6 mb-3 text-lg font-semibold">${inlineFormat(trimmed.slice(4))}</h4>`)
     } else if (trimmed.startsWith("## ")) {
-      result.push(`<h2 class="mt-8 mb-4 text-xl font-bold">${inlineFormat(trimmed.slice(3))}</h2>`)
+      result.push(`<h3 class="mt-8 mb-4 text-xl font-bold">${inlineFormat(trimmed.slice(3))}</h3>`)
     } else if (trimmed.startsWith("# ")) {
-      result.push(`<h1 class="mt-8 mb-4 text-2xl font-bold">${inlineFormat(trimmed.slice(2))}</h1>`)
+      result.push(`<h2 class="mt-8 mb-4 text-2xl font-bold">${inlineFormat(trimmed.slice(2))}</h2>`)
     } else if (trimmed.startsWith("> ")) {
       result.push(`<blockquote class="border-l-4 border-primary/30 pl-4 italic text-muted-foreground my-4">${inlineFormat(trimmed.slice(2))}</blockquote>`)
     } else if (/^\d+\. /.test(trimmed)) {
