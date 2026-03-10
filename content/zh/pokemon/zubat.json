@@ -11,7 +11,14 @@
     "specialties": [
       "search"
     ],
-    "favorites": [],
+    "favorites": [
+      "spooky stuff",
+      "nice breezes",
+      "wooden stuff",
+      "noisy stuff",
+      "complicated stuff",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "night"
     ],

@@ -11,7 +11,14 @@
     "specialties": [
       "trade"
     ],
-    "favorites": [],
+    "favorites": [
+      "spooky stuff",
+      "cute stuff",
+      "electronics",
+      "fabric",
+      "group activities",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

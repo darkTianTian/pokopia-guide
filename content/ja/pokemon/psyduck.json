@@ -10,7 +10,14 @@
     "specialties": [
       "search"
     ],
-    "favorites": [],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "strange stuff",
+      "complicated stuff",
+      "healing",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

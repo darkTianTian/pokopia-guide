@@ -10,7 +10,14 @@
     "specialties": [
       "storage"
     ],
-    "favorites": [],
+    "favorites": [
+      "garbage",
+      "looks like food",
+      "round stuff",
+      "containers",
+      "colorful stuff",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

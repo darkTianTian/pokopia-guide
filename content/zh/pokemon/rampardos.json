@@ -10,7 +10,14 @@
     "specialties": [
       "crush"
     ],
-    "favorites": [],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "metal stuff",
+      "luxury",
+      "exercise",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

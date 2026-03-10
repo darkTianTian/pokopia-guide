@@ -11,7 +11,14 @@
     "specialties": [
       "search"
     ],
-    "favorites": [],
+    "favorites": [
+      "nice breezes",
+      "fabric",
+      "watching stuff",
+      "luxury",
+      "looks like food",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
