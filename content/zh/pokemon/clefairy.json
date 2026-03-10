@@ -33,6 +33,11 @@
     ],
     "habitats": [
       {
+        "id": 104,
+        "name": "優雅花田",
+        "rarity": "common"
+      },
+      {
         "id": 131,
         "name": "銅像觀光點",
         "rarity": "common"

@@ -33,6 +33,11 @@
         "id": 6,
         "name": "高台の草むら",
         "rarity": "rare"
+      },
+      {
+        "id": 8,
+        "name": "きれいな花畑",
+        "rarity": "rare"
       }
     ]
   }
