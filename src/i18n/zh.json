@@ -334,7 +334,8 @@
     "powersUp": "強化招式",
     "enhanced": "大幅強化",
     "baseIngredient": "基礎素材",
-    "fillRest": "剩餘格用任意食材填滿"
+    "fillRest": "剩餘格用任意食材填滿",
+    "specialtyHint": "需要帶上擁有此特長的寶可夢，否則會做出不同的料理"
   },
   "cookingCategories": {
     "salad": "沙拉",

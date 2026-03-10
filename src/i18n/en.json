@@ -334,7 +334,8 @@
     "powersUp": "Powers Up",
     "enhanced": "Major Boost",
     "baseIngredient": "Base",
-    "fillRest": "Fill remaining slots with any ingredient"
+    "fillRest": "Fill remaining slots with any ingredient",
+    "specialtyHint": "Bring a Pokémon with this specialty, or a different dish will be made instead"
   },
   "cookingCategories": {
     "salad": "Salad",

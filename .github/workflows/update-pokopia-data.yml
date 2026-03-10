@@ -42,7 +42,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git add content/ public/images/habitats/ public/images/cooking/ public/images/crafting/ 2>/dev/null || true
+          git add content/ public/images/habitats/ public/images/cooking/ public/images/crafting/ public/images/materials/ public/images/items/ 2>/dev/null || true
           if git diff --cached --quiet && git diff --quiet; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
@@ -57,7 +57,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
-          git add content/ public/images/habitats/ public/images/cooking/recipes/ public/images/cooking/tools/ public/images/crafting/
+          git add content/ public/images/habitats/ public/images/cooking/recipes/ public/images/cooking/tools/ public/images/crafting/ public/images/materials/ public/images/items/
           git commit -m "chore: auto-update pokopia data"
           git checkout main
           git merge "$BRANCH" --no-ff -m "chore: auto-update pokopia data"

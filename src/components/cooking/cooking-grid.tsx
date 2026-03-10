@@ -186,7 +186,10 @@ export function CookingGrid({ recipes, locale }: CookingGridProps) {
 
                               {/* Required specialty directly under name */}
                               {recipe.requiredSpecialty && (
-                                <div className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground/80">
+                                <div
+                                  className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground/80 cursor-help"
+                                  title={cookingTr.specialtyHint}
+                                >
                                   <Image
                                     src={`/images/specialties/${recipe.requiredSpecialty}.png`}
                                     alt={specialtyTr[recipe.requiredSpecialty] || recipe.requiredSpecialty}

@@ -29,3 +29,26 @@
 - No database needed for now — static JSON files are sufficient for ~300 Pokemon
 - Revisit if user-interactive features (favorites, team builder, comments) are added
 - Cloudflare Workers better suited for lightweight API / edge compute, not batch jobs
+
+## Habitat Materials - Chinese Translation Verification
+
+- `content/habitat-materials-zh.json` contains AI-translated Traditional Chinese item names (translated from Japanese source)
+- These translations need verification against official in-game Traditional Chinese names
+- Priority items to verify:
+  - Furniture sets: 自然風/雅致/豪華/可愛/度假風/工業風/流行風/電競 series
+  - Pokémon items: 皮卡丘/吉利蛋/飄浮泡泡/雷丘/風速狗/快龍/伊布/毽子草
+  - Fossils: 翼之化石/頭蓋化石/頭錘化石/盾之化石/護盾化石/顎之化石/暴君化石/鰭之化石/凍原化石
+- The English source file is missing many habitat IDs that exist in Japanese — Chinese file currently only covers IDs present in English
+- Update script (`scripts/update-pokopia-data.mjs`) no longer overwrites zh file with English data
+
+## Cooking Move Icons
+
+- `public/images/cooking/moves/` needs 4 move icons: leafage.png, water-gun.png, cut.png, rock-smash.png
+- User will provide screenshots later
+
+## Crafting Icon Accuracy
+
+- Some crafting icon mappings in `CRAFTING_ICON_STATIC_MAP` (update-pokopia-data.mjs) may be inaccurate:
+  - fire-hydrant → trafficcone (may not be correct match)
+  - mine-cart → cart (may not be correct match)
+- Need in-game verification

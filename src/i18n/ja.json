@@ -334,7 +334,8 @@
     "powersUp": "強化する技",
     "enhanced": "大幅強化",
     "baseIngredient": "ベース素材",
-    "fillRest": "残りのスロットは好きな食材で埋める"
+    "fillRest": "残りのスロットは好きな食材で埋める",
+    "specialtyHint": "この得意なポケモンを連れて行かないと、違う料理ができます"
   },
   "cookingCategories": {
     "salad": "サラダ",
