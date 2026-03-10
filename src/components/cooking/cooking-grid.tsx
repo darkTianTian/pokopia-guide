@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react"
 import Image from "next/image"
-import { Search, Swords, X } from "lucide-react"
+import { Search, X } from "lucide-react"
 import { SafeImage } from "@/components/ui/safe-image"
 import { WishlistButton } from "@/components/ui/wishlist-button"
 import type { Locale } from "@/i18n/config"
@@ -287,15 +287,18 @@ export function CookingGrid({ recipes, locale }: CookingGridProps) {
                             <span className="text-foreground/90">{recipe.tool}</span>
                           </span>
                           <span className="inline-flex items-center gap-2" title={cookingTr.powersUp}>
-                            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-rose-500/10 ring-1 ring-inset ring-rose-500/20 shadow-sm">
-                              <Swords className="h-3.5 w-3.5 text-rose-600 dark:text-rose-500" />
-                            </div>
+                            <Image
+                              src="/images/cooking/power-up.png"
+                              alt="Power Up"
+                              width={16}
+                              height={16}
+                            />
                             <SafeImage
                               src={`/images/cooking/moves/${recipe.powersUpId}.png`}
                               alt={recipe.powersUp}
-                              width={24}
-                              height={24}
-                              className="rounded bg-background/50 ring-1 ring-border/50 p-0.5 shadow-sm"
+                              width={32}
+                              height={32}
+                              className="rounded-full shadow-sm"
                             />
                             <span className="text-foreground">{recipe.powersUp}</span>
                           </span>

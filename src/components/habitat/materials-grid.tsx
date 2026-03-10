@@ -98,7 +98,14 @@ export function MaterialsGrid({ materials, locale }: MaterialsGridProps) {
                   </div>
 
                   <div className="flex flex-1 flex-col items-center text-center">
-                    <h3 className="mt-2 text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary z-10">
+                    <SafeImage
+                      src={`/images/items/${material.slug}.png`}
+                      alt={material.name}
+                      width={64}
+                      height={64}
+                      className="z-10 rounded-xl drop-shadow-md transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <h3 className="mt-3 text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary z-10">
                       {material.name}
                     </h3>
 
