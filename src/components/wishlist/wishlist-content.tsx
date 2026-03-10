@@ -28,6 +28,7 @@ interface HabitatItem {
   name: string
   image: string
   materials: string | null
+  materialsEn: string | null
   pokemon: {
     rarity: string
     pokemon: { id: number; slug: string; name: string; image: string }

@@ -18,6 +18,7 @@ export interface HabitatWithPokemon {
   name: string
   image: string
   materials: string
+  materialsEn: string | null
   pokemon: {
     pokemon: Pokemon
     rarity: "common" | "rare" | "very-rare"
@@ -64,6 +65,7 @@ export async function getAllHabitatsWithPokemon(
           name: habitatNames[idStr] ?? (habitatMappingEn as Record<string, string>)[idStr] ?? habitat.name,
           image: `/images/habitats/habitat_${habitat.id}.png`,
           materials,
+          materialsEn: habitatMaterialsEn[idStr] || null,
           pokemon: [{ pokemon, rarity: habitat.rarity }],
         })
       }

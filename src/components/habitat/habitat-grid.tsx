@@ -24,6 +24,7 @@ interface HabitatItem {
   name: string
   image: string
   materials: string | null
+  materialsEn: string | null
   pokemon: {
     rarity: string
     pokemon: { id: number; slug: string; name: string; image: string }
@@ -43,6 +44,15 @@ function parseMaterials(materials: string): { name: string; quantity: number }[]
     }
     return { name: part, quantity: 1 }
   })
+}
+
+function toItemSlug(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
+}
+
+function getMaterialSlugs(materialsEn: string | null): string[] {
+  if (!materialsEn) return []
+  return parseMaterials(materialsEn).map((m) => toItemSlug(m.name))
 }
 
 export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
@@ -143,19 +153,32 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                     <h3 className="text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
                       {habitat.name}
                     </h3>
-                    {habitat.materials && (
-                      <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
-                        {parseMaterials(habitat.materials).map((mat, i) => (
-                          <span
-                            key={i}
-                            className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10"
-                          >
-                            {mat.name}
-                            <QuantityDots count={mat.quantity} className="ml-1" />
-                          </span>
-                        ))}
-                      </div>
-                    )}
+                    {habitat.materials && (() => {
+                      const mats = parseMaterials(habitat.materials)
+                      const slugs = getMaterialSlugs(habitat.materialsEn)
+                      return (
+                        <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+                          {mats.map((mat, i) => (
+                            <span
+                              key={i}
+                              className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10"
+                            >
+                              {slugs[i] && (
+                                <SafeImage
+                                  src={`/images/items/${slugs[i]}.png`}
+                                  alt={mat.name}
+                                  width={20}
+                                  height={20}
+                                  className="inline-block shrink-0"
+                                />
+                              )}
+                              {mat.name}
+                              <QuantityDots count={mat.quantity} className="ml-1" />
+                            </span>
+                          ))}
+                        </div>
+                      )
+                    })()}
                   </div>
 
                   <div className="mt-auto flex flex-col items-center gap-3 rounded-2xl bg-muted/30 p-4 ring-1 ring-inset ring-border/50 transition-colors group-hover:bg-muted/50 z-10">
