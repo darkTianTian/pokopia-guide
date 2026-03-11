@@ -11,7 +11,14 @@
       "chop",
       "trade"
     ],
-    "favorites": [],
+    "favorites": [
+      "shiny stuff",
+      "luxury",
+      "glass stuff",
+      "strange stuff",
+      "group activities",
+      "spicy flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

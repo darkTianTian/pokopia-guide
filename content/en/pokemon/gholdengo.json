@@ -11,7 +11,14 @@
     "specialties": [
       "appraise"
     ],
-    "favorites": [],
+    "favorites": [
+      "spooky stuff",
+      "metal stuff",
+      "strange stuff",
+      "shiny stuff",
+      "complicated stuff",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

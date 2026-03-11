@@ -11,7 +11,14 @@
       "generate",
       "explode"
     ],
-    "favorites": [],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "round stuff",
+      "play spaces",
+      "spinning stuff",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

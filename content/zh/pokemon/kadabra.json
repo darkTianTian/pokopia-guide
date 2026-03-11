@@ -10,7 +10,14 @@
     "specialties": [
       "teleport"
     ],
-    "favorites": [],
+    "favorites": [
+      "strange stuff",
+      "wobbly stuff",
+      "metal stuff",
+      "containers",
+      "watching stuff",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

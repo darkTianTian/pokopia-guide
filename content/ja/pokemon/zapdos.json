@@ -11,7 +11,14 @@
     "specialties": [
       "fly"
     ],
-    "favorites": [],
+    "favorites": [
+      "electronics",
+      "nice breezes",
+      "glass stuff",
+      "symbols",
+      "luxury",
+      "spicy flavors"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "craft",

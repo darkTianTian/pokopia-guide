@@ -9,7 +9,14 @@
   "image": "https://assets.pokopiaguide.com/pokemon/lugia.png",
   "pokopia": {
     "specialties": [],
-    "favorites": [],
+    "favorites": [
+      "strange stuff",
+      "nice breezes",
+      "lots of water",
+      "ocean vibes",
+      "symbols",
+      "dry flavors"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "quest",

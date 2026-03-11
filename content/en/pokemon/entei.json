@@ -10,7 +10,14 @@
     "specialties": [
       "burn"
     ],
-    "favorites": [],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "symbols",
+      "exercise",
+      "luxury",
+      "bitter flavors"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "dream-island",

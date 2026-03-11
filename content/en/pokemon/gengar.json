@@ -12,7 +12,14 @@
       "gather",
       "trade"
     ],
-    "favorites": [],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "garbage",
+      "rides",
+      "group activities",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "night"
     ],

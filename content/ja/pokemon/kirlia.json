@@ -12,7 +12,14 @@
       "teleport",
       "trade"
     ],
-    "favorites": [],
+    "favorites": [
+      "strange stuff",
+      "cute stuff",
+      "healing",
+      "watching stuff",
+      "symbols",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

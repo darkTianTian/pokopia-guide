@@ -12,7 +12,14 @@
       "generate",
       "recycle"
     ],
-    "favorites": [],
+    "favorites": [
+      "electronics",
+      "metal stuff",
+      "luxury",
+      "gatherings",
+      "hard stuff",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

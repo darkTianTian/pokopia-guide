@@ -10,7 +10,14 @@
     "specialties": [
       "chop"
     ],
-    "favorites": [],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "letters and words",
+      "complicated stuff",
+      "exercise",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

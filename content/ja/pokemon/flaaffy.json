@@ -11,7 +11,14 @@
       "litter",
       "generate"
     ],
-    "favorites": [],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "glass stuff",
+      "cute stuff",
+      "rides",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

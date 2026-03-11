@@ -9,7 +9,14 @@
   "image": "https://assets.pokopiaguide.com/pokemon/ho-oh.png",
   "pokopia": {
     "specialties": [],
-    "favorites": [],
+    "favorites": [
+      "lots of fire",
+      "wooden stuff",
+      "nice breezes",
+      "lots of nature",
+      "symbols",
+      "spicy flavors"
+    ],
     "timeOfDay": null,
     "weather": null,
     "obtainMethod": "quest",

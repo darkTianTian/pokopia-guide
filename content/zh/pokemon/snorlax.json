@@ -10,7 +10,14 @@
     "specialties": [
       "eat"
     ],
-    "favorites": [],
+    "favorites": [
+      "soft stuff",
+      "fabric",
+      "looks like food",
+      "wobbly stuff",
+      "rides",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

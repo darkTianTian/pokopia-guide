@@ -11,7 +11,14 @@
       "trade",
       "litter"
     ],
-    "favorites": [],
+    "favorites": [
+      "soft stuff",
+      "fabric",
+      "healing",
+      "round stuff",
+      "group activities",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",
