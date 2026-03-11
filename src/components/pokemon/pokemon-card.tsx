@@ -4,6 +4,7 @@ import { SafeImage } from "@/components/ui/safe-image"
 import { WishlistButton } from "@/components/ui/wishlist-button"
 import { CollectionButton } from "@/components/ui/collection-button"
 import { TypeBadge } from "./type-badge"
+import { Sparkles, Trophy } from "lucide-react"
 import type { Pokemon } from "@/lib/types"
 import { getLocalePath, type Locale } from "@/i18n/config"
 import { HabitatLink } from "@/components/habitat/habitat-link"
@@ -59,33 +60,62 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
   const primaryType = pokemon.types[0] || "normal"
   const gradientClass = TYPE_GRADIENTS[primaryType] || TYPE_GRADIENTS.normal
 
+  const isLegendary = pokopia?.category === "legendary"
+  const isMythical = pokopia?.category === "mythical"
+  const isSpecial = isLegendary || isMythical
+
   // If no className is provided, use the default border styles
-  const computedClassName = className
-    ? className
-    : "border border-border/40 hover:border-border/80"
+  const computedClassName = isSpecial
+    ? "golden-card-base"
+    : className ?? "border border-border/40 hover:border-border/80"
+
+  const blobClassName = isMythical
+    ? "bg-pink-500/20 dark:bg-pink-500/10"
+    : isLegendary
+      ? "bg-amber-400/20 group-hover:bg-amber-400/30"
+      : "opacity-40 group-hover:opacity-70 dark:opacity-30 dark:group-hover:opacity-50"
 
   return (
     <Link href={getLocalePath(locale, `/pokedex/${pokemon.slug}`)} className="group block h-full outline-none">
       <article className={`relative flex h-full flex-col overflow-hidden rounded-[2rem] bg-background/40 shadow-sm backdrop-blur-xl transition-all duration-500 ease-out hover:-translate-y-2 hover:bg-background/60 hover:shadow-2xl dark:hover:shadow-primary/5 ${computedClassName}`}>
-        <span className="absolute top-4 left-1/2 -translate-x-1/2 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
-          #{String(pokemon.id).padStart(3, "0")}
-        </span>
-        {pokopia?.category && (
-          <span className={`absolute top-12 left-1/2 -translate-x-1/2 z-20 inline-flex items-center rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider backdrop-blur-md ring-1 ${pokopia.category === "mythical" ? "bg-pink-500/20 text-pink-600 ring-pink-500/30 dark:text-pink-400" : "bg-amber-500/20 text-amber-600 ring-amber-500/30 dark:text-amber-400"}`}>
-            {pokopia.category === "mythical" ? tr.pokedex.mythical : tr.pokedex.legendary}
-          </span>
+        {isSpecial && (
+          <>
+            <div className={`premium-metallic-border ${isLegendary ? 'legendary-metallic-gradient' : 'mythical-metallic-gradient'}`} />
+            <div className="shimmer-layer" />
+            <div className="sparkle" style={{ top: '15%', left: '10%', animationDelay: '0s' }} />
+            <div className="sparkle" style={{ top: '65%', left: '85%', animationDelay: '0.5s' }} />
+            <div className="sparkle" style={{ top: '40%', left: '15%', animationDelay: '1.2s' }} />
+            <div className="sparkle" style={{ top: '80%', left: '30%', animationDelay: '0.8s' }} />
+          </>
         )}
+        <div className={`absolute top-4 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 ${isSpecial ? "badge-float" : ""}`}>
+          <span className="flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-xs font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50 shadow-sm">
+            #{String(pokemon.id).padStart(3, "0")}
+          </span>
+          {isSpecial && (
+            <div
+              className={`flex items-center justify-center w-6 h-6 rounded-full shadow-lg backdrop-blur-md ring-2 ring-inset transition-all duration-300 ${isMythical
+                ? "bg-pink-500 text-white ring-pink-400/50 shadow-pink-500/20"
+                : "bg-amber-400 text-white ring-amber-300/50 shadow-amber-500/20"
+                }`}
+              aria-label={isMythical ? tr.pokedex.mythical : tr.pokedex.legendary}
+              title={isMythical ? tr.pokedex.mythical : tr.pokedex.legendary}
+            >
+              {isMythical ? <Sparkles className="h-3.5 w-3.5" aria-hidden="true" /> : <Trophy className="h-3.5 w-3.5" aria-hidden="true" />}
+            </div>
+          )}
+        </div>
         <CollectionButton
           itemId={pokemon.slug}
           className="absolute right-4 top-4 z-20"
         />
 
         {/* Glowing Background Blob */}
-        <div className="absolute left-1/2 top-28 -z-10 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40 blur-[50px] transition-all duration-500 group-hover:scale-125 group-hover:opacity-70 dark:opacity-30 dark:group-hover:opacity-50">
-          <div className={`h-full w-full bg-gradient-to-br ${gradientClass}`} />
+        <div className={`absolute left-1/2 top-28 -z-10 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full blur-[60px] transition-all duration-700 ease-in-out group-hover:scale-150 ${blobClassName}`}>
+          {!isSpecial && <div className={`h-full w-full bg-gradient-to-br ${gradientClass}`} />}
         </div>
 
-        <div className="flex flex-1 flex-col p-5 pt-12">
+        <div className={`flex flex-1 flex-col p-5 ${isSpecial ? "pt-20" : "pt-12"}`}>
           {/* Header: Name */}
           <div className="mb-4 text-center">
             {headingLevel === "h3" ? (

@@ -133,3 +133,136 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Hearthstone Golden Effects */
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+  }
+
+  50%,
+  100% {
+    transform: translateX(150%) skewX(-25deg);
+  }
+}
+
+@keyframes sparkle-flicker {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1) rotate(180deg);
+  }
+}
+
+@keyframes hearthstone-pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px 2px rgba(251, 191, 36, 0.3);
+    opacity: 0.8;
+  }
+
+  50% {
+    box-shadow: 0 0 40px 10px rgba(251, 191, 36, 0.5);
+    opacity: 1;
+  }
+}
+
+@keyframes hearthstone-pulse-mythical {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px 2px rgba(236, 72, 153, 0.3);
+    opacity: 0.8;
+  }
+
+  50% {
+    box-shadow: 0 0 40px 10px rgba(236, 72, 153, 0.5);
+    opacity: 1;
+  }
+}
+
+@keyframes card-float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@layer utilities {
+  .golden-card-base {
+    position: relative;
+    /* Remove base padding, use absolute positioning for border to keep background clear */
+    border-radius: 2rem;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .premium-metallic-border {
+    position: absolute;
+    inset: 0;
+    padding: 3px;
+    /* Thickness of border */
+    border-radius: inherit;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .legendary-metallic-gradient {
+    background: linear-gradient(to bottom right, #fde68a, #fbbf24, #d97706, #fbbf24, #fde68a);
+    animation: hearthstone-pulse 4s ease-in-out infinite;
+  }
+
+  .mythical-metallic-gradient {
+    background: linear-gradient(to bottom right, #fbcfe8, #f472b6, #db2777, #f472b6, #fbcfe8);
+    animation: hearthstone-pulse-mythical 4s ease-in-out infinite;
+  }
+
+  .shimmer-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0) 20%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 80%,
+        transparent 100%);
+    animation: shimmer-sweep 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .sparkle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: sparkle-flicker 2s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 11;
+    /* Above border */
+  }
+
+  .badge-float {
+    animation: card-float 3s ease-in-out infinite;
+  }
+}
