@@ -21,8 +21,6 @@
     "obtainMethod": "story",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": [],
-    "category": "legendary",
-    "obtainDetails": "パサパサこうやの街のストーリーで図鑑登録"
+    "habitats": []
   }
 }

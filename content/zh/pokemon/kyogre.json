@@ -21,8 +21,6 @@
     "obtainMethod": "story",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": [],
-    "category": "legendary",
-    "obtainDetails": "完成帕薩帕薩荒野之街的故事"
+    "habitats": []
   }
 }

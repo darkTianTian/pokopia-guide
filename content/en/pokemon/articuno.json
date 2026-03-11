@@ -24,8 +24,6 @@
     "obtainMethod": "craft",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": [],
-    "category": "legendary",
-    "obtainDetails": "Build the Freezing Chambers in Palette Town. Blueprint from Palette Town Altar. Tip: Unlocking Magnemite's skill makes building faster"
+    "habitats": []
   }
 }
