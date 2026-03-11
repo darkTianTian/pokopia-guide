@@ -83,6 +83,8 @@ export async function WishlistPage({ locale }: WishlistPageProps) {
   const materialItems = materials.map((m) => ({
     slug: m.slug,
     name: m.name,
+    sources: m.sources,
+    screenshots: m.screenshots,
     totalUsage: m.totalUsage,
     habitats: m.habitats.map((h) => ({
       habitatId: h.habitatId,

@@ -5,10 +5,25 @@ import habitatMappingJa from "@/../content/habitat-mapping.json"
 import _habitatMaterialsEn from "@/../content/habitat-materials-en.json"
 import _habitatMaterialsZh from "@/../content/habitat-materials-zh.json"
 import _habitatMaterialsJa from "@/../content/habitat-materials.json"
+import _materialSources from "@/../content/material-sources.json"
+import _sourceTranslations from "@/../content/material-source-translations.json"
 
 const habitatMaterialsEn = _habitatMaterialsEn as Record<string, string>
 const habitatMaterialsZh = _habitatMaterialsZh as Record<string, string>
 const habitatMaterialsJa = _habitatMaterialsJa as Record<string, string>
+const materialSources = _materialSources as Record<
+  string,
+  { nameJa: string; sources: string[]; screenshots?: string[] }
+>
+const sourceTranslations = _sourceTranslations as Record<
+  string,
+  { en: string; zh: string }
+>
+
+function translateSources(sources: string[], locale: Locale): string[] {
+  if (locale === "ja") return sources
+  return sources.map((s) => sourceTranslations[s]?.[locale] ?? s)
+}
 
 const HABITAT_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
   en: habitatMappingEn,
@@ -32,6 +47,8 @@ export interface MaterialUsage {
 export interface Material {
   slug: string
   name: string
+  sources: string[]
+  screenshots: string[]
   habitats: MaterialUsage[]
   totalUsage: number
 }
@@ -137,6 +154,8 @@ function buildMaterialIndex(locale: Locale): Material[] {
     .map(([slug, data]) => ({
       slug,
       name: data.name,
+      sources: translateSources(materialSources[slug]?.sources ?? [], locale),
+      screenshots: materialSources[slug]?.screenshots ?? [],
       habitats: data.habitats.sort((a, b) => a.habitatId - b.habitatId),
       totalUsage: data.habitats.length,
     }))

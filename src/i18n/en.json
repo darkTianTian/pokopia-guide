@@ -136,7 +136,10 @@
     "noHabitatResults": "No habitats found.",
     "noMaterialResults": "No materials found.",
     "showingHabitats": "Showing {{count}} habitats",
-    "showingMaterials": "Showing {{count}} materials"
+    "showingMaterials": "Showing {{count}} materials",
+    "materialSource": "How to Get",
+    "materialScreenshots": "Screenshots",
+    "materialTotalNeeded": "{{count}} total needed"
   },
   "quests": {
     "title": "Quest Guide",
