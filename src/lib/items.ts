@@ -24,6 +24,7 @@ export interface ItemMaterial {
   id: string
   name: string
   count: number
+  imageUrl: string
 }
 
 export interface Item {
@@ -102,6 +103,7 @@ function buildItems(locale: Locale): Item[] {
       id: m.id,
       name: getItemName(m.nameJa, locale),
       count: m.count,
+      imageUrl: `/images/items/item-${m.id}.png`,
     })),
   }))
 }

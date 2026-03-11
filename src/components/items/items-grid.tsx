@@ -61,6 +61,7 @@ export interface ItemMaterialData {
   id: string
   name: string
   count: number
+  imageUrl: string
 }
 
 export interface ItemCardData {
@@ -203,7 +204,7 @@ export function ItemsGrid({ items, categories, locale }: ItemsGridProps) {
       {/* Item grid */}
       {visible.length > 0 ? (
         <>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {visible.map((item) => {
               const categoryLabel =
                 (tr.itemCategories as Record<string, string>)[
@@ -217,22 +218,22 @@ export function ItemsGrid({ items, categories, locale }: ItemsGridProps) {
               return (
                 <article
                   key={item.id}
-                  className="group relative flex flex-col overflow-hidden rounded-2xl border border-border/40 bg-background/50 p-5 shadow-sm backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-border/80 hover:shadow-xl"
+                  className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/50 p-6 shadow-sm backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-border/80 hover:shadow-xl"
                 >
                   <div
-                    className={`absolute -right-8 -top-8 -z-10 h-32 w-32 rounded-full blur-3xl transition-all duration-500 ${
+                    className={`absolute -right-10 -top-10 -z-10 h-40 w-40 rounded-full blur-3xl transition-all duration-500 ${
                       CATEGORY_GLOWS[item.categoryKey] || "bg-primary/20"
                     }`}
                   />
 
                   {/* Header: icon + name + category */}
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-4">
                     <div className="relative shrink-0 transition-transform duration-500 group-hover:scale-110">
                       <SafeImage
                         src={item.imageUrl}
                         alt={item.name}
-                        width={56}
-                        height={56}
+                        width={64}
+                        height={64}
                         className="rounded-xl drop-shadow-md"
                       />
                     </div>
@@ -241,7 +242,7 @@ export function ItemsGrid({ items, categories, locale }: ItemsGridProps) {
                         {item.name}
                       </h3>
                       <span
-                        className={`mt-1 inline-block rounded-full px-2 py-0.5 text-xs font-medium ${
+                        className={`mt-1.5 inline-block rounded-full px-2.5 py-0.5 text-xs font-medium ${
                           CATEGORY_PILL_COLORS[item.categoryKey] ||
                           "bg-gray-100 text-gray-700 dark:bg-gray-800/30 dark:text-gray-300"
                         }`}
@@ -253,7 +254,7 @@ export function ItemsGrid({ items, categories, locale }: ItemsGridProps) {
 
                   {/* Details */}
                   {hasDetails && (
-                    <div className="mt-3 space-y-2 text-xs text-muted-foreground">
+                    <div className="mt-4 space-y-2 text-xs text-muted-foreground">
                       {/* Description */}
                       {item.description && (
                         <p className="line-clamp-2">{item.description}</p>
@@ -261,12 +262,19 @@ export function ItemsGrid({ items, categories, locale }: ItemsGridProps) {
 
                       {/* Materials */}
                       {item.materials.length > 0 && (
-                        <div className="flex flex-wrap items-center gap-1.5">
+                        <div className="flex flex-wrap items-center gap-2 rounded-[1.25rem] bg-black/5 p-3 ring-1 ring-inset ring-black/5 dark:bg-white/5 dark:ring-white/10">
                           {item.materials.map((m) => (
                             <span
                               key={m.id}
-                              className="inline-flex items-center gap-1 rounded-full bg-black/5 px-2 py-0.5 text-xs font-medium ring-1 ring-inset ring-black/5 dark:bg-white/5 dark:ring-white/10"
+                              className="inline-flex items-center gap-1.5 rounded-full bg-background/80 py-0.5 pl-1 pr-2.5 text-xs font-medium shadow-sm dark:bg-background/40"
                             >
+                              <SafeImage
+                                src={m.imageUrl}
+                                alt={m.name}
+                                width={20}
+                                height={20}
+                                className="rounded-sm"
+                              />
                               {m.name}
                               <span className="text-muted-foreground/60">
                                 x{m.count}
