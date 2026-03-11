@@ -4,7 +4,7 @@ import { useMemo, useState } from "react"
 import { Search, X } from "lucide-react"
 import { SafeImage } from "@/components/ui/safe-image"
 import { WishlistButton } from "@/components/ui/wishlist-button"
-import type { Locale } from "@/i18n/config"
+import { getLocalePath, type Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
 import jaTranslations from "@/i18n/ja.json"
@@ -33,6 +33,8 @@ interface MaterialHabitat {
 interface MaterialItem {
   slug: string
   name: string
+  sources: string[]
+  screenshots: string[]
   totalUsage: number
   habitats: MaterialHabitat[]
 }
@@ -88,7 +90,20 @@ export function MaterialsGrid({ materials, locale }: MaterialsGridProps) {
             const extraCount = material.habitats.length - 5
 
             return (
-              <article key={material.slug} className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl">
+              <article
+                key={material.slug}
+                role="link"
+                tabIndex={0}
+                onClick={() => {
+                  window.location.href = getLocalePath(locale, `/habitat/materials/${material.slug}`)
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    window.location.href = getLocalePath(locale, `/habitat/materials/${material.slug}`)
+                  }
+                }}
+                className="group relative flex cursor-pointer flex-col overflow-hidden rounded-[2rem] border border-border/40 bg-background/40 p-6 shadow-sm backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-border/80 hover:bg-background/60 hover:shadow-xl"
+              >
                   <WishlistButton
                     itemId={`material:${material.slug}`}
                     className="absolute right-4 top-4 z-20"
@@ -109,6 +124,19 @@ export function MaterialsGrid({ materials, locale }: MaterialsGridProps) {
                       {material.name}
                     </h3>
 
+                    {material.sources.length > 0 && (
+                      <div className="mt-2 flex flex-wrap justify-center gap-1.5 z-10">
+                        {material.sources.map((source) => (
+                          <span
+                            key={source}
+                            className="rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary"
+                          >
+                            {source}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+
                     <div className="mt-auto flex w-full flex-col items-center gap-4 rounded-[1.5rem] bg-muted/40 p-4 ring-1 ring-inset ring-border/50 transition-colors group-hover:bg-muted/60 mt-6 z-10">
                       <div className="flex flex-col items-center gap-1">
                         <div className="flex items-baseline gap-1.5">
@@ -125,7 +153,7 @@ export function MaterialsGrid({ materials, locale }: MaterialsGridProps) {
                         <div className="flex -space-x-3 mt-1 scale-110">
                           {displayedHabitats.map((h, i) => (
                             <div
-                              key={h.habitatId}
+                              key={`${h.habitatId}-${i}`}
                               className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-background bg-background shadow-sm ring-1 ring-border/50 transition-transform duration-300 hover:z-20 hover:-translate-y-1 hover:scale-110"
                               style={{ zIndex: 10 - i }}
                               title={h.habitatName}

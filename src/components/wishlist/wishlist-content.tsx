@@ -38,6 +38,8 @@ interface HabitatItem {
 interface MaterialItem {
   slug: string
   name: string
+  sources: string[]
+  screenshots: string[]
   totalUsage: number
   habitats: {
     habitatId: number

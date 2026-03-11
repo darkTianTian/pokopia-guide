@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { SafeImage } from "@/components/ui/safe-image"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
@@ -96,9 +97,10 @@ export async function HabitatDetailPage({
                   </span>
                   <div className="flex flex-wrap gap-2">
                     {mats.map((mat, i) => (
-                      <span
+                      <Link
                         key={i}
-                        className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10"
+                        href={getLocalePath(locale, `/habitat/materials/${slugs[i] ?? ""}`)}
+                        className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10 transition-colors hover:bg-primary/20"
                       >
                         {slugs[i] && (
                           <SafeImage
@@ -111,7 +113,7 @@ export async function HabitatDetailPage({
                         )}
                         {mat.name}
                         <QuantityDots count={mat.quantity} className="ml-1" />
-                      </span>
+                      </Link>
                     ))}
                   </div>
                 </div>

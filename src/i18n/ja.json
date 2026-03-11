@@ -136,7 +136,10 @@
     "noHabitatResults": "生息地が見つかりません。",
     "noMaterialResults": "素材が見つかりません。",
     "showingHabitats": "{{count}} 件の生息地を表示",
-    "showingMaterials": "{{count}} 種の素材を表示"
+    "showingMaterials": "{{count}} 種の素材を表示",
+    "materialSource": "入手方法",
+    "materialScreenshots": "スクリーンショット",
+    "materialTotalNeeded": "合計 {{count}} 個必要"
   },
   "quests": {
     "title": "クエスト攻略",

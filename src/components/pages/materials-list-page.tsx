@@ -16,6 +16,8 @@ export async function MaterialsListPage({ locale }: MaterialsListPageProps) {
   const materialItems = materials.map((material) => ({
     slug: material.slug,
     name: material.name,
+    sources: material.sources,
+    screenshots: material.screenshots,
     totalUsage: material.totalUsage,
     habitats: material.habitats.map((h) => ({
       habitatId: h.habitatId,

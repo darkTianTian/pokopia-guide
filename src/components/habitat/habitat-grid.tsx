@@ -159,9 +159,11 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                       return (
                         <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
                           {mats.map((mat, i) => (
-                            <span
+                            <Link
                               key={i}
-                              className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10"
+                              href={getLocalePath(locale, `/habitat/materials/${slugs[i] ?? ""}`)}
+                              onClick={(e) => e.stopPropagation()}
+                              className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10 transition-colors hover:bg-primary/20"
                             >
                               {slugs[i] && (
                                 <SafeImage
@@ -174,7 +176,7 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                               )}
                               {mat.name}
                               <QuantityDots count={mat.quantity} className="ml-1" />
-                            </span>
+                            </Link>
                           ))}
                         </div>
                       )
