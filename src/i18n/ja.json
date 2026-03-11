@@ -361,9 +361,9 @@
   },
   "items": {
     "title": "アイテム図鑑",
-    "metaTitle": "Pokopia 全アイテム一覧",
+    "metaTitle": "Pokopia 全アイテム図鑑 | 家具・素材・建物・雑貨一覧",
     "description": "Pokémon Pokopia の全アイテムを一覧で確認。カテゴリでフィルター、名前で検索して家具、雑貨、自然アイテム、食べ物などを探そう。",
-    "metaDescription": "Pokémon Pokopia の完全アイテムカタログ。家具、雑貨、建設素材、食べ物など全アイテムをカテゴリ別に閲覧。",
+    "metaDescription": "Pokémon Pokopia の完全アイテム図鑑。700以上の家具、雑貨、建設素材、食べ物、ブロック、キットなど全カテゴリを網羅。カテゴリ別フィルター、名前検索、クラフト素材と入手方法も確認できます。",
     "totalCount": "全 {{count}} 件のアイテム",
     "searchPlaceholder": "アイテムを検索...",
     "noResults": "アイテムが見つかりません。",
