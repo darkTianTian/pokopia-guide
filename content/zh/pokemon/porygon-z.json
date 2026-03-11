@@ -10,7 +10,14 @@
     "specialties": [
       "rarify"
     ],
-    "favorites": [],
+    "favorites": [
+      "soft stuff",
+      "strange stuff",
+      "fabric",
+      "watching stuff",
+      "colorful stuff",
+      "dry flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

@@ -10,7 +10,14 @@
     "specialties": [
       "generate"
     ],
-    "favorites": [],
+    "favorites": [
+      "electronics",
+      "glass stuff",
+      "soft stuff",
+      "cute stuff",
+      "group activities",
+      "sweet flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

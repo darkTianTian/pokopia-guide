@@ -12,7 +12,14 @@
       "fly",
       "gather"
     ],
-    "favorites": [],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "nice breezes",
+      "wobbly stuff",
+      "spinning stuff",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

@@ -11,7 +11,14 @@
     "specialties": [
       "fly"
     ],
-    "favorites": [],
+    "favorites": [
+      "stone stuff",
+      "nice breezes",
+      "hard stuff",
+      "shiny stuff",
+      "spinning stuff",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

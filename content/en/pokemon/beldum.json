@@ -11,7 +11,14 @@
     "specialties": [
       "recycle"
     ],
-    "favorites": [],
+    "favorites": [
+      "metal stuff",
+      "strange stuff",
+      "hard stuff",
+      "complicated stuff",
+      "stone stuff",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

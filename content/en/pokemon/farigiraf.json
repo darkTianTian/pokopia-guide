@@ -12,7 +12,14 @@
       "gather",
       "search"
     ],
-    "favorites": [],
+    "favorites": [
+      "soft stuff",
+      "strange stuff",
+      "rides",
+      "watching stuff",
+      "slender objects",
+      "sour flavors"
+    ],
     "timeOfDay": [
       "dawn",
       "day",

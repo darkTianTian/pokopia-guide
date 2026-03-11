@@ -10,7 +10,14 @@
     "specialties": [
       "search"
     ],
-    "favorites": [],
+    "favorites": [
+      "shiny stuff",
+      "luxury",
+      "cute stuff",
+      "letters and words",
+      "watching stuff",
+      "bitter flavors"
+    ],
     "timeOfDay": [
       "night"
     ],
