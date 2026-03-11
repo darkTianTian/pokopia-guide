@@ -39,6 +39,9 @@ jobs:
           R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
         run: node scripts/update-pokopia-data.mjs --force
 
+      - name: Update items catalog
+        run: node scripts/scrape-items.mjs
+
       - name: Check for changes
         id: changes
         run: |
