@@ -18,7 +18,8 @@
     "explore": "探索地圖",
     "multiplayer": "連線指南",
     "mysteryGift": "神秘禮物",
-    "cooking": "料理食譜"
+    "cooking": "料理食譜",
+    "items": "物品圖鑑"
   },
   "home": {
     "heroTitle": "歡迎來到 Pokémon Pokopia 攻略站",
@@ -176,6 +177,7 @@
     "multiplayer": "連線指南",
     "mysteryGift": "神秘禮物",
     "cooking": "料理食譜",
+    "items": "物品圖鑑",
     "wishlist": "願望清單",
     "collection": "收集進度"
   },
@@ -356,6 +358,33 @@
     "lighting": "照明",
     "transport": "運輸",
     "special": "特殊"
+  },
+  "items": {
+    "title": "物品圖鑑",
+    "metaTitle": "Pokopia 全物品一覽",
+    "description": "瀏覽 Pokémon Pokopia 所有物品。按分類篩選、搜尋名稱，探索家具、雜貨、自然物品、食物等。",
+    "metaDescription": "Pokémon Pokopia 完整物品圖鑑。瀏覽家具、雜貨、建築材料、食物等所有物品，支援分類篩選。",
+    "totalCount": "共 {{count}} 個物品",
+    "searchPlaceholder": "搜尋物品...",
+    "noResults": "沒有符合的物品。",
+    "showingCount": "顯示 {{count}} 個物品",
+    "breadcrumb": "物品圖鑑",
+    "allCategories": "全部"
+  },
+  "itemCategories": {
+    "furniture": "家具",
+    "goods": "雜貨",
+    "nature": "自然",
+    "food": "食物",
+    "building": "建築",
+    "utility": "便利道具",
+    "block": "方塊",
+    "outdoor": "戶外",
+    "material": "材料",
+    "kit": "工具套裝",
+    "key-item": "重要物品",
+    "other": "其他",
+    "uncollectable": "非收藏品"
   },
   "craftingObtain": {
     "story": "劇情解鎖",

@@ -18,7 +18,8 @@
     "explore": "Explore",
     "multiplayer": "Multiplayer",
     "mysteryGift": "Mystery Gift",
-    "cooking": "Cooking Recipes"
+    "cooking": "Cooking Recipes",
+    "items": "Items"
   },
   "home": {
     "heroTitle": "Welcome to Pokémon Pokopia Guide",
@@ -176,6 +177,7 @@
     "multiplayer": "Multiplayer Guide",
     "mysteryGift": "Mystery Gift",
     "cooking": "Cooking Recipes",
+    "items": "Items",
     "wishlist": "Wishlist",
     "collection": "Collection"
   },
@@ -356,6 +358,33 @@
     "lighting": "Lighting",
     "transport": "Transport",
     "special": "Special"
+  },
+  "items": {
+    "title": "Item Catalog",
+    "metaTitle": "All Pokopia Items | Complete Item List",
+    "description": "Browse all items in Pokémon Pokopia. Filter by category, search by name, and discover furniture, goods, nature items, food, and more.",
+    "metaDescription": "Complete item catalog for Pokémon Pokopia. Browse all furniture, goods, building materials, food, and more with category filters.",
+    "totalCount": "{{count}} items in total",
+    "searchPlaceholder": "Search items...",
+    "noResults": "No items found.",
+    "showingCount": "Showing {{count}} items",
+    "breadcrumb": "Items",
+    "allCategories": "All"
+  },
+  "itemCategories": {
+    "furniture": "Furniture",
+    "goods": "Goods",
+    "nature": "Nature",
+    "food": "Food",
+    "building": "Building",
+    "utility": "Utility",
+    "block": "Block",
+    "outdoor": "Outdoor",
+    "material": "Material",
+    "kit": "Kit",
+    "key-item": "Key Item",
+    "other": "Other",
+    "uncollectable": "Uncollectable"
   },
   "craftingObtain": {
     "story": "Story Unlock",

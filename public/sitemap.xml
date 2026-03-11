@@ -49,6 +49,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://pokopiaguide.com/items</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://pokopiaguide.com/guides/all-crafting-materials</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -163,6 +169,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://pokopiaguide.com/zh/items</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://pokopiaguide.com/zh/guides/all-crafting-materials</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -272,6 +284,12 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/ja/cooking</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pokopiaguide.com/ja/items</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

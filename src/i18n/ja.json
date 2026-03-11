@@ -18,7 +18,8 @@
     "explore": "探索マップ",
     "multiplayer": "マルチプレイ",
     "mysteryGift": "ふしぎなおくりもの",
-    "cooking": "料理レシピ"
+    "cooking": "料理レシピ",
+    "items": "アイテム図鑑"
   },
   "home": {
     "heroTitle": "Pokémon Pokopia 攻略サイトへようこそ",
@@ -176,6 +177,7 @@
     "explore": "探索マップ",
     "multiplayer": "マルチプレイガイド",
     "cooking": "料理レシピ",
+    "items": "アイテム図鑑",
     "wishlist": "ウィッシュリスト",
     "collection": "コレクション"
   },
@@ -356,6 +358,33 @@
     "lighting": "照明",
     "transport": "乗り物",
     "special": "特別"
+  },
+  "items": {
+    "title": "アイテム図鑑",
+    "metaTitle": "Pokopia 全アイテム一覧",
+    "description": "Pokémon Pokopia の全アイテムを一覧で確認。カテゴリでフィルター、名前で検索して家具、雑貨、自然アイテム、食べ物などを探そう。",
+    "metaDescription": "Pokémon Pokopia の完全アイテムカタログ。家具、雑貨、建設素材、食べ物など全アイテムをカテゴリ別に閲覧。",
+    "totalCount": "全 {{count}} 件のアイテム",
+    "searchPlaceholder": "アイテムを検索...",
+    "noResults": "アイテムが見つかりません。",
+    "showingCount": "{{count}} 件のアイテムを表示",
+    "breadcrumb": "アイテム",
+    "allCategories": "すべて"
+  },
+  "itemCategories": {
+    "furniture": "家具",
+    "goods": "雑貨",
+    "nature": "自然",
+    "food": "食べ物",
+    "building": "建物",
+    "utility": "便利",
+    "block": "ブロック",
+    "outdoor": "屋外",
+    "material": "材料",
+    "kit": "キット",
+    "key-item": "大切なもの",
+    "other": "その他",
+    "uncollectable": "コレクション外"
   },
   "craftingObtain": {
     "story": "ストーリー解放",
