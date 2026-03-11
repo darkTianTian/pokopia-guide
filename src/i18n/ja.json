@@ -436,6 +436,10 @@
       "successMerge": "コレクションをマージしました！"
     }
   },
+  "feedback": {
+    "dataIssue": "データに誤りがありますか？",
+    "letUsKnow": "お知らせください"
+  },
   "mysteryGift": {
     "title": "ふしぎなおくりもの コード",
     "metaTitle": "ふしぎなおくりもの コード",

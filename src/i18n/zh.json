@@ -436,6 +436,10 @@
       "successMerge": "收集進度已合併！"
     }
   },
+  "feedback": {
+    "dataIssue": "發現數據有誤？",
+    "letUsKnow": "告訴我們"
+  },
   "mysteryGift": {
     "title": "神秘禮物兌換碼",
     "metaTitle": "神秘禮物兌換碼",
