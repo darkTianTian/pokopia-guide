@@ -56,11 +56,32 @@ function stripHtml(html) {
  * - e (description), g (how to obtain), r (recipe/unlock)
  * - m (crafting materials [{id, nameJa, count}])
  */
+/**
+ * Extract materials from a substring after the main match.
+ * Handles both c:'1' (quoted) and c:50 (unquoted) formats.
+ */
+function extractMaterials(htmlSlice) {
+  const materials = []
+  const matsMatch = htmlSlice.match(/,m:\[([^\]]*)\]/)
+  if (matsMatch) {
+    const matRegex = /\{i:'(\d+)',n:'([^']*)',(?:a:'[^']*',)?c:(?:')?(\d+)/g
+    let m
+    while ((m = matRegex.exec(matsMatch[1])) !== null) {
+      materials.push({
+        id: m[1],
+        nameJa: m[2],
+        count: parseInt(m[3], 10),
+      })
+    }
+  }
+  return materials
+}
+
 function extractItems(html) {
   const items = []
   const seen = new Set()
 
-  // Match full item entries including e, g, r fields and optional m array
+  // Pattern 1: Standard items with e, g, r fields
   const itemRegex = /\{id:'(\d+)',n:'([^']*)',k:'[^']*',f:'[^']*',aid:'[^']*',t:'([^']*)',i:'([^']*)',e:'((?:[^'\\]|\\.)*)',g:'((?:[^'\\]|\\.)*)',r:'((?:[^'\\]|\\.)*)'/g
 
   let match
@@ -73,25 +94,37 @@ function extractItems(html) {
     const obtain = stripHtml(gRaw)
     const recipe = stripHtml(rRaw)
 
-    // Extract materials: m:[{i:'78',n:'ポケメタル',c:'1',a:'547936'}, ...]
-    const materials = []
     const afterMatch = html.substring(match.index + fullMatch.length, match.index + fullMatch.length + 500)
-    const matsMatch = afterMatch.match(/^,m:\[([^\]]*)\]/)
-    if (matsMatch) {
-      const matRegex = /\{i:'(\d+)',n:'([^']*)',c:'(\d+)'/g
-      let m
-      while ((m = matRegex.exec(matsMatch[1])) !== null) {
-        materials.push({
-          id: m[1],
-          nameJa: m[2],
-          count: parseInt(m[3], 10),
-        })
-      }
-    }
+    const materials = extractMaterials(afterMatch)
 
     const item = { id, nameJa, category, imageId }
     if (description) item.description = description
     if (obtain.length > 0) item.obtain = obtain
+    if (recipe.length > 0) item.recipe = recipe
+    if (materials.length > 0) item.materials = materials
+
+    items.push(item)
+  }
+
+  // Pattern 2: Kit items with t2, r (no e/g), nr, tr, tx, sr fields
+  const kitRegex = /\{id:'(\d+)',n:'([^']*)',k:'[^']*',f:'[^']*',aid:'[^']*',t:'([^']*)',t2:'([^']*)',i:'([^']*)',r:'((?:[^'\\]|\\.)*)'/g
+
+  while ((match = kitRegex.exec(html)) !== null) {
+    const [fullMatch, id, nameJa, category, category2, imageId, rRaw] = match
+    if (seen.has(id)) continue
+    seen.add(id)
+
+    const recipe = stripHtml(rRaw)
+
+    // Extract tx (description) field
+    const afterMatch = html.substring(match.index + fullMatch.length, match.index + fullMatch.length + 800)
+    const txMatch = afterMatch.match(/,tx:'((?:[^'\\]|\\.)*)'/)
+    const description = txMatch ? txMatch[1].replace(/\\'/g, "'").replace(/<[^>]+>/g, "").trim() : ""
+
+    const materials = extractMaterials(afterMatch)
+
+    const item = { id, nameJa, category, imageId }
+    if (description) item.description = description
     if (recipe.length > 0) item.recipe = recipe
     if (materials.length > 0) item.materials = materials
 
