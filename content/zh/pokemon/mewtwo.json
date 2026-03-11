@@ -23,8 +23,6 @@
     "obtainMethod": "story",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": [],
-    "category": "legendary",
-    "obtainDetails": "完成閃亮亮浮島之街的故事。也可使用快龍玩偶在夢之島地下遇見。Tip：夢島每天只能使用1種玩偶（次數不限）；注意牆壁裡的閃光"
+    "habitats": []
   }
 }

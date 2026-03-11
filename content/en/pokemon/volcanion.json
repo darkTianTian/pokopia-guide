@@ -24,8 +24,6 @@
     "obtainMethod": "story",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": [],
-    "category": "mythical",
-    "obtainDetails": "Complete the Gotsugotsu Mountain Town story"
+    "habitats": []
   }
 }

@@ -23,8 +23,6 @@
     "obtainMethod": "quest",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": [],
-    "category": "mythical",
-    "obtainDetails": "パサパサこうやでナゾのせきばん27枚を集め、ポケモンセンター裏の地下の壁画にはめる。Tip：コケカビゴンに甘い味（モモンのみ）を供えると石板の出現率アップ；石板は裏面の模様を見て正しい位置にはめる"
+    "habitats": []
   }
 }

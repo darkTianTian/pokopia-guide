@@ -21,8 +21,6 @@
     "obtainMethod": "story",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": [],
-    "category": "legendary",
-    "obtainDetails": "Complete the Pasapasa Prairie Town story"
+    "habitats": []
   }
 }

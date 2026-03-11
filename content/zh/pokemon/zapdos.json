@@ -24,8 +24,6 @@
     "obtainMethod": "craft",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": [],
-    "category": "legendary",
-    "obtainDetails": "在空空鎮建造無人發電廠。圖紙來自空空鎮祭壇。Tip：學會小磁怪技能後蓋房子更快"
+    "habitats": []
   }
 }
