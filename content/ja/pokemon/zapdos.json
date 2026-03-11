@@ -24,6 +24,8 @@
     "obtainMethod": "craft",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "無人発電所を建設"
   }
 }

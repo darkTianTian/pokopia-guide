@@ -92,6 +92,11 @@ export async function PokedexDetailPage({
               <TypeBadge key={type} type={type} locale={locale} />
             ))}
           </div>
+          {pokemon.pokopia?.category && (
+            <span className={`mt-2 inline-flex items-center rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider backdrop-blur-md ring-1 ${pokemon.pokopia.category === "mythical" ? "bg-pink-500/20 text-pink-600 ring-pink-500/30 dark:text-pink-400" : "bg-amber-500/20 text-amber-600 ring-amber-500/30 dark:text-amber-400"}`}>
+              {t(translations, `pokedex.${pokemon.pokopia.category}`)}
+            </span>
+          )}
         </div>
 
         <div className="relative mt-12 flex h-[280px] w-full items-center justify-center sm:h-[320px] lg:h-[400px]">
@@ -212,10 +217,15 @@ export async function PokedexDetailPage({
               <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground/80">
                 {t(translations, "pokedex.obtainMethod")}
               </h3>
-              <div className="mt-auto">
-                <Badge variant="secondary" className="px-3 py-1.5 text-sm ring-1 ring-border/50">
+              <div className="mt-auto flex flex-col gap-2">
+                <Badge variant="secondary" className="w-fit px-3 py-1.5 text-sm ring-1 ring-border/50">
                   {t(translations, `obtainMethods.${pokemon.pokopia.obtainMethod}`)}
                 </Badge>
+                {pokemon.pokopia.obtainDetails && (
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {pokemon.pokopia.obtainDetails}
+                  </p>
+                )}
               </div>
             </div>
 

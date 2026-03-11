@@ -23,6 +23,8 @@
     "obtainMethod": "story",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "キラキラうきしまの街のストーリーで図鑑登録"
   }
 }

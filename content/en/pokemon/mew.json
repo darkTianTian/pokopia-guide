@@ -23,6 +23,8 @@
     "obtainMethod": "quest",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "mythical",
+    "obtainDetails": "Complete all mysterious stone tablet wall paintings"
   }
 }

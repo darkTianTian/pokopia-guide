@@ -76,6 +76,8 @@
     "obtainMethod": "入手方法",
     "favoritesLabel": "お気に入り",
     "evolution": "進化",
+    "legendary": "伝説",
+    "mythical": "幻",
     "browseByType": "タイプで探す",
     "browseBySpecialty": "とくいわざで探す",
     "typePageTitle": "{{type}}タイプのポケモン",

@@ -23,6 +23,8 @@
     "obtainMethod": "story",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "完成閃亮亮浮島之街的故事"
   }
 }

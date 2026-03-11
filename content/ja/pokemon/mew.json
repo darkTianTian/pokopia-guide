@@ -23,6 +23,8 @@
     "obtainMethod": "quest",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "mythical",
+    "obtainDetails": "ナゾのせきばんを壁画に全てはめる"
   }
 }

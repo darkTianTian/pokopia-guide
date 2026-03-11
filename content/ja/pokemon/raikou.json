@@ -23,6 +23,8 @@
     "obtainMethod": "story",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "ドンヨリうみべの街ストーリー後、うなばらのゆめしまの地下で再会"
   }
 }

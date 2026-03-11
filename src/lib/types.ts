@@ -36,6 +36,8 @@ export interface PokopiaData {
   timeOfDay: string[] | null
   weather: string[] | null
   obtainMethod: "habitat" | "story" | "dream-island" | "craft" | "quest" | "trade" | "event" | "unknown"
+  category?: "legendary" | "mythical"
+  obtainDetails?: string
   evolvesFrom: string | null
   evolvesTo: string[] | null
 }
