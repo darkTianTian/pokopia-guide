@@ -361,9 +361,9 @@
   },
   "items": {
     "title": "Item Catalog",
-    "metaTitle": "All Pokopia Items | Complete Item List",
+    "metaTitle": "All Pokopia Items | Furniture, Materials & More",
     "description": "Browse all items in Pokémon Pokopia. Filter by category, search by name, and discover furniture, goods, nature items, food, and more.",
-    "metaDescription": "Complete item catalog for Pokémon Pokopia. Browse all furniture, goods, building materials, food, and more with category filters.",
+    "metaDescription": "Complete Pokémon Pokopia item catalog with 700+ items. Browse furniture, goods, building materials, food, kits, and blocks. Filter by category, search by name, and view crafting recipes.",
     "totalCount": "{{count}} items in total",
     "searchPlaceholder": "Search items...",
     "noResults": "No items found.",

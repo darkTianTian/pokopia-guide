@@ -361,9 +361,9 @@
   },
   "items": {
     "title": "物品圖鑑",
-    "metaTitle": "Pokopia 全物品一覽",
+    "metaTitle": "Pokopia 全物品圖鑑 | 家具、材料、建築與雜貨一覽",
     "description": "瀏覽 Pokémon Pokopia 所有物品。按分類篩選、搜尋名稱，探索家具、雜貨、自然物品、食物等。",
-    "metaDescription": "Pokémon Pokopia 完整物品圖鑑。瀏覽家具、雜貨、建築材料、食物等所有物品，支援分類篩選。",
+    "metaDescription": "Pokémon Pokopia 完整物品圖鑑，收錄 700+ 物品。瀏覽家具、雜貨、建築材料、食物、方塊、工具套裝等所有分類，支援分類篩選與名稱搜尋，查看製作材料與獲取方式。",
     "totalCount": "共 {{count}} 個物品",
     "searchPlaceholder": "搜尋物品...",
     "noResults": "沒有符合的物品。",
