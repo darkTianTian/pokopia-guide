@@ -24,6 +24,8 @@
     "obtainMethod": "craft",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "建造雙子冰之祠"
   }
 }

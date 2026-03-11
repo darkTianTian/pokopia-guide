@@ -22,6 +22,8 @@
     "obtainMethod": "quest",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "飛行中にとうめいなすずを鳴らす"
   }
 }

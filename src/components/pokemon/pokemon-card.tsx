@@ -70,6 +70,11 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
         <span className="absolute top-4 left-1/2 -translate-x-1/2 z-20 flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-sm font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50">
           #{String(pokemon.id).padStart(3, "0")}
         </span>
+        {pokopia?.category && (
+          <span className={`absolute top-12 left-1/2 -translate-x-1/2 z-20 inline-flex items-center rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider backdrop-blur-md ring-1 ${pokopia.category === "mythical" ? "bg-pink-500/20 text-pink-600 ring-pink-500/30 dark:text-pink-400" : "bg-amber-500/20 text-amber-600 ring-amber-500/30 dark:text-amber-400"}`}>
+            {pokopia.category === "mythical" ? tr.pokedex.mythical : tr.pokedex.legendary}
+          </span>
+        )}
         <CollectionButton
           itemId={pokemon.slug}
           className="absolute right-4 top-4 z-20"

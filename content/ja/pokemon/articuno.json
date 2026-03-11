@@ -24,6 +24,8 @@
     "obtainMethod": "craft",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "ふたごの氷のほこらを建設"
   }
 }

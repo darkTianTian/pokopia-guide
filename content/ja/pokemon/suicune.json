@@ -23,6 +23,8 @@
     "obtainMethod": "dream-island",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "こうやのゆめしまの地下で遭遇"
   }
 }

@@ -23,6 +23,8 @@
     "obtainMethod": "story",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "完成陰沉沉海邊之街的故事，在海原夢之島地下重逢"
   }
 }

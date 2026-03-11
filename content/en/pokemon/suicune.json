@@ -23,6 +23,8 @@
     "obtainMethod": "dream-island",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "Found in Prairie Dream Island underground"
   }
 }

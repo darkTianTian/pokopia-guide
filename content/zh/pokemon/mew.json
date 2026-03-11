@@ -23,6 +23,8 @@
     "obtainMethod": "quest",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "mythical",
+    "obtainDetails": "將所有謎之石板嵌入壁畫"
   }
 }

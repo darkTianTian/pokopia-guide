@@ -23,6 +23,8 @@
     "obtainMethod": "story",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "Complete the Kirari Floating Island Town story"
   }
 }
