@@ -281,8 +281,14 @@ export async function PokedexDetailPage({
         </section>
       )}
 
-      <p className="mt-16 text-center text-xs font-medium uppercase tracking-wider text-muted-foreground/50">
-        {t(translations, "pokedex.dataDisclaimer")}
+      <p className="mt-8 text-center text-sm text-muted-foreground/70">
+        {t(translations, "feedback.dataIssue")}{" "}
+        <a
+          href={`mailto:feedback@pokopiaguide.com?subject=${encodeURIComponent(`[Feedback] ${pokemon.name} - Pokopia Guide`)}&body=${encodeURIComponent(`Page: https://pokopiaguide.com${getLocalePath(locale, `/pokedex/${pokemon.slug}`)}\n\nIssue:\n`)}`}
+          className="text-primary hover:underline"
+        >
+          {t(translations, "feedback.letUsKnow")}
+        </a>
       </p>
 
       <script

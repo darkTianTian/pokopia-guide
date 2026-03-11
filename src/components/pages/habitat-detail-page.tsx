@@ -165,6 +165,16 @@ export async function HabitatDetailPage({
           )
         })}
       </div>
+
+      <p className="mt-8 text-center text-sm text-muted-foreground/70">
+        {t(translations, "feedback.dataIssue")}{" "}
+        <a
+          href={`mailto:feedback@pokopiaguide.com?subject=${encodeURIComponent(`[Feedback] ${habitat.name} - Pokopia Guide`)}&body=${encodeURIComponent(`Page: https://pokopiaguide.com${getLocalePath(locale, `/habitat/list/${slug}`)}\n\nIssue:\n`)}`}
+          className="text-primary hover:underline"
+        >
+          {t(translations, "feedback.letUsKnow")}
+        </a>
+      </p>
     </div>
   )
 }

@@ -436,6 +436,10 @@
       "successMerge": "Collection merged successfully!"
     }
   },
+  "feedback": {
+    "dataIssue": "Found incorrect data?",
+    "letUsKnow": "Let us know"
+  },
   "mysteryGift": {
     "title": "Mystery Gift Codes",
     "metaTitle": "Mystery Gift Codes",
