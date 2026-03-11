@@ -2406,8 +2406,15 @@ async function run() {
       materialsJa[hId] = parts.join(", ")
     }
 
-    // Build EN materials: match via habitat-mapping-en.json → Game8 conditions
-    const materialsEn = {}
+    // Build EN materials: start from existing file to preserve manual translations,
+    // then overlay Game8 scraped data on top.
+    let materialsEn = {}
+    try {
+      materialsEn = JSON.parse(await fs.readFile(path.join(CONTENT_DIR, "habitat-materials-en.json"), "utf-8"))
+      console.log(`  Loaded existing EN materials: ${Object.keys(materialsEn).length} habitats`)
+    } catch {
+      console.log("  No existing habitat-materials-en.json, starting fresh")
+    }
     // Build reverse map: lowercase EN name → habitat ID (with alias support)
     const enNameToId = new Map()
     for (const [id, name] of Object.entries(habitatMappings.en)) {
