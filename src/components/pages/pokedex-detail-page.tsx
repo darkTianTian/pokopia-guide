@@ -6,7 +6,7 @@ import { TypeBadge } from "@/components/pokemon/type-badge"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
 import { WishlistButton } from "@/components/ui/wishlist-button"
 import { CollectionButton } from "@/components/ui/collection-button"
-import { Sparkles, Trophy } from "lucide-react"
+import { ChevronLeft, ChevronRight, Sparkles, Trophy } from "lucide-react"
 import Link from "next/link"
 import { getAllPokemon, getPokemonBySlug } from "@/lib/pokemon"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
@@ -54,6 +54,10 @@ export async function PokedexDetailPage({
   const relatedPokemon = allPokemon
     .filter((p) => p.slug !== pokemon.slug && p.types.some((type) => pokemon.types.includes(type)))
     .slice(0, 4)
+
+  const currentIndex = allPokemon.findIndex((p) => p.slug === pokemon.slug)
+  const prevPokemon = currentIndex > 0 ? allPokemon[currentIndex - 1] : null
+  const nextPokemon = currentIndex < allPokemon.length - 1 ? allPokemon[currentIndex + 1] : null
 
   const primaryType = pokemon.types[0] || "normal"
   const gradientClass = TYPE_GRADIENTS[primaryType] || TYPE_GRADIENTS.normal
@@ -318,6 +322,62 @@ export async function PokedexDetailPage({
           </div>
         </section>
       )}
+
+      {/* Prev / Next Navigation */}
+      <nav className="mb-16 flex items-stretch justify-between gap-4">
+        {prevPokemon ? (
+          <Link
+            href={getLocalePath(locale, `/pokedex/${prevPokemon.slug}`)}
+            className="group flex items-center gap-3 rounded-2xl border border-border/40 bg-muted/20 px-4 py-3 shadow-sm backdrop-blur-md transition-all hover:-translate-x-1 hover:shadow-md"
+          >
+            <ChevronLeft className="h-5 w-5 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+            <SafeImage
+              src={prevPokemon.image}
+              alt={prevPokemon.name}
+              width={40}
+              height={40}
+              className="pokemon-sprite-target object-contain"
+            />
+            <div className="flex flex-col">
+              <span className="text-xs text-muted-foreground">
+                {t(translations, "pokedex.prev")}
+              </span>
+              <span className="text-sm font-semibold leading-tight">{prevPokemon.name}</span>
+              <span className="font-mono text-xs text-muted-foreground">
+                No.{String(prevPokemon.id).padStart(3, "0")}
+              </span>
+            </div>
+          </Link>
+        ) : (
+          <div />
+        )}
+        {nextPokemon ? (
+          <Link
+            href={getLocalePath(locale, `/pokedex/${nextPokemon.slug}`)}
+            className="group flex items-center gap-3 rounded-2xl border border-border/40 bg-muted/20 px-4 py-3 shadow-sm backdrop-blur-md transition-all hover:translate-x-1 hover:shadow-md"
+          >
+            <div className="flex flex-col items-end">
+              <span className="text-xs text-muted-foreground">
+                {t(translations, "pokedex.next")}
+              </span>
+              <span className="text-sm font-semibold leading-tight">{nextPokemon.name}</span>
+              <span className="font-mono text-xs text-muted-foreground">
+                No.{String(nextPokemon.id).padStart(3, "0")}
+              </span>
+            </div>
+            <SafeImage
+              src={nextPokemon.image}
+              alt={nextPokemon.name}
+              width={40}
+              height={40}
+              className="pokemon-sprite-target object-contain"
+            />
+            <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+          </Link>
+        ) : (
+          <div />
+        )}
+      </nav>
 
       <p className="mt-8 text-center text-sm text-muted-foreground/70">
         {t(translations, "feedback.dataIssue")}{" "}
