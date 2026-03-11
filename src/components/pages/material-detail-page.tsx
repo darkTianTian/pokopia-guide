@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { SafeImage } from "@/components/ui/safe-image"
+import { ImageLightbox } from "@/components/ui/image-lightbox"
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { WishlistButton } from "@/components/ui/wishlist-button"
 import { getMaterialBySlug } from "@/lib/materials"
@@ -99,18 +100,12 @@ export async function MaterialDetailPage({
           <h2 className="mb-4 text-xl font-bold tracking-tight">
             {t(translations, "habitat.materialScreenshots")}
           </h2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {material.screenshots.map((src) => (
-              <SafeImage
-                key={src}
-                src={src}
-                alt={material.name}
-                width={600}
-                height={338}
-                className="w-full rounded-2xl border border-border/40 object-cover shadow-sm"
-              />
-            ))}
-          </div>
+          <ImageLightbox
+            images={material.screenshots.map((src) => ({
+              src,
+              alt: material.name,
+            }))}
+          />
         </section>
       )}
 
