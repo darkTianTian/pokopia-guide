@@ -24,10 +24,16 @@ function renderMarkdown(content: string): string {
   function inlineFormat(text: string): string {
     return text
       .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-      .replace(/!\[icon:([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="display:inline-block;vertical-align:middle;width:1.25rem;height:1.25rem;margin:0" loading="lazy" />')
+      .replace(/!\[icon:([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="display:inline-block;vertical-align:middle;width:1.75rem;height:1.75rem;margin:0 0.125rem" loading="lazy" />')
       .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" class="my-4 mx-auto max-w-full rounded-lg" loading="lazy" />')
       .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:text-primary/80">$1</a>')
       .replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, '<a href="$2" class="text-primary underline hover:text-primary/80">$1</a>')
+      .replace(/\bx(\d+)\b/g, (_match, n) => {
+        const label = `× ${n}`
+        const textWidth = 8 + String(n).length * 7
+        const w = textWidth + 4
+        return `<svg width="${w}" height="16" viewBox="0 0 ${w} 16" aria-hidden="true" role="img" style="display:inline-block;vertical-align:middle"><text x="${w / 2}" y="12" text-anchor="middle" font-size="12" font-weight="500" class="fill-muted-foreground/70">${label}</text></svg>`
+      })
   }
 
   for (const line of lines) {
@@ -133,6 +139,16 @@ export async function GuideDetailPage({ slug, locale }: GuideDetailPageProps) {
         className="prose prose-gray dark:prose-invert max-w-none"
         dangerouslySetInnerHTML={{ __html: renderMarkdown(guide.content) }}
       />
+
+      <p className="mt-8 text-center text-sm text-muted-foreground/70">
+        {t(translations, "feedback.dataIssue")}{" "}
+        <a
+          href={`mailto:feedback@pokopiaguide.com?subject=${encodeURIComponent(`[Feedback] ${guide.title} - Pokopia Guide`)}&body=${encodeURIComponent(`Page: https://pokopiaguide.com${getLocalePath(locale, `/guides/${guide.slug}`)}\n\nIssue:\n`)}`}
+          className="text-primary hover:underline"
+        >
+          {t(translations, "feedback.letUsKnow")}
+        </a>
+      </p>
 
       <script
         type="application/ld+json"
