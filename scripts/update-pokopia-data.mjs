@@ -2282,11 +2282,15 @@ async function run() {
           name: getLocalizedHabitatName(h, locale, habitatMappings),
         }))
 
+        // Preserve locale-specific hand-curated fields
+        const localePokopia = pokemonData.pokopia || {}
         const updatedData = {
           ...pokemonData,
           pokopia: {
             ...merged,
             habitats: localizedHabitats,
+            ...(localePokopia.category && { category: localePokopia.category }),
+            ...(localePokopia.obtainDetails && { obtainDetails: localePokopia.obtainDetails }),
           },
         }
 
@@ -2355,11 +2359,15 @@ async function run() {
           name: getLocalizedHabitatName(h, locale, habitatMappings),
         }))
 
+        // Preserve locale-specific hand-curated fields
+        const localePokopia = pokemonData.pokopia || {}
         const updatedData = {
           ...pokemonData,
           pokopia: {
             ...updatedPokopia,
             habitats: localizedHabitats,
+            ...(localePokopia.category && { category: localePokopia.category }),
+            ...(localePokopia.obtainDetails && { obtainDetails: localePokopia.obtainDetails }),
           },
         }
 
