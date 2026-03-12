@@ -24,6 +24,7 @@ function renderMarkdown(content: string): string {
   function inlineFormat(text: string): string {
     return text
       .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+      .replace(/!\[icon:([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" class="inline-block align-middle h-5 w-5" loading="lazy" />')
       .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" class="my-4 mx-auto max-w-full rounded-lg" loading="lazy" />')
       .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:text-primary/80">$1</a>')
       .replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, '<a href="$2" class="text-primary underline hover:text-primary/80">$1</a>')
