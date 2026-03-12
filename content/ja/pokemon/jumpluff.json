@@ -36,6 +36,17 @@
     "eventDexNumber": 3,
     "evolvesFrom": "skiploom",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 210,
+        "name": "黄色のじゅうたん",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 212,
+        "name": "タンポポとお昼ご飯",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }

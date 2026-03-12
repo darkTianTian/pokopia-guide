@@ -36,6 +36,17 @@
     "eventDexNumber": 3,
     "evolvesFrom": "skiploom",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 210,
+        "name": "黃色地毯",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 212,
+        "name": "蒲公英與午餐",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }

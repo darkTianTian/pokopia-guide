@@ -37,6 +37,17 @@
     "evolvesTo": [
       "jumpluff"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 210,
+        "name": "黃色地毯",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 211,
+        "name": "遠足的夥伴",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }

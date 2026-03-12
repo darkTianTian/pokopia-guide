@@ -36,6 +36,17 @@
     "eventDexNumber": 3,
     "evolvesFrom": "skiploom",
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [
+      {
+        "id": 210,
+        "name": "Yellow Carpet",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 212,
+        "name": "Dandelion Lunchtime",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }

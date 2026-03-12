@@ -37,6 +37,17 @@
     "evolvesTo": [
       "jumpluff"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 210,
+        "name": "黄色のじゅうたん",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 211,
+        "name": "遠足のおとも",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }

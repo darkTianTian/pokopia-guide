@@ -37,6 +37,17 @@
     "evolvesTo": [
       "jumpluff"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 210,
+        "name": "Yellow Carpet",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 211,
+        "name": "Field-Trip Friends",
+        "rarity": "very-rare"
+      }
+    ]
   }
 }

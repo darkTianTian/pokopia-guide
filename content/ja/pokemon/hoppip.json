@@ -37,6 +37,12 @@
     "evolvesTo": [
       "skiploom"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 210,
+        "name": "黄色のじゅうたん",
+        "rarity": "common"
+      }
+    ]
   }
 }

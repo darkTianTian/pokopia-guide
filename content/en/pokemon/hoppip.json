@@ -37,6 +37,12 @@
     "evolvesTo": [
       "skiploom"
     ],
-    "habitats": []
+    "habitats": [
+      {
+        "id": 210,
+        "name": "Yellow Carpet",
+        "rarity": "common"
+      }
+    ]
   }
 }
