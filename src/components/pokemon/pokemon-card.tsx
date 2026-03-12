@@ -62,6 +62,7 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
 
   const isLegendary = pokopia?.category === "legendary"
   const isMythical = pokopia?.category === "mythical"
+  const isEvent = pokopia?.category === "event"
   const isSpecial = isLegendary || isMythical
 
   // If no className is provided, use the default border styles
@@ -90,7 +91,9 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
         )}
         <div className={`absolute top-4 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 ${isSpecial ? "badge-float" : ""}`}>
           <span className="flex px-4 py-1 items-center justify-center rounded-full bg-muted/60 font-mono text-xs font-bold tracking-widest text-muted-foreground backdrop-blur-md ring-1 ring-border/50 shadow-sm">
-            #{String(pokemon.id).padStart(3, "0")}
+            {isEvent && pokopia?.eventDexNumber != null
+              ? `E-${String(pokopia.eventDexNumber).padStart(3, "0")}`
+              : `#${String(pokemon.id).padStart(3, "0")}`}
           </span>
           {isSpecial && (
             <div

@@ -9,6 +9,7 @@ import { CollectionButton } from "@/components/ui/collection-button"
 import { ChevronLeft, ChevronRight, MapPin, Sparkles, Trophy } from "lucide-react"
 import Link from "next/link"
 import { getAllPokemon, getPokemonBySlug } from "@/lib/pokemon"
+import type { Pokemon } from "@/lib/types"
 import { toHabitatSlug } from "@/lib/habitat-slug"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 import _pokemonAreaRestrictions from "@/../content/pokemon-area-restrictions.json"
@@ -56,13 +57,20 @@ export async function PokedexDetailPage({
     notFound()
   }
 
-  const relatedPokemon = allPokemon
+  const isEventPokemon = pokemon.pokopia?.category === "event"
+  const sameCategoryPokemon = allPokemon.filter((p) =>
+    isEventPokemon
+      ? p.pokopia?.category === "event"
+      : p.pokopia?.category !== "event"
+  )
+
+  const relatedPokemon = sameCategoryPokemon
     .filter((p) => p.slug !== pokemon.slug && p.types.some((type) => pokemon.types.includes(type)))
     .slice(0, 4)
 
-  const currentIndex = allPokemon.findIndex((p) => p.slug === pokemon.slug)
-  const prevPokemon = currentIndex > 0 ? allPokemon[currentIndex - 1] : null
-  const nextPokemon = currentIndex < allPokemon.length - 1 ? allPokemon[currentIndex + 1] : null
+  const currentIndex = sameCategoryPokemon.findIndex((p) => p.slug === pokemon.slug)
+  const prevPokemon = currentIndex > 0 ? sameCategoryPokemon[currentIndex - 1] : null
+  const nextPokemon = currentIndex < sameCategoryPokemon.length - 1 ? sameCategoryPokemon[currentIndex + 1] : null
 
   const primaryType = pokemon.types[0] || "normal"
   const gradientClass = TYPE_GRADIENTS[primaryType] || TYPE_GRADIENTS.normal
@@ -70,6 +78,13 @@ export async function PokedexDetailPage({
   const isLegendary = pokemon.pokopia?.category === "legendary"
   const isMythical = pokemon.pokopia?.category === "mythical"
   const isSpecial = isLegendary || isMythical
+
+  function formatDexNumber(p: Pokemon): string {
+    if (p.pokopia?.category === "event" && p.pokopia.eventDexNumber != null) {
+      return `E-${String(p.pokopia.eventDexNumber).padStart(3, "0")}`
+    }
+    return `No.${String(p.id).padStart(3, "0")}`
+  }
 
   const heroBorderClass = isSpecial
     ? "golden-card-base"
@@ -120,7 +135,9 @@ export async function PokedexDetailPage({
 
         <div className="flex flex-col items-center gap-4 text-center">
           <span className="flex h-8 items-center justify-center rounded-full bg-muted/50 px-4 font-mono text-sm font-semibold tracking-wider text-muted-foreground shadow-sm backdrop-blur-md">
-            No.{String(pokemon.id).padStart(3, "0")}
+            {isEventPokemon && pokemon.pokopia?.eventDexNumber != null
+              ? `E-${String(pokemon.pokopia.eventDexNumber).padStart(3, "0")}`
+              : `No.${String(pokemon.id).padStart(3, "0")}`}
           </span>
           <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">{pokemon.name}</h1>
           <div className="mt-2 flex flex-wrap justify-center gap-2">
@@ -132,6 +149,11 @@ export async function PokedexDetailPage({
             <span className={`mt-2 inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-bold uppercase tracking-wider backdrop-blur-md ring-1 ${isMythical ? "bg-pink-500/20 text-pink-600 ring-pink-500/30 dark:text-pink-400" : "bg-amber-500/20 text-amber-600 ring-amber-500/30 dark:text-amber-400"}`}>
               {isMythical ? <Sparkles className="h-4 w-4" aria-hidden="true" /> : <Trophy className="h-4 w-4" aria-hidden="true" />}
               {t(translations, `pokedex.${pokemon.pokopia!.category}`)}
+            </span>
+          )}
+          {isEventPokemon && (
+            <span className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/20 px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-emerald-600 backdrop-blur-md ring-1 ring-emerald-500/30 dark:text-emerald-400">
+              {t(translations, "pokedex.event")}
             </span>
           )}
         </div>
@@ -255,9 +277,18 @@ export async function PokedexDetailPage({
                 {t(translations, "pokedex.obtainMethod")}
               </h3>
               <div className="mt-auto flex flex-col gap-2">
-                <Badge variant="secondary" className="w-fit px-3 py-1.5 text-sm ring-1 ring-border/50">
-                  {t(translations, `obtainMethods.${pokemon.pokopia.obtainMethod}`)}
-                </Badge>
+                {pokemon.pokopia.obtainMethod === "event" ? (
+                  <Link href={getLocalePath(locale, "/events/more-spores-for-hoppip")} className="group/obtain w-fit">
+                    <Badge variant="secondary" className="w-fit px-3 py-1.5 text-sm ring-1 ring-border/50 transition-colors group-hover/obtain:bg-primary group-hover/obtain:text-primary-foreground">
+                      {t(translations, `obtainMethods.${pokemon.pokopia.obtainMethod}`)}
+                      {" →"}
+                    </Badge>
+                  </Link>
+                ) : (
+                  <Badge variant="secondary" className="w-fit px-3 py-1.5 text-sm ring-1 ring-border/50">
+                    {t(translations, `obtainMethods.${pokemon.pokopia.obtainMethod}`)}
+                  </Badge>
+                )}
                 {pokemon.pokopia.obtainDetails && (
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     {pokemon.pokopia.obtainDetails}
@@ -363,7 +394,7 @@ export async function PokedexDetailPage({
               </span>
               <span className="text-sm font-semibold leading-tight">{prevPokemon.name}</span>
               <span className="font-mono text-xs text-muted-foreground">
-                No.{String(prevPokemon.id).padStart(3, "0")}
+                {formatDexNumber(prevPokemon)}
               </span>
             </div>
           </Link>
@@ -381,7 +412,7 @@ export async function PokedexDetailPage({
               </span>
               <span className="text-sm font-semibold leading-tight">{nextPokemon.name}</span>
               <span className="font-mono text-xs text-muted-foreground">
-                No.{String(nextPokemon.id).padStart(3, "0")}
+                {formatDexNumber(nextPokemon)}
               </span>
             </div>
             <SafeImage

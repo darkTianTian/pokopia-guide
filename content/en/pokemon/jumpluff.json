@@ -1,0 +1,41 @@
+{
+  "id": 10003,
+  "slug": "jumpluff",
+  "name": "Jumpluff",
+  "types": [
+    "grass",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/jumpluff.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "litter"
+    ],
+    "favorites": [
+      "soft stuff",
+      "lots of nature",
+      "nice breezes",
+      "pretty flowers",
+      "round stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "event",
+    "category": "event",
+    "eventDexNumber": 3,
+    "evolvesFrom": "skiploom",
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

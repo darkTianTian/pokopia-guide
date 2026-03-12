@@ -1,0 +1,42 @@
+{
+  "id": 10001,
+  "slug": "hoppip",
+  "name": "Hoppip",
+  "types": [
+    "grass",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/hoppip.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "favorites": [
+      "soft stuff",
+      "lots of nature",
+      "nice breezes",
+      "pretty flowers",
+      "wobbly stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "event",
+    "category": "event",
+    "eventDexNumber": 1,
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "skiploom"
+    ],
+    "habitats": []
+  }
+}
