@@ -278,7 +278,7 @@ export async function PokedexDetailPage({
                     return (
                       <Link
                         key={h.id}
-                        href={getLocalePath(locale, "/habitat")}
+                        href={getLocalePath(locale, `/habitat/list/${h.id}`)}
                         className={`group flex items-center gap-4 rounded-3xl bg-background/60 p-3 pr-6 shadow-sm ring-2 ${ringColor} transition-all hover:-translate-y-1 hover:bg-background hover:shadow-md`}
                       >
                         <div className="overflow-hidden rounded-2xl">
