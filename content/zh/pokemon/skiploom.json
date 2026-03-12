@@ -31,8 +31,6 @@
       "rainy"
     ],
     "obtainMethod": "event",
-    "category": "event",
-    "eventDexNumber": 2,
     "evolvesFrom": "hoppip",
     "evolvesTo": [
       "jumpluff"
@@ -41,13 +39,14 @@
       {
         "id": 210,
         "name": "黃色地毯",
-        "rarity": "very-rare"
+        "rarity": "rare"
       },
       {
         "id": 211,
         "name": "遠足的夥伴",
-        "rarity": "very-rare"
+        "rarity": "common"
       }
-    ]
+    ],
+    "category": "event"
   }
 }

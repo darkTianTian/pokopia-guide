@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-12T17:55:38.144Z",
+  "lastSync": "2026-03-12T19:05:41.616Z",
   "newHabitats": [
     {
       "id": 28,
@@ -921,11 +921,11 @@
   "stats": {
     "total": 329,
     "serebiiCount": 308,
-    "gameWithCount": 291,
+    "gameWithCount": 294,
     "game8Count": 311,
-    "updated": 298,
+    "updated": 301,
     "skipped": 0,
     "newPokemon": 0,
-    "errors": 32
+    "errors": 28
   }
 }
