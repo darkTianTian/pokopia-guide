@@ -13,6 +13,7 @@ The site is available in English, Traditional Chinese (zh-TW), and Japanese. All
 - [Cooking Recipes](https://pokopiaguide.com/cooking): All 24 cooking recipes with ingredients, flavors, and move buffs (Leafage, Water Gun, Rock Smash, Cut)
 - [Events](https://pokopiaguide.com/events): Limited-time events, exclusive Pokémon, and special rewards
 - [Guides](https://pokopiaguide.com/guides): Beginner tips, quest walkthroughs, and advanced techniques
+- [Dream Island Guide](https://pokopiaguide.com/guides/dream-island-guide): All 7 dolls, 5 island types, materials, legendary Pokémon spawns, and Stardust farming
 
 ## Pokédex Features
 
