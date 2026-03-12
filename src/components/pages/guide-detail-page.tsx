@@ -5,7 +5,7 @@ import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { getGuideBySlug } from "@/lib/guides"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 
-function renderMarkdown(content: string): string {
+function renderMarkdown(content: string, locale: Locale = "en"): string {
   const lines = content.split("\n")
   const result: string[] = []
   let inTable = false
@@ -27,7 +27,7 @@ function renderMarkdown(content: string): string {
       .replace(/!\[icon:([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="display:inline-block;vertical-align:middle;width:1.75rem;height:1.75rem;margin:0 0.125rem" loading="lazy" />')
       .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" class="my-4 mx-auto max-w-full rounded-lg" loading="lazy" />')
       .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:text-primary/80">$1</a>')
-      .replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, '<a href="$2" class="text-primary underline hover:text-primary/80">$1</a>')
+      .replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, (_match, text, path) => `<a href="${getLocalePath(locale, path)}" class="text-primary underline hover:text-primary/80">${text}</a>`)
       .replace(/\bx(\d+)\b/g, (_match, n) => {
         const label = `× ${n}`
         const textWidth = 8 + String(n).length * 7
@@ -137,7 +137,7 @@ export async function GuideDetailPage({ slug, locale }: GuideDetailPageProps) {
 
       <div
         className="prose prose-gray dark:prose-invert max-w-none"
-        dangerouslySetInnerHTML={{ __html: renderMarkdown(guide.content) }}
+        dangerouslySetInnerHTML={{ __html: renderMarkdown(guide.content, locale) }}
       />
 
       <p className="mt-8 text-center text-sm text-muted-foreground/70">
