@@ -56,14 +56,14 @@ async function fetchPage(url) {
 }
 
 /**
- * Build Japanese name -> English slug mapping using multiple sources:
- * 1. Crafting name mapping (most reliable, direct JA->EN)
- * 2. Single-item habitat entries (guaranteed correct ordering)
- * 3. Multi-item habitat entries (position-based, less reliable)
+ * Build Japanese name -> English slug mapping using the authoritative
+ * material-name-mapping.json (generated via constraint propagation).
+ * Falls back to crafting mapping and single-item habitats for any gaps.
  */
 async function buildNameMapping() {
   const jaPath = path.join(CONTENT_DIR, "habitat-materials.json")
   const enPath = path.join(CONTENT_DIR, "habitat-materials-en.json")
+  const nameMappingPath = path.join(CONTENT_DIR, "material-name-mapping.json")
   const craftingMappingPath = path.join(CONTENT_DIR, "crafting-name-mapping-en.json")
 
   const jaData = JSON.parse(await fs.readFile(jaPath, "utf-8"))
@@ -72,18 +72,37 @@ async function buildNameMapping() {
   // Map: JA name -> EN slug
   const jaToSlug = new Map()
 
-  // Source 1: Crafting name mapping (direct JA->EN, most reliable)
+  // Source 1: material-name-mapping.json (authoritative, from constraint propagation)
   try {
-    const craftingMapping = JSON.parse(await fs.readFile(craftingMappingPath, "utf-8"))
-    for (const [jaName, enName] of Object.entries(craftingMapping.recipes || {})) {
-      jaToSlug.set(jaName, toSlug(enName))
+    const nameMapping = JSON.parse(await fs.readFile(nameMappingPath, "utf-8"))
+    let count = 0
+    for (const [slug, names] of Object.entries(nameMapping)) {
+      if (names.ja) {
+        jaToSlug.set(names.ja, slug)
+        count++
+      }
     }
-    console.log(`  Source 1 (crafting mapping): ${Object.keys(craftingMapping.recipes || {}).length} entries`)
+    console.log(`  Source 1 (material-name-mapping.json): ${count} entries`)
   } catch {
-    console.log("  Source 1 (crafting mapping): not found, skipping")
+    console.log("  Source 1 (material-name-mapping.json): not found, skipping")
   }
 
-  // Source 2: Single-item habitat entries (guaranteed correct)
+  // Source 2: Crafting name mapping (direct JA->EN)
+  try {
+    const craftingMapping = JSON.parse(await fs.readFile(craftingMappingPath, "utf-8"))
+    let count = 0
+    for (const [jaName, enName] of Object.entries(craftingMapping.recipes || {})) {
+      if (!jaToSlug.has(jaName)) {
+        jaToSlug.set(jaName, toSlug(enName))
+        count++
+      }
+    }
+    console.log(`  Source 2 (crafting mapping): ${count} new entries`)
+  } catch {
+    console.log("  Source 2 (crafting mapping): not found, skipping")
+  }
+
+  // Source 3: Single-item habitat entries (guaranteed correct)
   let singleCount = 0
   for (const [id, jaStr] of Object.entries(jaData)) {
     const enStr = enData[id]
@@ -97,84 +116,7 @@ async function buildNameMapping() {
       }
     }
   }
-  console.log(`  Source 2 (single-item habitats): ${singleCount} new entries`)
-
-  // Source 3: Iterative deduction from multi-item habitat entries
-  // Each pass may resolve mappings that enable the next pass to resolve more
-  let totalMultiCount = 0
-  for (let pass = 0; pass < 10; pass++) {
-    let passCount = 0
-    for (const [id, jaStr] of Object.entries(jaData)) {
-      const enStr = enData[id]
-      if (!jaStr || !enStr) continue
-      const jaNames = parseMaterialNames(jaStr)
-      const enNames = parseMaterialNames(enStr)
-      if (jaNames.length !== enNames.length || jaNames.length <= 1) continue
-
-      const unmappedJa = []
-      const matchedEnSlugs = new Set()
-
-      for (const jaName of jaNames) {
-        if (jaToSlug.has(jaName)) {
-          matchedEnSlugs.add(jaToSlug.get(jaName))
-        } else {
-          unmappedJa.push(jaName)
-        }
-      }
-
-      const unmatchedEn = enNames
-        .map((n) => toSlug(n))
-        .filter((s) => !matchedEnSlugs.has(s))
-
-      if (unmappedJa.length === 1 && unmatchedEn.length === 1) {
-        jaToSlug.set(unmappedJa[0], unmatchedEn[0])
-        passCount++
-      }
-    }
-    totalMultiCount += passCount
-    if (passCount === 0) break
-  }
-  console.log(`  Source 3 (iterative deduction): ${totalMultiCount} new entries`)
-
-  // Source 4: Position-based matching as last resort
-  // Collect all candidate EN slugs for each JA name across habitats
-  const jaCandidates = new Map() // JA name -> Map<slug, count>
-  for (const [id, jaStr] of Object.entries(jaData)) {
-    const enStr = enData[id]
-    if (!jaStr || !enStr) continue
-    const jaNames = parseMaterialNames(jaStr)
-    const enNames = parseMaterialNames(enStr)
-    if (jaNames.length !== enNames.length) continue
-
-    for (let i = 0; i < jaNames.length; i++) {
-      if (jaToSlug.has(jaNames[i])) continue
-      const slug = toSlug(enNames[i])
-      if (!jaCandidates.has(jaNames[i])) {
-        jaCandidates.set(jaNames[i], new Map())
-      }
-      const counts = jaCandidates.get(jaNames[i])
-      counts.set(slug, (counts.get(slug) || 0) + 1)
-    }
-  }
-
-  // For each unmapped JA name, pick the most common candidate slug
-  let posCount = 0
-  for (const [jaName, candidates] of jaCandidates) {
-    if (jaToSlug.has(jaName)) continue
-    let bestSlug = null
-    let bestCount = 0
-    for (const [slug, count] of candidates) {
-      if (count > bestCount) {
-        bestCount = count
-        bestSlug = slug
-      }
-    }
-    if (bestSlug) {
-      jaToSlug.set(jaName, bestSlug)
-      posCount++
-    }
-  }
-  console.log(`  Source 4 (position-based fallback): ${posCount} new entries`)
+  console.log(`  Source 3 (single-item habitats): ${singleCount} new entries`)
 
   // Collect all unique JA names from habitat data
   const allJaNames = new Set()

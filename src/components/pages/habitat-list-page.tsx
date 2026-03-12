@@ -1,6 +1,7 @@
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { HabitatGrid } from "@/components/habitat/habitat-grid"
 import { getAllHabitatsWithPokemon } from "@/lib/habitat"
+import { getMaterialItems } from "@/lib/materials"
 import { getTranslations, t, type Locale } from "@/i18n/config"
 
 interface HabitatListPageProps {
@@ -18,8 +19,7 @@ export async function HabitatListPage({ locale }: HabitatListPageProps) {
     slug: habitat.slug,
     name: habitat.name,
     image: habitat.image,
-    materials: habitat.materials,
-    materialsEn: habitat.materialsEn,
+    materialItems: getMaterialItems(habitat.materialsEn, locale),
     pokemon: habitat.pokemon.map((p) => ({
       rarity: p.rarity,
       pokemon: { id: p.pokemon.id, slug: p.pokemon.slug, name: p.pokemon.name, image: p.pokemon.image },

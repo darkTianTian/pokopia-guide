@@ -18,13 +18,18 @@ const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
   ja: jaTranslations,
 }
 
+interface MaterialItem {
+  slug: string
+  name: string
+  quantity: number
+}
+
 interface HabitatItem {
   id: number
   slug: string
   name: string
   image: string
-  materials: string | null
-  materialsEn: string | null
+  materialItems: MaterialItem[]
   pokemon: {
     rarity: string
     pokemon: { id: number; slug: string; name: string; image: string }
@@ -34,25 +39,6 @@ interface HabitatItem {
 interface HabitatGridProps {
   habitats: HabitatItem[]
   locale: Locale
-}
-
-function parseMaterials(materials: string): { name: string; quantity: number }[] {
-  return materials.split(/,\s*/).filter(Boolean).map((part) => {
-    const match = part.match(/^(.+?)\s*x(\d+)$/)
-    if (match) {
-      return { name: match[1].trimEnd(), quantity: parseInt(match[2], 10) }
-    }
-    return { name: part, quantity: 1 }
-  })
-}
-
-function toItemSlug(name: string): string {
-  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
-}
-
-function getMaterialSlugs(materialsEn: string | null): string[] {
-  if (!materialsEn) return []
-  return parseMaterials(materialsEn).map((m) => toItemSlug(m.name))
 }
 
 export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
@@ -65,7 +51,7 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
     return habitats.filter((h) => {
       const matchName = h.name.toLowerCase().includes(q)
       const matchId = String(h.id).includes(q) || String(h.id).padStart(3, "0").includes(q)
-      const matchMaterials = h.materials?.toLowerCase().includes(q)
+      const matchMaterials = h.materialItems.some((m) => m.name.toLowerCase().includes(q))
       return matchName || matchId || matchMaterials
     })
   }, [habitats, query])
@@ -153,34 +139,28 @@ export function HabitatGrid({ habitats, locale }: HabitatGridProps) {
                     <h3 className="text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
                       {habitat.name}
                     </h3>
-                    {habitat.materials && (() => {
-                      const mats = parseMaterials(habitat.materials)
-                      const slugs = getMaterialSlugs(habitat.materialsEn)
-                      return (
+                    {habitat.materialItems.length > 0 && (
                         <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
-                          {mats.map((mat, i) => (
+                          {habitat.materialItems.map((item, i) => (
                             <Link
                               key={i}
-                              href={getLocalePath(locale, `/habitat/materials/${slugs[i] ?? ""}`)}
+                              href={getLocalePath(locale, `/habitat/materials/${item.slug}`)}
                               onClick={(e) => e.stopPropagation()}
                               className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10 transition-colors hover:bg-primary/20"
                             >
-                              {slugs[i] && (
-                                <SafeImage
-                                  src={`/images/items/${slugs[i]}.png`}
-                                  alt={mat.name}
-                                  width={20}
-                                  height={20}
-                                  className="inline-block shrink-0"
-                                />
-                              )}
-                              {mat.name}
-                              <QuantityDots count={mat.quantity} className="ml-1" />
+                              <SafeImage
+                                src={`/images/items/${item.slug}.png`}
+                                alt={item.name}
+                                width={20}
+                                height={20}
+                                className="inline-block shrink-0"
+                              />
+                              {item.name}
+                              <QuantityDots count={item.quantity} className="ml-1" />
                             </Link>
                           ))}
                         </div>
-                      )
-                    })()}
+                    )}
                   </div>
 
                   <div className="mt-auto flex flex-col items-center gap-3 rounded-2xl bg-muted/30 p-4 ring-1 ring-inset ring-border/50 transition-colors group-hover:bg-muted/50 z-10">

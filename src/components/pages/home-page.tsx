@@ -8,26 +8,8 @@ import { QuantityDots } from "@/components/ui/quantity-dots"
 import { getAllPokemon } from "@/lib/pokemon"
 import { getAllGuides } from "@/lib/guides"
 import { getAllHabitatsWithPokemon } from "@/lib/habitat"
+import { getMaterialItems } from "@/lib/materials"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
-
-function parseMaterials(materials: string): { name: string; quantity: number }[] {
-  return materials.split(/,\s*/).filter(Boolean).map((part) => {
-    const match = part.match(/^(.+?)\s*x(\d+)$/)
-    if (match) {
-      return { name: match[1].trimEnd(), quantity: parseInt(match[2], 10) }
-    }
-    return { name: part, quantity: 1 }
-  })
-}
-
-function toItemSlug(name: string): string {
-  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
-}
-
-function getMaterialSlugs(materialsEn: string | null): string[] {
-  if (!materialsEn) return []
-  return parseMaterials(materialsEn).map((m) => toItemSlug(m.name))
-}
 
 interface HomePageProps {
   locale: Locale
@@ -196,31 +178,28 @@ export async function HomePage({ locale }: HomePageProps) {
                     <h3 className="text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
                       {habitat.name}
                     </h3>
-                    {habitat.materials && (() => {
-                      const mats = parseMaterials(habitat.materials)
-                      const slugs = getMaterialSlugs(habitat.materialsEn)
-                      return (
+                    {(() => {
+                      const items = getMaterialItems(habitat.materialsEn, locale)
+                      return items.length > 0 ? (
                         <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
-                          {mats.map((mat, i) => (
+                          {items.map((item, i) => (
                             <span
                               key={i}
                               className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary ring-1 ring-inset ring-primary/20 dark:bg-primary/5 dark:ring-primary/10"
                             >
-                              {slugs[i] && (
-                                <SafeImage
-                                  src={`/images/items/${slugs[i]}.png`}
-                                  alt={mat.name}
-                                  width={20}
-                                  height={20}
-                                  className="inline-block shrink-0"
-                                />
-                              )}
-                              {mat.name}
-                              <QuantityDots count={mat.quantity} className="ml-1" />
+                              <SafeImage
+                                src={`/images/items/${item.slug}.png`}
+                                alt={item.name}
+                                width={20}
+                                height={20}
+                                className="inline-block shrink-0"
+                              />
+                              {item.name}
+                              <QuantityDots count={item.quantity} className="ml-1" />
                             </span>
                           ))}
                         </div>
-                      )
+                      ) : null
                     })()}
                   </div>
 

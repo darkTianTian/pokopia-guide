@@ -1,0 +1,1134 @@
+{
+  "afternoon-tea-set": {
+    "zh": "下午茶套組",
+    "ja": "アフタヌーンティーセット"
+  },
+  "alarm-clock": {
+    "zh": "鬧鐘",
+    "ja": "めざましどけい"
+  },
+  "antique-bed": {
+    "zh": "古董床",
+    "ja": null
+  },
+  "antique-chair": {
+    "zh": "古董椅",
+    "ja": null
+  },
+  "antique-closet": {
+    "zh": "古董衣櫃",
+    "ja": null
+  },
+  "antique-dresser": {
+    "zh": "古董梳妝台",
+    "ja": null
+  },
+  "arcade-machine": {
+    "zh": "遊戲機台",
+    "ja": null
+  },
+  "arcanine-doll": {
+    "zh": "風速狗人偶",
+    "ja": "ウインディにんぎょう"
+  },
+  "armor-fossil": {
+    "zh": "盾之化石",
+    "ja": "たてのカセキ"
+  },
+  "arrow-sign": {
+    "zh": "箭頭指示牌",
+    "ja": null
+  },
+  "auspicious-armor": {
+    "zh": "祝賀之鎧",
+    "ja": "イワイノヨロイ"
+  },
+  "balloon": {
+    "zh": "氣球",
+    "ja": "ふうせん"
+  },
+  "barrel": {
+    "zh": "木桶",
+    "ja": "たる"
+  },
+  "bathub": {
+    "zh": "浴缸",
+    "ja": "バスタブ"
+  },
+  "beach-chair": {
+    "zh": "海灘椅",
+    "ja": "ビーチチェア"
+  },
+  "beach-parasol": {
+    "zh": "海灘傘",
+    "ja": "ビーチパラソル"
+  },
+  "bed-any": {
+    "zh": "床（任意）",
+    "ja": "ベッド(なんでも)"
+  },
+  "berry-basket": {
+    "zh": "樹果籃",
+    "ja": "きのみいりバスケット"
+  },
+  "berry-bed": {
+    "zh": "樹果床",
+    "ja": null
+  },
+  "berry-chair": {
+    "zh": "樹果椅",
+    "ja": null
+  },
+  "berry-table": {
+    "zh": "樹果桌",
+    "ja": null
+  },
+  "berry-table-lamp": {
+    "zh": "樹果桌燈",
+    "ja": null
+  },
+  "berry-tree-any": {
+    "zh": "樹果樹（任意）",
+    "ja": "きのみの木(なんでも)"
+  },
+  "bicycle": {
+    "zh": "自行車",
+    "ja": "じてんしゃ"
+  },
+  "big-drum": {
+    "zh": "大鼓",
+    "ja": "おおだいこ"
+  },
+  "bonfire": {
+    "zh": "營火堆",
+    "ja": "キャンプファイヤー"
+  },
+  "boo-in-the-box": {
+    "zh": "驚嚇箱",
+    "ja": "びっくりばこ"
+  },
+  "bookcase": {
+    "zh": "書架",
+    "ja": "ほんだな"
+  },
+  "bread-oven": {
+    "zh": "麵包窯",
+    "ja": "パンがま"
+  },
+  "campfire": {
+    "zh": "營火",
+    "ja": "たきび"
+  },
+  "cannon": {
+    "zh": "發射筒",
+    "ja": null
+  },
+  "canoe": {
+    "zh": "獨木舟",
+    "ja": "カヌー"
+  },
+  "canvas": {
+    "zh": "畫布",
+    "ja": "キャンバス"
+  },
+  "cardboard-boxes": {
+    "zh": "紙箱",
+    "ja": "だんボールのはこ"
+  },
+  "cart": {
+    "zh": "推車",
+    "ja": null
+  },
+  "cash-register": {
+    "zh": "收銀機",
+    "ja": "レジ"
+  },
+  "castform-weather-charm-rain": {
+    "zh": "飄浮泡泡晴天娃娃（雨天）",
+    "ja": "てるてるポワルン(雨)"
+  },
+  "castform-weather-charm-sun": {
+    "zh": "飄浮泡泡晴天娃娃（晴天）",
+    "ja": "てるてるポワルン(晴れ)"
+  },
+  "cd-player": {
+    "zh": "CD播放器",
+    "ja": "CDプレーヤー"
+  },
+  "cd-rack": {
+    "zh": "CD架",
+    "ja": "CDラック"
+  },
+  "chansey-plant": {
+    "zh": "吉利蛋盆栽",
+    "ja": "ラッキーのうえ木"
+  },
+  "chic-chair": {
+    "zh": "雅致椅",
+    "ja": null
+  },
+  "chic-sofa": {
+    "zh": "雅致沙發",
+    "ja": "シックなソファ"
+  },
+  "chic-table": {
+    "zh": "雅致桌",
+    "ja": null
+  },
+  "chocolate-cookies": {
+    "zh": "巧克力餅乾",
+    "ja": "チョコクッキー"
+  },
+  "cleaning-set": {
+    "zh": "清掃組",
+    "ja": "おそうじセット"
+  },
+  "closet-any": {
+    "zh": "衣櫃（任意）",
+    "ja": "クローゼット(なんでも)"
+  },
+  "computer": {
+    "zh": "電腦",
+    "ja": "コンピューター"
+  },
+  "concrete-pipe": {
+    "zh": "水管",
+    "ja": "どかん"
+  },
+  "control-unit": {
+    "zh": "操控台",
+    "ja": "そうさばん"
+  },
+  "cooking-stove": {
+    "zh": "爐灶",
+    "ja": null
+  },
+  "cool-electric-bass": {
+    "zh": "帥氣電貝斯",
+    "ja": "イカしたエレキベース"
+  },
+  "cool-electric-guitar": {
+    "zh": "帥氣電吉他",
+    "ja": "イカしたエレキギター"
+  },
+  "counter": {
+    "zh": "櫃台",
+    "ja": "カウンターのだい"
+  },
+  "crossing-gate": {
+    "zh": "平交道柵欄",
+    "ja": null
+  },
+  "crystal-ball": {
+    "zh": "水晶球",
+    "ja": "すいしょうだま"
+  },
+  "cute-bed": {
+    "zh": "可愛床",
+    "ja": null
+  },
+  "cute-dresser": {
+    "zh": "可愛梳妝台",
+    "ja": null
+  },
+  "cute-lamp": {
+    "zh": "可愛燈",
+    "ja": null
+  },
+  "cute-sofa": {
+    "zh": "可愛沙發",
+    "ja": null
+  },
+  "cute-table": {
+    "zh": "可愛桌",
+    "ja": null
+  },
+  "cutting-board": {
+    "zh": "砧板",
+    "ja": null
+  },
+  "desk-light": {
+    "zh": "桌燈",
+    "ja": null
+  },
+  "despot-fossil-body": {
+    "zh": "暴君化石・軀幹",
+    "ja": null
+  },
+  "despot-fossil-head": {
+    "zh": "暴君化石・頭",
+    "ja": null
+  },
+  "despot-fossil-legs": {
+    "zh": "暴君化石・腳",
+    "ja": null
+  },
+  "despot-fossil-tail": {
+    "zh": "暴君化石・尾巴",
+    "ja": null
+  },
+  "doll-any": {
+    "zh": "人偶（任意）",
+    "ja": "にんぎょう(なんでも)"
+  },
+  "dragonite-doll": {
+    "zh": "快龍人偶",
+    "ja": null
+  },
+  "dry-tall-grass": {
+    "zh": "枯綠草",
+    "ja": null
+  },
+  "duckweed": {
+    "zh": "浮萍",
+    "ja": "うきくさ"
+  },
+  "eerie-candle": {
+    "zh": "詭異蠟燭",
+    "ja": "あやしいキャンドル"
+  },
+  "eevee-doll": {
+    "zh": "伊布人偶",
+    "ja": null
+  },
+  "excavation-tools": {
+    "zh": "挖掘工具",
+    "ja": "やまほりどうぐ"
+  },
+  "face-cutout-board": {
+    "zh": "臉孔看板",
+    "ja": "かおだしパネル"
+  },
+  "fin-fossil": {
+    "zh": "鰭之化石",
+    "ja": "ヒレのカセキ"
+  },
+  "firepit": {
+    "zh": "篝火盆",
+    "ja": "かがりび"
+  },
+  "first-aid-kit": {
+    "zh": "急救箱",
+    "ja": "きゅうきゅうばこ"
+  },
+  "fishing-rod": {
+    "zh": "釣竿",
+    "ja": "つりざお"
+  },
+  "floor-switch": {
+    "zh": "地板開關",
+    "ja": "ゆかつきスイッチ"
+  },
+  "flower-backpack": {
+    "zh": "花朵背包",
+    "ja": null
+  },
+  "flower-cushion": {
+    "zh": "花朵靠墊",
+    "ja": null
+  },
+  "flower-tableware-set": {
+    "zh": "花朵餐具組",
+    "ja": null
+  },
+  "food-counter": {
+    "zh": "食物櫃台",
+    "ja": "フードカウンター"
+  },
+  "fried-potatoes": {
+    "zh": "薯條",
+    "ja": "フライドポテト"
+  },
+  "furnace": {
+    "zh": "火力發電機",
+    "ja": "火力はつでんマシン"
+  },
+  "gaming-bed": {
+    "zh": "電競床",
+    "ja": null
+  },
+  "gaming-chair": {
+    "zh": "電競椅",
+    "ja": null
+  },
+  "gaming-fridge": {
+    "zh": "電競冰箱",
+    "ja": null
+  },
+  "gaming-pc": {
+    "zh": "電競電腦",
+    "ja": null
+  },
+  "garbage-bags": {
+    "zh": "垃圾袋",
+    "ja": "ゴミぶくろ"
+  },
+  "garbage-bin": {
+    "zh": "垃圾桶",
+    "ja": "ゴミばこ"
+  },
+  "garden-chair": {
+    "zh": "庭園椅",
+    "ja": null
+  },
+  "garden-light": {
+    "zh": "庭園燈",
+    "ja": null
+  },
+  "garden-table": {
+    "zh": "庭園桌",
+    "ja": null
+  },
+  "gorgeous-bed": {
+    "zh": "豪華床",
+    "ja": null
+  },
+  "gorgeous-lamp": {
+    "zh": "豪華燈",
+    "ja": null
+  },
+  "gorgeous-sofa": {
+    "zh": "豪華沙發",
+    "ja": null
+  },
+  "gorgeous-table": {
+    "zh": "豪華桌",
+    "ja": null
+  },
+  "gravestone": {
+    "zh": "墓石",
+    "ja": "はかいし"
+  },
+  "hanging-scroll": {
+    "zh": "掛軸",
+    "ja": null
+  },
+  "headbutt-fossil-body": {
+    "zh": "頭錘化石・軀幹",
+    "ja": null
+  },
+  "headbutt-fossil-head": {
+    "zh": "頭錘化石・頭",
+    "ja": null
+  },
+  "headbutt-fossil-tail": {
+    "zh": "頭錘化石・尾巴",
+    "ja": null
+  },
+  "hedge-any": {
+    "zh": "樹籬（任意）",
+    "ja": "いけがき(なんでも)"
+  },
+  "high-up-location": {
+    "zh": "高處",
+    "ja": "高いところ"
+  },
+  "hoppip-water-bottle": {
+    "zh": "毽子草水壺",
+    "ja": null
+  },
+  "hot-spring-spout": {
+    "zh": "溫泉出口",
+    "ja": "ゆぐち"
+  },
+  "hot-spring-water": {
+    "zh": "溫泉水",
+    "ja": "おんせん"
+  },
+  "humidifier": {
+    "zh": "加濕器",
+    "ja": "かしつき"
+  },
+  "industrial-bed": {
+    "zh": "工業風床",
+    "ja": null
+  },
+  "industrial-chair": {
+    "zh": "工業風椅",
+    "ja": null
+  },
+  "industrial-desk": {
+    "zh": "工業風桌",
+    "ja": "インダストリアルなデスク"
+  },
+  "inflatable-boat": {
+    "zh": "充氣船",
+    "ja": "ビニールボート"
+  },
+  "iron-beam-or-column": {
+    "zh": "鐵骨",
+    "ja": "てっこつ"
+  },
+  "iron-bed": {
+    "zh": "鐵床",
+    "ja": null
+  },
+  "iron-chair": {
+    "zh": "鐵椅",
+    "ja": null
+  },
+  "iron-pipes": {
+    "zh": "堆疊鐵管",
+    "ja": "こんもりてつパイプ"
+  },
+  "iron-scaffold": {
+    "zh": "鐵架",
+    "ja": "てつのあしば"
+  },
+  "iron-table": {
+    "zh": "鐵桌",
+    "ja": null
+  },
+  "item-a24": {
+    "zh": "Item a24",
+    "ja": null
+  },
+  "item-a25": {
+    "zh": "Item a25",
+    "ja": "だい(なんでも)"
+  },
+  "item-a27": {
+    "zh": "Item a27",
+    "ja": "ドレッサー(なんでも)"
+  },
+  "item-a28": {
+    "zh": "Item a28",
+    "ja": null
+  },
+  "item-a30": {
+    "zh": "Item a30",
+    "ja": "ついたて(なんでも)"
+  },
+  "jaw-fossil": {
+    "zh": "顎之化石",
+    "ja": "アゴのカセキ"
+  },
+  "jumbled-cords": {
+    "zh": "纏繞電線",
+    "ja": "からまりコード"
+  },
+  "kitchen-table": {
+    "zh": "廚房桌",
+    "ja": null
+  },
+  "knitting-supplies": {
+    "zh": "編織套組",
+    "ja": "あみものキット"
+  },
+  "lantern": {
+    "zh": "提燈",
+    "ja": "ランタン"
+  },
+  "laptop": {
+    "zh": "筆記型電腦",
+    "ja": "ノートパソコン"
+  },
+  "large-boulder": {
+    "zh": "大石頭",
+    "ja": "おおきないし"
+  },
+  "large-palm-tree": {
+    "zh": "大椰子樹",
+    "ja": "おおきなヤシの木"
+  },
+  "large-tree-any": {
+    "zh": "大樹（任意）",
+    "ja": "大きな木(なんでも)"
+  },
+  "lava": {
+    "zh": "岩漿",
+    "ja": "マグマ"
+  },
+  "lighting-any": {
+    "zh": "燈光（任意）",
+    "ja": "明かり(なんでも)"
+  },
+  "log-bed": {
+    "zh": "圓木床",
+    "ja": "まるたのベッド"
+  },
+  "log-chair": {
+    "zh": "圓木椅",
+    "ja": null
+  },
+  "log-table": {
+    "zh": "圓木桌",
+    "ja": null
+  },
+  "lost-relic-large": {
+    "zh": "遺落物（大型）",
+    "ja": "おとしもの(大きなもの)"
+  },
+  "lunch-box": {
+    "zh": "便當",
+    "ja": "おべんとう"
+  },
+  "luxury-sofa": {
+    "zh": "豪華沙發",
+    "ja": null
+  },
+  "magazine-rack": {
+    "zh": "雜誌架",
+    "ja": "ざっしだな"
+  },
+  "malicious-armor": {
+    "zh": "詛咒之鎧",
+    "ja": "ノロイノヨロイ"
+  },
+  "manhole-cover": {
+    "zh": "人孔蓋",
+    "ja": null
+  },
+  "menu-board": {
+    "zh": "菜單板",
+    "ja": "メニューボード"
+  },
+  "metal-drum": {
+    "zh": "油桶",
+    "ja": "ドラムかん"
+  },
+  "microscope": {
+    "zh": "顯微鏡",
+    "ja": null
+  },
+  "microwave": {
+    "zh": "微波爐",
+    "ja": "でんしレンジ"
+  },
+  "mirror-large": {
+    "zh": "鏡子（大型）",
+    "ja": "かがみ(大きなもの)"
+  },
+  "modern-sink": {
+    "zh": "水槽",
+    "ja": null
+  },
+  "molten-rock": {
+    "zh": "滾燙岩",
+    "ja": "アツアツいわ"
+  },
+  "moonlight-dance-statue": {
+    "zh": "月夜舞蹈像",
+    "ja": null
+  },
+  "moss": {
+    "zh": "苔蘚",
+    "ja": "コケ"
+  },
+  "mossy-boulder": {
+    "zh": "苔岩",
+    "ja": "こけいわ"
+  },
+  "mountain-flowers": {
+    "zh": "岩場花",
+    "ja": "いわばのはな"
+  },
+  "muddy-water": {
+    "zh": "泥水",
+    "ja": "どろみず"
+  },
+  "mug": {
+    "zh": "馬克杯",
+    "ja": "マグカップ"
+  },
+  "mushroom-lamp": {
+    "zh": "蘑菇燈",
+    "ja": "キノコのランプ"
+  },
+  "music-mat-any": {
+    "zh": "Item a26",
+    "ja": "おんぷマット(なんでも)"
+  },
+  "naptime-bed": {
+    "zh": "午睡床",
+    "ja": "いねむりベッド"
+  },
+  "newspaper": {
+    "zh": "報紙",
+    "ja": "しんぶん"
+  },
+  "ocean-water": {
+    "zh": "海水",
+    "ja": "うみのみず"
+  },
+  "offering-dish": {
+    "zh": "供台",
+    "ja": "おそなえのだい"
+  },
+  "office-chair": {
+    "zh": "辦公椅",
+    "ja": null
+  },
+  "office-desk": {
+    "zh": "辦公桌",
+    "ja": null
+  },
+  "office-locker": {
+    "zh": "辦公室置物櫃",
+    "ja": "オフィスのロッカー"
+  },
+  "office-shelf": {
+    "zh": "辦公室架子",
+    "ja": "オフィスのたな"
+  },
+  "paper-party-cups": {
+    "zh": "派對杯",
+    "ja": "パーティーカップ"
+  },
+  "party-plate": {
+    "zh": "派對盤",
+    "ja": null
+  },
+  "peaceful-flowers": {
+    "zh": "悠閒花",
+    "ja": "のどかなはな"
+  },
+  "pedestal-exhibition-stand": {
+    "zh": "展示台",
+    "ja": "だいざ・てんじだい"
+  },
+  "pencil-holder": {
+    "zh": "筆筒",
+    "ja": "えんぴついれ"
+  },
+  "perch": {
+    "zh": "棲木",
+    "ja": "とまり木"
+  },
+  "picnic-basket": {
+    "zh": "野餐籃",
+    "ja": "バスケット"
+  },
+  "pikachu-doll": {
+    "zh": "皮卡丘人偶",
+    "ja": "ピカチュウにんぎょう"
+  },
+  "pikachu-sofa": {
+    "zh": "皮卡丘沙發",
+    "ja": "ピカチュウソファ"
+  },
+  "pink-tall-grass": {
+    "zh": "粉紅草",
+    "ja": "ピンクのくさ"
+  },
+  "pipe-chair": {
+    "zh": "管椅",
+    "ja": null
+  },
+  "pizza": {
+    "zh": "披薩",
+    "ja": "ピザ"
+  },
+  "plain-bed": {
+    "zh": "自然風床",
+    "ja": null
+  },
+  "plain-chest": {
+    "zh": "素雅箱子",
+    "ja": "ナチュラルなチェスト"
+  },
+  "plain-lamp": {
+    "zh": "自然風燈",
+    "ja": null
+  },
+  "plain-sofa": {
+    "zh": "自然風沙發",
+    "ja": null
+  },
+  "plain-table": {
+    "zh": "自然風桌",
+    "ja": "ナチュラルなテーブル"
+  },
+  "plated-food": {
+    "zh": "盤裝食物",
+    "ja": "皿にのせた食べ物"
+  },
+  "pointy-tree": {
+    "zh": "三角樹",
+    "ja": "三角の木"
+  },
+  "poke-ball-bed": {
+    "zh": "精靈球床",
+    "ja": null
+  },
+  "poke-ball-light": {
+    "zh": "精靈球燈",
+    "ja": null
+  },
+  "poke-ball-sofa": {
+    "zh": "精靈球沙發",
+    "ja": null
+  },
+  "poke-ball-table": {
+    "zh": "精靈球桌",
+    "ja": null
+  },
+  "pop-bed": {
+    "zh": "流行床",
+    "ja": null
+  },
+  "pop-sofa": {
+    "zh": "流行沙發",
+    "ja": null
+  },
+  "pop-table": {
+    "zh": "流行桌",
+    "ja": null
+  },
+  "post-any": {
+    "zh": "隔板（任意）",
+    "ja": "しきり(なんでも)"
+  },
+  "potted-plant-any": {
+    "zh": "觀葉植物（任意）",
+    "ja": "はち植えの木(なんでも)"
+  },
+  "punching-bag": {
+    "zh": "沙包",
+    "ja": "サンドバッグ"
+  },
+  "punching-game": {
+    "zh": "拳擊機",
+    "ja": "パンチングマシーン"
+  },
+  "raichu-sign": {
+    "zh": "雷丘看板",
+    "ja": "ライチュウかんばん"
+  },
+  "railway-track": {
+    "zh": "鐵軌",
+    "ja": null
+  },
+  "red-tall-grass": {
+    "zh": "紅草",
+    "ja": "あかいくさ"
+  },
+  "research-paper": {
+    "zh": "論文",
+    "ja": null
+  },
+  "resort-hammock": {
+    "zh": "度假吊床",
+    "ja": null
+  },
+  "resort-light": {
+    "zh": "度假燈",
+    "ja": null
+  },
+  "resort-sofa": {
+    "zh": "度假沙發",
+    "ja": null
+  },
+  "resort-table": {
+    "zh": "度假桌",
+    "ja": null
+  },
+  "ribbon-cake": {
+    "zh": "緞帶蛋糕",
+    "ja": "リボンケーキ"
+  },
+  "sandbags": {
+    "zh": "沙袋",
+    "ja": "どのう"
+  },
+  "sandwiches": {
+    "zh": "三明治",
+    "ja": "サンドイッチ"
+  },
+  "science-experiment": {
+    "zh": "實驗組",
+    "ja": "じっけんセット"
+  },
+  "seashore-flowers": {
+    "zh": "海邊花",
+    "ja": "うみべのはな"
+  },
+  "seat-any": {
+    "zh": "椅子（任意）",
+    "ja": "イス(なんでも)"
+  },
+  "seat-wide": {
+    "zh": "椅子（長型）",
+    "ja": "イス(長いもの)"
+  },
+  "shaved-ice": {
+    "zh": "刨冰",
+    "ja": "かきごおり"
+  },
+  "ship-s-wheel": {
+    "zh": "船舵",
+    "ja": null
+  },
+  "shower": {
+    "zh": "淋浴",
+    "ja": "シャワー"
+  },
+  "side-table": {
+    "zh": "邊桌",
+    "ja": "サイドテーブル"
+  },
+  "sign": {
+    "zh": "看板",
+    "ja": null
+  },
+  "sign-any": {
+    "zh": "看板（任意）",
+    "ja": "かんばん(なんでも)"
+  },
+  "simple-cushion": {
+    "zh": "簡約靠墊",
+    "ja": "シンプルなクッション"
+  },
+  "sink": {
+    "zh": "水槽",
+    "ja": null
+  },
+  "skull-fossil": {
+    "zh": "頭蓋化石",
+    "ja": "ずがいのカセキ"
+  },
+  "skyland-flowers": {
+    "zh": "浮島花",
+    "ja": "うきしまのはな"
+  },
+  "slender-candle": {
+    "zh": "細長蠟燭",
+    "ja": "ほそながキャンドル"
+  },
+  "slide": {
+    "zh": "溜滑梯",
+    "ja": "すべりだい"
+  },
+  "small-stage": {
+    "zh": "舞台",
+    "ja": "ステージだい"
+  },
+  "small-vase": {
+    "zh": "小花瓶",
+    "ja": null
+  },
+  "smelting-furnace": {
+    "zh": "熔爐",
+    "ja": "ようこうろ"
+  },
+  "smooth-rock": {
+    "zh": "平滑岩",
+    "ja": null
+  },
+  "soda-float": {
+    "zh": "冰淇淋蘇打",
+    "ja": "クリームソーダ"
+  },
+  "speaker": {
+    "zh": "喇叭",
+    "ja": "スピーカー"
+  },
+  "spotlight": {
+    "zh": "聚光燈",
+    "ja": "スポットライト"
+  },
+  "stalagmites": {
+    "zh": "筍岩",
+    "ja": "たけのこいわ"
+  },
+  "standing-mic": {
+    "zh": "立麥",
+    "ja": "スタンドマイク"
+  },
+  "step-stool": {
+    "zh": "梯子",
+    "ja": "きゃたつ"
+  },
+  "stepping-stones": {
+    "zh": "踏腳石",
+    "ja": "ふみいし"
+  },
+  "stone-fireplace": {
+    "zh": "石壁爐",
+    "ja": "いしのだんろ"
+  },
+  "straw-bed": {
+    "zh": "稻草床",
+    "ja": "ほしくさのベッド"
+  },
+  "straw-stool": {
+    "zh": "稻草凳",
+    "ja": null
+  },
+  "straw-table": {
+    "zh": "稻草桌",
+    "ja": null
+  },
+  "streetlight-any": {
+    "zh": "路燈（任意）",
+    "ja": "がいとう(なんでも)"
+  },
+  "strength-rock": {
+    "zh": "怪力岩",
+    "ja": null
+  },
+  "stylish-cooking-pot": {
+    "zh": "時尚鍋",
+    "ja": null
+  },
+  "stylish-hedge": {
+    "zh": "時尚樹籬",
+    "ja": "しゃれたいけがき"
+  },
+  "table-any": {
+    "zh": "桌子（任意）",
+    "ja": "つくえ(なんでも)"
+  },
+  "tablet": {
+    "zh": "平板電腦",
+    "ja": "タブレット"
+  },
+  "tall-grass": {
+    "zh": "綠草",
+    "ja": "みどりのくさ"
+  },
+  "tall-grass-any": {
+    "zh": "草（任意）",
+    "ja": "草(なんでも)"
+  },
+  "team-rocket-wall-hanging": {
+    "zh": "火箭隊壁飾",
+    "ja": null
+  },
+  "television": {
+    "zh": "電視",
+    "ja": "テレビ"
+  },
+  "tire-toy": {
+    "zh": "跨越輪胎",
+    "ja": "とびこえたいや"
+  },
+  "tires": {
+    "zh": "輪胎",
+    "ja": "タイヤ"
+  },
+  "torch": {
+    "zh": "火把",
+    "ja": "たいまつ"
+  },
+  "towel-rack": {
+    "zh": "壁掛毛巾",
+    "ja": null
+  },
+  "toy-any": {
+    "zh": "玩具（任意）",
+    "ja": "おもちゃ(なんでも)"
+  },
+  "traffic-cone": {
+    "zh": "三角錐",
+    "ja": null
+  },
+  "tree-stump-any": {
+    "zh": "樹墩（任意）",
+    "ja": "きりかぶ(なんでも)"
+  },
+  "tundra-fossil-body": {
+    "zh": "凍原化石・軀幹",
+    "ja": null
+  },
+  "tundra-fossil-head": {
+    "zh": "凍原化石・頭",
+    "ja": null
+  },
+  "tundra-fossil-tail": {
+    "zh": "凍原化石・尾巴",
+    "ja": null
+  },
+  "utility-pole": {
+    "zh": "電線桿",
+    "ja": "でんちゅう"
+  },
+  "vegetable-field-any": {
+    "zh": "菜園（任意）",
+    "ja": "野菜畑(なんでも)"
+  },
+  "vending-machine": {
+    "zh": "自動販賣機",
+    "ja": "じどうはんばいき"
+  },
+  "walkway": {
+    "zh": "碼頭",
+    "ja": "さんばし"
+  },
+  "wall-mirror": {
+    "zh": "壁掛鏡",
+    "ja": null
+  },
+  "waste-bin-any": {
+    "zh": "垃圾桶（任意）",
+    "ja": "ゴミ入れ(なんでも)"
+  },
+  "water": {
+    "zh": "水",
+    "ja": "みず"
+  },
+  "water-bucket": {
+    "zh": "水桶",
+    "ja": "みずおけ"
+  },
+  "waterfall": {
+    "zh": "瀑布",
+    "ja": "たき"
+  },
+  "waterwheel": {
+    "zh": "水力發電機",
+    "ja": "水力はつでんマシン"
+  },
+  "wheelbarrow": {
+    "zh": "手推車",
+    "ja": "ておしぐるま"
+  },
+  "whiteboard": {
+    "zh": "白板",
+    "ja": "ホワイトボード"
+  },
+  "wildflowers": {
+    "zh": "原野花",
+    "ja": "はらっぱのはな"
+  },
+  "windmill": {
+    "zh": "風力發電機",
+    "ja": "風力はつでんマシン"
+  },
+  "wing-fossil-body": {
+    "zh": "翼之化石・軀幹",
+    "ja": null
+  },
+  "wing-fossil-head": {
+    "zh": "翼之化石・頭",
+    "ja": null
+  },
+  "wing-fossil-left-wing": {
+    "zh": "翼之化石・左翼",
+    "ja": null
+  },
+  "wing-fossil-right-wing": {
+    "zh": "翼之化石・右翼",
+    "ja": null
+  },
+  "wing-fossil-tail": {
+    "zh": "翼之化石・尾巴",
+    "ja": null
+  },
+  "wooden-birdhouse": {
+    "zh": "木鳥巢箱",
+    "ja": "木のすばこ"
+  },
+  "wooden-crate": {
+    "zh": "木箱",
+    "ja": "木ばこ"
+  },
+  "wooden-path": {
+    "zh": "木棧道",
+    "ja": null
+  },
+  "yellow-tall-grass": {
+    "zh": "黃草",
+    "ja": "きいろのくさ"
+  }
+}

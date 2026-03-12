@@ -4,7 +4,7 @@ import { getAllPokemon } from "@/lib/pokemon"
 import { getAllRecipes } from "@/lib/crafting"
 import { getAllCookingRecipes } from "@/lib/cooking"
 import { getAllHabitatsWithPokemon } from "@/lib/habitat"
-import { getAllMaterials } from "@/lib/materials"
+import { getAllMaterials, getMaterialItems } from "@/lib/materials"
 import { getTranslations, t, type Locale } from "@/i18n/config"
 
 interface WishlistPageProps {
@@ -44,8 +44,7 @@ export async function WishlistPage({ locale }: WishlistPageProps) {
     slug: h.slug,
     name: h.name,
     image: h.image,
-    materials: h.materials,
-    materialsEn: h.materialsEn,
+    materialItems: getMaterialItems(h.materialsEn, locale),
     pokemon: h.pokemon.map((p) => ({
       rarity: p.rarity,
       pokemon: {

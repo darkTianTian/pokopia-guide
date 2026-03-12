@@ -3,14 +3,11 @@ import habitatMappingEn from "@/../content/habitat-mapping-en.json"
 import habitatMappingZh from "@/../content/habitat-mapping-zh.json"
 import habitatMappingJa from "@/../content/habitat-mapping.json"
 import _habitatMaterialsEn from "@/../content/habitat-materials-en.json"
-import _habitatMaterialsZh from "@/../content/habitat-materials-zh.json"
-import _habitatMaterialsJa from "@/../content/habitat-materials.json"
 import _materialSources from "@/../content/material-sources.json"
 import _sourceTranslations from "@/../content/material-source-translations.json"
+import _materialNameMapping from "@/../content/material-name-mapping.json"
 
 const habitatMaterialsEn = _habitatMaterialsEn as Record<string, string>
-const habitatMaterialsZh = _habitatMaterialsZh as Record<string, string>
-const habitatMaterialsJa = _habitatMaterialsJa as Record<string, string>
 const materialSources = _materialSources as Record<
   string,
   { nameJa: string; sources: string[]; screenshots?: string[] }
@@ -18,6 +15,10 @@ const materialSources = _materialSources as Record<
 const sourceTranslations = _sourceTranslations as Record<
   string,
   { en: string; zh: string }
+>
+const materialNameMapping = _materialNameMapping as Record<
+  string,
+  { zh: string | null; ja: string | null }
 >
 
 function translateSources(sources: string[], locale: Locale): string[] {
@@ -29,12 +30,6 @@ const HABITAT_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
   en: habitatMappingEn,
   zh: habitatMappingZh,
   ja: habitatMappingJa,
-}
-
-const HABITAT_MATERIALS_BY_LOCALE: Record<Locale, Record<string, string>> = {
-  en: habitatMaterialsEn,
-  zh: habitatMaterialsZh,
-  ja: habitatMaterialsJa,
 }
 
 export interface MaterialUsage {
@@ -81,31 +76,17 @@ function toSlug(name: string): string {
 }
 
 /**
- * Build a mapping from English slug to locale-specific material name.
- * For each habitat, we parse both English and locale materials by position index
- * to correlate English slugs with locale-specific names.
+ * Build a mapping from English slug to locale-specific material name
+ * using the pre-computed mapping file (generated via constraint propagation).
  */
 function buildSlugToLocaleName(locale: Locale): Map<string, string> {
   if (locale === "en") return new Map()
 
-  const localeMap = HABITAT_MATERIALS_BY_LOCALE[locale]
   const mapping = new Map<string, string>()
-
-  for (const [idStr, enStr] of Object.entries(habitatMaterialsEn)) {
-    const localeStr = localeMap[idStr]
-    if (!localeStr) continue
-
-    const enItems = parseMaterialString(enStr)
-    const localeItems = parseMaterialString(localeStr)
-
-    for (let i = 0; i < enItems.length && i < localeItems.length; i++) {
-      const slug = toSlug(enItems[i].name)
-      if (!mapping.has(slug)) {
-        mapping.set(slug, localeItems[i].name)
-      }
-    }
+  for (const [slug, names] of Object.entries(materialNameMapping)) {
+    const name = locale === "zh" ? names.zh : names.ja
+    if (name) mapping.set(slug, name)
   }
-
   return mapping
 }
 
@@ -185,4 +166,29 @@ export function getMaterialBySlug(
 
 export function getAllMaterialSlugs(locale: Locale): string[] {
   return getMaterialIndex(locale).map((m) => m.slug)
+}
+
+export interface MaterialItem {
+  slug: string
+  name: string
+  quantity: number
+}
+
+export function getMaterialItems(
+  materialsEn: string | null,
+  locale: Locale
+): MaterialItem[] {
+  if (!materialsEn) return []
+  const enItems = parseMaterialString(materialsEn)
+  const index = getMaterialIndex(locale)
+  const slugToName = new Map(index.map((m) => [m.slug, m.name]))
+
+  return enItems.map((item) => {
+    const slug = toSlug(item.name)
+    return {
+      slug,
+      name: slugToName.get(slug) ?? item.name,
+      quantity: item.quantity,
+    }
+  })
 }
