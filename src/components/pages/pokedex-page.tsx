@@ -1,7 +1,7 @@
 import { Breadcrumb } from "@/components/layout/breadcrumb"
 import { CollectionProgress } from "@/components/collection/collection-progress"
 import { SyncImportBanner } from "@/components/collection/sync-import-banner"
-import { PokemonGrid } from "@/components/pokemon/pokemon-grid"
+import { PokedexTabs } from "@/components/pokemon/pokedex-tabs"
 import { getAllPokemon, getAllSpecialties } from "@/lib/pokemon"
 import { POKEMON_TYPES } from "@/lib/types"
 import { getTranslations, t, type Locale } from "@/i18n/config"
@@ -16,7 +16,10 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
     getTranslations(locale),
   ])
 
-  const specialties = getAllSpecialties(pokemon)
+  const regularPokemon = pokemon.filter((p) => p.pokopia?.category !== "event")
+  const eventPokemon = pokemon.filter((p) => p.pokopia?.category === "event")
+  const regularSpecialties = getAllSpecialties(regularPokemon)
+  const eventSpecialties = getAllSpecialties(eventPokemon)
   const pokemonSlugs = pokemon.map((p) => p.slug)
 
   // Flatten translations for client component
@@ -65,12 +68,13 @@ export async function PokedexPage({ locale }: PokedexPageProps) {
           />
         </div>
       </div>
-      <PokemonGrid
-        pokemon={pokemon}
+      <PokedexTabs
+        regularPokemon={regularPokemon}
+        eventPokemon={eventPokemon}
         locale={locale}
-        headingLevel="h3"
         types={POKEMON_TYPES}
-        specialties={specialties}
+        regularSpecialties={regularSpecialties}
+        eventSpecialties={eventSpecialties}
       />
     </div>
   )

@@ -1,0 +1,42 @@
+{
+  "id": 10002,
+  "slug": "skiploom",
+  "name": "Skiploom",
+  "types": [
+    "grass",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/skiploom.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "favorites": [
+      "soft stuff",
+      "lots of nature",
+      "nice breezes",
+      "pretty flowers",
+      "spinning stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "event",
+    "category": "event",
+    "eventDexNumber": 2,
+    "evolvesFrom": "hoppip",
+    "evolvesTo": [
+      "jumpluff"
+    ],
+    "habitats": []
+  }
+}
