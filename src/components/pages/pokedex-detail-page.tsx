@@ -278,11 +278,12 @@ export async function PokedexDetailPage({
               </h3>
               <div className="mt-auto flex flex-col gap-2">
                 {pokemon.pokopia.obtainMethod === "event" ? (
-                  <Link href={getLocalePath(locale, "/events/more-spores-for-hoppip")} className="group/obtain w-fit">
-                    <Badge variant="secondary" className="w-fit px-3 py-1.5 text-sm ring-1 ring-border/50 transition-colors group-hover/obtain:bg-primary group-hover/obtain:text-primary-foreground">
-                      {t(translations, `obtainMethods.${pokemon.pokopia.obtainMethod}`)}
-                      {" →"}
-                    </Badge>
+                  <Link
+                    href={getLocalePath(locale, "/events/more-spores-for-hoppip")}
+                    className="group/obtain inline-flex w-fit items-center gap-2 rounded-2xl bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-700 ring-1 ring-emerald-500/30 transition-all hover:-translate-y-0.5 hover:bg-emerald-500/20 hover:shadow-md hover:ring-emerald-500/50 dark:text-emerald-400"
+                  >
+                    {t(translations, `obtainMethods.${pokemon.pokopia.obtainMethod}`)}
+                    <ChevronRight className="h-4 w-4 transition-transform group-hover/obtain:translate-x-0.5" />
                   </Link>
                 ) : (
                   <Badge variant="secondary" className="w-fit px-3 py-1.5 text-sm ring-1 ring-border/50">
