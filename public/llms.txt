@@ -10,6 +10,7 @@ The site is available in English, Traditional Chinese (zh-TW), and Japanese. All
 - [Habitat List](https://pokopiaguide.com/habitat): All Pokopia habitats with Pokémon spawn lists, rarity tiers, and building material requirements
 - [Habitat Materials](https://pokopiaguide.com/habitat/materials): Complete list of crafting materials and which habitats need them
 - [Crafting Recipes](https://pokopiaguide.com/crafting): All 70+ crafting recipes for furniture, cooking tools, lighting, building parts, and decorations with required materials
+- [Cooking Recipes](https://pokopiaguide.com/cooking): All 24 cooking recipes with ingredients, flavors, and move buffs (Leafage, Water Gun, Rock Smash, Cut)
 - [Events](https://pokopiaguide.com/events): Limited-time events, exclusive Pokémon, and special rewards
 - [Guides](https://pokopiaguide.com/guides): Beginner tips, quest walkthroughs, and advanced techniques
 
