@@ -30,6 +30,11 @@
         "id": 43,
         "name": "はかせのオタカラ",
         "rarity": "common"
+      },
+      {
+        "id": 22,
+        "name": "緑のベンチ",
+        "rarity": "common"
       }
     ],
     "obtainDetails": "ストーリー最序盤でも図鑑登録可能"
