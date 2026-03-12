@@ -6,11 +6,15 @@ import { TypeBadge } from "@/components/pokemon/type-badge"
 import { PokemonCard } from "@/components/pokemon/pokemon-card"
 import { WishlistButton } from "@/components/ui/wishlist-button"
 import { CollectionButton } from "@/components/ui/collection-button"
-import { ChevronLeft, ChevronRight, Sparkles, Trophy } from "lucide-react"
+import { ChevronLeft, ChevronRight, MapPin, Sparkles, Trophy } from "lucide-react"
 import Link from "next/link"
 import { getAllPokemon, getPokemonBySlug } from "@/lib/pokemon"
 import { toHabitatSlug } from "@/lib/habitat-slug"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
+import _pokemonAreaRestrictions from "@/../content/pokemon-area-restrictions.json"
+
+type AreaRestriction = { habitatId: number; area: string; areaJa: string; areaZh: string }
+const pokemonAreaRestrictions = _pokemonAreaRestrictions as Record<string, AreaRestriction[]>
 
 const TYPE_GRADIENTS: Record<string, string> = {
   normal: "from-gray-400 to-gray-200",
@@ -276,6 +280,12 @@ export async function PokedexDetailPage({
                         : h.rarity === "rare"
                           ? "ring-blue-500/50 hover:ring-blue-500"
                           : "ring-emerald-500/50 hover:ring-emerald-500"
+                    const areaRestriction = (pokemonAreaRestrictions[pokemon.slug] ?? []).find(
+                      (r) => r.habitatId === h.id
+                    )
+                    const areaLabel = areaRestriction
+                      ? locale === "ja" ? areaRestriction.areaJa : locale === "zh" ? areaRestriction.areaZh : areaRestriction.area
+                      : null
                     return (
                       <Link
                         key={h.id}
@@ -293,9 +303,17 @@ export async function PokedexDetailPage({
                         </div>
                         <div className="flex flex-col gap-1.5">
                           <p className="max-w-[140px] truncate text-sm font-bold">{h.name}</p>
-                          <Badge variant="secondary" className="w-fit text-[10px] uppercase">
-                            {t(translations, `rarity.${h.rarity}`)}
-                          </Badge>
+                          <div className="flex flex-wrap gap-1">
+                            <Badge variant="secondary" className="w-fit text-[10px] uppercase">
+                              {t(translations, `rarity.${h.rarity}`)}
+                            </Badge>
+                            {areaLabel && (
+                              <Badge variant="outline" className="w-fit gap-0.5 text-[10px] border-amber-500/30 text-amber-700 dark:text-amber-400">
+                                <MapPin className="h-2.5 w-2.5" />
+                                {t(translations, "habitat.areaOnly").replace("{{area}}", areaLabel)}
+                              </Badge>
+                            )}
+                          </div>
                         </div>
                       </Link>
                     )

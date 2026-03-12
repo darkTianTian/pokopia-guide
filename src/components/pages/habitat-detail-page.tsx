@@ -6,7 +6,18 @@ import { WishlistButton } from "@/components/ui/wishlist-button"
 import { getHabitatBySlug } from "@/lib/habitat"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 import { QuantityDots } from "@/components/ui/quantity-dots"
+import { MapPin } from "lucide-react"
 import { notFound } from "next/navigation"
+import _pokemonAreaRestrictions from "@/../content/pokemon-area-restrictions.json"
+
+type AreaRestriction = { habitatId: number; area: string; areaJa: string; areaZh: string }
+const pokemonAreaRestrictions = _pokemonAreaRestrictions as Record<string, AreaRestriction[]>
+
+function getAreaLabel(restriction: AreaRestriction, locale: string): string {
+  if (locale === "ja") return restriction.areaJa
+  if (locale === "zh") return restriction.areaZh
+  return restriction.area
+}
 
 function parseMaterials(materials: string): { name: string; quantity: number }[] {
   return materials.split(/,\s*/).filter(Boolean).map((part) => {
@@ -154,12 +165,22 @@ export async function HabitatDetailPage({
 
           const rarityLabel = t(translations, `rarity.${rarity}`)
 
+          const areaRestriction = (pokemonAreaRestrictions[pokemon.slug] ?? []).find(
+            (r) => r.habitatId === habitat.id
+          )
+
           return (
             <div key={pokemon.id} className="relative group/habitat-poke mt-2">
-              <div className="absolute left-1/2 -top-3.5 z-20 -translate-x-1/2 transition-transform duration-300 group-hover/habitat-poke:-translate-y-1">
+              <div className="absolute left-1/2 -top-3.5 z-20 -translate-x-1/2 flex gap-1.5 transition-transform duration-300 group-hover/habitat-poke:-translate-y-1">
                 <span className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest ring-1 ring-inset border backdrop-blur-xl shadow-sm ${badgeStyles}`}>
                   {rarityLabel}
                 </span>
+                {areaRestriction && (
+                  <span className="inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-amber-500/20 px-2.5 py-1 text-[10px] font-bold text-amber-700 dark:text-amber-300 ring-1 ring-inset ring-amber-500/40 border border-amber-500/20 backdrop-blur-xl shadow-sm">
+                    <MapPin className="h-3 w-3" />
+                    {t(translations, "habitat.areaOnly").replace("{{area}}", getAreaLabel(areaRestriction, locale))}
+                  </span>
+                )}
               </div>
 
               <PokemonCard pokemon={pokemon} locale={locale} className={cardStyles} />

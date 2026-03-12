@@ -1,0 +1,41 @@
+{
+  "machop": [{ "habitatId": 3, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "geodude": [{ "habitatId": 1, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "magby": [{ "habitatId": 8, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "pikachu": [{ "habitatId": 20, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "rowlet": [{ "habitatId": 15, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "munchlax": [
+    { "habitatId": 30, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" },
+    { "habitatId": 47, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }
+  ],
+  "snorlax": [
+    { "habitatId": 47, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" },
+    { "habitatId": 48, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }
+  ],
+  "koffing": [{ "habitatId": 63, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "weezing": [
+    { "habitatId": 48, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" },
+    { "habitatId": 63, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }
+  ],
+  "tangela": [{ "habitatId": 49, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "scizor": [{ "habitatId": 2, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "skwovet": [{ "habitatId": 2, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "cramorant": [{ "habitatId": 4, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "mawile": [{ "habitatId": 91, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "vikavolt": [{ "habitatId": 9, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "tinkatink": [{ "habitatId": 28, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "tinkatuff": [{ "habitatId": 28, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "eevee": [{ "habitatId": 8, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "vaporeon": [{ "habitatId": 202, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "jolteon": [{ "habitatId": 203, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "flareon": [{ "habitatId": 204, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "espeon": [{ "habitatId": 205, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "umbreon": [{ "habitatId": 206, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "leafeon": [{ "habitatId": 207, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "glaceon": [{ "habitatId": 208, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "sylveon": [{ "habitatId": 209, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "始初之鎮" }],
+  "venusaur": [{ "habitatId": 46, "area": "Withered Wasteland", "areaJa": "パサパサこうや", "areaZh": "乾旱草原" }],
+  "toxel": [{ "habitatId": 124, "area": "Rocky Ridge", "areaJa": "ゴツゴツやま", "areaZh": "岩石山脊" }],
+  "alakazam": [{ "habitatId": 151, "area": "Sparkling Skylands", "areaJa": "キラキラうきしま", "areaZh": "閃亮天空之城" }],
+  "snivy": [{ "habitatId": 165, "area": "Sparkling Skylands", "areaJa": "キラキラうきしま", "areaZh": "閃亮天空之城" }]
+}

@@ -142,7 +142,8 @@
     "showingMaterials": "Showing {{count}} materials",
     "materialSource": "How to Get",
     "materialScreenshots": "Screenshots",
-    "materialTotalNeeded": "{{count}} total needed"
+    "materialTotalNeeded": "{{count}} total needed",
+    "areaOnly": "{{area}} only"
   },
   "quests": {
     "title": "Quest Guide",

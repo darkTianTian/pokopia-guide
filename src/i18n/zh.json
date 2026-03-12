@@ -142,7 +142,8 @@
     "showingMaterials": "顯示 {{count}} 種材料",
     "materialSource": "獲取方式",
     "materialScreenshots": "截圖參考",
-    "materialTotalNeeded": "共需 {{count}} 個"
+    "materialTotalNeeded": "共需 {{count}} 個",
+    "areaOnly": "僅限{{area}}"
   },
   "quests": {
     "title": "任務攻略",
