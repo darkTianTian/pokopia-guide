@@ -30,6 +30,11 @@
         "id": 43,
         "name": "Professor's treasure trove",
         "rarity": "common"
+      },
+      {
+        "id": 22,
+        "name": "Bench with greenery",
+        "rarity": "common"
       }
     ],
     "obtainDetails": "Also obtainable early in the main story"

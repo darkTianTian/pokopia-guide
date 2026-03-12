@@ -30,6 +30,11 @@
         "id": 43,
         "name": "博士的寶物",
         "rarity": "common"
+      },
+      {
+        "id": 22,
+        "name": "綠色長椅",
+        "rarity": "common"
       }
     ],
     "obtainDetails": "也可在主線故事初期獲取"
