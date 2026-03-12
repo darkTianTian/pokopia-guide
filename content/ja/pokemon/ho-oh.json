@@ -22,6 +22,8 @@
     "obtainMethod": "quest",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "先に伝説の三獣を仲間にする。とうめいなすず（レアポケモンメタル×5＋にじいろのはね×5）を作り、晴れの日に飛行中に鳴らす。Tip：コケカビゴンに渋い味（イアのみ）を供えるとハネの出現率アップ；音量を上げるとホウオウ・ルギアの飛来音が聞こえる；てるてるぼうず・あめあめぼうずで天候を変更可能"
   }
 }

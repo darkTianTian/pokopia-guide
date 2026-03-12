@@ -23,6 +23,8 @@
     "obtainMethod": "dream-island",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "イーブイのぬいぐるみでゆめのしまの地下で遭遇。Tip：ゆめのしまは1日1種類のぬいぐるみのみ使用可能（回数無制限）；壁の中の光に注目"
   }
 }

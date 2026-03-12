@@ -23,6 +23,8 @@
     "obtainMethod": "quest",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "mythical",
+    "obtainDetails": "在帕薩帕薩荒野集齊27塊謎之石板，嵌入寶可夢中心後方地下的壁畫。Tip：給苔蘚卡比獸喂甜味（桃桃果）可增加石板出現幾率；石板需對應背面圖案插入正確位置"
   }
 }

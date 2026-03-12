@@ -24,6 +24,8 @@
     "obtainMethod": "craft",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "Build the Abandoned Power Plant in Palette Town. Blueprint from Palette Town Altar. Tip: Unlocking Magnemite's skill makes building faster"
   }
 }

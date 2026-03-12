@@ -1111,10 +1111,12 @@ function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiList
     favorites = game8Data.favorites
   }
 
-  // obtainMethod and evolution: keep existing if present
+  // obtainMethod, evolution, category, obtainDetails: keep existing if present
   const obtainMethod = existing.obtainMethod || "habitat"
   const evolvesFrom = existing.evolvesFrom !== undefined ? existing.evolvesFrom : null
   const evolvesTo = existing.evolvesTo !== undefined ? existing.evolvesTo : null
+  const category = existing.category || null
+  const obtainDetails = existing.obtainDetails || null
 
   return {
     specialties,
@@ -1125,6 +1127,8 @@ function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiList
     evolvesFrom,
     evolvesTo,
     habitats,
+    ...(category && { category }),
+    ...(obtainDetails && { obtainDetails }),
   }
 }
 

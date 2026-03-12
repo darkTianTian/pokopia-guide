@@ -23,6 +23,8 @@
     "obtainMethod": "dream-island",
     "evolvesFrom": null,
     "evolvesTo": null,
-    "habitats": []
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "使用風速狗玩偶，在夢之島地下遇見。Tip：夢島每天只能使用1種玩偶（次數不限）；注意牆壁裡的閃光"
   }
 }
