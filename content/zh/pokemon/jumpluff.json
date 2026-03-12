@@ -32,8 +32,6 @@
       "rainy"
     ],
     "obtainMethod": "event",
-    "category": "event",
-    "eventDexNumber": 3,
     "evolvesFrom": "skiploom",
     "evolvesTo": null,
     "habitats": [
@@ -45,8 +43,9 @@
       {
         "id": 212,
         "name": "蒲公英與午餐",
-        "rarity": "very-rare"
+        "rarity": "rare"
       }
-    ]
+    ],
+    "category": "event"
   }
 }
