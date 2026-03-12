@@ -31,8 +31,6 @@
       "rainy"
     ],
     "obtainMethod": "event",
-    "category": "event",
-    "eventDexNumber": 2,
     "evolvesFrom": "hoppip",
     "evolvesTo": [
       "jumpluff"
@@ -41,13 +39,14 @@
       {
         "id": 210,
         "name": "Yellow Carpet",
-        "rarity": "very-rare"
+        "rarity": "rare"
       },
       {
         "id": 211,
         "name": "Field-Trip Friends",
-        "rarity": "very-rare"
+        "rarity": "common"
       }
-    ]
+    ],
+    "category": "event"
   }
 }

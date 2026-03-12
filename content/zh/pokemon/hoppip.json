@@ -31,8 +31,6 @@
       "rainy"
     ],
     "obtainMethod": "event",
-    "category": "event",
-    "eventDexNumber": 1,
     "evolvesFrom": null,
     "evolvesTo": [
       "skiploom"
@@ -43,6 +41,7 @@
         "name": "黃色地毯",
         "rarity": "common"
       }
-    ]
+    ],
+    "category": "event"
   }
 }
