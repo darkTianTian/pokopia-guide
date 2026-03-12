@@ -20,7 +20,7 @@ function getStableRandom(index: number, seed: number = 0) {
 }
 // ------------------------------------------
 
-export const PROTAGONIST_COUNT = 14
+export const PROTAGONIST_COUNT = 36
 
 export interface ShareCardConfig {
   orientation: "portrait" | "landscape"
