@@ -46,6 +46,31 @@
 - `public/images/cooking/moves/` needs 4 move icons: leafage.png, water-gun.png, cut.png, rock-smash.png
 - User will provide screenshots later
 
+## Item English Name Calibration
+
+`content/item-name-mapping-en.json` — 775 entries total. ~670 sourced from Serebii (high confidence). The following need in-game verification:
+
+| Category | Count | Confidence | Notes |
+|----------|-------|------------|-------|
+| Wallpapers (壁紙) | 20 | LOW | Not on Serebii, translated from Japanese |
+| Kits (キット) | 28 | MEDIUM | From Game8 English, not verified |
+| Paint Balloons (いろふうせん) | 19 | LOW | Color names translated, base name not on Serebii |
+| Rugs (ラグ) | 10 | MEDIUM | Size/shape prefixes translated |
+| Mysterious Slates (ナゾのせきばん) | 27 | MEDIUM-HIGH | Letter format needs verification |
+| Garden ornament | 1 | LOW | Direct translation, not on Serebii |
+
+## Item Description Translation — NOT STARTED
+
+`items.json` has 572 unique descriptions still in Japanese for en/zh locales.
+Obtain (231) and recipe (109) texts are fully translated to English via mapping files.
+Description translation files not yet created — description shows Japanese in en/zh for now.
+
+## Item Chinese Name Translation — NOT STARTED
+
+`content/item-name-mapping-zh.json` only has 91 entries (from old inaccurate data). Full 775 Chinese translations needed.
+Chinese obtain/recipe mappings also not started.
+Potential sources: Game8 Chinese edition, in-game screenshots, community wikis.
+
 ## Crafting Icon Accuracy
 
 - Some crafting icon mappings in `CRAFTING_ICON_STATIC_MAP` (update-pokopia-data.mjs) may be inaccurate:
