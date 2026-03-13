@@ -91,8 +91,9 @@ export function MobileNav({
             </li>
           </ul>
 
-          <div className="mt-2 border-t border-border/40 pt-4 px-2 pb-2">
+          <div className="mt-2 flex items-center justify-between border-t border-border/40 pt-4 px-2 pb-2">
             <LanguageSwitcher locale={locale} />
+            <ThemeToggle />
           </div>
         </nav>
       </div>
