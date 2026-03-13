@@ -203,7 +203,7 @@ export function PokemonGrid({
                       }`}
                   >
                     <Image
-                      src={`/images/types/${type}.svg`}
+                      src={`/images/types/${type}.png`}
                       alt={typeName}
                       width={18}
                       height={18}

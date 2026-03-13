@@ -43,7 +43,7 @@ export function TypeBadge({ type, locale }: TypeBadgeProps) {
   return (
     <Badge className={`${TYPE_COLORS[type]} text-white border-0 flex items-center gap-1 pl-1.5 pr-2.5 py-1 text-sm`}>
       <Image
-        src={`/images/types/${type}.svg`}
+        src={`/images/types/${type}.png`}
         alt={typeName}
         width={18}
         height={18}
