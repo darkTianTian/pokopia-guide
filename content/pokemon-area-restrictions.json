@@ -35,7 +35,7 @@
   "glaceon": [{ "habitatId": 208, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮" }],
   "sylveon": [{ "habitatId": 209, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮" }],
   "venusaur": [{ "habitatId": 46, "area": "Withered Wasteland", "areaJa": "パサパサこうや", "areaZh": "乾巴巴荒野" }],
-  "toxel": [{ "habitatId": 124, "area": "Rocky Ridge", "areaJa": "ゴツゴツやま", "areaZh": "凸隆隆山地" }],
+  "toxel": [{ "habitatId": 124, "area": "Rocky Ridges", "areaJa": "ゴツゴツやま", "areaZh": "凸隆隆山地" }],
   "alakazam": [{ "habitatId": 151, "area": "Sparkling Skylands", "areaJa": "キラキラうきしま", "areaZh": "亮晶晶空島" }],
   "snivy": [{ "habitatId": 165, "area": "Sparkling Skylands", "areaJa": "キラキラうきしま", "areaZh": "亮晶晶空島" }]
 }
