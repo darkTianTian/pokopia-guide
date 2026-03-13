@@ -59,16 +59,20 @@
 | Mysterious Slates (ナゾのせきばん) | 27 | MEDIUM-HIGH | Letter format needs verification |
 | Garden ornament | 1 | LOW | Direct translation, not on Serebii |
 
-## Item Description Translation — EN DONE, ZH NOT STARTED
+## Item Chinese Translation Status
 
-`content/item-desc-mapping-en.json` — 946 entries covering all 577 unique descriptions. English fully translated.
-Chinese description translations not started — shows Japanese in zh locale for now.
+### Done (AI translated, 2026-03-13)
+- `content/item-name-mapping-zh.json` — 787 entries (AI translated, needs official name verification)
+- `content/item-obtain-mapping-zh.json` — 231 entries
+- `content/item-recipe-mapping-zh.json` — 109 entries
+- `content/item-desc-mapping-zh.json` — ~945 entries (in progress)
 
-## Item Chinese Name Translation — NOT STARTED
-
-`content/item-name-mapping-zh.json` only has 91 entries (from old inaccurate data). Full 775 Chinese translations needed.
-Chinese obtain/recipe mappings also not started.
-Potential sources: Game8 Chinese edition, in-game screenshots, community wikis.
+### TODO: Item Name Official Verification
+- Current zh item names are AI-translated, NOT official in-game names
+- Need to verify against official Traditional Chinese game data
+- Potential sources: in-game screenshots, community wikis, datamine
+- Priority: high-visibility items (materials, furniture, tools) first
+- No comprehensive zh item database found online as of 2026-03-13
 
 ## Crafting Icon Accuracy
 
