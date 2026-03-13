@@ -34,6 +34,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 104,
+        "name": "優雅花田",
+        "rarity": "rare"
+      },
+      {
         "id": 121,
         "name": "大口麵包工坊",
         "rarity": "rare"

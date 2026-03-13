@@ -1073,11 +1073,12 @@ function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiList
     }
   }
 
-  // Habitats: GameWith is authoritative; only fall back to Serebii if GameWith has none
+  // Habitats: GameWith as base, then merge in Serebii and existing data to avoid losing habitats
   let habitats = existing.habitats || []
   if (gameWithData?.habitats?.length > 0) {
-    habitats = gameWithData.habitats
-  } else if (serebiiDetail?.habitats?.length > 0) {
+    habitats = mergeHabitats(habitats, gameWithData.habitats)
+  }
+  if (serebiiDetail?.habitats?.length > 0) {
     habitats = mergeHabitats(habitats, serebiiDetail.habitats)
   }
 
