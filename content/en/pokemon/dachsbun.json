@@ -34,6 +34,11 @@
     "evolvesTo": null,
     "habitats": [
       {
+        "id": 104,
+        "name": "Graceful flower bed",
+        "rarity": "rare"
+      },
+      {
         "id": 121,
         "name": "Best bread bakery",
         "rarity": "rare"
