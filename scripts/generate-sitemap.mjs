@@ -37,6 +37,8 @@ async function main() {
       { url: `${locale.prefix}/crafting`, priority: "0.8", changefreq: "weekly" },
       { url: `${locale.prefix}/cooking`, priority: "0.8", changefreq: "weekly" },
       { url: `${locale.prefix}/items`, priority: "0.8", changefreq: "weekly" },
+      { url: `${locale.prefix}/privacy`, priority: "0.3", changefreq: "yearly" },
+      { url: `${locale.prefix}/terms`, priority: "0.3", changefreq: "yearly" },
       // explore, multiplayer, quests are coming-soon pages with noindex — excluded from sitemap
     ]
 
