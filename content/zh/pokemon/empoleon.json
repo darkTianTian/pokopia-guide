@@ -37,6 +37,11 @@
         "id": 68,
         "name": "外送料理",
         "rarity": "rare"
+      },
+      {
+        "id": 86,
+        "name": "水力發電所",
+        "rarity": "very-rare"
       }
     ]
   }

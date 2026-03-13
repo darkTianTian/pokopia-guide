@@ -40,6 +40,11 @@
         "id": 66,
         "name": "公園のベンチ",
         "rarity": "common"
+      },
+      {
+        "id": 90,
+        "name": "ふなのりごっこ",
+        "rarity": "common"
       }
     ]
   }

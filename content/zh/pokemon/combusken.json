@@ -41,6 +41,11 @@
         "id": 87,
         "name": "火力發電所",
         "rarity": "common"
+      },
+      {
+        "id": 79,
+        "name": "度假村備餐",
+        "rarity": "rare"
       }
     ]
   }

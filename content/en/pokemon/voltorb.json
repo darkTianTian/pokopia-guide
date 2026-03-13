@@ -40,6 +40,11 @@
         "id": 66,
         "name": "Park bench",
         "rarity": "common"
+      },
+      {
+        "id": 90,
+        "name": "Playing pirate",
+        "rarity": "common"
       }
     ]
   }

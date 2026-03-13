@@ -40,6 +40,11 @@
         "id": 66,
         "name": "公園長椅",
         "rarity": "common"
+      },
+      {
+        "id": 90,
+        "name": "航海遊戲",
+        "rarity": "common"
       }
     ]
   }
