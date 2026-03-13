@@ -4,14 +4,18 @@ import { SafeImage } from "@/components/ui/safe-image"
 import { WishlistButton } from "@/components/ui/wishlist-button"
 import { CollectionButton } from "@/components/ui/collection-button"
 import { TypeBadge } from "./type-badge"
-import { Sparkles, Trophy } from "lucide-react"
+import { MapPin, Sparkles, Trophy } from "lucide-react"
 import type { Pokemon } from "@/lib/types"
 import { getLocalePath, type Locale } from "@/i18n/config"
 import { HabitatLink } from "@/components/habitat/habitat-link"
 import { toHabitatSlug } from "@/lib/habitat-slug"
+import _pokemonAreaRestrictions from "@/../content/pokemon-area-restrictions.json"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
 import jaTranslations from "@/i18n/ja.json"
+
+type AreaRestriction = { habitatId: number; area: string; areaJa: string; areaZh: string }
+const pokemonAreaRestrictions = _pokemonAreaRestrictions as Record<string, AreaRestriction[]>
 
 const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
   en: enTranslations,
@@ -249,6 +253,12 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
                           : h.rarity === "rare"
                             ? "ring-blue-500/50"
                             : "ring-emerald-500/50"
+                      const areaRestriction = (pokemonAreaRestrictions[pokemon.slug] ?? []).find(
+                        (r) => r.habitatId === h.id
+                      )
+                      const areaLabel = areaRestriction
+                        ? locale === "ja" ? areaRestriction.areaJa : locale === "zh" ? areaRestriction.areaZh : areaRestriction.area
+                        : null
                       return (
                         <HabitatLink
                           key={h.id}
@@ -267,6 +277,12 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
                           <span className="w-full text-center text-xs leading-tight font-medium text-muted-foreground group-hover/habitat:text-foreground line-clamp-2">
                             {h.name}
                           </span>
+                          {areaLabel && (
+                            <span className="flex items-center gap-0.5 text-[9px] text-amber-600 dark:text-amber-400">
+                              <MapPin className="h-2 w-2 shrink-0" />
+                              {areaLabel}
+                            </span>
+                          )}
                         </HabitatLink>
                       )
                     })
