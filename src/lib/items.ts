@@ -7,6 +7,7 @@ import obtainMappingZh from "@/../content/item-obtain-mapping-zh.json"
 import recipeMappingEn from "@/../content/item-recipe-mapping-en.json"
 import recipeMappingZh from "@/../content/item-recipe-mapping-zh.json"
 import descMappingEn from "@/../content/item-desc-mapping-en.json"
+import descMappingZh from "@/../content/item-desc-mapping-zh.json"
 
 interface RawMaterial {
   id: string
@@ -65,7 +66,7 @@ const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
 
 const DESC_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: descMappingEn as Record<string, string>,
-  zh: {},
+  zh: descMappingZh as Record<string, string>,
   ja: {},
 }
 
