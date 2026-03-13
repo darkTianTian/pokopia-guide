@@ -23,8 +23,7 @@
     "timeOfDay": [
       "dawn",
       "day",
-      "dusk",
-      "night"
+      "dusk"
     ],
     "weather": [
       "sunny",
