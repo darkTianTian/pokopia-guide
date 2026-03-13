@@ -244,6 +244,7 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
                 <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground/80">
                   {tr.pokedex.habitatLabel}
                 </span>
+
                 <div className="flex gap-2 overflow-x-auto pb-1">
                   {hasHabitats ? (
                     pokopia.habitats!.map((h) => {
@@ -263,24 +264,24 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
                         <HabitatLink
                           key={h.id}
                           href={getLocalePath(locale, `/habitat/${toHabitatSlug(h.id)}`)}
-                          className="group/habitat relative flex shrink-0 w-[4.5rem] flex-col items-center gap-1 rounded-2xl bg-background/60 p-1.5 shadow-sm ring-1 ring-inset ring-border/50 transition-all hover:bg-background hover:ring-2 hover:ring-primary/50"
+                          className="group/habitat relative flex shrink-0 w-24 flex-col items-center gap-1.5 rounded-2xl bg-background/60 p-2 shadow-sm ring-1 ring-inset ring-border/50 transition-all hover:bg-background hover:ring-2 hover:ring-primary/50"
                         >
-                          <div className={`overflow-hidden rounded-xl ring-2 ${ringColor}`}>
+                          <div className={`relative overflow-hidden rounded-xl ring-2 ${ringColor}`}>
                             <SafeImage
                               src={`/images/habitats/habitat_${h.id}.png`}
                               alt={h.name}
-                              width={48}
-                              height={48}
+                              width={56}
+                              height={56}
                               className="w-full h-auto transition-transform duration-300 group-hover/habitat:scale-110"
                             />
                           </div>
-                          <span className="w-full text-center text-xs leading-tight font-medium text-muted-foreground group-hover/habitat:text-foreground line-clamp-2">
+                          <span className="w-full text-center text-[10px] leading-tight font-medium text-muted-foreground group-hover/habitat:text-foreground line-clamp-1">
                             {h.name}
                           </span>
                           {areaLabel && (
-                            <span className="flex items-center gap-0.5 text-[9px] text-amber-600 dark:text-amber-400">
-                              <MapPin className="h-2 w-2 shrink-0" />
-                              {areaLabel}
+                            <span className="mt-0.5 flex w-full items-center justify-center gap-0.5 rounded-md bg-amber-500 px-1.5 py-1 text-[10px] font-bold text-white shadow-sm ring-1 ring-amber-600/20">
+                              <MapPin className="h-2.5 w-2.5 shrink-0" />
+                              <span className="text-center leading-tight">{areaLabel}</span>
                             </span>
                           )}
                         </HabitatLink>

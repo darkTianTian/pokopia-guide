@@ -322,26 +322,26 @@ export async function PokedexDetailPage({
                       <Link
                         key={h.id}
                         href={getLocalePath(locale, `/habitat/${toHabitatSlug(h.id)}`)}
-                        className={`group flex items-center gap-4 rounded-3xl bg-background/60 p-3 pr-6 shadow-sm ring-2 ${ringColor} transition-all hover:-translate-y-1 hover:bg-background hover:shadow-md`}
+                        className={`group flex items-center gap-5 rounded-3xl bg-background/60 p-4 pr-8 shadow-sm ring-2 ${ringColor} transition-all hover:-translate-y-1 hover:bg-background hover:shadow-md`}
                       >
-                        <div className="overflow-hidden rounded-2xl">
+                        <div className="relative overflow-hidden rounded-2xl shadow-inner border border-border/20">
                           <SafeImage
                             src={`/images/habitats/habitat_${h.id}.png`}
                             alt={h.name}
-                            width={80}
-                            height={80}
+                            width={100}
+                            height={100}
                             className="transition-transform duration-500 group-hover:scale-110"
                           />
                         </div>
-                        <div className="flex flex-col gap-1.5">
-                          <p className="max-w-[140px] truncate text-sm font-bold">{h.name}</p>
-                          <div className="flex flex-wrap gap-1">
-                            <Badge variant="secondary" className="w-fit text-[10px] uppercase">
+                        <div className="flex flex-col gap-3">
+                          <p className="truncate text-xl font-bold tracking-tight">{h.name}</p>
+                          <div className="flex flex-wrap items-center gap-2">
+                            <Badge variant="secondary" className="w-fit text-[11px] uppercase tracking-wider font-semibold">
                               {t(translations, `rarity.${h.rarity}`)}
                             </Badge>
                             {areaLabel && (
-                              <Badge variant="outline" className="w-fit gap-0.5 text-[10px] border-amber-500/30 text-amber-700 dark:text-amber-400">
-                                <MapPin className="h-2.5 w-2.5" />
+                              <Badge variant="secondary" className="w-fit gap-1.5 px-4 py-1.5 text-base font-bold bg-amber-500 text-white hover:bg-amber-600 border-none shadow-md ring-2 ring-amber-500/20">
+                                <MapPin className="h-5 w-5" />
                                 {t(translations, "habitat.areaOnly").replace("{{area}}", areaLabel)}
                               </Badge>
                             )}
