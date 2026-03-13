@@ -4,6 +4,7 @@ import mappingEn from "@/../content/item-name-mapping-en.json"
 import mappingZh from "@/../content/item-name-mapping-zh.json"
 import obtainMappingEn from "@/../content/item-obtain-mapping-en.json"
 import recipeMappingEn from "@/../content/item-recipe-mapping-en.json"
+import descMappingEn from "@/../content/item-desc-mapping-en.json"
 
 interface RawMaterial {
   id: string
@@ -60,6 +61,16 @@ const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
   ja: {},
 }
 
+const DESC_MAPPINGS: Record<Locale, Record<string, string>> = {
+  en: descMappingEn as Record<string, string>,
+  zh: {},
+  ja: {},
+}
+
+function translateText(text: string, mapping: Record<string, string>): string {
+  return mapping[text] || text
+}
+
 function translateTexts(texts: string[], mapping: Record<string, string>): string[] {
   return texts.map((t) => mapping[t] || t)
 }
@@ -114,7 +125,9 @@ function buildItems(locale: Locale): Item[] {
     category: getCategoryKey(raw.category),
     categoryKey: getCategoryKey(raw.category),
     imageUrl: `/images/items/item-${raw.id}.png`,
-    description: raw.description || "",
+    description: raw.description
+      ? (locale === "ja" ? raw.description : translateText(raw.description, DESC_MAPPINGS[locale]))
+      : "",
     obtain: translateTexts(raw.obtain || [], locale === "ja" ? {} : OBTAIN_MAPPINGS[locale]),
     recipe: translateTexts(raw.recipe || [], locale === "ja" ? {} : RECIPE_MAPPINGS[locale]),
     materials: (raw.materials || []).map((m) => ({

@@ -59,11 +59,10 @@
 | Mysterious Slates (ナゾのせきばん) | 27 | MEDIUM-HIGH | Letter format needs verification |
 | Garden ornament | 1 | LOW | Direct translation, not on Serebii |
 
-## Item Description Translation — NOT STARTED
+## Item Description Translation — EN DONE, ZH NOT STARTED
 
-`items.json` has 572 unique descriptions still in Japanese for en/zh locales.
-Obtain (231) and recipe (109) texts are fully translated to English via mapping files.
-Description translation files not yet created — description shows Japanese in en/zh for now.
+`content/item-desc-mapping-en.json` — 946 entries covering all 577 unique descriptions. English fully translated.
+Chinese description translations not started — shows Japanese in zh locale for now.
 
 ## Item Chinese Name Translation — NOT STARTED
 
