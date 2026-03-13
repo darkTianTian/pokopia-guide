@@ -211,16 +211,37 @@ async function buildTranslationMappings(items) {
     // optional
   }
 
+  // Load existing mappings first to preserve manual translations (e.g. from Serebii)
+  const enPath = path.join(CONTENT_DIR, "item-name-mapping-en.json")
+  const zhPath = path.join(CONTENT_DIR, "item-name-mapping-zh.json")
+  let existingEn = {}
+  let existingZh = {}
+  try {
+    existingEn = JSON.parse(await fs.readFile(enPath, "utf-8"))
+  } catch { /* first run */ }
+  try {
+    existingZh = JSON.parse(await fs.readFile(zhPath, "utf-8"))
+  } catch { /* first run */ }
+
   // Filter to only include items that exist in our scraped data
   const itemNames = new Set(items.map((i) => i.nameJa))
   const enFiltered = {}
   const zhFiltered = {}
 
-  for (const [ja, en] of Object.entries(enMap)) {
+  // Start with existing mappings (preserves manual/Serebii translations)
+  for (const [ja, en] of Object.entries(existingEn)) {
     if (itemNames.has(ja)) enFiltered[ja] = en
   }
-  for (const [ja, zh] of Object.entries(zhMap)) {
+  for (const [ja, zh] of Object.entries(existingZh)) {
     if (itemNames.has(ja)) zhFiltered[ja] = zh
+  }
+
+  // Overlay newly scraped mappings (only adds, does not overwrite existing)
+  for (const [ja, en] of Object.entries(enMap)) {
+    if (itemNames.has(ja) && !enFiltered[ja]) enFiltered[ja] = en
+  }
+  for (const [ja, zh] of Object.entries(zhMap)) {
+    if (itemNames.has(ja) && !zhFiltered[ja]) zhFiltered[ja] = zh
   }
 
   return { en: enFiltered, zh: zhFiltered }
