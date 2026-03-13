@@ -4,14 +4,18 @@ import { SafeImage } from "@/components/ui/safe-image"
 import { WishlistButton } from "@/components/ui/wishlist-button"
 import { CollectionButton } from "@/components/ui/collection-button"
 import { TypeBadge } from "./type-badge"
-import { Sparkles, Trophy } from "lucide-react"
+import { MapPin, Sparkles, Trophy } from "lucide-react"
 import type { Pokemon } from "@/lib/types"
 import { getLocalePath, type Locale } from "@/i18n/config"
 import { HabitatLink } from "@/components/habitat/habitat-link"
 import { toHabitatSlug } from "@/lib/habitat-slug"
+import _pokemonAreaRestrictions from "@/../content/pokemon-area-restrictions.json"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
 import jaTranslations from "@/i18n/ja.json"
+
+type AreaRestriction = { habitatId: number; area: string; areaJa: string; areaZh: string }
+const pokemonAreaRestrictions = _pokemonAreaRestrictions as Record<string, AreaRestriction[]>
 
 const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
   en: enTranslations,
@@ -240,6 +244,7 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
                 <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground/80">
                   {tr.pokedex.habitatLabel}
                 </span>
+
                 <div className="flex gap-2 overflow-x-auto pb-1">
                   {hasHabitats ? (
                     pokopia.habitats!.map((h) => {
@@ -249,24 +254,36 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
                           : h.rarity === "rare"
                             ? "ring-blue-500/50"
                             : "ring-emerald-500/50"
+                      const areaRestriction = (pokemonAreaRestrictions[pokemon.slug] ?? []).find(
+                        (r) => r.habitatId === h.id
+                      )
+                      const areaLabel = areaRestriction
+                        ? locale === "ja" ? areaRestriction.areaJa : locale === "zh" ? areaRestriction.areaZh : areaRestriction.area
+                        : null
                       return (
                         <HabitatLink
                           key={h.id}
                           href={getLocalePath(locale, `/habitat/${toHabitatSlug(h.id)}`)}
-                          className="group/habitat relative flex shrink-0 w-[4.5rem] flex-col items-center gap-1 rounded-2xl bg-background/60 p-1.5 shadow-sm ring-1 ring-inset ring-border/50 transition-all hover:bg-background hover:ring-2 hover:ring-primary/50"
+                          className="group/habitat relative flex shrink-0 w-24 flex-col items-center gap-1.5 rounded-2xl bg-background/60 p-2 shadow-sm ring-1 ring-inset ring-border/50 transition-all hover:bg-background hover:ring-2 hover:ring-primary/50"
                         >
-                          <div className={`overflow-hidden rounded-xl ring-2 ${ringColor}`}>
+                          <div className={`relative overflow-hidden rounded-xl ring-2 ${ringColor}`}>
                             <SafeImage
                               src={`/images/habitats/habitat_${h.id}.png`}
                               alt={h.name}
-                              width={48}
-                              height={48}
+                              width={56}
+                              height={56}
                               className="w-full h-auto transition-transform duration-300 group-hover/habitat:scale-110"
                             />
                           </div>
-                          <span className="w-full text-center text-xs leading-tight font-medium text-muted-foreground group-hover/habitat:text-foreground line-clamp-2">
+                          <span className="w-full text-center text-[10px] leading-tight font-medium text-muted-foreground group-hover/habitat:text-foreground line-clamp-1">
                             {h.name}
                           </span>
+                          {areaLabel && (
+                            <span className="mt-0.5 flex w-full items-center justify-center gap-0.5 rounded-md bg-amber-500 px-1.5 py-1 text-[10px] font-bold text-white shadow-sm ring-1 ring-amber-600/20">
+                              <MapPin className="h-2.5 w-2.5 shrink-0" />
+                              <span className="text-center leading-tight">{areaLabel}</span>
+                            </span>
+                          )}
                         </HabitatLink>
                       )
                     })
