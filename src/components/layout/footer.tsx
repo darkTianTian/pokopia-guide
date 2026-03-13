@@ -70,9 +70,25 @@ export async function Footer({ locale }: FooterProps) {
           </div>
         </div>
         <Separator className="my-6" />
-        <p className="text-center text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} {t(translations, "footer.copyright")}
-        </p>
+        <div className="flex flex-col items-center gap-2 text-sm text-muted-foreground">
+          <div className="flex gap-4">
+            <Link
+              href={getLocalePath(locale, "/privacy")}
+              className="hover:text-foreground"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href={getLocalePath(locale, "/terms")}
+              className="hover:text-foreground"
+            >
+              Terms of Service
+            </Link>
+          </div>
+          <p>
+            &copy; {new Date().getFullYear()} {t(translations, "footer.copyright")}
+          </p>
+        </div>
       </div>
     </footer>
   )
