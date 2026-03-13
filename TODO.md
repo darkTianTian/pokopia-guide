@@ -65,7 +65,7 @@
 - `content/item-name-mapping-zh.json` — 787 entries (AI translated, needs official name verification)
 - `content/item-obtain-mapping-zh.json` — 231 entries
 - `content/item-recipe-mapping-zh.json` — 109 entries
-- `content/item-desc-mapping-zh.json` — ~945 entries (in progress)
+- `content/item-desc-mapping-zh.json` — 581 entries (done, AI translated)
 
 ### TODO: Item Name Official Verification
 - Current zh item names are AI-translated, NOT official in-game names
