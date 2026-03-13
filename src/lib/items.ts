@@ -3,7 +3,9 @@ import itemsData from "@/../content/items.json"
 import mappingEn from "@/../content/item-name-mapping-en.json"
 import mappingZh from "@/../content/item-name-mapping-zh.json"
 import obtainMappingEn from "@/../content/item-obtain-mapping-en.json"
+import obtainMappingZh from "@/../content/item-obtain-mapping-zh.json"
 import recipeMappingEn from "@/../content/item-recipe-mapping-en.json"
+import recipeMappingZh from "@/../content/item-recipe-mapping-zh.json"
 import descMappingEn from "@/../content/item-desc-mapping-en.json"
 
 interface RawMaterial {
@@ -51,13 +53,13 @@ const NAME_MAPPINGS: Record<Locale, Record<string, string>> = {
 
 const OBTAIN_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: obtainMappingEn as Record<string, string>,
-  zh: {},
+  zh: obtainMappingZh as Record<string, string>,
   ja: {},
 }
 
 const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: recipeMappingEn as Record<string, string>,
-  zh: {},
+  zh: recipeMappingZh as Record<string, string>,
   ja: {},
 }
 
