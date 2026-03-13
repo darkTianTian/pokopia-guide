@@ -45,6 +45,11 @@
         "id": 154,
         "name": "大型垃圾場",
         "rarity": "common"
+      },
+      {
+        "id": 156,
+        "name": "人孔蓋檢查中",
+        "rarity": "common"
       }
     ]
   }

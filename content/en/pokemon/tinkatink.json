@@ -45,6 +45,11 @@
         "id": 154,
         "name": "Oversized dumping ground",
         "rarity": "common"
+      },
+      {
+        "id": 156,
+        "name": "Sewer hole inspection",
+        "rarity": "common"
       }
     ]
   }

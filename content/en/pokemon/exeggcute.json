@@ -46,6 +46,11 @@
         "id": 59,
         "name": "Shaded beach",
         "rarity": "common"
+      },
+      {
+        "id": 98,
+        "name": "Red tall grass",
+        "rarity": "rare"
       }
     ]
   }

@@ -45,6 +45,11 @@
         "id": 154,
         "name": "粗大ゴミ置き場",
         "rarity": "common"
+      },
+      {
+        "id": 156,
+        "name": "マンホール点検中",
+        "rarity": "common"
       }
     ]
   }
