@@ -37,17 +37,12 @@
     "habitats": [
       {
         "id": 69,
-        "name": "짹짹 먹이",
+        "name": "Chirp-chirp meal",
         "rarity": "very-rare"
       },
       {
-        "id": 79,
-        "name": "리조트 식사 준비",
-        "rarity": "rare"
-      },
-      {
         "id": 87,
-        "name": "용광로 스팟",
+        "name": "Furnace Spot",
         "rarity": "rare"
       }
     ]

@@ -3,7 +3,6 @@ import path from "path"
 import * as cheerio from "cheerio"
 import { S3Client, PutObjectCommand, HeadObjectCommand } from "@aws-sdk/client-s3"
 import dotenv from "dotenv"
-import { POKEAPI_NAME_MAP } from "./pokopia-dex.mjs"
 
 dotenv.config()
 
@@ -79,6 +78,12 @@ const GAMEWITH_SKILL_MAP = {
   "コレクター": "appraise",
   "しゅうのう": "storage",
   "ばくはつ": "explode",
+  "かんてい": "appraise",
+  "はっこう": "illuminate",
+  "くいしんぼ": "eat",
+  "ペイント": "paint",
+  "へんしん": "transform",
+  "レアもの": "rarify",
 }
 
 const GAMEWITH_TYPE_MAP = {
@@ -106,7 +111,7 @@ const VALID_SPECIALTIES = new Set([
   "bulldoze", "trade", "generate", "explode", "hype", "gather", "paint",
   "eat", "teleport", "illuminate", "transform", "recycle", "appraise",
   "litter", "sing", "cool", "spark", "psychic", "dig", "cut", "swim",
-  "yawn", "gather honey", "dream island", "storage",
+  "yawn", "gather honey", "dream island", "storage", "rarify",
 ])
 
 // Normalize typos/aliases from Serebii/Game8 to valid keys
@@ -148,7 +153,6 @@ const args = process.argv.slice(2)
 const FORCE = args.includes("--force")
 const WATCH = args.includes("--watch")
 const DRY_RUN = args.includes("--dry-run")
-const UPLOAD_IMAGES_ONLY = args.includes("--upload-images")
 const intervalArg = args.find((a) => a.startsWith("--interval"))
 const INTERVAL_MIN = intervalArg ? parseInt(intervalArg.split("=")[1] || args[args.indexOf("--interval") + 1] || "30", 10) : 30
 
@@ -172,44 +176,6 @@ async function uploadToR2(key, buffer, contentType) {
       ContentType: contentType,
     })
   )
-}
-
-async function uploadPokemonImage(slug) {
-  const imageKey = `pokemon/${slug}.png`
-  const exists = await r2ObjectExists(imageKey)
-  if (exists) return true
-
-  // Use PokeAPI slug-based endpoint for sprite URL
-  const apiName = POKEAPI_NAME_MAP[slug] || slug
-  let spriteId
-  try {
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${apiName}`)
-    if (!res.ok) return false
-    const data = await res.json()
-    spriteId = data.id
-  } catch {
-    return false
-  }
-
-  // Try HOME sprite first, then official artwork
-  const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${spriteId}.png`
-  const fallbackUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${spriteId}.png`
-
-  for (const url of [spriteUrl, fallbackUrl]) {
-    try {
-      const res = await fetch(url)
-      if (!res.ok) continue
-      const buffer = Buffer.from(await res.arrayBuffer())
-      await uploadToR2(imageKey, buffer, "image/png")
-      console.log(`  Uploaded image: ${slug}.png`)
-      return true
-    } catch {
-      continue
-    }
-  }
-
-  console.log(`  No image found for ${slug}`)
-  return false
 }
 
 // --- Helpers ---
@@ -989,54 +955,6 @@ function getLocalizedHabitatName(habitat, locale, mappings) {
   return habitat.name
 }
 
-// --- Evolution Data ---
-
-// We'll read evolution info from PokeAPI species data (cached)
-const EVOLUTION_CACHE = new Map()
-
-async function getEvolutionData(slug) {
-  if (EVOLUTION_CACHE.has(slug)) return EVOLUTION_CACHE.get(slug)
-
-  try {
-    const apiName = POKEAPI_NAME_MAP[slug] || slug
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${apiName}`)
-    if (!res.ok) return { evolvesFrom: null, evolvesTo: null }
-    const species = await res.json()
-
-    const evolvesFrom = species.evolves_from_species
-      ? species.evolves_from_species.name
-      : null
-
-    // Get evolution chain for evolvesTo
-    let evolvesTo = null
-    if (species.evolution_chain?.url) {
-      const chainRes = await fetch(species.evolution_chain.url)
-      if (chainRes.ok) {
-        const chain = await chainRes.json()
-        const evolvesToNames = findEvolvesTo(chain.chain, slug)
-        if (evolvesToNames.length > 0) evolvesTo = evolvesToNames
-      }
-    }
-
-    const result = { evolvesFrom, evolvesTo }
-    EVOLUTION_CACHE.set(slug, result)
-    return result
-  } catch {
-    return { evolvesFrom: null, evolvesTo: null }
-  }
-}
-
-function findEvolvesTo(chain, targetSlug) {
-  if (chain.species.name === targetSlug) {
-    return chain.evolves_to.map((e) => e.species.name)
-  }
-  for (const next of chain.evolves_to) {
-    const found = findEvolvesTo(next, targetSlug)
-    if (found.length > 0) return found
-  }
-  return []
-}
-
 // --- Main Merge Logic ---
 
 function mergeHabitats(existing, scraped) {
@@ -1136,58 +1054,7 @@ function mergePokopiaData(existingPokopia, serebiiDetail, game8Data, serebiiList
   }
 }
 
-// --- New Pokemon: fetch from PokeAPI ---
 
-async function fetchNewPokemonBase(slug, dexNumber) {
-  const POKEAPI_BASE = "https://pokeapi.co/api/v2"
-  const apiName = POKEAPI_NAME_MAP[slug] || slug
-
-  const speciesRes = await fetch(`${POKEAPI_BASE}/pokemon-species/${apiName}`)
-  if (!speciesRes.ok) {
-    throw new Error(`PokeAPI species not found for ${apiName} (${speciesRes.status})`)
-  }
-  const speciesData = await speciesRes.json()
-
-  const pokemonRes = await fetch(`${POKEAPI_BASE}/pokemon/${speciesData.id}`)
-  if (!pokemonRes.ok) {
-    throw new Error(`PokeAPI pokemon not found for ${speciesData.id}`)
-  }
-  const pokemonData = await pokemonRes.json()
-
-  function getName(lang) {
-    const entry = speciesData.names.find((n) => n.language.name === lang)
-    return entry?.name ?? speciesData.name
-  }
-
-  const types = pokemonData.types
-    .sort((a, b) => a.slot - b.slot)
-    .map((t) => t.type.name)
-
-  const imageUrl = `${process.env.R2_PUBLIC_URL || "https://assets.pokopiaguide.com"}/pokemon/${slug}.png`
-
-  const result = {}
-
-  for (const locale of LOCALES) {
-    const name =
-      locale === "en"
-        ? getName("en")
-        : locale === "zh"
-          ? getName("zh-hant") || getName("zh-hans")
-          : locale === "ko"
-            ? getName("ko")
-            : getName("ja")
-
-    result[locale] = {
-      id: dexNumber,
-      slug,
-      name,
-      types,
-      image: imageUrl,
-    }
-  }
-
-  return result
-}
 
 // --- Habitat Image Downloader ---
 
@@ -1863,36 +1730,7 @@ async function downloadMissingItemIcons() {
 
 // --- Main ---
 
-async function uploadAllMissingImages() {
-  console.log("Uploading missing images...")
-  let uploaded = 0
-  let skipped = 0
-  const dir = path.join(CONTENT_DIR, "en", "pokemon")
-  const files = await fs.readdir(dir)
-  for (const file of files) {
-    if (!file.endsWith(".json")) continue
-    const slug = file.replace(".json", "")
-    const data = await loadJson(path.join(dir, file))
-    if (!data) continue
-    const imageKey = `pokemon/${slug}.png`
-    const exists = await r2ObjectExists(imageKey)
-    if (exists) {
-      skipped++
-      continue
-    }
-    const success = await uploadPokemonImage(slug)
-    if (success) uploaded++
-    await sleep(100)
-  }
-  console.log(`\nImage upload complete: ${uploaded} uploaded, ${skipped} already existed`)
-}
-
 async function run() {
-  if (UPLOAD_IMAGES_ONLY) {
-    await uploadAllMissingImages()
-    return
-  }
-
   const syncState = await loadSyncState()
   const habitatMappings = await loadHabitatMappings()
 
@@ -2061,7 +1899,6 @@ async function run() {
   // Stats tracking
   let updated = 0
   let skipped = 0
-  let newPokemon = 0
   let errors = 0
   const newHabitats = []
   const habitatIdToImageUrl = new Map() // habitat ID → Game8 image URL
@@ -2080,11 +1917,9 @@ async function run() {
 
   console.log(`\nProcessing ${toProcess.length} Pokémon (skipped ${skipped} already complete)`)
 
-  // Phase 1: Concurrent fetching — Serebii details, new Pokemon base data, evolution data, image uploads
+  // Phase 1: Fetch Serebii detail pages concurrently
   const SEREBII_CONCURRENCY = 5
-  const POKEAPI_CONCURRENCY = 10
 
-  // 1a. Fetch all Serebii detail pages concurrently
   const serebiiDetailMap = new Map()
   const serebiiToFetch = toProcess.filter((p) => p.serebiiEntry?.detailUrl)
   console.log(`Fetching ${serebiiToFetch.length} Serebii detail pages (concurrency: ${SEREBII_CONCURRENCY})...`)
@@ -2101,74 +1936,6 @@ async function run() {
     },
     SEREBII_CONCURRENCY
   )
-
-  // 1b. Fetch new Pokemon base data + evolution data concurrently
-  const newPokemonToFetch = toProcess.filter((p) => !existingPokemon.get(p.slug)?.en)
-  if (newPokemonToFetch.length > 0) {
-    console.log(`Fetching ${newPokemonToFetch.length} new Pokémon from PokeAPI...`)
-    await pMap(
-      newPokemonToFetch,
-      async ({ slug, meta }) => {
-        const { dexNumber, name } = meta
-        if (!dexNumber) {
-          console.log(`  Skipping new Pokémon without dex number: ${name}`)
-          errors++
-          return
-        }
-        try {
-          const baseData = await fetchNewPokemonBase(slug, dexNumber)
-          for (const locale of LOCALES) {
-            const dir = path.join(CONTENT_DIR, locale, "pokemon")
-            await fs.mkdir(dir, { recursive: true })
-          }
-          existingPokemon.set(slug, {
-            ...existingPokemon.get(slug),
-            ...Object.fromEntries(LOCALES.map((l) => [l, baseData[l]])),
-          })
-          newPokemon++
-        } catch (err) {
-          console.error(`  Failed base data for ${name}: ${err.message}`)
-          errors++
-        }
-      },
-      POKEAPI_CONCURRENCY
-    )
-  }
-
-  // 1c. Fetch evolution data concurrently (all in --force mode, otherwise only missing)
-  const needEvolution = toProcess.filter((p) => {
-    if (FORCE) return true
-    const en = existingPokemon.get(p.slug)?.en
-    return !en?.pokopia?.evolvesFrom && !en?.pokopia?.evolvesTo
-  })
-  const evolutionMap = new Map()
-  if (needEvolution.length > 0) {
-    console.log(`Fetching evolution data for ${needEvolution.length} Pokémon...`)
-    await pMap(
-      needEvolution,
-      async ({ slug }) => {
-        try {
-          const evo = await getEvolutionData(slug)
-          evolutionMap.set(slug, evo)
-        } catch {
-          // Ignore evolution errors
-        }
-      },
-      POKEAPI_CONCURRENCY
-    )
-  }
-
-  // 1d. Upload images concurrently
-  if (!DRY_RUN) {
-    console.log(`Uploading missing images for ${toProcess.length} Pokémon...`)
-    await pMap(
-      toProcess,
-      async ({ slug }) => {
-        await uploadPokemonImage(slug)
-      },
-      POKEAPI_CONCURRENCY
-    )
-  }
 
   // Phase 2: Merge data and collect EN habitat names
   console.log(`\nMerging data...`)
@@ -2235,19 +2002,6 @@ async function run() {
       }
     }
 
-    // Override evolution data (PokeAPI is authoritative when available)
-    const evoFromApi = evolutionMap.get(slug)
-    const evolutionData = evoFromApi || {
-      evolvesFrom: existingEn?.pokopia?.evolvesFrom ?? null,
-      evolvesTo: existingEn?.pokopia?.evolvesTo ?? null,
-    }
-    if (evoFromApi || merged.evolvesFrom === null) {
-      merged.evolvesFrom = evolutionData.evolvesFrom
-    }
-    if (evoFromApi || merged.evolvesTo === null) {
-      merged.evolvesTo = evolutionData.evolvesTo
-    }
-
     // Check for new habitats not in our mapping
     for (const habitat of merged.habitats) {
       const idStr = String(habitat.id)
@@ -2282,7 +2036,6 @@ async function run() {
   // Manually-verified habitat entries that sources sometimes omit.
   // Key = pokemon slug, value = array of habitat objects to always include.
   const POKEMON_HABITAT_PRESERVES = {
-    snorlax: [{ id: 93, name: "Gourmet's altar", rarity: "common" }],
     toxtricity: [{ id: 190, name: "Low-Key Rock Stage", rarity: "common" }],
   }
 
@@ -2595,7 +2348,6 @@ async function run() {
       game8Count: game8Data.size,
       updated,
       skipped,
-      newPokemon,
       errors,
     },
   }
@@ -2609,7 +2361,6 @@ async function run() {
   console.log(`Unified total: ${allSlugs.size} (Serebii: ${serebiiList.length}, GameWith: ${gameWithData.size}, Game8: ${game8Data.size})`)
   console.log(`Updated: ${updated}`)
   console.log(`Skipped (already complete): ${skipped}`)
-  console.log(`New Pokémon added: ${newPokemon}`)
   console.log(`Errors: ${errors}`)
   if (newHabitats.length > 0) {
     console.log(`\nNew habitats needing translation:`)

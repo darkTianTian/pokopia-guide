@@ -79,7 +79,7 @@
     "legendary": "Legendary",
     "mythical": "Mythical",
     "event": "Event",
-    "tabAll": "All Pok\u00e9mon",
+    "tabAll": "All Pokémon",
     "tabEvent": "Event",
     "browseByType": "Browse by Type",
     "browseBySpecialty": "Browse by Specialty",
@@ -252,7 +252,9 @@
     "eat": "Eat",
     "hype": "Hype",
     "transform": "Transform",
-    "rarify": "Rarify"
+    "rarify": "Rarify",
+    "dream island": "Dream Island",
+    "gather honey": "Gather Honey"
   },
   "favorites": {
     "bitter flavors": "Bitter Flavors",

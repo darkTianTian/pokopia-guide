@@ -8,7 +8,8 @@
   "image": "https://assets.pokopiaguide.com/pokemon/snorlax.png",
   "pokopia": {
     "specialties": [
-      "eat"
+      "bulldoze",
+      "trade"
     ],
     "favorites": [
       "soft stuff",
@@ -41,11 +42,6 @@
       {
         "id": 48,
         "name": "美好的古董",
-        "rarity": "common"
-      },
-      {
-        "id": 93,
-        "name": "美食供品",
         "rarity": "common"
       }
     ]
