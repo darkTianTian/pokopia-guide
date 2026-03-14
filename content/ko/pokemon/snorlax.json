@@ -42,6 +42,11 @@
         "id": 48,
         "name": "멋진 골동품",
         "rarity": "common"
+      },
+      {
+        "id": 93,
+        "name": "미식가의 제단",
+        "rarity": "common"
       }
     ]
   }

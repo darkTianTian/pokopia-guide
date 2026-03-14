@@ -31,6 +31,11 @@
         "id": 189,
         "name": "Amped rock stage",
         "rarity": "common"
+      },
+      {
+        "id": 190,
+        "name": "로우한 록 스테이지",
+        "rarity": "common"
       }
     ]
   }

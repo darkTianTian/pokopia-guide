@@ -42,6 +42,11 @@
         "id": 48,
         "name": "Good old-fashioned antiques",
         "rarity": "common"
+      },
+      {
+        "id": 93,
+        "name": "Gourmet's altar",
+        "rarity": "common"
       }
     ]
   }
