@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 47,
-        "name": "Tree-shaded snoozing Snorlax",
+        "name": "나무 그늘의 잠자는 잠만보",
         "rarity": "rare"
       },
       {
         "id": 48,
-        "name": "Good old-fashioned antiques",
+        "name": "멋진 골동품",
         "rarity": "common"
       }
     ]

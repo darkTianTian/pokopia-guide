@@ -2039,6 +2039,13 @@ async function run() {
     toxtricity: [{ id: 190, name: "Low-Key Rock Stage", rarity: "common" }],
   }
 
+  // Manually-verified habitat IDs that sources incorrectly list.
+  // Key = pokemon slug, value = Set of habitat IDs to always exclude.
+  const POKEMON_HABITAT_EXCLUDES = {
+    snorlax: new Set([93]),    // #143 Snorlax does NOT appear in habitat #93
+    blaziken: new Set([79]),   // #257 Blaziken does NOT appear in habitat #79
+  }
+
   // Phase 3: Write all files (deferred so EN habitat names are fully built)
   if (!DRY_RUN) {
     console.log(`\nWriting ${mergedResults.length} Pokémon files...`)
@@ -2047,11 +2054,17 @@ async function run() {
         const pokemonData = existingPokemon.get(slug)?.[locale]
         if (!pokemonData) continue
 
+        // Exclude manually-verified incorrect habitats
+        const excludedIds = POKEMON_HABITAT_EXCLUDES[slug]
+        const filteredHabitats = excludedIds
+          ? merged.habitats.filter((h) => !excludedIds.has(h.id))
+          : merged.habitats
+
         // Merge in manually-preserved habitats that sources may omit
         const preservedHabitats = POKEMON_HABITAT_PRESERVES[slug] || []
-        const existingIds = new Set(merged.habitats.map((h) => h.id))
+        const existingIds = new Set(filteredHabitats.map((h) => h.id))
         const mergedHabitats = [
-          ...merged.habitats,
+          ...filteredHabitats,
           ...preservedHabitats.filter((h) => !existingIds.has(h.id)),
         ]
 
@@ -2132,11 +2145,17 @@ async function run() {
         const pokemonData = locales[locale]
         if (!pokemonData) continue
 
+        // Exclude manually-verified incorrect habitats
+        const excludedIds3b = POKEMON_HABITAT_EXCLUDES[slug]
+        const filteredHabitats3b = excludedIds3b
+          ? updatedPokopia.habitats.filter((h) => !excludedIds3b.has(h.id))
+          : updatedPokopia.habitats
+
         // Merge in manually-preserved habitats that sources may omit
         const preservedHabitats = POKEMON_HABITAT_PRESERVES[slug] || []
-        const existingIds3b = new Set(updatedPokopia.habitats.map((h) => h.id))
+        const existingIds3b = new Set(filteredHabitats3b.map((h) => h.id))
         const mergedHabitats3b = [
-          ...updatedPokopia.habitats,
+          ...filteredHabitats3b,
           ...preservedHabitats.filter((h) => !existingIds3b.has(h.id)),
         ]
 
