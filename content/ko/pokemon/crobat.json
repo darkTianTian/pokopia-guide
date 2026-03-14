@@ -34,12 +34,12 @@
     "habitats": [
       {
         "id": 52,
-        "name": "Elevated yellow tall grass",
+        "name": "고지대 노란 풀숲",
         "rarity": "very-rare"
       },
       {
         "id": 65,
-        "name": "Trash disposal site",
+        "name": "쓰레기 처리장",
         "rarity": "rare"
       }
     ]

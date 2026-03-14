@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 52,
-        "name": "Elevated yellow tall grass",
+        "name": "고지대 노란 풀숲",
         "rarity": "common"
       },
       {
         "id": 58,
-        "name": "Windy Flower Bed",
+        "name": "바람의 꽃밭",
         "rarity": "common"
       }
     ]

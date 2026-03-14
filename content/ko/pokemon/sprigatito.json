@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 138,
-        "name": "Tree-shaded pink tall grass",
+        "name": "나무 그늘의 분홍 풀숲",
         "rarity": "common"
       },
       {
         "id": 155,
-        "name": "Interrogation desk",
+        "name": "심문 데스크",
         "rarity": "common"
       }
     ]

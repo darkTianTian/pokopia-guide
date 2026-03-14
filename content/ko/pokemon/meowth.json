@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 61,
-        "name": "Resting spot",
+        "name": "쉼터",
         "rarity": "common"
       },
       {
         "id": 91,
-        "name": "Working the register",
+        "name": "계산대에서 일하기",
         "rarity": "common"
       }
     ]

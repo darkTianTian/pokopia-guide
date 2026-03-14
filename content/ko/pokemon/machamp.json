@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 103,
-        "name": "Grassy training field",
+        "name": "풀숲 훈련장",
         "rarity": "rare"
       },
       {
         "id": 117,
-        "name": "Clink-clang iron construction",
+        "name": "쨍그랑 철골 공사",
         "rarity": "rare"
       }
     ]

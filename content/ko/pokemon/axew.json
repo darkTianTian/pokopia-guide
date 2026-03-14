@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 29,
-        "name": "Lumberjack's workplace",
+        "name": "벌목꾼의 작업장",
         "rarity": "common"
       },
       {
         "id": 44,
-        "name": "Crazy log handicrafts",
+        "name": "통나무 따뜻함",
         "rarity": "common"
       }
     ]

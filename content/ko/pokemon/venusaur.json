@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 11,
-        "name": "Field of Flowers",
+        "name": "꽃이 가득한 풍경",
         "rarity": "very-rare"
       },
       {
         "id": 46,
-        "name": "Garden Terrace",
+        "name": "정원 테라스",
         "rarity": "rare"
       }
     ]

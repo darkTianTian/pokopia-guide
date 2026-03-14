@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 98,
-        "name": "Red tall grass",
+        "name": "빨간 풀숲",
         "rarity": "common"
       },
       {
         "id": 128,
-        "name": "Music and magazines",
+        "name": "음악과 잡지",
         "rarity": "common"
       }
     ]

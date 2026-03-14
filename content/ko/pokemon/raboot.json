@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 113,
-        "name": "Open-air bath",
+        "name": "노천탕",
         "rarity": "common"
       },
       {
         "id": 130,
-        "name": "Refreshing locker room",
+        "name": "상쾌한 라커룸",
         "rarity": "common"
       }
     ]

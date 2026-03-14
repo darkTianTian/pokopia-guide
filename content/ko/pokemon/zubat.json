@@ -35,12 +35,12 @@
     "habitats": [
       {
         "id": 51,
-        "name": "Tree-shaded Yellow tall grass",
+        "name": "나무 그늘의 노란 풀숲",
         "rarity": "common"
       },
       {
         "id": 66,
-        "name": "Park bench",
+        "name": "공원 벤치",
         "rarity": "common"
       }
     ]

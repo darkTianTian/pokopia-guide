@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 74,
-        "name": "Night festival venue",
+        "name": "밤 축제 회장",
         "rarity": "common"
       },
       {
         "id": 77,
-        "name": "Knitting station",
+        "name": "뜨개질 스테이션",
         "rarity": "rare"
       }
     ]

@@ -35,12 +35,12 @@
     "habitats": [
       {
         "id": 9,
-        "name": "Tree-shaded flower bed",
+        "name": "나무 그늘의 꽃밭",
         "rarity": "common"
       },
       {
         "id": 41,
-        "name": "Rain Dance site",
+        "name": "비바라기 장소",
         "rarity": "common"
       }
     ]

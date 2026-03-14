@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 108,
-        "name": "Toil in the soil",
+        "name": "농사는 힘들어",
         "rarity": "rare"
       },
       {
         "id": 110,
-        "name": "Mossy rest spot",
+        "name": "이끼가 가득",
         "rarity": "very-rare"
       }
     ]

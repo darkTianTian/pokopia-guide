@@ -33,12 +33,12 @@
     "habitats": [
       {
         "id": 104,
-        "name": "Graceful flower bed",
+        "name": "우아한 꽃밭",
         "rarity": "very-rare"
       },
       {
         "id": 131,
-        "name": "Bronze landmark",
+        "name": "동상 명소",
         "rarity": "rare"
       }
     ]

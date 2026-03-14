@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 210,
-        "name": "Yellow Carpet",
+        "name": "노란 카펫",
         "rarity": "rare"
       },
       {
         "id": 211,
-        "name": "Field-Trip Friends",
+        "name": "소풍 친구",
         "rarity": "common"
       }
     ],

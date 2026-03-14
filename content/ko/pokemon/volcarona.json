@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 105,
-        "name": "Tree-shaded graceful flower bed",
+        "name": "나무 그늘의 우아한 꽃밭",
         "rarity": "very-rare"
       },
       {
         "id": 115,
-        "name": "Piping-hot lava",
+        "name": "펄펄 끓는 용암",
         "rarity": "rare"
       }
     ]

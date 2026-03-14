@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 75,
-        "name": "Changing area",
+        "name": "탈의실",
         "rarity": "common"
       },
       {
         "id": 76,
-        "name": "Private makeup stand",
+        "name": "프라이빗 화장대",
         "rarity": "common"
       }
     ]

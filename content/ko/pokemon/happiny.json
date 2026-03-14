@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 82,
-        "name": "Alarm clock sleep zone",
+        "name": "알람시계 수면 존",
         "rarity": "common"
       },
       {
         "id": 91,
-        "name": "Working the register",
+        "name": "계산대에서 일하기",
         "rarity": "common"
       }
     ]

@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 1,
-        "name": "Tall Grass",
+        "name": "초록 풀숲",
         "rarity": "very-rare"
       },
       {
         "id": 40,
-        "name": "Berry-feast Campsite",
+        "name": "나무열매 축제 캠프",
         "rarity": "rare"
       }
     ]

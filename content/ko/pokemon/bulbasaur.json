@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 1,
-        "name": "Tall Grass",
+        "name": "초록 풀숲",
         "rarity": "common"
       },
       {
         "id": 22,
-        "name": "Bench with greenery",
+        "name": "초록 벤치",
         "rarity": "common"
       }
     ]

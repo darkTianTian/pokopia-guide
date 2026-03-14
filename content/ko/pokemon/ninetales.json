@@ -35,12 +35,12 @@
     "habitats": [
       {
         "id": 142,
-        "name": "Fluffy flower bed",
+        "name": "포슬포슬 꽃밭",
         "rarity": "rare"
       },
       {
         "id": 180,
-        "name": "Nine flames",
+        "name": "아홉 불꽃",
         "rarity": "common"
       }
     ]
