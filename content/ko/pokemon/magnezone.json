@@ -1,0 +1,50 @@
+{
+  "id": 29,
+  "slug": "magnezone",
+  "name": "자포코일",
+  "types": [
+    "electric",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/magnezone.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "recycle"
+    ],
+    "favorites": [
+      "electronics",
+      "metal stuff",
+      "luxury",
+      "gatherings",
+      "hard stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "magneton",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 64,
+        "name": "Trash can central",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 85,
+        "name": "Mini Game Corner",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

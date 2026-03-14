@@ -1,0 +1,46 @@
+{
+  "id": 231,
+  "slug": "ralts",
+  "name": "랄토스",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/ralts.png",
+  "pokopia": {
+    "specialties": [
+      "teleport"
+    ],
+    "favorites": [
+      "strange stuff",
+      "cute stuff",
+      "healing",
+      "watching stuff",
+      "symbols",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "kirlia"
+    ],
+    "habitats": [
+      {
+        "id": 159,
+        "name": "Study Area",
+        "rarity": "common"
+      }
+    ]
+  }
+}

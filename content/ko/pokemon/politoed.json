@@ -1,0 +1,54 @@
+{
+  "id": 212,
+  "slug": "politoed",
+  "name": "왕구리",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/politoed.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "favorites": [
+      "lots of water",
+      "play spaces",
+      "noisy stuff",
+      "gatherings",
+      "group activities",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "poliwhirl",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 106,
+        "name": "Hydrated graceful flower bed",
+        "rarity": "rare"
+      },
+      {
+        "id": 107,
+        "name": "Flower garden stump stage",
+        "rarity": "rare"
+      },
+      {
+        "id": 114,
+        "name": "Harmonious hot spring",
+        "rarity": "common"
+      }
+    ]
+  }
+}

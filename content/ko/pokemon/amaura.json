@@ -1,0 +1,46 @@
+{
+  "id": 278,
+  "slug": "amaura",
+  "name": "아마루스",
+  "types": [
+    "rock",
+    "ice"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/amaura.png",
+  "pokopia": {
+    "specialties": [
+      "crush"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "shiny stuff",
+      "group activities",
+      "containers",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "aurorus"
+    ],
+    "habitats": [
+      {
+        "id": 200,
+        "name": "Sail Fossil display",
+        "rarity": "common"
+      }
+    ]
+  }
+}

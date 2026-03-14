@@ -1,0 +1,45 @@
+{
+  "id": 201,
+  "slug": "armarouge",
+  "name": "카디나르마",
+  "types": [
+    "fire",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/armarouge.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "trade"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "strange stuff",
+      "exercise",
+      "luxury",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charcadet",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 192,
+        "name": "Auspicious knight's shrine",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 184,
+  "slug": "volcarona",
+  "name": "불카모스",
+  "types": [
+    "bug",
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/volcarona.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "litter"
+    ],
+    "favorites": [
+      "lots of nature",
+      "lots of fire",
+      "letter and words",
+      "wooden stuff",
+      "symbols",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "larvesta",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 105,
+        "name": "Tree-shaded graceful flower bed",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 115,
+        "name": "Piping-hot lava",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

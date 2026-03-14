@@ -1,0 +1,49 @@
+{
+  "id": 226,
+  "slug": "typhlosion",
+  "name": "블레이범",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/typhlosion.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "trade"
+    ],
+    "favorites": [
+      "lots of fire",
+      "fabric",
+      "slender objects",
+      "metal stuff",
+      "rides",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "quilava",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 150,
+        "name": "Fireplace nap spot",
+        "rarity": "rare"
+      },
+      {
+        "id": 183,
+        "name": "Top pop",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": 194,
+  "slug": "carkol",
+  "name": "탄차곤",
+  "types": [
+    "rock",
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/carkol.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "gather"
+    ],
+    "favorites": [
+      "stone stuff",
+      "lots of fire",
+      "hard stuff",
+      "metal stuff",
+      "rides",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "rolycoly",
+    "evolvesTo": [
+      "coalossal"
+    ],
+    "habitats": [
+      {
+        "id": 132,
+        "name": "Railroad crossing",
+        "rarity": "common"
+      }
+    ]
+  }
+}

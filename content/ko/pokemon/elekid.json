@@ -1,0 +1,45 @@
+{
+  "id": 103,
+  "slug": "elekid",
+  "name": "에레키드",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/elekid.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "favorites": [
+      "electronics",
+      "glass stuff",
+      "cute stuff",
+      "round stuff",
+      "spinning stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "electabuzz"
+    ],
+    "habitats": [
+      {
+        "id": 84,
+        "name": "Vending machine set",
+        "rarity": "common"
+      }
+    ]
+  }
+}

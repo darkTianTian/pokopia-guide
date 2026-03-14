@@ -1,0 +1,41 @@
+{
+  "id": 244,
+  "slug": "dusknoir",
+  "name": "야느와르몽",
+  "types": [
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/dusknoir.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "trade"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "rides",
+      "group activities",
+      "containers",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dusclops",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 153,
+        "name": "Trash site TV",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

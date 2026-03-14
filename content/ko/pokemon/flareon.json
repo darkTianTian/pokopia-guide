@@ -1,0 +1,43 @@
+{
+  "id": 283,
+  "slug": "flareon",
+  "name": "부스터",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/flareon.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "wooden stuff",
+      "cute stuff",
+      "metal stuff",
+      "rides",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 204,
+        "name": "Burning-hot spice",
+        "rarity": "common"
+      }
+    ]
+  }
+}

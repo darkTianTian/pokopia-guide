@@ -1,0 +1,49 @@
+{
+  "id": 215,
+  "slug": "alakazam",
+  "name": "후딘",
+  "types": [
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/alakazam.png",
+  "pokopia": {
+    "specialties": [
+      "teleport",
+      "trade"
+    ],
+    "favorites": [
+      "strange stuff",
+      "wobbly stuff",
+      "metal stuff",
+      "letters and words",
+      "watching stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kadabra",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 151,
+        "name": "Surging psychic power",
+        "rarity": "rare"
+      },
+      {
+        "id": 168,
+        "name": "Experiment Space",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": 232,
+  "slug": "kirlia",
+  "name": "킬리아",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/kirlia.png",
+  "pokopia": {
+    "specialties": [
+      "teleport",
+      "trade"
+    ],
+    "favorites": [
+      "strange stuff",
+      "cute stuff",
+      "healing",
+      "watching stuff",
+      "symbols",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ralts",
+    "evolvesTo": [
+      "gardevoir",
+      "gallade"
+    ],
+    "habitats": [
+      {
+        "id": 159,
+        "name": "Study Area",
+        "rarity": "rare"
+      },
+      {
+        "id": 162,
+        "name": "Moisturizing makeup stand",
+        "rarity": "common"
+      }
+    ]
+  }
+}

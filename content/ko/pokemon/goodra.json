@@ -1,0 +1,41 @@
+{
+  "id": 76,
+  "slug": "goodra",
+  "name": "미끄래곤",
+  "types": [
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/goodra.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "luxury",
+      "exercise",
+      "cleanliness",
+      "healing",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "sliggoo",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 45,
+        "name": "Very-berry space",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

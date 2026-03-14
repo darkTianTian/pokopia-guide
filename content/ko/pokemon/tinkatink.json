@@ -1,0 +1,51 @@
+{
+  "id": 268,
+  "slug": "tinkatink",
+  "name": "어리짱",
+  "types": [
+    "fairy",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tinkatink.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "favorites": [
+      "cute stuff",
+      "metal stuff",
+      "construction",
+      "looks like food",
+      "exercise",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "tinkatuff"
+    ],
+    "habitats": [
+      {
+        "id": 28,
+        "name": "Large luggage carrier",
+        "rarity": "common"
+      },
+      {
+        "id": 154,
+        "name": "Oversized dumping ground",
+        "rarity": "common"
+      }
+    ]
+  }
+}

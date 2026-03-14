@@ -1,0 +1,47 @@
+{
+  "id": 83,
+  "slug": "crobat",
+  "name": "크로뱃",
+  "types": [
+    "poison",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/crobat.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "search"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "nice breezes",
+      "wooden stuff",
+      "garbage",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "golbat",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 52,
+        "name": "Elevated yellow tall grass",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 65,
+        "name": "Trash disposal site",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

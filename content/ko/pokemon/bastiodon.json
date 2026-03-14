@@ -1,0 +1,45 @@
+{
+  "id": 275,
+  "slug": "bastiodon",
+  "name": "바리톱스",
+  "types": [
+    "rock",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/bastiodon.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "litter"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "metal stuff",
+      "luxury",
+      "exercise",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "shieldon",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 197,
+        "name": "Shield Fossil display",
+        "rarity": "common"
+      }
+    ]
+  }
+}

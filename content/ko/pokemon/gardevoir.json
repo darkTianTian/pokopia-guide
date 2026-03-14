@@ -1,0 +1,50 @@
+{
+  "id": 233,
+  "slug": "gardevoir",
+  "name": "가디안",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gardevoir.png",
+  "pokopia": {
+    "specialties": [
+      "teleport",
+      "trade"
+    ],
+    "favorites": [
+      "strange stuff",
+      "luxury",
+      "healing",
+      "watching stuff",
+      "symbols",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kirlia",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 162,
+        "name": "Moisturizing makeup stand",
+        "rarity": "rare"
+      },
+      {
+        "id": 163,
+        "name": "Mini library",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

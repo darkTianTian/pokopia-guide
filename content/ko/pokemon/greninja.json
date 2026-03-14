@@ -1,0 +1,50 @@
+{
+  "id": 253,
+  "slug": "greninja",
+  "name": "개굴닌자",
+  "types": [
+    "water",
+    "dark"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/greninja.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "chop"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "cleanliness",
+      "shiny stuff",
+      "exercise",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "frogadier",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 139,
+        "name": "Hydrated pink tall grass",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 173,
+        "name": "Prank button",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

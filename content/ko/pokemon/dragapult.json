@@ -1,0 +1,45 @@
+{
+  "id": 262,
+  "slug": "dragapult",
+  "name": "드래펄트",
+  "types": [
+    "dragon",
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/dragapult.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "search"
+    ],
+    "favorites": [
+      "lots of fire",
+      "spooky stuff",
+      "rides",
+      "strange stuff",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "drakloak",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 167,
+        "name": "Office storeroom",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

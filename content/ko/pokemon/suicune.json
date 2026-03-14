@@ -1,0 +1,30 @@
+{
+  "id": 292,
+  "slug": "suicune",
+  "name": "스이쿤",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/suicune.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "cleanliness",
+      "watching stuff",
+      "healing",
+      "sour flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "dream-island",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "Use Eevee Doll to encounter in Dream Island underground. Tip: Only 1 doll type per day on Dream Island (unlimited visits); look for glowing spots inside walls"
+  }
+}

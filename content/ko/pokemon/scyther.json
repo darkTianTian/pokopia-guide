@@ -1,0 +1,47 @@
+{
+  "id": 42,
+  "slug": "scyther",
+  "name": "스라크",
+  "types": [
+    "bug",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/scyther.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "favorites": [
+      "lots of nature",
+      "nice breezes",
+      "wooden stuff",
+      "sharp stuff",
+      "exercise",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "scizor",
+      "kleavor"
+    ],
+    "habitats": [
+      {
+        "id": 2,
+        "name": "Tree-shaded  tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

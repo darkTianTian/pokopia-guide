@@ -1,0 +1,29 @@
+{
+  "id": 297,
+  "slug": "lugia",
+  "name": "루기아",
+  "types": [
+    "psychic",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/lugia.png",
+  "pokopia": {
+    "specialties": [],
+    "favorites": [
+      "strange stuff",
+      "nice breezes",
+      "lots of water",
+      "ocean vibes",
+      "symbols",
+      "dry flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "quest",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "Befriend all 3 legendary birds first. Craft Tidal Bell (5 Rare Pok’Metal + 5 Silver Feather), then ring it while flying in rainy weather. Tip: Feed Moss Snorlax astringent food (Aguav Berry) to increase feather drop rate; turn up volume to hear Ho-Oh/Lugia flying by; use Sunny Doll/Rainy Doll to change weather"
+  }
+}

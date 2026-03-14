@@ -1,0 +1,47 @@
+{
+  "id": 14,
+  "slug": "gloom",
+  "name": "냄새꼬",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gloom.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "favorites": [
+      "lots of nature",
+      "lots of dirt",
+      "soft stuff",
+      "pretty flowers",
+      "garbage",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "oddish",
+    "evolvesTo": [
+      "vileplume",
+      "bellossom"
+    ],
+    "habitats": [
+      {
+        "id": 57,
+        "name": "Tropical vibes",
+        "rarity": "common"
+      }
+    ]
+  }
+}

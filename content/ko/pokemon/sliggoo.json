@@ -1,0 +1,43 @@
+{
+  "id": 75,
+  "slug": "sliggoo",
+  "name": "미끄네일",
+  "types": [
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/sliggoo.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "luxury",
+      "soft stuff",
+      "cleanliness",
+      "healing",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "goomy",
+    "evolvesTo": [
+      "goodra"
+    ],
+    "habitats": [
+      {
+        "id": 4,
+        "name": "Hydrated tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

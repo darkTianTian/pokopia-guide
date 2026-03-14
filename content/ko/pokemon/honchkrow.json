@@ -1,0 +1,47 @@
+{
+  "id": 168,
+  "slug": "honchkrow",
+  "name": "돈크로우",
+  "types": [
+    "dark",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/honchkrow.png",
+  "pokopia": {
+    "specialties": [
+      "fly",
+      "trade"
+    ],
+    "favorites": [
+      "shiny stuff",
+      "nice breezes",
+      "spooky stuff",
+      "letters and words",
+      "glass stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "murkrow",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 102,
+        "name": "Elevated red tall grass",
+        "rarity": "rare"
+      },
+      {
+        "id": 125,
+        "name": "Chirping recital",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": 68,
+  "slug": "litwick",
+  "name": "불켜미",
+  "types": [
+    "ghost",
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/litwick.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "lots of fire",
+      "wobbly stuff",
+      "blocky stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "lampent"
+    ],
+    "habitats": [
+      {
+        "id": 32,
+        "name": "Grave offering",
+        "rarity": "common"
+      },
+      {
+        "id": 33,
+        "name": "Creepy grave offering",
+        "rarity": "common"
+      }
+    ]
+  }
+}

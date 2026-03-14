@@ -9,7 +9,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const locales = ["zh", "ja"] as const
+  const locales = ["zh", "ja", "ko"] as const
   const slugs = getAllHabitatSlugs()
   const results: { locale: string; slug: string }[] = []
 

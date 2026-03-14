@@ -1,0 +1,46 @@
+{
+  "id": 237,
+  "slug": "trapinch",
+  "name": "톱치",
+  "types": [
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/trapinch.png",
+  "pokopia": {
+    "specialties": [
+      "bulldoze",
+      "litter"
+    ],
+    "favorites": [
+      "lots of dirt",
+      "hard stuff",
+      "strange stuff",
+      "watching stuff",
+      "exercise",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "vibrava"
+    ],
+    "habitats": [
+      {
+        "id": 137,
+        "name": "Pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

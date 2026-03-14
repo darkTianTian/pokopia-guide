@@ -30,7 +30,7 @@ const GAMEWITH_URL = "https://gamewith.jp/pocoapokemon/530830"
 const CONTENT_DIR = path.join(process.cwd(), "content")
 const SYNC_STATE_PATH = path.join(CONTENT_DIR, "pokopia-sync-state.json")
 
-const LOCALES = ["en", "zh", "ja"]
+const LOCALES = ["en", "zh", "ja", "ko"]
 
 // Map Serebii time/weather labels to our internal keys
 const TIME_MAP = {
@@ -968,13 +968,15 @@ async function loadHabitatMappings() {
   const en = (await loadJson(path.join(CONTENT_DIR, "habitat-mapping-en.json"))) || {}
   const ja = (await loadJson(path.join(CONTENT_DIR, "habitat-mapping.json"))) || {}
   const zh = (await loadJson(path.join(CONTENT_DIR, "habitat-mapping-zh.json"))) || {}
-  return { en, ja, zh }
+  const ko = (await loadJson(path.join(CONTENT_DIR, "habitat-mapping-ko.json"))) || {}
+  return { en, ja, zh, ko }
 }
 
 async function saveHabitatMappings(mappings) {
   await writeJson(path.join(CONTENT_DIR, "habitat-mapping-en.json"), mappings.en)
   await writeJson(path.join(CONTENT_DIR, "habitat-mapping.json"), mappings.ja)
   await writeJson(path.join(CONTENT_DIR, "habitat-mapping-zh.json"), mappings.zh)
+  await writeJson(path.join(CONTENT_DIR, "habitat-mapping-ko.json"), mappings.ko)
 }
 
 function getLocalizedHabitatName(habitat, locale, mappings) {
@@ -982,6 +984,7 @@ function getLocalizedHabitatName(habitat, locale, mappings) {
   if (locale === "en" && mappings.en[idStr]) return mappings.en[idStr]
   if (locale === "ja" && mappings.ja[idStr]) return mappings.ja[idStr]
   if (locale === "zh" && mappings.zh[idStr]) return mappings.zh[idStr]
+  if (locale === "ko" && mappings.ko[idStr]) return mappings.ko[idStr]
   // Fallback: use whatever name we have
   return habitat.name
 }
@@ -1170,7 +1173,9 @@ async function fetchNewPokemonBase(slug, dexNumber) {
         ? getName("en")
         : locale === "zh"
           ? getName("zh-hant") || getName("zh-hans")
-          : getName("ja")
+          : locale === "ko"
+            ? getName("ko")
+            : getName("ja")
 
     result[locale] = {
       id: dexNumber,
@@ -2041,13 +2046,17 @@ async function run() {
   }
   console.log(`Built EN habitat mapping: ${Object.keys(habitatMappings.en).length} entries (from voting across ${habitatIdToEnVotes.size} habitats)`)
 
-  // Fill ZH mapping with EN names as fallback
+  // Fill ZH and KO mappings with EN names as fallback
   for (const [idStr, enName] of Object.entries(habitatMappings.en)) {
     if (!habitatMappings.zh[idStr]) {
       habitatMappings.zh[idStr] = enName
     }
+    if (!habitatMappings.ko[idStr]) {
+      habitatMappings.ko[idStr] = enName
+    }
   }
   console.log(`ZH habitat mapping: ${Object.keys(habitatMappings.zh).length} entries (after EN fallback fill)`)
+  console.log(`KO habitat mapping: ${Object.keys(habitatMappings.ko).length} entries (after EN fallback fill)`)
 
   // Stats tracking
   let updated = 0

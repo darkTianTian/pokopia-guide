@@ -1,0 +1,46 @@
+{
+  "id": 249,
+  "slug": "servine",
+  "name": "샤비",
+  "types": [
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/servine.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "litter"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "lots of water",
+      "cleanliness",
+      "shiny stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "snivy",
+    "evolvesTo": [
+      "serperior"
+    ],
+    "habitats": [
+      {
+        "id": 143,
+        "name": "Tree-shaded fluffy flower bed",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

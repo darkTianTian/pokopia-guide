@@ -1,0 +1,52 @@
+{
+  "id": 22,
+  "slug": "weepinbell",
+  "name": "우츠동",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/weepinbell.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "litter"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "lots of dirt",
+      "colorful stuff",
+      "pretty flowers",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "bellsprout",
+    "evolvesTo": [
+      "victreebel"
+    ],
+    "habitats": [
+      {
+        "id": 21,
+        "name": "Flowery table",
+        "rarity": "rare"
+      },
+      {
+        "id": 35,
+        "name": "Irresistible scent and glow",
+        "rarity": "common"
+      }
+    ]
+  }
+}

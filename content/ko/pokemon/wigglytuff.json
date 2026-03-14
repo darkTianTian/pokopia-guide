@@ -1,0 +1,45 @@
+{
+  "id": 153,
+  "slug": "wigglytuff",
+  "name": "푸크린",
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/wigglytuff.png",
+  "pokopia": {
+    "specialties": [
+      "hype",
+      "trade"
+    ],
+    "favorites": [
+      "soft stuff",
+      "cute stuff",
+      "play spaces",
+      "healing",
+      "group activities",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "jigglypuff",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 126,
+        "name": "Recital stage",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

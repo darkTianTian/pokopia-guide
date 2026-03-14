@@ -1,0 +1,45 @@
+{
+  "id": 239,
+  "slug": "flygon",
+  "name": "플라이곤",
+  "types": [
+    "ground",
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/flygon.png",
+  "pokopia": {
+    "specialties": [
+      "bulldoze",
+      "fly"
+    ],
+    "favorites": [
+      "lots of dirt",
+      "lots of fire",
+      "lots of nature",
+      "stone stuff",
+      "wooden stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "vibrava",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 137,
+        "name": "Pink tall grass",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

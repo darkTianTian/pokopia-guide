@@ -1,0 +1,45 @@
+{
+  "id": 257,
+  "slug": "corvisquire",
+  "name": "파크로우",
+  "types": [
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/corvisquire.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "favorites": [
+      "nice breezes",
+      "shiny stuff",
+      "containers",
+      "slender objects",
+      "wooden stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "rookidee",
+    "evolvesTo": [
+      "corviknight"
+    ],
+    "habitats": [
+      {
+        "id": 140,
+        "name": "Elevated pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

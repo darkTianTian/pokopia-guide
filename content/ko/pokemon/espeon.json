@@ -1,0 +1,42 @@
+{
+  "id": 284,
+  "slug": "espeon",
+  "name": "에브이",
+  "types": [
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/espeon.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "favorites": [
+      "strange stuff",
+      "nice breezes",
+      "cute stuff",
+      "complicated stuff",
+      "watching stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 205,
+        "name": "Elegant daytime treats",
+        "rarity": "common"
+      }
+    ]
+  }
+}

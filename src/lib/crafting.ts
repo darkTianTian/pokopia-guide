@@ -2,6 +2,7 @@ import type { Locale } from "@/i18n/config"
 import recipesData from "@/../content/crafting-recipes.json"
 import mappingEn from "@/../content/crafting-name-mapping-en.json"
 import mappingZh from "@/../content/crafting-name-mapping-zh.json"
+import mappingKo from "@/../content/crafting-name-mapping-ko.json"
 
 interface RawRecipe {
   id: string
@@ -29,12 +30,14 @@ const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: mappingEn.recipes,
   zh: mappingZh.recipes,
   ja: {},
+  ko: mappingKo.recipes,
 }
 
 const MATERIAL_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: mappingEn.materials,
   zh: mappingZh.materials,
   ja: {},
+  ko: mappingKo.materials,
 }
 
 function toSlug(name: string): string {

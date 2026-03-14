@@ -1,0 +1,45 @@
+{
+  "id": 50,
+  "slug": "heracross",
+  "name": "헤라크로스",
+  "types": [
+    "bug",
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/heracross.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "build"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "pretty flowers",
+      "looks like food",
+      "exercise",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "Tree-shaded  tall grass",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

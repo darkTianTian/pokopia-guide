@@ -1,0 +1,52 @@
+{
+  "id": 98,
+  "slug": "exeggcute",
+  "name": "아라리",
+  "types": [
+    "grass",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/exeggcute.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "teleport"
+    ],
+    "favorites": [
+      "lots of nature",
+      "strange stuff",
+      "gatherings",
+      "watching stuff",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "exeggutor"
+    ],
+    "habitats": [
+      {
+        "id": 57,
+        "name": "Tropical vibes",
+        "rarity": "common"
+      },
+      {
+        "id": 59,
+        "name": "Shaded beach",
+        "rarity": "common"
+      }
+    ]
+  }
+}

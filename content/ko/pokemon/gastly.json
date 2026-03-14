@@ -1,0 +1,44 @@
+{
+  "id": 93,
+  "slug": "gastly",
+  "name": "고오스",
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gastly.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "trade"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "garbage",
+      "containers",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "haunter"
+    ],
+    "habitats": [
+      {
+        "id": 89,
+        "name": "Spooky study",
+        "rarity": "common"
+      }
+    ]
+  }
+}

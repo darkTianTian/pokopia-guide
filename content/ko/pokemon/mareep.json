@@ -1,0 +1,51 @@
+{
+  "id": 111,
+  "slug": "mareep",
+  "name": "메리프",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/mareep.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "litter"
+    ],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "glass stuff",
+      "cute stuff",
+      "fabric",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "flaaffy"
+    ],
+    "habitats": [
+      {
+        "id": 55,
+        "name": "Overgrowth vending machine",
+        "rarity": "rare"
+      },
+      {
+        "id": 77,
+        "name": "Knitting station",
+        "rarity": "common"
+      }
+    ]
+  }
+}

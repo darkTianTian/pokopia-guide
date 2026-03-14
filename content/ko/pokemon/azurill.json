@@ -1,0 +1,52 @@
+{
+  "id": 114,
+  "slug": "azurill",
+  "name": "루리리",
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/azurill.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "favorites": [
+      "lots of water",
+      "cute stuff",
+      "cleanliness",
+      "healing",
+      "rides",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "marill"
+    ],
+    "habitats": [
+      {
+        "id": 53,
+        "name": "Hydrated yellow tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 62,
+        "name": "Perpetual mess",
+        "rarity": "common"
+      }
+    ]
+  }
+}
