@@ -14,7 +14,7 @@ import { toHabitatSlug } from "@/lib/habitat-slug"
 import { getTranslations, getLocalePath, t, type Locale } from "@/i18n/config"
 import _pokemonAreaRestrictions from "@/../content/pokemon-area-restrictions.json"
 
-type AreaRestriction = { habitatId: number; area: string; areaJa: string; areaZh: string; areaZhHans?: string; areaKo?: string }
+type AreaRestriction = { habitatId: number; area: string; areaJa: string; areaZh: string; areaZhHans?: string; areaKo?: string; areaEs?: string }
 const pokemonAreaRestrictions = _pokemonAreaRestrictions as Record<string, AreaRestriction[]>
 
 const TYPE_GRADIENTS: Record<string, string> = {
@@ -316,7 +316,7 @@ export async function PokedexDetailPage({
                       (r) => r.habitatId === h.id
                     )
                     const areaLabel = areaRestriction
-                      ? locale === "ja" ? areaRestriction.areaJa : locale === "zh-Hans" ? (areaRestriction.areaZhHans ?? areaRestriction.areaZh) : locale === "zh" ? areaRestriction.areaZh : locale === "ko" ? (areaRestriction.areaKo ?? areaRestriction.area) : areaRestriction.area
+                      ? locale === "ja" ? areaRestriction.areaJa : locale === "zh-Hans" ? (areaRestriction.areaZhHans ?? areaRestriction.areaZh) : locale === "zh" ? areaRestriction.areaZh : locale === "ko" ? (areaRestriction.areaKo ?? areaRestriction.area) : locale === "es" ? (areaRestriction.areaEs ?? areaRestriction.area) : areaRestriction.area
                       : null
                     return (
                       <Link

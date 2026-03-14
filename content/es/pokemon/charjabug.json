@@ -1,0 +1,47 @@
+{
+  "id": 139,
+  "slug": "charjabug",
+  "name": "Charjabug",
+  "types": [
+    "bug",
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/charjabug.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "chop"
+    ],
+    "favorites": [
+      "lots of nature",
+      "electronics",
+      "watching stuff",
+      "glass stuff",
+      "blocky stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "grubbin",
+    "evolvesTo": [
+      "vikavolt"
+    ],
+    "habitats": [
+      {
+        "id": 83,
+        "name": "Vending machine break area",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

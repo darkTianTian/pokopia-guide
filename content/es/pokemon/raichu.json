@@ -1,0 +1,44 @@
+{
+  "id": 80,
+  "slug": "raichu",
+  "name": "Raichu",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/raichu.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "hype"
+    ],
+    "favorites": [
+      "electronics",
+      "glass stuff",
+      "group activities",
+      "round stuff",
+      "play spaces",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pikachu",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 176,
+        "name": "Nature's market",
+        "rarity": "common"
+      }
+    ]
+  }
+}

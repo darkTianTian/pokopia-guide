@@ -1,0 +1,50 @@
+{
+  "id": 222,
+  "slug": "dragonair",
+  "name": "Dragonair",
+  "types": [
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "lots of fire",
+      "cleanliness",
+      "glass stuff",
+      "slender objects",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dratini",
+    "evolvesTo": [
+      "dragonite"
+    ],
+    "habitats": [
+      {
+        "id": 144,
+        "name": "Hydrated fluffy flower bed",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 148,
+        "name": "Simple bathroom",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

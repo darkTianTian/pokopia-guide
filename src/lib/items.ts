@@ -16,6 +16,10 @@ import mappingZhHans from "@/../content/item-name-mapping-zh-Hans.json"
 import obtainMappingZhHans from "@/../content/item-obtain-mapping-zh-Hans.json"
 import recipeMappingZhHans from "@/../content/item-recipe-mapping-zh-Hans.json"
 import descMappingZhHans from "@/../content/item-desc-mapping-zh-Hans.json"
+import mappingEs from "@/../content/item-name-mapping-es.json"
+import obtainMappingEs from "@/../content/item-obtain-mapping-es.json"
+import recipeMappingEs from "@/../content/item-recipe-mapping-es.json"
+import descMappingEs from "@/../content/item-desc-mapping-es.json"
 
 interface RawMaterial {
   id: string
@@ -60,6 +64,7 @@ const NAME_MAPPINGS: Record<Locale, Record<string, string>> = {
   "zh-Hans": mappingZhHans as Record<string, string>,
   ja: {},
   ko: mappingKo as Record<string, string>,
+  es: mappingEs as Record<string, string>,
 }
 
 const OBTAIN_MAPPINGS: Record<Locale, Record<string, string>> = {
@@ -68,6 +73,7 @@ const OBTAIN_MAPPINGS: Record<Locale, Record<string, string>> = {
   "zh-Hans": obtainMappingZhHans as Record<string, string>,
   ja: {},
   ko: obtainMappingKo as Record<string, string>,
+  es: obtainMappingEs as Record<string, string>,
 }
 
 const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
@@ -76,6 +82,7 @@ const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
   "zh-Hans": recipeMappingZhHans as Record<string, string>,
   ja: {},
   ko: recipeMappingKo as Record<string, string>,
+  es: recipeMappingEs as Record<string, string>,
 }
 
 const DESC_MAPPINGS: Record<Locale, Record<string, string>> = {
@@ -84,6 +91,7 @@ const DESC_MAPPINGS: Record<Locale, Record<string, string>> = {
   "zh-Hans": descMappingZhHans as Record<string, string>,
   ja: {},
   ko: descMappingKo as Record<string, string>,
+  es: descMappingEs as Record<string, string>,
 }
 
 function translateText(text: string, mapping: Record<string, string>): string {

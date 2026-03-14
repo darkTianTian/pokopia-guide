@@ -1,0 +1,45 @@
+{
+  "id": 64,
+  "slug": "excadrill",
+  "name": "Excadrill",
+  "types": [
+    "ground",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/excadrill.png",
+  "pokopia": {
+    "specialties": [
+      "search",
+      "chop"
+    ],
+    "favorites": [
+      "lots of dirt",
+      "metal stuff",
+      "exercise",
+      "watching stuff",
+      "sharp stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "drilbur",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 15,
+        "name": "Fresh Veggie Field",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

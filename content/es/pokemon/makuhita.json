@@ -1,0 +1,51 @@
+{
+  "id": 125,
+  "slug": "makuhita",
+  "name": "Makuhita",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/makuhita.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "bulldoze"
+    ],
+    "favorites": [
+      "exercise",
+      "construction",
+      "fabric",
+      "round stuff",
+      "wooden stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "hariyama"
+    ],
+    "habitats": [
+      {
+        "id": 51,
+        "name": "Tree-shaded Yellow tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 80,
+        "name": "All packed up",
+        "rarity": "common"
+      }
+    ]
+  }
+}

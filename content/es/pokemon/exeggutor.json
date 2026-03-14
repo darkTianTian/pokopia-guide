@@ -1,0 +1,50 @@
+{
+  "id": 99,
+  "slug": "exeggutor",
+  "name": "Exeggutor",
+  "types": [
+    "grass",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/exeggutor.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "teleport"
+    ],
+    "favorites": [
+      "lots of nature",
+      "strange stuff",
+      "gatherings",
+      "watching stuff",
+      "wooden stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "exeggcute",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 57,
+        "name": "Tropical vibes",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 59,
+        "name": "Shaded beach",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

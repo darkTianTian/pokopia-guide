@@ -1,0 +1,45 @@
+{
+  "id": 256,
+  "slug": "noivern",
+  "name": "Noivern",
+  "types": [
+    "flying",
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/noivern.png",
+  "pokopia": {
+    "specialties": [
+      "search",
+      "fly"
+    ],
+    "favorites": [
+      "nice breezes",
+      "lots of fire",
+      "watching stuff",
+      "play spaces",
+      "looks like food",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "noibat",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 160,
+        "name": "Rhythmic Living room",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

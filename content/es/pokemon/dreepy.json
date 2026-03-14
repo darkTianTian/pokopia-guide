@@ -1,0 +1,47 @@
+{
+  "id": 260,
+  "slug": "dreepy",
+  "name": "Dreepy",
+  "types": [
+    "dragon",
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/dreepy.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "search"
+    ],
+    "favorites": [
+      "lots of fire",
+      "spooky stuff",
+      "rides",
+      "strange stuff",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "drakloak"
+    ],
+    "habitats": [
+      {
+        "id": 138,
+        "name": "Tree-shaded pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

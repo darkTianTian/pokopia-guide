@@ -1,0 +1,50 @@
+{
+  "id": 171,
+  "slug": "tyranitar",
+  "name": "Tyranitar",
+  "types": [
+    "rock",
+    "dark"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tyranitar.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "luxury",
+      "shiny stuff",
+      "exercise",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pupitar",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 108,
+        "name": "Toil in the soil",
+        "rarity": "rare"
+      },
+      {
+        "id": 110,
+        "name": "Mossy rest spot",
+        "rarity": "very-rare"
+      }
+    ]
+  }
+}

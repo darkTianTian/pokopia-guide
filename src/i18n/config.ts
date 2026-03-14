@@ -1,4 +1,4 @@
-export const LOCALES = ["en", "zh", "zh-Hans", "ja", "ko"] as const
+export const LOCALES = ["en", "zh", "zh-Hans", "ja", "ko", "es"] as const
 export type Locale = (typeof LOCALES)[number]
 
 export const DEFAULT_LOCALE: Locale = "en"
@@ -9,6 +9,7 @@ export const LOCALE_LABELS: Record<Locale, string> = {
   "zh-Hans": "简中",
   ja: "日本語",
   ko: "한국어",
+  es: "Español",
 }
 
 export const LOCALE_LANG: Record<Locale, string> = {
@@ -17,6 +18,7 @@ export const LOCALE_LANG: Record<Locale, string> = {
   "zh-Hans": "zh-CN",
   ja: "ja",
   ko: "ko",
+  es: "es",
 }
 
 export function getLocalePath(locale: Locale, path: string): string {

@@ -1,0 +1,46 @@
+{
+  "id": 40,
+  "slug": "tangela",
+  "name": "Tangela",
+  "types": [
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tangela.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "litter"
+    ],
+    "favorites": [
+      "lots of nature",
+      "lots of water",
+      "gatherings",
+      "pretty flowers",
+      "slender objects",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "tangrowth"
+    ],
+    "habitats": [
+      {
+        "id": 49,
+        "name": "Nothin' but Poke Balls",
+        "rarity": "common"
+      }
+    ]
+  }
+}

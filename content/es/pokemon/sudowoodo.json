@@ -1,0 +1,48 @@
+{
+  "id": 166,
+  "slug": "sudowoodo",
+  "name": "Sudowoodo",
+  "types": [
+    "rock"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/sudowoodo.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "lots of nature",
+      "wooden stuff",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "bonsly",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 99,
+        "name": "Tree-shaded red tall grass",
+        "rarity": "rare"
+      },
+      {
+        "id": 123,
+        "name": "House party",
+        "rarity": "common"
+      }
+    ]
+  }
+}

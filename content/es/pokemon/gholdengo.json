@@ -1,0 +1,44 @@
+{
+  "id": 206,
+  "slug": "gholdengo",
+  "name": "Gholdengo",
+  "types": [
+    "steel",
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gholdengo.png",
+  "pokopia": {
+    "specialties": [
+      "appraise"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "metal stuff",
+      "strange stuff",
+      "shiny stuff",
+      "complicated stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gimmighoul",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 134,
+        "name": "Absolute luxury",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

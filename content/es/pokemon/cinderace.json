@@ -1,0 +1,49 @@
+{
+  "id": 190,
+  "slug": "cinderace",
+  "name": "Cinderace",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/cinderace.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "hype"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "play spaces",
+      "group activities",
+      "round stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "raboot",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 98,
+        "name": "Red tall grass",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 130,
+        "name": "Refreshing locker room",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": 67,
+  "slug": "conkeldurr",
+  "name": "Conkeldurr",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/conkeldurr.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "crush"
+    ],
+    "favorites": [
+      "exercise",
+      "construction",
+      "stone stuff",
+      "slender objects",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gurdurr",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 177,
+        "name": "Construction-site generator",
+        "rarity": "common"
+      }
+    ]
+  }
+}

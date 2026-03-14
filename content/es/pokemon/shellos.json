@@ -1,0 +1,38 @@
+{
+  "id": 59,
+  "slug": "shellos",
+  "name": "Shellos",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/shellos.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "gastrodon"
+    ],
+    "habitats": [
+      {
+        "id": 27,
+        "name": "Road Sign",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

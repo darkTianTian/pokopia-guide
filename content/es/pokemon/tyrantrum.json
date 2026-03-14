@@ -1,0 +1,45 @@
+{
+  "id": 277,
+  "slug": "tyrantrum",
+  "name": "Tyrantrum",
+  "types": [
+    "rock",
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tyrantrum.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "litter"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "lots of fire",
+      "luxury",
+      "exercise",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tyrunt",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 199,
+        "name": "Despot fossil display",
+        "rarity": "common"
+      }
+    ]
+  }
+}

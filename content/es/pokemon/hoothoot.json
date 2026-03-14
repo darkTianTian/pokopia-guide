@@ -1,0 +1,54 @@
+{
+  "id": 48,
+  "slug": "hoothoot",
+  "name": "Hoothoot",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/hoothoot.png",
+  "pokopia": {
+    "specialties": [
+      "trade",
+      "fly"
+    ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "fabric",
+      "wobbly stuff",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "noctowl"
+    ],
+    "habitats": [
+      {
+        "id": 6,
+        "name": "Elevated tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 8,
+        "name": "Pretty flower bed",
+        "rarity": "common"
+      },
+      {
+        "id": 31,
+        "name": "Gently lit bed",
+        "rarity": "common"
+      }
+    ]
+  }
+}

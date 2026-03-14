@@ -1,0 +1,50 @@
+{
+  "id": 136,
+  "slug": "minccino",
+  "name": "Minccino",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/minccino.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "favorites": [
+      "soft stuff",
+      "fabric",
+      "rides",
+      "cute stuff",
+      "cleanliness",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "cinccino"
+    ],
+    "habitats": [
+      {
+        "id": 75,
+        "name": "Changing area",
+        "rarity": "common"
+      },
+      {
+        "id": 76,
+        "name": "Private makeup stand",
+        "rarity": "common"
+      }
+    ]
+  }
+}

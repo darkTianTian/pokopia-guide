@@ -1,0 +1,44 @@
+{
+  "id": 117,
+  "slug": "paldean-wooper",
+  "name": "Wooper",
+  "types": [
+    "water",
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/paldean-wooper.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "favorites": [
+      "garbage",
+      "lots of dirt",
+      "stone stuff",
+      "cleanliness",
+      "group activities",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 54,
+        "name": "Marshy tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

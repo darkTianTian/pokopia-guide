@@ -1,0 +1,46 @@
+{
+  "id": 200,
+  "slug": "charcadet",
+  "name": "Charcadet",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/charcadet.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "strange stuff",
+      "exercise",
+      "luxury",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "armarouge",
+      "ceruledge"
+    ],
+    "habitats": [
+      {
+        "id": 115,
+        "name": "Piping-hot lava",
+        "rarity": "common"
+      }
+    ]
+  }
+}

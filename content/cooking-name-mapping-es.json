@@ -1,0 +1,82 @@
+{
+  "recipes": {
+    "プレーンサラダ": "Ensalada Sencilla",
+    "リンゴサラダ": "Ensalada de Baya Lichi",
+    "わかめサラダ": "Ensalada de Algas",
+    "シャキシャキサラダ": "Ensalada Desmenuzada",
+    "ドンドンサラダ": "Ensalada de Bayas Machacadas",
+    "クルトンサラダ": "Ensalada de Crutones",
+    "プレーンスープ": "Sopa Sencilla",
+    "わかめスープ": "Sopa de Algas",
+    "キノコスープ": "Sopa de Setas",
+    "ビリビリスープ": "Sopa Electrizante",
+    "やくぜんスープ": "Sopa Saludable",
+    "いろいろスープ": "Sopa Variada",
+    "プレーンパン": "Pan Sencillo",
+    "リンゴパン": "Pan de Baya Lichi",
+    "にんじんパン": "Pan de Zanahoria",
+    "リメイクパン": "Pan Reciclado",
+    "ふわふわパン": "Pan Esponjoso",
+    "あつあつシチューパン": "Cuenco de Pan",
+    "プレーンハンバーグ": "Filete de Hamburguesa Simple",
+    "キノコハンバーグ": "Filete de Hamburguesa de Setas",
+    "トマトハンバーグ": "Filete de Hamburguesa de Tomate",
+    "ポテトハンバーグ": "Filete de Hamburguesa de Patata",
+    "じゅくせいハンバーグ": "Filete de Hamburguesa Madurado",
+    "カラフルハンバーグ": "Filete de Hamburguesa Colorido"
+  },
+  "ingredients": {
+    "はっぱ": "Hoja",
+    "おいしいみず": "Agua Fresca",
+    "こむぎ": "Trigo",
+    "まめ": "Haba",
+    "リンゴのみ": "Baya Lichi",
+    "わかめ": "Alga",
+    "ゼロのみ": "Baya Magua",
+    "りっぱなキノコ": "Seta Grande",
+    "リリのみ": "Baya Ziuela",
+    "りっぱなニンジン": "Zanahoria Madura",
+    "モモのみ": "Baya Meloc",
+    "トマト": "Tomate",
+    "ポテト": "Patata",
+    "メリのみ": "Baya Atania",
+    "キーのみ": "Baya Perasi"
+  },
+  "wildcards": {
+    "any-bread": "Cualquier Pan",
+    "any-soup": "Cualquier Sopa",
+    "any-salad": "Cualquier Ensalada",
+    "any-hamburger": "Cualquier Filete de Hamburguesa"
+  },
+  "categories": {
+    "salad": "Ensalada",
+    "soup": "Sopa",
+    "bread": "Pan",
+    "hamburger-steak": "Filete de Hamburguesa"
+  },
+  "flavors": {
+    "sweet": "Dulce",
+    "sour": "Ácido",
+    "spicy": "Picante",
+    "bitter": "Amargo",
+    "dry": "Seco"
+  },
+  "tools": {
+    "cutting-board": "Tabla de Cortar",
+    "cooking-pot": "Olla",
+    "bread-oven": "Horno de Pan",
+    "frying-pan": "Sartén"
+  },
+  "moves": {
+    "leafage": "Follaje",
+    "water-gun": "Pistola Agua",
+    "cut": "Corte",
+    "rock-smash": "Golpe Roca"
+  },
+  "baseIngredients": {
+    "leaf": "Hoja",
+    "fresh-water": "Agua Fresca",
+    "wheat": "Trigo",
+    "bean": "Haba"
+  }
+}

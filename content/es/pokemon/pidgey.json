@@ -1,0 +1,51 @@
+{
+  "id": 10,
+  "slug": "pidgey",
+  "name": "Pidgey",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/pidgey.png",
+  "pokopia": {
+    "specialties": [
+      "search",
+      "fly"
+    ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "watching stuff",
+      "lots of nature",
+      "play spaces",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "pidgeotto"
+    ],
+    "habitats": [
+      {
+        "id": 6,
+        "name": "Elevated tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 8,
+        "name": "Pretty flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
+}

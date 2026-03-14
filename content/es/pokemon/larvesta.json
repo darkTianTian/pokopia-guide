@@ -1,0 +1,47 @@
+{
+  "id": 183,
+  "slug": "larvesta",
+  "name": "Larvesta",
+  "types": [
+    "bug",
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/larvesta.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "litter"
+    ],
+    "favorites": [
+      "lots of nature",
+      "lots of fire",
+      "sharp stuff",
+      "wooden stuff",
+      "symbols",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "volcarona"
+    ],
+    "habitats": [
+      {
+        "id": 105,
+        "name": "Tree-shaded graceful flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
+}

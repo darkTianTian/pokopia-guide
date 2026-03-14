@@ -1,0 +1,52 @@
+{
+  "id": 121,
+  "slug": "combusken",
+  "name": "Combusken",
+  "types": [
+    "fire",
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/combusken.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "build"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "exercise",
+      "containers",
+      "construction",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "torchic",
+    "evolvesTo": [
+      "blaziken"
+    ],
+    "habitats": [
+      {
+        "id": 87,
+        "name": "Furnace Spot",
+        "rarity": "common"
+      },
+      {
+        "id": 79,
+        "name": "Resort meal prep",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

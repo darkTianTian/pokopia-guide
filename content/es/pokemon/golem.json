@@ -1,0 +1,45 @@
+{
+  "id": 161,
+  "slug": "golem",
+  "name": "Golem",
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/golem.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "trade"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "spinning stuff",
+      "round stuff",
+      "exercise",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "graveler",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 111,
+        "name": "Mossy boulder",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

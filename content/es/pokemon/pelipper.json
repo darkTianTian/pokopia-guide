@@ -1,0 +1,49 @@
+{
+  "id": 124,
+  "slug": "pelipper",
+  "name": "Pelipper",
+  "types": [
+    "water",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/pelipper.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "fly"
+    ],
+    "favorites": [
+      "lots of water",
+      "nice breezes",
+      "cleanliness",
+      "ocean vibes",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "wingull",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 52,
+        "name": "Elevated yellow tall grass",
+        "rarity": "rare"
+      },
+      {
+        "id": 58,
+        "name": "Windy Flower Bed",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

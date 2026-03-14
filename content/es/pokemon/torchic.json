@@ -1,0 +1,50 @@
+{
+  "id": 120,
+  "slug": "torchic",
+  "name": "Torchic",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/torchic.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "cute stuff",
+      "containers",
+      "pretty flowers",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "combusken"
+    ],
+    "habitats": [
+      {
+        "id": 69,
+        "name": "Chirp-chirp meal",
+        "rarity": "common"
+      },
+      {
+        "id": 79,
+        "name": "Resort meal prep",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": 293,
+  "slug": "volcanion",
+  "name": "Volcanion",
+  "types": [
+    "fire",
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/volcanion.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "lots of water",
+      "stone stuff",
+      "containers",
+      "symbols",
+      "spicy flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "story",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "mythical",
+    "obtainDetails": "Complete the Gotsugotsu Mountain Town story"
+  }
+}

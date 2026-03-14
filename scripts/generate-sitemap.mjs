@@ -9,6 +9,7 @@ const LOCALES = [
   { code: "zh-Hans", prefix: "/zh-Hans" },
   { code: "ja", prefix: "/ja" },
   { code: "ko", prefix: "/ko" },
+  { code: "es", prefix: "/es" },
 ]
 
 async function main() {

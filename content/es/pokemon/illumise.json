@@ -1,0 +1,43 @@
+{
+  "id": 52,
+  "slug": "illumise",
+  "name": "Illumise",
+  "types": [
+    "bug"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/illumise.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "shiny stuff",
+      "cute stuff",
+      "group activities",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 10,
+        "name": "Hydrated flower bed",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": 81,
+  "slug": "zubat",
+  "name": "Zubat",
+  "types": [
+    "poison",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/zubat.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "nice breezes",
+      "wooden stuff",
+      "noisy stuff",
+      "complicated stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "golbat"
+    ],
+    "habitats": [
+      {
+        "id": 51,
+        "name": "Tree-shaded Yellow tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 66,
+        "name": "Park bench",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": 267,
+  "slug": "kilowattrel",
+  "name": "Kilowattrel",
+  "types": [
+    "electric",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/kilowattrel.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "fly"
+    ],
+    "favorites": [
+      "electronics",
+      "nice breezes",
+      "ocean vibes",
+      "gatherings",
+      "slender objects",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "wattrel",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 140,
+        "name": "Elevated pink tall grass",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

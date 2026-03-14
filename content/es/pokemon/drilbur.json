@@ -1,0 +1,46 @@
+{
+  "id": 63,
+  "slug": "drilbur",
+  "name": "Drilbur",
+  "types": [
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/drilbur.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "lots of dirt",
+      "stone stuff",
+      "lots of nature",
+      "watching stuff",
+      "sharp stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "night",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "excadrill"
+    ],
+    "habitats": [
+      {
+        "id": 15,
+        "name": "Fresh Veggie Field",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "Also obtainable by talking to it in Withered Wasteland"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 147,
+  "slug": "arbok",
+  "name": "Arbok",
+  "types": [
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/arbok.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "garbage",
+      "watching stuff",
+      "lots of nature",
+      "slender objects",
+      "spinning stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ekans",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 106,
+        "name": "Hydrated graceful flower bed",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 299,
+  "slug": "mewtwo",
+  "name": "Mewtwo",
+  "types": [
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/mewtwo.png",
+  "pokopia": {
+    "specialties": [
+      "teleport"
+    ],
+    "favorites": [
+      "strange stuff",
+      "watching stuff",
+      "letters and words",
+      "complicated stuff",
+      "stone stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "story",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "Complete Sparkling Skylands story. Also found using Dragonite Doll in Dream Island underground. Tip: Only 1 doll type per day on Dream Island (unlimited visits); look for glowing spots inside walls"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": 8,
+  "slug": "wartortle",
+  "name": "Wartortle",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/wartortle.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "healing",
+      "exercise",
+      "hard stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "squirtle",
+    "evolvesTo": [
+      "blastoise"
+    ],
+    "habitats": [
+      {
+        "id": 4,
+        "name": "Hydrated tall grass",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

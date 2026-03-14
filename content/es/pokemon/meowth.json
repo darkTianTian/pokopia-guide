@@ -1,0 +1,51 @@
+{
+  "id": 84,
+  "slug": "meowth",
+  "name": "Meowth",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/meowth.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "containers",
+      "group activities",
+      "shiny stuff",
+      "glass stuff",
+      "luxury",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "persian",
+      "perrserker"
+    ],
+    "habitats": [
+      {
+        "id": 61,
+        "name": "Resting spot",
+        "rarity": "common"
+      },
+      {
+        "id": 91,
+        "name": "Working the register",
+        "rarity": "common"
+      }
+    ]
+  }
+}

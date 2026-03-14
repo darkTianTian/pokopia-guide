@@ -1,0 +1,46 @@
+{
+  "id": 150,
+  "slug": "clefable",
+  "name": "Clefable",
+  "types": [
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/clefable.png",
+  "pokopia": {
+    "specialties": [
+      "hype",
+      "trade"
+    ],
+    "favorites": [
+      "cute stuff",
+      "play spaces",
+      "pretty flowers",
+      "healing",
+      "group activities",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "clefairy",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 104,
+        "name": "Graceful flower bed",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 131,
+        "name": "Bronze landmark",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

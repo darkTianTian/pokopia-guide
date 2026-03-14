@@ -1,0 +1,30 @@
+{
+  "id": 300,
+  "slug": "mew",
+  "name": "Mew",
+  "types": [
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/mew.png",
+  "pokopia": {
+    "specialties": [
+      "teleport"
+    ],
+    "favorites": [
+      "strange stuff",
+      "watching stuff",
+      "luxury",
+      "complicated stuff",
+      "play spaces",
+      "sweet flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "quest",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "mythical",
+    "obtainDetails": "Collect all 27 Mysterious Slates in Withered Wasteland and place them on the wall painting underground behind the Pokémon Center. Tip: Feed Moss Snorlax sweet food (Pecha Berry) to increase slate drop rate; match the pattern on the back of each slate to its correct position"
+  }
+}

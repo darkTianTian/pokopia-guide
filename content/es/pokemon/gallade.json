@@ -1,0 +1,45 @@
+{
+  "id": 234,
+  "slug": "gallade",
+  "name": "Gallade",
+  "types": [
+    "psychic",
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gallade.png",
+  "pokopia": {
+    "specialties": [
+      "teleport",
+      "build"
+    ],
+    "favorites": [
+      "strange stuff",
+      "exercise",
+      "healing",
+      "construction",
+      "fabric",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kirlia",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 178,
+        "name": "Dojo training",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

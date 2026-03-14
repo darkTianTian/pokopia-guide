@@ -1,0 +1,46 @@
+{
+  "id": 246,
+  "slug": "metang",
+  "name": "Metang",
+  "types": [
+    "steel",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/metang.png",
+  "pokopia": {
+    "specialties": [
+      "recycle"
+    ],
+    "favorites": [
+      "metal stuff",
+      "strange stuff",
+      "hard stuff",
+      "complicated stuff",
+      "stone stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "beldum",
+    "evolvesTo": [
+      "metagross"
+    ],
+    "habitats": [
+      {
+        "id": 169,
+        "name": "Professor's apprentice program",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -2,7 +2,7 @@
 
 > Pokopia Guide is an unofficial community-driven guide site for Pokémon Pokopia (releasing March 5, 2026). It provides a complete Pokédex, habitat building guides, crafting material lists, and event tracking for new and experienced trainers.
 
-The site is available in English, Traditional Chinese (zh-TW), Simplified Chinese (zh-CN), Japanese, and Korean. All Pokémon data is sourced from Serebii, Game8, and GameWith, and updated automatically.
+The site is available in English, Traditional Chinese (zh-TW), Simplified Chinese (zh-CN), Japanese, Korean, and Spanish. All Pokémon data is sourced from Serebii, Game8, and GameWith, and updated automatically.
 
 ## Core Pages
 
@@ -48,3 +48,5 @@ Each Pokémon entry includes:
 - [Sitemap](https://pokopiaguide.com/sitemap.xml): Full XML sitemap with all pages
 - [Chinese Version](https://pokopiaguide.com/zh): Traditional Chinese interface
 - [Japanese Version](https://pokopiaguide.com/ja): Japanese interface
+- [Korean Version](https://pokopiaguide.com/ko): Korean interface
+- [Spanish Version](https://pokopiaguide.com/es): Spanish interface

@@ -1,0 +1,49 @@
+{
+  "id": 89,
+  "slug": "arcanine",
+  "name": "Arcanine",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/arcanine.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "search"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "nice breezes",
+      "watching stuff",
+      "symbols",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "growlithe",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 129,
+        "name": "Mini museum",
+        "rarity": "rare"
+      },
+      {
+        "id": 188,
+        "name": "Magma fishing spot",
+        "rarity": "common"
+      }
+    ]
+  }
+}

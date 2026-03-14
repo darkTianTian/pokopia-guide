@@ -1,0 +1,43 @@
+{
+  "id": 235,
+  "slug": "plusle",
+  "name": "Plusle",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/plusle.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "favorites": [
+      "electronics",
+      "glass stuff",
+      "soft stuff",
+      "cute stuff",
+      "group activities",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 174,
+        "name": "Picturesque photo cutout board",
+        "rarity": "rare"
+      }
+    ]
+  }
+}
