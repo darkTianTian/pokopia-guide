@@ -1,0 +1,44 @@
+{
+  "id": 102,
+  "slug": "blissey",
+  "name": "해피너스",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/blissey.png",
+  "pokopia": {
+    "specialties": [
+      "trade",
+      "litter"
+    ],
+    "favorites": [
+      "soft stuff",
+      "fabric",
+      "healing",
+      "round stuff",
+      "group activities",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "chansey",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 95,
+        "name": "Cuteness overload",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

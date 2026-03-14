@@ -1,0 +1,43 @@
+{
+  "id": 127,
+  "slug": "absol",
+  "name": "앱솔",
+  "types": [
+    "dark"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/absol.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "letters and words",
+      "complicated stuff",
+      "exercise",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 96,
+        "name": "Welcoming resort",
+        "rarity": "common"
+      }
+    ]
+  }
+}

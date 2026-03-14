@@ -1,0 +1,46 @@
+{
+  "id": 210,
+  "slug": "poliwhirl",
+  "name": "슈륙챙이",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/poliwhirl.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "lots of nature",
+      "exercise",
+      "spinning stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "poliwag",
+    "evolvesTo": [
+      "poliwrath",
+      "politoed"
+    ],
+    "habitats": [
+      {
+        "id": 144,
+        "name": "Hydrated fluffy flower bed",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

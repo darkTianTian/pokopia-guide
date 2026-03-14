@@ -1,0 +1,43 @@
+{
+  "id": 286,
+  "slug": "leafeon",
+  "name": "리피아",
+  "types": [
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/leafeon.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "favorites": [
+      "lots of nature",
+      "pretty flowers",
+      "cute stuff",
+      "fabric",
+      "healing",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 207,
+        "name": "Leafy greens sandwich",
+        "rarity": "common"
+      }
+    ]
+  }
+}

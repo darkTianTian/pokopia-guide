@@ -1,0 +1,49 @@
+{
+  "id": 18,
+  "slug": "parasect",
+  "name": "파라섹트",
+  "types": [
+    "bug",
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/parasect.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "watching stuff",
+      "lots of dirt",
+      "strange stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "paras",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 12,
+        "name": "Elevated flower bed",
+        "rarity": "rare"
+      },
+      {
+        "id": 14,
+        "name": "Flower garden",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

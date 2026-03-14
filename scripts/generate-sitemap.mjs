@@ -7,6 +7,7 @@ const LOCALES = [
   { code: "en", prefix: "" },
   { code: "zh", prefix: "/zh" },
   { code: "ja", prefix: "/ja" },
+  { code: "ko", prefix: "/ko" },
 ]
 
 async function main() {

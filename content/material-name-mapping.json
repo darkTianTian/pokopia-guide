@@ -1,1134 +1,1417 @@
 {
   "afternoon-tea-set": {
     "zh": "下午茶套組",
-    "ja": "アフタヌーンティーセット"
+    "ja": "アフタヌーンティーセット",
+    "ko": "애프터눈 티 세트"
   },
   "alarm-clock": {
     "zh": "鬧鐘",
-    "ja": "めざましどけい"
+    "ja": "めざましどけい",
+    "ko": "알람시계"
   },
   "antique-bed": {
     "zh": "古董床",
-    "ja": null
+    "ja": null,
+    "ko": "앤티크 침대"
   },
   "antique-chair": {
     "zh": "古董椅",
-    "ja": null
+    "ja": null,
+    "ko": "앤티크 의자"
   },
   "antique-closet": {
     "zh": "古董衣櫃",
-    "ja": null
+    "ja": null,
+    "ko": "앤티크 옷장"
   },
   "antique-dresser": {
     "zh": "古董梳妝台",
-    "ja": null
+    "ja": null,
+    "ko": "앤티크 화장대"
   },
   "arcade-machine": {
     "zh": "遊戲機台",
-    "ja": null
+    "ja": null,
+    "ko": "아케이드 게임기"
   },
   "arcanine-doll": {
     "zh": "風速狗人偶",
-    "ja": "ウインディにんぎょう"
+    "ja": "ウインディにんぎょう",
+    "ko": "윈디 인형"
   },
   "armor-fossil": {
     "zh": "盾之化石",
-    "ja": "たてのカセキ"
+    "ja": "たてのカセキ",
+    "ko": "방패 화석"
   },
   "arrow-sign": {
     "zh": "箭頭指示牌",
-    "ja": null
+    "ja": null,
+    "ko": "화살표 표지판"
   },
   "auspicious-armor": {
     "zh": "祝賀之鎧",
-    "ja": "イワイノヨロイ"
+    "ja": "イワイノヨロイ",
+    "ko": "축복의 갑옷"
   },
   "balloon": {
     "zh": "氣球",
-    "ja": "ふうせん"
+    "ja": "ふうせん",
+    "ko": "풍선"
   },
   "barrel": {
     "zh": "木桶",
-    "ja": "たる"
+    "ja": "たる",
+    "ko": "나무통"
   },
   "bathub": {
     "zh": "浴缸",
-    "ja": "バスタブ"
+    "ja": "バスタブ",
+    "ko": "욕조"
   },
   "beach-chair": {
     "zh": "海灘椅",
-    "ja": "ビーチチェア"
+    "ja": "ビーチチェア",
+    "ko": "비치 의자"
   },
   "beach-parasol": {
     "zh": "海灘傘",
-    "ja": "ビーチパラソル"
+    "ja": "ビーチパラソル",
+    "ko": "비치 파라솔"
   },
   "bed-any": {
     "zh": "床（任意）",
-    "ja": "ベッド(なんでも)"
+    "ja": "ベッド(なんでも)",
+    "ko": "침대 (아무거나)"
   },
   "berry-basket": {
     "zh": "樹果籃",
-    "ja": "きのみいりバスケット"
+    "ja": "きのみいりバスケット",
+    "ko": "나무열매 바구니"
   },
   "berry-bed": {
     "zh": "樹果床",
-    "ja": null
+    "ja": null,
+    "ko": "나무열매 침대"
   },
   "berry-chair": {
     "zh": "樹果椅",
-    "ja": null
+    "ja": null,
+    "ko": "나무열매 의자"
   },
   "berry-table": {
     "zh": "樹果桌",
-    "ja": null
+    "ja": null,
+    "ko": "나무열매 테이블"
   },
   "berry-table-lamp": {
     "zh": "樹果桌燈",
-    "ja": null
+    "ja": null,
+    "ko": "나무열매 탁상 램프"
   },
   "berry-tree-any": {
     "zh": "樹果樹（任意）",
-    "ja": "きのみの木(なんでも)"
+    "ja": "きのみの木(なんでも)",
+    "ko": "나무열매 나무 (아무거나)"
   },
   "bicycle": {
     "zh": "自行車",
-    "ja": "じてんしゃ"
+    "ja": "じてんしゃ",
+    "ko": "자전거"
   },
   "big-drum": {
     "zh": "大鼓",
-    "ja": "おおだいこ"
+    "ja": "おおだいこ",
+    "ko": "큰북"
   },
   "bonfire": {
     "zh": "營火堆",
-    "ja": "キャンプファイヤー"
+    "ja": "キャンプファイヤー",
+    "ko": "캠프파이어"
   },
   "boo-in-the-box": {
     "zh": "驚嚇箱",
-    "ja": "びっくりばこ"
+    "ja": "びっくりばこ",
+    "ko": "깜짝 상자"
   },
   "bookcase": {
     "zh": "書架",
-    "ja": "ほんだな"
+    "ja": "ほんだな",
+    "ko": "책장"
   },
   "bread-oven": {
     "zh": "麵包窯",
-    "ja": "パンがま"
+    "ja": "パンがま",
+    "ko": "빵 가마"
   },
   "campfire": {
     "zh": "營火",
-    "ja": "たきび"
+    "ja": "たきび",
+    "ko": "모닥불"
   },
   "cannon": {
     "zh": "發射筒",
-    "ja": null
+    "ja": null,
+    "ko": "발사통"
   },
   "canoe": {
     "zh": "獨木舟",
-    "ja": "カヌー"
+    "ja": "カヌー",
+    "ko": "카누"
   },
   "canvas": {
     "zh": "畫布",
-    "ja": "キャンバス"
+    "ja": "キャンバス",
+    "ko": "캔버스"
   },
   "cardboard-boxes": {
     "zh": "紙箱",
-    "ja": "だんボールのはこ"
+    "ja": "だんボールのはこ",
+    "ko": "골판지 상자"
   },
   "cart": {
     "zh": "推車",
-    "ja": null
+    "ja": null,
+    "ko": "수레"
   },
   "cash-register": {
     "zh": "收銀機",
-    "ja": "レジ"
+    "ja": "レジ",
+    "ko": "금전등록기"
   },
   "castform-weather-charm-rain": {
     "zh": "飄浮泡泡晴天娃娃（雨天）",
-    "ja": "てるてるポワルン(雨)"
+    "ja": "てるてるポワルン(雨)",
+    "ko": "캐스퐁 날씨인형 (비)"
   },
   "castform-weather-charm-sun": {
     "zh": "飄浮泡泡晴天娃娃（晴天）",
-    "ja": "てるてるポワルン(晴れ)"
+    "ja": "てるてるポワルン(晴れ)",
+    "ko": "캐스퐁 날씨인형 (맑음)"
   },
   "cd-player": {
     "zh": "CD播放器",
-    "ja": "CDプレーヤー"
+    "ja": "CDプレーヤー",
+    "ko": "CD 플레이어"
   },
   "cd-rack": {
     "zh": "CD架",
-    "ja": "CDラック"
+    "ja": "CDラック",
+    "ko": "CD 랙"
   },
   "chansey-plant": {
     "zh": "吉利蛋盆栽",
-    "ja": "ラッキーのうえ木"
+    "ja": "ラッキーのうえ木",
+    "ko": "럭키 화분"
   },
   "chic-chair": {
     "zh": "雅致椅",
-    "ja": null
+    "ja": null,
+    "ko": "시크한 의자"
   },
   "chic-sofa": {
     "zh": "雅致沙發",
-    "ja": "シックなソファ"
+    "ja": "シックなソファ",
+    "ko": "시크한 소파"
   },
   "chic-table": {
     "zh": "雅致桌",
-    "ja": null
+    "ja": null,
+    "ko": "시크한 테이블"
   },
   "chocolate-cookies": {
     "zh": "巧克力餅乾",
-    "ja": "チョコクッキー"
+    "ja": "チョコクッキー",
+    "ko": "초콜릿 쿠키"
   },
   "cleaning-set": {
     "zh": "清掃組",
-    "ja": "おそうじセット"
+    "ja": "おそうじセット",
+    "ko": "청소 세트"
   },
   "closet-any": {
     "zh": "衣櫃（任意）",
-    "ja": "クローゼット(なんでも)"
+    "ja": "クローゼット(なんでも)",
+    "ko": "옷장 (아무거나)"
   },
   "computer": {
     "zh": "電腦",
-    "ja": "コンピューター"
+    "ja": "コンピューター",
+    "ko": "컴퓨터"
   },
   "concrete-pipe": {
     "zh": "水管",
-    "ja": "どかん"
+    "ja": "どかん",
+    "ko": "토관"
   },
   "control-unit": {
     "zh": "操控台",
-    "ja": "そうさばん"
+    "ja": "そうさばん",
+    "ko": "조작판"
   },
   "cooking-stove": {
     "zh": "爐灶",
-    "ja": null
+    "ja": null,
+    "ko": "가스레인지"
   },
   "cool-electric-bass": {
     "zh": "帥氣電貝斯",
-    "ja": "イカしたエレキベース"
+    "ja": "イカしたエレキベース",
+    "ko": "멋진 일렉트릭 베이스"
   },
   "cool-electric-guitar": {
     "zh": "帥氣電吉他",
-    "ja": "イカしたエレキギター"
+    "ja": "イカしたエレキギター",
+    "ko": "멋진 일렉트릭 기타"
   },
   "counter": {
     "zh": "櫃台",
-    "ja": "カウンターのだい"
+    "ja": "カウンターのだい",
+    "ko": "카운터"
   },
   "crossing-gate": {
     "zh": "平交道柵欄",
-    "ja": null
+    "ja": null,
+    "ko": "건널목 차단기"
   },
   "crystal-ball": {
     "zh": "水晶球",
-    "ja": "すいしょうだま"
+    "ja": "すいしょうだま",
+    "ko": "수정구슬"
   },
   "cute-bed": {
     "zh": "可愛床",
-    "ja": null
+    "ja": null,
+    "ko": "귀여운 침대"
   },
   "cute-dresser": {
     "zh": "可愛梳妝台",
-    "ja": null
+    "ja": null,
+    "ko": "귀여운 화장대"
   },
   "cute-lamp": {
     "zh": "可愛燈",
-    "ja": null
+    "ja": null,
+    "ko": "귀여운 램프"
   },
   "cute-sofa": {
     "zh": "可愛沙發",
-    "ja": null
+    "ja": null,
+    "ko": "귀여운 소파"
   },
   "cute-table": {
     "zh": "可愛桌",
-    "ja": null
+    "ja": null,
+    "ko": "귀여운 테이블"
   },
   "cutting-board": {
     "zh": "砧板",
-    "ja": null
+    "ja": null,
+    "ko": "도마"
   },
   "desk-light": {
     "zh": "桌燈",
-    "ja": null
+    "ja": null,
+    "ko": "책상 조명"
   },
   "despot-fossil-body": {
     "zh": "暴君化石・軀幹",
-    "ja": null
+    "ja": null,
+    "ko": "폭군 화석·몸통"
   },
   "despot-fossil-head": {
     "zh": "暴君化石・頭",
-    "ja": null
+    "ja": null,
+    "ko": "폭군 화석·머리"
   },
   "despot-fossil-legs": {
     "zh": "暴君化石・腳",
-    "ja": null
+    "ja": null,
+    "ko": "폭군 화석·다리"
   },
   "despot-fossil-tail": {
     "zh": "暴君化石・尾巴",
-    "ja": null
+    "ja": null,
+    "ko": "폭군 화석·꼬리"
   },
   "doll-any": {
     "zh": "人偶（任意）",
-    "ja": "にんぎょう(なんでも)"
+    "ja": "にんぎょう(なんでも)",
+    "ko": "인형 (아무거나)"
   },
   "dragonite-doll": {
     "zh": "快龍人偶",
-    "ja": null
+    "ja": null,
+    "ko": "망나뇽 인형"
   },
   "dry-tall-grass": {
     "zh": "枯綠草",
-    "ja": null
+    "ja": null,
+    "ko": "마른 풀"
   },
   "duckweed": {
     "zh": "浮萍",
-    "ja": "うきくさ"
+    "ja": "うきくさ",
+    "ko": "부평초"
   },
   "eerie-candle": {
     "zh": "詭異蠟燭",
-    "ja": "あやしいキャンドル"
+    "ja": "あやしいキャンドル",
+    "ko": "수상한 양초"
   },
   "eevee-doll": {
     "zh": "伊布人偶",
-    "ja": null
+    "ja": null,
+    "ko": "이브이 인형"
   },
   "excavation-tools": {
     "zh": "挖掘工具",
-    "ja": "やまほりどうぐ"
+    "ja": "やまほりどうぐ",
+    "ko": "발굴 도구"
   },
   "face-cutout-board": {
     "zh": "臉孔看板",
-    "ja": "かおだしパネル"
+    "ja": "かおだしパネル",
+    "ko": "얼굴 포토존 패널"
   },
   "fin-fossil": {
     "zh": "鰭之化石",
-    "ja": "ヒレのカセキ"
+    "ja": "ヒレのカセキ",
+    "ko": "지느러미 화석"
   },
   "firepit": {
     "zh": "篝火盆",
-    "ja": "かがりび"
+    "ja": "かがりび",
+    "ko": "화톳불"
   },
   "first-aid-kit": {
     "zh": "急救箱",
-    "ja": "きゅうきゅうばこ"
+    "ja": "きゅうきゅうばこ",
+    "ko": "구급상자"
   },
   "fishing-rod": {
     "zh": "釣竿",
-    "ja": "つりざお"
+    "ja": "つりざお",
+    "ko": "낚싯대"
   },
   "floor-switch": {
     "zh": "地板開關",
-    "ja": "ゆかつきスイッチ"
+    "ja": "ゆかつきスイッチ",
+    "ko": "바닥 스위치"
   },
   "flower-backpack": {
     "zh": "花朵背包",
-    "ja": null
+    "ja": null,
+    "ko": "꽃 배낭"
   },
   "flower-cushion": {
     "zh": "花朵靠墊",
-    "ja": null
+    "ja": null,
+    "ko": "꽃 쿠션"
   },
   "flower-tableware-set": {
     "zh": "花朵餐具組",
-    "ja": null
+    "ja": null,
+    "ko": "꽃 식기 세트"
   },
   "food-counter": {
     "zh": "食物櫃台",
-    "ja": "フードカウンター"
+    "ja": "フードカウンター",
+    "ko": "푸드 카운터"
   },
   "fried-potatoes": {
     "zh": "薯條",
-    "ja": "フライドポテト"
+    "ja": "フライドポテト",
+    "ko": "감자튀김"
   },
   "furnace": {
     "zh": "火力發電機",
-    "ja": "火力はつでんマシン"
+    "ja": "火力はつでんマシン",
+    "ko": "화력 발전기"
   },
   "gaming-bed": {
     "zh": "電競床",
-    "ja": null
+    "ja": null,
+    "ko": "게이밍 침대"
   },
   "gaming-chair": {
     "zh": "電競椅",
-    "ja": null
+    "ja": null,
+    "ko": "게이밍 의자"
   },
   "gaming-fridge": {
     "zh": "電競冰箱",
-    "ja": null
+    "ja": null,
+    "ko": "게이밍 냉장고"
   },
   "gaming-pc": {
     "zh": "電競電腦",
-    "ja": null
+    "ja": null,
+    "ko": "게이밍 PC"
   },
   "garbage-bags": {
     "zh": "垃圾袋",
-    "ja": "ゴミぶくろ"
+    "ja": "ゴミぶくろ",
+    "ko": "쓰레기봉투"
   },
   "garbage-bin": {
     "zh": "垃圾桶",
-    "ja": "ゴミばこ"
+    "ja": "ゴミばこ",
+    "ko": "쓰레기통"
   },
   "garden-chair": {
     "zh": "庭園椅",
-    "ja": null
+    "ja": null,
+    "ko": "정원 의자"
   },
   "garden-light": {
     "zh": "庭園燈",
-    "ja": null
+    "ja": null,
+    "ko": "정원 조명"
   },
   "garden-table": {
     "zh": "庭園桌",
-    "ja": null
+    "ja": null,
+    "ko": "정원 테이블"
   },
   "gorgeous-bed": {
     "zh": "豪華床",
-    "ja": null
+    "ja": null,
+    "ko": "호화로운 침대"
   },
   "gorgeous-lamp": {
     "zh": "豪華燈",
-    "ja": null
+    "ja": null,
+    "ko": "호화로운 램프"
   },
   "gorgeous-sofa": {
     "zh": "豪華沙發",
-    "ja": null
+    "ja": null,
+    "ko": "호화로운 소파"
   },
   "gorgeous-table": {
     "zh": "豪華桌",
-    "ja": null
+    "ja": null,
+    "ko": "호화로운 테이블"
   },
   "gravestone": {
     "zh": "墓石",
-    "ja": "はかいし"
+    "ja": "はかいし",
+    "ko": "묘비"
   },
   "hanging-scroll": {
     "zh": "掛軸",
-    "ja": null
+    "ja": null,
+    "ko": "족자"
   },
   "headbutt-fossil-body": {
     "zh": "頭錘化石・軀幹",
-    "ja": null
+    "ja": null,
+    "ko": "박치기 화석·몸통"
   },
   "headbutt-fossil-head": {
     "zh": "頭錘化石・頭",
-    "ja": null
+    "ja": null,
+    "ko": "박치기 화석·머리"
   },
   "headbutt-fossil-tail": {
     "zh": "頭錘化石・尾巴",
-    "ja": null
+    "ja": null,
+    "ko": "박치기 화석·꼬리"
   },
   "hedge-any": {
     "zh": "樹籬（任意）",
-    "ja": "いけがき(なんでも)"
+    "ja": "いけがき(なんでも)",
+    "ko": "울타리 (아무거나)"
   },
   "high-up-location": {
     "zh": "高處",
-    "ja": "高いところ"
+    "ja": "高いところ",
+    "ko": "높은 곳"
   },
   "hoppip-water-bottle": {
     "zh": "毽子草水壺",
-    "ja": null
+    "ja": null,
+    "ko": "통통코 물병"
   },
   "hot-spring-spout": {
     "zh": "溫泉出口",
-    "ja": "ゆぐち"
+    "ja": "ゆぐち",
+    "ko": "온천 분출구"
   },
   "hot-spring-water": {
     "zh": "溫泉水",
-    "ja": "おんせん"
+    "ja": "おんせん",
+    "ko": "온천물"
   },
   "humidifier": {
     "zh": "加濕器",
-    "ja": "かしつき"
+    "ja": "かしつき",
+    "ko": "가습기"
   },
   "industrial-bed": {
     "zh": "工業風床",
-    "ja": null
+    "ja": null,
+    "ko": "인더스트리얼 침대"
   },
   "industrial-chair": {
     "zh": "工業風椅",
-    "ja": null
+    "ja": null,
+    "ko": "인더스트리얼 의자"
   },
   "industrial-desk": {
     "zh": "工業風桌",
-    "ja": "インダストリアルなデスク"
+    "ja": "インダストリアルなデスク",
+    "ko": "인더스트리얼 책상"
   },
   "inflatable-boat": {
     "zh": "充氣船",
-    "ja": "ビニールボート"
+    "ja": "ビニールボート",
+    "ko": "고무보트"
   },
   "iron-beam-or-column": {
     "zh": "鐵骨",
-    "ja": "てっこつ"
+    "ja": "てっこつ",
+    "ko": "철골"
   },
   "iron-bed": {
     "zh": "鐵床",
-    "ja": null
+    "ja": null,
+    "ko": "철제 침대"
   },
   "iron-chair": {
     "zh": "鐵椅",
-    "ja": null
+    "ja": null,
+    "ko": "철제 의자"
   },
   "iron-pipes": {
     "zh": "堆疊鐵管",
-    "ja": "こんもりてつパイプ"
+    "ja": "こんもりてつパイプ",
+    "ko": "쌓인 철 파이프"
   },
   "iron-scaffold": {
     "zh": "鐵架",
-    "ja": "てつのあしば"
+    "ja": "てつのあしば",
+    "ko": "철제 비계"
   },
   "iron-table": {
     "zh": "鐵桌",
-    "ja": null
+    "ja": null,
+    "ko": "철제 테이블"
   },
   "item-a24": {
     "zh": "Item a24",
-    "ja": null
+    "ja": null,
+    "ko": "Item a24"
   },
   "item-a25": {
     "zh": "Item a25",
-    "ja": "だい(なんでも)"
+    "ja": "だい(なんでも)",
+    "ko": "Item a25"
   },
   "item-a27": {
     "zh": "Item a27",
-    "ja": "ドレッサー(なんでも)"
+    "ja": "ドレッサー(なんでも)",
+    "ko": "Item a27"
   },
   "item-a28": {
     "zh": "Item a28",
-    "ja": null
+    "ja": null,
+    "ko": "Item a28"
   },
   "item-a30": {
     "zh": "Item a30",
-    "ja": "ついたて(なんでも)"
+    "ja": "ついたて(なんでも)",
+    "ko": "Item a30"
   },
   "jaw-fossil": {
     "zh": "顎之化石",
-    "ja": "アゴのカセキ"
+    "ja": "アゴのカセキ",
+    "ko": "턱 화석"
   },
   "jumbled-cords": {
     "zh": "纏繞電線",
-    "ja": "からまりコード"
+    "ja": "からまりコード",
+    "ko": "엉킨 코드"
   },
   "kitchen-table": {
     "zh": "廚房桌",
-    "ja": null
+    "ja": null,
+    "ko": "주방 테이블"
   },
   "knitting-supplies": {
     "zh": "編織套組",
-    "ja": "あみものキット"
+    "ja": "あみものキット",
+    "ko": "뜨개질 세트"
   },
   "lantern": {
     "zh": "提燈",
-    "ja": "ランタン"
+    "ja": "ランタン",
+    "ko": "랜턴"
   },
   "laptop": {
     "zh": "筆記型電腦",
-    "ja": "ノートパソコン"
+    "ja": "ノートパソコン",
+    "ko": "노트북"
   },
   "large-boulder": {
     "zh": "大石頭",
-    "ja": "おおきないし"
+    "ja": "おおきないし",
+    "ko": "큰 바위"
   },
   "large-palm-tree": {
     "zh": "大椰子樹",
-    "ja": "おおきなヤシの木"
+    "ja": "おおきなヤシの木",
+    "ko": "큰 야자나무"
   },
   "large-tree-any": {
     "zh": "大樹（任意）",
-    "ja": "大きな木(なんでも)"
+    "ja": "大きな木(なんでも)",
+    "ko": "큰 나무 (아무거나)"
   },
   "lava": {
     "zh": "岩漿",
-    "ja": "マグマ"
+    "ja": "マグマ",
+    "ko": "마그마"
   },
   "lighting-any": {
     "zh": "燈光（任意）",
-    "ja": "明かり(なんでも)"
+    "ja": "明かり(なんでも)",
+    "ko": "조명 (아무거나)"
   },
   "log-bed": {
     "zh": "圓木床",
-    "ja": "まるたのベッド"
+    "ja": "まるたのベッド",
+    "ko": "통나무 침대"
   },
   "log-chair": {
     "zh": "圓木椅",
-    "ja": null
+    "ja": null,
+    "ko": "통나무 의자"
   },
   "log-table": {
     "zh": "圓木桌",
-    "ja": null
+    "ja": null,
+    "ko": "통나무 테이블"
   },
   "lost-relic-large": {
     "zh": "遺落物（大型）",
-    "ja": "おとしもの(大きなもの)"
+    "ja": "おとしもの(大きなもの)",
+    "ko": "분실물 (큰 것)"
   },
   "lunch-box": {
     "zh": "便當",
-    "ja": "おべんとう"
+    "ja": "おべんとう",
+    "ko": "도시락"
   },
   "luxury-sofa": {
     "zh": "豪華沙發",
-    "ja": null
+    "ja": null,
+    "ko": "럭셔리 소파"
   },
   "magazine-rack": {
     "zh": "雜誌架",
-    "ja": "ざっしだな"
+    "ja": "ざっしだな",
+    "ko": "잡지 선반"
   },
   "malicious-armor": {
     "zh": "詛咒之鎧",
-    "ja": "ノロイノヨロイ"
+    "ja": "ノロイノヨロイ",
+    "ko": "저주의 갑옷"
   },
   "manhole-cover": {
     "zh": "人孔蓋",
-    "ja": null
+    "ja": null,
+    "ko": "맨홀 뚜껑"
   },
   "menu-board": {
     "zh": "菜單板",
-    "ja": "メニューボード"
+    "ja": "メニューボード",
+    "ko": "메뉴판"
   },
   "metal-drum": {
     "zh": "油桶",
-    "ja": "ドラムかん"
+    "ja": "ドラムかん",
+    "ko": "드럼통"
   },
   "microscope": {
     "zh": "顯微鏡",
-    "ja": null
+    "ja": null,
+    "ko": "현미경"
   },
   "microwave": {
     "zh": "微波爐",
-    "ja": "でんしレンジ"
+    "ja": "でんしレンジ",
+    "ko": "전자레인지"
   },
   "mirror-large": {
     "zh": "鏡子（大型）",
-    "ja": "かがみ(大きなもの)"
+    "ja": "かがみ(大きなもの)",
+    "ko": "거울 (큰 것)"
   },
   "modern-sink": {
     "zh": "水槽",
-    "ja": null
+    "ja": null,
+    "ko": "모던 싱크대"
   },
   "molten-rock": {
     "zh": "滾燙岩",
-    "ja": "アツアツいわ"
+    "ja": "アツアツいわ",
+    "ko": "뜨거운 바위"
   },
   "moonlight-dance-statue": {
     "zh": "月夜舞蹈像",
-    "ja": null
+    "ja": null,
+    "ko": "달빛 춤 석상"
   },
   "moss": {
     "zh": "苔蘚",
-    "ja": "コケ"
+    "ja": "コケ",
+    "ko": "이끼"
   },
   "mossy-boulder": {
     "zh": "苔岩",
-    "ja": "こけいわ"
+    "ja": "こけいわ",
+    "ko": "이끼 바위"
   },
   "mountain-flowers": {
     "zh": "岩場花",
-    "ja": "いわばのはな"
+    "ja": "いわばのはな",
+    "ko": "바위밭 꽃"
   },
   "muddy-water": {
     "zh": "泥水",
-    "ja": "どろみず"
+    "ja": "どろみず",
+    "ko": "흙탕물"
   },
   "mug": {
     "zh": "馬克杯",
-    "ja": "マグカップ"
+    "ja": "マグカップ",
+    "ko": "머그컵"
   },
   "mushroom-lamp": {
     "zh": "蘑菇燈",
-    "ja": "キノコのランプ"
+    "ja": "キノコのランプ",
+    "ko": "버섯 램프"
   },
   "music-mat-any": {
     "zh": "Item a26",
-    "ja": "おんぷマット(なんでも)"
+    "ja": "おんぷマット(なんでも)",
+    "ko": "음표 매트 (아무거나)"
   },
   "naptime-bed": {
     "zh": "午睡床",
-    "ja": "いねむりベッド"
+    "ja": "いねむりベッド",
+    "ko": "낮잠 침대"
   },
   "newspaper": {
     "zh": "報紙",
-    "ja": "しんぶん"
+    "ja": "しんぶん",
+    "ko": "신문"
   },
   "ocean-water": {
     "zh": "海水",
-    "ja": "うみのみず"
+    "ja": "うみのみず",
+    "ko": "바닷물"
   },
   "offering-dish": {
     "zh": "供台",
-    "ja": "おそなえのだい"
+    "ja": "おそなえのだい",
+    "ko": "제물대"
   },
   "office-chair": {
     "zh": "辦公椅",
-    "ja": null
+    "ja": null,
+    "ko": "사무용 의자"
   },
   "office-desk": {
     "zh": "辦公桌",
-    "ja": null
+    "ja": null,
+    "ko": "사무용 책상"
   },
   "office-locker": {
     "zh": "辦公室置物櫃",
-    "ja": "オフィスのロッカー"
+    "ja": "オフィスのロッカー",
+    "ko": "사무실 로커"
   },
   "office-shelf": {
     "zh": "辦公室架子",
-    "ja": "オフィスのたな"
+    "ja": "オフィスのたな",
+    "ko": "사무실 선반"
   },
   "paper-party-cups": {
     "zh": "派對杯",
-    "ja": "パーティーカップ"
+    "ja": "パーティーカップ",
+    "ko": "파티 컵"
   },
   "party-plate": {
     "zh": "派對盤",
-    "ja": null
+    "ja": null,
+    "ko": "파티 접시"
   },
   "peaceful-flowers": {
     "zh": "悠閒花",
-    "ja": "のどかなはな"
+    "ja": "のどかなはな",
+    "ko": "평화로운 꽃"
   },
   "pedestal-exhibition-stand": {
     "zh": "展示台",
-    "ja": "だいざ・てんじだい"
+    "ja": "だいざ・てんじだい",
+    "ko": "전시대"
   },
   "pencil-holder": {
     "zh": "筆筒",
-    "ja": "えんぴついれ"
+    "ja": "えんぴついれ",
+    "ko": "연필꽂이"
   },
   "perch": {
     "zh": "棲木",
-    "ja": "とまり木"
+    "ja": "とまり木",
+    "ko": "횃대"
   },
   "picnic-basket": {
     "zh": "野餐籃",
-    "ja": "バスケット"
+    "ja": "バスケット",
+    "ko": "피크닉 바구니"
   },
   "pikachu-doll": {
     "zh": "皮卡丘人偶",
-    "ja": "ピカチュウにんぎょう"
+    "ja": "ピカチュウにんぎょう",
+    "ko": "피카츄 인형"
   },
   "pikachu-sofa": {
     "zh": "皮卡丘沙發",
-    "ja": "ピカチュウソファ"
+    "ja": "ピカチュウソファ",
+    "ko": "피카츄 소파"
   },
   "pink-tall-grass": {
     "zh": "粉紅草",
-    "ja": "ピンクのくさ"
+    "ja": "ピンクのくさ",
+    "ko": "분홍 풀"
   },
   "pipe-chair": {
     "zh": "管椅",
-    "ja": null
+    "ja": null,
+    "ko": "파이프 의자"
   },
   "pizza": {
     "zh": "披薩",
-    "ja": "ピザ"
+    "ja": "ピザ",
+    "ko": "피자"
   },
   "plain-bed": {
     "zh": "自然風床",
-    "ja": null
+    "ja": null,
+    "ko": "내추럴 침대"
   },
   "plain-chest": {
     "zh": "素雅箱子",
-    "ja": "ナチュラルなチェスト"
+    "ja": "ナチュラルなチェスト",
+    "ko": "내추럴 서랍장"
   },
   "plain-lamp": {
     "zh": "自然風燈",
-    "ja": null
+    "ja": null,
+    "ko": "내추럴 램프"
   },
   "plain-sofa": {
     "zh": "自然風沙發",
-    "ja": null
+    "ja": null,
+    "ko": "내추럴 소파"
   },
   "plain-table": {
     "zh": "自然風桌",
-    "ja": "ナチュラルなテーブル"
+    "ja": "ナチュラルなテーブル",
+    "ko": "내추럴 테이블"
   },
   "plated-food": {
     "zh": "盤裝食物",
-    "ja": "皿にのせた食べ物"
+    "ja": "皿にのせた食べ物",
+    "ko": "접시에 담긴 음식"
   },
   "pointy-tree": {
     "zh": "三角樹",
-    "ja": "三角の木"
+    "ja": "三角の木",
+    "ko": "삼각 나무"
   },
   "poke-ball-bed": {
     "zh": "精靈球床",
-    "ja": null
+    "ja": null,
+    "ko": "몬스터볼 침대"
   },
   "poke-ball-light": {
     "zh": "精靈球燈",
-    "ja": null
+    "ja": null,
+    "ko": "몬스터볼 조명"
   },
   "poke-ball-sofa": {
     "zh": "精靈球沙發",
-    "ja": null
+    "ja": null,
+    "ko": "몬스터볼 소파"
   },
   "poke-ball-table": {
     "zh": "精靈球桌",
-    "ja": null
+    "ja": null,
+    "ko": "몬스터볼 테이블"
   },
   "pop-bed": {
     "zh": "流行床",
-    "ja": null
+    "ja": null,
+    "ko": "팝 침대"
   },
   "pop-sofa": {
     "zh": "流行沙發",
-    "ja": null
+    "ja": null,
+    "ko": "팝 소파"
   },
   "pop-table": {
     "zh": "流行桌",
-    "ja": null
+    "ja": null,
+    "ko": "팝 테이블"
   },
   "post-any": {
     "zh": "隔板（任意）",
-    "ja": "しきり(なんでも)"
+    "ja": "しきり(なんでも)",
+    "ko": "칸막이 (아무거나)"
   },
   "potted-plant-any": {
     "zh": "觀葉植物（任意）",
-    "ja": "はち植えの木(なんでも)"
+    "ja": "はち植えの木(なんでも)",
+    "ko": "화분 (아무거나)"
   },
   "punching-bag": {
     "zh": "沙包",
-    "ja": "サンドバッグ"
+    "ja": "サンドバッグ",
+    "ko": "샌드백"
   },
   "punching-game": {
     "zh": "拳擊機",
-    "ja": "パンチングマシーン"
+    "ja": "パンチングマシーン",
+    "ko": "펀칭머신"
   },
   "raichu-sign": {
     "zh": "雷丘看板",
-    "ja": "ライチュウかんばん"
+    "ja": "ライチュウかんばん",
+    "ko": "라이츄 간판"
   },
   "railway-track": {
     "zh": "鐵軌",
-    "ja": null
+    "ja": null,
+    "ko": "철로"
   },
   "red-tall-grass": {
     "zh": "紅草",
-    "ja": "あかいくさ"
+    "ja": "あかいくさ",
+    "ko": "빨간 풀"
   },
   "research-paper": {
     "zh": "論文",
-    "ja": null
+    "ja": null,
+    "ko": "논문"
   },
   "resort-hammock": {
     "zh": "度假吊床",
-    "ja": null
+    "ja": null,
+    "ko": "리조트 해먹"
   },
   "resort-light": {
     "zh": "度假燈",
-    "ja": null
+    "ja": null,
+    "ko": "리조트 조명"
   },
   "resort-sofa": {
     "zh": "度假沙發",
-    "ja": null
+    "ja": null,
+    "ko": "리조트 소파"
   },
   "resort-table": {
     "zh": "度假桌",
-    "ja": null
+    "ja": null,
+    "ko": "리조트 테이블"
   },
   "ribbon-cake": {
     "zh": "緞帶蛋糕",
-    "ja": "リボンケーキ"
+    "ja": "リボンケーキ",
+    "ko": "리본 케이크"
   },
   "sandbags": {
     "zh": "沙袋",
-    "ja": "どのう"
+    "ja": "どのう",
+    "ko": "모래주머니"
   },
   "sandwiches": {
     "zh": "三明治",
-    "ja": "サンドイッチ"
+    "ja": "サンドイッチ",
+    "ko": "샌드위치"
   },
   "science-experiment": {
     "zh": "實驗組",
-    "ja": "じっけんセット"
+    "ja": "じっけんセット",
+    "ko": "실험 세트"
   },
   "seashore-flowers": {
     "zh": "海邊花",
-    "ja": "うみべのはな"
+    "ja": "うみべのはな",
+    "ko": "해변 꽃"
   },
   "seat-any": {
     "zh": "椅子（任意）",
-    "ja": "イス(なんでも)"
+    "ja": "イス(なんでも)",
+    "ko": "의자 (아무거나)"
   },
   "seat-wide": {
     "zh": "椅子（長型）",
-    "ja": "イス(長いもの)"
+    "ja": "イス(長いもの)",
+    "ko": "의자 (긴 것)"
   },
   "shaved-ice": {
     "zh": "刨冰",
-    "ja": "かきごおり"
+    "ja": "かきごおり",
+    "ko": "빙수"
   },
   "ship-s-wheel": {
     "zh": "船舵",
-    "ja": null
+    "ja": null,
+    "ko": "배 핸들"
   },
   "shower": {
     "zh": "淋浴",
-    "ja": "シャワー"
+    "ja": "シャワー",
+    "ko": "샤워"
   },
   "side-table": {
     "zh": "邊桌",
-    "ja": "サイドテーブル"
+    "ja": "サイドテーブル",
+    "ko": "사이드 테이블"
   },
   "sign": {
     "zh": "看板",
-    "ja": null
+    "ja": null,
+    "ko": "간판"
   },
   "sign-any": {
     "zh": "看板（任意）",
-    "ja": "かんばん(なんでも)"
+    "ja": "かんばん(なんでも)",
+    "ko": "간판 (아무거나)"
   },
   "simple-cushion": {
     "zh": "簡約靠墊",
-    "ja": "シンプルなクッション"
+    "ja": "シンプルなクッション",
+    "ko": "심플한 쿠션"
   },
   "sink": {
     "zh": "水槽",
-    "ja": null
+    "ja": null,
+    "ko": "싱크대"
   },
   "skull-fossil": {
     "zh": "頭蓋化石",
-    "ja": "ずがいのカセキ"
+    "ja": "ずがいのカセキ",
+    "ko": "두개골 화석"
   },
   "skyland-flowers": {
     "zh": "浮島花",
-    "ja": "うきしまのはな"
+    "ja": "うきしまのはな",
+    "ko": "하늘섬 꽃"
   },
   "slender-candle": {
     "zh": "細長蠟燭",
-    "ja": "ほそながキャンドル"
+    "ja": "ほそながキャンドル",
+    "ko": "가느다란 양초"
   },
   "slide": {
     "zh": "溜滑梯",
-    "ja": "すべりだい"
+    "ja": "すべりだい",
+    "ko": "미끄럼틀"
   },
   "small-stage": {
     "zh": "舞台",
-    "ja": "ステージだい"
+    "ja": "ステージだい",
+    "ko": "무대"
   },
   "small-vase": {
     "zh": "小花瓶",
-    "ja": null
+    "ja": null,
+    "ko": "작은 꽃병"
   },
   "smelting-furnace": {
     "zh": "熔爐",
-    "ja": "ようこうろ"
+    "ja": "ようこうろ",
+    "ko": "용광로"
   },
   "smooth-rock": {
     "zh": "平滑岩",
-    "ja": null
+    "ja": null,
+    "ko": "매끄러운 바위"
   },
   "soda-float": {
     "zh": "冰淇淋蘇打",
-    "ja": "クリームソーダ"
+    "ja": "クリームソーダ",
+    "ko": "크림소다"
   },
   "speaker": {
     "zh": "喇叭",
-    "ja": "スピーカー"
+    "ja": "スピーカー",
+    "ko": "스피커"
   },
   "spotlight": {
     "zh": "聚光燈",
-    "ja": "スポットライト"
+    "ja": "スポットライト",
+    "ko": "스포트라이트"
   },
   "stalagmites": {
     "zh": "筍岩",
-    "ja": "たけのこいわ"
+    "ja": "たけのこいわ",
+    "ko": "석순 바위"
   },
   "standing-mic": {
     "zh": "立麥",
-    "ja": "スタンドマイク"
+    "ja": "スタンドマイク",
+    "ko": "스탠드 마이크"
   },
   "step-stool": {
     "zh": "梯子",
-    "ja": "きゃたつ"
+    "ja": "きゃたつ",
+    "ko": "발판 사다리"
   },
   "stepping-stones": {
     "zh": "踏腳石",
-    "ja": "ふみいし"
+    "ja": "ふみいし",
+    "ko": "디딤돌"
   },
   "stone-fireplace": {
     "zh": "石壁爐",
-    "ja": "いしのだんろ"
+    "ja": "いしのだんろ",
+    "ko": "돌 벽난로"
   },
   "straw-bed": {
     "zh": "稻草床",
-    "ja": "ほしくさのベッド"
+    "ja": "ほしくさのベッド",
+    "ko": "짚 침대"
   },
   "straw-stool": {
     "zh": "稻草凳",
-    "ja": null
+    "ja": null,
+    "ko": "짚 의자"
   },
   "straw-table": {
     "zh": "稻草桌",
-    "ja": null
+    "ja": null,
+    "ko": "짚 테이블"
   },
   "streetlight-any": {
     "zh": "路燈（任意）",
-    "ja": "がいとう(なんでも)"
+    "ja": "がいとう(なんでも)",
+    "ko": "가로등 (아무거나)"
   },
   "strength-rock": {
     "zh": "怪力岩",
-    "ja": null
+    "ja": null,
+    "ko": "괴력 바위"
   },
   "stylish-cooking-pot": {
     "zh": "時尚鍋",
-    "ja": null
+    "ja": null,
+    "ko": "세련된 냄비"
   },
   "stylish-hedge": {
     "zh": "時尚樹籬",
-    "ja": "しゃれたいけがき"
+    "ja": "しゃれたいけがき",
+    "ko": "세련된 울타리"
   },
   "table-any": {
     "zh": "桌子（任意）",
-    "ja": "つくえ(なんでも)"
+    "ja": "つくえ(なんでも)",
+    "ko": "테이블 (아무거나)"
   },
   "tablet": {
     "zh": "平板電腦",
-    "ja": "タブレット"
+    "ja": "タブレット",
+    "ko": "태블릿"
   },
   "tall-grass": {
     "zh": "綠草",
-    "ja": "みどりのくさ"
+    "ja": "みどりのくさ",
+    "ko": "초록 풀"
   },
   "tall-grass-any": {
     "zh": "草（任意）",
-    "ja": "草(なんでも)"
+    "ja": "草(なんでも)",
+    "ko": "풀 (아무거나)"
   },
   "team-rocket-wall-hanging": {
     "zh": "火箭隊壁飾",
-    "ja": null
+    "ja": null,
+    "ko": "로켓단 벽걸이"
   },
   "television": {
     "zh": "電視",
-    "ja": "テレビ"
+    "ja": "テレビ",
+    "ko": "텔레비전"
   },
   "tire-toy": {
     "zh": "跨越輪胎",
-    "ja": "とびこえたいや"
+    "ja": "とびこえたいや",
+    "ko": "타이어 장난감"
   },
   "tires": {
     "zh": "輪胎",
-    "ja": "タイヤ"
+    "ja": "タイヤ",
+    "ko": "타이어"
   },
   "torch": {
     "zh": "火把",
-    "ja": "たいまつ"
+    "ja": "たいまつ",
+    "ko": "횃불"
   },
   "towel-rack": {
     "zh": "壁掛毛巾",
-    "ja": null
+    "ja": null,
+    "ko": "수건걸이"
   },
   "toy-any": {
     "zh": "玩具（任意）",
-    "ja": "おもちゃ(なんでも)"
+    "ja": "おもちゃ(なんでも)",
+    "ko": "장난감 (아무거나)"
   },
   "traffic-cone": {
     "zh": "三角錐",
-    "ja": null
+    "ja": null,
+    "ko": "라바콘"
   },
   "tree-stump-any": {
     "zh": "樹墩（任意）",
-    "ja": "きりかぶ(なんでも)"
+    "ja": "きりかぶ(なんでも)",
+    "ko": "나무 그루터기 (아무거나)"
   },
   "tundra-fossil-body": {
     "zh": "凍原化石・軀幹",
-    "ja": null
+    "ja": null,
+    "ko": "동토 화석·몸통"
   },
   "tundra-fossil-head": {
     "zh": "凍原化石・頭",
-    "ja": null
+    "ja": null,
+    "ko": "동토 화석·머리"
   },
   "tundra-fossil-tail": {
     "zh": "凍原化石・尾巴",
-    "ja": null
+    "ja": null,
+    "ko": "동토 화석·꼬리"
   },
   "utility-pole": {
     "zh": "電線桿",
-    "ja": "でんちゅう"
+    "ja": "でんちゅう",
+    "ko": "전봇대"
   },
   "vegetable-field-any": {
     "zh": "菜園（任意）",
-    "ja": "野菜畑(なんでも)"
+    "ja": "野菜畑(なんでも)",
+    "ko": "채소밭 (아무거나)"
   },
   "vending-machine": {
     "zh": "自動販賣機",
-    "ja": "じどうはんばいき"
+    "ja": "じどうはんばいき",
+    "ko": "자동판매기"
   },
   "walkway": {
     "zh": "碼頭",
-    "ja": "さんばし"
+    "ja": "さんばし",
+    "ko": "잔교"
   },
   "wall-mirror": {
     "zh": "壁掛鏡",
-    "ja": null
+    "ja": null,
+    "ko": "벽걸이 거울"
   },
   "waste-bin-any": {
     "zh": "垃圾桶（任意）",
-    "ja": "ゴミ入れ(なんでも)"
+    "ja": "ゴミ入れ(なんでも)",
+    "ko": "쓰레기통 (아무거나)"
   },
   "water": {
     "zh": "水",
-    "ja": "みず"
+    "ja": "みず",
+    "ko": "물"
   },
   "water-bucket": {
     "zh": "水桶",
-    "ja": "みずおけ"
+    "ja": "みずおけ",
+    "ko": "물통"
   },
   "waterfall": {
     "zh": "瀑布",
-    "ja": "たき"
+    "ja": "たき",
+    "ko": "폭포"
   },
   "waterwheel": {
     "zh": "水力發電機",
-    "ja": "水力はつでんマシン"
+    "ja": "水力はつでんマシン",
+    "ko": "수력 발전기"
   },
   "wheelbarrow": {
     "zh": "手推車",
-    "ja": "ておしぐるま"
+    "ja": "ておしぐるま",
+    "ko": "외바퀴 손수레"
   },
   "whiteboard": {
     "zh": "白板",
-    "ja": "ホワイトボード"
+    "ja": "ホワイトボード",
+    "ko": "화이트보드"
   },
   "wildflowers": {
     "zh": "原野花",
-    "ja": "はらっぱのはな"
+    "ja": "はらっぱのはな",
+    "ko": "들꽃"
   },
   "windmill": {
     "zh": "風力發電機",
-    "ja": "風力はつでんマシン"
+    "ja": "風力はつでんマシン",
+    "ko": "풍력 발전기"
   },
   "wing-fossil-body": {
     "zh": "翼之化石・軀幹",
-    "ja": null
+    "ja": null,
+    "ko": "날개 화석·몸통"
   },
   "wing-fossil-head": {
     "zh": "翼之化石・頭",
-    "ja": null
+    "ja": null,
+    "ko": "날개 화석·머리"
   },
   "wing-fossil-left-wing": {
     "zh": "翼之化石・左翼",
-    "ja": null
+    "ja": null,
+    "ko": "날개 화석·왼쪽 날개"
   },
   "wing-fossil-right-wing": {
     "zh": "翼之化石・右翼",
-    "ja": null
+    "ja": null,
+    "ko": "날개 화석·오른쪽 날개"
   },
   "wing-fossil-tail": {
     "zh": "翼之化石・尾巴",
-    "ja": null
+    "ja": null,
+    "ko": "날개 화석·꼬리"
   },
   "wooden-birdhouse": {
     "zh": "木鳥巢箱",
-    "ja": "木のすばこ"
+    "ja": "木のすばこ",
+    "ko": "나무 새집"
   },
   "wooden-crate": {
     "zh": "木箱",
-    "ja": "木ばこ"
+    "ja": "木ばこ",
+    "ko": "나무 상자"
   },
   "wooden-path": {
     "zh": "木棧道",
-    "ja": null
+    "ja": null,
+    "ko": "나무 산책로"
   },
   "yellow-tall-grass": {
     "zh": "黃草",
-    "ja": "きいろのくさ"
+    "ja": "きいろのくさ",
+    "ko": "노란 풀"
   }
 }

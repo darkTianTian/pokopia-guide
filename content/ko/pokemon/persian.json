@@ -1,0 +1,44 @@
+{
+  "id": 85,
+  "slug": "persian",
+  "name": "페르시온",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/persian.png",
+  "pokopia": {
+    "specialties": [
+      "trade",
+      "search"
+    ],
+    "favorites": [
+      "containers",
+      "group activities",
+      "shiny stuff",
+      "watching stuff",
+      "luxury",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "meowth",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 179,
+        "name": "Evil organization HQ",
+        "rarity": "common"
+      }
+    ]
+  }
+}

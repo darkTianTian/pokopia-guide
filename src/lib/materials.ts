@@ -2,6 +2,7 @@ import type { Locale } from "@/i18n/config"
 import habitatMappingEn from "@/../content/habitat-mapping-en.json"
 import habitatMappingZh from "@/../content/habitat-mapping-zh.json"
 import habitatMappingJa from "@/../content/habitat-mapping.json"
+import habitatMappingKo from "@/../content/habitat-mapping-ko.json"
 import _habitatMaterialsEn from "@/../content/habitat-materials-en.json"
 import _materialSources from "@/../content/material-sources.json"
 import _sourceTranslations from "@/../content/material-source-translations.json"
@@ -14,7 +15,7 @@ const materialSources = _materialSources as Record<
 >
 const sourceTranslations = _sourceTranslations as Record<
   string,
-  { en: string; zh: string }
+  { en: string; zh: string; ko?: string }
 >
 const materialNameMapping = _materialNameMapping as Record<
   string,
@@ -23,13 +24,14 @@ const materialNameMapping = _materialNameMapping as Record<
 
 function translateSources(sources: string[], locale: Locale): string[] {
   if (locale === "ja") return sources
-  return sources.map((s) => sourceTranslations[s]?.[locale] ?? s)
+  return sources.map((s) => sourceTranslations[s]?.[locale] ?? sourceTranslations[s]?.en ?? s)
 }
 
 const HABITAT_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
   en: habitatMappingEn,
   zh: habitatMappingZh,
   ja: habitatMappingJa,
+  ko: habitatMappingKo,
 }
 
 export interface MaterialUsage {
@@ -84,7 +86,7 @@ function buildSlugToLocaleName(locale: Locale): Map<string, string> {
 
   const mapping = new Map<string, string>()
   for (const [slug, names] of Object.entries(materialNameMapping)) {
-    const name = locale === "zh" ? names.zh : names.ja
+    const name = (names as Record<string, string | null>)[locale] ?? null
     if (name) mapping.set(slug, name)
   }
   return mapping

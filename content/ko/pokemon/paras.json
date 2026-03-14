@@ -1,0 +1,51 @@
+{
+  "id": 17,
+  "slug": "paras",
+  "name": "파라스",
+  "types": [
+    "bug",
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/paras.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "watching stuff",
+      "lots of dirt",
+      "looks like food",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "parasect"
+    ],
+    "habitats": [
+      {
+        "id": 12,
+        "name": "Elevated flower bed",
+        "rarity": "common"
+      },
+      {
+        "id": 14,
+        "name": "Flower garden",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -13,6 +13,7 @@ import _pokemonAreaRestrictions from "@/../content/pokemon-area-restrictions.jso
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
 import jaTranslations from "@/i18n/ja.json"
+import koTranslations from "@/i18n/ko.json"
 
 type AreaRestriction = { habitatId: number; area: string; areaJa: string; areaZh: string }
 const pokemonAreaRestrictions = _pokemonAreaRestrictions as Record<string, AreaRestriction[]>
@@ -21,6 +22,7 @@ const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
   en: enTranslations,
   zh: zhTranslations,
   ja: jaTranslations,
+  ko: koTranslations,
 }
 
 const TYPE_GRADIENTS: Record<string, string> = {

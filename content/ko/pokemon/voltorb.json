@@ -1,0 +1,46 @@
+{
+  "id": 96,
+  "slug": "voltorb",
+  "name": "찌리리공",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/voltorb.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "explode"
+    ],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "round stuff",
+      "colorful stuff",
+      "spinning stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "electrode"
+    ],
+    "habitats": [
+      {
+        "id": 66,
+        "name": "Park bench",
+        "rarity": "common"
+      }
+    ]
+  }
+}

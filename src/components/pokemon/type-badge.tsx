@@ -5,6 +5,7 @@ import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
 import jaTranslations from "@/i18n/ja.json"
+import koTranslations from "@/i18n/ko.json"
 
 const TYPE_COLORS: Record<PokemonType, string> = {
   normal: "bg-gray-400 hover:bg-gray-400",
@@ -31,6 +32,7 @@ const TYPE_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
   en: enTranslations.types,
   zh: zhTranslations.types,
   ja: jaTranslations.types,
+  ko: koTranslations.types,
 }
 
 interface TypeBadgeProps {

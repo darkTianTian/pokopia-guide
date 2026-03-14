@@ -5,15 +5,18 @@ import { DEFAULT_LOCALE, type Locale } from "@/i18n/config"
 import _habitatMaterialsJa from "@/../content/habitat-materials.json"
 import _habitatMaterialsEn from "@/../content/habitat-materials-en.json"
 import _habitatMaterialsZh from "@/../content/habitat-materials-zh.json"
+import _habitatMaterialsKo from "@/../content/habitat-materials-ko.json"
 
 const habitatMaterialsJa = _habitatMaterialsJa as Record<string, string>
 const habitatMaterialsEn = _habitatMaterialsEn as Record<string, string>
 const habitatMaterialsZh = _habitatMaterialsZh as Record<string, string>
+const habitatMaterialsKo = _habitatMaterialsKo as Record<string, string>
 
 const MATERIALS_BY_LOCALE: Record<Locale, Record<string, string>> = {
   ja: habitatMaterialsJa,
   en: habitatMaterialsEn,
   zh: habitatMaterialsZh,
+  ko: habitatMaterialsKo,
 }
 
 function getPokemonDir(locale: Locale): string {

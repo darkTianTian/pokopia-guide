@@ -1,0 +1,45 @@
+{
+  "id": 58,
+  "slug": "vespiquen",
+  "name": "비퀸",
+  "types": [
+    "bug",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/vespiquen.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "search"
+    ],
+    "favorites": [
+      "lots of nature",
+      "nice breezes",
+      "wooden stuff",
+      "gatherings",
+      "complicated stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "combee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 11,
+        "name": "Field of Flowers",
+        "rarity": "common"
+      }
+    ]
+  }
+}

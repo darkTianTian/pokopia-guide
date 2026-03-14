@@ -1,0 +1,45 @@
+{
+  "id": 32,
+  "slug": "cubone",
+  "name": "탕구리",
+  "types": [
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/cubone.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "favorites": [
+      "lots of dirt",
+      "construction",
+      "exercise",
+      "slender objects",
+      "group activities",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "marowak"
+    ],
+    "habitats": [
+      {
+        "id": 13,
+        "name": "Grave with flowers",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 138,
+  "slug": "grubbin",
+  "name": "턱지충이",
+  "types": [
+    "bug"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/grubbin.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "favorites": [
+      "lots of nature",
+      "electronics",
+      "watching stuff",
+      "lots of dirt",
+      "containers",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "charjabug"
+    ],
+    "habitats": [
+      {
+        "id": 50,
+        "name": "Yellow tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 83,
+        "name": "Vending machine break area",
+        "rarity": "common"
+      }
+    ]
+  }
+}

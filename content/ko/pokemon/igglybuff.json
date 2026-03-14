@@ -1,0 +1,46 @@
+{
+  "id": 151,
+  "slug": "igglybuff",
+  "name": "푸푸린",
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/igglybuff.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "favorites": [
+      "soft stuff",
+      "cute stuff",
+      "play spaces",
+      "healing",
+      "noisy stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "jigglypuff"
+    ],
+    "habitats": [
+      {
+        "id": 107,
+        "name": "Flower garden stump stage",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -8,6 +8,10 @@ import recipeMappingEn from "@/../content/item-recipe-mapping-en.json"
 import recipeMappingZh from "@/../content/item-recipe-mapping-zh.json"
 import descMappingEn from "@/../content/item-desc-mapping-en.json"
 import descMappingZh from "@/../content/item-desc-mapping-zh.json"
+import mappingKo from "@/../content/item-name-mapping-ko.json"
+import obtainMappingKo from "@/../content/item-obtain-mapping-ko.json"
+import recipeMappingKo from "@/../content/item-recipe-mapping-ko.json"
+import descMappingKo from "@/../content/item-desc-mapping-ko.json"
 
 interface RawMaterial {
   id: string
@@ -50,24 +54,28 @@ const NAME_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: mappingEn as Record<string, string>,
   zh: mappingZh as Record<string, string>,
   ja: {},
+  ko: mappingKo as Record<string, string>,
 }
 
 const OBTAIN_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: obtainMappingEn as Record<string, string>,
   zh: obtainMappingZh as Record<string, string>,
   ja: {},
+  ko: obtainMappingKo as Record<string, string>,
 }
 
 const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: recipeMappingEn as Record<string, string>,
   zh: recipeMappingZh as Record<string, string>,
   ja: {},
+  ko: recipeMappingKo as Record<string, string>,
 }
 
 const DESC_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: descMappingEn as Record<string, string>,
   zh: descMappingZh as Record<string, string>,
   ja: {},
+  ko: descMappingKo as Record<string, string>,
 }
 
 function translateText(text: string, mapping: Record<string, string>): string {

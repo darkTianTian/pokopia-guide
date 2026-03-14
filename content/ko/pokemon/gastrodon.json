@@ -1,0 +1,38 @@
+{
+  "id": 60,
+  "slug": "gastrodon",
+  "name": "트리토돈",
+  "types": [
+    "water",
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gastrodon.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "trade"
+    ],
+    "favorites": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "shellos",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 185,
+        "name": "Ocean fishing spot",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

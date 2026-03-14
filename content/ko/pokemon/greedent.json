@@ -1,0 +1,37 @@
+{
+  "id": 192,
+  "slug": "greedent",
+  "name": "요씽리스",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/greedent.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "favorites": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "skwovet",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 133,
+        "name": "Chef's kitchen",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "Also obtainable through Rocky Ridges story progression (cook variant)"
+  }
+}

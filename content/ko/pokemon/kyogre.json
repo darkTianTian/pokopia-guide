@@ -1,0 +1,28 @@
+{
+  "id": 289,
+  "slug": "kyogre",
+  "name": "가이오가",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/kyogre.png",
+  "pokopia": {
+    "specialties": [],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "luxury",
+      "shiny stuff",
+      "glass stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "story",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "Complete the Pasapasa Prairie Town story"
+  }
+}

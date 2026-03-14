@@ -7,11 +7,13 @@ import type { Locale } from "@/i18n/config"
 import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
 import jaTranslations from "@/i18n/ja.json"
+import koTranslations from "@/i18n/ko.json"
 
 const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
   en: enTranslations,
   zh: zhTranslations,
   ja: jaTranslations,
+  ko: koTranslations,
 }
 
 const CATEGORY_GLOWS: Record<string, string> = {

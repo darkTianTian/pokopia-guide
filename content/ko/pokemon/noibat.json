@@ -1,0 +1,46 @@
+{
+  "id": 255,
+  "slug": "noibat",
+  "name": "음뱃",
+  "types": [
+    "flying",
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/noibat.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "nice breezes",
+      "fabric",
+      "watching stuff",
+      "luxury",
+      "looks like food",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "noivern"
+    ],
+    "habitats": [
+      {
+        "id": 160,
+        "name": "Rhythmic Living room",
+        "rarity": "common"
+      }
+    ]
+  }
+}

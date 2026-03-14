@@ -1,0 +1,45 @@
+{
+  "id": 46,
+  "slug": "gyarados",
+  "name": "갸라도스",
+  "types": [
+    "water",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gyarados.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "nice breezes",
+      "cleanliness",
+      "slender objects",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "magikarp",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 146,
+        "name": "Illuminated waterfall",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "Also obtainable by talking to it in Sparkling Skylands"
+  }
+}

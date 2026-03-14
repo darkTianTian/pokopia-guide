@@ -1,0 +1,43 @@
+{
+  "id": 13,
+  "slug": "oddish",
+  "name": "뚜벅쵸",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/oddish.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "favorites": [
+      "lots of nature",
+      "lots of dirt",
+      "soft stuff",
+      "pretty flowers",
+      "lots of water",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "gloom"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "Tall Grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

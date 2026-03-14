@@ -1,0 +1,44 @@
+{
+  "id": 43,
+  "slug": "scizor",
+  "name": "핫삼",
+  "types": [
+    "bug",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/scizor.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "favorites": [
+      "lots of nature",
+      "metal stuff",
+      "wooden stuff",
+      "hard stuff",
+      "exercise",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "scyther",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 2,
+        "name": "Tree-shaded  tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

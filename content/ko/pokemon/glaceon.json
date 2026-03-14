@@ -1,0 +1,43 @@
+{
+  "id": 287,
+  "slug": "glaceon",
+  "name": "글레이시아",
+  "types": [
+    "ice"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/glaceon.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "lots of water",
+      "shiny stuff",
+      "cute stuff",
+      "glass stuff",
+      "group activities",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 208,
+        "name": "Chilly shaved ice",
+        "rarity": "common"
+      }
+    ]
+  }
+}

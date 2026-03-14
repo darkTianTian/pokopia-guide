@@ -1,0 +1,44 @@
+{
+  "id": 271,
+  "slug": "aerodactyl",
+  "name": "프테라",
+  "types": [
+    "rock",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/aerodactyl.png",
+  "pokopia": {
+    "specialties": [
+      "fly"
+    ],
+    "favorites": [
+      "stone stuff",
+      "nice breezes",
+      "hard stuff",
+      "shiny stuff",
+      "spinning stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 193,
+        "name": "Wing Fossil Display",
+        "rarity": "common"
+      }
+    ]
+  }
+}

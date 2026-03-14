@@ -1,0 +1,49 @@
+{
+  "id": 6,
+  "slug": "charizard",
+  "name": "리자몽",
+  "types": [
+    "fire",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/charizard.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "fly"
+    ],
+    "favorites": [
+      "lots of fire",
+      "nice breezes",
+      "wooden stuff",
+      "exercise",
+      "luxury",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charmeleon",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 1,
+        "name": "Tall Grass",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 40,
+        "name": "Berry-feast Campsite",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

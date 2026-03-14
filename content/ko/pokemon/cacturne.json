@@ -1,0 +1,42 @@
+{
+  "id": 56,
+  "slug": "cacturne",
+  "name": "밤선인",
+  "types": [
+    "grass",
+    "dark"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/cacturne.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "litter"
+    ],
+    "favorites": [
+      "lots of nature",
+      "nice breezes",
+      "luxury",
+      "shiny stuff",
+      "sharp stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "cacnea",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 9,
+        "name": "Tree-shaded flower bed",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": 186,
+  "slug": "dartrix",
+  "name": "빼미스로우",
+  "types": [
+    "grass",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/dartrix.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "chop"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "nice breezes",
+      "slender objects",
+      "cleanliness",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "rowlet",
+    "evolvesTo": [
+      "decidueye"
+    ],
+    "habitats": [
+      {
+        "id": 100,
+        "name": "Pointy tree-shaded rocky tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

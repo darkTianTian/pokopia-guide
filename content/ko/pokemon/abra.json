@@ -1,0 +1,50 @@
+{
+  "id": 213,
+  "slug": "abra",
+  "name": "캐이시",
+  "types": [
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/abra.png",
+  "pokopia": {
+    "specialties": [
+      "teleport"
+    ],
+    "favorites": [
+      "strange stuff",
+      "wobbly stuff",
+      "metal stuff",
+      "soft stuff",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "kadabra"
+    ],
+    "habitats": [
+      {
+        "id": 151,
+        "name": "Surging psychic power",
+        "rarity": "common"
+      },
+      {
+        "id": 152,
+        "name": "Fortune-teller's table",
+        "rarity": "common"
+      }
+    ]
+  }
+}

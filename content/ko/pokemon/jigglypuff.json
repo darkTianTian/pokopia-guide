@@ -1,0 +1,51 @@
+{
+  "id": 152,
+  "slug": "jigglypuff",
+  "name": "푸린",
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/jigglypuff.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "favorites": [
+      "soft stuff",
+      "cute stuff",
+      "play spaces",
+      "healing",
+      "wobbly stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "igglybuff",
+    "evolvesTo": [
+      "wigglytuff"
+    ],
+    "habitats": [
+      {
+        "id": 107,
+        "name": "Flower garden stump stage",
+        "rarity": "common"
+      },
+      {
+        "id": 126,
+        "name": "Recital stage",
+        "rarity": "common"
+      }
+    ]
+  }
+}

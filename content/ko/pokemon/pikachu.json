@@ -1,0 +1,46 @@
+{
+  "id": 79,
+  "slug": "pikachu",
+  "name": "피카츄",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/pikachu.png",
+  "pokopia": {
+    "specialties": [
+      "illuminate"
+    ],
+    "favorites": [
+      "electronics",
+      "glass stuff",
+      "group activities",
+      "round stuff",
+      "rides",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pichu",
+    "evolvesTo": [
+      "raichu"
+    ],
+    "habitats": [
+      {
+        "id": 20,
+        "name": "Picnic Set",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "Also obtainable through Bleak Beach story progression (pale variant)"
+  }
+}

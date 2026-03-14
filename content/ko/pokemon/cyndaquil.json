@@ -1,0 +1,45 @@
+{
+  "id": 224,
+  "slug": "cyndaquil",
+  "name": "브케인",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/cyndaquil.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "fabric",
+      "slender objects",
+      "metal stuff",
+      "rides",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "quilava"
+    ],
+    "habitats": [
+      {
+        "id": 141,
+        "name": "Concrete pipe secret base",
+        "rarity": "common"
+      }
+    ]
+  }
+}

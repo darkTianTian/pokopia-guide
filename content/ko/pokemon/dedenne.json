@@ -1,0 +1,44 @@
+{
+  "id": 254,
+  "slug": "dedenne",
+  "name": "데덴네",
+  "types": [
+    "electric",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/dedenne.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "electronics",
+      "cute stuff",
+      "watching stuff",
+      "group activities",
+      "looks like food",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 175,
+        "name": "Tire Park",
+        "rarity": "common"
+      }
+    ]
+  }
+}

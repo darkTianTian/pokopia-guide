@@ -1,0 +1,45 @@
+{
+  "id": 230,
+  "slug": "farigiraf",
+  "name": "키키링",
+  "types": [
+    "normal",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/farigiraf.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "search"
+    ],
+    "favorites": [
+      "soft stuff",
+      "strange stuff",
+      "rides",
+      "watching stuff",
+      "slender objects",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "girafarig",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 143,
+        "name": "Tree-shaded fluffy flower bed",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": 126,
+  "slug": "hariyama",
+  "name": "하리뭉",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/hariyama.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "bulldoze"
+    ],
+    "favorites": [
+      "exercise",
+      "construction",
+      "fabric",
+      "round stuff",
+      "rides",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "makuhita",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 51,
+        "name": "Tree-shaded Yellow tall grass",
+        "rarity": "rare"
+      },
+      {
+        "id": 80,
+        "name": "All packed up",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

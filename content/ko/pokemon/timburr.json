@@ -1,0 +1,45 @@
+{
+  "id": 65,
+  "slug": "timburr",
+  "name": "으랏차",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/timburr.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "favorites": [
+      "exercise",
+      "construction",
+      "wooden stuff",
+      "slender objects",
+      "blocky stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "gurdurr"
+    ],
+    "habitats": [
+      {
+        "id": 3,
+        "name": "Boulder-shaded Tall Grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}
