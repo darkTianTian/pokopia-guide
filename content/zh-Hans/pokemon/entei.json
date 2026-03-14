@@ -1,0 +1,30 @@
+{
+  "id": 291,
+  "slug": "entei",
+  "name": "炎帝",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/entei.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "symbols",
+      "exercise",
+      "luxury",
+      "bitter flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "dream-island",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "使用风速狗玩偶，在梦之岛地下遇见。Tip：梦岛每天只能使用1种玩偶（次数不限）；注意牆壁里的闪光"
+  }
+}

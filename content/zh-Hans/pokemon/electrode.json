@@ -1,0 +1,49 @@
+{
+  "id": 97,
+  "slug": "electrode",
+  "name": "顽皮雷弹",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/electrode.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "explode"
+    ],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "round stuff",
+      "play spaces",
+      "spinning stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "voltorb",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 66,
+        "name": "公园长椅",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 90,
+        "name": "航海游戏",
+        "rarity": "common"
+      }
+    ]
+  }
+}

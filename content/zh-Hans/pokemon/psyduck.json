@@ -1,0 +1,45 @@
+{
+  "id": 86,
+  "slug": "psyduck",
+  "name": "可达鸭",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/psyduck.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "strange stuff",
+      "complicated stuff",
+      "healing",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "golduck"
+    ],
+    "habitats": [
+      {
+        "id": 78,
+        "name": "温泉冲洗处",
+        "rarity": "common"
+      }
+    ]
+  }
+}

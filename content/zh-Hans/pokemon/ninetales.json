@@ -1,0 +1,48 @@
+{
+  "id": 208,
+  "slug": "ninetales",
+  "name": "九尾",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/ninetales.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "soft stuff",
+      "watching stuff",
+      "luxury",
+      "pretty flowers",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "vulpix",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 142,
+        "name": "蓬松花田",
+        "rarity": "rare"
+      },
+      {
+        "id": 180,
+        "name": "九焰",
+        "rarity": "common"
+      }
+    ]
+  }
+}

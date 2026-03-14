@@ -1,0 +1,43 @@
+{
+  "id": 176,
+  "slug": "torkoal",
+  "name": "煤炭龟",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/torkoal.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "metal stuff",
+      "hard stuff",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 112,
+        "name": "苔藓温泉",
+        "rarity": "common"
+      }
+    ]
+  }
+}

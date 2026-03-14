@@ -1,0 +1,46 @@
+{
+  "id": 191,
+  "slug": "skwovet",
+  "name": "贪心栗鼠",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/skwovet.png",
+  "pokopia": {
+    "specialties": [
+      "search",
+      "hype"
+    ],
+    "favorites": [
+      "soft stuff",
+      "wooden stuff",
+      "watching stuff",
+      "looks like food",
+      "round stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "greedent"
+    ],
+    "habitats": [
+      {
+        "id": 2,
+        "name": "树荫草丛",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": 24,
+  "slug": "slowpoke",
+  "name": "呆呆兽",
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/slowpoke.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "yawn"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "strange stuff",
+      "soft stuff",
+      "healing",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "slowbro",
+      "slowking"
+    ],
+    "habitats": [
+      {
+        "id": 5,
+        "name": "海浪边草丛",
+        "rarity": "common"
+      }
+    ]
+  }
+}

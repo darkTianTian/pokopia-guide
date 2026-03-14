@@ -1,0 +1,51 @@
+{
+  "id": 2,
+  "slug": "ivysaur",
+  "name": "妙蛙草",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/ivysaur.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "favorites": [
+      "lots of nature",
+      "soft stuff",
+      "cute stuff",
+      "pretty flowers",
+      "colorful stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "bulbasaur",
+    "evolvesTo": [
+      "venusaur"
+    ],
+    "habitats": [
+      {
+        "id": 11,
+        "name": "花卉盛景",
+        "rarity": "rare"
+      },
+      {
+        "id": 22,
+        "name": "绿色长椅",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

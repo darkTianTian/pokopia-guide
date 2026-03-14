@@ -1,0 +1,51 @@
+{
+  "id": 173,
+  "slug": "lombre",
+  "name": "莲帽小童",
+  "types": [
+    "water",
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/lombre.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "lots of nature",
+      "cleanliness",
+      "containers",
+      "noisy stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "lotad",
+    "evolvesTo": [
+      "ludicolo"
+    ],
+    "habitats": [
+      {
+        "id": 101,
+        "name": "湿润红色草丛",
+        "rarity": "rare"
+      },
+      {
+        "id": 187,
+        "name": "温泉钓鱼",
+        "rarity": "common"
+      }
+    ]
+  }
+}

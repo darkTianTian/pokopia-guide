@@ -1,0 +1,50 @@
+{
+  "id": 225,
+  "slug": "quilava",
+  "name": "火岩鼠",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/quilava.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "fabric",
+      "slender objects",
+      "metal stuff",
+      "rides",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "cyndaquil",
+    "evolvesTo": [
+      "typhlosion"
+    ],
+    "habitats": [
+      {
+        "id": 141,
+        "name": "水管秘密基地",
+        "rarity": "rare"
+      },
+      {
+        "id": 150,
+        "name": "壁炉旁小憩",
+        "rarity": "common"
+      }
+    ]
+  }
+}

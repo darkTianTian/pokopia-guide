@@ -1,0 +1,46 @@
+{
+  "id": 20,
+  "slug": "venomoth",
+  "name": "摩鲁蛾",
+  "types": [
+    "bug",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/venomoth.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "watching stuff",
+      "nice breezes",
+      "pretty flowers",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "venonat",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 7,
+        "name": "被照亮的草丛",
+        "rarity": "rare"
+      },
+      {
+        "id": 23,
+        "name": "被照亮的长椅",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

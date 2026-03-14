@@ -1,0 +1,50 @@
+{
+  "id": 180,
+  "slug": "riolu",
+  "name": "利欧路",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/riolu.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "favorites": [
+      "exercise",
+      "fabric",
+      "construction",
+      "gatherings",
+      "watching stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "lucario"
+    ],
+    "habitats": [
+      {
+        "id": 98,
+        "name": "红色草丛",
+        "rarity": "common"
+      },
+      {
+        "id": 127,
+        "name": "跟着节奏一二",
+        "rarity": "common"
+      }
+    ]
+  }
+}

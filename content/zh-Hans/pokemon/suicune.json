@@ -1,0 +1,30 @@
+{
+  "id": 292,
+  "slug": "suicune",
+  "name": "水君",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/suicune.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "cleanliness",
+      "watching stuff",
+      "healing",
+      "sour flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "dream-island",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "使用伊布玩偶，在梦之岛地下遇见。Tip：梦岛每天只能使用1种玩偶（次数不限）；注意墙壁里的闪光"
+  }
+}

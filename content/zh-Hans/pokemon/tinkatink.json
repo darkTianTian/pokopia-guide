@@ -1,0 +1,57 @@
+{
+  "id": 268,
+  "slug": "tinkatink",
+  "name": "小锻匠",
+  "types": [
+    "fairy",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tinkatink.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "favorites": [
+      "cute stuff",
+      "metal stuff",
+      "construction",
+      "looks like food",
+      "exercise",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "tinkatuff"
+    ],
+    "habitats": [
+      {
+        "id": 28,
+        "name": "大件行李搬运",
+        "rarity": "common"
+      },
+      {
+        "id": 154,
+        "name": "大型垃圾场",
+        "rarity": "common"
+      },
+      {
+        "id": 156,
+        "name": "人孔盖检查中",
+        "rarity": "common"
+      }
+    ]
+  }
+}
+

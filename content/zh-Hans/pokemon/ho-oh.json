@@ -1,0 +1,29 @@
+{
+  "id": 298,
+  "slug": "ho-oh",
+  "name": "凤王",
+  "types": [
+    "fire",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/ho-oh.png",
+  "pokopia": {
+    "specialties": [],
+    "favorites": [
+      "lots of fire",
+      "wooden stuff",
+      "nice breezes",
+      "lots of nature",
+      "symbols",
+      "spicy flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "quest",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "需先集齐三圣兽。制作透明铃铛（5 稀有宝可梦金属 + 5 虹色羽毛），晴天飞行时摇铃。Tip：给苔藓卡比兽喂涩味（零余果）可增加羽毛出现几率；提高音量可听到飞过的声音及时捡羽毛；用晴天娃娃/雨天娃娃可改变天气"
+  }
+}

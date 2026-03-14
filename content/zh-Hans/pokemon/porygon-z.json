@@ -1,0 +1,43 @@
+{
+  "id": 220,
+  "slug": "porygon-z",
+  "name": "多边兽乙型",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/porygon-z.png",
+  "pokopia": {
+    "specialties": [
+      "rarify"
+    ],
+    "favorites": [
+      "soft stuff",
+      "strange stuff",
+      "fabric",
+      "watching stuff",
+      "colorful stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "porygon2",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 164,
+        "name": "游戏角对战",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

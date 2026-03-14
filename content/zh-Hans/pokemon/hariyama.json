@@ -1,0 +1,49 @@
+{
+  "id": 126,
+  "slug": "hariyama",
+  "name": "铁掌力士",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/hariyama.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "bulldoze"
+    ],
+    "favorites": [
+      "exercise",
+      "construction",
+      "fabric",
+      "round stuff",
+      "rides",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "makuhita",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 51,
+        "name": "树荫黄色草丛",
+        "rarity": "rare"
+      },
+      {
+        "id": 80,
+        "name": "行李打包好了",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

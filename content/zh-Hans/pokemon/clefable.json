@@ -1,0 +1,46 @@
+{
+  "id": 150,
+  "slug": "clefable",
+  "name": "皮可西",
+  "types": [
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/clefable.png",
+  "pokopia": {
+    "specialties": [
+      "hype",
+      "trade"
+    ],
+    "favorites": [
+      "cute stuff",
+      "play spaces",
+      "pretty flowers",
+      "healing",
+      "group activities",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "clefairy",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 104,
+        "name": "优雅花田",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 131,
+        "name": "銅像观光点",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

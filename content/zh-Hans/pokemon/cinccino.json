@@ -1,0 +1,44 @@
+{
+  "id": 137,
+  "slug": "cinccino",
+  "name": "奇诺栗鼠",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/cinccino.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "recycle"
+    ],
+    "favorites": [
+      "soft stuff",
+      "fabric",
+      "rides",
+      "cute stuff",
+      "cleanliness",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "minccino",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 76,
+        "name": "打扮中请勿偷看",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

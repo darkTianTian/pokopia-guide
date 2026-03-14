@@ -1,0 +1,45 @@
+{
+  "id": 162,
+  "slug": "magby",
+  "name": "鸭嘴宝宝",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/magby.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "watching stuff",
+      "cute stuff",
+      "wobbly stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "magmar"
+    ],
+    "habitats": [
+      {
+        "id": 8,
+        "name": "美丽花田",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": 60,
+  "slug": "gastrodon",
+  "name": "海兔兽",
+  "types": [
+    "water",
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gastrodon.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "trade"
+    ],
+    "favorites": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "shellos",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 185,
+        "name": "海钓",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

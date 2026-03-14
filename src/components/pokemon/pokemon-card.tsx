@@ -14,13 +14,15 @@ import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
 import jaTranslations from "@/i18n/ja.json"
 import koTranslations from "@/i18n/ko.json"
+import zhHansTranslations from "@/i18n/zh-Hans.json"
 
-type AreaRestriction = { habitatId: number; area: string; areaJa: string; areaZh: string; areaKo?: string }
+type AreaRestriction = { habitatId: number; area: string; areaJa: string; areaZh: string; areaZhHans?: string; areaKo?: string }
 const pokemonAreaRestrictions = _pokemonAreaRestrictions as Record<string, AreaRestriction[]>
 
 const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
   en: enTranslations,
   zh: zhTranslations,
+  "zh-Hans": zhHansTranslations,
   ja: jaTranslations,
   ko: koTranslations,
 }
@@ -260,7 +262,7 @@ export function PokemonCard({ pokemon, locale, compact, className, headingLevel 
                         (r) => r.habitatId === h.id
                       )
                       const areaLabel = areaRestriction
-                        ? locale === "ja" ? areaRestriction.areaJa : locale === "zh" ? areaRestriction.areaZh : locale === "ko" ? (areaRestriction.areaKo ?? areaRestriction.area) : areaRestriction.area
+                        ? locale === "ja" ? areaRestriction.areaJa : locale === "zh-Hans" ? (areaRestriction.areaZhHans ?? areaRestriction.areaZh) : locale === "zh" ? areaRestriction.areaZh : locale === "ko" ? (areaRestriction.areaKo ?? areaRestriction.area) : areaRestriction.area
                         : null
                       return (
                         <HabitatLink

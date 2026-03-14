@@ -1,0 +1,50 @@
+{
+  "id": 213,
+  "slug": "abra",
+  "name": "凯西",
+  "types": [
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/abra.png",
+  "pokopia": {
+    "specialties": [
+      "teleport"
+    ],
+    "favorites": [
+      "strange stuff",
+      "wobbly stuff",
+      "metal stuff",
+      "soft stuff",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "kadabra"
+    ],
+    "habitats": [
+      {
+        "id": 151,
+        "name": "满溢超能力",
+        "rarity": "common"
+      },
+      {
+        "id": 152,
+        "name": "水晶占卜",
+        "rarity": "common"
+      }
+    ]
+  }
+}

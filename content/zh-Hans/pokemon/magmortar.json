@@ -1,0 +1,43 @@
+{
+  "id": 164,
+  "slug": "magmortar",
+  "name": "鸭嘴炎兽",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/magmortar.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "crush"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "electronics",
+      "hard stuff",
+      "exercise",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "magmar",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 122,
+        "name": "迷你厨房",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

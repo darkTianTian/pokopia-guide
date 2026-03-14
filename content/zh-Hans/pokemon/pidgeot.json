@@ -1,0 +1,44 @@
+{
+  "id": 12,
+  "slug": "pidgeot",
+  "name": "大比鸟",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/pidgeot.png",
+  "pokopia": {
+    "specialties": [
+      "fly",
+      "chop"
+    ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "wooden stuff",
+      "lots of nature",
+      "luxury",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pidgeotto",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 39,
+        "name": "奢华叽叽喳喳喂食",
+        "rarity": "common"
+      }
+    ]
+  }
+}

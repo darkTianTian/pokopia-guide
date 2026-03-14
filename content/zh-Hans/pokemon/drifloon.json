@@ -1,0 +1,57 @@
+{
+  "id": 61,
+  "slug": "drifloon",
+  "name": "飘飘球",
+  "types": [
+    "ghost",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/drifloon.png",
+  "pokopia": {
+    "specialties": [
+      "fly"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "nice breezes",
+      "cute stuff",
+      "round stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "drifblim"
+    ],
+    "habitats": [
+      {
+        "id": 16,
+        "name": "乘着温暖的风",
+        "rarity": "common"
+      },
+      {
+        "id": 30,
+        "name": "玩偶与晚安",
+        "rarity": "common"
+      },
+      {
+        "id": 181,
+        "name": "被布偶包围",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "也可在干巴巴荒野与牠对话获取"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": 205,
+  "slug": "gimmighoul",
+  "name": "索财灵",
+  "types": [
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gimmighoul.png",
+  "pokopia": {
+    "specialties": [
+      "appraise"
+    ],
+    "favorites": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "gholdengo"
+    ],
+    "habitats": [
+      {
+        "id": 129,
+        "name": "小博物館",
+        "rarity": "common"
+      }
+    ]
+  }
+}

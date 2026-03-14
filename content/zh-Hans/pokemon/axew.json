@@ -1,0 +1,50 @@
+{
+  "id": 71,
+  "slug": "axew",
+  "name": "牙牙",
+  "types": [
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/axew.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "favorites": [
+      "lots of fire",
+      "luxury",
+      "lots of dirt",
+      "hard stuff",
+      "sharp stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "fraxure"
+    ],
+    "habitats": [
+      {
+        "id": 29,
+        "name": "伐木工人作业场",
+        "rarity": "common"
+      },
+      {
+        "id": 44,
+        "name": "圆木温暖",
+        "rarity": "common"
+      }
+    ]
+  }
+}

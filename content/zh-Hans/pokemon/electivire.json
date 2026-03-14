@@ -1,0 +1,49 @@
+{
+  "id": 105,
+  "slug": "electivire",
+  "name": "电击魔兽",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/electivire.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "crush"
+    ],
+    "favorites": [
+      "electronics",
+      "glass stuff",
+      "lots of fire",
+      "hard stuff",
+      "exercise",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "electabuzz",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 72,
+        "name": "灯光舞台",
+        "rarity": "rare"
+      },
+      {
+        "id": 84,
+        "name": "自动贩卖机套组",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

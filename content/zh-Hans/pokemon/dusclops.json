@@ -1,0 +1,42 @@
+{
+  "id": 243,
+  "slug": "dusclops",
+  "name": "彷徨夜灵",
+  "types": [
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/dusclops.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "rides",
+      "soft stuff",
+      "containers",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "duskull",
+    "evolvesTo": [
+      "dusknoir"
+    ],
+    "habitats": [
+      {
+        "id": 153,
+        "name": "垃圾场的电视",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

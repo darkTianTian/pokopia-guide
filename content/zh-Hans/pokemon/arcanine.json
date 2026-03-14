@@ -1,0 +1,49 @@
+{
+  "id": 89,
+  "slug": "arcanine",
+  "name": "风速狗",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/arcanine.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "search"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "nice breezes",
+      "watching stuff",
+      "symbols",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "growlithe",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 129,
+        "name": "小博物馆",
+        "rarity": "rare"
+      },
+      {
+        "id": 188,
+        "name": "岩浆钓鱼",
+        "rarity": "common"
+      }
+    ]
+  }
+}

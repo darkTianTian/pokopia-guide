@@ -1,0 +1,48 @@
+{
+  "id": 30,
+  "slug": "onix",
+  "name": "大岩蛇",
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/onix.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "favorites": [
+      "stone stuff",
+      "lots of dirt",
+      "blocky stuff",
+      "slender objects",
+      "exercise",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "steelix"
+    ],
+    "habitats": [
+      {
+        "id": 37,
+        "name": "沙沙草丛",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "也可透过干巴巴荒野故事进度获取"
+  }
+}

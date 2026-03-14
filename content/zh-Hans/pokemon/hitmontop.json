@@ -1,0 +1,43 @@
+{
+  "id": 37,
+  "slug": "hitmontop",
+  "name": "战舞郎",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/hitmontop.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "exercise",
+      "group activities",
+      "fabric",
+      "stone stuff",
+      "round stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tyrogue",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 26,
+        "name": "健身房急救站",
+        "rarity": "common"
+      }
+    ]
+  }
+}

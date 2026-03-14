@@ -1,0 +1,41 @@
+{
+  "id": 244,
+  "slug": "dusknoir",
+  "name": "黑夜魔灵",
+  "types": [
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/dusknoir.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "trade"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "rides",
+      "group activities",
+      "containers",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dusclops",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 153,
+        "name": "垃圾场的电视",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

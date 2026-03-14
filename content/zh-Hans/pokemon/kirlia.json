@@ -1,0 +1,53 @@
+{
+  "id": 232,
+  "slug": "kirlia",
+  "name": "奇鲁莉安",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/kirlia.png",
+  "pokopia": {
+    "specialties": [
+      "teleport",
+      "trade"
+    ],
+    "favorites": [
+      "strange stuff",
+      "cute stuff",
+      "healing",
+      "watching stuff",
+      "symbols",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ralts",
+    "evolvesTo": [
+      "gardevoir",
+      "gallade"
+    ],
+    "habitats": [
+      {
+        "id": 159,
+        "name": "读书空间",
+        "rarity": "rare"
+      },
+      {
+        "id": 162,
+        "name": "滋润化妆台",
+        "rarity": "common"
+      }
+    ]
+  }
+}

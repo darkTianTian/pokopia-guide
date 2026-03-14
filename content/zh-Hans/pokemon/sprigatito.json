@@ -1,0 +1,50 @@
+{
+  "id": 263,
+  "slug": "sprigatito",
+  "name": "新叶喵",
+  "types": [
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/sprigatito.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "favorites": [
+      "lots of nature",
+      "pretty flowers",
+      "containers",
+      "colorful stuff",
+      "cute stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "floragato"
+    ],
+    "habitats": [
+      {
+        "id": 138,
+        "name": "树荫粉红色草丛",
+        "rarity": "common"
+      },
+      {
+        "id": 155,
+        "name": "伙伴与侦讯",
+        "rarity": "common"
+      }
+    ]
+  }
+}

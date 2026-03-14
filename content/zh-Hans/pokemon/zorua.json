@@ -1,0 +1,45 @@
+{
+  "id": 134,
+  "slug": "zorua",
+  "name": "索罗亚",
+  "types": [
+    "dark"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/zorua.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "shiny stuff",
+      "luxury",
+      "glass stuff",
+      "cute stuff",
+      "group activities",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "zoroark"
+    ],
+    "habitats": [
+      {
+        "id": 56,
+        "name": "凉爽花田",
+        "rarity": "common"
+      }
+    ]
+  }
+}

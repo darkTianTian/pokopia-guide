@@ -1,0 +1,45 @@
+{
+  "id": 38,
+  "slug": "koffing",
+  "name": "瓦斯弹",
+  "types": [
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/koffing.png",
+  "pokopia": {
+    "specialties": [
+      "recycle"
+    ],
+    "favorites": [
+      "garbage",
+      "gatherings",
+      "complicated stuff",
+      "soft stuff",
+      "wobbly stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "weezing"
+    ],
+    "habitats": [
+      {
+        "id": 63,
+        "name": "垃圾集中处",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": 133,
+  "slug": "garbodor",
+  "name": "灰尘山",
+  "types": [
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/garbodor.png",
+  "pokopia": {
+    "specialties": [
+      "litter",
+      "recycle"
+    ],
+    "favorites": [
+      "garbage",
+      "containers",
+      "complicated stuff",
+      "shiny stuff",
+      "gatherings",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "trubbish",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 63,
+        "name": "垃圾集中处",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

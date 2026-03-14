@@ -1,0 +1,43 @@
+{
+  "id": 51,
+  "slug": "volbeat",
+  "name": "电萤虫",
+  "types": [
+    "bug"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/volbeat.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "shiny stuff",
+      "cute stuff",
+      "group activities",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 10,
+        "name": "湿润花田",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

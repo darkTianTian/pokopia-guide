@@ -1,0 +1,45 @@
+{
+  "id": 77,
+  "slug": "cramorant",
+  "name": "古月鸟",
+  "types": [
+    "flying",
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/cramorant.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "fly"
+    ],
+    "favorites": [
+      "nice breezes",
+      "lots of water",
+      "ocean vibes",
+      "slender objects",
+      "looks like food",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 4,
+        "name": "湿润草丛",
+        "rarity": "common"
+      }
+    ]
+  }
+}

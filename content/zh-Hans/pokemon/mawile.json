@@ -1,0 +1,45 @@
+{
+  "id": 175,
+  "slug": "mawile",
+  "name": "大嘴娃",
+  "types": [
+    "steel",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/mawile.png",
+  "pokopia": {
+    "specialties": [
+      "trade",
+      "build"
+    ],
+    "favorites": [
+      "metal stuff",
+      "cute stuff",
+      "colorful stuff",
+      "looks like food",
+      "group activities",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 91,
+        "name": "收银台结账",
+        "rarity": "common"
+      }
+    ]
+  }
+}

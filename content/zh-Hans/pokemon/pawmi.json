@@ -1,0 +1,50 @@
+{
+  "id": 142,
+  "slug": "pawmi",
+  "name": "布拨",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/pawmi.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "cute stuff",
+      "glass stuff",
+      "group activities",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "pawmo"
+    ],
+    "habitats": [
+      {
+        "id": 56,
+        "name": "凉爽花田",
+        "rarity": "common"
+      },
+      {
+        "id": 67,
+        "name": "饥肠辘辘餐厅",
+        "rarity": "common"
+      }
+    ]
+  }
+}

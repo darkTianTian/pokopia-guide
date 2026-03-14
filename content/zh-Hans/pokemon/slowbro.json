@@ -1,0 +1,55 @@
+{
+  "id": 25,
+  "slug": "slowbro",
+  "name": "呆壳兽",
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/slowbro.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "trade"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "strange stuff",
+      "group activities",
+      "healing",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "slowpoke",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 5,
+        "name": "海浪边草丛",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 30,
+        "name": "玩偶与晚安",
+        "rarity": "rare"
+      },
+      {
+        "id": 184,
+        "name": "钓鱼池",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

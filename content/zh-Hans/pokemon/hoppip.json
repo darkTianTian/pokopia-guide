@@ -1,0 +1,47 @@
+{
+  "id": 10001,
+  "slug": "hoppip",
+  "name": "毽子草",
+  "types": [
+    "grass",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/hoppip.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "favorites": [
+      "soft stuff",
+      "lots of nature",
+      "nice breezes",
+      "pretty flowers",
+      "wobbly stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "event",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "skiploom"
+    ],
+    "habitats": [
+      {
+        "id": 210,
+        "name": "黄色地毯",
+        "rarity": "common"
+      }
+    ],
+    "category": "event"
+  }
+}

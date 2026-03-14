@@ -1,0 +1,43 @@
+{
+  "id": 282,
+  "slug": "jolteon",
+  "name": "雷伊布",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/jolteon.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "cute stuff",
+      "glass stuff",
+      "sharp stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 203,
+        "name": "电击薯条",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": 16,
+  "slug": "bellossom",
+  "name": "美丽花",
+  "types": [
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/bellossom.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "hype"
+    ],
+    "favorites": [
+      "lots of nature",
+      "pretty flowers",
+      "play spaces",
+      "cute stuff",
+      "noisy stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gloom",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 34,
+        "name": "吉利蛋休憩所",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

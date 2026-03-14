@@ -1,0 +1,50 @@
+{
+  "id": 187,
+  "slug": "decidueye",
+  "name": "狙射树枭",
+  "types": [
+    "grass",
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/decidueye.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "chop"
+    ],
+    "favorites": [
+      "lots of nature",
+      "spooky stuff",
+      "wooden stuff",
+      "nice breezes",
+      "letters and words",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dartrix",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 100,
+        "name": "三角树荫与岩石草丛",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 136,
+        "name": "现代生活",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

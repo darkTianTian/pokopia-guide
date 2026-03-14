@@ -1,0 +1,48 @@
+{
+  "id": 39,
+  "slug": "weezing",
+  "name": "双弹瓦斯",
+  "types": [
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/weezing.png",
+  "pokopia": {
+    "specialties": [
+      "recycle"
+    ],
+    "favorites": [
+      "garbage",
+      "gatherings",
+      "complicated stuff",
+      "soft stuff",
+      "wobbly stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "koffing",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 48,
+        "name": "美好的古董",
+        "rarity": "common"
+      },
+      {
+        "id": 63,
+        "name": "垃圾集中处",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

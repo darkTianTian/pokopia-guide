@@ -1,0 +1,51 @@
+{
+  "id": 11,
+  "slug": "pidgeotto",
+  "name": "比比鸟",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/pidgeotto.png",
+  "pokopia": {
+    "specialties": [
+      "fly",
+      "search"
+    ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "watching stuff",
+      "lots of nature",
+      "looks like food",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pidgey",
+    "evolvesTo": [
+      "pidgeot"
+    ],
+    "habitats": [
+      {
+        "id": 6,
+        "name": "高台草丛",
+        "rarity": "rare"
+      },
+      {
+        "id": 8,
+        "name": "美丽花田",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

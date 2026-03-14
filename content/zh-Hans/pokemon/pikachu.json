@@ -1,0 +1,46 @@
+{
+  "id": 79,
+  "slug": "pikachu",
+  "name": "皮卡丘",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/pikachu.png",
+  "pokopia": {
+    "specialties": [
+      "illuminate"
+    ],
+    "favorites": [
+      "electronics",
+      "glass stuff",
+      "group activities",
+      "round stuff",
+      "rides",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pichu",
+    "evolvesTo": [
+      "raichu"
+    ],
+    "habitats": [
+      {
+        "id": 20,
+        "name": "野餐餐桌",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "也可透过暗沉沉海边故事进度获取（浅色型态）"
+  }
+}

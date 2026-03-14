@@ -1,0 +1,47 @@
+{
+  "id": 217,
+  "slug": "mr-mime",
+  "name": "魔墙人偶",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/mr-mime.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "build"
+    ],
+    "favorites": [
+      "strange stuff",
+      "cute stuff",
+      "rides",
+      "wobbly stuff",
+      "watching stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "mime-jr",
+    "evolvesTo": [
+      "mr-rime"
+    ],
+    "habitats": [
+      {
+        "id": 157,
+        "name": "亮晶晶洗臉台",
+        "rarity": "common"
+      }
+    ]
+  }
+}

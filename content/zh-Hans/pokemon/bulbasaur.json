@@ -1,0 +1,51 @@
+{
+  "id": 1,
+  "slug": "bulbasaur",
+  "name": "妙蛙种子",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/bulbasaur.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "favorites": [
+      "lots of nature",
+      "soft stuff",
+      "cute stuff",
+      "lots of water",
+      "group activities",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "ivysaur"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "绿色草丛",
+        "rarity": "common"
+      },
+      {
+        "id": 22,
+        "name": "绿色长椅",
+        "rarity": "common"
+      }
+    ]
+  }
+}

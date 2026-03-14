@@ -1,0 +1,45 @@
+{
+  "id": 132,
+  "slug": "trubbish",
+  "name": "破破袋",
+  "types": [
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/trubbish.png",
+  "pokopia": {
+    "specialties": [
+      "recycle"
+    ],
+    "favorites": [
+      "garbage",
+      "containers",
+      "complicated stuff",
+      "shiny stuff",
+      "gatherings",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "garbodor"
+    ],
+    "habitats": [
+      {
+        "id": 63,
+        "name": "垃圾集中处",
+        "rarity": "common"
+      }
+    ]
+  }
+}

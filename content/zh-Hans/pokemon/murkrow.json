@@ -1,0 +1,49 @@
+{
+  "id": 167,
+  "slug": "murkrow",
+  "name": "黑暗鸦",
+  "types": [
+    "dark",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/murkrow.png",
+  "pokopia": {
+    "specialties": [
+      "trade",
+      "fly"
+    ],
+    "favorites": [
+      "shiny stuff",
+      "nice breezes",
+      "group activities",
+      "luxury",
+      "fabric",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "honchkrow"
+    ],
+    "habitats": [
+      {
+        "id": 102,
+        "name": "高台红色草丛",
+        "rarity": "common"
+      },
+      {
+        "id": 105,
+        "name": "树荫优雅花田",
+        "rarity": "common"
+      }
+    ]
+  }
+}

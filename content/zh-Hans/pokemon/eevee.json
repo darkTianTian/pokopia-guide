@@ -1,0 +1,52 @@
+{
+  "id": 280,
+  "slug": "eevee",
+  "name": "伊布",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/eevee.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "soft stuff",
+      "stone stuff",
+      "cute stuff",
+      "letters and words",
+      "group activities",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
+    ],
+    "habitats": [
+      {
+        "id": 8,
+        "name": "美丽花田",
+        "rarity": "common"
+      }
+    ]
+  }
+}

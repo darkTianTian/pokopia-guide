@@ -14,7 +14,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const locales = ["zh", "ja", "ko"] as const
+  const locales = ["zh", "zh-Hans", "ja", "ko"] as const
   const slugs = getAllMaterialSlugs("en")
   const results: { locale: string; slug: string }[] = []
 

@@ -1,0 +1,43 @@
+{
+  "id": 131,
+  "slug": "audino",
+  "name": "差不多娃娃",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/audino.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "soft stuff",
+      "fabric",
+      "healing",
+      "cute stuff",
+      "round stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 91,
+        "name": "收银台结账",
+        "rarity": "common"
+      }
+    ]
+  }
+}

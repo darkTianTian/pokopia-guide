@@ -1,0 +1,31 @@
+{
+  "id": 294,
+  "slug": "articuno",
+  "name": "急冻鸟",
+  "types": [
+    "ice",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/articuno.png",
+  "pokopia": {
+    "specialties": [
+      "fly"
+    ],
+    "favorites": [
+      "lots of water",
+      "nice breezes",
+      "shiny stuff",
+      "symbols",
+      "luxury",
+      "sour flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "craft",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "在空空镇建造双子冰窟。图纸来自空空镇祭坛。Tip：学会小磁怪技能后盖房子更快"
+  }
+}

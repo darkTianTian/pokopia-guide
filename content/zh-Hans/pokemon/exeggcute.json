@@ -1,0 +1,57 @@
+{
+  "id": 98,
+  "slug": "exeggcute",
+  "name": "蛋蛋",
+  "types": [
+    "grass",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/exeggcute.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "teleport"
+    ],
+    "favorites": [
+      "lots of nature",
+      "strange stuff",
+      "gatherings",
+      "watching stuff",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "exeggutor"
+    ],
+    "habitats": [
+      {
+        "id": 57,
+        "name": "南国风情",
+        "rarity": "common"
+      },
+      {
+        "id": 59,
+        "name": "海灘樹蔭",
+        "rarity": "common"
+      },
+      {
+        "id": 98,
+        "name": "红色草叢",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": 229,
+  "slug": "girafarig",
+  "name": "麒麟奇",
+  "types": [
+    "normal",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/girafarig.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "favorites": [
+      "soft stuff",
+      "strange stuff",
+      "rides",
+      "watching stuff",
+      "slender objects",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "farigiraf"
+    ],
+    "habitats": [
+      {
+        "id": 143,
+        "name": "樹蔭蓬鬆花田",
+        "rarity": "common"
+      }
+    ]
+  }
+}

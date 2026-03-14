@@ -1,0 +1,46 @@
+{
+  "id": 57,
+  "slug": "combee",
+  "name": "三蜜蜂",
+  "types": [
+    "bug",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/combee.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "favorites": [
+      "lots of nature",
+      "nice breezes",
+      "wooden stuff",
+      "gatherings",
+      "group activities",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "vespiquen"
+    ],
+    "habitats": [
+      {
+        "id": 8,
+        "name": "美丽花田",
+        "rarity": "common"
+      }
+    ]
+  }
+}

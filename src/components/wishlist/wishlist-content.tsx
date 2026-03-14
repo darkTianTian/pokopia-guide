@@ -14,10 +14,12 @@ import enTranslations from "@/i18n/en.json"
 import zhTranslations from "@/i18n/zh.json"
 import jaTranslations from "@/i18n/ja.json"
 import koTranslations from "@/i18n/ko.json"
+import zhHansTranslations from "@/i18n/zh-Hans.json"
 
 const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
   en: enTranslations,
   zh: zhTranslations,
+  "zh-Hans": zhHansTranslations,
   ja: jaTranslations,
   ko: koTranslations,
 }

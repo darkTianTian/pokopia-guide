@@ -1,0 +1,43 @@
+{
+  "id": 273,
+  "slug": "rampardos",
+  "name": "战槌龙",
+  "types": [
+    "rock"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/rampardos.png",
+  "pokopia": {
+    "specialties": [
+      "crush"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "metal stuff",
+      "luxury",
+      "exercise",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "cranidos",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 195,
+        "name": "头锤化石展示台",
+        "rarity": "common"
+      }
+    ]
+  }
+}

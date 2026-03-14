@@ -1,0 +1,52 @@
+{
+  "id": 114,
+  "slug": "azurill",
+  "name": "露力丽",
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/azurill.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "favorites": [
+      "lots of water",
+      "cute stuff",
+      "cleanliness",
+      "healing",
+      "rides",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "marill"
+    ],
+    "habitats": [
+      {
+        "id": 53,
+        "name": "湿润黄色草丛",
+        "rarity": "common"
+      },
+      {
+        "id": 62,
+        "name": "来整理吧",
+        "rarity": "common"
+      }
+    ]
+  }
+}

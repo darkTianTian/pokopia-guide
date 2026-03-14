@@ -1,0 +1,49 @@
+{
+  "id": 215,
+  "slug": "alakazam",
+  "name": "胡地",
+  "types": [
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/alakazam.png",
+  "pokopia": {
+    "specialties": [
+      "teleport",
+      "trade"
+    ],
+    "favorites": [
+      "strange stuff",
+      "wobbly stuff",
+      "metal stuff",
+      "letters and words",
+      "watching stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kadabra",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 151,
+        "name": "满溢超能力",
+        "rarity": "rare"
+      },
+      {
+        "id": 168,
+        "name": "实验空间",
+        "rarity": "common"
+      }
+    ]
+  }
+}

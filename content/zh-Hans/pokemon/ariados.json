@@ -1,0 +1,44 @@
+{
+  "id": 110,
+  "slug": "ariados",
+  "name": "阿利多斯",
+  "types": [
+    "bug",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/ariados.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "garbage",
+      "rides",
+      "colorful stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "spinarak",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 50,
+        "name": "黄色草丛",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

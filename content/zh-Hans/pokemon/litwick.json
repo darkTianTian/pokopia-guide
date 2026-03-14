@@ -1,0 +1,51 @@
+{
+  "id": 68,
+  "slug": "litwick",
+  "name": "烛光灵",
+  "types": [
+    "ghost",
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/litwick.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "lots of fire",
+      "wobbly stuff",
+      "blocky stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "lampent"
+    ],
+    "habitats": [
+      {
+        "id": 32,
+        "name": "墓前供品",
+        "rarity": "common"
+      },
+      {
+        "id": 33,
+        "name": "诡异墓前供品",
+        "rarity": "common"
+      }
+    ]
+  }
+}
