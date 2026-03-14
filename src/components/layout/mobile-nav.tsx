@@ -6,6 +6,12 @@ import { usePathname } from "next/navigation"
 import { Heart, Menu, X, Globe, Check } from "lucide-react"
 import { getLocalePath, LOCALES, LOCALE_LABELS, DEFAULT_LOCALE, type Locale } from "@/i18n/config"
 import { ThemeToggle } from "./theme-toggle"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 interface NavItem {
   path: string
@@ -108,30 +114,30 @@ export function MobileNav({
             </li>
           </ul>
 
-          <div className="mt-2 border-t border-border/40 pt-5 px-3 pb-4">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-muted-foreground/60">
-                <Globe className="h-4 w-4 text-primary" />
-                Language
-              </div>
-              <ThemeToggle />
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-              {LOCALES.map((loc) => (
-                <Link
-                  key={loc}
-                  href={getTargetPath(loc)}
-                  onClick={() => setOpen(false)}
-                  className={`flex items-center justify-center gap-1.5 rounded-2xl px-3 py-2.5 text-[13px] font-semibold transition-all duration-200 ${loc === locale
-                      ? "bg-primary/10 text-primary ring-1 ring-primary/20 shadow-sm"
-                      : "bg-primary/5 text-muted-foreground hover:bg-primary/10 hover:text-primary"
-                    }`}
-                >
-                  {LOCALE_LABELS[loc]}
-                  {loc === locale && <Check className="h-3.5 w-3.5" />}
-                </Link>
-              ))}
-            </div>
+          <div className="mt-2 flex items-center justify-between border-t border-border/40 pt-4 px-2 pb-2">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="flex items-center gap-1.5 rounded-full px-3 py-2 text-sm text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary outline-none">
+                  <Globe className="h-4 w-4" />
+                  {LOCALE_LABELS[locale]}
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="rounded-2xl border-border/40 bg-background/95 p-2 shadow-xl backdrop-blur-3xl">
+                {LOCALES.map((loc) => (
+                  <DropdownMenuItem key={loc} asChild className="rounded-xl px-3 py-2.5 text-sm font-semibold transition-colors focus:bg-primary/10 focus:text-primary cursor-pointer">
+                    <Link
+                      href={getTargetPath(loc)}
+                      onClick={() => setOpen(false)}
+                      className={loc === locale ? "text-primary" : ""}
+                    >
+                      {LOCALE_LABELS[loc]}
+                      {loc === locale && <Check className="ml-auto h-4 w-4" />}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <ThemeToggle />
           </div>
         </nav>
       </div>
