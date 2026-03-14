@@ -3,6 +3,7 @@ import { Nunito, Nunito_Sans } from "next/font/google"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { GoogleAnalytics } from "@/components/google-analytics"
+import { MicrosoftClarity } from "@/components/microsoft-clarity"
 import { ScrollToTop } from "@/components/layout/scroll-to-top"
 import { ThemeProvider } from "@/components/theme-provider"
 import "@/app/globals.css"
@@ -76,6 +77,7 @@ export default function EnLayout({
           </div>
           <ScrollToTop />
           <GoogleAnalytics />
+          <MicrosoftClarity />
         </ThemeProvider>
       </body>
     </html>
