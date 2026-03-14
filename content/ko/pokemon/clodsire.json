@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 54,
-        "name": "Marshy tall grass",
+        "name": "늪지의 풀숲",
         "rarity": "rare"
       },
       {
         "id": 186,
-        "name": "Marsh fishing spot",
+        "name": "늪 낚시",
         "rarity": "rare"
       }
     ]

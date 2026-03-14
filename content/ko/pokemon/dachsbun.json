@@ -35,12 +35,12 @@
     "habitats": [
       {
         "id": 104,
-        "name": "Graceful flower bed",
+        "name": "우아한 꽃밭",
         "rarity": "rare"
       },
       {
         "id": 121,
-        "name": "Best bread bakery",
+        "name": "최고의 빵집",
         "rarity": "rare"
       }
     ]

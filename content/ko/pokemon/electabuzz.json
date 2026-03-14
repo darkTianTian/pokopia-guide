@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 64,
-        "name": "Trash can central",
+        "name": "쓰레기통 천국",
         "rarity": "rare"
       },
       {
         "id": 72,
-        "name": "Light-up stage",
+        "name": "라이트업 스테이지",
         "rarity": "common"
       }
     ]

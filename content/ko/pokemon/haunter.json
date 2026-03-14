@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 73,
-        "name": "Surprise in store",
+        "name": "깜짝 장치",
         "rarity": "common"
       },
       {
         "id": 89,
-        "name": "Spooky study",
+        "name": "으스스한 서재",
         "rarity": "rare"
       }
     ]

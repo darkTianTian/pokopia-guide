@@ -34,12 +34,12 @@
     "habitats": [
       {
         "id": 6,
-        "name": "Elevated tall grass",
+        "name": "고지대 풀숲",
         "rarity": "rare"
       },
       {
         "id": 31,
-        "name": "Gently lit bed",
+        "name": "부드러운 불빛의 잘자",
         "rarity": "common"
       }
     ]

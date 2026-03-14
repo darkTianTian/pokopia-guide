@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 50,
-        "name": "Yellow tall grass",
+        "name": "노란 풀숲",
         "rarity": "common"
       },
       {
         "id": 83,
-        "name": "Vending machine break area",
+        "name": "자판기 휴게소",
         "rarity": "common"
       }
     ]

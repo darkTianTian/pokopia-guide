@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 140,
-        "name": "Elevated pink tall grass",
+        "name": "고지대 분홍 풀숲",
         "rarity": "very-rare"
       },
       {
         "id": 156,
-        "name": "Sewer hole inspection",
+        "name": "맨홀 점검",
         "rarity": "rare"
       }
     ]

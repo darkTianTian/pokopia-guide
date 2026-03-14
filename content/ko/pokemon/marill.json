@@ -39,12 +39,12 @@
     "habitats": [
       {
         "id": 53,
-        "name": "Hydrated yellow tall grass",
+        "name": "촉촉한 노란 풀숲",
         "rarity": "rare"
       },
       {
         "id": 88,
-        "name": "Dock",
+        "name": "부두",
         "rarity": "common"
       }
     ]

@@ -33,17 +33,17 @@
     "habitats": [
       {
         "id": 142,
-        "name": "Fluffy flower bed",
+        "name": "포슬포슬 꽃밭",
         "rarity": "very-rare"
       },
       {
         "id": 158,
-        "name": "Home theater",
+        "name": "홈시어터",
         "rarity": "rare"
       },
       {
         "id": 167,
-        "name": "Office storeroom",
+        "name": "사무실 창고",
         "rarity": "rare"
       }
     ]

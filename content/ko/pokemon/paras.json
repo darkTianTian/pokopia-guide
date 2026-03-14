@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 12,
-        "name": "Elevated flower bed",
+        "name": "고지대 꽃밭",
         "rarity": "common"
       },
       {
         "id": 14,
-        "name": "Flower garden",
+        "name": "플라워 가든",
         "rarity": "common"
       }
     ]

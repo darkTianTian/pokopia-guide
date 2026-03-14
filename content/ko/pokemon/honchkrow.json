@@ -34,12 +34,12 @@
     "habitats": [
       {
         "id": 102,
-        "name": "Elevated red tall grass",
+        "name": "고지대 빨간 풀숲",
         "rarity": "rare"
       },
       {
         "id": 125,
-        "name": "Chirping recital",
+        "name": "새소리 연주회",
         "rarity": "rare"
       }
     ]

@@ -35,8 +35,13 @@
     "habitats": [
       {
         "id": 68,
-        "name": "Tableside delivery cart",
+        "name": "테이블사이드 배달",
         "rarity": "rare"
+      },
+      {
+        "id": 86,
+        "name": "물레방아 스팟",
+        "rarity": "very-rare"
       }
     ]
   }

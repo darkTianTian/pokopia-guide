@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 210,
-        "name": "Yellow Carpet",
+        "name": "노란 카펫",
         "rarity": "very-rare"
       },
       {
         "id": 212,
-        "name": "Dandelion Lunchtime",
+        "name": "민들레 점심시간",
         "rarity": "rare"
       }
     ],

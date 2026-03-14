@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 157,
-        "name": "Spotless Washing station",
+        "name": "반짝반짝 세면대",
         "rarity": "common"
       },
       {
         "id": 171,
-        "name": "Public reading material",
+        "name": "자유롭게 읽기",
         "rarity": "common"
       }
     ]

@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 98,
-        "name": "Red tall grass",
+        "name": "빨간 풀숲",
         "rarity": "very-rare"
       },
       {
         "id": 130,
-        "name": "Refreshing locker room",
+        "name": "상쾌한 라커룸",
         "rarity": "rare"
       }
     ]

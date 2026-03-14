@@ -37,17 +37,17 @@
     "habitats": [
       {
         "id": 5,
-        "name": "Seaside Tall Grass",
+        "name": "파도치는 풀숲",
         "rarity": "very-rare"
       },
       {
         "id": 30,
-        "name": "Bed with a plush",
+        "name": "인형과 함께 잘자",
         "rarity": "rare"
       },
       {
         "id": 184,
-        "name": "Fishing pond",
+        "name": "낚시터",
         "rarity": "rare"
       }
     ]

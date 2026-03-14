@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 32,
-        "name": "Grave offering",
+        "name": "묘전 공양",
         "rarity": "rare"
       },
       {
         "id": 33,
-        "name": "Creepy grave offering",
+        "name": "으스스한 묘전 공양",
         "rarity": "common"
       }
     ]

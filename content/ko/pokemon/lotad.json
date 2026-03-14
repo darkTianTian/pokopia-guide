@@ -38,17 +38,17 @@
     "habitats": [
       {
         "id": 101,
-        "name": "Hydrated red tall grass",
+        "name": "촉촉한 빨간 풀숲",
         "rarity": "common"
       },
       {
         "id": 109,
-        "name": "Uplifting duckweed",
+        "name": "즐거운 부평초",
         "rarity": "common"
       },
       {
         "id": 187,
-        "name": "Hot-spring Fishing Spot",
+        "name": "온천 낚시",
         "rarity": "common"
       }
     ]

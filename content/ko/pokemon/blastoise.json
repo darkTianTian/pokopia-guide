@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 4,
-        "name": "Hydrated tall grass",
+        "name": "촉촉한 풀숲",
         "rarity": "very-rare"
       },
       {
         "id": 36,
-        "name": "Floating in the shade",
+        "name": "그늘에서 물놀이",
         "rarity": "rare"
       }
     ]

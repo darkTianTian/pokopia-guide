@@ -33,12 +33,12 @@
     "habitats": [
       {
         "id": 7,
-        "name": "Illuminated tall grass",
+        "name": "빛이 비치는 풀숲",
         "rarity": "rare"
       },
       {
         "id": 23,
-        "name": "Illuminated bench",
+        "name": "빛이 비치는 벤치",
         "rarity": "rare"
       }
     ]

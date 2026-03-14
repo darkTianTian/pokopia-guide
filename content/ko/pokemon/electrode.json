@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 66,
-        "name": "Park bench",
+        "name": "공원 벤치",
         "rarity": "very-rare"
       },
       {
         "id": 90,
-        "name": "Playing pirate",
+        "name": "해적놀이",
         "rarity": "common"
       }
     ]

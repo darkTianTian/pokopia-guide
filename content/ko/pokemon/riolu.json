@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 98,
-        "name": "Red tall grass",
+        "name": "빨간 풀숲",
         "rarity": "common"
       },
       {
         "id": 127,
-        "name": "Box to the rhythm",
+        "name": "리듬에 맞춰 원투",
         "rarity": "common"
       }
     ]
