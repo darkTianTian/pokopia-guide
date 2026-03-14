@@ -2279,6 +2279,13 @@ async function run() {
     )
   }
 
+  // Manually-verified habitat entries that sources sometimes omit.
+  // Key = pokemon slug, value = array of habitat objects to always include.
+  const POKEMON_HABITAT_PRESERVES = {
+    snorlax: [{ id: 93, name: "Gourmet's altar", rarity: "common" }],
+    toxtricity: [{ id: 190, name: "Low-Key Rock Stage", rarity: "common" }],
+  }
+
   // Phase 3: Write all files (deferred so EN habitat names are fully built)
   if (!DRY_RUN) {
     console.log(`\nWriting ${mergedResults.length} Pokémon files...`)
@@ -2287,7 +2294,15 @@ async function run() {
         const pokemonData = existingPokemon.get(slug)?.[locale]
         if (!pokemonData) continue
 
-        const localizedHabitats = merged.habitats.map((h) => ({
+        // Merge in manually-preserved habitats that sources may omit
+        const preservedHabitats = POKEMON_HABITAT_PRESERVES[slug] || []
+        const existingIds = new Set(merged.habitats.map((h) => h.id))
+        const mergedHabitats = [
+          ...merged.habitats,
+          ...preservedHabitats.filter((h) => !existingIds.has(h.id)),
+        ]
+
+        const localizedHabitats = mergedHabitats.map((h) => ({
           ...h,
           name: getLocalizedHabitatName(h, locale, habitatMappings),
         }))
@@ -2364,7 +2379,15 @@ async function run() {
         const pokemonData = locales[locale]
         if (!pokemonData) continue
 
-        const localizedHabitats = updatedPokopia.habitats.map((h) => ({
+        // Merge in manually-preserved habitats that sources may omit
+        const preservedHabitats = POKEMON_HABITAT_PRESERVES[slug] || []
+        const existingIds3b = new Set(updatedPokopia.habitats.map((h) => h.id))
+        const mergedHabitats3b = [
+          ...updatedPokopia.habitats,
+          ...preservedHabitats.filter((h) => !existingIds3b.has(h.id)),
+        ]
+
+        const localizedHabitats = mergedHabitats3b.map((h) => ({
           ...h,
           name: getLocalizedHabitatName(h, locale, habitatMappings),
         }))

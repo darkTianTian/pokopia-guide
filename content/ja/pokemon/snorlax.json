@@ -42,6 +42,11 @@
         "id": 48,
         "name": "古きよきアンティーク",
         "rarity": "common"
+      },
+      {
+        "id": 93,
+        "name": "グルメなお供え物",
+        "rarity": "common"
       }
     ]
   }

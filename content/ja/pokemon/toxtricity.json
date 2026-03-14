@@ -31,6 +31,11 @@
         "id": 189,
         "name": "ハイなロックステージ",
         "rarity": "common"
+      },
+      {
+        "id": 190,
+        "name": "ローなロックステージ",
+        "rarity": "common"
       }
     ]
   }

@@ -31,6 +31,11 @@
         "id": 189,
         "name": "Amped rock stage",
         "rarity": "common"
+      },
+      {
+        "id": 190,
+        "name": "Low-Key Rock Stage",
+        "rarity": "common"
       }
     ]
   }

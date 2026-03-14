@@ -42,6 +42,11 @@
         "id": 48,
         "name": "美好的古董",
         "rarity": "common"
+      },
+      {
+        "id": 93,
+        "name": "美食祭坛",
+        "rarity": "common"
       }
     ]
   }
