@@ -49,11 +49,11 @@ export async function Header({ locale }: HeaderProps) {
   ]
 
   return (
-    <header className="sticky top-4 z-50 mx-auto w-full max-w-6xl px-4 transition-all duration-300">
-      <div className="flex h-16 items-center justify-between rounded-full border border-border/40 bg-background/40 px-6 shadow-md ring-1 ring-border/50 backdrop-blur-xl">
+    <header className="sticky top-2 z-50 mx-auto w-full max-w-6xl px-3 sm:px-4 transition-all duration-300">
+      <div className="flex h-16 items-center justify-between rounded-full border border-border/40 bg-background/40 px-4 sm:px-6 shadow-md ring-1 ring-border/50 backdrop-blur-xl">
         <Link
           href={getLocalePath(locale, "/")}
-          className="mr-8 flex items-center outline-none"
+          className="mr-2 sm:mr-8 flex items-center outline-none shrink-0"
         >
           <SiteLogo text={t(translations, "site.name")} />
         </Link>

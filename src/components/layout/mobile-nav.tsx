@@ -108,28 +108,27 @@ export function MobileNav({
             </li>
           </ul>
 
-          <div className="mt-2 border-t border-border/40 pt-4 px-2 pb-2">
-            <div className="flex items-center justify-between mb-3">
-              <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-muted-foreground/50">
-                <Globe className="h-3.5 w-3.5" />
+          <div className="mt-2 border-t border-border/40 pt-5 px-3 pb-4">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-muted-foreground/60">
+                <Globe className="h-4 w-4 text-primary" />
                 Language
               </div>
               <ThemeToggle />
             </div>
-            <div className="flex flex-wrap gap-1.5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
               {LOCALES.map((loc) => (
                 <Link
                   key={loc}
                   href={getTargetPath(loc)}
                   onClick={() => setOpen(false)}
-                  className={`inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-sm font-medium transition-all duration-200 ${
-                    loc === locale
-                      ? "bg-primary/10 text-primary ring-1 ring-primary/20"
-                      : "text-muted-foreground hover:bg-primary/5 hover:text-primary"
-                  }`}
+                  className={`flex items-center justify-center gap-1.5 rounded-2xl px-3 py-2.5 text-[13px] font-semibold transition-all duration-200 ${loc === locale
+                      ? "bg-primary/10 text-primary ring-1 ring-primary/20 shadow-sm"
+                      : "bg-primary/5 text-muted-foreground hover:bg-primary/10 hover:text-primary"
+                    }`}
                 >
                   {LOCALE_LABELS[loc]}
-                  {loc === locale && <Check className="h-3 w-3" />}
+                  {loc === locale && <Check className="h-3.5 w-3.5" />}
                 </Link>
               ))}
             </div>
