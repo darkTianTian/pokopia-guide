@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import Script from "next/script"
 import { Nunito, Nunito_Sans } from "next/font/google"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
@@ -83,14 +82,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
 
   return (
     <html lang={LOCALE_LANG[validLocale]} suppressHydrationWarning>
-      <head>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2305559697829239"
-          crossOrigin="anonymous"
-          strategy="beforeInteractive"
-        />
-      </head>
+      <head />
       <body
         className={`${nunito.variable} ${nunitoSans.variable} font-sans antialiased`}
       >
