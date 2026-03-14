@@ -38,17 +38,17 @@
     "habitats": [
       {
         "id": 16,
-        "name": "Riding warm updrafts",
+        "name": "따뜻한 바람을 타고",
         "rarity": "common"
       },
       {
         "id": 30,
-        "name": "Bed with a plush",
+        "name": "인형과 함께 잘자",
         "rarity": "common"
       },
       {
         "id": 181,
-        "name": "Plush central",
+        "name": "봉제 인형 천국",
         "rarity": "common"
       }
     ],

@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 69,
-        "name": "Chirp-chirp meal",
+        "name": "짹짹 먹이",
         "rarity": "common"
       },
       {
         "id": 79,
-        "name": "Resort meal prep",
+        "name": "리조트 식사 준비",
         "rarity": "common"
       }
     ]

@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 156,
-        "name": "Sewer hole inspection",
+        "name": "맨홀 점검",
         "rarity": "rare"
       },
       {
         "id": 178,
-        "name": "Dojo training",
+        "name": "도장에서 트레이닝",
         "rarity": "common"
       }
     ],

@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 28,
-        "name": "Large luggage carrier",
+        "name": "대형 짐 운반",
         "rarity": "rare"
       },
       {
         "id": 156,
-        "name": "Sewer hole inspection",
+        "name": "맨홀 점검",
         "rarity": "common"
       }
     ]

@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 1,
-        "name": "Tall Grass",
+        "name": "초록 풀숲",
         "rarity": "common"
       },
       {
         "id": 4,
-        "name": "Hydrated tall grass",
+        "name": "촉촉한 풀숲",
         "rarity": "common"
       }
     ],

@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 99,
-        "name": "Tree-shaded red tall grass",
+        "name": "나무 그늘의 빨간 풀숲",
         "rarity": "common"
       },
       {
         "id": 119,
-        "name": "Container snacking",
+        "name": "창고에서 몰래 먹기",
         "rarity": "common"
       }
     ]

@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 21,
-        "name": "Flowery table",
+        "name": "화려한 테이블",
         "rarity": "very-rare"
       },
       {
         "id": 35,
-        "name": "Irresistible scent and glow",
+        "name": "빛과 향기의 유혹",
         "rarity": "rare"
       }
     ]

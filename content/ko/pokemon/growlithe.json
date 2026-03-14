@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 62,
-        "name": "Perpetual mess",
+        "name": "정리 좀 하자",
         "rarity": "common"
       },
       {
         "id": 79,
-        "name": "Resort meal prep",
+        "name": "리조트 식사 준비",
         "rarity": "common"
       }
     ]

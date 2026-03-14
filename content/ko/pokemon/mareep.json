@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 55,
-        "name": "Overgrowth vending machine",
+        "name": "풀숲의 자판기",
         "rarity": "rare"
       },
       {
         "id": 77,
-        "name": "Knitting station",
+        "name": "뜨개질 스테이션",
         "rarity": "common"
       }
     ]

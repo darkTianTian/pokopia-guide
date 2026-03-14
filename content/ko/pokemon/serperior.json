@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 143,
-        "name": "Tree-shaded fluffy flower bed",
+        "name": "나무 그늘의 포슬포슬 꽃밭",
         "rarity": "very-rare"
       },
       {
         "id": 171,
-        "name": "Public reading material",
+        "name": "자유롭게 읽기",
         "rarity": "rare"
       }
     ]

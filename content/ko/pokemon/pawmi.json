@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 56,
-        "name": "Breezy flower bed",
+        "name": "선선한 꽃밭",
         "rarity": "common"
       },
       {
         "id": 67,
-        "name": "Tantalizing restaurant",
+        "name": "배고픈 레스토랑",
         "rarity": "common"
       }
     ]

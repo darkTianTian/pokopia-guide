@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 64,
-        "name": "Trash can central",
+        "name": "쓰레기통 천국",
         "rarity": "rare"
       },
       {
         "id": 85,
-        "name": "Mini Game Corner",
+        "name": "미니 게임 코너",
         "rarity": "common"
       }
     ]

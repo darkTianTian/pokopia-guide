@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 99,
-        "name": "Tree-shaded red tall grass",
+        "name": "나무 그늘의 빨간 풀숲",
         "rarity": "rare"
       },
       {
         "id": 123,
-        "name": "House party",
+        "name": "홈 파티",
         "rarity": "common"
       }
     ]

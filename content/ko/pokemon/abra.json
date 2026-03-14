@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 151,
-        "name": "Surging psychic power",
+        "name": "넘치는 초능력",
         "rarity": "common"
       },
       {
         "id": 152,
-        "name": "Fortune-teller's table",
+        "name": "점술사의 테이블",
         "rarity": "common"
       }
     ]

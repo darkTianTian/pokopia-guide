@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 57,
-        "name": "Tropical vibes",
+        "name": "남국풍",
         "rarity": "very-rare"
       },
       {
         "id": 59,
-        "name": "Shaded beach",
+        "name": "해변의 나무 그늘",
         "rarity": "rare"
       }
     ]

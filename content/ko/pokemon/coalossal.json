@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 132,
-        "name": "Railroad crossing",
+        "name": "건널목",
         "rarity": "very-rare"
       },
       {
         "id": 135,
-        "name": "Heavy iron",
+        "name": "무거운 철",
         "rarity": "rare"
       }
     ]

@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 67,
-        "name": "Tantalizing restaurant",
+        "name": "배고픈 레스토랑",
         "rarity": "common"
       },
       {
         "id": 70,
-        "name": "Café space",
+        "name": "카페 공간",
         "rarity": "common"
       }
     ]

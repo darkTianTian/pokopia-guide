@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 103,
-        "name": "Grassy training field",
+        "name": "풀숲 훈련장",
         "rarity": "common"
       },
       {
         "id": 127,
-        "name": "Box to the rhythm",
+        "name": "리듬에 맞춰 원투",
         "rarity": "common"
       }
     ]

@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 150,
-        "name": "Fireplace nap spot",
+        "name": "벽난로 낮잠 스팟",
         "rarity": "rare"
       },
       {
         "id": 183,
-        "name": "Top pop",
+        "name": "톱 팝",
         "rarity": "rare"
       }
     ]

@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 51,
-        "name": "Tree-shaded Yellow tall grass",
+        "name": "나무 그늘의 노란 풀숲",
         "rarity": "common"
       },
       {
         "id": 80,
-        "name": "All packed up",
+        "name": "짐 다 쌌어",
         "rarity": "common"
       }
     ]

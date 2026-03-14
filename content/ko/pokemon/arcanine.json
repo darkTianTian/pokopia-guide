@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 129,
-        "name": "Mini museum",
+        "name": "미니 박물관",
         "rarity": "rare"
       },
       {
         "id": 188,
-        "name": "Magma fishing spot",
+        "name": "용암 낚시",
         "rarity": "common"
       }
     ]

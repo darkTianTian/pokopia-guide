@@ -39,12 +39,12 @@
     "habitats": [
       {
         "id": 159,
-        "name": "Study Area",
+        "name": "공부 공간",
         "rarity": "rare"
       },
       {
         "id": 162,
-        "name": "Moisturizing makeup stand",
+        "name": "촉촉한 화장대",
         "rarity": "common"
       }
     ]

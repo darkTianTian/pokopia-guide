@@ -38,12 +38,12 @@
     "habitats": [
       {
         "id": 118,
-        "name": "Creepy white rocks",
+        "name": "으스스한 하얀 바위",
         "rarity": "common"
       },
       {
         "id": 119,
-        "name": "Container snacking",
+        "name": "창고에서 몰래 먹기",
         "rarity": "common"
       }
     ]

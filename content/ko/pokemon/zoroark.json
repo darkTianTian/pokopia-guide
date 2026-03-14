@@ -36,12 +36,12 @@
     "habitats": [
       {
         "id": 56,
-        "name": "Breezy flower bed",
+        "name": "선선한 꽃밭",
         "rarity": "rare"
       },
       {
         "id": 73,
-        "name": "Surprise in store",
+        "name": "깜짝 장치",
         "rarity": "rare"
       }
     ],

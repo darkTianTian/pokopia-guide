@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 30,
-        "name": "Bed with a plush",
+        "name": "인형과 함께 잘자",
         "rarity": "common"
       },
       {
         "id": 47,
-        "name": "Tree-shaded snoozing Snorlax",
+        "name": "나무 그늘의 잠자는 잠만보",
         "rarity": "common"
       }
     ]

@@ -35,12 +35,12 @@
     "habitats": [
       {
         "id": 48,
-        "name": "Good old-fashioned antiques",
+        "name": "멋진 골동품",
         "rarity": "common"
       },
       {
         "id": 63,
-        "name": "Trash collection site",
+        "name": "쓰레기 집하장",
         "rarity": "rare"
       }
     ]

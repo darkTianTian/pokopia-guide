@@ -37,12 +37,12 @@
     "habitats": [
       {
         "id": 3,
-        "name": "Boulder-shaded Tall Grass",
+        "name": "바위 그늘의 풀숲",
         "rarity": "rare"
       },
       {
         "id": 28,
-        "name": "Large luggage carrier",
+        "name": "대형 짐 운반",
         "rarity": "common"
       }
     ]

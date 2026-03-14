@@ -28,12 +28,12 @@
     "habitats": [
       {
         "id": 43,
-        "name": "Professor's treasure trove",
+        "name": "박사의 보물",
         "rarity": "common"
       },
       {
         "id": 22,
-        "name": "Bench with greenery",
+        "name": "초록 벤치",
         "rarity": "common"
       }
     ],
