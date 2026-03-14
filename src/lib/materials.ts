@@ -4,6 +4,7 @@ import habitatMappingZh from "@/../content/habitat-mapping-zh.json"
 import habitatMappingJa from "@/../content/habitat-mapping.json"
 import habitatMappingKo from "@/../content/habitat-mapping-ko.json"
 import habitatMappingZhHans from "@/../content/habitat-mapping-zh-Hans.json"
+import habitatMappingEs from "@/../content/habitat-mapping-es.json"
 import _habitatMaterialsEn from "@/../content/habitat-materials-en.json"
 import _materialSources from "@/../content/material-sources.json"
 import _sourceTranslations from "@/../content/material-source-translations.json"
@@ -16,7 +17,7 @@ const materialSources = _materialSources as Record<
 >
 const sourceTranslations = _sourceTranslations as Record<
   string,
-  { en: string; zh: string; "zh-Hans"?: string; ko?: string }
+  { en: string; zh: string; "zh-Hans"?: string; ko?: string; es?: string }
 >
 const materialNameMapping = _materialNameMapping as Record<
   string,
@@ -34,6 +35,7 @@ const HABITAT_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
   "zh-Hans": habitatMappingZhHans,
   ja: habitatMappingJa,
   ko: habitatMappingKo,
+  es: habitatMappingEs,
 }
 
 export interface MaterialUsage {

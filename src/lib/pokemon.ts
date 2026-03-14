@@ -7,17 +7,20 @@ import _habitatMaterialsEn from "@/../content/habitat-materials-en.json"
 import _habitatMaterialsZh from "@/../content/habitat-materials-zh.json"
 import _habitatMaterialsKo from "@/../content/habitat-materials-ko.json"
 import _habitatMaterialsZhHans from "@/../content/habitat-materials-zh-Hans.json"
+import _habitatMaterialsEs from "@/../content/habitat-materials-es.json"
 import habitatMappingEn from "@/../content/habitat-mapping-en.json"
 import habitatMappingZh from "@/../content/habitat-mapping-zh.json"
 import habitatMappingJa from "@/../content/habitat-mapping.json"
 import habitatMappingKo from "@/../content/habitat-mapping-ko.json"
 import habitatMappingZhHans from "@/../content/habitat-mapping-zh-Hans.json"
+import habitatMappingEs from "@/../content/habitat-mapping-es.json"
 
 const habitatMaterialsJa = _habitatMaterialsJa as Record<string, string>
 const habitatMaterialsEn = _habitatMaterialsEn as Record<string, string>
 const habitatMaterialsZh = _habitatMaterialsZh as Record<string, string>
 const habitatMaterialsKo = _habitatMaterialsKo as Record<string, string>
 const habitatMaterialsZhHans = _habitatMaterialsZhHans as Record<string, string>
+const habitatMaterialsEs = _habitatMaterialsEs as Record<string, string>
 
 const MATERIALS_BY_LOCALE: Record<Locale, Record<string, string>> = {
   ja: habitatMaterialsJa,
@@ -25,6 +28,7 @@ const MATERIALS_BY_LOCALE: Record<Locale, Record<string, string>> = {
   zh: habitatMaterialsZh,
   ko: habitatMaterialsKo,
   "zh-Hans": habitatMaterialsZhHans,
+  es: habitatMaterialsEs,
 }
 
 const HABITAT_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
@@ -33,6 +37,7 @@ const HABITAT_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
   "zh-Hans": habitatMappingZhHans,
   ja: habitatMappingJa,
   ko: habitatMappingKo,
+  es: habitatMappingEs,
 }
 
 function getPokemonDir(locale: Locale): string {

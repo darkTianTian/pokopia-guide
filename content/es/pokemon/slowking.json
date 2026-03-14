@@ -1,0 +1,55 @@
+{
+  "id": 26,
+  "slug": "slowking",
+  "name": "Slowking",
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/slowking.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "teleport"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "strange stuff",
+      "group activities",
+      "healing",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "slowpoke",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 5,
+        "name": "Seaside Tall Grass",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 30,
+        "name": "Bed with a plush",
+        "rarity": "rare"
+      },
+      {
+        "id": 184,
+        "name": "Fishing pond",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

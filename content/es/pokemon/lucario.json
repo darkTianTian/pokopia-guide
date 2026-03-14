@@ -1,0 +1,44 @@
+{
+  "id": 181,
+  "slug": "lucario",
+  "name": "Lucario",
+  "types": [
+    "fighting",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/lucario.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "favorites": [
+      "exercise",
+      "metal stuff",
+      "construction",
+      "complicated stuff",
+      "healing",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "riolu",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 127,
+        "name": "Box to the rhythm",
+        "rarity": "common"
+      }
+    ]
+  }
+}

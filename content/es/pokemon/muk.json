@@ -1,0 +1,43 @@
+{
+  "id": 92,
+  "slug": "muk",
+  "name": "Muk",
+  "types": [
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/muk.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "favorites": [
+      "garbage",
+      "spooky stuff",
+      "gatherings",
+      "shiny stuff",
+      "colorful stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "grimer",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 186,
+        "name": "Marsh fishing spot",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

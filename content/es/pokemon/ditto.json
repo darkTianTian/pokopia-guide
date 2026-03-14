@@ -1,0 +1,21 @@
+{
+  "id": 47,
+  "slug": "ditto",
+  "name": "Ditto",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/ditto.png",
+  "pokopia": {
+    "specialties": [
+      "transform"
+    ],
+    "favorites": [],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": []
+  }
+}

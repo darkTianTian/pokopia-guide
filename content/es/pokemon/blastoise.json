@@ -1,0 +1,49 @@
+{
+  "id": 9,
+  "slug": "blastoise",
+  "name": "Blastoise",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/blastoise.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "trade"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "healing",
+      "exercise",
+      "luxury",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "wartortle",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 4,
+        "name": "Hydrated tall grass",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 36,
+        "name": "Floating in the shade",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

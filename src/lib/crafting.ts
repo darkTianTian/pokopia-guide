@@ -4,6 +4,7 @@ import mappingEn from "@/../content/crafting-name-mapping-en.json"
 import mappingZh from "@/../content/crafting-name-mapping-zh.json"
 import mappingKo from "@/../content/crafting-name-mapping-ko.json"
 import mappingZhHans from "@/../content/crafting-name-mapping-zh-Hans.json"
+import mappingEs from "@/../content/crafting-name-mapping-es.json"
 
 interface RawRecipe {
   id: string
@@ -33,6 +34,7 @@ const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
   "zh-Hans": mappingZhHans.recipes,
   ja: {},
   ko: mappingKo.recipes,
+  es: mappingEs.recipes,
 }
 
 const MATERIAL_MAPPINGS: Record<Locale, Record<string, string>> = {
@@ -41,6 +43,7 @@ const MATERIAL_MAPPINGS: Record<Locale, Record<string, string>> = {
   "zh-Hans": mappingZhHans.materials,
   ja: {},
   ko: mappingKo.materials,
+  es: mappingEs.materials,
 }
 
 function toSlug(name: string): string {

@@ -1,0 +1,45 @@
+{
+  "id": 247,
+  "slug": "metagross",
+  "name": "Metagross",
+  "types": [
+    "steel",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/metagross.png",
+  "pokopia": {
+    "specialties": [
+      "recycle",
+      "crush"
+    ],
+    "favorites": [
+      "metal stuff",
+      "strange stuff",
+      "hard stuff",
+      "exercise",
+      "luxury",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "metang",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 182,
+        "name": "Gamer's paradise",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

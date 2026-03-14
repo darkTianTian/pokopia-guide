@@ -1,0 +1,50 @@
+{
+  "id": 107,
+  "slug": "munchlax",
+  "name": "Munchlax",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/munchlax.png",
+  "pokopia": {
+    "specialties": [
+      "bulldoze"
+    ],
+    "favorites": [
+      "soft stuff",
+      "lots of nature",
+      "looks like food",
+      "woblly stuff",
+      "group activities",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "snorlax"
+    ],
+    "habitats": [
+      {
+        "id": 30,
+        "name": "Bed with a plush",
+        "rarity": "common"
+      },
+      {
+        "id": 47,
+        "name": "Tree-shaded snoozing Snorlax",
+        "rarity": "common"
+      }
+    ]
+  }
+}

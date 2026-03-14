@@ -26,7 +26,7 @@ const nunitoSans = Nunito_Sans({
 })
 
 export function generateStaticParams() {
-  return [{ locale: "zh" }, { locale: "zh-Hans" }, { locale: "ja" }, { locale: "ko" }]
+  return [{ locale: "zh" }, { locale: "zh-Hans" }, { locale: "ja" }, { locale: "ko" }, { locale: "es" }]
 }
 
 interface LayoutProps {

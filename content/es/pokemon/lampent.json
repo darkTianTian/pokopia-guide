@@ -1,0 +1,51 @@
+{
+  "id": 69,
+  "slug": "lampent",
+  "name": "Lampent",
+  "types": [
+    "ghost",
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/lampent.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "lots of fire",
+      "wobbly stuff",
+      "containers",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "litwick",
+    "evolvesTo": [
+      "chandelure"
+    ],
+    "habitats": [
+      {
+        "id": 32,
+        "name": "Grave offering",
+        "rarity": "rare"
+      },
+      {
+        "id": 33,
+        "name": "Creepy grave offering",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": 174,
+  "slug": "ludicolo",
+  "name": "Ludicolo",
+  "types": [
+    "water",
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/ludicolo.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "favorites": [
+      "lots of water",
+      "lots of nature",
+      "play spaces",
+      "containers",
+      "noisy stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "lombre",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 109,
+        "name": "Uplifting duckweed",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

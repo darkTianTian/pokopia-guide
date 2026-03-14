@@ -1,0 +1,29 @@
+{
+  "id": 298,
+  "slug": "ho-oh",
+  "name": "Ho-Oh",
+  "types": [
+    "fire",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/ho-oh.png",
+  "pokopia": {
+    "specialties": [],
+    "favorites": [
+      "lots of fire",
+      "wooden stuff",
+      "nice breezes",
+      "lots of nature",
+      "symbols",
+      "spicy flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "quest",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "Befriend all 3 legendary beasts first. Craft Clear Bell (5 Rare Pok’Metal + 5 Rainbow Feather), then ring it while flying in sunny weather. Tip: Feed Moss Snorlax astringent food (Aguav Berry) to increase feather drop rate; turn up volume to hear Ho-Oh/Lugia flying by; use Sunny Doll/Rainy Doll to change weather"
+  }
+}

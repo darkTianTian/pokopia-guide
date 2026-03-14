@@ -1,0 +1,42 @@
+{
+  "id": 148,
+  "slug": "cleffa",
+  "name": "Cleffa",
+  "types": [
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/cleffa.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "favorites": [
+      "cute stuff",
+      "round stuff",
+      "colorful stuff",
+      "healing",
+      "rides",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "clefairy"
+    ],
+    "habitats": [
+      {
+        "id": 104,
+        "name": "Graceful flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
+}

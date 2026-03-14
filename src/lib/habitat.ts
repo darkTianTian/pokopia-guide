@@ -6,17 +6,20 @@ import habitatMappingEn from "@/../content/habitat-mapping-en.json"
 import habitatMappingZh from "@/../content/habitat-mapping-zh.json"
 import habitatMappingKo from "@/../content/habitat-mapping-ko.json"
 import habitatMappingZhHans from "@/../content/habitat-mapping-zh-Hans.json"
+import habitatMappingEs from "@/../content/habitat-mapping-es.json"
 import _habitatMaterialsJa from "@/../content/habitat-materials.json"
 import _habitatMaterialsEn from "@/../content/habitat-materials-en.json"
 import _habitatMaterialsZh from "@/../content/habitat-materials-zh.json"
 import _habitatMaterialsKo from "@/../content/habitat-materials-ko.json"
 import _habitatMaterialsZhHans from "@/../content/habitat-materials-zh-Hans.json"
+import _habitatMaterialsEs from "@/../content/habitat-materials-es.json"
 
 const habitatMaterialsJa = _habitatMaterialsJa as Record<string, string>
 const habitatMaterialsEn = _habitatMaterialsEn as Record<string, string>
 const habitatMaterialsZh = _habitatMaterialsZh as Record<string, string>
 const habitatMaterialsKo = _habitatMaterialsKo as Record<string, string>
 const habitatMaterialsZhHans = _habitatMaterialsZhHans as Record<string, string>
+const habitatMaterialsEs = _habitatMaterialsEs as Record<string, string>
 
 export interface HabitatWithPokemon {
   id: number
@@ -40,6 +43,7 @@ const HABITAT_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
   zh: habitatMappingZh,
   "zh-Hans": habitatMappingZhHans,
   ko: habitatMappingKo,
+  es: habitatMappingEs,
 }
 
 const HABITAT_MATERIALS_BY_LOCALE: Record<Locale, Record<string, string>> = {
@@ -48,6 +52,7 @@ const HABITAT_MATERIALS_BY_LOCALE: Record<Locale, Record<string, string>> = {
   zh: habitatMaterialsZh,
   "zh-Hans": habitatMaterialsZhHans,
   ko: habitatMaterialsKo,
+  es: habitatMaterialsEs,
 }
 
 export async function getAllHabitatsWithPokemon(

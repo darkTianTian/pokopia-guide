@@ -1,0 +1,50 @@
+{
+  "id": 104,
+  "slug": "electabuzz",
+  "name": "Electabuzz",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/electabuzz.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "favorites": [
+      "electronics",
+      "glass stuff",
+      "lots of fire",
+      "sharp stuff",
+      "exercise",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "elekid",
+    "evolvesTo": [
+      "electivire"
+    ],
+    "habitats": [
+      {
+        "id": 64,
+        "name": "Trash can central",
+        "rarity": "rare"
+      },
+      {
+        "id": 72,
+        "name": "Light-up stage",
+        "rarity": "common"
+      }
+    ]
+  }
+}

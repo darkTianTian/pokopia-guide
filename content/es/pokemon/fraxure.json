@@ -1,0 +1,50 @@
+{
+  "id": 72,
+  "slug": "fraxure",
+  "name": "Fraxure",
+  "types": [
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/fraxure.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "favorites": [
+      "lots of fire",
+      "luxury",
+      "lots of dirt",
+      "exercise",
+      "sharp stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "axew",
+    "evolvesTo": [
+      "haxorus"
+    ],
+    "habitats": [
+      {
+        "id": 29,
+        "name": "Lumberjack's workplace",
+        "rarity": "common"
+      },
+      {
+        "id": 44,
+        "name": "Crazy log handicrafts",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 135,
+  "slug": "zoroark",
+  "name": "Zoroark",
+  "types": [
+    "dark"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/zoroark.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "trade"
+    ],
+    "favorites": [
+      "shiny stuff",
+      "luxury",
+      "glass stuff",
+      "strange stuff",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "zorua",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 56,
+        "name": "Breezy flower bed",
+        "rarity": "rare"
+      },
+      {
+        "id": 73,
+        "name": "Surprise in store",
+        "rarity": "rare"
+      }
+    ],
+    "obtainDetails": "Also obtainable by striking the mysterious rock in front of the Pokémon Center after completing the Bleak Beach story"
+  }
+}

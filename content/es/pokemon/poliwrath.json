@@ -1,0 +1,51 @@
+{
+  "id": 211,
+  "slug": "poliwrath",
+  "name": "Poliwrath",
+  "types": [
+    "water",
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/poliwrath.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "build"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "construction",
+      "exercise",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "poliwhirl",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 156,
+        "name": "Sewer hole inspection",
+        "rarity": "rare"
+      },
+      {
+        "id": 178,
+        "name": "Dojo training",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "Also obtainable by talking to it in Sparkling Skylands"
+  }
+}

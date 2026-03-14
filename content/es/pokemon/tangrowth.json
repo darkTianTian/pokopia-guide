@@ -1,0 +1,42 @@
+{
+  "id": 41,
+  "slug": "tangrowth",
+  "name": "Tangrowth",
+  "types": [
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tangrowth.png",
+  "pokopia": {
+    "specialties": [
+      "appraise"
+    ],
+    "favorites": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tangela",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 43,
+        "name": "Professor's treasure trove",
+        "rarity": "common"
+      },
+      {
+        "id": 22,
+        "name": "Bench with greenery",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "Also obtainable early in the main story"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 291,
+  "slug": "entei",
+  "name": "Entei",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/entei.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "symbols",
+      "exercise",
+      "luxury",
+      "bitter flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "dream-island",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "Use Arcanine Doll to encounter in Dream Island underground. Tip: Only 1 doll type per day on Dream Island (unlimited visits); look for glowing spots inside walls"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": 202,
+  "slug": "ceruledge",
+  "name": "Ceruledge",
+  "types": [
+    "fire",
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/ceruledge.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "trade"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "spooky stuff",
+      "strange stuff",
+      "luxury",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charcadet",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 191,
+        "name": "Malicious knight's shrine",
+        "rarity": "common"
+      }
+    ]
+  }
+}

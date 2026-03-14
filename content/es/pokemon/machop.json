@@ -1,0 +1,46 @@
+{
+  "id": 156,
+  "slug": "machop",
+  "name": "Machop",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/machop.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "gather"
+    ],
+    "favorites": [
+      "exercise",
+      "construction",
+      "stone stuff",
+      "hard stuff",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "machoke"
+    ],
+    "habitats": [
+      {
+        "id": 3,
+        "name": "Boulder-shaded Tall Grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

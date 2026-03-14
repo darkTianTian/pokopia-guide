@@ -1,0 +1,45 @@
+{
+  "id": 219,
+  "slug": "porygon2",
+  "name": "Porygon2",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/porygon2.png",
+  "pokopia": {
+    "specialties": [
+      "recycle"
+    ],
+    "favorites": [
+      "soft stuff",
+      "strange stuff",
+      "round stuff",
+      "construction",
+      "colorful stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "porygon",
+    "evolvesTo": [
+      "porygon-z"
+    ],
+    "habitats": [
+      {
+        "id": 166,
+        "name": "Work desk",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

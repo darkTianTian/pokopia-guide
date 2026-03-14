@@ -1,0 +1,57 @@
+{
+  "id": 61,
+  "slug": "drifloon",
+  "name": "Drifloon",
+  "types": [
+    "ghost",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/drifloon.png",
+  "pokopia": {
+    "specialties": [
+      "fly"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "nice breezes",
+      "cute stuff",
+      "round stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "drifblim"
+    ],
+    "habitats": [
+      {
+        "id": 16,
+        "name": "Riding warm updrafts",
+        "rarity": "common"
+      },
+      {
+        "id": 30,
+        "name": "Bed with a plush",
+        "rarity": "common"
+      },
+      {
+        "id": 181,
+        "name": "Plush central",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "Also obtainable by talking to it in Withered Wasteland"
+  }
+}

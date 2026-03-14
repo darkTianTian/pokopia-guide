@@ -1,0 +1,37 @@
+{
+  "id": 270,
+  "slug": "tinkaton",
+  "name": "Tinkaton",
+  "types": [
+    "fairy",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tinkaton.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "favorites": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tinkatuff",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 154,
+        "name": "Oversized dumping ground",
+        "rarity": "common"
+      }
+    ]
+  }
+}

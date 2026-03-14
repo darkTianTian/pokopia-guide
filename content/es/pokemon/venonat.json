@@ -1,0 +1,48 @@
+{
+  "id": 19,
+  "slug": "venonat",
+  "name": "Venonat",
+  "types": [
+    "bug",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/venonat.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "watching stuff",
+      "complicated stuff",
+      "letters and words",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "venomoth"
+    ],
+    "habitats": [
+      {
+        "id": 7,
+        "name": "Illuminated tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 23,
+        "name": "Illuminated bench",
+        "rarity": "common"
+      }
+    ]
+  }
+}

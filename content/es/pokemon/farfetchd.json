@@ -1,0 +1,47 @@
+{
+  "id": 90,
+  "slug": "farfetchd",
+  "name": "Farfetch’d",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/farfetchd.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "build"
+    ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "wooden stuff",
+      "slender objects",
+      "exercise",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "sirfetchd"
+    ],
+    "habitats": [
+      {
+        "id": 80,
+        "name": "All packed up",
+        "rarity": "common"
+      }
+    ]
+  }
+}

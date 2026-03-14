@@ -1,0 +1,47 @@
+{
+  "id": 49,
+  "slug": "noctowl",
+  "name": "Noctowl",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/noctowl.png",
+  "pokopia": {
+    "specialties": [
+      "fly",
+      "trade"
+    ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "letters and words",
+      "containers",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "hoothoot",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 6,
+        "name": "Elevated tall grass",
+        "rarity": "rare"
+      },
+      {
+        "id": 31,
+        "name": "Gently lit bed",
+        "rarity": "common"
+      }
+    ]
+  }
+}

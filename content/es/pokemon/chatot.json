@@ -1,0 +1,49 @@
+{
+  "id": 179,
+  "slug": "chatot",
+  "name": "Chatot",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/chatot.png",
+  "pokopia": {
+    "specialties": [
+      "hype",
+      "fly"
+    ],
+    "favorites": [
+      "nice breezes",
+      "fabric",
+      "slender objects",
+      "play spaces",
+      "noisy stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 102,
+        "name": "Elevated red tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 125,
+        "name": "Chirping recital",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 189,
+  "slug": "raboot",
+  "name": "Raboot",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/raboot.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "play spaces",
+      "group activities",
+      "containers",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "scorbunny",
+    "evolvesTo": [
+      "cinderace"
+    ],
+    "habitats": [
+      {
+        "id": 113,
+        "name": "Open-air bath",
+        "rarity": "common"
+      },
+      {
+        "id": 130,
+        "name": "Refreshing locker room",
+        "rarity": "common"
+      }
+    ]
+  }
+}

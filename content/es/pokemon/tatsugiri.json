@@ -1,0 +1,37 @@
+{
+  "id": 145,
+  "slug": "tatsugiri",
+  "name": "Tatsugiri",
+  "types": [
+    "dragon",
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tatsugiri.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 71,
+        "name": "ビーチセット",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

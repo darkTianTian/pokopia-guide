@@ -1,0 +1,47 @@
+{
+  "id": 27,
+  "slug": "magnemite",
+  "name": "Magnemite",
+  "types": [
+    "electric",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/magnemite.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "favorites": [
+      "electronics",
+      "metal stuff",
+      "shiny stuff",
+      "hard stuff",
+      "group activities",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "magneton"
+    ],
+    "habitats": [
+      {
+        "id": 38,
+        "name": "Factory Storage",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "Also obtainable underground at the Team Initiation Challenge location after completing the main story"
+  }
+}

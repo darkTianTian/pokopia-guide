@@ -1,0 +1,45 @@
+{
+  "id": 62,
+  "slug": "drifblim",
+  "name": "Drifblim",
+  "types": [
+    "ghost",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/drifblim.png",
+  "pokopia": {
+    "specialties": [
+      "fly",
+      "gather"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "nice breezes",
+      "wobbly stuff",
+      "spinning stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "drifloon",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 181,
+        "name": "Plush central",
+        "rarity": "common"
+      }
+    ]
+  }
+}

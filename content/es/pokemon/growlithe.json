@@ -1,0 +1,51 @@
+{
+  "id": 88,
+  "slug": "growlithe",
+  "name": "Growlithe",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/growlithe.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "search"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "nice breezes",
+      "letters and words",
+      "pretty flowers",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "arcanine"
+    ],
+    "habitats": [
+      {
+        "id": 62,
+        "name": "Perpetual mess",
+        "rarity": "common"
+      },
+      {
+        "id": 79,
+        "name": "Resort meal prep",
+        "rarity": "common"
+      }
+    ]
+  }
+}

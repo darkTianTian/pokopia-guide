@@ -1,0 +1,44 @@
+{
+  "id": 106,
+  "slug": "lapras",
+  "name": "Lapras",
+  "types": [
+    "water",
+    "ice"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/lapras.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "cleanliness",
+      "watching stuff",
+      "healing",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 60,
+        "name": "Tropical seaside",
+        "rarity": "common"
+      }
+    ]
+  }
+}

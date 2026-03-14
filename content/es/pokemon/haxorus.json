@@ -1,0 +1,49 @@
+{
+  "id": 73,
+  "slug": "haxorus",
+  "name": "Haxorus",
+  "types": [
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/haxorus.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "litter"
+    ],
+    "favorites": [
+      "lots of fire",
+      "luxury",
+      "lots of dirt",
+      "exercise",
+      "sharp stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "fraxure",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 29,
+        "name": "Lumberjack's workplace",
+        "rarity": "rare"
+      },
+      {
+        "id": 44,
+        "name": "Crazy log handicrafts",
+        "rarity": "very-rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": 7,
+  "slug": "squirtle",
+  "name": "Squirtle",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/squirtle.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "healing",
+      "cute stuff",
+      "group activities",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "wartortle"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "Tall Grass",
+        "rarity": "common"
+      },
+      {
+        "id": 4,
+        "name": "Hydrated tall grass",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "Also obtainable through Withered Wasteland story progression"
+  }
+}

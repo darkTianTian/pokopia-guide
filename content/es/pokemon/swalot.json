@@ -1,0 +1,43 @@
+{
+  "id": 54,
+  "slug": "swalot",
+  "name": "Swalot",
+  "types": [
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/swalot.png",
+  "pokopia": {
+    "specialties": [
+      "storage"
+    ],
+    "favorites": [
+      "garbage",
+      "looks like food",
+      "round stuff",
+      "containers",
+      "colorful stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gulpin",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 120,
+        "name": "Dinner table surprise",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

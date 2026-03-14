@@ -1,0 +1,46 @@
+{
+  "id": 240,
+  "slug": "swablu",
+  "name": "Swablu",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/swablu.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "cute stuff",
+      "watching stuff",
+      "cleanliness",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "altaria"
+    ],
+    "habitats": [
+      {
+        "id": 137,
+        "name": "Pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

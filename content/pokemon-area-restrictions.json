@@ -1,41 +1,359 @@
 {
-  "machop": [{ "habitatId": 3, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "geodude": [{ "habitatId": 1, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "magby": [{ "habitatId": 8, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "pikachu": [{ "habitatId": 20, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "rowlet": [{ "habitatId": 15, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
+  "machop": [
+    {
+      "habitatId": 3,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "geodude": [
+    {
+      "habitatId": 1,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "magby": [
+    {
+      "habitatId": 8,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "pikachu": [
+    {
+      "habitatId": 20,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "rowlet": [
+    {
+      "habitatId": 15,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
   "munchlax": [
-    { "habitatId": 30, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" },
-    { "habitatId": 47, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }
+    {
+      "habitatId": 30,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    },
+    {
+      "habitatId": 47,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
   ],
   "snorlax": [
-    { "habitatId": 47, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" },
-    { "habitatId": 48, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }
+    {
+      "habitatId": 47,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    },
+    {
+      "habitatId": 48,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
   ],
-  "koffing": [{ "habitatId": 63, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
+  "koffing": [
+    {
+      "habitatId": 63,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
   "weezing": [
-    { "habitatId": 48, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" },
-    { "habitatId": 63, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }
+    {
+      "habitatId": 48,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    },
+    {
+      "habitatId": 63,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
   ],
-  "tangela": [{ "habitatId": 49, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "scizor": [{ "habitatId": 2, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "skwovet": [{ "habitatId": 2, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "cramorant": [{ "habitatId": 4, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "mawile": [{ "habitatId": 91, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "vikavolt": [{ "habitatId": 9, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "tinkatink": [{ "habitatId": 28, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "tinkatuff": [{ "habitatId": 28, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "eevee": [{ "habitatId": 8, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "vaporeon": [{ "habitatId": 202, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "jolteon": [{ "habitatId": 203, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "flareon": [{ "habitatId": 204, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "espeon": [{ "habitatId": 205, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "umbreon": [{ "habitatId": 206, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "leafeon": [{ "habitatId": 207, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "glaceon": [{ "habitatId": 208, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "sylveon": [{ "habitatId": 209, "area": "Palette Town", "areaJa": "まっさらな街", "areaZh": "空空鎮", "areaZhHans": "空空镇", "areaKo": "백지 마을" }],
-  "venusaur": [{ "habitatId": 46, "area": "Withered Wasteland", "areaJa": "パサパサこうや", "areaZh": "乾巴巴荒野", "areaZhHans": "干巴巴荒野", "areaKo": "바싹바싹 황야 마을" }],
-  "toxel": [{ "habitatId": 124, "area": "Rocky Ridges", "areaJa": "ゴツゴツやま", "areaZh": "凸隆隆山地", "areaZhHans": "凸隆隆山地", "areaKo": "울퉁불퉁 산지 마을" }],
-  "alakazam": [{ "habitatId": 151, "area": "Sparkling Skylands", "areaJa": "キラキラうきしま", "areaZh": "亮晶晶空島", "areaZhHans": "亮晶晶空岛", "areaKo": "반짝반짝 부유섬 마을" }],
-  "snivy": [{ "habitatId": 165, "area": "Sparkling Skylands", "areaJa": "キラキラうきしま", "areaZh": "亮晶晶空島", "areaZhHans": "亮晶晶空岛", "areaKo": "반짝반짝 부유섬 마을" }]
+  "tangela": [
+    {
+      "habitatId": 49,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "scizor": [
+    {
+      "habitatId": 2,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "skwovet": [
+    {
+      "habitatId": 2,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "cramorant": [
+    {
+      "habitatId": 4,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "mawile": [
+    {
+      "habitatId": 91,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "vikavolt": [
+    {
+      "habitatId": 9,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "tinkatink": [
+    {
+      "habitatId": 28,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "tinkatuff": [
+    {
+      "habitatId": 28,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "eevee": [
+    {
+      "habitatId": 8,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "vaporeon": [
+    {
+      "habitatId": 202,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "jolteon": [
+    {
+      "habitatId": 203,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "flareon": [
+    {
+      "habitatId": 204,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "espeon": [
+    {
+      "habitatId": 205,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "umbreon": [
+    {
+      "habitatId": 206,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "leafeon": [
+    {
+      "habitatId": 207,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "glaceon": [
+    {
+      "habitatId": 208,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "sylveon": [
+    {
+      "habitatId": 209,
+      "area": "Palette Town",
+      "areaJa": "まっさらな街",
+      "areaZh": "空空鎮",
+      "areaZhHans": "空空镇",
+      "areaKo": "백지 마을",
+      "areaEs": "Pradera Paleta"
+    }
+  ],
+  "venusaur": [
+    {
+      "habitatId": 46,
+      "area": "Withered Wasteland",
+      "areaJa": "パサパサこうや",
+      "areaZh": "乾巴巴荒野",
+      "areaZhHans": "干巴巴荒野",
+      "areaKo": "바싹바싹 황야 마을",
+      "areaEs": "Estepa Estéril"
+    }
+  ],
+  "toxel": [
+    {
+      "habitatId": 124,
+      "area": "Rocky Ridges",
+      "areaJa": "ゴツゴツやま",
+      "areaZh": "凸隆隆山地",
+      "areaZhHans": "凸隆隆山地",
+      "areaKo": "울퉁불퉁 산지 마을",
+      "areaEs": "Riscos Rocosos"
+    }
+  ],
+  "alakazam": [
+    {
+      "habitatId": 151,
+      "area": "Sparkling Skylands",
+      "areaJa": "キラキラうきしま",
+      "areaZh": "亮晶晶空島",
+      "areaZhHans": "亮晶晶空岛",
+      "areaKo": "반짝반짝 부유섬 마을",
+      "areaEs": "Islas Aisladas"
+    }
+  ],
+  "snivy": [
+    {
+      "habitatId": 165,
+      "area": "Sparkling Skylands",
+      "areaJa": "キラキラうきしま",
+      "areaZh": "亮晶晶空島",
+      "areaZhHans": "亮晶晶空岛",
+      "areaKo": "반짝반짝 부유섬 마을",
+      "areaEs": "Islas Aisladas"
+    }
+  ]
 }

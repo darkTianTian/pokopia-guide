@@ -1,0 +1,49 @@
+{
+  "id": 167,
+  "slug": "murkrow",
+  "name": "Murkrow",
+  "types": [
+    "dark",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/murkrow.png",
+  "pokopia": {
+    "specialties": [
+      "trade",
+      "fly"
+    ],
+    "favorites": [
+      "shiny stuff",
+      "nice breezes",
+      "group activities",
+      "luxury",
+      "fabric",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "honchkrow"
+    ],
+    "habitats": [
+      {
+        "id": 102,
+        "name": "Elevated red tall grass",
+        "rarity": "common"
+      },
+      {
+        "id": 105,
+        "name": "Tree-shaded graceful flower bed",
+        "rarity": "common"
+      }
+    ]
+  }
+}

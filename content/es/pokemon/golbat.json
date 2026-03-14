@@ -1,0 +1,43 @@
+{
+  "id": 82,
+  "slug": "golbat",
+  "name": "Golbat",
+  "types": [
+    "poison",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/golbat.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "nice breezes",
+      "wooden stuff",
+      "noisy stuff",
+      "complicated stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "zubat",
+    "evolvesTo": [
+      "crobat"
+    ],
+    "habitats": [
+      {
+        "id": 51,
+        "name": "Tree-shaded Yellow tall grass",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

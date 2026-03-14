@@ -1,0 +1,42 @@
+{
+  "id": 242,
+  "slug": "duskull",
+  "name": "Duskull",
+  "types": [
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/duskull.png",
+  "pokopia": {
+    "specialties": [
+      "gather"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "rides",
+      "glass stuff",
+      "fabric",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "dusclops"
+    ],
+    "habitats": [
+      {
+        "id": 137,
+        "name": "Pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

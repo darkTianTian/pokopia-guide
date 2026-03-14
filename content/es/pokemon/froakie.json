@@ -1,0 +1,45 @@
+{
+  "id": 251,
+  "slug": "froakie",
+  "name": "Froakie",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/froakie.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "cleanliness",
+      "watching stuff",
+      "containers",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "frogadier"
+    ],
+    "habitats": [
+      {
+        "id": 139,
+        "name": "Hydrated pink tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

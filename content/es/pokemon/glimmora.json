@@ -1,0 +1,49 @@
+{
+  "id": 204,
+  "slug": "glimmora",
+  "name": "Glimmora",
+  "types": [
+    "rock",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/glimmora.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "garbage",
+      "shiny stuff",
+      "complicated stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "glimmet",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 118,
+        "name": "Creepy white rocks",
+        "rarity": "rare"
+      },
+      {
+        "id": 119,
+        "name": "Container snacking",
+        "rarity": "common"
+      }
+    ]
+  }
+}

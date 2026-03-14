@@ -1,0 +1,50 @@
+{
+  "id": 118,
+  "slug": "clodsire",
+  "name": "Clodsire",
+  "types": [
+    "poison",
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/clodsire.png",
+  "pokopia": {
+    "specialties": [
+      "litter",
+      "bulldoze"
+    ],
+    "favorites": [
+      "garbage",
+      "lots of dirt",
+      "lots of water",
+      "cleanliness",
+      "round stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "wooper",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 54,
+        "name": "Marshy tall grass",
+        "rarity": "rare"
+      },
+      {
+        "id": 186,
+        "name": "Marsh fishing spot",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

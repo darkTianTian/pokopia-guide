@@ -1,0 +1,30 @@
+{
+  "id": 290,
+  "slug": "raikou",
+  "name": "Raikou",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/raikou.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "favorites": [
+      "electronics",
+      "nice breezes",
+      "shiny stuff",
+      "glass stuff",
+      "luxury",
+      "dry flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "story",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "Complete Bleak Beach story. Use Pikachu Doll to reunite in Dream Island underground. Tip: Only 1 doll type per day on Dream Island (unlimited visits); look for glowing spots inside walls"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": 269,
+  "slug": "tinkatuff",
+  "name": "Tinkatuff",
+  "types": [
+    "fairy",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tinkatuff.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "favorites": [
+      "cute stuff",
+      "metal stuff",
+      "construction",
+      "group activities",
+      "exercise",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "tinkatink",
+    "evolvesTo": [
+      "tinkaton"
+    ],
+    "habitats": [
+      {
+        "id": 28,
+        "name": "Large luggage carrier",
+        "rarity": "rare"
+      },
+      {
+        "id": 156,
+        "name": "Sewer hole inspection",
+        "rarity": "common"
+      }
+    ]
+  }
+}

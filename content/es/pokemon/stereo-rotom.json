@@ -1,0 +1,38 @@
+{
+  "id": 182,
+  "slug": "stereo-rotom",
+  "name": "Rotom",
+  "types": [
+    "electric",
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/stereo-rotom.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "favorites": [],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 128,
+        "name": "Music and magazines",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "Also obtainable by talking to it in Rocky Ridges"
+  }
+}

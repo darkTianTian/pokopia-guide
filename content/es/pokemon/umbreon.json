@@ -1,0 +1,40 @@
+{
+  "id": 285,
+  "slug": "umbreon",
+  "name": "Umbreon",
+  "types": [
+    "dark"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/umbreon.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "shiny stuff",
+      "luxury",
+      "cute stuff",
+      "letters and words",
+      "watching stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 206,
+        "name": "Dark-chocolate cookies",
+        "rarity": "common"
+      }
+    ]
+  }
+}

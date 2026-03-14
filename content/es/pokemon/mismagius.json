@@ -1,0 +1,51 @@
+{
+  "id": 228,
+  "slug": "mismagius",
+  "name": "Mismagius",
+  "types": [
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/mismagius.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "trade"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "noisy stuff",
+      "wobbly stuff",
+      "group activities",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "misdreavus",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 142,
+        "name": "Fluffy flower bed",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 158,
+        "name": "Home theater",
+        "rarity": "rare"
+      },
+      {
+        "id": 167,
+        "name": "Office storeroom",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

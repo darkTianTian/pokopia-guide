@@ -1,0 +1,50 @@
+{
+  "id": 100,
+  "slug": "happiny",
+  "name": "Happiny",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/happiny.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "soft stuff",
+      "fabric",
+      "healing",
+      "round stuff",
+      "containers",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "chansey"
+    ],
+    "habitats": [
+      {
+        "id": 82,
+        "name": "Alarm clock sleep zone",
+        "rarity": "common"
+      },
+      {
+        "id": 91,
+        "name": "Working the register",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 258,
+  "slug": "corviknight",
+  "name": "Corviknight",
+  "types": [
+    "flying",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/corviknight.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "fly"
+    ],
+    "favorites": [
+      "nice breezes",
+      "metal stuff",
+      "shiny stuff",
+      "containers",
+      "wooden stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "corvisquire",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 140,
+        "name": "Elevated pink tall grass",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 156,
+        "name": "Sewer hole inspection",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

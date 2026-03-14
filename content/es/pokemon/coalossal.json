@@ -1,0 +1,50 @@
+{
+  "id": 195,
+  "slug": "coalossal",
+  "name": "Coalossal",
+  "types": [
+    "rock",
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/coalossal.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "gather"
+    ],
+    "favorites": [
+      "stone stuff",
+      "lots of fire",
+      "hard stuff",
+      "metal stuff",
+      "rides",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "carkol",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 132,
+        "name": "Railroad crossing",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 135,
+        "name": "Heavy iron",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

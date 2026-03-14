@@ -11,7 +11,7 @@ import { MapPin } from "lucide-react"
 import { notFound } from "next/navigation"
 import _pokemonAreaRestrictions from "@/../content/pokemon-area-restrictions.json"
 
-type AreaRestriction = { habitatId: number; area: string; areaJa: string; areaZh: string; areaZhHans?: string; areaKo?: string }
+type AreaRestriction = { habitatId: number; area: string; areaJa: string; areaZh: string; areaZhHans?: string; areaKo?: string; areaEs?: string }
 const pokemonAreaRestrictions = _pokemonAreaRestrictions as Record<string, AreaRestriction[]>
 
 function getAreaLabel(restriction: AreaRestriction, locale: string): string {
@@ -19,6 +19,7 @@ function getAreaLabel(restriction: AreaRestriction, locale: string): string {
   if (locale === "zh-Hans") return restriction.areaZhHans ?? restriction.areaZh
   if (locale === "zh") return restriction.areaZh
   if (locale === "ko") return restriction.areaKo ?? restriction.area
+  if (locale === "es") return restriction.areaEs ?? restriction.area
   return restriction.area
 }
 

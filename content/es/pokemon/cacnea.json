@@ -1,0 +1,43 @@
+{
+  "id": 55,
+  "slug": "cacnea",
+  "name": "Cacnea",
+  "types": [
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/cacnea.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "favorites": [
+      "lots of nature",
+      "pretty flowers",
+      "cute stuff",
+      "round stuff",
+      "sharp stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "cacturne"
+    ],
+    "habitats": [
+      {
+        "id": 42,
+        "name": "Sunny Day site",
+        "rarity": "common"
+      }
+    ]
+  }
+}

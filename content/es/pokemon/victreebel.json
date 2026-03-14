@@ -1,0 +1,50 @@
+{
+  "id": 23,
+  "slug": "victreebel",
+  "name": "Victreebel",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/victreebel.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "grow"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "lots of dirt",
+      "colorful stuff",
+      "pretty flowers",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "weepinbell",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 21,
+        "name": "Flowery table",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 35,
+        "name": "Irresistible scent and glow",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

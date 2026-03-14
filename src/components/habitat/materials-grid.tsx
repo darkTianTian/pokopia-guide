@@ -10,6 +10,7 @@ import zhTranslations from "@/i18n/zh.json"
 import jaTranslations from "@/i18n/ja.json"
 import koTranslations from "@/i18n/ko.json"
 import zhHansTranslations from "@/i18n/zh-Hans.json"
+import esTranslations from "@/i18n/es.json"
 
 const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
   en: enTranslations,
@@ -17,6 +18,7 @@ const TRANSLATIONS_BY_LOCALE: Record<Locale, typeof enTranslations> = {
   "zh-Hans": zhHansTranslations,
   ja: jaTranslations,
   ko: koTranslations,
+  es: esTranslations,
 }
 
 const GRADIENTS = [

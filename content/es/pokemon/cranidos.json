@@ -1,0 +1,45 @@
+{
+  "id": 272,
+  "slug": "cranidos",
+  "name": "Cranidos",
+  "types": [
+    "rock"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/cranidos.png",
+  "pokopia": {
+    "specialties": [
+      "crush"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "wobbly stuff",
+      "group activities",
+      "exercise",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "rampardos"
+    ],
+    "habitats": [
+      {
+        "id": 194,
+        "name": "Skull Fossil display",
+        "rarity": "common"
+      }
+    ]
+  }
+}

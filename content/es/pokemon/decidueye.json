@@ -1,0 +1,50 @@
+{
+  "id": 187,
+  "slug": "decidueye",
+  "name": "Decidueye",
+  "types": [
+    "grass",
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/decidueye.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "chop"
+    ],
+    "favorites": [
+      "lots of nature",
+      "spooky stuff",
+      "wooden stuff",
+      "nice breezes",
+      "letters and words",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dartrix",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 100,
+        "name": "Pointy tree-shaded rocky tall grass",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 136,
+        "name": "Modern living",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

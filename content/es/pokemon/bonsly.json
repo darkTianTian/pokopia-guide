@@ -1,0 +1,45 @@
+{
+  "id": 165,
+  "slug": "bonsly",
+  "name": "Bonsly",
+  "types": [
+    "rock"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/bonsly.png",
+  "pokopia": {
+    "specialties": [
+      "bulldoze"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "lots of nature",
+      "wooden stuff",
+      "round stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "sudowoodo"
+    ],
+    "habitats": [
+      {
+        "id": 99,
+        "name": "Tree-shaded red tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}

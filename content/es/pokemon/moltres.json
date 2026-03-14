@@ -1,0 +1,31 @@
+{
+  "id": 296,
+  "slug": "moltres",
+  "name": "Moltres",
+  "types": [
+    "fire",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/moltres.png",
+  "pokopia": {
+    "specialties": [
+      "fly"
+    ],
+    "favorites": [
+      "lots of fire",
+      "nice breezes",
+      "stone stuff",
+      "symbols",
+      "luxury",
+      "spicy flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "craft",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "Build the Altar of the Flame in Palette Town. Blueprint from Palette Town Altar. Tip: Unlocking Magnemite's skill makes building faster"
+  }
+}

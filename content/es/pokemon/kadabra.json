@@ -1,0 +1,45 @@
+{
+  "id": 214,
+  "slug": "kadabra",
+  "name": "Kadabra",
+  "types": [
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/kadabra.png",
+  "pokopia": {
+    "specialties": [
+      "teleport"
+    ],
+    "favorites": [
+      "strange stuff",
+      "wobbly stuff",
+      "metal stuff",
+      "containers",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "abra",
+    "evolvesTo": [
+      "alakazam"
+    ],
+    "habitats": [
+      {
+        "id": 152,
+        "name": "Fortune-teller's table",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

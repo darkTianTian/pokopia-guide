@@ -1,0 +1,50 @@
+{
+  "id": 252,
+  "slug": "frogadier",
+  "name": "Frogadier",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/frogadier.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "cleanliness",
+      "watching stuff",
+      "exercise",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "froakie",
+    "evolvesTo": [
+      "greninja"
+    ],
+    "habitats": [
+      {
+        "id": 139,
+        "name": "Hydrated pink tall grass",
+        "rarity": "rare"
+      },
+      {
+        "id": 173,
+        "name": "Prank button",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

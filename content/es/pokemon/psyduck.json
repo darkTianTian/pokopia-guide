@@ -1,0 +1,45 @@
+{
+  "id": 86,
+  "slug": "psyduck",
+  "name": "Psyduck",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/psyduck.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "strange stuff",
+      "complicated stuff",
+      "healing",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "golduck"
+    ],
+    "habitats": [
+      {
+        "id": 78,
+        "name": "Hot-spring shower",
+        "rarity": "common"
+      }
+    ]
+  }
+}

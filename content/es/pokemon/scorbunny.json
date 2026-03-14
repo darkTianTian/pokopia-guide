@@ -1,0 +1,45 @@
+{
+  "id": 188,
+  "slug": "scorbunny",
+  "name": "Scorbunny",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/scorbunny.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "soft stuff",
+      "group activities",
+      "sharp stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "raboot"
+    ],
+    "habitats": [
+      {
+        "id": 98,
+        "name": "Red tall grass",
+        "rarity": "common"
+      }
+    ]
+  }
+}
