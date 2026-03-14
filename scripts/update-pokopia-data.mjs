@@ -2469,7 +2469,12 @@ async function run() {
     // that we've manually identified. Replace them with correct names.
     const JA_MATERIAL_FIXES = {
       "Item a23": "はち植えの木(なんでも)",   // Potted plant (any) — confirmed via Game8/AppMedia
+      "Item a24": "フライパン(なんでも)",     // Frying pan (any) — confirmed via GameWith habitat 122
+      "Item a25": "だい(なんでも)",           // Stand (any) — confirmed via GameWith
+      "Item a27": "ドレッサー(なんでも)",     // Dresser (any) — confirmed via GameWith
+      "Item a28": "つくえ(大きなもの)",       // Table (large) — confirmed via GameWith habitat 120
       "Item a29": "だいざ・てんじだい",       // Pedestal/exhibition stand — confirmed via GameWith fossil pages
+      "Item a30": "ついたて(なんでも)",       // Partition (any) — confirmed via GameWith
     }
     for (const [hId, mat] of Object.entries(materialsJa)) {
       let fixed = mat
@@ -2502,14 +2507,14 @@ async function run() {
       "71": "Beach chair x1, Beach Parasol x1, Side table x1",
       "73": "Balloon x2, Boo-in-the-box x1",
       "74": "Balloon x2, Raichu sign x1",
-      "76": "Item a30 x2, Closet (any) x1, Item a27 x1",
+      "76": "Partition (any) x2, Closet (any) x1, Dresser (any) x1",
       "85": "Seat (any) x1, Arcade machine x1, Punching game x1",
       "92": "Canvas x1, Seat (any) x1",
       "95": "Cute sofa x1, Cute table x1, Cute lamp x1, Cute bed x1, Cute dresser x1",
       "96": "Resort sofa x1, Resort table x1, Resort hammock x1, Resort light x1",
       "114": "Hot-spring spout x1, Water bucket x1, Hot-spring water x2",
-      "120": "Seat (wide) x2, Item a28 x1, Party plate x4",
-      "122": "Kitchen table x1, Cooking stove x1, Item a24 x1, Sink x1",
+      "120": "Seat (wide) x2, Table (large) x1, Party plate x4",
+      "122": "Kitchen table x1, Cooking stove x1, Frying pan (any) x1, Sink x1",
       "124": "Tablet x1, Paper party cups x1",
       "126": "Speaker x2, Standing mic x1, Small stage x1",
       "128": "CD player x1, CD rack x1, Magazine rack x1",
@@ -2522,9 +2527,9 @@ async function run() {
       "154": "Iron beam or column x3, Tires x1, Waste bin (any) x1, Microwave x1",
       "155": "Arcanine doll x1, Pipe chair x2, Industrial desk x1, Desk light x1",
       "156": "Iron pipes x1, Manhole cover x1, Excavation tools x1, Traffic cone x1",
-      "158": "Speaker x2, Item a25 x1, Television x1",
+      "158": "Speaker x2, Stand (any) x1, Television x1",
       "161": "Bathub x1, Cleaning set x1",
-      "162": "Item a27 x1, Seat (any) x1, Humidifier x1",
+      "162": "Dresser (any) x1, Seat (any) x1, Humidifier x1",
       "163": "Bookcase x2, Step stool x1, Table (any) x1, Lighting (any) x1",
       "168": "Science experiment x1, Microscope x1, Research paper x1",
       "174": "Face cutout board x1, Spotlight x2, High-up location x1",

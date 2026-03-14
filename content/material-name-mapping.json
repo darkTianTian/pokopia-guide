@@ -720,34 +720,34 @@
     "zh-Hans": "铁桌"
   },
   "item-a24": {
-    "zh": "Item a24",
-    "ja": null,
-    "ko": "Item a24",
-    "zh-Hans": "Item a24"
+    "zh": "平底鍋（任意）",
+    "ja": "フライパン(なんでも)",
+    "ko": "프라이팬 (아무거나)",
+    "zh-Hans": "平底锅（任意）"
   },
   "item-a25": {
-    "zh": "Item a25",
+    "zh": "展示台（任意）",
     "ja": "だい(なんでも)",
-    "ko": "Item a25",
-    "zh-Hans": "Item a25"
+    "ko": "진열대 (아무거나)",
+    "zh-Hans": "展示台（任意）"
   },
   "item-a27": {
-    "zh": "Item a27",
+    "zh": "梳妝台（任意）",
     "ja": "ドレッサー(なんでも)",
-    "ko": "Item a27",
-    "zh-Hans": "Item a27"
+    "ko": "화장대 (아무거나)",
+    "zh-Hans": "梳妆台（任意）"
   },
   "item-a28": {
-    "zh": "Item a28",
-    "ja": null,
-    "ko": "Item a28",
-    "zh-Hans": "Item a28"
+    "zh": "桌子（大型）",
+    "ja": "つくえ(大きなもの)",
+    "ko": "책상 (큰 것)",
+    "zh-Hans": "桌子（大型）"
   },
   "item-a30": {
-    "zh": "Item a30",
+    "zh": "屏風（任意）",
     "ja": "ついたて(なんでも)",
-    "ko": "Item a30",
-    "zh-Hans": "Item a30"
+    "ko": "칸막이 (아무거나)",
+    "zh-Hans": "屏风（任意）"
   },
   "jaw-fossil": {
     "zh": "顎之化石",
@@ -954,10 +954,10 @@
     "zh-Hans": "蘑菇灯"
   },
   "music-mat-any": {
-    "zh": "Item a26",
+    "zh": "音符墊（任意）",
     "ja": "おんぷマット(なんでも)",
     "ko": "음표 매트 (아무거나)",
-    "zh-Hans": "Item a26"
+    "zh-Hans": "音符垫（任意）"
   },
   "naptime-bed": {
     "zh": "午睡床",
