@@ -464,7 +464,7 @@
       "slogan100": "全部捕获！你是真正的肝帝 🎉"
     },
     "sync": {
-      "title": "同步到手机 (Beta)",
+      "title": "同步到手机",
       "description": "用手机扫描此 QR 码，即可导入收集进度。",
       "importCount": "导入 {{count}} 只宝可梦？",
       "replace": "替换",

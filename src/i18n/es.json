@@ -464,7 +464,7 @@
       "slogan100": "¡Hazte con todos — HECHO! 🎉"
     },
     "sync": {
-      "title": "Sincronizar con Móvil (Beta)",
+      "title": "Sincronizar con Móvil",
       "description": "Escanea este código QR con tu teléfono para importar el progreso de tu colección.",
       "importCount": "¿Importar {{count}} Pokémon?",
       "replace": "Reemplazar",
