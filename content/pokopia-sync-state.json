@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-03-14T05:54:24.651Z",
+  "lastSync": "2026-03-14T07:01:15.700Z",
   "newHabitats": [
     {
       "id": 28,
@@ -926,6 +926,6 @@
     "updated": 301,
     "skipped": 0,
     "newPokemon": 0,
-    "errors": 28
+    "errors": 33
   }
 }
