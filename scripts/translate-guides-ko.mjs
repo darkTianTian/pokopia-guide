@@ -1,10 +1,15 @@
 #!/usr/bin/env node
 // Translate English guides to Korean using Gemini 2.5 Flash API
 
+import "dotenv/config"
 import fs from "fs"
 import path from "path"
 
-const API_KEY = "AIzaSyCGV1QCrnytIIcw6xPMN4Fi9YisCLf-fS8"
+const API_KEY = process.env.GEMINI_API_KEY
+if (!API_KEY) {
+  console.error("Error: GEMINI_API_KEY environment variable is not set")
+  process.exit(1)
+}
 const MODEL = "gemini-2.5-flash"
 const EN_DIR = "content/en/guides"
 const KO_DIR = "content/ko/guides"
