@@ -85,6 +85,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://pokopiaguide.com/guides/environment-level-guide</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://pokopiaguide.com/guides/how-to-get-lumber</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -230,6 +236,12 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/zh/guides/dream-island-guide</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pokopiaguide.com/zh/guides/environment-level-guide</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -385,6 +397,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://pokopiaguide.com/zh-Hans/guides/environment-level-guide</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://pokopiaguide.com/zh-Hans/guides/how-to-get-lumber</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -535,6 +553,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://pokopiaguide.com/ja/guides/environment-level-guide</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://pokopiaguide.com/ja/guides/how-to-get-lumber</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -680,6 +704,12 @@
   </url>
   <url>
     <loc>https://pokopiaguide.com/ko/guides/dream-island-guide</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pokopiaguide.com/ko/guides/environment-level-guide</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
