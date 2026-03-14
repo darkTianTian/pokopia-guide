@@ -42,6 +42,11 @@ jobs:
       - name: Update items catalog
         run: node scripts/scrape-items.mjs
 
+      - name: Sync item translations (ko, zh-Hans, es)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/sync-item-translations.mjs
+
       - name: Check for changes
         id: changes
         run: |
