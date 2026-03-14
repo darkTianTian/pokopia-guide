@@ -131,7 +131,7 @@ const FAVORITES_NORMALIZE_MAP = {
   "dryflavors": "dry flavors",
   "group activiies": "group activities",
   "group activites": "group activities",
-  "group activities: sweet flavors": "group activities",
+  // Note: "group activities: sweet flavors" is handled by colon-splitting in parse logic
   "looks like good": "looks like food",
   "prety flowers": "pretty flowers",
   "soft stuff": "soft stuff",
@@ -580,11 +580,15 @@ async function scrapeGame8() {
     }
 
     // Parse favorites (comma-separated, with typo normalization)
+    // Game8 sometimes joins two favorites with a colon (e.g. "Group activities: Dry flavors")
     const favorites = []
     if (item.favorites) {
       for (const f of item.favorites.split(",")) {
-        const normalized = normalizeFavorite(f)
-        if (normalized) favorites.push(normalized)
+        const parts = f.includes(":") ? f.split(":") : [f]
+        for (const part of parts) {
+          const normalized = normalizeFavorite(part)
+          if (normalized) favorites.push(normalized)
+        }
       }
     }
 
