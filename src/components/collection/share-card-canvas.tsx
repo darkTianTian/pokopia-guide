@@ -79,7 +79,7 @@ export function ShareCardCanvas({
         spriteSheet: cachedSpriteSheet!,
         spriteMap: cachedSpriteMap!,
         protagonistImages: cachedProtagonistImages ?? [],
-        dateString: new Date().toLocaleDateString("en-US", {
+        dateString: new Date().toLocaleDateString(getDateLocale(), {
           year: "numeric",
           month: "short",
           day: "numeric",
@@ -131,6 +131,19 @@ export function ShareCardCanvas({
       />
     </div>
   )
+}
+
+const DATE_LOCALE_MAP: Record<string, string> = {
+  zh: "zh-TW",
+  "zh-Hans": "zh-CN",
+  ja: "ja",
+  ko: "ko",
+  es: "es",
+}
+
+function getDateLocale(): string {
+  const seg = window.location.pathname.split("/")[1] ?? ""
+  return DATE_LOCALE_MAP[seg] ?? "en-US"
 }
 
 function loadImage(src: string): Promise<HTMLImageElement> {

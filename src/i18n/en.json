@@ -464,7 +464,7 @@
       "slogan100": "Gotta catch 'em all — DONE! 🎉"
     },
     "sync": {
-      "title": "Sync to Mobile (Beta)",
+      "title": "Sync to Mobile",
       "description": "Scan this QR code with your phone to import your collection progress.",
       "importCount": "Import {{count}} Pokémon?",
       "replace": "Replace",
