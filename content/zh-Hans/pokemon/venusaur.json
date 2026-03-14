@@ -1,0 +1,50 @@
+{
+  "id": 3,
+  "slug": "venusaur",
+  "name": "妙蛙花",
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/venusaur.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "litter"
+    ],
+    "favorites": [
+      "lots of nature",
+      "soft stuff",
+      "cute stuff",
+      "pretty flowers",
+      "luxury",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "ivysaur",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 11,
+        "name": "花卉盛景",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 46,
+        "name": "庭园露台",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

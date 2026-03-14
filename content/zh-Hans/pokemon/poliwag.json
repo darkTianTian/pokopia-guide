@@ -1,0 +1,45 @@
+{
+  "id": 209,
+  "slug": "poliwag",
+  "name": "蚊香蝌蚪",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/poliwag.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "round stuff",
+      "rides",
+      "spinning stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "poliwhirl"
+    ],
+    "habitats": [
+      {
+        "id": 161,
+        "name": "刷刷大扫除",
+        "rarity": "common"
+      }
+    ]
+  }
+}

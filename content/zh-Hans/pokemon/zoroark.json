@@ -1,0 +1,50 @@
+{
+  "id": 135,
+  "slug": "zoroark",
+  "name": "索罗亚克",
+  "types": [
+    "dark"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/zoroark.png",
+  "pokopia": {
+    "specialties": [
+      "chop",
+      "trade"
+    ],
+    "favorites": [
+      "shiny stuff",
+      "luxury",
+      "glass stuff",
+      "strange stuff",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "zorua",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 56,
+        "name": "凉爽花田",
+        "rarity": "rare"
+      },
+      {
+        "id": 73,
+        "name": "小心机关",
+        "rarity": "rare"
+      }
+    ],
+    "obtainDetails": "也可在完成暗沉沉海边故事后，击打宝可梦中心前的謎之岩获取"
+  }
+}

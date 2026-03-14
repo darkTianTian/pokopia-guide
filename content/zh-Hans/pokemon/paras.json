@@ -1,0 +1,51 @@
+{
+  "id": 17,
+  "slug": "paras",
+  "name": "派拉斯",
+  "types": [
+    "bug",
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/paras.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "watching stuff",
+      "lots of dirt",
+      "looks like food",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "parasect"
+    ],
+    "habitats": [
+      {
+        "id": 12,
+        "name": "高台花田",
+        "rarity": "common"
+      },
+      {
+        "id": 14,
+        "name": "花园",
+        "rarity": "common"
+      }
+    ]
+  }
+}

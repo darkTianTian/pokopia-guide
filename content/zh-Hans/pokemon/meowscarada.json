@@ -1,0 +1,45 @@
+{
+  "id": 265,
+  "slug": "meowscarada",
+  "name": "魔幻假面喵",
+  "types": [
+    "grass",
+    "dark"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/meowscarada.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "hype"
+    ],
+    "favorites": [
+      "lots of nature",
+      "pretty flowers",
+      "shiny stuff",
+      "luxury",
+      "cute stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "floragato",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 172,
+        "name": "咚咚惊吓箱",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

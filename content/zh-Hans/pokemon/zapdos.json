@@ -1,0 +1,31 @@
+{
+  "id": 295,
+  "slug": "zapdos",
+  "name": "闪电鸟",
+  "types": [
+    "electric",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/zapdos.png",
+  "pokopia": {
+    "specialties": [
+      "fly"
+    ],
+    "favorites": [
+      "electronics",
+      "nice breezes",
+      "glass stuff",
+      "symbols",
+      "luxury",
+      "spicy flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "craft",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "在空空镇建造无人发电厂。图纸来自空空镇祭坛。Tip：学会小磁怪技能后盖房子更快"
+  }
+}

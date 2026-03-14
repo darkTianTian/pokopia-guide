@@ -1,0 +1,50 @@
+{
+  "id": 221,
+  "slug": "dratini",
+  "name": "迷你龙",
+  "types": [
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/dratini.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "lots of fire",
+      "cleanliness",
+      "cute stuff",
+      "slender objects",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "dragonair"
+    ],
+    "habitats": [
+      {
+        "id": 144,
+        "name": "湿润蓬松花田",
+        "rarity": "common"
+      },
+      {
+        "id": 148,
+        "name": "简约浴室",
+        "rarity": "common"
+      }
+    ]
+  }
+}

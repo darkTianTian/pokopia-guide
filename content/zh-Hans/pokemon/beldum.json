@@ -1,0 +1,46 @@
+{
+  "id": 245,
+  "slug": "beldum",
+  "name": "铁哑铃",
+  "types": [
+    "steel",
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/beldum.png",
+  "pokopia": {
+    "specialties": [
+      "recycle"
+    ],
+    "favorites": [
+      "metal stuff",
+      "strange stuff",
+      "hard stuff",
+      "complicated stuff",
+      "stone stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "metang"
+    ],
+    "habitats": [
+      {
+        "id": 149,
+        "name": "骑车途中休息",
+        "rarity": "common"
+      }
+    ]
+  }
+}

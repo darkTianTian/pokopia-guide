@@ -1,0 +1,45 @@
+{
+  "id": 279,
+  "slug": "aurorus",
+  "name": "冰雪巨龙",
+  "types": [
+    "rock",
+    "ice"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/aurorus.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "litter"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "shiny stuff",
+      "noisy stuff",
+      "symbols",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "amaura",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 201,
+        "name": "冻原化石展示台",
+        "rarity": "common"
+      }
+    ]
+  }
+}

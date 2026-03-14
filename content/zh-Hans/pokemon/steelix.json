@@ -1,0 +1,45 @@
+{
+  "id": 31,
+  "slug": "steelix",
+  "name": "大钢蛇",
+  "types": [
+    "steel",
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/steelix.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "favorites": [
+      "metal stuff",
+      "lots of dirt",
+      "stone stuff",
+      "slender objects",
+      "hard stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "onix",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 117,
+        "name": "叮当铁骨工程",
+        "rarity": "common"
+      }
+    ]
+  }
+}

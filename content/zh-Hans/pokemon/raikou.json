@@ -1,0 +1,30 @@
+{
+  "id": 290,
+  "slug": "raikou",
+  "name": "雷公",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/raikou.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "favorites": [
+      "electronics",
+      "nice breezes",
+      "shiny stuff",
+      "glass stuff",
+      "luxury",
+      "dry flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "story",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "完成暗沉沉海边之街的故事后，使用皮卡丘玩偶在梦之岛地下重逢。Tip：梦岛每天只能使用1种玩偶（次数不限）；注意墙壁里的闪光"
+  }
+}

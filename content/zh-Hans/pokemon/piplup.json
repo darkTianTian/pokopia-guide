@@ -1,0 +1,45 @@
+{
+  "id": 128,
+  "slug": "piplup",
+  "name": "波加曼",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/piplup.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "nice breezes",
+      "cleanliness",
+      "containers",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "prinplup"
+    ],
+    "habitats": [
+      {
+        "id": 53,
+        "name": "湿润黄色草丛",
+        "rarity": "common"
+      }
+    ]
+  }
+}

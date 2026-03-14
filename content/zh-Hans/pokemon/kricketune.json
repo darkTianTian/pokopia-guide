@@ -1,0 +1,48 @@
+{
+  "id": 178,
+  "slug": "kricketune",
+  "name": "音箱蟀",
+  "types": [
+    "bug"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/kricketune.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "favorites": [
+      "lots of nature",
+      "wooden stuff",
+      "noisy stuff",
+      "colorful stuff",
+      "watching stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kricketot",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 98,
+        "name": "红色草丛",
+        "rarity": "rare"
+      },
+      {
+        "id": 128,
+        "name": "音乐与阅读",
+        "rarity": "common"
+      }
+    ]
+  }
+}

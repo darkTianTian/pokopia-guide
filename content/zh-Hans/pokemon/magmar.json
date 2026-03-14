@@ -1,0 +1,45 @@
+{
+  "id": 163,
+  "slug": "magmar",
+  "name": "鸭嘴火兽",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/magmar.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "electronics",
+      "hard stuff",
+      "exercise",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "magby",
+    "evolvesTo": [
+      "magmortar"
+    ],
+    "habitats": [
+      {
+        "id": 116,
+        "name": "挖掘与燃烧",
+        "rarity": "common"
+      }
+    ]
+  }
+}

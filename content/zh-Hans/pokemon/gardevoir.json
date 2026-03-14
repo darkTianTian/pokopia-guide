@@ -1,0 +1,50 @@
+{
+  "id": 233,
+  "slug": "gardevoir",
+  "name": "沙奈朵",
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gardevoir.png",
+  "pokopia": {
+    "specialties": [
+      "teleport",
+      "trade"
+    ],
+    "favorites": [
+      "strange stuff",
+      "luxury",
+      "healing",
+      "watching stuff",
+      "symbols",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "kirlia",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 162,
+        "name": "滋润化妆台",
+        "rarity": "rare"
+      },
+      {
+        "id": 163,
+        "name": "小型图书馆",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 116,
+  "slug": "azumarill",
+  "name": "玛力露丽",
+  "types": [
+    "water",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/azumarill.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "build"
+    ],
+    "favorites": [
+      "lots of water",
+      "cute stuff",
+      "consturction",
+      "wobbly stuff",
+      "symbols",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "marill",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 88,
+        "name": "码头",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

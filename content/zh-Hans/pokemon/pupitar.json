@@ -1,0 +1,47 @@
+{
+  "id": 170,
+  "slug": "pupitar",
+  "name": "沙基拉斯",
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/pupitar.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "luxury",
+      "shiny stuff",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "larvitar",
+    "evolvesTo": [
+      "tyranitar"
+    ],
+    "habitats": [
+      {
+        "id": 138,
+        "name": "树荫粉红色草丛",
+        "rarity": "common"
+      }
+    ]
+  }
+}

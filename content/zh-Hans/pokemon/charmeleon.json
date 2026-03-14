@@ -1,0 +1,44 @@
+{
+  "id": 5,
+  "slug": "charmeleon",
+  "name": "火恐龙",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/charmeleon.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "wooden stuff",
+      "hard stuff",
+      "exercise",
+      "rides",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "charmander",
+    "evolvesTo": [
+      "charizard"
+    ],
+    "habitats": [
+      {
+        "id": 17,
+        "name": "露营套组",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

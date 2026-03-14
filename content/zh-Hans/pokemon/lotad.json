@@ -1,0 +1,56 @@
+{
+  "id": 172,
+  "slug": "lotad",
+  "name": "莲叶童子",
+  "types": [
+    "water",
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/lotad.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "lots of nature",
+      "cleanliness",
+      "containers",
+      "noisy stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "lombre"
+    ],
+    "habitats": [
+      {
+        "id": 101,
+        "name": "湿润红色草丛",
+        "rarity": "common"
+      },
+      {
+        "id": 109,
+        "name": "欢乐水洼",
+        "rarity": "common"
+      },
+      {
+        "id": 187,
+        "name": "温泉钓鱼",
+        "rarity": "common"
+      }
+    ]
+  }
+}

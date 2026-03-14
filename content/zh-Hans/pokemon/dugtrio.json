@@ -1,0 +1,49 @@
+{
+  "id": 155,
+  "slug": "dugtrio",
+  "name": "三地鼠",
+  "types": [
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/dugtrio.png",
+  "pokopia": {
+    "specialties": [
+      "hype",
+      "crush"
+    ],
+    "favorites": [
+      "lots of dirt",
+      "play spaces",
+      "gatherings",
+      "group activities",
+      "slender objects",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "diglett",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 99,
+        "name": "树荫红色草丛",
+        "rarity": "rare"
+      },
+      {
+        "id": 123,
+        "name": "大家来派对",
+        "rarity": "common"
+      }
+    ]
+  }
+}

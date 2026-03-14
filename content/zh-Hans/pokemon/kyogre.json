@@ -1,0 +1,28 @@
+{
+  "id": 289,
+  "slug": "kyogre",
+  "name": "盖欧卡",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/kyogre.png",
+  "pokopia": {
+    "specialties": [],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "luxury",
+      "shiny stuff",
+      "glass stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "story",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "完成帕萨帕萨荒野之街的故事"
+  }
+}

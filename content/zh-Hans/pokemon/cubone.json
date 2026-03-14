@@ -1,0 +1,45 @@
+{
+  "id": 32,
+  "slug": "cubone",
+  "name": "卡拉卡拉",
+  "types": [
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/cubone.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "favorites": [
+      "lots of dirt",
+      "construction",
+      "exercise",
+      "slender objects",
+      "group activities",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "marowak"
+    ],
+    "habitats": [
+      {
+        "id": 13,
+        "name": "花环墓地",
+        "rarity": "common"
+      }
+    ]
+  }
+}

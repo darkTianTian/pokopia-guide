@@ -1,0 +1,49 @@
+{
+  "id": 9,
+  "slug": "blastoise",
+  "name": "水箭龟",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/blastoise.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "trade"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "healing",
+      "exercise",
+      "luxury",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "wartortle",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 4,
+        "name": "湿润草丛",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 36,
+        "name": "在阴凉处玩水",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

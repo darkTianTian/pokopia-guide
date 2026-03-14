@@ -1,0 +1,52 @@
+{
+  "id": 261,
+  "slug": "drakloak",
+  "name": "多龙奇",
+  "types": [
+    "dragon",
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/drakloak.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "search"
+    ],
+    "favorites": [
+      "lots of fire",
+      "spooky stuff",
+      "rides",
+      "strange stuff",
+      "group activities",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dreepy",
+    "evolvesTo": [
+      "dragapult"
+    ],
+    "habitats": [
+      {
+        "id": 138,
+        "name": "树荫粉红色草丛",
+        "rarity": "rare"
+      },
+      {
+        "id": 167,
+        "name": "办公室后场",
+        "rarity": "common"
+      }
+    ]
+  }
+}

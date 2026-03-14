@@ -1,0 +1,43 @@
+{
+  "id": 281,
+  "slug": "vaporeon",
+  "name": "水伊布",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/vaporeon.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "cute stuff",
+      "pretty flowers",
+      "watching stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "eevee",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 202,
+        "name": "缤纷蓝色",
+        "rarity": "common"
+      }
+    ]
+  }
+}

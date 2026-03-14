@@ -1,0 +1,51 @@
+{
+  "id": 7,
+  "slug": "squirtle",
+  "name": "杰尼龟",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/squirtle.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "cleanliness",
+      "healing",
+      "cute stuff",
+      "group activities",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "wartortle"
+    ],
+    "habitats": [
+      {
+        "id": 1,
+        "name": "绿色草丛",
+        "rarity": "common"
+      },
+      {
+        "id": 4,
+        "name": "湿润草丛",
+        "rarity": "common"
+      }
+    ],
+    "obtainDetails": "也可透过干巴巴荒野故事进度获取"
+  }
+}

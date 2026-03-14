@@ -1,0 +1,50 @@
+{
+  "id": 66,
+  "slug": "gurdurr",
+  "name": "铁骨土人",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gurdurr.png",
+  "pokopia": {
+    "specialties": [
+      "build"
+    ],
+    "favorites": [
+      "exercise",
+      "construction",
+      "metal stuff",
+      "slender objects",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "timburr",
+    "evolvesTo": [
+      "conkeldurr"
+    ],
+    "habitats": [
+      {
+        "id": 3,
+        "name": "岩荫草丛",
+        "rarity": "rare"
+      },
+      {
+        "id": 28,
+        "name": "大件行李搬运",
+        "rarity": "common"
+      }
+    ]
+  }
+}

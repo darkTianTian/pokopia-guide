@@ -1,0 +1,45 @@
+{
+  "id": 207,
+  "slug": "vulpix",
+  "name": "六尾",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/vulpix.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "lots of fire",
+      "soft stuff",
+      "cute stuff",
+      "round stuff",
+      "pretty flowers",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "ninetales"
+    ],
+    "habitats": [
+      {
+        "id": 142,
+        "name": "蓬松花田",
+        "rarity": "common"
+      }
+    ]
+  }
+}

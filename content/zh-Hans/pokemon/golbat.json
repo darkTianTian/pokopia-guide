@@ -1,0 +1,43 @@
+{
+  "id": 82,
+  "slug": "golbat",
+  "name": "大嘴蝠",
+  "types": [
+    "poison",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/golbat.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "nice breezes",
+      "wooden stuff",
+      "noisy stuff",
+      "complicated stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "zubat",
+    "evolvesTo": [
+      "crobat"
+    ],
+    "habitats": [
+      {
+        "id": 51,
+        "name": "树荫黄色草丛",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

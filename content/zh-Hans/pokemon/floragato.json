@@ -1,0 +1,45 @@
+{
+  "id": 264,
+  "slug": "floragato",
+  "name": "蒂蕾喵",
+  "types": [
+    "grass"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/floragato.png",
+  "pokopia": {
+    "specialties": [
+      "grow"
+    ],
+    "favorites": [
+      "lots of nature",
+      "pretty flowers",
+      "sharp stuff",
+      "colorful stuff",
+      "cute stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "sprigatito",
+    "evolvesTo": [
+      "meowscarada"
+    ],
+    "habitats": [
+      {
+        "id": 155,
+        "name": "伙伴与侦讯",
+        "rarity": "common"
+      }
+    ]
+  }
+}

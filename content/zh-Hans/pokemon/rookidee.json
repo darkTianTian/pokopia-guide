@@ -1,0 +1,45 @@
+{
+  "id": 256,
+  "slug": "rookidee",
+  "name": "稚山雀",
+  "types": [
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/rookidee.png",
+  "pokopia": {
+    "specialties": [
+      "chop"
+    ],
+    "favorites": [
+      "nice breezes",
+      "shiny stuff",
+      "containers",
+      "slender objects",
+      "wooden stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "corvisquire"
+    ],
+    "habitats": [
+      {
+        "id": 142,
+        "name": "蓬松花田",
+        "rarity": "common"
+      }
+    ]
+  }
+}

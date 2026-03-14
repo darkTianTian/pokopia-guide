@@ -1,0 +1,54 @@
+{
+  "id": 212,
+  "slug": "politoed",
+  "name": "蚊香蛙皇",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/politoed.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "hype"
+    ],
+    "favorites": [
+      "lots of water",
+      "play spaces",
+      "noisy stuff",
+      "gatherings",
+      "group activities",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "poliwhirl",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 106,
+        "name": "湿润优雅花田",
+        "rarity": "rare"
+      },
+      {
+        "id": 107,
+        "name": "花田树桩舞台",
+        "rarity": "rare"
+      },
+      {
+        "id": 114,
+        "name": "疗愈温泉",
+        "rarity": "common"
+      }
+    ]
+  }
+}

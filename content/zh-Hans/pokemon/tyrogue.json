@@ -1,0 +1,47 @@
+{
+  "id": 34,
+  "slug": "tyrogue",
+  "name": "无畏小子",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tyrogue.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "exercise",
+      "group activities",
+      "fabric",
+      "stone stuff",
+      "round stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "hitmonlee",
+      "hitmonchan",
+      "hitmontop"
+    ],
+    "habitats": [
+      {
+        "id": 18,
+        "name": "修行瀑布",
+        "rarity": "common"
+      }
+    ]
+  }
+}

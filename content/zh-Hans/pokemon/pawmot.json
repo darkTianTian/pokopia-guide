@@ -1,0 +1,44 @@
+{
+  "id": 144,
+  "slug": "pawmot",
+  "name": "巴布土拨",
+  "types": [
+    "electric",
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/pawmot.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "crush"
+    ],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "exercise",
+      "healing",
+      "group activities: dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pawmo",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 70,
+        "name": "咖啡空间",
+        "rarity": "common"
+      }
+    ]
+  }
+}

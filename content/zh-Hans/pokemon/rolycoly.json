@@ -1,0 +1,46 @@
+{
+  "id": 193,
+  "slug": "rolycoly",
+  "name": "小炭仔",
+  "types": [
+    "rock"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/rolycoly.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "gather"
+    ],
+    "favorites": [
+      "stone stuff",
+      "lots of fire",
+      "hard stuff",
+      "metal stuff",
+      "rides",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "carkol"
+    ],
+    "habitats": [
+      {
+        "id": 132,
+        "name": "平交道",
+        "rarity": "common"
+      }
+    ]
+  }
+}

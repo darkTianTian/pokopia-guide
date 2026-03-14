@@ -3,6 +3,7 @@ import recipesData from "@/../content/cooking-recipes.json"
 import mappingEn from "@/../content/cooking-name-mapping-en.json"
 import mappingZh from "@/../content/cooking-name-mapping-zh.json"
 import mappingKo from "@/../content/cooking-name-mapping-ko.json"
+import mappingZhHans from "@/../content/cooking-name-mapping-zh-Hans.json"
 
 interface RawSpecialIngredient {
   nameJa: string
@@ -119,6 +120,7 @@ interface CookingMapping {
 const MAPPINGS: Record<Locale, CookingMapping> = {
   en: mappingEn,
   zh: mappingZh,
+  "zh-Hans": mappingZhHans,
   ko: mappingKo,
   ja: {
     recipes: {},

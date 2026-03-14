@@ -1,0 +1,37 @@
+{
+  "id": 197,
+  "slug": "toxtricity",
+  "name": "颤弦蝾螈",
+  "types": [
+    "electric",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/toxtricity.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "hype"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "toxel",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 189,
+        "name": "Amped rock stage",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": 94,
+  "slug": "haunter",
+  "name": "鬼斯通",
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/haunter.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "trade"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "garbage",
+      "wobbly stuff",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "gastly",
+    "evolvesTo": [
+      "gengar"
+    ],
+    "habitats": [
+      {
+        "id": 73,
+        "name": "小心机关",
+        "rarity": "common"
+      },
+      {
+        "id": 89,
+        "name": "诡异书房",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

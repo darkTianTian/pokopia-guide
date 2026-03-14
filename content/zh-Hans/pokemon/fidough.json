@@ -1,0 +1,49 @@
+{
+  "id": 198,
+  "slug": "fidough",
+  "name": "狗仔包",
+  "types": [
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/fidough.png",
+  "pokopia": {
+    "specialties": [
+      "search"
+    ],
+    "favorites": [
+      "cute stuff",
+      "watching stuff",
+      "soft stuff",
+      "lots of fire",
+      "letters and words",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "dachsbun"
+    ],
+    "habitats": [
+      {
+        "id": 104,
+        "name": "优雅花田",
+        "rarity": "common"
+      },
+      {
+        "id": 121,
+        "name": "大口麵包工坊",
+        "rarity": "common"
+      }
+    ]
+  }
+}

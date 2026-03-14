@@ -2,9 +2,9 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Heart, Menu, X } from "lucide-react"
-import { getLocalePath, type Locale } from "@/i18n/config"
-import { LanguageSwitcher } from "./language-switcher"
+import { usePathname } from "next/navigation"
+import { Heart, Menu, X, Globe, Check } from "lucide-react"
+import { getLocalePath, LOCALES, LOCALE_LABELS, DEFAULT_LOCALE, type Locale } from "@/i18n/config"
 import { ThemeToggle } from "./theme-toggle"
 
 interface NavItem {
@@ -28,8 +28,25 @@ export function MobileNav({
   habitatSubItems,
   comingSoonLabel,
 }: MobileNavProps) {
+  const pathname = usePathname()
   const getPath = (path: string) => getLocalePath(locale, path)
   const [open, setOpen] = useState(false)
+
+  function getTargetPath(targetLocale: Locale): string {
+    let basePath = pathname
+    for (const loc of LOCALES) {
+      if (loc !== DEFAULT_LOCALE && pathname.startsWith(`/${loc}/`)) {
+        basePath = pathname.slice(`/${loc}`.length)
+        break
+      }
+      if (loc !== DEFAULT_LOCALE && pathname === `/${loc}`) {
+        basePath = "/"
+        break
+      }
+    }
+    if (targetLocale === DEFAULT_LOCALE) return basePath
+    return `/${targetLocale}${basePath}`
+  }
 
   return (
     <div className="relative md:hidden">
@@ -91,9 +108,31 @@ export function MobileNav({
             </li>
           </ul>
 
-          <div className="mt-2 flex items-center justify-between border-t border-border/40 pt-4 px-2 pb-2">
-            <LanguageSwitcher locale={locale} />
-            <ThemeToggle />
+          <div className="mt-2 border-t border-border/40 pt-4 px-2 pb-2">
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-muted-foreground/50">
+                <Globe className="h-3.5 w-3.5" />
+                Language
+              </div>
+              <ThemeToggle />
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {LOCALES.map((loc) => (
+                <Link
+                  key={loc}
+                  href={getTargetPath(loc)}
+                  onClick={() => setOpen(false)}
+                  className={`inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-sm font-medium transition-all duration-200 ${
+                    loc === locale
+                      ? "bg-primary/10 text-primary ring-1 ring-primary/20"
+                      : "text-muted-foreground hover:bg-primary/5 hover:text-primary"
+                  }`}
+                >
+                  {LOCALE_LABELS[loc]}
+                  {loc === locale && <Check className="h-3 w-3" />}
+                </Link>
+              ))}
+            </div>
           </div>
         </nav>
       </div>

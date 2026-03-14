@@ -1,0 +1,51 @@
+{
+  "id": 123,
+  "slug": "wingull",
+  "name": "长翅鸥",
+  "types": [
+    "water",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/wingull.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "fly"
+    ],
+    "favorites": [
+      "lots of water",
+      "nice breezes",
+      "cleanliness",
+      "ocean vibes",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "pelipper"
+    ],
+    "habitats": [
+      {
+        "id": 52,
+        "name": "高台黄色草丛",
+        "rarity": "common"
+      },
+      {
+        "id": 58,
+        "name": "风之花田",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": 129,
+  "slug": "prinplup",
+  "name": "波皇子",
+  "types": [
+    "water"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/prinplup.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "trade"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "nice breezes",
+      "cleanliness",
+      "containers",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "piplup",
+    "evolvesTo": [
+      "empoleon"
+    ],
+    "habitats": [
+      {
+        "id": 53,
+        "name": "湿润黄色草丛",
+        "rarity": "rare"
+      },
+      {
+        "id": 86,
+        "name": "水力发电所",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

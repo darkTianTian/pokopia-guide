@@ -1,0 +1,45 @@
+{
+  "id": 218,
+  "slug": "porygon",
+  "name": "多边兽",
+  "types": [
+    "normal"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/porygon.png",
+  "pokopia": {
+    "specialties": [
+      "recycle"
+    ],
+    "favorites": [
+      "soft stuff",
+      "strange stuff",
+      "blocky stuff",
+      "construction",
+      "colorful stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "porygon2"
+    ],
+    "habitats": [
+      {
+        "id": 170,
+        "name": "研究者的桌子",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": 122,
+  "slug": "blaziken",
+  "name": "火焰鸡",
+  "types": [
+    "fire",
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/blaziken.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "build"
+    ],
+    "favorites": [
+      "lots of fire",
+      "luxury",
+      "exercise",
+      "containers",
+      "construction",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "combusken",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 69,
+        "name": "叽叽喳喳喂食",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 79,
+        "name": "度假村备餐",
+        "rarity": "rare"
+      },
+      {
+        "id": 87,
+        "name": "火力发电所",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

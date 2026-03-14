@@ -1,0 +1,50 @@
+{
+  "id": 104,
+  "slug": "electabuzz",
+  "name": "电击兽",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/electabuzz.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "favorites": [
+      "electronics",
+      "glass stuff",
+      "lots of fire",
+      "sharp stuff",
+      "exercise",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "elekid",
+    "evolvesTo": [
+      "electivire"
+    ],
+    "habitats": [
+      {
+        "id": 64,
+        "name": "垃圾桶满了",
+        "rarity": "rare"
+      },
+      {
+        "id": 72,
+        "name": "灯光舞台",
+        "rarity": "common"
+      }
+    ]
+  }
+}

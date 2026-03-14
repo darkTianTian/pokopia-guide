@@ -1,0 +1,51 @@
+{
+  "id": 96,
+  "slug": "voltorb",
+  "name": "霹雳电球",
+  "types": [
+    "electric"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/voltorb.png",
+  "pokopia": {
+    "specialties": [
+      "generate",
+      "explode"
+    ],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "round stuff",
+      "colorful stuff",
+      "spinning stuff",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "electrode"
+    ],
+    "habitats": [
+      {
+        "id": 66,
+        "name": "公园长椅",
+        "rarity": "common"
+      },
+      {
+        "id": 90,
+        "name": "航海游戏",
+        "rarity": "common"
+      }
+    ]
+  }
+}

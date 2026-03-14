@@ -1,0 +1,44 @@
+{
+  "id": 70,
+  "slug": "chandelure",
+  "name": "水晶灯火灵",
+  "types": [
+    "ghost",
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/chandelure.png",
+  "pokopia": {
+    "specialties": [
+      "burn"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "lots of fire",
+      "wobbly stuff",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "lampent",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 33,
+        "name": "诡异墓前供品",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

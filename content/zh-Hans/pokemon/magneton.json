@@ -1,0 +1,51 @@
+{
+  "id": 28,
+  "slug": "magneton",
+  "name": "三合一磁怪",
+  "types": [
+    "electric",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/magneton.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "favorites": [
+      "electronics",
+      "metal stuff",
+      "shiny stuff",
+      "gatherings",
+      "group activities",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "magnemite",
+    "evolvesTo": [
+      "magnezone"
+    ],
+    "habitats": [
+      {
+        "id": 64,
+        "name": "垃圾桶满了",
+        "rarity": "rare"
+      },
+      {
+        "id": 85,
+        "name": "迷你游戏角",
+        "rarity": "common"
+      }
+    ]
+  }
+}

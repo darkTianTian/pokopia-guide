@@ -1,0 +1,51 @@
+{
+  "id": 125,
+  "slug": "makuhita",
+  "name": "幕下力士",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/makuhita.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "bulldoze"
+    ],
+    "favorites": [
+      "exercise",
+      "construction",
+      "fabric",
+      "round stuff",
+      "wooden stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "hariyama"
+    ],
+    "habitats": [
+      {
+        "id": 51,
+        "name": "树荫黄色草丛",
+        "rarity": "common"
+      },
+      {
+        "id": 80,
+        "name": "行李打包好了",
+        "rarity": "common"
+      }
+    ]
+  }
+}

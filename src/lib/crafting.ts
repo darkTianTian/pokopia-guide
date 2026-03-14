@@ -3,6 +3,7 @@ import recipesData from "@/../content/crafting-recipes.json"
 import mappingEn from "@/../content/crafting-name-mapping-en.json"
 import mappingZh from "@/../content/crafting-name-mapping-zh.json"
 import mappingKo from "@/../content/crafting-name-mapping-ko.json"
+import mappingZhHans from "@/../content/crafting-name-mapping-zh-Hans.json"
 
 interface RawRecipe {
   id: string
@@ -29,6 +30,7 @@ export interface CraftingRecipe {
 const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: mappingEn.recipes,
   zh: mappingZh.recipes,
+  "zh-Hans": mappingZhHans.recipes,
   ja: {},
   ko: mappingKo.recipes,
 }
@@ -36,6 +38,7 @@ const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
 const MATERIAL_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: mappingEn.materials,
   zh: mappingZh.materials,
+  "zh-Hans": mappingZhHans.materials,
   ja: {},
   ko: mappingKo.materials,
 }

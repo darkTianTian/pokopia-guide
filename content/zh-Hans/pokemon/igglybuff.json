@@ -1,0 +1,46 @@
+{
+  "id": 151,
+  "slug": "igglybuff",
+  "name": "宝宝丁",
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/igglybuff.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "favorites": [
+      "soft stuff",
+      "cute stuff",
+      "play spaces",
+      "healing",
+      "noisy stuff",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "jigglypuff"
+    ],
+    "habitats": [
+      {
+        "id": 107,
+        "name": "花田树桩舞台",
+        "rarity": "common"
+      }
+    ]
+  }
+}

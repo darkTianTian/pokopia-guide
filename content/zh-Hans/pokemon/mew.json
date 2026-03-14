@@ -1,0 +1,30 @@
+{
+  "id": 300,
+  "slug": "mew",
+  "name": "梦幻",
+  "types": [
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/mew.png",
+  "pokopia": {
+    "specialties": [
+      "teleport"
+    ],
+    "favorites": [
+      "strange stuff",
+      "watching stuff",
+      "luxury",
+      "complicated stuff",
+      "play spaces",
+      "sweet flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "quest",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "mythical",
+    "obtainDetails": "在帕萨帕萨荒野集齐27块谜之石板，嵌入宝可梦中心后方地下的壁画。Tip：给苔藓卡比兽喂甜味（桃桃果）可增加石板出现几率；石板需对应背面图案插入正确位置"
+  }
+}

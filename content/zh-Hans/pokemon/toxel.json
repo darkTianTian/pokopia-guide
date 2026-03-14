@@ -1,0 +1,46 @@
+{
+  "id": 196,
+  "slug": "toxel",
+  "name": "电音婴",
+  "types": [
+    "electric",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/toxel.png",
+  "pokopia": {
+    "specialties": [
+      "generate"
+    ],
+    "favorites": [
+      "electronics",
+      "shiny stuff",
+      "noisy stuff",
+      "glass stuff",
+      "garbage",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "toxtricity"
+    ],
+    "habitats": [
+      {
+        "id": 124,
+        "name": "悠闲回顾相簿",
+        "rarity": "common"
+      }
+    ]
+  }
+}

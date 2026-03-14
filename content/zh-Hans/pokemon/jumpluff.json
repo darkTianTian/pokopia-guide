@@ -1,0 +1,51 @@
+{
+  "id": 10003,
+  "slug": "jumpluff",
+  "name": "毽子棉",
+  "types": [
+    "grass",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/jumpluff.png",
+  "pokopia": {
+    "specialties": [
+      "grow",
+      "litter"
+    ],
+    "favorites": [
+      "soft stuff",
+      "lots of nature",
+      "nice breezes",
+      "pretty flowers",
+      "round stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "event",
+    "evolvesFrom": "skiploom",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 210,
+        "name": "黄色地毯",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 212,
+        "name": "蒲公英与午餐",
+        "rarity": "rare"
+      }
+    ],
+    "category": "event"
+  }
+}

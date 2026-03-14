@@ -1,0 +1,50 @@
+{
+  "id": 154,
+  "slug": "diglett",
+  "name": "地鼠",
+  "types": [
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/diglett.png",
+  "pokopia": {
+    "specialties": [
+      "hype"
+    ],
+    "favorites": [
+      "lots of dirt",
+      "play spaces",
+      "cute stuff",
+      "group activities",
+      "slender objects",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "dugtrio"
+    ],
+    "habitats": [
+      {
+        "id": 99,
+        "name": "树荫红色草丛",
+        "rarity": "common"
+      },
+      {
+        "id": 119,
+        "name": "仓库偷吃",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -12,6 +12,10 @@ import mappingKo from "@/../content/item-name-mapping-ko.json"
 import obtainMappingKo from "@/../content/item-obtain-mapping-ko.json"
 import recipeMappingKo from "@/../content/item-recipe-mapping-ko.json"
 import descMappingKo from "@/../content/item-desc-mapping-ko.json"
+import mappingZhHans from "@/../content/item-name-mapping-zh-Hans.json"
+import obtainMappingZhHans from "@/../content/item-obtain-mapping-zh-Hans.json"
+import recipeMappingZhHans from "@/../content/item-recipe-mapping-zh-Hans.json"
+import descMappingZhHans from "@/../content/item-desc-mapping-zh-Hans.json"
 
 interface RawMaterial {
   id: string
@@ -53,6 +57,7 @@ export interface Item {
 const NAME_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: mappingEn as Record<string, string>,
   zh: mappingZh as Record<string, string>,
+  "zh-Hans": mappingZhHans as Record<string, string>,
   ja: {},
   ko: mappingKo as Record<string, string>,
 }
@@ -60,6 +65,7 @@ const NAME_MAPPINGS: Record<Locale, Record<string, string>> = {
 const OBTAIN_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: obtainMappingEn as Record<string, string>,
   zh: obtainMappingZh as Record<string, string>,
+  "zh-Hans": obtainMappingZhHans as Record<string, string>,
   ja: {},
   ko: obtainMappingKo as Record<string, string>,
 }
@@ -67,6 +73,7 @@ const OBTAIN_MAPPINGS: Record<Locale, Record<string, string>> = {
 const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: recipeMappingEn as Record<string, string>,
   zh: recipeMappingZh as Record<string, string>,
+  "zh-Hans": recipeMappingZhHans as Record<string, string>,
   ja: {},
   ko: recipeMappingKo as Record<string, string>,
 }
@@ -74,6 +81,7 @@ const RECIPE_MAPPINGS: Record<Locale, Record<string, string>> = {
 const DESC_MAPPINGS: Record<Locale, Record<string, string>> = {
   en: descMappingEn as Record<string, string>,
   zh: descMappingZh as Record<string, string>,
+  "zh-Hans": descMappingZhHans as Record<string, string>,
   ja: {},
   ko: descMappingKo as Record<string, string>,
 }

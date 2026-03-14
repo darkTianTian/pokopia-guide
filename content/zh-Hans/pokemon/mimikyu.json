@@ -1,0 +1,44 @@
+{
+  "id": 141,
+  "slug": "mimikyu",
+  "name": "谜拟丘",
+  "types": [
+    "ghost",
+    "fairy"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/mimikyu.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "cute stuff",
+      "electronics",
+      "fabric",
+      "group activities",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 94,
+        "name": "皮卡丘空间",
+        "rarity": "common"
+      }
+    ]
+  }
+}

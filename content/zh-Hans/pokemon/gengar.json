@@ -1,0 +1,42 @@
+{
+  "id": 95,
+  "slug": "gengar",
+  "name": "耿鬼",
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/gengar.png",
+  "pokopia": {
+    "specialties": [
+      "gather",
+      "trade"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "garbage",
+      "rides",
+      "group activities",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "haunter",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 73,
+        "name": "小心机关",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

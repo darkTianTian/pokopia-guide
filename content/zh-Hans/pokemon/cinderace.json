@@ -1,0 +1,49 @@
+{
+  "id": 190,
+  "slug": "cinderace",
+  "name": "闪焰王牌",
+  "types": [
+    "fire"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/cinderace.png",
+  "pokopia": {
+    "specialties": [
+      "burn",
+      "hype"
+    ],
+    "favorites": [
+      "lots of fire",
+      "stone stuff",
+      "play spaces",
+      "group activities",
+      "round stuff",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "raboot",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 98,
+        "name": "红色草丛",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 130,
+        "name": "清爽更衣室",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

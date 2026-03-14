@@ -1,0 +1,50 @@
+{
+  "id": 222,
+  "slug": "dragonair",
+  "name": "哈克龙",
+  "types": [
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/dragonair.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "lots of fire",
+      "cleanliness",
+      "glass stuff",
+      "slender objects",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "dratini",
+    "evolvesTo": [
+      "dragonite"
+    ],
+    "habitats": [
+      {
+        "id": 144,
+        "name": "湿润蓬松花田",
+        "rarity": "very-rare"
+      },
+      {
+        "id": 148,
+        "name": "简约浴室",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

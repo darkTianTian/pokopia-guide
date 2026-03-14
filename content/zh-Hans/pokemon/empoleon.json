@@ -1,0 +1,48 @@
+{
+  "id": 130,
+  "slug": "empoleon",
+  "name": "帝王拿波",
+  "types": [
+    "water",
+    "steel"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/empoleon.png",
+  "pokopia": {
+    "specialties": [
+      "water",
+      "trade"
+    ],
+    "favorites": [
+      "lots of water",
+      "ocean vibes",
+      "metal stuff",
+      "cleanliness",
+      "letters and words",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "prinplup",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 68,
+        "name": "外送料理",
+        "rarity": "rare"
+      },
+      {
+        "id": 86,
+        "name": "水力发电所",
+        "rarity": "very-rare"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": 166,
+  "slug": "sudowoodo",
+  "name": "树才怪",
+  "types": [
+    "rock"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/sudowoodo.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "lots of nature",
+      "wooden stuff",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "bonsly",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 99,
+        "name": "树荫红色草丛",
+        "rarity": "rare"
+      },
+      {
+        "id": 123,
+        "name": "大家来派对",
+        "rarity": "common"
+      }
+    ]
+  }
+}

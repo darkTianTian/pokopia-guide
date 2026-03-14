@@ -1,0 +1,48 @@
+{
+  "id": 74,
+  "slug": "goomy",
+  "name": "黏黏宝",
+  "types": [
+    "dragon"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/goomy.png",
+  "pokopia": {
+    "specialties": [
+      "water"
+    ],
+    "favorites": [
+      "lots of water",
+      "luxury",
+      "lots of nature",
+      "cleanliness",
+      "healing",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "sliggoo"
+    ],
+    "habitats": [
+      {
+        "id": 9,
+        "name": "树荫花田",
+        "rarity": "common"
+      },
+      {
+        "id": 41,
+        "name": "祈雨地点",
+        "rarity": "common"
+      }
+    ]
+  }
+}

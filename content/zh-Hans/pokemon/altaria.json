@@ -1,0 +1,45 @@
+{
+  "id": 241,
+  "slug": "altaria",
+  "name": "七夕青鸟",
+  "types": [
+    "dragon",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/altaria.png",
+  "pokopia": {
+    "specialties": [
+      "litter",
+      "fly"
+    ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "cute stuff",
+      "watching stuff",
+      "noisy stuff",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "swablu",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 147,
+        "name": "鸟鸣花园",
+        "rarity": "common"
+      }
+    ]
+  }
+}

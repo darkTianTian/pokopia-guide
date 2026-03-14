@@ -1,0 +1,30 @@
+{
+  "id": 299,
+  "slug": "mewtwo",
+  "name": "超梦",
+  "types": [
+    "psychic"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/mewtwo.png",
+  "pokopia": {
+    "specialties": [
+      "teleport"
+    ],
+    "favorites": [
+      "strange stuff",
+      "watching stuff",
+      "letters and words",
+      "complicated stuff",
+      "stone stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": null,
+    "weather": null,
+    "obtainMethod": "story",
+    "evolvesFrom": null,
+    "evolvesTo": null,
+    "habitats": [],
+    "category": "legendary",
+    "obtainDetails": "完成亮晶晶空岛之街的故事。也可使用快龙玩偶在梦之岛地下遇见。Tip：梦岛每天只能使用1种玩偶（次数不限）；注意牆壁里的闪光"
+  }
+}

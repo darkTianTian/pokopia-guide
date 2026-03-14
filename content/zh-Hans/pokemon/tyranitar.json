@@ -1,0 +1,50 @@
+{
+  "id": 171,
+  "slug": "tyranitar",
+  "name": "班基拉斯",
+  "types": [
+    "rock",
+    "dark"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/tyranitar.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "favorites": [
+      "stone stuff",
+      "hard stuff",
+      "luxury",
+      "shiny stuff",
+      "exercise",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "pupitar",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 108,
+        "name": "农作真辛苦",
+        "rarity": "rare"
+      },
+      {
+        "id": 110,
+        "name": "苔藓遍布",
+        "rarity": "very-rare"
+      }
+    ]
+  }
+}

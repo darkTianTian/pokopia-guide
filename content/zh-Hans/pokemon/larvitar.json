@@ -1,0 +1,47 @@
+{
+  "id": 169,
+  "slug": "larvitar",
+  "name": "幼基拉斯",
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/larvitar.png",
+  "pokopia": {
+    "specialties": [
+      "crush",
+      "bulldoze"
+    ],
+    "favorites": [
+      "stone stuff",
+      "lots of dirt",
+      "luxury",
+      "shiny stuff",
+      "looks like food",
+      "sweet flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "pupitar"
+    ],
+    "habitats": [
+      {
+        "id": 110,
+        "name": "苔藓遍布",
+        "rarity": "common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": 158,
+  "slug": "machamp",
+  "name": "怪力",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/machamp.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "gather"
+    ],
+    "favorites": [
+      "exercise",
+      "construction",
+      "stone stuff",
+      "hard stuff",
+      "group activities",
+      "spicy flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "machoke",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 103,
+        "name": "草丛训练场",
+        "rarity": "rare"
+      },
+      {
+        "id": 117,
+        "name": "叮当铁骨工程",
+        "rarity": "rare"
+      }
+    ]
+  }
+}

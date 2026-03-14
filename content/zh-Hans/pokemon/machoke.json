@@ -1,0 +1,51 @@
+{
+  "id": 157,
+  "slug": "machoke",
+  "name": "豪力",
+  "types": [
+    "fighting"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/machoke.png",
+  "pokopia": {
+    "specialties": [
+      "build",
+      "gather"
+    ],
+    "favorites": [
+      "exercise",
+      "construction",
+      "stone stuff",
+      "hard stuff",
+      "group activities",
+      "sour flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "machop",
+    "evolvesTo": [
+      "machamp"
+    ],
+    "habitats": [
+      {
+        "id": 103,
+        "name": "草丛训练场",
+        "rarity": "common"
+      },
+      {
+        "id": 127,
+        "name": "跟着节奏一二",
+        "rarity": "common"
+      }
+    ]
+  }
+}

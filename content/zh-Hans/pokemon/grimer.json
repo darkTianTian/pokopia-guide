@@ -1,0 +1,45 @@
+{
+  "id": 91,
+  "slug": "grimer",
+  "name": "臭泥",
+  "types": [
+    "poison"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/grimer.png",
+  "pokopia": {
+    "specialties": [
+      "litter"
+    ],
+    "favorites": [
+      "garbage",
+      "spooky stuff",
+      "gatherings",
+      "shiny stuff",
+      "containers",
+      "bitter flavors"
+    ],
+    "timeOfDay": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "muk"
+    ],
+    "habitats": [
+      {
+        "id": 186,
+        "name": "沼泽钓鱼",
+        "rarity": "common"
+      }
+    ]
+  }
+}

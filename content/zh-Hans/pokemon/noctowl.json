@@ -1,0 +1,47 @@
+{
+  "id": 49,
+  "slug": "noctowl",
+  "name": "猫头夜鹰",
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/noctowl.png",
+  "pokopia": {
+    "specialties": [
+      "fly",
+      "trade"
+    ],
+    "favorites": [
+      "soft stuff",
+      "nice breezes",
+      "letters and words",
+      "containers",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": "hoothoot",
+    "evolvesTo": null,
+    "habitats": [
+      {
+        "id": 6,
+        "name": "高台草丛",
+        "rarity": "rare"
+      },
+      {
+        "id": 31,
+        "name": "温柔灯光晚安",
+        "rarity": "common"
+      }
+    ]
+  }
+}

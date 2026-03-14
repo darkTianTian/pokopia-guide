@@ -1,0 +1,47 @@
+{
+  "id": 227,
+  "slug": "misdreavus",
+  "name": "梦妖",
+  "types": [
+    "ghost"
+  ],
+  "image": "https://assets.pokopiaguide.com/pokemon/misdreavus.png",
+  "pokopia": {
+    "specialties": [
+      "trade"
+    ],
+    "favorites": [
+      "spooky stuff",
+      "strange stuff",
+      "shiny stuff",
+      "colorful stuff",
+      "watching stuff",
+      "dry flavors"
+    ],
+    "timeOfDay": [
+      "night"
+    ],
+    "weather": [
+      "sunny",
+      "cloudy",
+      "rainy"
+    ],
+    "obtainMethod": "habitat",
+    "evolvesFrom": null,
+    "evolvesTo": [
+      "mismagius"
+    ],
+    "habitats": [
+      {
+        "id": 142,
+        "name": "蓬鬆花田",
+        "rarity": "common"
+      },
+      {
+        "id": 167,
+        "name": "辦公室后场",
+        "rarity": "common"
+      }
+    ]
+  }
+}
