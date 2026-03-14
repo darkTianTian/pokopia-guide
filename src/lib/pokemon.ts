@@ -6,6 +6,10 @@ import _habitatMaterialsJa from "@/../content/habitat-materials.json"
 import _habitatMaterialsEn from "@/../content/habitat-materials-en.json"
 import _habitatMaterialsZh from "@/../content/habitat-materials-zh.json"
 import _habitatMaterialsKo from "@/../content/habitat-materials-ko.json"
+import habitatMappingEn from "@/../content/habitat-mapping-en.json"
+import habitatMappingZh from "@/../content/habitat-mapping-zh.json"
+import habitatMappingJa from "@/../content/habitat-mapping.json"
+import habitatMappingKo from "@/../content/habitat-mapping-ko.json"
 
 const habitatMaterialsJa = _habitatMaterialsJa as Record<string, string>
 const habitatMaterialsEn = _habitatMaterialsEn as Record<string, string>
@@ -19,17 +23,26 @@ const MATERIALS_BY_LOCALE: Record<Locale, Record<string, string>> = {
   ko: habitatMaterialsKo,
 }
 
+const HABITAT_NAMES_BY_LOCALE: Record<Locale, Record<string, string>> = {
+  en: habitatMappingEn,
+  zh: habitatMappingZh,
+  ja: habitatMappingJa,
+  ko: habitatMappingKo,
+}
+
 function getPokemonDir(locale: Locale): string {
   return path.join(process.cwd(), `content/${locale}/pokemon`)
 }
 
-function enrichMaterials(pokemon: Pokemon, locale: Locale): Pokemon {
+function enrichPokemonData(pokemon: Pokemon, locale: Locale): Pokemon {
   if (!pokemon.pokopia?.habitats?.length) return pokemon
   const materialsMap = MATERIALS_BY_LOCALE[locale]
+  const habitatNames = HABITAT_NAMES_BY_LOCALE[locale]
   const enrichedHabitats = pokemon.pokopia.habitats.map((h) => {
     const idStr = String(h.id)
     const materials = materialsMap[idStr] || habitatMaterialsEn[idStr] || habitatMaterialsJa[idStr] || ""
-    return materials ? { ...h, materials } : h
+    const name = habitatNames[idStr] ?? h.name
+    return { ...h, name, ...(materials ? { materials } : {}) }
   })
   return {
     ...pokemon,
@@ -47,7 +60,7 @@ export async function getAllPokemon(
   const pokemon = await Promise.all(
     jsonFiles.map(async (file) => {
       const raw = await fs.readFile(path.join(dir, file), "utf-8")
-      return enrichMaterials(JSON.parse(raw) as Pokemon, locale)
+      return enrichPokemonData(JSON.parse(raw) as Pokemon, locale)
     })
   )
 
@@ -89,7 +102,7 @@ export async function getPokemonBySlug(
   const filePath = path.join(getPokemonDir(locale), `${slug}.json`)
   try {
     const raw = await fs.readFile(filePath, "utf-8")
-    return enrichMaterials(JSON.parse(raw) as Pokemon, locale)
+    return enrichPokemonData(JSON.parse(raw) as Pokemon, locale)
   } catch {
     return undefined
   }
