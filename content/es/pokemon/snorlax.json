@@ -8,7 +8,8 @@
   "image": "https://assets.pokopiaguide.com/pokemon/snorlax.png",
   "pokopia": {
     "specialties": [
-      "eat"
+      "bulldoze",
+      "trade"
     ],
     "favorites": [
       "soft stuff",
@@ -41,11 +42,6 @@
       {
         "id": 48,
         "name": "Good old-fashioned antiques",
-        "rarity": "common"
-      },
-      {
-        "id": 93,
-        "name": "Altar del gourmet",
         "rarity": "common"
       }
     ]

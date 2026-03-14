@@ -45,6 +45,11 @@
         "id": 154,
         "name": "Oversized dumping ground",
         "rarity": "common"
+      },
+      {
+        "id": 156,
+        "name": "맨홀 점검",
+        "rarity": "common"
       }
     ]
   }

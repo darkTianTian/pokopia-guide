@@ -3,7 +3,7 @@
   "slug": "paldean-wooper",
   "name": "우파",
   "types": [
-    "water",
+    "poison",
     "ground"
   ],
   "image": "https://assets.pokopiaguide.com/pokemon/paldean-wooper.png",
@@ -32,7 +32,9 @@
     ],
     "obtainMethod": "habitat",
     "evolvesFrom": null,
-    "evolvesTo": null,
+    "evolvesTo": [
+      "clodsire"
+    ],
     "habitats": [
       {
         "id": 54,

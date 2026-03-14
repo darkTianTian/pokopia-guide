@@ -38,6 +38,11 @@
     ],
     "habitats": [
       {
+        "id": 79,
+        "name": "리조트 식사 준비",
+        "rarity": "rare"
+      },
+      {
         "id": 87,
         "name": "Furnace Spot",
         "rarity": "common"
