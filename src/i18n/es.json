@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Pokopia Guía",
-    "description": "Tu guía y base de datos completa de Pokémon Pokopia — Pokédex con tipos y especialidades, construcción de hábitats, recetas de fabricación, mejoras de cocina y lista de materiales.",
+    "description": "Tu guía completa de Pokémon Pokopia — Pokédex, hábitats, recetas de fabricación con hormigón y Pokemetal, cocina con trigo, eventos de Hoppip y más.",
     "title": "Guía de Pokémon Pokopia | Pokédex y Wiki | PokopiaGuide.com",
     "titleTemplate": "%s | Pokopia Guía"
   },
@@ -48,8 +48,8 @@
   },
   "pokedex": {
     "title": "Pokédex - Todos los Pokémon de Pokopia con Estadísticas y Hábitats",
-    "metaTitle": "Pokédex de Pokopia | Especialidades y Favoritos",
-    "description": "Pokédex completa de Pokémon Pokopia. Explora todos los Pokémon disponibles con tipos, especialidades, ubicaciones de hábitat, horarios de aparición, condiciones climáticas y favoritos.",
+    "metaTitle": "Pokédex de Pokopia | Hoppip, Tinkaton, Magnemite y Más",
+    "description": "Pokédex completa de Pokémon Pokopia. Explora Hoppip, Tinkaton, Magnemite, Gimmighoul, Wooper y más con tipos, especialidades y hábitats.",
     "subtitle": "Explora todos los Pokémon en el mundo de Pokémon Pokopia",
     "totalCount": "{{count}} Pokémon en total",
     "breadcrumb": "Pokédex",
@@ -306,9 +306,9 @@
   },
   "crafting": {
     "title": "Recetas de Fabricación",
-    "metaTitle": "Todas las Recetas de Fabricación de Pokopia | Muebles y Objetos",
+    "metaTitle": "Fabricación de Pokopia | Hormigón, Pokemetal y Más",
     "description": "Explora todas las recetas de fabricación en Pokémon Pokopia. Encuentra los materiales necesarios para muebles, utensilios de cocina, iluminación y decoraciones. Usa la calculadora para planificar construcciones y sumar materiales.",
-    "metaDescription": "Todas las recetas de fabricación en Pokémon Pokopia con materiales y métodos de desbloqueo. Usa la calculadora de fabricación para planificar construcciones y sumar materiales.",
+    "metaDescription": "Recetas de fabricación en Pokémon Pokopia. Hormigón, Pokemetal, roca caliza, ladrillo, hilo y más. Calculadora para planificar construcciones.",
     "totalCount": "{{count}} recetas en total",
     "searchRecipe": "Buscar recetas...",
     "noResults": "No se encontraron recetas.",
@@ -333,9 +333,9 @@
   },
   "cooking": {
     "title": "Recetas de Cocina",
-    "metaTitle": "Todas las Recetas de Cocina de Pokopia | Mejoras e Ingredientes",
-    "description": "Explora todas las recetas de cocina en Pokémon Pokopia. Encuentra ingredientes, especialidades requeridas y mejoras de movimientos para cada plato.",
-    "metaDescription": "Todas las recetas de cocina en Pokémon Pokopia con ingredientes, sabores, especialidades Pokémon requeridas y mejoras de poder de movimientos.",
+    "metaTitle": "Cocina de Pokopia | Trigo, Ingredientes y Mejoras",
+    "description": "Explora todas las recetas de cocina en Pokémon Pokopia. Encuentra ingredientes como trigo, especialidades requeridas y mejoras de movimientos para cada plato.",
+    "metaDescription": "Todas las recetas de cocina en Pokémon Pokopia. Ingredientes como trigo, sabores, especialidades Pokémon requeridas y mejoras de poder de movimientos.",
     "totalCount": "{{count}} recetas en total",
     "searchRecipe": "Buscar recetas...",
     "noResults": "No se encontraron recetas.",
@@ -367,9 +367,9 @@
   },
   "items": {
     "title": "Catálogo de Objetos",
-    "metaTitle": "Todos los Objetos de Pokopia | Muebles, Materiales y Más",
+    "metaTitle": "Objetos de Pokopia | Hormigón, Pokemetal y Materiales",
     "description": "Explora todos los objetos en Pokémon Pokopia. Filtra por categoría, busca por nombre y descubre muebles, bienes, objetos de la naturaleza, comida y más.",
-    "metaDescription": "Catálogo completo de objetos de Pokémon Pokopia con más de 700 objetos. Explora muebles, bienes, materiales de construcción, comida, kits y bloques. Filtra por categoría, busca por nombre y ve las recetas de fabricación.",
+    "metaDescription": "Catálogo de objetos de Pokémon Pokopia con más de 700 objetos. Hormigón, Pokemetal, roca caliza, trigo, muebles y más. Filtra por categoría y ve recetas.",
     "totalCount": "{{count}} objetos en total",
     "searchPlaceholder": "Buscar objetos...",
     "noResults": "No se encontraron objetos.",
